@@ -22,6 +22,7 @@
   const exportButton = document.getElementById('export-selection');
   const clearButton = document.getElementById('clear-selection');
   const isReviewed = song => song.verification.rhythm === 'reviewed' && song.verification.app_import === 'passed';
+  const isLogTested = song => song.verification.log_playback === 'passed';
   const node = (tag, text, className) => {
     const element = document.createElement(tag);
     if (text !== undefined) element.textContent = text;
@@ -31,7 +32,7 @@
   const visibleSongs = () => {
     const query = search.value.trim().toLocaleLowerCase();
     return songs.filter(song => {
-      const matchesFilter = filter === 'all' || (filter === 'sample' && song.sample) || (filter === 'reviewed' && isReviewed(song)) || (filter === 'favorites' && favorites.has(song.id));
+      const matchesFilter = filter === 'all' || (filter === 'sample' && song.sample) || (filter === 'log-tested' && isLogTested(song)) || (filter === 'reviewed' && isReviewed(song)) || (filter === 'favorites' && favorites.has(song.id));
       return matchesFilter && `${song.title} ${song.filename} ${song.bpm}`.toLocaleLowerCase().includes(query);
     });
   };
@@ -79,6 +80,7 @@
       bpmCell.append(bpm);
       const stateCell = node('td');
       stateCell.append(node('span', isReviewed(song) ? '已校对' : '待校对', `review-badge${isReviewed(song) ? ' reviewed' : ''}`));
+      stateCell.append(node('div', isLogTested(song) ? '导入 / 日志通过' : song.verification.app_import === 'passed' ? '导入通过 · 日志待测' : '导入 / 日志待测', 'song-version'));
       const actionCell = node('td');
       const actions = node('div', undefined, 'row-actions');
       const star = node('button', favorites.has(song.id) ? '★' : '☆', 'favorite');
@@ -132,6 +134,7 @@
     feedback.textContent = `已生成 ${selected.size} 首的来源清单，请查看浏览器下载。曲谱仍需从原始来源获取。`;
   });
   document.getElementById('total-stat').textContent = String(songs.length).padStart(2, '0');
+  document.getElementById('log-tested-stat').textContent = String(songs.filter(isLogTested).length).padStart(2, '0');
   document.getElementById('reviewed-stat').textContent = String(songs.filter(isReviewed).length).padStart(2, '0');
   render();
 })();

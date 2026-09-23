@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-24",
+  "scope": "original-player-log-only",
+  "player": "HarmonicaPlayer/0.2.1",
+  "exe_sha256": "3f393cea1be654ea2b9df1c29166c1e33e68d555cd1e31d123bdd4eb98518061",
+  "environment": {"os": "Windows 11 Pro x64", "version": "10.0.26200", "game_client_running": false},
+  "song_runs": [
+    {"id": "father", "bpm": 72, "gap_ms": 20, "events": 124, "beats": 68.5, "expected_seconds": 57.083, "app_import": "passed", "log_playback": "passed", "completion_observed": true},
+    {"id": "sunny-day", "bpm": 67, "gap_ms": 20, "events": 247, "beats": 132, "expected_seconds": 118.209, "app_import": "passed", "log_playback": "passed", "completion_observed": true},
+    {"id": "rain-love", "bpm": 80, "gap_ms": 20, "events": 195, "beats": 124, "expected_seconds": 93, "app_import": "passed", "log_playback": "passed", "completion_observed": true}
+  ],
+  "checks": {
+    "first_launch": "passed",
+    "default_log_mode": "passed",
+    "timing_fixture": "passed",
+    "start_button": "passed",
+    "start_hotkey_f6": "passed",
+    "stop_button": "passed",
+    "stop_hotkey_f8_during_long_note": "passed",
+    "countdown_cancel": "not-verified",
+    "chinese_path_save_and_reimport": "passed",
+    "cancel_unsaved_new": "passed",
+    "cancel_unsaved_close": "passed",
+    "cancel_unsaved_import": "not-tested",
+    "close_during_log_playback": "passed",
+    "restart_default_log_mode": "passed",
+    "current_display_layout": "observed-controls-usable-log-requires-scroll",
+    "display_scaling": "not-tested",
+    "network_disconnected_start": "not-tested",
+    "friend_first_use": "not-tested",
+    "catalog_browser_visual_and_clicks": "not-tested",
+    "musical_rhythm_review": "not-reviewed",
+    "game_playback": "not-tested"
+  },
+  "performance": {
+    "launch_window_observed_ms": 2044,
+    "launch_note": "One observation from launch request to discovered window, including tool overhead; not a benchmark.",
+    "idle_sample": {
+      "measured_at": "2026-09-24T02:34:43+08:00",
+      "idle_seconds": 30,
+      "working_set_bytes": 260771840,
+      "private_bytes": 238116864,
+      "context": "After multiple song log runs and save tests; no playback or dialog. One local snapshot, not a performance guarantee."
+    }
+  },
+  "notes": [
+    "All playback checks used the original EXE with log-only mode enabled; no real game playback was tested.",
+    "Expected durations are the player's preview values and exclude the 3-second countdown; they are not measured audio timing.",
+    "The original player clears its log when LineCount exceeds 150. Completion was observed for all three songs; retained text is not a complete event audit for longer songs.",
+    "Countdown cancellation could not be verified within the 3-second interval using the observed interaction cadence. This is not a recorded player failure.",
+    "Raw UI evidence remains local because file dialogs and score text must not be redistributed."
+  ]
+}

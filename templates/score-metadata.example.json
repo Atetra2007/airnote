@@ -9,7 +9,7 @@
   "transcribed_by": "填写整理者",
   "version": "1",
   "rights": {"redistribution": "unknown", "evidence_url": ""},
-  "verification": {"app_import": "not-tested", "rhythm": "not-reviewed", "game": "not-tested"},
+  "verification": {"app_import": "not-tested", "log_playback": "not-tested", "rhythm": "not-reviewed", "game": "not-tested"},
   "uncertain_bars": ["在这里注明缺少节奏或不能确认的小节"],
   "notes": "BPM 和音符时值须有依据。未完成的谱不要标为可演奏。"
 }

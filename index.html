@@ -20,7 +20,7 @@
       <a href="docs/ADDING_SCORES.md">添加自己的曲谱 ↗</a>
       <a href="docs/VALIDATION.md">查看验证记录 ↗</a>
     </nav>
-    <div class="sidebar-note"><span class="status-dot"></span> 准备阶段<small>v0.1.0-prep<br>播放器尚未启动验证</small></div>
+    <div class="sidebar-note"><span class="status-dot"></span> 离线日志验证版<small>v0.1.1-logtest<br>音乐节奏仍待人工校对</small></div>
   </aside>
   <main>
     <header class="topline"><span>WINDOWS PC <span class="divider">/</span> TXT 曲谱</span><a href="README.md">使用说明 ↗</a></header>
@@ -28,13 +28,13 @@
       <p class="eyebrow">一个小而清楚的曲谱入口</p>
       <h1 id="title">选一首，先把谱准备好。</h1>
       <p class="lede">固定来源、保留版本，把“文件完整”和“演奏正确”分开记录。<br>这里管理曲谱来源；演奏与导入使用原版 HarmonicaPlayer。</p>
-      <div class="stats" aria-label="曲库统计"><div><strong id="total-stat">10</strong><span>候选曲目</span></div><div><strong>03</strong><span>首轮样本</span></div><div><strong id="reviewed-stat">00</strong><span>已校对推荐</span></div></div>
+      <div class="stats" aria-label="曲库统计"><div><strong id="total-stat">10</strong><span>候选曲目</span></div><div><strong id="log-tested-stat">—</strong><span>日志通过</span></div><div><strong id="reviewed-stat">00</strong><span>已校对推荐</span></div></div>
     </section>
-    <section class="notice" role="note"><strong>当前进度 · 文件已核对，歌曲待校对</strong><p>本轮保留游戏运行，没有启动播放器。离线试用需要先退出游戏，并保持“仅日志测试”。自动输入仍有违规和封禁风险，换输入方式不能保证免封。</p></section>
+    <section class="notice" role="note"><strong>当前进度 · 已做原版日志测试，歌曲仍待校对</strong><p>“日志通过”表示维护者测试机完成导入及整段日志运行，不表示音乐节奏正确。自己试用时先退出游戏，保持“仅日志测试”。自动输入仍有违规和封禁风险。</p></section>
     <section id="library" class="library" aria-labelledby="library-title">
       <div class="section-heading"><div><p class="eyebrow">LIBRARY</p><h2 id="library-title">从这 10 首开始</h2></div><label class="search"><span>搜索</span><input id="search" type="search" placeholder="曲名、BPM 或文件名" autocomplete="off"></label></div>
-      <div class="filterbar"><div class="filters" role="group" aria-label="筛选曲目"><button type="button" class="filter active" data-filter="all" aria-pressed="true">全部</button><button type="button" class="filter" data-filter="sample" aria-pressed="false">首轮 3 首</button><button type="button" class="filter" data-filter="reviewed" aria-pressed="false">已校对</button><button type="button" class="filter" data-filter="favorites" aria-pressed="false">我的收藏</button></div><span id="result-count" aria-live="polite">10 首</span></div>
-      <div class="table-wrap"><table><thead><tr><th class="check-col"><input id="select-visible" type="checkbox" aria-label="选择当前列表的全部曲目"></th><th>曲目 / 版本</th><th class="bpm-col">速度</th><th>校对状态</th><th class="actions-col">来源与文件</th></tr></thead><tbody id="songs"></tbody></table></div>
+      <div class="filterbar"><div class="filters" role="group" aria-label="筛选曲目"><button type="button" class="filter active" data-filter="all" aria-pressed="true">全部</button><button type="button" class="filter" data-filter="sample" aria-pressed="false">首轮 3 首</button><button type="button" class="filter" data-filter="log-tested" aria-pressed="false">日志通过</button><button type="button" class="filter" data-filter="reviewed" aria-pressed="false">已校对</button><button type="button" class="filter" data-filter="favorites" aria-pressed="false">我的收藏</button></div><span id="result-count" aria-live="polite">10 首</span></div>
+      <div class="table-wrap"><table><thead><tr><th class="check-col"><input id="select-visible" type="checkbox" aria-label="选择当前列表的全部曲目"></th><th>曲目 / 版本</th><th class="bpm-col">速度</th><th>验证 / 校对</th><th class="actions-col">来源与文件</th></tr></thead><tbody id="songs"></tbody></table></div>
       <div id="empty" class="empty" hidden></div>
       <div class="selection-bar"><span id="selected-count" aria-live="polite">已选 0 首</span><div><button id="clear-selection" class="text-button" type="button" disabled>清空</button><button id="export-selection" class="primary" type="button" disabled>导出来源清单 ↓</button></div></div>
       <p class="caption">本页不检测本机下载状态。“原始 TXT”来自固定提交；浏览器显示文本时请另存为 .txt。导出的清单包含来源与版本，不含谱面。收藏只保存在当前浏览器。</p>

@@ -12,5 +12,5 @@
     "sha256": "7226f7ad932ee8997bcb6c8bdd8bcade8e2ec6b03e4e09886247b5b3c68f0cd6"
   },
   "license_status": "No explicit license found in tagged root listing on 2026-09-24",
-  "verification_scope": "Download integrity only; app has not been started."
+  "verification_scope": "This lock records distribution integrity only. Original EXE log-mode execution is recorded separately in catalog/validation.json."
 }

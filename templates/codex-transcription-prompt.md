@@ -20,4 +20,4 @@ TXT 首部采用：
 
 如果素材是 MIDI / MusicXML，保留原文件并明确选取的主旋律轨；不要默认合并所有声部。如果是视频链接，先确认实际取得了谱面和节奏证据，不要只依据标题生成旋律。
 
-成品仍标记 `app_import=not-tested`、`rhythm=not-reviewed`；只有完成对应实际检查后才改变状态。
+成品仍标记 `app_import=not-tested`、`log_playback=not-tested`、`rhythm=not-reviewed`；只有完成对应实际检查后才改变状态。导入成功、日志运行结束与音乐节奏正确需要分别验证。

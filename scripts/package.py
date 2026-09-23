@@ -4,12 +4,12 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-NAME = 'harmonica-friends-kit-v0.1.0-prep'
+NAME = 'harmonica-friends-kit-v0.1.1-logtest'
 PACKAGE_FILES = (
     'README.md', 'LICENSE', 'THIRD_PARTY.md', 'CHANGELOG.md',
     'index.html', 'Prepare.cmd',
     'assets/style.css', 'assets/library.js', 'assets/catalog.js',
-    'catalog/songs.json', 'catalog/upstream.lock.json',
+    'catalog/songs.json', 'catalog/upstream.lock.json', 'catalog/validation.json',
     'scripts/Prepare.ps1',
     'docs/ADDING_SCORES.md', 'docs/VALIDATION.md', 'docs/KNOWN_GAPS.md',
     'docs/FRIEND_TRIAL.md', 'docs/MAINTAINING.md',

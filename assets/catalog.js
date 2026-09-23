@@ -4,7 +4,7 @@ window.HARMONICA_CATALOG = {
   "updated_at": "2026-09-24",
   "player": "HarmonicaPlayer/0.2.1",
   "source_commit": "0c3735ed7c261349105ff7fc564f92eddcd922cf",
-  "notice": "仅收录来源索引。10 首曲谱均待节奏校对，导入和游戏内效果未测试；谱面只下载到个人 local/，不随本仓库发布。",
+  "notice": "仅收录来源索引。父亲、晴天、雨爱已通过原版导入和完整日志运行；10 首均待音乐节奏校对，游戏内效果未测试；谱面只下载到个人 local/，不随本仓库发布。",
   "songs": [
     {
       "id": "father",
@@ -29,9 +29,10 @@ window.HARMONICA_CATALOG = {
       "verification": {
         "integrity": "verified",
         "text_audit": "utf8-and-filename-bpm-checked",
-        "app_import": "not-tested",
+        "app_import": "passed",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "passed"
       }
     },
     {
@@ -57,9 +58,10 @@ window.HARMONICA_CATALOG = {
       "verification": {
         "integrity": "verified",
         "text_audit": "utf8-and-filename-bpm-checked",
-        "app_import": "not-tested",
+        "app_import": "passed",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "passed"
       }
     },
     {
@@ -85,9 +87,10 @@ window.HARMONICA_CATALOG = {
       "verification": {
         "integrity": "verified",
         "text_audit": "utf8-and-filename-bpm-checked",
-        "app_import": "not-tested",
+        "app_import": "passed",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "passed"
       }
     },
     {
@@ -115,7 +118,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -143,7 +147,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -171,7 +176,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -199,7 +205,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -227,7 +234,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -255,7 +263,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     },
     {
@@ -283,7 +292,8 @@ window.HARMONICA_CATALOG = {
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
         "rhythm": "not-reviewed",
-        "game": "not-tested"
+        "game": "not-tested",
+        "log_playback": "not-tested"
       }
     }
   ]

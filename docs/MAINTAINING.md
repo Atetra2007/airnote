@@ -12,8 +12,8 @@ powershell -NoProfile -File scripts/Prepare.ps1 -VerifyOnly
 
 `catalog/songs.json` 为曲谱索引的唯一数据源。修改后执行 `python scripts/build_catalog.py` 更新 `assets/catalog.js`；`check_repo.py` 会发现不同步。改变 URL 时同时核对固定提交、大小、散列及再分发状态，不把 `app_import` 或 `rhythm` 状态自动升级。
 
-`package.py` 只从明确的文件清单构建 `artifacts/harmonica-friends-kit-v0.1.0-prep.zip`，包含说明、索引、准备脚本和原创测试谱。不会递归打包整个目录。`local/`、第三方 EXE/PDB/DLL、原版 ZIP 和未授权谱面均不得上传；私有仓库也遵守这条项目约定。
+`package.py` 只从明确的文件清单构建 `artifacts/harmonica-friends-kit-v0.1.1-logtest.zip`，包含说明、索引、准备脚本和原创测试谱。不会递归打包整个目录。`local/`、第三方 EXE/PDB/DLL、原版 ZIP 和未授权谱面均不得上传；私有仓库也遵守这条项目约定。
 
-发布前跑仓库检查，核对 ZIP 文件清单，再提交 Git。创建 GitHub 预发布时注明“准备完成，播放器未启动”。附件用本项目生成的 ZIP 和 SHA256 文件，不上传原作者软件。不要把预发布标成播放器验证完成。
+发布前跑仓库检查，核对 ZIP 文件清单，再提交 Git。创建 GitHub 预发布时准确区分下载校验、实际导入、完整日志运行、音乐节奏校对和游戏内效果。附件用本项目生成的 ZIP 和 SHA256 文件，不上传原作者软件。不要把部分通过写成全部验证完成。
 
-后续离线验收完成后更新 `docs/VALIDATION.md`，保留原始证据与日期。只有逐首完成节奏校对后，才能把相应曲目的 `rhythm` 改为 `reviewed`。公开接收新谱时填写许可依据；无法确认时仅收来源链接。
+每次验收更新 `docs/VALIDATION.md` 与不含谱面、个人路径的 `catalog/validation.json`，保留原始证据与日期。原始界面记录只放在个人 `local/offline-validation/`；不要直接公开整个文件对话框记录。只有逐首完成节奏校对后，才能把相应曲目的 `rhythm` 改为 `reviewed`。公开接收新谱时填写许可依据；无法确认时仅收来源链接。
