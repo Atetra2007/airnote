@@ -1,0 +1,24 @@
+name: Check preparation kit
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check metadata and publication boundary
+        run: python scripts/check_repo.py
+      - name: Test local preparation and packaging
+        run: python -m unittest discover -s tests -v
+      - name: Build small friends kit
+        run: python scripts/package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: harmonica-friends-kit
+          path: artifacts/*

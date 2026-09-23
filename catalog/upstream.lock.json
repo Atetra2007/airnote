@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "lanselanlanxi-wq/HarmonicaPlayer",
+  "tag": "v0.2.1",
+  "commit": "0c3735ed7c261349105ff7fc564f92eddcd922cf",
+  "release_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/releases/tag/v0.2.1",
+  "release_published_at": "2026-09-19T11:49:55Z",
+  "asset": {
+    "name": "HarmonicaPlayer-v0.2.1-win-x64.zip",
+    "url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/releases/download/v0.2.1/HarmonicaPlayer-v0.2.1-win-x64.zip",
+    "size": 65622780,
+    "sha256": "7226f7ad932ee8997bcb6c8bdd8bcade8e2ec6b03e4e09886247b5b3c68f0cd6"
+  },
+  "license_status": "No explicit license found in tagged root listing on 2026-09-24",
+  "verification_scope": "Download integrity only; app has not been started."
+}

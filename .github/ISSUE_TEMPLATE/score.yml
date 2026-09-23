@@ -1,0 +1,22 @@
+name: 曲谱来源或纠错
+description: 推荐可追溯的谱面，或指出具体节奏问题
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 曲名与原作者来源链接
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 版本、BPM、问题小节与时值依据
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: 再分发许可依据
+      description: 未确认许可时请只提交来源链接，不附谱面全文。
+    validations:
+      required: true

@@ -1,0 +1,15 @@
+{
+  "title": "填写曲名",
+  "filename": "填写曲名-v1.txt",
+  "format": "HarmonicaPlayer/1",
+  "bpm": 100,
+  "gap_ms": 20,
+  "source_url": "填写原始谱面或作者链接",
+  "arranger": "填写编配作者，未知则标注未知",
+  "transcribed_by": "填写整理者",
+  "version": "1",
+  "rights": {"redistribution": "unknown", "evidence_url": ""},
+  "verification": {"app_import": "not-tested", "rhythm": "not-reviewed", "game": "not-tested"},
+  "uncertain_bars": ["在这里注明缺少节奏或不能确认的小节"],
+  "notes": "BPM 和音符时值须有依据。未完成的谱不要标为可演奏。"
+}

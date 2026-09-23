@@ -1,0 +1,22 @@
+name: 使用问题
+description: 下载、准备、导入或界面出现问题
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与版本
+      description: 使用包版本、Windows 版本、原版播放器版本。不要填写游戏账号。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作、预期和实际结果
+      description: 写明失败发生在哪一步；未执行的项目不要填通过。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 原始错误与证据
+      description: 可附经过遮挡私人信息的截图；不要上传原版 EXE。

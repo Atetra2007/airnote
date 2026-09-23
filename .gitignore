@@ -1,0 +1,10 @@
+# Personal downloads, upstream software/source/scores and validation artifacts
+/local/
+/artifacts/
+/.cache/
+*.log
+*.tmp
+__pycache__/
+.env
+.env.*
+!.env.example
