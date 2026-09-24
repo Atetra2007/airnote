@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "independent-desktop-application",
+  "version": "0.2.0-preview.1",
+  "date": "2026-09-24",
+  "sdk": "10.0.300-x64",
+  "automated_tests": {"core": 89, "windows": 18, "desktop_storage": 13, "result": "passed"},
+  "input_receiver": {"result": "passed", "keyboard_down": 6, "keyboard_up": 6, "mouse_down": 4, "mouse_up": 4, "target": "same-process-test-window"},
+  "gui": {"original_example_preview": "passed", "light_theme": "passed", "dark_theme": "passed", "system_theme_at_startup": "passed"},
+  "installer": "pending",
+  "real_game": "not-tested",
+  "clean_windows": "not-tested",
+  "friend_first_use": "not-tested",
+  "musical_review": "not-reviewed"
+}

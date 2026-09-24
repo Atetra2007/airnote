@@ -1,0 +1,49 @@
+name: Build Windows desktop
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2025
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.300'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned official Inno Setup on the disposable runner
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $installer = Join-Path $env:RUNNER_TEMP 'innosetup-6.7.3.exe'
+          Invoke-WebRequest -Uri 'https://github.com/jrsoftware/issrc/releases/download/is-6_7_3/innosetup-6.7.3.exe' -OutFile $installer
+          $expected = '9c73c3bae7ed48d44112a0f48e66742c00090bdb5bef71d9d3c056c66e97b732'
+          if ((Get-FileHash -LiteralPath $installer -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expected) {
+            throw 'Official Inno Setup installer hash mismatch.'
+          }
+          $signature = Get-AuthenticodeSignature -LiteralPath $installer
+          if ($signature.Status -ne 'Valid') { throw "Inno Setup signature verification failed: $($signature.Status)" }
+          $compilerDirectory = Join-Path $env:RUNNER_TEMP 'InnoSetup6'
+          $process = Start-Process -FilePath $installer -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', '/CURRENTUSER', ('/DIR="' + $compilerDirectory + '"') -WindowStyle Hidden -PassThru -Wait
+          if ($process.ExitCode -ne 0) { throw "Inno Setup installation failed: $($process.ExitCode)" }
+          "HARMONICA_ISCC=$compilerDirectory\ISCC.exe" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+      - name: Restore locked dependencies, test, publish and build installer
+        shell: pwsh
+        run: ./scripts/Build-Desktop.ps1 -IsccPath $env:HARMONICA_ISCC
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HarmonicaDesk-0.2.0-preview.1-win-x64
+          if-no-files-found: error
+          path: |
+            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.1-win-x64.exe
+            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.1-win-x64.exe.sha256
+            artifacts/desktop/publish-manifest.json

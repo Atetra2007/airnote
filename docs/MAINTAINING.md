@@ -1,6 +1,8 @@
 # 维护与发布
 
-朋友使用只需要系统自带浏览器与 Windows PowerShell。以下 Python 命令仅供维护者和 CI 使用；维护者需获取完整仓库源码，朋友使用包不包含维护脚本和测试代码。
+v0.2 桌面版的构建入口见 [桌面构建说明](DESKTOP-BUILD.md)，验收见 [桌面验证记录](DESKTOP-VALIDATION.md)。朋友使用安装 EXE，不需要 Python 或 .NET SDK。新程序验收只写入 `catalog/desktop-validation.json`，不要改写原版播放器的历史记录。
+
+以下内容仅适用于保留的 v0.1.1 网页使用包。维护命令需要完整仓库源码；旧朋友使用包不包含维护脚本和测试代码。
 
 ```powershell
 python scripts/check_repo.py

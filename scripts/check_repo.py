@@ -16,6 +16,41 @@ REPO_ONLY_FILES = {
     'tests/test_preparation.py', 'tests/test_packaging.py',
     '.github/workflows/check.yml',
     '.github/ISSUE_TEMPLATE/problem.yml', '.github/ISSUE_TEMPLATE/score.yml',
+    'global.json', 'scripts/create_icon.py', 'scripts/Build-Desktop.ps1',
+    'scripts/check_desktop.py', 'installer/HarmonicaDesk.iss',
+    '.github/workflows/desktop.yml', 'docs/DESKTOP-BUILD.md',
+    'docs/QUICKSTART.md', 'docs/DESKTOP-VALIDATION.md', 'catalog/desktop-validation.json',
+    'src/Harmonica.Core/Harmonica.Core.csproj',
+    'src/Harmonica.Core/ScoreCodec.cs', 'src/Harmonica.Core/ScoreModels.cs',
+    'src/Harmonica.Windows/Harmonica.Windows.csproj',
+    'src/Harmonica.Windows/HotkeyManager.cs', 'src/Harmonica.Windows/NativeInput.cs',
+    'src/Harmonica.Windows/PlaybackEngine.cs', 'src/Harmonica.Windows/WaveTone.cs',
+    'src/Harmonica.Windows/WindowsPlaybackOutput.cs', 'src/Harmonica.Windows/README.md',
+    'src/Harmonica.Windows/Properties/AssemblyInfo.cs',
+    'src/Harmonica.InputProbe/Harmonica.InputProbe.csproj',
+    'src/Harmonica.InputProbe/Program.cs',
+    'src/Harmonica.Desktop/Harmonica.Desktop.csproj',
+    'src/Harmonica.Desktop/packages.lock.json',
+    'src/Harmonica.Desktop/App.xaml', 'src/Harmonica.Desktop/App.xaml.cs',
+    'src/Harmonica.Desktop/app.manifest', 'src/Harmonica.Desktop/Assets/App.ico',
+    'src/Harmonica.Desktop/MainWindow.xaml', 'src/Harmonica.Desktop/MainWindow.xaml.cs',
+    'src/Harmonica.Desktop/PasteDialog.xaml', 'src/Harmonica.Desktop/PasteDialog.xaml.cs',
+    'src/Harmonica.Desktop/SettingsDialog.xaml', 'src/Harmonica.Desktop/SettingsDialog.xaml.cs',
+    'src/Harmonica.Desktop/Models/LibraryItem.cs',
+    'src/Harmonica.Desktop/Services/LibraryStore.cs',
+    'src/Harmonica.Desktop/Services/ThemeService.cs',
+    'tests/Harmonica.Core.Tests/Harmonica.Core.Tests.csproj',
+    'tests/Harmonica.Core.Tests/ScoreCodecTests.cs', 'tests/Harmonica.Core.Tests/LocalSamples.cs',
+    'tests/Harmonica.Core.Tests/packages.lock.json',
+    'tests/Harmonica.Windows.Tests/Harmonica.Windows.Tests.csproj',
+    'tests/Harmonica.Windows.Tests/Program.cs', 'tests/Harmonica.Windows.Tests/packages.lock.json',
+    'tests/Harmonica.Desktop.Tests/Harmonica.Desktop.Tests.csproj',
+    'tests/Harmonica.Desktop.Tests/Program.cs', 'tests/Harmonica.Desktop.Tests/packages.lock.json',
+}
+OPTIONAL_REPO_FILES = {
+    'src/Harmonica.Core/packages.lock.json',
+    'src/Harmonica.Windows/packages.lock.json',
+    'src/Harmonica.InputProbe/packages.lock.json',
 }
 
 
@@ -84,13 +119,14 @@ def check_repo():
     tracked = subprocess.run(['git', 'ls-files', '-z'], cwd=ROOT, capture_output=True)
     if tracked.returncode == 0:
         names = set(tracked.stdout.decode('utf-8').rstrip('\0').split('\0')) - {''}
-        unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES
+        unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES - OPTIONAL_REPO_FILES
         assert not unexpected, f'Unreviewed files in Git index: {sorted(unexpected)}'
         if names:
             missing = (set(PACKAGE_FILES) | REPO_ONLY_FILES) - names
             assert not missing, f'Required files not staged in Git: {sorted(missing)}'
     # The distributable must only contain original TXT fixtures, never songs.
     assert all(not name.endswith('.txt') or name.startswith('scores/original/') for name in PACKAGE_FILES)
+    assert not any(name.startswith(('src/', 'installer/', 'tests/', '.github/')) for name in PACKAGE_FILES), 'Desktop/development files must stay out of the legacy friends ZIP.'
     print(f'PASS: {len(songs)} pinned source records, {len(runs)} recorded log runs, offline data synchronized; public package allowlist checked.')
 
 

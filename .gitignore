@@ -8,3 +8,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+**/bin/
+**/obj/
+**/TestResults/
+.vs/
