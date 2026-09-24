@@ -4,12 +4,79 @@
   "version": "0.2.0-preview.1",
   "date": "2026-09-24",
   "sdk": "10.0.300-x64",
-  "automated_tests": {"core": 89, "windows": 18, "desktop_storage": 13, "result": "passed"},
-  "input_receiver": {"result": "passed", "keyboard_down": 6, "keyboard_up": 6, "mouse_down": 4, "mouse_up": 4, "target": "same-process-test-window"},
-  "gui": {"original_example_preview": "passed", "light_theme": "passed", "dark_theme": "passed", "system_theme_at_startup": "passed"},
-  "installer": "pending",
+  "automated_tests": {
+    "core": 89,
+    "windows": 18,
+    "desktop_storage": 13,
+    "result": "passed"
+  },
+  "input_receiver": {
+    "result": "passed",
+    "keyboard_down": 6,
+    "keyboard_up": 6,
+    "mouse_down": 4,
+    "mouse_up": 4,
+    "target": "same-process-test-window"
+  },
+  "gui": {
+    "original_example_preview": "passed",
+    "light_theme": "passed",
+    "dark_theme": "passed",
+    "system_theme_at_startup": "passed",
+    "search": "passed",
+    "source_download_sha256": "passed",
+    "preview_hotkeys_long_note_stop": "passed",
+    "unsaved_prompt_cancel": "passed",
+    "save_copy_preserves_original": "passed",
+    "single_instance": "passed",
+    "wrong_foreground_rejected": "passed",
+    "installed_original_example_preview": "passed",
+    "volume_persistence": "passed",
+    "favorite_persistence": "passed",
+    "native_folder_dialog_end_to_end": "not-verified",
+    "drag_drop_end_to_end": "not-verified",
+    "live_dpi_variants": "not-tested",
+    "dynamic_system_theme": "not-tested",
+    "network_disconnected_run": "not-tested"
+  },
+  "installer": {
+    "result": "passed",
+    "tested_commit": "fc69147",
+    "ci_run_id": 35951612256,
+    "elevated": false,
+    "verified_payload_files": 410,
+    "desktop_shortcut": "passed",
+    "start_menu_shortcut": "passed",
+    "same_version_reinstall": "passed",
+    "uninstall_retains_data": "passed",
+    "preserved_files": 6,
+    "post_uninstall_reinstall": "passed"
+  },
   "real_game": "not-tested",
   "clean_windows": "not-tested",
   "friend_first_use": "not-tested",
-  "musical_review": "not-reviewed"
+  "musical_review": "not-reviewed",
+  "offscreen_layout": {
+    "result": "passed",
+    "cases": 4,
+    "window_sizes": [
+      "880x600",
+      "1080x720"
+    ],
+    "themes": [
+      "Light",
+      "Dark"
+    ],
+    "scope": "WPF Measure/Arrange at estimated 96-DPI client bounds; not live DPI verification"
+  },
+  "performance": {
+    "scope": "first installed desktop shortcut launch, before UI automation",
+    "installer_bytes": 46443270,
+    "external_ready_ms": 1051,
+    "internal_first_render_ms": 606,
+    "idle_seconds": 30,
+    "working_set_bytes": 143007744,
+    "private_bytes": 104787968,
+    "single_sample": true
+  }
 }

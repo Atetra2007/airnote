@@ -172,7 +172,7 @@ public partial class MainWindow : Window
     {
         parseTimer.Stop(); scoreError = null; parsed = null; lastParseMessage = null;
         LocateErrorButton.Visibility = Visibility.Collapsed;
-        if (current is { Available: false }) { NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  尚未下载"; UpdateAvailability(); return false; }
+        if (current is { Available: false }) { NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  尚未下载"; TimeText.Text = "00:00 / 00:00"; ProgressBar.Value = 0; UpdateAvailability(); return false; }
         try
         {
             var candidate = ReadEditor();
@@ -326,6 +326,7 @@ public partial class MainWindow : Window
     {
         if (!await PrepareImport()) return;
         current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true);
+        SourceText.Text = "个人本地曲谱，不会上传。";
         loading = true; TitleInput.Text = document.Title; BpmInput.Text = "120"; BodyInput.Text = document.Body; loading = false;
         dirty = true; bpmConfirmed = false; editMode = true; DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
         Status("输入你的谱面并保存。默认速度 120 BPM，请按来源调整。");
