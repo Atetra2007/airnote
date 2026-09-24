@@ -118,8 +118,12 @@ try {
     if (-not $IsccPath -or -not (Test-Path -LiteralPath $IsccPath -PathType Leaf)) {
         throw 'Inno Setup 6 was not found. Use -SkipInstaller locally, or the desktop GitHub Actions workflow; this script never installs a compiler.'
     }
-    $compilerInfo = [Diagnostics.FileVersionInfo]::GetVersionInfo($IsccPath)
-    if ($compilerInfo.FileMajorPart -ne 6) { throw 'Use Inno Setup 6 to build this installer.' }
+    # Official ISCC builds need not expose a Windows FileVersion resource.
+    # The compiler's own banner is the supported observable version instead.
+    $compilerBanner = & $IsccPath '/?' 2>&1 | Out-String
+    if ($compilerBanner -notmatch 'Inno Setup 6(?:\.| Command-Line Compiler)') {
+        throw 'Use Inno Setup 6 to build this installer.'
+    }
     Invoke-Checked $IsccPath @('/Qp', "/DPublishDir=$publishRoot", "/DOutputDir=$desktopRoot",
         "/DFilesInclude=$filesInclude", "/DRepoDir=$repoRoot", (Join-Path $repoRoot 'installer\HarmonicaDesk.iss'))
     $setup = Join-Path $desktopRoot 'HarmonicaDesk-Setup-0.2.0-preview.1-win-x64.exe'
