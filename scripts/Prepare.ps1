@@ -96,7 +96,11 @@ try {
     if ($SongId.Count -gt 0) {
         foreach ($id in $SongId) { if ($id -notin $catalog.songs.id) { throw "Unknown song id: $id" } }
         $selected = @($catalog.songs | Where-Object { $_.id -in $SongId })
+        if (@($selected | Where-Object { $_.PSObject.Properties['legacy_compatible'] -and $_.legacy_compatible -eq $false }).Count -gt 0) {
+            throw 'Selected community songs require the desktop app, which downloads and converts them locally. No files were downloaded.'
+        }
     }
+    $selected = @($selected | Where-Object { -not $_.PSObject.Properties['legacy_compatible'] -or $_.legacy_compatible -ne $false })
     if ($Only -ne 'Scores') {
         Assert-FileName $lock.asset.name
         $archive = Join-Path $kitRoot ('local/downloads/' + $lock.asset.name)

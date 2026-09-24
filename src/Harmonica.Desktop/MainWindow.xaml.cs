@@ -67,7 +67,7 @@ public partial class MainWindow : Window
         foreach (var warning in store.Warnings) Log(warning);
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
     }
-    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.2.0-preview.1 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
+    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.2.0-preview.2 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
     private nint WindowMessage(nint hwnd, int msg, nint wParam, nint lParam, ref bool handled)
     {
         if (hotkeys?.HandleMessage(msg, wParam, lParam) == true) handled = true;
@@ -91,7 +91,7 @@ public partial class MainWindow : Window
     {
         if (SongList == null) return;
         var query = SearchInput.Text.Trim();
-        var items = store.Items.Where(item => $"{item.Title} {item.Bpm}".Contains(query, StringComparison.OrdinalIgnoreCase));
+        var items = store.Items.Where(item => item.Matches(query));
         if (FavoriteFilter.IsChecked == true) items = items.Where(item => item.Favorite);
         if (RecentFilter.IsChecked == true) items = items.Where(item => item.LastPlayed != null).OrderByDescending(item => item.LastPlayed);
         else items = items.OrderByDescending(item => item.Example).ThenByDescending(item => item.Available);
@@ -133,16 +133,16 @@ public partial class MainWindow : Window
             DownloadPanel.Visibility = item.Available ? Visibility.Collapsed : Visibility.Visible;
             ScoreView.Visibility = item.Available ? Visibility.Visible : Visibility.Collapsed;
             BodyInput.Visibility = Visibility.Collapsed;
-            SourceText.Text = item.Example ? "本项目原创测试谱，可分享。" : item.SourceId != null
-                ? "来自固定版本曲谱索引；音乐节奏尚待人工校对。旧版验证记录不代表本程序验证。"
-                : "个人本地曲谱，不会上传。";
+            var source = item.SourceId != null && store.Catalog.TryGetValue(item.SourceId, out var catalogSong) ? catalogSong : null;
+            SourceText.Text = source?.Description ?? (item.Example ? "本项目原创测试谱，可分享。" : "个人本地曲谱，不会上传。");
+            ReferenceButton.Visibility = source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
             store.Settings.LastSelectedId = item.Id;
             await store.SaveSettingsAsync();
             ParseEditor();
             RefreshLibrary();
             if (!item.Available) Status("点击“下载曲谱”从作者来源获取，或导入已有 TXT。");
             else if (!bpmConfirmed) Status("文件未注明 BPM。请修改速度，或开始时确认当前速度。", true);
-            else Status("本地试听使用合成音；音乐节奏仍需对照原谱校对。");
+            else Status("本地试听使用合成音；来源与校对记录可在下方展开查看。");
         }
         catch (Exception ex) { loading = false; ShowError(ex); RefreshLibrary(); }
         finally { busy = wasBusy; UpdateAvailability(); }
@@ -172,7 +172,7 @@ public partial class MainWindow : Window
     {
         parseTimer.Stop(); scoreError = null; parsed = null; lastParseMessage = null;
         LocateErrorButton.Visibility = Visibility.Collapsed;
-        if (current is { Available: false }) { NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  尚未下载"; TimeText.Text = "00:00 / 00:00"; ProgressBar.Value = 0; UpdateAvailability(); return false; }
+        if (current is { Available: false }) { NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  {current.EditionLabel}  ·  尚未下载"; TimeText.Text = "00:00 / " + (current.DurationSeconds is double seconds ? FormatTime(seconds) : "00:00"); ProgressBar.Value = 0; UpdateAvailability(); return false; }
         try
         {
             var candidate = ReadEditor();
@@ -327,6 +327,7 @@ public partial class MainWindow : Window
         if (!await PrepareImport()) return;
         current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true);
         SourceText.Text = "个人本地曲谱，不会上传。";
+        ReferenceButton.Visibility = Visibility.Collapsed;
         loading = true; TitleInput.Text = document.Title; BpmInput.Text = "120"; BodyInput.Text = document.Body; loading = false;
         dirty = true; bpmConfirmed = false; editMode = true; DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
         Status("输入你的谱面并保存。默认速度 120 BPM，请按来源调整。");
@@ -356,7 +357,7 @@ public partial class MainWindow : Window
         var item = current; busy = true; DownloadButton.IsEnabled = false; UpdateAvailability();
         operationCancellation = new CancellationTokenSource();
         Status("正在下载并核对曲谱来源…");
-        try { await store.DownloadAsync(item, operationCancellation.Token); await SelectItem(item); Status("下载、散列校验与解析通过；音乐节奏仍待校对。"); }
+        try { await store.DownloadAsync(item, operationCancellation.Token); await SelectItem(item); Status("曲谱已下载并校验，可以试听；下次断网也可打开。"); }
         catch (OperationCanceledException) { Status("下载已取消。"); }
         catch (Exception ex) { ShowError(ex); }
         finally { operationCancellation.Dispose(); operationCancellation = null; busy = false; DownloadButton.IsEnabled = true; RefreshLibrary(); UpdateAvailability(); }
@@ -365,6 +366,13 @@ public partial class MainWindow : Window
     {
         if (current?.SourceId is not string id || !store.Catalog.TryGetValue(id, out var source)) { Status("这份曲谱保存在本地；原创示例随本项目 MIT 许可分享。"); return; }
         if (Uri.TryCreate(source.SourceUrl, UriKind.Absolute, out var url) && url.Scheme == "https" && url.Host == "github.com")
+            try { Process.Start(new ProcessStartInfo(url.AbsoluteUri) { UseShellExecute = true }); } catch (Exception ex) { ShowError(ex); }
+    }
+    private void Reference_Click(object sender, RoutedEventArgs e)
+    {
+        if (current?.SourceId is not string id || !store.Catalog.TryGetValue(id, out var song)) return;
+        if (Uri.TryCreate(song.EvidenceUrl, UriKind.Absolute, out var url) && url.Scheme == "https" &&
+            url.Host is "www.bilibili.com" or "www.douyin.com" or "shushu.fan")
             try { Process.Start(new ProcessStartInfo(url.AbsoluteUri) { UseShellExecute = true }); } catch (Exception ex) { ShowError(ex); }
     }
 

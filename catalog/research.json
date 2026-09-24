@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-24",
+  "platform_metrics": "Bilibili plays and Douyin likes are separate snapshots, not a global ranking.",
+  "bilibili": [
+    {
+      "title": "See You Again",
+      "url": "https://www.bilibili.com/video/BV1Eqb56LEYH/",
+      "plays_display": "53.5万",
+      "outcome": "暂未收录：已找到的 TXT 只有音高序列，缺少逐音时值。"
+    },
+    {
+      "title": "养鼠鼠的小曲",
+      "url": "https://www.bilibili.com/video/BV1RKeP6WETY/",
+      "plays_display": "33.3万",
+      "outcome": "收录另一公开社区来源的 5.6 秒片段；视频仅为选曲参考。"
+    },
+    {
+      "title": "昔涟",
+      "url": "https://www.bilibili.com/video/BV1ibYW6jEjb/",
+      "plays_display": "27.6万",
+      "outcome": "暂未收录：本轮未取得稳定可下载且可核对的节奏谱。"
+    },
+    {
+      "title": "未闻花名",
+      "url": "https://www.bilibili.com/video/BV1YmY86tEPg/",
+      "plays_display": "27.6万",
+      "outcome": "收录社区来源版本；视频不是谱面授权凭据。"
+    },
+    {
+      "title": "欧布小曲",
+      "url": "https://www.bilibili.com/video/BV11xbT6zEjg/",
+      "plays_display": "27万",
+      "outcome": "以红凯之歌收录，并提供别名搜索。"
+    },
+    {
+      "title": "强军战歌",
+      "url": "https://www.bilibili.com/video/BV1J1Yo6yENu/",
+      "plays_display": "23.2万",
+      "outcome": "暂未收录：本轮未取得通过检查的稳定来源文件。"
+    },
+    {
+      "title": "Travelers Encore",
+      "url": "https://www.bilibili.com/video/BV1xzYQ6VEhN/",
+      "plays_display": "27.7万",
+      "outcome": "暂未收录：合奏需整理单声部，本轮未完成。"
+    },
+    {
+      "title": "新曲谱包",
+      "url": "https://www.bilibili.com/video/BV1bBeq6rEaE/",
+      "author": "蓝色懒懒希",
+      "share_url": "https://pan.quark.cn/s/230e375a1921?pwd=82XQ",
+      "outcome": "可见 20260920 ZIP，但未取得登录后的文件内容；千本樱、诀别书已找到另一公开稳定来源，其余未按已导入计数。"
+    }
+  ],
+  "douyin": [
+    {
+      "title": "70首简谱合集",
+      "author": "洲洲分析助手（三角洲行动）",
+      "url": "https://www.douyin.com/search/三角洲%20口琴%20曲谱?modal_id=7685976262029292154",
+      "likes_display": "6.7万",
+      "outcome": "作者合集数量，不等于70份已核对文件。"
+    },
+    {
+      "title": "红尘客栈",
+      "author": "小小DHP",
+      "url": "https://www.douyin.com/search/三角洲%20口琴%20曲谱?modal_id=7683881292835949833",
+      "likes_display": "10.4万",
+      "outcome": "已见演奏，未取得完整可用谱面。"
+    }
+  ],
+  "community": {
+    "repository": "JikoSchnee/delta-harmonica-macro",
+    "commit": "9072cc92e3bd88d5a51c694335d6243734530a09",
+    "selected": 50,
+    "accepted": 48,
+    "license_note": "README明确排除曲谱自动适用代码许可证。只记录原始链接，不镜像曲谱。",
+    "excluded": [
+      {
+        "id": "deck-becd57f78538",
+        "title": "起风了",
+        "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%B5%B7%E9%A3%8E%E4%BA%86-%E4%B9%B0%E8%BE%A3%E6%A4%92%E4%B9%9F%E7%94%A8%E5%88%B8-hewu-e7893b46a3.deltamusic",
+        "reason": "第 1 行，第 100 列：音符时长必须大于音符间隔；请降低 BPM、减小间隔或修改时值。"
+      },
+      {
+        "id": "deck-4e9cc2fd8d37",
+        "title": "情书 Luv Letter",
+        "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%83%85%E4%B9%A6-Luv-Letter-DJ-OKAWARI-Jiko-201de5dd2f.deltamusic",
+        "reason": "第 32 行，第 10 列：超出本程序支持的口琴音域。"
+      }
+    ]
+  },
+  "other_sources": [
+    {
+      "url": "https://shushu.fan/fun/harmonica",
+      "observation": "公开页面显示576条（含不同编配），详情未见公开导出入口。仅作选曲线索。"
+    },
+    {
+      "url": "https://dr-hydra.github.io/Delta-Force-Harmonica/?view=library",
+      "observation": "公开曲库显示 CLOUD LIBRARY NOT CONFIGURED。"
+    },
+    {
+      "url": "https://github.com/ChiZhou6/harmonica-visualizer",
+      "observation": "See You Again TXT 缺时值，其他格式需转换；不作为未核对数量加入。"
+    }
+  ],
+  "not_included_candidates": [
+    "Never Gonna Give You Up",
+    "星之所在",
+    "斗地主",
+    "Bad Apple!!",
+    "青花瓷",
+    "兰亭序",
+    "爱错",
+    "戒烟",
+    "夜曲",
+    "稻香",
+    "最后一页",
+    "一直很安静",
+    "搁浅",
+    "大鱼",
+    "泡沫",
+    "His Theme",
+    "穿越时空的思念",
+    "少女A",
+    "夜航星",
+    "我还有点小糊涂",
+    "准备出发",
+    "残酷天使的行动纲领",
+    "水手",
+    "云宫迅音"
+  ],
+  "not_included_reason": "有相关视频或资料线索，但本轮没有取得同时满足稳定匿名下载、明确节奏和转换检查的文件。未加入产品待整理列表。"
+}

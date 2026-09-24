@@ -91,6 +91,21 @@ class PreparationTests(unittest.TestCase):
         self.assertIn(b'Missing file', result.stdout)
         self.assertFalse(self.score.exists())
 
+    def test_desktop_only_selection_fails_before_downloading(self):
+        self.songs['songs'][0]['legacy_compatible'] = False
+        self.write_metadata()
+        result = self.run_script('-Only', 'Scores', '-SongId', 'sample')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn(b'require the desktop app', result.stdout)
+        self.assertEqual(self.score.read_bytes(), b'1 0 2_ 3_\n')
+
+    def test_default_legacy_preparation_skips_community_format(self):
+        self.songs['songs'][0]['legacy_compatible'] = False
+        self.songs['songs'][0]['sha256'] = '0' * 64
+        self.write_metadata()
+        result = self.run_script('-Only', 'Scores', '-VerifyOnly')
+        self.assertEqual(result.returncode, 0, result.stdout.decode(errors='replace'))
+
 
 if __name__ == '__main__':
     unittest.main()

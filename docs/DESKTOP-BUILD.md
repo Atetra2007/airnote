@@ -14,7 +14,7 @@
 
 首次开发时，为三个测试项目运行 `dotnet restore <测试工程路径>`，为桌面项目运行 `dotnet restore src/Harmonica.Desktop/Harmonica.Desktop.csproj --runtime win-x64 -p:SelfContained=true`；它们的工程文件已启用锁文件，审查并提交生成的 `packages.lock.json`。不要以全局命令行属性把锁文件生成传播到没有外部依赖的共享库，否则测试和桌面发布的 RID 不同会冲突。发行脚本遇到缺失锁文件会中止。构建时先正常退出开发输出目录中的应用；GUI 验收可使用发布目录的单独副本，避免锁住待编译文件。
 
-主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.2.0-preview.1`，Windows 文件版本 `0.2.0.0`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
+主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.2.0-preview.2`，Windows 文件版本 `0.2.0.0`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
 
 ## 安装器
 
@@ -30,7 +30,7 @@
 
 最终附件：
 
-- `HarmonicaDesk-Setup-0.2.0-preview.1-win-x64.exe`
+- `HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe`
 - 同名 `.exe.sha256`
 - `publish-manifest.json`：实际打包文件的名称、大小、SHA-256，无开发机器绝对路径。
 

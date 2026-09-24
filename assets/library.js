@@ -33,7 +33,7 @@
     const query = search.value.trim().toLocaleLowerCase();
     return songs.filter(song => {
       const matchesFilter = filter === 'all' || (filter === 'sample' && song.sample) || (filter === 'log-tested' && isLogTested(song)) || (filter === 'reviewed' && isReviewed(song)) || (filter === 'favorites' && favorites.has(song.id));
-      return matchesFilter && `${song.title} ${song.filename} ${song.bpm}`.toLocaleLowerCase().includes(query);
+      return matchesFilter && `${song.title} ${(song.aliases || []).join(' ')} ${song.filename} ${song.bpm}`.toLocaleLowerCase().includes(query);
     });
   };
   function updateSelection() {
@@ -72,15 +72,15 @@
       const titleCell = node('td');
       const title = node('div', song.title, 'song-name');
       if (song.sample) title.append(node('span', '首轮', 'sample-badge'));
-      titleCell.append(title, node('div', `${song.variant} · v0.2.1 · TXT`, 'song-version'));
+      titleCell.append(title, node('div', `${song.variant} · ${Math.floor((song.duration_seconds || 0) / 60)}:${String(Math.round(song.duration_seconds || 0) % 60).padStart(2, '0')} · ${song.legacy_compatible === false ? '桌面版下载' : 'TXT'}`, 'song-version'));
       titleCell.title = song.filename;
       const bpmCell = node('td');
       const bpm = node('span', String(song.bpm), 'bpm');
       bpm.append(node('small', 'BPM'));
       bpmCell.append(bpm);
       const stateCell = node('td');
-      stateCell.append(node('span', isReviewed(song) ? '已校对' : '待校对', `review-badge${isReviewed(song) ? ' reviewed' : ''}`));
-      stateCell.append(node('div', isLogTested(song) ? '导入 / 日志通过' : song.verification.app_import === 'passed' ? '导入通过 · 日志待测' : '导入 / 日志待测', 'song-version'));
+      stateCell.append(node('span', isReviewed(song) ? '已校对' : song.verification.rhythm === 'source-timing-verified' ? '来源时值已核对' : '待音乐校对', `review-badge${isReviewed(song) ? ' reviewed' : ''}`));
+      stateCell.append(node('div', isLogTested(song) ? '导入 / 日志通过' : song.verification.app_import === 'passed' ? '导入通过 · 日志待测' : song.verification.conversion === 'passed' ? '本地转换 / 解析通过' : '导入 / 日志待测', 'song-version'));
       const actionCell = node('td');
       const actions = node('div', undefined, 'row-actions');
       const star = node('button', favorites.has(song.id) ? '★' : '☆', 'favorite');
@@ -92,7 +92,7 @@
         try { localStorage.setItem(storageKey, JSON.stringify([...favorites])); } catch { feedback.textContent = '浏览器限制了本地存储；收藏在本次打开期间仍可使用。'; }
         render();
       });
-      actions.append(sourceLink('来源', song.source_url), sourceLink('原始 TXT ↗', song.download_url), star);
+      actions.append(sourceLink('来源', song.source_url), sourceLink(song.legacy_compatible === false ? '来源文件 ↗' : '原始 TXT ↗', song.download_url), star);
       actionCell.append(actions);
       row.append(checkCell, titleCell, bpmCell, stateCell, actionCell);
       tbody.append(row);

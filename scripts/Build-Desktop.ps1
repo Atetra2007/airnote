@@ -11,6 +11,7 @@ $repoRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $desktopRoot = Join-Path $repoRoot 'artifacts\desktop'
 $publishRoot = Join-Path $desktopRoot 'publish'
 $project = Join-Path $repoRoot 'src\Harmonica.Desktop\Harmonica.Desktop.csproj'
+$appVersion = ([xml](Get-Content -LiteralPath $project -Raw)).Project.PropertyGroup.Version
 $testProjects = @(
     @{ Path = 'tests\Harmonica.Core.Tests\Harmonica.Core.Tests.csproj'; Kind = 'test' },
     @{ Path = 'tests\Harmonica.Windows.Tests\Harmonica.Windows.Tests.csproj'; Kind = 'run' },
@@ -125,8 +126,8 @@ try {
         throw 'Use Inno Setup 6 to build this installer.'
     }
     Invoke-Checked $IsccPath @('/Qp', "/DPublishDir=$publishRoot", "/DOutputDir=$desktopRoot",
-        "/DFilesInclude=$filesInclude", "/DRepoDir=$repoRoot", (Join-Path $repoRoot 'installer\HarmonicaDesk.iss'))
-    $setup = Join-Path $desktopRoot 'HarmonicaDesk-Setup-0.2.0-preview.1-win-x64.exe'
+        "/DFilesInclude=$filesInclude", "/DRepoDir=$repoRoot", "/DAppVersion=$appVersion", (Join-Path $repoRoot 'installer\HarmonicaDesk.iss'))
+    $setup = Join-Path $desktopRoot "HarmonicaDesk-Setup-$appVersion-win-x64.exe"
     if (-not (Test-Path -LiteralPath $setup -PathType Leaf)) { throw 'Compiler completed without the expected installer.' }
     $digest = (Get-FileHash -LiteralPath $setup -Algorithm SHA256).Hash.ToLowerInvariant()
     [IO.File]::WriteAllText($setup + '.sha256', "$digest  $([IO.Path]::GetFileName($setup))`n", [Text.Encoding]::ASCII)

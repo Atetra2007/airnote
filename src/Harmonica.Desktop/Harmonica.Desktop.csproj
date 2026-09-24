@@ -8,7 +8,7 @@
     <AssemblyName>HarmonicaDesk</AssemblyName>
     <Product>口琴小曲库</Product>
     <RootNamespace>Harmonica.Desktop</RootNamespace>
-    <Version>0.2.0-preview.1</Version>
+    <Version>0.2.0-preview.2</Version>
     <FileVersion>0.2.0.0</FileVersion>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\App.ico</ApplicationIcon>

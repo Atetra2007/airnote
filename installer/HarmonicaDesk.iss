@@ -11,7 +11,9 @@
   #error RepoDir is required.
 #endif
 
-#define AppVersion "0.2.0-preview.1"
+#ifndef AppVersion
+  #error AppVersion is required. Use scripts/Build-Desktop.ps1.
+#endif
 #define AppExe "HarmonicaDesk.exe"
 
 [Setup]

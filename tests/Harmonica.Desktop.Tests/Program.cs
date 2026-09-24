@@ -1,8 +1,12 @@
 using System.Text;
 using System.Text.Json;
+using System.Net;
+using System.Net.Http;
 using Harmonica.Core;
 using Harmonica.Desktop.Models;
 using Harmonica.Desktop.Services;
+
+if (args.Length > 0) return await CatalogAudit.Run(args);
 
 var scenarios = new (string Name, Func<Task> Run)[]
 {
@@ -19,6 +23,8 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("旧使用包目录与导入数量上限", OldKitDirectory),
     ("并发JSON写入保留最终状态", ConcurrentMetadata),
     ("下载取消与无效来源不写入", DownloadFailures),
+    ("社区来源校验、本地转换、离线重开与升级保留", ConvertedDownloadAndUpgrade),
+    ("下载失败重试、校验失败与防覆盖", VerifiedDownloadFailures),
 };
 var failures = 0;
 foreach (var scenario in scenarios)
@@ -242,6 +248,75 @@ static async Task DownloadFailures()
 }
 
 static void Check(bool condition, string message) { if (!condition) throw new InvalidOperationException(message); }
+
+static byte[] CommunityBytes(string body = "1_ 2_ 3' 0") => Encoding.UTF8.GetBytes(JsonSerializer.Serialize(new
+{ format = "delta-music", version = 1, title = "原创下载测试", bpm = 120, jianpu = body, sharedBy = "作者", key = "1=G" }));
+
+static async Task WriteCommunityCatalog(Fixture fixture, byte[] bytes, string? hash = null, string? convertedHash = null)
+{
+    var text = CommunityScoreConverter.ToText(Encoding.UTF8.GetString(bytes));
+    var record = new { id = "fixture", title = "原创下载测试", filename = "fixture.txt", bpm = 120,
+        size = bytes.Length, sha256 = hash ?? LibraryStore.Hash(bytes), converted_sha256 = convertedHash ?? LibraryStore.Hash(Encoding.UTF8.GetBytes(text)),
+        download_format = CommunityScoreConverter.Format, aliases = new[] { "替代曲名", "Alternative" }, variant = "副歌片段", arranger = "作者",
+        duration_seconds = ScoreCodec.Parse(ScoreCodec.Read(text)).DurationSeconds,
+        download_url = "https://raw.githubusercontent.com/example/example/0123456789012345678901234567890123456789/fixture.deltamusic",
+        source_url = "https://github.com/example/example" };
+    await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { songs = new[] { record } }));
+}
+
+static async Task ConvertedDownloadAndUpgrade()
+{
+    using var fixture = new Fixture();
+    var bytes = CommunityBytes();
+    await WriteCommunityCatalog(fixture, bytes);
+    var store = await fixture.CreateStore(() => new HttpClient(new StubDownload(bytes)));
+    var item = store.Items.Single(i => i.SourceId == "fixture");
+    Check(item.Matches("替代曲名") && item.Matches("alternative") && item.EditionLabel.Contains("副歌片段"), "别名与版本须可查找。");
+    await store.DownloadAsync(item, CancellationToken.None);
+    var parsed = ScoreCodec.Parse(await store.ReadDocumentAsync(item));
+    Check(item.Available && item.DurationSeconds == 1.5 && parsed.Events.Count == 4, "转换后須存为可直接读取的 TXT。");
+    Check(item.Hash == LibraryStore.Hash(await File.ReadAllBytesAsync(store.ScorePath(item))), "转换后散列须对应本地 TXT。");
+    item.Favorite = true; item.LastPlayed = DateTimeOffset.Parse("2026-09-24T12:00:00Z");
+    await store.SaveDocumentAsync(item, Doc("6 7 0", "我的改编"));
+    var before = await File.ReadAllBytesAsync(store.ScorePath(item));
+    await WriteCommunityCatalog(fixture, CommunityBytes("2 4 6 0"));
+    var reopened = await fixture.CreateStore(() => throw new Exception("Offline: network must not be called"));
+    var retained = reopened.Items.Single(i => i.SourceId == "fixture");
+    await reopened.DownloadAsync(retained, CancellationToken.None);
+    Check(retained.Favorite && retained.LastPlayed == item.LastPlayed && retained.Title == "我的改编", "新版目录不得覆盖个人标题、收藏和最近记录。");
+    var after = await File.ReadAllBytesAsync(reopened.ScorePath(retained));
+    Check(before.SequenceEqual(after), "升级必须保留个人谱面。");
+    Check((await reopened.ReadDocumentAsync(retained)).Body == "6 7 0", "离线读取保持个人修改。");
+    await File.WriteAllTextAsync(Path.Combine(store.Root, "settings.json"), "{\"Theme\":\"Dark\",\"Guide\":{\"Mode\":\"Rhythm\"}}");
+    reopened = await fixture.CreateStore(); await reopened.SaveSettingsAsync();
+    Check((await File.ReadAllTextAsync(Path.Combine(store.Root, "settings.json"))).Contains("Guide"), "兼容升级须保留未知设置。");
+}
+
+static async Task VerifiedDownloadFailures()
+{
+    using var fixture = new Fixture();
+    var bytes = CommunityBytes();
+    await WriteCommunityCatalog(fixture, bytes, new string('0', 64));
+    var store = await fixture.CreateStore(() => new HttpClient(new StubDownload(bytes)));
+    var item = store.Items.Single(i => i.SourceId == "fixture");
+    await Throws<InvalidDataException>(() => store.DownloadAsync(item, CancellationToken.None));
+    Check(!item.Available && item.FileName == null, "原始文件散列失败不得保存。");
+    await WriteCommunityCatalog(fixture, bytes, convertedHash: new string('0', 64));
+    store = await fixture.CreateStore(() => new HttpClient(new StubDownload(bytes)));
+    item = store.Items.Single(i => i.SourceId == "fixture");
+    await Throws<InvalidDataException>(() => store.DownloadAsync(item, CancellationToken.None));
+    Check(!item.Available && item.FileName == null, "转换散列失败不得保存。");
+    await WriteCommunityCatalog(fixture, bytes);
+    var attempts = 0;
+    store = await fixture.CreateStore(() => new HttpClient(new StubDownload(bytes, ++attempts == 1 ? HttpStatusCode.ServiceUnavailable : HttpStatusCode.OK)));
+    item = store.Items.Single(i => i.SourceId == "fixture");
+    await Throws<HttpRequestException>(() => store.DownloadAsync(item, CancellationToken.None));
+    await store.DownloadAsync(item, CancellationToken.None);
+    Check(item.Available && attempts == 2, "失败后须能重试。");
+    item.Available = false; item.FileName = null;
+    await Throws<IOException>(() => store.DownloadAsync(item, CancellationToken.None));
+    Check(!item.Available, "索引缺失时不得覆盖已存在的个人文件。");
+}
 static async Task Throws<T>(Func<Task> action) where T : Exception
 {
     try { await action(); }
@@ -268,9 +343,9 @@ sealed class Fixture : IDisposable
         File.WriteAllText(Path.Combine(Assets, "catalog.json"), "{\"songs\":[]}");
         File.WriteAllText(Path.Combine(Assets, "Examples", "original.txt"), ScoreCodec.Write(new ScoreDocument("原创测试", 120, 20, "1 2_ 3_ 0 |")));
     }
-    public async Task<LibraryStore> CreateStore()
+    public async Task<LibraryStore> CreateStore(Func<HttpClient>? factory = null)
     {
-        var store = new LibraryStore(Path.Combine(Root, "个人 数据"), Assets);
+        var store = new LibraryStore(Path.Combine(Root, "个人 数据"), Assets, factory);
         await store.InitializeAsync();
         return store;
     }
@@ -289,5 +364,14 @@ sealed class Fixture : IDisposable
             || !Path.GetFileName(resolved).StartsWith("HarmonicaDesk-tests-", StringComparison.Ordinal))
             throw new InvalidOperationException("Refusing to remove a directory outside the test fixture root.");
         if (Directory.Exists(resolved)) Directory.Delete(resolved, recursive: true);
+    }
+}
+
+sealed class StubDownload(byte[] bytes, HttpStatusCode status = HttpStatusCode.OK) : HttpMessageHandler
+{
+    protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        return Task.FromResult(new HttpResponseMessage(status) { Content = new ByteArrayContent(bytes), RequestMessage = request });
     }
 }

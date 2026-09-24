@@ -52,6 +52,13 @@ OPTIONAL_REPO_FILES = {
     'src/Harmonica.Windows/packages.lock.json',
     'src/Harmonica.InputProbe/packages.lock.json',
 }
+REPO_ONLY_FILES.update({
+    'src/Harmonica.Core/CommunityScoreConverter.cs',
+    'tests/Harmonica.Core.Tests/CommunityScoreTests.cs',
+    'tests/Harmonica.Desktop.Tests/CatalogAudit.cs',
+    'scripts/audit_community.py', 'docs/CATALOG-EXPANSION.md',
+    'catalog/catalog-audit.json', 'catalog/research.json',
+})
 
 
 class LocalReferences(HTMLParser):
@@ -79,7 +86,8 @@ def check_repo():
     assert re.fullmatch(r'[0-9a-f]{64}', lock['asset']['sha256'])
     assert lock['asset']['url'] == f"https://github.com/{lock['repository']}/releases/download/{lock['tag']}/{lock['asset']['name']}"
     songs = catalog['songs']
-    assert len(songs) == 10 and len({song['id'] for song in songs}) == 10
+    assert songs and len({song['id'] for song in songs}) == len(songs)
+    assert len({(song['title'].casefold(), song['variant']) for song in songs}) == len(songs)
     assert {s['id'] for s in songs if s['sample']} == {'father', 'sunny-day', 'rain-love'}
     assert validation['schema_version'] == 1
     assert validation['scope'] == 'original-player-log-only'
@@ -93,14 +101,28 @@ def check_repo():
         assert 0 < song['size'] <= 1_048_576
         assert Path(song['filename']).name == song['filename'] and '..' not in song['filename']
         assert song['filename'].endswith('.txt')
-        assert song['source_commit'] == lock['commit']
+        assert re.fullmatch(r'[0-9a-f]{40}', song['source_commit'])
+        repository = song['source_repository']
+        commit = song['source_commit']
+        assert re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository)
         source_path = quote(song['source_path'], safe='/')
-        assert song['source_url'] == f"https://github.com/{lock['repository']}/blob/{lock['commit']}/{source_path}"
-        assert song['download_url'] == f"https://raw.githubusercontent.com/{lock['repository']}/{lock['commit']}/{source_path}"
+        assert song['source_url'] == f"https://github.com/{repository}/blob/{commit}/{source_path}"
+        assert song['download_url'] == f"https://raw.githubusercontent.com/{repository}/{commit}/{source_path}"
         assert song['local_path'] == 'local/scores/' + song['filename']
         assert re.fullmatch(r'[0-9a-f]{40}', song['git_blob_sha1'])
         assert re.fullmatch(r'[0-9a-f]{64}', song['sha256'])
-        assert song['redistribution'] == 'permission-unconfirmed'
+        assert song['redistribution'] in {'permission-unconfirmed', 'source-link-only'}
+        assert len(song.get('aliases', [])) == len(set(song.get('aliases', [])))
+        if song.get('download_format') == 'delta-music/1':
+            assert song['redistribution'] == 'source-link-only' and song['legacy_compatible'] is False
+            assert song['source_path'].endswith('.deltamusic')
+            assert re.fullmatch(r'[0-9a-f]{64}', song['converted_sha256'])
+            assert song['verification']['conversion'] == 'passed'
+            assert song['verification']['rhythm'] == 'source-timing-verified'
+            assert song['events'] > 0 and song['beats'] > 0
+            assert abs(song['duration_seconds'] - song['beats'] * 60 / song['bpm']) < .001
+        else:
+            assert song.get('download_format', 'harmonica-txt') == 'harmonica-txt'
         assert song['verification']['app_import'] in {'not-tested', 'passed', 'failed'}
         assert song['verification']['log_playback'] in {'not-tested', 'passed', 'failed'}
         if song['verification']['log_playback'] == 'passed':
@@ -110,9 +132,16 @@ def check_repo():
             assert run['bpm'] == song['bpm']
             assert run['events'] > 0 and run['beats'] > 0
             assert abs(run['expected_seconds'] - run['beats'] * 60 / run['bpm']) < 0.001
-        assert song['verification']['rhythm'] in {'not-reviewed', 'reviewed', 'issues-found'}
+        assert song['verification']['rhythm'] in {'not-reviewed', 'reviewed', 'issues-found', 'source-timing-verified'}
         assert song['verification']['game'] == 'not-tested'
     assert (ROOT / 'assets/catalog.js').read_text(encoding='utf-8') == render_catalog(), 'Run scripts/build_catalog.py'
+    audit = json.loads((ROOT / 'catalog/catalog-audit.json').read_text(encoding='utf-8'))
+    results = {row['id']: row for row in audit['songs']}
+    assert set(results) == {song['id'] for song in songs}
+    for song in songs:
+        assert results[song['id']]['status'] == 'passed'
+        assert results[song['id']]['source_sha256'] == song['sha256']
+        assert results[song['id']]['duration_seconds'] == song['duration_seconds']
     for _, path in package_files(ROOT):
         path.read_text(encoding='utf-8')
     LocalReferences().feed((ROOT / 'index.html').read_text(encoding='utf-8'))

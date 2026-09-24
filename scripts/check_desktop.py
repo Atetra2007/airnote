@@ -183,7 +183,9 @@ def validate_payload(publish: Path, root: Path = ROOT) -> list[dict]:
 def write_outputs(publish: Path, records: list[dict], manifest: Path, include: Path) -> None:
     manifest.parent.mkdir(parents=True, exist_ok=True)
     include.parent.mkdir(parents=True, exist_ok=True)
-    manifest.write_text(json.dumps({'schema_version': 1, 'product': PRODUCT, 'version': '0.2.0-preview.1',
+    version = ET.parse(ROOT / 'src/Harmonica.Desktop/Harmonica.Desktop.csproj').findtext('.//Version')
+    require(bool(version), 'Product version is missing.')
+    manifest.write_text(json.dumps({'schema_version': 1, 'product': PRODUCT, 'version': version,
                                     'files': records}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = ['; Generated only after publication boundary checks. Do not edit.']
     for record in records:
