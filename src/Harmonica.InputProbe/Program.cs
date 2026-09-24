@@ -14,7 +14,7 @@ namespace Harmonica.InputProbe;
 public static class Program
 {
     [STAThread]
-    public static void Main() => new Application().Run(new ProbeWindow());
+    public static void Main(string[] args) => new Application().Run(args.Contains("--guide") ? new GuideProbeWindow() : new ProbeWindow());
 }
 
 /// <summary>Manual verification only. Nothing is sent until the user presses the test button.</summary>

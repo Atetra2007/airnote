@@ -35,6 +35,9 @@ public sealed class LibraryStore
     {
         Settings = ReadJsonOrPreserve<UserSettings>("settings.json") ?? new();
         Settings.Volume = float.IsFinite(Settings.Volume) ? Math.Clamp(Settings.Volume, 0, 1) : .2f;
+        Settings.Guide ??= new();
+        Settings.Guide.Normalize();
+        if (string.IsNullOrWhiteSpace(Settings.OverlayHotkey)) Settings.OverlayHotkey = "F7";
         Items = ReadJsonOrPreserve<List<LibraryItem>>("library.json") ?? [];
         // Only a basename may be persisted. The installed application never writes outside Scores.
         foreach (var item in Items)

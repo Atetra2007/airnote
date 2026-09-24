@@ -52,7 +52,30 @@ public sealed class UserSettings
     public string Theme { get; set; } = "System";
     public string StartHotkey { get; set; } = "F6";
     public string StopHotkey { get; set; } = "F8";
+    public string OverlayHotkey { get; set; } = "F7";
+    public GuidePreferences Guide { get; set; } = new();
     public float Volume { get; set; } = 0.2f;
     public string? LastSelectedId { get; set; }
     [JsonExtensionData] public Dictionary<string, System.Text.Json.JsonElement>? ExtraData { get; set; }
+}
+
+public sealed class GuidePreferences
+{
+    public string Mode { get; set; } = "Rhythm";
+    public double Speed { get; set; } = 1;
+    public double Opacity { get; set; } = .75;
+    public double Width { get; set; } = 560;
+    public double Height { get; set; } = 280;
+    public double? Left { get; set; }
+    public double? Top { get; set; }
+    public void Normalize()
+    {
+        if (Mode is not ("Rhythm" or "WaitForKey")) Mode = "Rhythm";
+        if (Speed is not (.5 or .75 or 1 or 1.25 or 1.5)) Speed = 1;
+        Opacity = double.IsFinite(Opacity) ? Math.Clamp(Opacity, .35, .95) : .75;
+        Width = double.IsFinite(Width) ? Math.Clamp(Width, 440, 1600) : 560;
+        Height = double.IsFinite(Height) ? Math.Clamp(Height, 240, 1000) : 280;
+        if (Left is { } x && !double.IsFinite(x)) Left = null;
+        if (Top is { } y && !double.IsFinite(y)) Top = null;
+    }
 }

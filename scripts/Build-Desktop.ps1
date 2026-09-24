@@ -103,6 +103,9 @@ try {
     $filesInclude = Join-Path $desktopRoot 'publish-files.iss'
     Invoke-Checked $python @('scripts/check_desktop.py', '--publish', $publishRoot, '--copy-licenses',
         '--manifest', $manifest, '--inno-include', $filesInclude)
+    $previewZip = Join-Path $desktopRoot "HarmonicaDesk-$appVersion-win-x64.zip"
+    Invoke-Checked $python @('scripts/package_desktop_preview.py', '--publish', $publishRoot,
+        '--manifest', $manifest, '--output', $previewZip)
     if ($SkipInstaller) {
         Write-Host "Self-contained payload verified: $publishRoot"
         Write-Host 'Installer deliberately skipped. No installation or desktop shortcut was created.'

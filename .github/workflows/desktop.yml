@@ -41,9 +41,11 @@ jobs:
         run: ./scripts/Build-Desktop.ps1 -IsccPath $env:HARMONICA_ISCC
       - uses: actions/upload-artifact@v4
         with:
-          name: HarmonicaDesk-0.2.0-preview.2-win-x64
+          name: HarmonicaDesk-0.3.0-preview.1-win-x64
           if-no-files-found: error
           path: |
-            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe
-            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe.sha256
+            artifacts/desktop/HarmonicaDesk-Setup-0.3.0-preview.1-win-x64.exe
+            artifacts/desktop/HarmonicaDesk-Setup-0.3.0-preview.1-win-x64.exe.sha256
             artifacts/desktop/publish-manifest.json
+            artifacts/desktop/HarmonicaDesk-0.3.0-preview.1-win-x64.zip
+            artifacts/desktop/HarmonicaDesk-0.3.0-preview.1-win-x64.zip.sha256

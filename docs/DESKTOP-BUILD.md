@@ -14,7 +14,15 @@
 
 首次开发时，为三个测试项目运行 `dotnet restore <测试工程路径>`，为桌面项目运行 `dotnet restore src/Harmonica.Desktop/Harmonica.Desktop.csproj --runtime win-x64 -p:SelfContained=true`；它们的工程文件已启用锁文件，审查并提交生成的 `packages.lock.json`。不要以全局命令行属性把锁文件生成传播到没有外部依赖的共享库，否则测试和桌面发布的 RID 不同会冲突。发行脚本遇到缺失锁文件会中止。构建时先正常退出开发输出目录中的应用；GUI 验收可使用发布目录的单独副本，避免锁住待编译文件。
 
-主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.2.0-preview.2`，Windows 文件版本 `0.2.0.0`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
+主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.3.0-preview.1`，Windows 文件版本 `0.3.0.0`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
+
+额外的跟谱组件检查：`dotnet run --project tests/Harmonica.LayoutChecks -c Release`。它不创建实际桌面窗口，输出最小／默认尺寸、三种 DPI 的布局图及长谱绘制记录到 `artifacts/guide-validation/components`。使用独立数据做实际 UI 验证：`HarmonicaDesk.exe --data-dir "本机测试目录"`，不要覆盖个人数据。
+
+原生窗口检查：`dotnet run --project tests/Harmonica.LayoutChecks -c Release -- --native`。它创建但不显示 30 个浮窗 HWND，核对分层／穿透／不激活样式、解锁再锁定、屏幕外位置恢复和句柄释放，不注入输入或抢占前台。这不能代替实际游戏的焦点、穿透和跨显示器验收。
+
+物理输入接收器：`dotnet run --project src/Harmonica.InputProbe -c Release -- --guide`。此入口只运行只读监听与等键引擎；开始前不监听，需人工按真实键鼠。它还提供 100 次监听注册／释放自检和证据导出。普通自动化模拟按键不等于物理 Raw Input；原有自动输入接收测试仍是无 `--guide` 的入口。
+
+`-SkipInstaller` 也会生成经过逐文件校验的 `HarmonicaDesk-0.3.0-preview.1-win-x64.zip` 和 SHA-256。ZIP 包含 `App/` 内的自包含程序和根目录使用说明，原始截图、个人数据和测试接收器不进入包。此本地预览未发布 Release。
 
 ## 安装器
 
@@ -30,7 +38,7 @@
 
 最终附件：
 
-- `HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe`
+- `HarmonicaDesk-Setup-0.3.0-preview.1-win-x64.exe`
 - 同名 `.exe.sha256`
 - `publish-manifest.json`：实际打包文件的名称、大小、SHA-256，无开发机器绝对路径。
 

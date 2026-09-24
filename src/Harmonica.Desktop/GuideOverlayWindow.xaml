@@ -1,0 +1,31 @@
+<Window x:Class="Harmonica.Desktop.GuideOverlayWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Harmonica.Desktop"
+        Title="跟谱手弹 · 口琴小曲库" Width="560" Height="280" MinWidth="440" MinHeight="240"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" Topmost="True" ShowActivated="False" ShowInTaskbar="False" ResizeMode="NoResize"
+        FontFamily="Microsoft YaHei UI" Foreground="#F0F5F3" UseLayoutRounding="True">
+    <Border x:Name="Frame" CornerRadius="12" BorderBrush="#52675E" BorderThickness="1" Padding="15,10,15,10">
+        <Grid>
+            <Grid.RowDefinitions><RowDefinition Height="32"/><RowDefinition Height="*"/><RowDefinition Height="43"/><RowDefinition Height="18"/></Grid.RowDefinitions>
+            <Grid Background="Transparent">
+                <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                <TextBlock x:Name="SongTitle" Text="跟谱手弹" FontSize="13" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" Margin="0,0,12,0"/>
+                <TextBlock x:Name="ModeLabel" Grid.Column="1" Foreground="#8AD8BC" FontSize="10" Text="节奏跟弹 · 1×" Margin="0,2,0,0"/>
+                <Thumb x:Name="HeaderDragHandle" Grid.ColumnSpan="2" Cursor="SizeAll" DragDelta="Header_DragDelta" DragCompleted="Header_DragCompleted" Focusable="False">
+                    <Thumb.Template><ControlTemplate TargetType="Thumb"><Border Background="Transparent"/></ControlTemplate></Thumb.Template>
+                </Thumb>
+            </Grid>
+            <local:GuideNoteView x:Name="Notes" Grid.Row="1" AutomationProperties.Name="八轨跟谱音符"/>
+            <Border Grid.Row="1" x:Name="StatePlate" Background="#E61B2426" CornerRadius="8" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16,9" MaxWidth="370" IsHitTestVisible="False">
+                <TextBlock x:Name="StateLabel" FontSize="15" FontWeight="SemiBold" TextAlignment="Center" TextWrapping="Wrap"/>
+            </Border>
+            <Grid Grid.Row="2" Margin="0,5,0,0">
+                <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                <StackPanel><TextBlock x:Name="CurrentKey" Text="当前 —" FontSize="14" TextTrimming="CharacterEllipsis"/><TextBlock x:Name="NextKey" Text="下一音 —" FontSize="11" Foreground="#A9B6B1" Margin="0,2,0,0" TextTrimming="CharacterEllipsis"/></StackPanel>
+                <TextBlock x:Name="PositionLabel" Grid.Column="1" FontSize="10" Foreground="#A9B6B1" VerticalAlignment="Center" Margin="12,0,0,0"/>
+            </Grid>
+            <TextBlock x:Name="ShortcutLabel" Grid.Row="3" FontSize="9" Foreground="#A9B6B1" Text="F6 开始 / 暂停　F7 浮窗　F8 停止"/>
+            <Thumb x:Name="ResizeGrip" Grid.Row="3" Width="20" Height="18" HorizontalAlignment="Right" Cursor="SizeNWSE" DragDelta="ResizeGrip_DragDelta" Visibility="Collapsed">
+                <Thumb.Template><ControlTemplate TargetType="Thumb"><TextBlock Text="◢" Foreground="#8AD8BC" Background="Transparent" TextAlignment="Right"/></ControlTemplate></Thumb.Template>
+            </Thumb>
+        </Grid>
+    </Border>
+</Window>

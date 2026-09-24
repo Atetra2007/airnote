@@ -22,7 +22,9 @@ var tests = new (string Name, Func<Task> Run)[]
     ("Input refuses mouse actions outside the target window", MouseGuard),
     ("Hotkey parsing rejects unsafe or malformed chords", Hotkeys),
     ("Invalid volume rejected", VolumeValidation),
-};
+    ("Guide IL has no route to synthetic input/audio output", GuideIsolation.Verify),
+    ("Guide Raw Input ABI and packet decoding", GuideRawPacketTests.Verify),
+}.Concat(GuideTests.All).ToArray();
 var failures = 0;
 foreach (var (name, run) in tests)
 {

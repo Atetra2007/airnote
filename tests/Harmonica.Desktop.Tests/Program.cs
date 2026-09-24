@@ -25,6 +25,8 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("下载取消与无效来源不写入", DownloadFailures),
     ("社区来源校验、本地转换、离线重开与升级保留", ConvertedDownloadAndUpgrade),
     ("下载失败重试、校验失败与防覆盖", VerifiedDownloadFailures),
+    ("旧设置添加跟谱默认值并保留已有热键", GuideMigration),
+    ("跟谱设置重启保留，异常尺寸和倍率恢复安全值", GuidePersistence),
 };
 var failures = 0;
 foreach (var scenario in scenarios)
@@ -96,6 +98,35 @@ static async Task Persistence()
     Check(saved.Favorite && saved.LastPlayed == item.LastPlayed && saved.Available, "曲库状态应重启保留。");
     Check(reopened.Settings.Theme == "Dark" && reopened.Settings.Volume == .35f && reopened.Settings.LastSelectedId == item.Id, "设置应重启保留。");
     Check((await reopened.ReadDocumentAsync(saved)).GapMs == 25, "曲谱间隔应持久化。");
+}
+
+static async Task GuideMigration()
+{
+    using var fixture = new Fixture();
+    var store = await fixture.CreateStore();
+    foreach (var json in new[] { "{\"StartHotkey\":\"F7\",\"StopHotkey\":\"F9\",\"Volume\":0.35}", "{\"Guide\":null,\"OverlayHotkey\":\"\"}" })
+    {
+        await File.WriteAllTextAsync(Path.Combine(store.Root, "settings.json"), json);
+        var reopened = await fixture.CreateStore();
+        var prefs = reopened.Settings.Guide;
+        Check(prefs.Mode == "Rhythm" && prefs.Speed == 1 && prefs.Opacity == .75 && prefs.Width == 560 && prefs.Height == 280, "旧设置须有默认跟谱字段。");
+        Check(prefs.Left == null && prefs.Top == null && reopened.Settings.OverlayHotkey == "F7", "位置缺省，浮窗热键默认 F7。");
+        if (json.Contains("F9")) Check(reopened.Settings.StartHotkey == "F7" && reopened.Settings.StopHotkey == "F9" && reopened.Settings.Volume == .35f, "新增字段不能覆盖现有开始停止热键。");
+    }
+}
+
+static async Task GuidePersistence()
+{
+    using var fixture = new Fixture();
+    var store = await fixture.CreateStore();
+    store.Settings.Guide = new() { Mode = "WaitForKey", Speed = .75, Opacity = .6, Width = 640, Height = 300, Left = -1400, Top = 120 };
+    store.Settings.OverlayHotkey = "Ctrl+F10";
+    await store.SaveSettingsAsync();
+    var reopened = await fixture.CreateStore(); var prefs = reopened.Settings.Guide;
+    Check(prefs.Mode == "WaitForKey" && prefs.Speed == .75 && prefs.Opacity == .6 && prefs.Width == 640 && prefs.Height == 300 && prefs.Left == -1400 && prefs.Top == 120 && reopened.Settings.OverlayHotkey == "Ctrl+F10", "跟谱设置应完整持久化，负屏幕坐标有效。");
+    prefs.Mode = "unknown"; prefs.Speed = double.NaN; prefs.Opacity = double.PositiveInfinity; prefs.Width = 10; prefs.Height = 9000; prefs.Left = double.NaN; prefs.Top = double.NegativeInfinity;
+    prefs.Normalize();
+    Check(prefs.Mode == "Rhythm" && prefs.Speed == 1 && prefs.Opacity == .75 && prefs.Width == 440 && prefs.Height == 1000 && prefs.Left == null && prefs.Top == null, "异常字段应规范化。");
 }
 
 static async Task BpmConfirmation()

@@ -37,6 +37,7 @@ public partial class MainWindow : Window
     private CancellationTokenSource? playbackCancellation;
     private TaskCompletionSource? playbackCompletion;
     private string? lastParseMessage;
+    private string? hotkeyWarning;
     private readonly string logPath;
 
     public MainWindow(LibraryStore store)
@@ -44,6 +45,7 @@ public partial class MainWindow : Window
         this.store = store;
         logPath = Path.Combine(store.Root, "desktop.log");
         InitializeComponent();
+        InitializeGuide();
         parseTimer.Tick += (_, _) => { parseTimer.Stop(); ParseEditor(); };
         engine.Progress += progress => Dispatcher.BeginInvoke(() => Playback_Progress(progress));
         engine.Diagnostic += message => Dispatcher.BeginInvoke(() => Log(message));
@@ -58,6 +60,7 @@ public partial class MainWindow : Window
         hotkeys = new HotkeyManager(new WindowInteropHelper(this).Handle);
         hotkeys.StartRequested += () => Dispatcher.BeginInvoke(Play);
         hotkeys.StopRequested += () => Dispatcher.BeginInvoke(async () => await Stop());
+        hotkeys.OverlayRequested += () => Dispatcher.BeginInvoke(ToggleGuideOverlay);
         hwndSource?.AddHook(WindowMessage);
         RegisterHotkeys();
         RefreshLibrary();
@@ -66,18 +69,23 @@ public partial class MainWindow : Window
         if (initial != null) await SelectItem(initial);
         foreach (var warning in store.Warnings) Log(warning);
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
+        if (hotkeyWarning != null) Status(hotkeyWarning, true);
     }
-    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.2.0-preview.2 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
+    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.3.0-preview.1 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
     private nint WindowMessage(nint hwnd, int msg, nint wParam, nint lParam, ref bool handled)
     {
+        noteInput?.HandleMessage(msg, wParam, lParam);
         if (hotkeys?.HandleMessage(msg, wParam, lParam) == true) handled = true;
         return 0;
     }
     private void RegisterHotkeys()
     {
         if (hotkeys == null) return;
+        hotkeyWarning = null;
         if (!hotkeys.TryRegister(store.Settings.StartHotkey, store.Settings.StopHotkey, out var error))
-            Log(error);
+        { hotkeyWarning = error; Log(error); }
+        if (!hotkeys.TryRegisterOverlay(store.Settings.OverlayHotkey, store.Settings.StartHotkey, store.Settings.StopHotkey, out var overlayError))
+        { hotkeyWarning ??= overlayError; Log(overlayError); }
         StopButton.ToolTip = "停止快捷键：" + store.Settings.StopHotkey;
         PlayButton.ToolTip = "开始快捷键：" + store.Settings.StartHotkey;
         UpdateAvailability();
@@ -119,6 +127,7 @@ public partial class MainWindow : Window
         try
         {
             var next = item.Available ? await store.ReadDocumentAsync(item) : new ScoreDocument(item.Title, item.Bpm, 20, "");
+            InvalidateGuideDocument();
             current = item;
             document = next;
             bpmConfirmed = !next.NeedsBpmConfirmation;
@@ -172,7 +181,7 @@ public partial class MainWindow : Window
     {
         parseTimer.Stop(); scoreError = null; parsed = null; lastParseMessage = null;
         LocateErrorButton.Visibility = Visibility.Collapsed;
-        if (current is { Available: false }) { NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  {current.EditionLabel}  ·  尚未下载"; TimeText.Text = "00:00 / " + (current.DurationSeconds is double seconds ? FormatTime(seconds) : "00:00"); ProgressBar.Value = 0; UpdateAvailability(); return false; }
+        if (current is { Available: false }) { InvalidateGuideDocument(); NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  {current.EditionLabel}  ·  尚未下载"; TimeText.Text = "00:00 / " + (current.DurationSeconds is double seconds ? FormatTime(seconds) : "00:00"); ProgressBar.Value = 0; UpdateAvailability(); return false; }
         try
         {
             var candidate = ReadEditor();
@@ -181,12 +190,14 @@ public partial class MainWindow : Window
             TimeText.Text = "00:00 / " + FormatTime(parsed.DurationSeconds);
             if (!engine.IsPlaying) ProgressBar.Value = 0;
             RenderNotes();
+            EnsureGuideDocument();
             DirtyText.Visibility = dirty ? Visibility.Visible : Visibility.Collapsed;
             UpdateAvailability();
             return true;
         }
         catch (Exception ex)
         {
+            InvalidateGuideDocument();
             NotesPanel.Children.Clear(); noteTiles.Clear(); highlighted = -1;
             scoreError = ex as ScoreFormatException;
             lastParseMessage = ex.Message;
@@ -199,7 +210,7 @@ public partial class MainWindow : Window
     }
     private void RenderNotes()
     {
-        NotesPanel.Children.Clear(); noteTiles.Clear(); highlighted = -1;
+        NotesPanel.Children.Clear(); noteTiles.Clear(); highlighted = -1; shownGuideEvent = -1;
         if (parsed == null) return;
         foreach (var note in parsed.Events.Take(1000))
         {
@@ -210,6 +221,11 @@ public partial class MainWindow : Window
             duration.SetResourceReference(TextBlock.ForegroundProperty, "MutedBrush");
             content.Children.Add(pitch); content.Children.Add(duration);
             var tile = new Border { Child = content, MinWidth = 47, Height = 62, Padding = new Thickness(6, 1, 6, 1), Margin = new Thickness(0, 0, 5, 5), CornerRadius = new CornerRadius(7), Background = Brushes.Transparent, ToolTip = $"{note.Label} · {note.Beats:0.###} 拍" };
+            var tileIndex = noteTiles.Count;
+            tile.ToolTip = $"第 {tileIndex + 1} 音 · {note.Label} · {note.Beats:0.###} 拍";
+            if (InGuideMode && tileIndex == selectedGuideEvent)
+            { tile.SetResourceReference(Border.BorderBrushProperty, "AccentBrush"); tile.BorderThickness = new Thickness(1); }
+            tile.MouseLeftButtonDown += (_, _) => SelectGuideTile(tileIndex);
             noteTiles.Add(tile); NotesPanel.Children.Add(tile);
         }
         ScoreHint.Text = parsed.Events.Count > 1000 ? "预览前 1000 音；编辑器可查看完整谱面" : "高低音与时值 · 播放时跟随高亮";
@@ -222,7 +238,7 @@ public partial class MainWindow : Window
     }
     private void Edit_Click(object sender, RoutedEventArgs e)
     {
-        if (busy || engine.IsPlaying || current is { Available: false }) return;
+        if (busy || engine.IsPlaying || GuideActive || current is { Available: false }) return;
         editMode = !editMode; SetEditorVisibility();
         if (editMode) BodyInput.Focus(); else ParseEditor();
     }
@@ -235,7 +251,7 @@ public partial class MainWindow : Window
     }
     private async Task<bool> SaveCurrent(bool copy = false)
     {
-        if (busy || engine.IsPlaying || !ParseEditor()) return false;
+        if (busy || engine.IsPlaying || GuideActive || !ParseEditor()) return false;
         var target = current;
         busy = true; UpdateAvailability();
         try
@@ -325,6 +341,7 @@ public partial class MainWindow : Window
     private async void New_Click(object sender, RoutedEventArgs e)
     {
         if (!await PrepareImport()) return;
+        InvalidateGuideDocument();
         current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true);
         SourceText.Text = "个人本地曲谱，不会上传。";
         ReferenceButton.Visibility = Visibility.Collapsed;
@@ -334,7 +351,7 @@ public partial class MainWindow : Window
     }
     private void More_Click(object sender, RoutedEventArgs e)
     {
-        if (busy || engine.IsPlaying) return;
+        if (busy || engine.IsPlaying || GuideActive) return;
         if (sender is Button button && button.ContextMenu != null) { button.ContextMenu.PlacementTarget = button; button.ContextMenu.IsOpen = true; }
     }
     private void Window_DragOver(object sender, DragEventArgs e) { e.Effects = e.Data.GetDataPresent(DataFormats.FileDrop) && !busy ? DragDropEffects.Copy : DragDropEffects.None; e.Handled = true; }
@@ -379,7 +396,10 @@ public partial class MainWindow : Window
     private void Mode_Changed(object sender, RoutedEventArgs e)
     {
         if (!IsLoaded) return;
-        ModeHint.Text = GameMode.IsChecked == true ? "切到游戏后开始 · 自动输入有封禁风险" : "C 调合成音 · 用于核对旋律";
+        if (InGuideMode) { EnsureGuideDocument(); overlayWanted = true; guideFocusTimer.Start(); UpdateOverlayVisibility(); }
+        else { StopGuide(); guideFocusTimer.Stop(); guideOverlay?.SetEditable(false); guideOverlay?.Hide(); }
+        ModeHint.Text = InGuideMode ? (hotkeys?.OverlayRegistered == true ? "手动弹奏 · 浮窗引导与等键练习" : "浮窗热键不可用 · 可用上方浮窗按钮") : GameMode.IsChecked == true ? "切到游戏后开始 · 自动输入有封禁风险" : "C 调合成音 · 用于核对旋律";
+        if (InGuideMode && hotkeyWarning != null) Status(hotkeyWarning, true);
         UpdateAvailability();
     }
     private async void Volume_Changed(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -392,6 +412,13 @@ public partial class MainWindow : Window
     private void Play_Click(object sender, RoutedEventArgs e) => Play();
     private async void Play()
     {
+        if (InGuideMode)
+        {
+            if (modalOpen || closing || busy || engine.IsPlaying || engine.NeedsCleanup) return;
+            if (!GuideActive && (!ParseEditor() || parsed == null || !await ConfirmBpm())) return;
+            StartOrPauseGuide();
+            return;
+        }
         if (modalOpen || closing || busy || engine.IsPlaying || !ParseEditor() || parsed == null || !await ConfirmBpm()) return;
         if (GameMode.IsChecked == true && (hotkeys?.StartRegistered != true || hotkeys.StopRegistered != true)) { Status("热键不可用。请在设置中修改后再进行游戏演奏。", true); return; }
         var score = parsed;
@@ -418,6 +445,7 @@ public partial class MainWindow : Window
     }
     private async Task Stop()
     {
+        StopGuide();
         operationCancellation?.Cancel();
         playbackCancellation?.Cancel();
         var pending = playbackCompletion?.Task;
@@ -455,7 +483,7 @@ public partial class MainWindow : Window
     private void UpdateAvailability()
     {
         if (PlayButton == null) return;
-        bool occupied = closing || busy || engine.IsPlaying;
+        bool occupied = closing || busy || engine.IsPlaying || GuideActive;
         PlayButton.IsEnabled = !occupied && !engine.NeedsCleanup && parsed != null && (GameMode.IsChecked != true || hotkeys?.StartRegistered == true && hotkeys.StopRegistered);
         StopButton.IsEnabled = occupied || engine.NeedsCleanup;
         TitleInput.IsEnabled = !occupied && current is not { Available: false };
@@ -465,10 +493,11 @@ public partial class MainWindow : Window
         SaveButton.IsEnabled = !occupied && parsed != null;
         ImportButton.IsEnabled = !occupied;
         PreviewMode.IsEnabled = !occupied; GameMode.IsEnabled = !occupied;
+        UpdateGuideAvailability(occupied);
     }
     private void Settings_Click(object sender, RoutedEventArgs e)
     {
-        if (closing || busy || engine.IsPlaying) { Status("请先停止播放，再修改设置。"); return; }
+        if (closing || busy || engine.IsPlaying || GuideActive) { Status("请先停止播放或暂停跟谱，再修改设置。"); return; }
         var dialog = new SettingsDialog(store.Settings, document.GapMs, store.Root) { Owner = this };
         if (WithModal(() => dialog.ShowDialog()) != true) return;
         _ = ApplySettings(dialog);
@@ -487,10 +516,11 @@ public partial class MainWindow : Window
             store.Settings.Theme = dialog.ThemeChoice;
             store.Settings.StartHotkey = dialog.StartHotkey;
             store.Settings.StopHotkey = dialog.StopHotkey;
+            store.Settings.OverlayHotkey = dialog.OverlayHotkey;
             ThemeService.Apply(dialog.ThemeChoice);
             if (document.GapMs != dialog.GapMs) { document = document with { GapMs = dialog.GapMs }; dirty = true; }
             await store.SaveSettingsAsync();
-            ParseEditor(); RegisterHotkeys(); Status("设置已保存。");
+            ParseEditor(); RegisterHotkeys(); Status(hotkeyWarning ?? "设置已保存。", hotkeyWarning != null);
         }
         catch (Exception ex) { ShowError(ex); }
         finally { busy = false; UpdateAvailability(); }
@@ -530,6 +560,7 @@ public partial class MainWindow : Window
         if (!await ConfirmUnsaved()) { closing = false; UpdateAvailability(); return; }
         try
         {
+            CloseGuide();
             await store.SaveSettingsAsync();
             await store.SaveLibraryAsync();
             await engine.DisposeAsync();

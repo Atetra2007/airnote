@@ -10,6 +10,7 @@ public partial class SettingsDialog : Window
     public string ThemeChoice => ThemeDark.IsChecked == true ? "Dark" : ThemeLight.IsChecked == true ? "Light" : "System";
     public string StartHotkey => StartInput.Text.Trim();
     public string StopHotkey => StopInput.Text.Trim();
+    public string OverlayHotkey => OverlayInput.Text.Trim();
     public int GapMs { get; private set; }
     public SettingsDialog(UserSettings settings, int gap, string root)
     {
@@ -18,11 +19,17 @@ public partial class SettingsDialog : Window
         ThemeLight.IsChecked = settings.Theme == "Light";
         ThemeDark.IsChecked = settings.Theme == "Dark";
         StartInput.Text = settings.StartHotkey; StopInput.Text = settings.StopHotkey; GapInput.Text = gap.ToString();
+        OverlayInput.Text = settings.OverlayHotkey;
     }
     private void Apply_Click(object sender, RoutedEventArgs e)
     {
-        if (!int.TryParse(GapInput.Text, out int gap) || gap is < 10 or > 5000) { MessageBox.Show(this, "音符间隔须为 10–5000 的整数。"); return; }
-        if (string.IsNullOrWhiteSpace(StartHotkey) || string.IsNullOrWhiteSpace(StopHotkey)) { MessageBox.Show(this, "请填写开始与停止快捷键。"); return; }
+        void Error(string text) { ErrorText.Text = text; ErrorText.Visibility = Visibility.Visible; }
+        if (!int.TryParse(GapInput.Text, out int gap) || gap is < 10 or > 5000) { Error("音符间隔须为 10–5000 的整数。"); return; }
+        if (!Harmonica.Windows.HotkeyChord.TryParse(StartHotkey, out var start, out var error) ||
+            !Harmonica.Windows.HotkeyChord.TryParse(StopHotkey, out var stop, out error) ||
+            !Harmonica.Windows.HotkeyChord.TryParse(OverlayHotkey, out var overlay, out error)) { Error(error); return; }
+        if (start!.VirtualKey == stop!.VirtualKey) { Error("开始和停止必须使用不同的 F 键。"); return; }
+        if (overlay!.VirtualKey == start.VirtualKey || overlay.VirtualKey == stop.VirtualKey) { Error("浮窗热键与开始 / 停止冲突，请选择另一个 F 键。原设置尚未更改。"); return; }
         GapMs = gap; DialogResult = true;
     }
     private void OpenData_Click(object sender, RoutedEventArgs e)
