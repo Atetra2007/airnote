@@ -1,0 +1,6 @@
+@format=HarmonicaPlayer/1
+@title=原创测试：停止与取消
+@bpm=60
+@gap=20
+
+1:8 0:4 2:8 0:4 3:8 |

@@ -1,0 +1,7 @@
+@format=HarmonicaPlayer/1
+@title=原创测试：中文导入与另存为
+@bpm=90
+@gap=25
+
+（1） 1 【1】 【【1】】 |
+#1 【#1】 0 5:1.25 |
