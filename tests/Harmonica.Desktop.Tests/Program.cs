@@ -27,6 +27,7 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("下载失败重试、校验失败与防覆盖", VerifiedDownloadFailures),
     ("旧设置添加跟谱默认值并保留已有热键", GuideMigration),
     ("跟谱设置重启保留，异常尺寸和倍率恢复安全值", GuidePersistence),
+    ("游戏留白兼容旧设置、保存选择并恢复无效值", GameGapSettings),
 };
 var failures = 0;
 foreach (var scenario in scenarios)
@@ -51,6 +52,20 @@ static async Task Initialization()
     var reopened = await fixture.CreateStore();
     var read = await reopened.ReadDocumentAsync(reopened.Items.Single());
     Check(read.Title == "修改过的示例" && read.Body == "7:2 0", "重复初始化不得重置用户修改。");
+}
+
+static async Task GameGapSettings()
+{
+    using var fixture = new Fixture();
+    var store = await fixture.CreateStore();
+    Check(store.Settings.GameNoteGapMs == 60, "旧配置默认使用60ms游戏留白。");
+    foreach (var value in new[] { 0, 90, 250, -1, 999 })
+    {
+        store.Settings.GameNoteGapMs = value;
+        await store.SaveSettingsAsync();
+        var reopened = await fixture.CreateStore();
+        Check(reopened.Settings.GameNoteGapMs == (value is >= 0 and <= 250 ? value : 60), "合法值重启保留，无效值恢复默认。");
+    }
 }
 
 static async Task ImportCopy()

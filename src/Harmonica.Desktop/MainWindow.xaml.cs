@@ -71,7 +71,7 @@ public partial class MainWindow : Window
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
         if (hotkeyWarning != null) Status(hotkeyWarning, true);
     }
-    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.3.0-preview.1 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
+    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.3.0-preview.2 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
     private nint WindowMessage(nint hwnd, int msg, nint wParam, nint lParam, ref bool handled)
     {
         noteInput?.HandleMessage(msg, wParam, lParam);
@@ -430,7 +430,7 @@ public partial class MainWindow : Window
             if (current != null) { current.LastPlayed = DateTimeOffset.Now; await store.SaveLibraryAsync(); }
             var mode = GameMode.IsChecked == true ? PlaybackMode.Game : PlaybackMode.Preview;
             playbackCancellation.Token.ThrowIfCancellationRequested();
-            var playing = engine.PlayAsync(score, mode, playbackCancellation.Token);
+            var playing = engine.PlayAsync(score, mode, playbackCancellation.Token, store.Settings.GameNoteGapMs);
             UpdateAvailability();
             await playing;
         }
@@ -517,6 +517,7 @@ public partial class MainWindow : Window
             store.Settings.StartHotkey = dialog.StartHotkey;
             store.Settings.StopHotkey = dialog.StopHotkey;
             store.Settings.OverlayHotkey = dialog.OverlayHotkey;
+            store.Settings.GameNoteGapMs = dialog.GameNoteGapMs;
             ThemeService.Apply(dialog.ThemeChoice);
             if (document.GapMs != dialog.GapMs) { document = document with { GapMs = dialog.GapMs }; dirty = true; }
             await store.SaveSettingsAsync();

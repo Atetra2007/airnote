@@ -55,6 +55,7 @@ public sealed class UserSettings
     public string OverlayHotkey { get; set; } = "F7";
     public GuidePreferences Guide { get; set; } = new();
     public float Volume { get; set; } = 0.2f;
+    public int GameNoteGapMs { get; set; } = 60;
     public string? LastSelectedId { get; set; }
     [JsonExtensionData] public Dictionary<string, System.Text.Json.JsonElement>? ExtraData { get; set; }
 }

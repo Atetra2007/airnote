@@ -79,14 +79,27 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
     public event Action<PlaybackProgress>? Progress;
     public event Action<string>? Diagnostic;
 
-    public Task PlayAsync(ParsedScore score, PlaybackMode mode, CancellationToken token = default)
+    public Task PlayAsync(ParsedScore score, PlaybackMode mode, CancellationToken token = default, int gameGapMs = 60)
     {
         ArgumentNullException.ThrowIfNull(score);
         if (!Enum.IsDefined(mode)) throw new ArgumentOutOfRangeException(nameof(mode));
+        if (gameGapMs is < 0 or > 250) throw new ArgumentOutOfRangeException(nameof(gameGapMs));
         if (score.Events.Count == 0) throw new InvalidOperationException("曲谱没有可播放的音符。");
         if (score.Document.Bpm <= 0 || score.Document.GapMs < 0 ||
             score.Events.Any(e => !double.IsFinite(e.Beats) || e.Beats <= 0))
             throw new InvalidOperationException("曲谱速度、间隔或时值无效。");
+        if (mode == PlaybackMode.Game)
+        {
+            for (var i = 0; i < score.Events.Count; i++)
+            {
+                var note = score.Events[i];
+                if (note.Degree == 0) continue;
+                var duration = note.Beats * 60d / score.Document.Bpm;
+                var preparation = GameKeyMapping.ForNote(note).Any(k => k.Mouse) ? GameInputSession.ModifierSettleSeconds : 0;
+                if (duration - NoteGap(duration, score.Document.GapMs, gameGapMs) - preparation < .012)
+                    throw new InvalidOperationException($"第 {i + 1} 个音（{note.Label}，{duration * 1000:0.#} ms）过短，无法留出换音与按键时间。请降低 BPM 或校对该短音；本次未发送按键。");
+            }
+        }
         lock (gate)
         {
             ObjectDisposedException.ThrowIf(disposed, this);
@@ -98,7 +111,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
             cancellation = CancellationTokenSource.CreateLinkedTokenSource(token);
             var sessionCancellation = cancellation;
             // IsPlaying becomes true before work or callbacks can start.
-            running = Task.Run(() => RunAsync(score, mode, sessionCancellation.Token), CancellationToken.None);
+            running = Task.Run(() => RunAsync(score, mode, gameGapMs, sessionCancellation.Token), CancellationToken.None);
             return running;
         }
     }
@@ -133,7 +146,10 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
         finally { stopGate.Release(); }
     }
 
-    private async Task RunAsync(ParsedScore score, PlaybackMode mode, CancellationToken token)
+    internal static double NoteGap(double duration, int scoreGapMs, int gameGapMs) =>
+        Math.Max(scoreGapMs / 1000d, Math.Min(gameGapMs / 1000d, duration * .25));
+
+    private async Task RunAsync(ParsedScore score, PlaybackMode mode, int gameGapMs, CancellationToken token)
     {
         IPlaybackOutput? output = null;
         Exception? failure = null;
@@ -160,10 +176,17 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
             await output.BeginAsync(mode, token).ConfigureAwait(false);
             started = clock.Seconds;
             var beatsElapsed = 0d;
+            var timelineShift = 0d;
+            var notBefore = started;
             for (index = 0; index < score.Events.Count; index++)
             {
                 var note = score.Events[index];
-                double startDeadline = started + beatsElapsed * 60d / score.Document.Bpm;
+                double startDeadline = started + beatsElapsed * 60d / score.Document.Bpm + timelineShift;
+                if (notBefore > startDeadline)
+                {
+                    timelineShift += notBefore - startDeadline;
+                    startDeadline = notBefore;
+                }
                 double duration = note.Beats * 60d / score.Document.Bpm;
                 double endDeadline = startDeadline + duration;
                 await WaitUntilAsync(startDeadline, output, token).ConfigureAwait(false);
@@ -175,12 +198,32 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
                     Log($"{index + 1}/{score.Events.Count} {note.Label} · {note.Beats:0.###} 拍 · {elapsed * 1000:0} ms");
                 if (note.Degree != 0)
                 {
+                    // A late wake-up must not turn a note into a near-zero pulse.
+                    if (mode == PlaybackMode.Game && clock.Seconds > startDeadline + .005)
+                    {
+                        var late = clock.Seconds - startDeadline;
+                        timelineShift += late; startDeadline += late; endDeadline += late;
+                    }
                     await output.NoteOnAsync(note, Volume, token).ConfigureAwait(false);
-                    var hold = Math.Max(0, duration - score.Document.GapMs / 1000d);
-                    await WaitUntilAsync(startDeadline + hold, output, token).ConfigureAwait(false);
+                    var gap = mode == PlaybackMode.Game ? NoteGap(duration, score.Document.GapMs, gameGapMs) : score.Document.GapMs / 1000d;
+                    var hold = Math.Max(0, duration - gap);
+                    var releaseAt = startDeadline + hold;
+                    if (mode == PlaybackMode.Game)
+                    {
+                        var preparation = GameKeyMapping.ForNote(note).Any(k => k.Mouse) ? GameInputSession.ModifierSettleSeconds : 0;
+                        // Preserve the sounding part even if modifier setup or scheduling runs late.
+                        releaseAt = Math.Max(releaseAt, clock.Seconds + hold - preparation);
+                    }
+                    await WaitUntilAsync(releaseAt, output, token).ConfigureAwait(false);
                     await output.SilenceAsync(CancellationToken.None).ConfigureAwait(false);
+                    notBefore = mode == PlaybackMode.Game ? clock.Seconds + gap : endDeadline;
                 }
-                await WaitUntilAsync(endDeadline, output, token).ConfigureAwait(false);
+                else
+                {
+                    // Rest length starts when silence is actually reached, not at a missed deadline.
+                    notBefore = clock.Seconds + duration;
+                }
+                await WaitUntilAsync(Math.Max(endDeadline, notBefore), output, token).ConfigureAwait(false);
                 beatsElapsed += note.Beats;
             }
             completed = true;

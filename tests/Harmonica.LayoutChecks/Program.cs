@@ -41,9 +41,9 @@ internal static class Program
             ThemeService.Apply(theme);
             foreach (var dpi in new[] { 1d, 1.5, 2 })
             {
-                var root = (FrameworkElement)dialog.Content; var size = new Size(444, 531);
+                var root = (FrameworkElement)dialog.Content; var size = new Size(444, 621);
                 Layout(root, size, dpi);
-                CheckRects(dialog, root, ["StartInput", "StopInput", "OverlayInput", "GapInput", "ErrorText", "CancelSettingsButton", "ApplySettingsButton"], size);
+                CheckRects(dialog, root, ["StartInput", "StopInput", "OverlayInput", "GapInput", "GameGapInput", "ErrorText", "CancelSettingsButton", "ApplySettingsButton"], size);
                 Save(root, size, dpi, Path.Combine(output, $"settings-{theme}-{dpi:0.0}.png"));
                 checks.Add(new { surface = "settings", theme, dpi, passed = true });
             }

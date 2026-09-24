@@ -104,6 +104,7 @@ internal sealed class GameInputSession
 {
     private readonly IInputBackend backend;
     private readonly nint probeWindow;
+    private readonly IPlaybackClock clock;
     private readonly List<PerformanceKey> attempted = [];
     private nint window;
     private uint processId;
@@ -112,10 +113,13 @@ internal sealed class GameInputSession
         1, 2, 4, (ushort)'Z', (ushort)'X', (ushort)'C', (ushort)'V',
         (ushort)'B', (ushort)'N', (ushort)'M', 0xBC];
 
-    public GameInputSession(IInputBackend backend, nint probeWindow = default)
+    public const double ModifierSettleSeconds = .024;
+
+    public GameInputSession(IInputBackend backend, nint probeWindow = default, IPlaybackClock? clock = null)
     {
         this.backend = backend;
         this.probeWindow = probeWindow;
+        this.clock = clock ?? new MonotonicPlaybackClock();
     }
 
     public void Begin()
@@ -147,12 +151,26 @@ internal sealed class GameInputSession
                 throw new InvalidOperationException("检测到手动修饰键、鼠标或演奏按键冲突，演奏已停止。请松开按键后重试。");
     }
 
-    public void NoteOn(ScoreEvent note)
+    public async Task NoteOnAsync(ScoreEvent note, CancellationToken token = default)
     {
         if (attempted.Count != 0) throw new InvalidOperationException("上一个音符尚未释放，已停止。");
         CheckSafety();
-        foreach (var key in GameKeyMapping.ForNote(note))
+        var keys = GameKeyMapping.ForNote(note);
+        foreach (var key in keys)
         {
+            token.ThrowIfCancellationRequested();
+            if (!key.Mouse && keys.Any(k => k.Mouse))
+            {
+                // The game samples pitch modifiers separately from the note key.
+                var readyAt = clock.Seconds + ModifierSettleSeconds;
+                while (clock.Seconds < readyAt)
+                {
+                    token.ThrowIfCancellationRequested();
+                    CheckSafety();
+                    await clock.DelayAsync(TimeSpan.FromSeconds(Math.Min(.008, readyAt - clock.Seconds)), token).ConfigureAwait(false);
+                }
+                token.ThrowIfCancellationRequested();
+            }
             CheckSafety();
             if (key.Mouse && backend.CursorRootWindow != window)
                 throw new InvalidOperationException("鼠标不在目标窗口内，已停止鼠标输入。");

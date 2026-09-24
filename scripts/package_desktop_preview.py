@@ -15,7 +15,8 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
     metadata = json.loads(manifest.read_text(encoding="utf-8"))
     require(metadata["files"] == records, "Payload differs from its manifest; rerun the build checks.")
     version = metadata["version"]
-    docs = {"使用说明.md": ROOT / "docs/GUIDE.md", "验证记录.md": ROOT / "docs/GUIDE-VALIDATION.md"}
+    docs = {"使用说明.md": ROOT / "docs/GUIDE.md", "验证记录.md": ROOT / "docs/GUIDE-VALIDATION.md",
+            "游戏验证.md": ROOT / "docs/GAME-VALIDATION.md", "演奏节奏修复.md": ROOT / "docs/RHYTHM-VALIDATION.md"}
     readme = (
         f"口琴小曲库 v{version} · Windows x64 本地预览\n\n"
         "完整解压 ZIP 后，打开 App 文件夹，双击 HarmonicaDesk.exe。\n"
@@ -25,6 +26,8 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
         "首次 3 秒预备，恢复/循环 2 拍。等键模式要松开音键后重新按下。\n"
         "暂停后可调整倍率、A/B 片段和浮窗；背景不透明度只影响背景。\n"
         "开始或恢复时切到游戏口琴界面。优先使用窗口化或无边框。\n\n"
+        "自动演奏：设置中的游戏换音留白默认 60 毫秒，快音自动限制附加留白。\n"
+        "原谱 BPM 与休止保留；极短音会在开始前提示，请先核对。\n\n"
         "此包是本地功能预览；真实游戏、物理键鼠组合和多显示器兼容性仍待验收。\n"
         "详细说明见同目录 使用说明.md；发行边界见 App/Licenses。\n"
     )
@@ -37,7 +40,10 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
                 name = safe_relative(record["path"])
                 archive.write(publish / name, "App/" + name)
             for name, source in docs.items():
-                archive.writestr(name, source.read_text(encoding="utf-8").replace("(GUIDE-VALIDATION.md)", "(验证记录.md)"))
+                text = source.read_text(encoding="utf-8")
+                for original, packaged in (("GUIDE-VALIDATION.md", "验证记录.md"), ("GAME-VALIDATION.md", "游戏验证.md"), ("RHYTHM-VALIDATION.md", "演奏节奏修复.md")):
+                    text = text.replace(f"({original})", f"({packaged})")
+                archive.writestr(name, text)
             archive.writestr("开始使用.txt", readme)
             archive.writestr("publish-manifest.json", manifest.read_bytes())
         expected = {"App/" + record["path"] for record in records} | set(docs) | {"开始使用.txt", "publish-manifest.json"}

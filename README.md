@@ -2,7 +2,7 @@
 
 一个打开就能选曲、看谱、试听和跟谱手弹的 Windows 桌面软件。左侧管理曲库，中间查看与编辑简谱，底部选择本地试听、自动演奏或跟谱手弹；界面默认跟随系统深浅主题。面向 Windows 10 22H2 / Windows 11 x64，预览包自带 .NET 运行环境，无需安装 Python、.NET SDK 或注册软件账号。
 
-**当前开发版：v0.3.0-preview.1。** 本次交付本地自包含 ZIP：`artifacts/desktop/HarmonicaDesk-0.3.0-preview.1-win-x64.zip`。完整解压后运行 `App/HarmonicaDesk.exe`，继续使用已有个人曲库。尚未发布此版本的 GitHub Release；[v0.2 安装版](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.2.0-preview.1)仍保留。
+**当前开发版：v0.3.0-preview.2。** 本次交付本地自包含 ZIP：`artifacts/desktop/HarmonicaDesk-0.3.0-preview.2-win-x64.zip`。修复游戏换音留白与鼠标修饰键时序，详见[节奏修复记录](docs/RHYTHM-VALIDATION.md)。完整解压后运行 `App/HarmonicaDesk.exe`，继续使用已有个人曲库。尚未发布此版本的 GitHub Release；[v0.2 安装版](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.2.0-preview.1)仍保留。
 
 ## 第一次使用
 

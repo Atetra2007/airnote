@@ -35,6 +35,7 @@ public sealed class LibraryStore
     {
         Settings = ReadJsonOrPreserve<UserSettings>("settings.json") ?? new();
         Settings.Volume = float.IsFinite(Settings.Volume) ? Math.Clamp(Settings.Volume, 0, 1) : .2f;
+        if (Settings.GameNoteGapMs is < 0 or > 250) Settings.GameNoteGapMs = 60;
         Settings.Guide ??= new();
         Settings.Guide.Normalize();
         if (string.IsNullOrWhiteSpace(Settings.OverlayHotkey)) Settings.OverlayHotkey = "F7";

@@ -814,7 +814,7 @@
       "beats": 76.4036720000001,
       "duration_seconds": 38.20183600000005,
       "converted_sha256": "c3fbbfb5781233348f96556e3ca80fd3a889bf38eb57458dca885c900e0c2a3d",
-      "review_note": "已逐音核对来源谱的音高、时值、休止及事件顺序；未逐首对照原曲录音听校。保留来源文件全段。",
+      "review_note": "转换与来源逐音一致，但来源含约 10–14 ms 极短音；默认游戏输入会在开始前拒绝。请先校对短音或降低 BPM，本地试听仍可用；未完成原曲听校。",
       "evidence_url": "https://www.bilibili.com/video/BV1bBeq6rEaE/"
     },
     {
@@ -1784,7 +1784,7 @@
       "beats": 254.99999999999932,
       "duration_seconds": 152.9999999999996,
       "converted_sha256": "88bbc7ed3a615718b534c55d5b10ef4082109b2cade3ed3caae5cd01f222e9eb",
-      "review_note": "已逐音核对来源谱的音高、时值、休止及事件顺序；未逐首对照原曲录音听校。保留来源文件全段。完整性未核对。"
+      "review_note": "转换与来源逐音一致，但来源含约 16 ms 极短音；默认游戏输入会在开始前拒绝。请先校对短音或降低 BPM，本地试听仍可用；完整性和原曲听校未完成。"
     },
     {
       "id": "deck-b2201c638ce4",

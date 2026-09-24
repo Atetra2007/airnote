@@ -8,6 +8,12 @@ var tests = new (string Name, Func<Task> Run)[]
     ("Game key mapping and range rejection", Mapping),
     ("Absolute timeline does not accumulate output overhead", AbsoluteTimeline),
     ("Rest and gap follow the shared timeline", RestAndGap),
+    ("Game articulation separates notes without changing BPM or rests", GameArticulation),
+    ("Delayed releases retain gaps and full rests instead of catch-up", LateGameRelease),
+    ("Unplayable short game notes fail before emitting input", ShortGameNotes),
+    ("Mouse pitch modifiers settle before the note key", ModifierSettling),
+    ("Modifier setup fits within beats without accumulating tempo drift", ModifierTimeline),
+    ("Cancel or focus change during modifier setup sends no note key", ModifierSetupCancel),
     ("Cancellation during countdown emits no note", CountdownCancel),
     ("Game countdown precedes the absolute note timeline", CountdownComplete),
     ("Long-note cancellation releases output", LongNoteCancel),
@@ -98,6 +104,94 @@ static async Task CountdownCancel()
     Equal("Countdown", states.First());
     Equal("Stopped", states.Last());
     True(output.Disposed);
+}
+
+static async Task GameArticulation()
+{
+    var clock = new FakeClock();
+    var output = new FakeOutput(clock);
+    await using var engine = new PlaybackEngine(() => output, clock);
+    await engine.PlayAsync(Parse("1 1 0:0.25 2_", 120, 10), PlaybackMode.Game);
+    SequenceNear([3, 3.5, 4.125], output.Notes.Select(n => n.Time).ToArray());
+    SequenceNear([3.44, 3.94, 4.315], output.Silences.ToArray());
+    Near(4.375, clock.Seconds, .00001);
+    Near(.025, PlaybackEngine.NoteGap(.1, 10, 60), .00001);
+    Near(.08, PlaybackEngine.NoteGap(.5, 80, 60), .00001);
+    Near(.01, PlaybackEngine.NoteGap(.5, 10, 0), .00001);
+}
+
+static async Task LateGameRelease()
+{
+    var clock = new FakeClock();
+    var output = new FakeOutput(clock);
+    var delayed = false;
+    clock.AfterDelay = () => { if (!delayed && clock.Seconds >= 3.43) { delayed = true; clock.Seconds += .08; } };
+    await using var engine = new PlaybackEngine(() => output, clock);
+    await engine.PlayAsync(Parse("1 1 0:0.25 2", 120, 10), PlaybackMode.Game);
+    True(output.Notes[1].Time - output.Silences[0] >= .06 - .00001, "Late release must keep a real 60ms gap");
+    True(output.Notes[2].Time - output.Silences[1] >= .185 - .00001, "Written rest must remain in addition to note gap");
+    True(output.Silences[1] - output.Notes[1].Time >= .44 - .00001, "Following note must not be rushed");
+}
+
+static async Task ShortGameNotes()
+{
+    var clock = new FakeClock();
+    var output = new FakeOutput(clock);
+    await using var engine = new PlaybackEngine(() => output, clock);
+    await ThrowsAsync<InvalidOperationException>(() => engine.PlayAsync(Parse("1:0.010417", 60, 10), PlaybackMode.Game));
+    await ThrowsAsync<InvalidOperationException>(() => engine.PlayAsync(Parse("（1）:0.03", 60, 10), PlaybackMode.Game));
+    Equal(0, output.BeginCount);
+    Equal(0, output.Notes.Count);
+    // A score can still be inspected locally; no pitch, BPM or note is silently changed.
+    await engine.PlayAsync(Parse("1:0.010417", 60, 10), PlaybackMode.Log);
+    Equal(1, output.Notes.Count);
+}
+
+static async Task ModifierSettling()
+{
+    var clock = new FakeClock();
+    var backend = new FakeInputBackend();
+    var session = new GameInputSession(backend, clock: clock);
+    session.Begin();
+    clock.AfterDelay = () => True(!backend.Down.Contains((ushort)'C'), "Note key must wait for mouse modifiers");
+    await session.NoteOnAsync(Note(3, -1, true));
+    Near(.024, clock.Seconds, .00001);
+    True(backend.Down.SetEquals([1, 4, (ushort)'C']));
+    await session.ReleaseAsync();
+    Equal(0, backend.Down.Count);
+    clock.AfterDelay = null;
+    await session.NoteOnAsync(Note(1));
+    Near(.024, clock.Seconds, .00001);
+    await session.ReleaseAsync();
+}
+
+static async Task ModifierSetupCancel()
+{
+    foreach (var cancel in new[] { true, false })
+    {
+        var clock = new FakeClock();
+        var backend = new FakeInputBackend();
+        using var cancellation = new CancellationTokenSource();
+        var session = new GameInputSession(backend, clock: clock);
+        session.Begin();
+        clock.AfterDelay = () => { if (cancel) cancellation.Cancel(); else backend.ForegroundWindow = 9; };
+        if (cancel) await ThrowsAsync<OperationCanceledException>(() => session.NoteOnAsync(Note(2, 1), cancellation.Token));
+        else await ThrowsAsync<InvalidOperationException>(() => session.NoteOnAsync(Note(2, 1)));
+        True(!backend.Events.Any(e => e == "X:down"));
+        await session.ReleaseAsync();
+        Equal(0, backend.Down.Count);
+    }
+}
+
+static async Task ModifierTimeline()
+{
+    var clock = new FakeClock();
+    var output = new FakeOutput(clock) { SimulateModifierSetup = true };
+    await using var engine = new PlaybackEngine(() => output, clock);
+    await engine.PlayAsync(Parse("（1） 2 【3】 0 4", 120, 10), PlaybackMode.Game);
+    SequenceNear([3.024, 3.5, 4.024, 5], output.Notes.Select(n => n.Time).ToArray());
+    SequenceNear([3.44, 3.94, 4.44, 5.44], output.Silences.ToArray());
+    Near(5.5, clock.Seconds, .00001);
 }
 
 static async Task LongNoteCancel()
@@ -196,7 +290,7 @@ static async Task InputRelease()
     var backend = new FakeInputBackend { FailDown = (ushort)'Z', UpFailures = 1 };
     var session = new GameInputSession(backend);
     session.Begin();
-    Throws<InvalidOperationException>(() => session.NoteOn(Note(1, -1)));
+    await ThrowsAsync<InvalidOperationException>(() => session.NoteOnAsync(Note(1, -1)));
     await session.ReleaseAsync();
     True(backend.Events.Any(e => e == "Z:up"));
     True(backend.Events.Any(e => e == "鼠标左键:up"));
@@ -212,7 +306,7 @@ static async Task InputGuard()
     Equal(0, backend.Events.Count);
     backend.Name = "DeltaForceClient-Win64-Shipping";
     session.Begin();
-    session.NoteOn(Note(2, 1));
+    await session.NoteOnAsync(Note(2, 1));
     backend.ForegroundWindow = 9;
     Throws<InvalidOperationException>(session.CheckSafety);
     await session.ReleaseAsync();
@@ -230,7 +324,7 @@ static async Task ModifierGuard()
     Equal(0, backend.Events.Count);
     backend.Down.Clear();
     session.Begin();
-    session.NoteOn(Note(1));
+    await session.NoteOnAsync(Note(1));
     backend.Down.Add(0x12);
     Throws<InvalidOperationException>(session.CheckSafety);
     await session.ReleaseAsync();
@@ -242,10 +336,10 @@ static async Task MouseGuard()
     var backend = new FakeInputBackend { CursorRootWindow = 99 };
     var session = new GameInputSession(backend);
     session.Begin();
-    Throws<InvalidOperationException>(() => session.NoteOn(Note(1, -1)));
+    await ThrowsAsync<InvalidOperationException>(() => session.NoteOnAsync(Note(1, -1)));
     Equal(0, backend.Events.Count);
     backend.CursorRootWindow = 1;
-    session.NoteOn(Note(1, -1));
+    await session.NoteOnAsync(Note(1, -1));
     backend.CursorRootWindow = 99;
     Throws<InvalidOperationException>(session.CheckSafety);
     await session.ReleaseAsync();
@@ -312,11 +406,13 @@ sealed class FakeOutput(FakeClock clock) : IPlaybackOutput
     public List<double> Silences { get; } = [];
     public int BeginCount, ReleaseCount;
     public bool Disposed, FailOnNote, FailRelease;
+    public bool SimulateModifierSetup;
     public double Overhead, FailSafetyAt = double.MaxValue;
     public Action? OnNote;
     public Task BeginAsync(PlaybackMode mode, CancellationToken token) { BeginCount++; return Task.CompletedTask; }
     public Task NoteOnAsync(ScoreEvent note, float volume, CancellationToken token)
     {
+        if (SimulateModifierSetup && GameKeyMapping.ForNote(note).Any(k => k.Mouse)) clock.Seconds += GameInputSession.ModifierSettleSeconds;
         Notes.Add((clock.Seconds, note));
         clock.Seconds += Overhead;
         OnNote?.Invoke();
