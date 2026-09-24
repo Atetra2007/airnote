@@ -74,7 +74,7 @@ internal sealed class ProbeWindow : Window
                 if (engine is not null) await engine.DisposeAsync();
                 hotkeys?.Dispose();
                 allowClose = true;
-                Dispatcher.BeginInvoke(Close);
+                _ = Dispatcher.BeginInvoke(Close);
             }
             catch (Exception ex) { status.Text = "关闭前清理失败，请按停止重试：" + ex.Message; closing = false; }
         };

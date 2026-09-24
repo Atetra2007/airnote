@@ -31,6 +31,7 @@ public partial class MainWindow : Window
     private ParsedScore? parsed;
     private ScoreFormatException? scoreError;
     private bool loading, selectionGuard, dirty, busy, allowClose, closing, editMode, bpmConfirmed = true;
+    private bool modalOpen;
     private int highlighted = -1;
     private CancellationTokenSource? operationCancellation;
     private CancellationTokenSource? playbackCancellation;
@@ -258,13 +259,18 @@ public partial class MainWindow : Window
     private async Task<bool> ConfirmUnsaved()
     {
         if (!dirty) return true;
-        var choice = MessageBox.Show(this, "当前曲谱有未保存的修改。是否保存？\n选择“取消”将保留当前编辑。", "曲谱尚未保存", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+        var choice = WithModal(() => MessageBox.Show(this, "当前曲谱有未保存的修改。是否保存？\n选择“取消”将保留当前编辑。", "曲谱尚未保存", MessageBoxButton.YesNoCancel, MessageBoxImage.Question));
         return choice == MessageBoxResult.No || choice == MessageBoxResult.Yes && await SaveCurrent();
+    }
+    private T WithModal<T>(Func<T> action)
+    {
+        modalOpen = true;
+        try { return action(); } finally { modalOpen = false; }
     }
     private Task<bool> ConfirmBpm()
     {
         if (bpmConfirmed) return Task.FromResult(true);
-        var accepted = MessageBox.Show(this, $"这份曲谱没有注明速度。按 {BpmInput.Text} BPM 使用吗？\n不确定时请选择“否”，核对速度后再开始。", "确认曲谱速度", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes;
+        var accepted = WithModal(() => MessageBox.Show(this, $"这份曲谱没有注明速度。按 {BpmInput.Text} BPM 使用吗？\n不确定时请选择“否”，核对速度后再开始。", "确认曲谱速度", MessageBoxButton.YesNo, MessageBoxImage.Question)) == MessageBoxResult.Yes;
         bpmConfirmed = accepted;
         return Task.FromResult(accepted);
     }
@@ -273,13 +279,13 @@ public partial class MainWindow : Window
     {
         if (!await PrepareImport()) return;
         var dialog = new OpenFileDialog { Title = "导入 TXT 曲谱", Filter = "TXT 曲谱|*.txt", Multiselect = true };
-        if (dialog.ShowDialog(this) == true) await ImportFiles(dialog.FileNames);
+        if (WithModal(() => dialog.ShowDialog(this)) == true) await ImportFiles(dialog.FileNames);
     }
     private async void ImportFolder_Click(object sender, RoutedEventArgs e)
     {
         if (!await PrepareImport()) return;
         var dialog = new OpenFolderDialog { Title = "选择曲谱文件夹或旧使用包目录" };
-        if (dialog.ShowDialog(this) == true)
+        if (WithModal(() => dialog.ShowDialog(this)) == true)
             try { await ImportFiles(LibraryStore.EnumerateImportFiles(dialog.FolderName)); } catch (Exception ex) { ShowError(ex); }
     }
     private async Task<bool> PrepareImport()
@@ -310,7 +316,7 @@ public partial class MainWindow : Window
     {
         if (!await PrepareImport()) return;
         var dialog = new PasteDialog { Owner = this };
-        if (dialog.ShowDialog() != true) return;
+        if (WithModal(() => dialog.ShowDialog()) != true) return;
         busy = true; UpdateAvailability();
         try { var item = await store.ImportTextAsync(dialog.ScoreText); await SelectItem(item); Status("粘贴曲谱已加入个人曲库。"); }
         catch (Exception ex) { ShowError(ex); }
@@ -377,7 +383,7 @@ public partial class MainWindow : Window
     private void Play_Click(object sender, RoutedEventArgs e) => Play();
     private async void Play()
     {
-        if (closing || busy || engine.IsPlaying || !ParseEditor() || parsed == null || !await ConfirmBpm()) return;
+        if (modalOpen || closing || busy || engine.IsPlaying || !ParseEditor() || parsed == null || !await ConfirmBpm()) return;
         if (GameMode.IsChecked == true && (hotkeys?.StartRegistered != true || hotkeys.StopRegistered != true)) { Status("热键不可用。请在设置中修改后再进行游戏演奏。", true); return; }
         var score = parsed;
         playbackCancellation = new CancellationTokenSource();
@@ -455,7 +461,7 @@ public partial class MainWindow : Window
     {
         if (closing || busy || engine.IsPlaying) { Status("请先停止播放，再修改设置。"); return; }
         var dialog = new SettingsDialog(store.Settings, document.GapMs, store.Root) { Owner = this };
-        if (dialog.ShowDialog() != true) return;
+        if (WithModal(() => dialog.ShowDialog()) != true) return;
         _ = ApplySettings(dialog);
     }
     private async Task ApplySettings(SettingsDialog dialog)
@@ -520,7 +526,7 @@ public partial class MainWindow : Window
             await engine.DisposeAsync();
             hotkeys?.Dispose(); hwndSource?.RemoveHook(WindowMessage);
             parseTimer.Stop(); SystemEvents.UserPreferenceChanged -= SystemTheme_Changed;
-            allowClose = true; Dispatcher.BeginInvoke(Close);
+            allowClose = true; _ = Dispatcher.BeginInvoke(Close);
         }
         catch (Exception ex) { closing = false; UpdateAvailability(); ShowError(ex); }
     }
