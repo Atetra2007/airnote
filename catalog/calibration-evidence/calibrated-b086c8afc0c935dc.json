@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b086c8afc0c935dc",
+  "source_id": "social-visual-b64a417776be",
+  "work_id": "work-dbf3584d0b43",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7686525482061549989&type=general",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T21:42:38.994170+00:00",
+  "sha256": "77b2787df13a43fba5670dc80e40b25851c53d9e294f1d301e5744e26bbe6f2c",
+  "source_sha256": "c9faf1d13fc7cd68fa09aaf0038ac1533637ea4e3068e26701216b1863b02635",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=aXjMogbOrzs",
+    "edition": "label-provided-studio-album; 王力宏; 心中的日月; 20041201",
+    "audio_sha256": "d56174672b0a578919e58bd7a4708bca0b222c9645610fb9160e6880b901e6e7",
+    "start_seconds": 45.87
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 46,
+    "maximum_parser_boundary_error_seconds": 1.2000000992884452e-09
+  },
+  "review_note": "对照王力宏原版录音，按已核对图例的46音简化旋律逐音校准；修复尾响误定位及结尾同音合并，保留分唱、换气与正确尾音。",
+  "note_count": 46,
+  "event_count": 56,
+  "duration_seconds": 26.740000000200002,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "db4a78e6d3f558bbaf156aca649e11d3c5af6cccbf7e30cee06a65944d2ac1f9"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "b5a6ef0c8b292b585b26e9b48ebba72a240c08e808946480eccbeabbfbc0a213"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "9e8330b02d296a6d9d6e0cef2e61a1aab1754bdbfbe1f0a58ea6582065814007"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "09cc582aa36a38a57e3fb331bdfc3394672c02962475f73459c6f707fbdd435a"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "70bebb90cf9c58233d38c1052f70dc0224177722fd8392db8fe12478f85def08"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "2205c0d93df0b1dcfff0752c36a6f534413f5519672cf01b6fce6ea475755eb8"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "fc0af3a7d535195e170ea8b75de205dc5acf5f2af7aa61a495d0f3cae98a8734"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "bdfd1578a445ef460fbe1bd53ab60eede2fdeb8b5a67ef12dacedc5ea3519ab5"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "9e90401a870ce9b0c203cebbb3ff740f6e8823f8a4a0554920f9fd707d07341d"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "958ad3082d32e5e35180d3d30b34134fc98552858554e42301b34360fe11654c"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "e752ec5ae92148e029f8d4c6c5fa41d90080b2f874c1ec35dc491da698b91b36"
+    },
+    {
+      "name": "source-pitch-interpretation-used.json",
+      "sha256": "75c46101394c6073ca9bc832e88d5ded871ded0948c5a7b421409425c219d792"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "4558ed82395696fc2310fe12fefdfa6948b54e3d5171f4380e1d15cc42ae9fb3"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "1d9f0937484eb46ba9edb92d7468ba76e29ce574aa774abfc24de323276f3544"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "ae72c8c9906642b2c2e13c49a3b0d9f32e518c166de114f1975cd607094d4fdb"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "717d799545559d78434df0573c83e61721e4590417c37a675ed0cc59427daac0"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "2571b2b8f5d02ab49f814d043d65ae01ec5cf94706d886295681f16474cc95e4"
+    },
+    {
+      "name": "first-two-lines.png",
+      "sha256": "40499e856411c4e280e111af823df7b0db410be86f5418ac7595489115766504"
+    },
+    {
+      "name": "first-two-lines.json",
+      "sha256": "fe0cb57791726ea0e1fcc131297f30ab307d7ea4740bce5d90ef175334ca7958"
+    },
+    {
+      "name": "third-fourth-lines.png",
+      "sha256": "44eea0a1551c812f912050d28531fcb45707e7c9eb6026653045b8089c940f72"
+    },
+    {
+      "name": "third-fourth-lines.json",
+      "sha256": "2402296245727352d3fe527495c40a8e16fe9aa59851f9115ef78c843f082643"
+    },
+    {
+      "name": "fifth-sixth-lines.png",
+      "sha256": "7ac6b61cd265c947be7b6ae8541a078e3cbe1ca0f2b3d3be6eae352720946e67"
+    },
+    {
+      "name": "fifth-sixth-lines.json",
+      "sha256": "42725fa8f52c329f59fd0372b08782a56c765531c090670c7fdd6f1b2e8be87d"
+    },
+    {
+      "name": "final-two-lines.png",
+      "sha256": "de18fddcc03cc46f05473b809736c16180e1a538e69cab7b6c93bfda6e561947"
+    },
+    {
+      "name": "final-two-lines.json",
+      "sha256": "ec7c5851e76723e60b511296ab013c6d13c8a05f13d53f12acd72ad499b48b6d"
+    },
+    {
+      "name": "repeated-so-yi.png",
+      "sha256": "ec6aa4453cb5cec9e130fbc4eaa7c187489ba6f8d5f8b6c492d6e9f40eb46997"
+    },
+    {
+      "name": "repeated-so-yi.json",
+      "sha256": "2f2b13ffb7768255ec5e70c2563c13b5dac799f5efc200e173663cc05f93e736"
+    },
+    {
+      "name": "final-repeated-turn.png",
+      "sha256": "fff43d96e38a4ebe121ad3fb31fa782b37342bdcca82486bd0ac7478fd885e02"
+    },
+    {
+      "name": "final-repeated-turn.json",
+      "sha256": "f0d3907418b32d926226f8f00a0d1ded67453d8042a98b4ecd9b1453c5b0728d"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

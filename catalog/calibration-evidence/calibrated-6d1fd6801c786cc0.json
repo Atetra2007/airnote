@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6d1fd6801c786cc0",
+  "source_id": "zhouzhou-169",
+  "work_id": "work-b0ac9f598a21",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T11:42:14.053614+00:00",
+  "sha256": "f5e3354629ef61c8def33cf3b23073478596e2d83d166fc65a804b95dc02be5a",
+  "source_sha256": "e5b7a6df5a79a89d4e37f996096cc88c0a688f9ef31d194ed2b7ee690d07a10b",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=O3UxZrf0AAk",
+    "edition": "official-label-issued-original-studio-album-release; 周杰倫; 我很忙; 20071102",
+    "audio_sha256": "47dbeda3151d5e91f570038ffd99214db3705e80dcee98f9acbc66dd0779d492",
+    "start_seconds": 169.9
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 77,
+    "maximum_parser_boundary_error_seconds": 3.823537042535463e-09
+  },
+  "review_note": "对照周杰伦2007原版专辑录音复核完整76音源片段，修复同音分唱、换气及截短尾音，保留三处短转音；修正结尾D4并补回C4尾段，形成77音校正版。该D4-C4为同一音节内下滑的离散口琴近似，不是新增独立发音。",
+  "note_count": 77,
+  "event_count": 92,
+  "duration_seconds": 57.200000003823526,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "Index 68a is a discrete D4-to-C4 transition inside a continuously sung syllable, not an independent vocal attack; key changes and the 10 ms gap approximate the original legato slide.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "8a57592a39ba8f966acb08d506053995aa747727c1c79f3fd4dd8d4f9764602b"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "c30e3c26a05158c10e68ebf478bdb7265be4de093e96e4ce5d6c15ae67112323"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "398daaecff4fad16134a74bb19040c956004eabc31afeac155f14acb313c724d"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "df008166dbc30542b6ccc8b36e797566eb8e2bf2309994b1aa2172b9f8b689be"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "089cc944e86f85f26d2b25255aed23dfa9b62d6605d942e0e882da81dc5c9ae2"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "320ffd17a758c0d0b4de547a402da400dee7955a6be4a0f604f971d2cbea3759"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "c17afd419fc94d5809a1213b2199d28c1eb19e3e141610fd51e5ea8a4ccd7f63"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "0afd1f8ee7612dc8e0ca781fff107e19ef76a450840ce553baa1409654e807c7"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "4fc99162c87d1c576dec2a24b21b0e40ec8c36ae9452b5c5c003d51a1f3523c1"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "4049274e48fc28c5381fe71d787a4733b3a2db8443663d8ce0bf7bf580d33b63"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "ca94cfd290c8118f167e1b12e5b8eca01ae2f1f45fb8efe4c1d0f7fe882a4480"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "534242745465cf82f554de50a7c5d4a0631ee4269c247cbe139d8a586178b435"
+    },
+    {
+      "name": "manual-timing-7.png",
+      "sha256": "05526f363accc3065ac2002c94f2e39534a14fc4eff3a41d643d17afaff391a8"
+    },
+    {
+      "name": "manual-timing-8.png",
+      "sha256": "087ea96c359a051032c2c59b3a88ff03c2a9bbd9c53a00de9e66a020db023d3d"
+    },
+    {
+      "name": "manual-timing-9.png",
+      "sha256": "b02a057ab5ac562e050850afc16a3d19a8a892f64cc7b281bfcffa5906738c31"
+    },
+    {
+      "name": "manual-timing-10.png",
+      "sha256": "c10a27ffb9e8ba43c6317c1e47135aba3a7aff692bfc756b322a65c944cd3aff"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "df332992d6794b71289a25be79a4a644e4f3ed8cc10af821ed7523c087e67a47"
+    },
+    {
+      "name": "root_review_169.py",
+      "sha256": "958b1a5e5b406738209476b663f09dec95e7c0be6e8d204d6b4e096f1422f77d"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "1a574fd7a3cbec15bfce1eb1d9a20dbd7cf6885cf04257cf5fe90ab748b36a11"
+    },
+    {
+      "name": "focused-independent-review-root-2026-09-25.md",
+      "sha256": "0331f0ec0955d507073ef6ed25d9a4ed54e8479a7ce2bb5fc91b0587fe256727"
+    },
+    {
+      "name": "focused-independent-tail-review-root-2026-09-25.md",
+      "sha256": "f5f795458fd99f56970cfad56a10c7c822969d480e04e6419ce032ec254ef887"
+    },
+    {
+      "name": "articulation-evidence-manifest.json",
+      "sha256": "328358fae0d5f052374d010e24599ee72237c4d36dbde2e3f10aea495713e494"
+    },
+    {
+      "name": "visual-review-evidence-manifest.json",
+      "sha256": "5c349c3bce0183693aaf8e4b742ab64578577d0949f368c0b4412346147fb56e"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "3a233486852e04133ec47e290b08a133a7cfb78c4123d08fb79b7726c5dbc06b"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "abdd0ade83bbf35bdaf68d7baca6a8c9f31b92e4c4424d5bf6e1bed66508ef62"
+    },
+    {
+      "name": "independent-review.md",
+      "sha256": "a88a5b1942ac46e3c34ac444f1380c1119ef501df2e9ded1928859a04f478256"
+    },
+    {
+      "name": "line-1-mix-articulation-review.png",
+      "sha256": "51c1f7ef3967a2dc9d7270572fa6e085e9d71abbeaff7b0533d30eba6bd92af4"
+    },
+    {
+      "name": "line-1-vocal-articulation.png",
+      "sha256": "3f6633a5146859824b8da8404f655988fd501604b2738939bb49c1a4c5950b04"
+    },
+    {
+      "name": "line-2-mix-articulation-review.png",
+      "sha256": "64093887015c937fb2360fd1c40c6b07815fd76cb7596d57d2f5b8e164df8721"
+    },
+    {
+      "name": "line-2-vocal-articulation.png",
+      "sha256": "ff87547a6cd0089b0e6f61cf3ff00a8eac67ccb64c70ce7cf1ea09fb69ec6f4c"
+    },
+    {
+      "name": "line-3-mix-articulation-review.png",
+      "sha256": "0f3dff7e3d637a861b126e1321547eabf8a0de3f045fb98152e56a2cb3007951"
+    },
+    {
+      "name": "line-3-vocal-articulation.png",
+      "sha256": "7458e24b7e0e73ed16da54346c93dc8e986140b9035b957864e40b4cff7de664"
+    },
+    {
+      "name": "line-4-mix-articulation-review.png",
+      "sha256": "5a4447a4535465a9a5e7289653ac08cf43ebd93ad29464933e0e284d1060e6ae"
+    },
+    {
+      "name": "line-4-vocal-articulation.png",
+      "sha256": "a042e603b80d58c5e41fde2823bad61c60ea90e60b41f063d0e14858dcbf273a"
+    },
+    {
+      "name": "line-5-mix-articulation-review.png",
+      "sha256": "61acaafad3fc52451001e9ffe79f671a4d58afd1aba3aecd85a5c59be7aa95b6"
+    },
+    {
+      "name": "line-5-vocal-articulation.png",
+      "sha256": "59dfa09da3d2b76a26672e49abee415bcd5797d3e9ef668b78dd505f46cf3523"
+    },
+    {
+      "name": "line-6-mix-articulation-review.png",
+      "sha256": "6001521a3af57ecd251184e716783fe1ff814ad6df28d939b4dc5781d30ef4e6"
+    },
+    {
+      "name": "line-6-vocal-articulation.png",
+      "sha256": "1a4f3140493afb023981d8a37a974f10fc33f1167fe26e5f012a3292cd62cbac"
+    },
+    {
+      "name": "line-7-mix-articulation-review.png",
+      "sha256": "869f7f9231c6ff15547f18752b3fa21eb5b417b331d14ba67a0397031dcff445"
+    },
+    {
+      "name": "line-7-vocal-articulation.png",
+      "sha256": "cc2dc73655fb98bcda6b3214759043a9b01bfe7e3655c944761565a8d5d5812f"
+    },
+    {
+      "name": "line-8-mix-articulation-review.png",
+      "sha256": "917af6c2a146921adb55507a3c4842b399fe960eb92eb2ccdcdd4bbafb874dd8"
+    },
+    {
+      "name": "line-8-vocal-articulation.png",
+      "sha256": "9d39f23f9f8f0aec462f1dad5fbb78a061a238a1482de3585049332cbdf98314"
+    },
+    {
+      "name": "root-169-note42.png",
+      "sha256": "62d246e3be03d9306266b151d92353d4a52a52c1152f8ea59fb13fd8788c5cf0"
+    },
+    {
+      "name": "root-169-note42.json",
+      "sha256": "67369c99155af53ddb35837d74046894313042246aaebc633e997b0eb339b56e"
+    },
+    {
+      "name": "root-169-notes53-54.png",
+      "sha256": "ccafc2f917b01dd0185e72c38fb7e9dd45a1c2e169b63071045fae338bf60b33"
+    },
+    {
+      "name": "root-169-notes53-54.json",
+      "sha256": "c19f8c91ebca025531c83cadd06733ecc74ef590f28aa253eb7486f973e645f7"
+    },
+    {
+      "name": "root-169-didewo.png",
+      "sha256": "b15e616680f79a06632663402874e9d95952812e2eab95a22f2925618915ff03"
+    },
+    {
+      "name": "root-169-didewo.json",
+      "sha256": "574b538690957aff1020289e5ed31ab30b4c469d29a24a7001fe077dca34b047"
+    },
+    {
+      "name": "root-169-chidirenxing.png",
+      "sha256": "384f90d3645d62411cc45245e987b82c39b6f66b67063cbf4155c6b41d5455fd"
+    },
+    {
+      "name": "root-169-chidirenxing.json",
+      "sha256": "591ca6174bf25ad80204e97adf604aaabb558549fbabebf6aaaa29eaeb1d312f"
+    },
+    {
+      "name": "root-169-fenbuqing.png",
+      "sha256": "2ce89ad7724a2d62dea056122dcfebf788b3ef57d9456c0f0e8ad43c27ba191a"
+    },
+    {
+      "name": "root-169-fenbuqing.json",
+      "sha256": "18cbdabdd3880fe75c93cec98b52b61e26294496eacad3621c890c7bae767c36"
+    },
+    {
+      "name": "root-169-guodeaiqing.png",
+      "sha256": "c44c2ab8454cefc1b477dabff2d5382292cb2d8720760871964c05da76329f43"
+    },
+    {
+      "name": "root-169-guodeaiqing.json",
+      "sha256": "9225781eb004a5a4bd679ca7d12aa67a0faf630850d06a1facb9581835b98ae4"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

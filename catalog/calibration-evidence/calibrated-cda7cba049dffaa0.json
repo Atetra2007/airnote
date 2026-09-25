@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-cda7cba049dffaa0",
+  "source_id": "zhouzhou-064",
+  "work_id": "work-a41d6d36e41b",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T23:22:39.782262+00:00",
+  "sha256": "e9f57ffeb51e6ba8ac501c46ffb93686ccd58064750c450a8f010234383c15ab",
+  "source_sha256": "e63865e68f53fb9d400f3e90a9c906f54c3071090e47ce1923e6f6ff88b1d247",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=B-1ZzOp0UUA",
+    "edition": "label-provided-studio-album; Hiroyuki SAWANO; TVアニメ「進撃の巨人」Season 2 オリジナルサウンドトラック; 20170607",
+    "audio_sha256": "6582df7f1deecb9dbeeca59051ef84f8cd7c9d157bb5302e7f5a6121ccfc02c4",
+    "start_seconds": 103.98
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 39,
+    "maximum_parser_boundary_error_seconds": 1.400007221263877e-09
+  },
+  "review_note": "对照2017官方原声复核39音片段，合并连续长音、补回两处漏音并恢复完整尾音；根据发音边界调整节奏，明确保留低音区单声部改编及原录音八度叠加的限制。",
+  "note_count": 39,
+  "event_count": 48,
+  "duration_seconds": 29.990000000399995,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The source-relative low register is retained as a monophonic arrangement; the original octave voicing is not resolved to one uniquely asserted lead octave.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "969d6370097e230f57b1d0882990306fa6f3a93ad100949be2363efe7457028c"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "92a8919f937fd01181f45bf32ad870f3c013768efd161b7686bf4e98d9f29b80"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "f57a26dcc34a58f972a79b4525b1289b7f18fa7d0bb55fa591493ff3763b7fbf"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "6a5dc035b575d530338ee53f4a812fd6427258de36e4c4b9eab59f88cc699781"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "81f324337c03f359a6a759a56fa505a113316b261c957714ba5b84baec53b78d"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "6e132805411df48714bdf540dcd32277f9db954049fd24843893a1ee5f51694e"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "15b3fb2731f5fbe16ef86bc6ed2914cbba75dd2cb97950067585f9cd8466eaad"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "ad5a2a1b0bb874354ea28a666b13202f07ed99cb43f300bca480e8094773efba"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "0097c01407694fed26f3fa63db35641ccf917981b49ad77f7ca95d763896d9bb"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "3f289dd8e128e8f46bfc533585e8e88be5a207667cd6f779266fcb1eed37d186"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "06b24907f7d9a99a466cedde894cc90e0888713d8caf4244fdbba0be1df6dd16"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "0329d92f668ae3ceed105a5aaff76374726bc3f32a91281d4e64037174e8b410"
+    },
+    {
+      "name": "partial-spectrum-check.json",
+      "sha256": "6242464477bdb865927f89512a24757463243de280933f22debacd1f2926e21a"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "9f942030e76eeb124387368a83d3494c3b77ad870d0761471f49ebc690b14695"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "c31c9d3c99ba57fa5f4673aedd08cadbcb6af53e73c2cf03d46d33e2317500f6"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "c8bcbb17d2aff2120757e27f720defee1ba85dcb2d7107e4ce844b034f350cac"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "c782dbe5d56474e29d8f253e9083f63d6db9016bde7009dada73ee7740ad1c9c"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "547ddfca31bf1a4e7f6c4bac9159e1bc51edc8920a0e5fa7fe9d2e62d3f16e0e"
+    },
+    {
+      "name": "first-line.png",
+      "sha256": "97069a4a5061e3ec8b16bb38b2de012bc715d233c78b67ea12e5a5e8888025e2"
+    },
+    {
+      "name": "first-line.json",
+      "sha256": "0608d8028926dd3c0ca592e5ac3381ab9d3c31ecbda143c4e274a0939606fc29"
+    },
+    {
+      "name": "second-line.png",
+      "sha256": "9dff4b45288652bf9040d1e984b28109d425fdd31677a1fb2ec751b22265eab8"
+    },
+    {
+      "name": "second-line.json",
+      "sha256": "0bc44b332a90a159be101fcd80bb98ed8955dc2b1f7bc29eec28c66b8bd217be"
+    },
+    {
+      "name": "third-line.png",
+      "sha256": "43e074963fe9411ebb5b52c19e8bd200fbe1732c8ba66378c067cc166de55bc4"
+    },
+    {
+      "name": "third-line.json",
+      "sha256": "377126cee7c43c944cf2c70d631f83157f06a13188d2a03a9d3c319c565f76ee"
+    },
+    {
+      "name": "fourth-line.png",
+      "sha256": "ee871d34a7a154c5984bd75a447891ee401bd42e97c4bcf43626b37aaa2f3a61"
+    },
+    {
+      "name": "fourth-line.json",
+      "sha256": "93bfaca0231a319e1611fa14f755db50549a6ded60972cf48671b4c6f4acc703"
+    },
+    {
+      "name": "quiet-upper-entry.png",
+      "sha256": "daba1e61ab8b1dbe479d8459bae2c04b6a647312295397346204b0c6adf70fbe"
+    },
+    {
+      "name": "quiet-upper-entry.json",
+      "sha256": "905399d94138a703f7509e98f6a1ead2141cf791dc4d0bda7b42c92ac6dec156"
+    },
+    {
+      "name": "final-opening.png",
+      "sha256": "2cebec33d831cd0c8a094e28b7c0a9106dca3b8eebad307bfeb590416bee1688"
+    },
+    {
+      "name": "final-opening.json",
+      "sha256": "c2f9bd82322ec096129a2d9df21332b3bd6d8a7513184a5fc619a5255dd79bab"
+    },
+    {
+      "name": "final-ending.png",
+      "sha256": "ef876d9034bc1e169e96d71a505324105cac5e43daf88a1d76e80e78209d7ef8"
+    },
+    {
+      "name": "final-ending.json",
+      "sha256": "f7380e44eea69ecc0974f0444201fc3d44d63de3c7b1691e8c761e599f95e5af"
+    },
+    {
+      "name": "second-line-turn-detail.png",
+      "sha256": "fd5cfb64409357e9f264830bfe6f85af21db4090ad13b78a4b81e19fabed6916"
+    },
+    {
+      "name": "second-line-turn-detail.json",
+      "sha256": "ce39933c5adb1ee59c7f2883a2e641560e507fd883730a3c2dd508c823503bfc"
+    },
+    {
+      "name": "final-to-go-detail.png",
+      "sha256": "c739351f09f37904e4c0ad36624c47ff44c2323e03327c250078513cf3c22b86"
+    },
+    {
+      "name": "final-to-go-detail.json",
+      "sha256": "162f5296a2fb4d2a9f4ddc6836decd6142eaf682f8fbd05ad3872b6d2c4c4651"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

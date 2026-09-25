@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a6d4ac50fc3ce5d4",
+  "source_id": "zhouzhou-052",
+  "work_id": "work-45614eec3954",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T12:18:14.813286+00:00",
+  "sha256": "a53eb8ca73d1c4c335265e27f14256e1e0a745e2ca0fb75176722e8b019dc37a",
+  "source_sha256": "c37952ede70f370310d7ca4ae8830c8a2bf71cb54f489f0c2596d12821ce6d7c",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=4wFFT_usvzY",
+    "edition": "official-label-issued-game-theme-release; HOYO-MiX / 茶理理 / TetraCalyx / Hanser; Moon Halo (Everlasting Flames); 2021-07-09",
+    "audio_sha256": "278cda4e97fa33dc507793150a24c183bebf654c0e06305c2ad548a8f34fbb19",
+    "start_seconds": 8.74
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 96,
+    "maximum_parser_boundary_error_seconds": 7.352909392466245e-09
+  },
+  "review_note": "按原曲复核96音人声主旋律编配；源谱两处无法确认的人声低音显式省略并保留原文件，连续G4只触发一次，修正提前入口并补两处旋律事件。C4目标近似B3到C4滑入；词音对应及软边界存在明确限制。",
+  "note_count": 96,
+  "event_count": 158,
+  "duration_seconds": 54.56999999294121,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "Source notes 3 and 14 remain unconfirmed and are explicitly omitted from this vocal-melody arrangement; the original score remains unchanged. Their omission is not an assertion that the source author intended rests.",
+    "Source 54/55 has one G4 key event with both source indices preserved; exact internal word allocation remains unresolved.",
+    "Source 56 uses the source-derived C4 target as an instrumental approximation of the observed continuous B3-to-C4 approach; its entire recorded duration is not asserted to be C4.",
+    "Practical soft-boundary uncertainty is roughly 50-100 ms; earlier uncertain frication is not reproduced by source 37.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "a24cfaf03ead3ac26c41804d5941d04576f22c67fe0d03952fb0d7b8e0c14712"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "1540412ff50e75658f354fac17e9d4c76b6e4358da872bd84ea58354b6136e7d"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "28caf24662b98aac054696626bfc4ae44fc75169f6141d99b694a97a1a219857"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "891dadd11c056e0856b8239d4d25c4e080c3aab2ca8b3d876c369d734120f544"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "41c4278078befca70f1f4315ae6d5b0133c64fe7ff5a7e77916c87daee0ccf84"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "7eeb955805c570a02d25e7f006d20d1b39773d2b2e3dd6c2f1a682b039517157"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "a81a70d81a8bdb0d0e2856c6b011c16d7f117beef2110faf769d6448670cebb9"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "aa8a51eb5d0a4b7446f5fa11168407dba560821844bce777f27b993801968c1a"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "60efeaac0b53c197b9268355a094f063d2282a521cc34151db662cfc4d451822"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "b707eef66f51ed5cf0e60606add60e72e58321383634b4a5df935c3aa9f7ae72"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "b283e35d4944a7d0a9c90fd430d837cb7cdcd6cb8e4ea3b5888168663837d8db"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "e81795602f377d10d373e4fc0cec8d0f476587bfe0f5a7eab3c6db6f2c003015"
+    },
+    {
+      "name": "manual-timing-7.png",
+      "sha256": "c09c50ac142d3be289bf66013f96dbb79feb274628e8f58421d76aa9499846f9"
+    },
+    {
+      "name": "manual-timing-8.png",
+      "sha256": "3cdd90dc9bb9b004125870501154d3f95fc871eaf48c44dba9e34ececf6968d9"
+    },
+    {
+      "name": "manual-timing-9.png",
+      "sha256": "2fdf5264dbac0d07f68228ccce3f893a2bf6017e28294b9bfd39f67a6b0d6871"
+    },
+    {
+      "name": "manual-timing-10.png",
+      "sha256": "fdbf8a1a3875910b1927f69f72142fda9450a9a99dfa457c185476bec90e78d6"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "e9ab6b0b4b79c8a7fb7a7ca3d1b94d880fc87b5ec614e5785ac508052f3651db"
+    },
+    {
+      "name": "high-review-20260925.md",
+      "sha256": "da562fb13ce7ed10002757ade023c705ac1c2b8ec9f386781f9248e8ed29d9b8"
+    },
+    {
+      "name": "root-independent-052.md",
+      "sha256": "a83a679bb306e95e5a82b66636f5066c34422e69f193fe9977372dadd0ca749e"
+    },
+    {
+      "name": "independent-resolution-052.md",
+      "sha256": "4f5cced9d025b6920600b376a46e29dd885e8fd32e128ae81b2952214aa9a56b"
+    },
+    {
+      "name": "root-adjudicated-spec.json",
+      "sha256": "bbe258d4ab1722d4d2e0fe67ae8f332774e0a39dd36a53f89a1ba4f7ea60791e"
+    },
+    {
+      "name": "root_adjudicate_052.py",
+      "sha256": "39fb4ec0a8f5d7c576970c65577641add11ca0f89261749e081b3c5e8862d333"
+    },
+    {
+      "name": "alternate-sheet-review-20260925.md",
+      "sha256": "5a6c34c9986ce885737288670bf5502f473acf6ac132be0dd37620a6a8676898"
+    },
+    {
+      "name": "sheethost-XI1mah-preview.png",
+      "sha256": "05298d51200e483c72cf022f7ceb0f39e6020258785a9bdfb5b592e7137c09a2"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "3deaf8ca9f7c916a09c06a95f4f567404f9f6ee3bd17e3f58c207622fbb49a39"
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "efee5161d058606e79bce6cefa8a1f4d378525847a76fa47493e350ebb5e7de2"
+    },
+    {
+      "name": "articulation-1.png",
+      "sha256": "70eda8ea545f7272bff35e6fec03d555bd7527455dff067010c02dea9dc0456d"
+    },
+    {
+      "name": "articulation-2.png",
+      "sha256": "7e85a4945a9d6ec5718c6c57f3d5f1918e2d7739f64c26f0a813f3841a077a7e"
+    },
+    {
+      "name": "articulation-3.png",
+      "sha256": "552d58f4be05274c3429d6aded481f81a4d44cf3b2fc3310452240d996c830f7"
+    },
+    {
+      "name": "articulation-4.png",
+      "sha256": "aa25c038df05ba35c53affc0521d27781619bbe153ba966cc5bdd16ae66d32fd"
+    },
+    {
+      "name": "articulation-5.png",
+      "sha256": "6482402d0f21915588a3702b80c972879a502334379b16f515bf6742c619addd"
+    },
+    {
+      "name": "articulation-6.png",
+      "sha256": "c5c2c599af18eda60cc6ffe1e76cbc2bde2d0b488060441e1b07a1839550958a"
+    },
+    {
+      "name": "articulation-7.png",
+      "sha256": "e03b65a68b9887244837d3ae7f233d01e456645015a8a6844673819765d97e7c"
+    },
+    {
+      "name": "articulation-8.png",
+      "sha256": "efb5f7f715db9e9d44548008611eea501d96115d213a2858e45d548fb97a7347"
+    },
+    {
+      "name": "articulation-9.png",
+      "sha256": "0ea6cb3b93b9d6fc0a482711b7b563acdf1f07346b441791507f056e0461269d"
+    },
+    {
+      "name": "articulation-10.png",
+      "sha256": "27ce1af16eb184a819e44a49c8d108cd3750acd857aa9156c9b1d72bd88e1754"
+    },
+    {
+      "name": "articulation-11.png",
+      "sha256": "c934123f82d6f76eaabd58fd9e7f38ac851c48e01c643c1fec3fb06e0bf4696b"
+    },
+    {
+      "name": "articulation-12.png",
+      "sha256": "36e23cf1549a9a68ed686e31fc5904dff7c1754fa54c2d38c48bc8bd55fc1323"
+    },
+    {
+      "name": "articulation-13.png",
+      "sha256": "714dc45580dad42e0fd5c4bf736ee5e347c07b1e0908a4e594c610ba2e281973"
+    },
+    {
+      "name": "articulation-14.png",
+      "sha256": "93422bd34fda9118316201bdc8f1b8b580245703195878097f728cd6f857b7e6"
+    },
+    {
+      "name": "mix-evidence-line01.png",
+      "sha256": "6cb9bd08b32b15e756b800e9c32dfdf789a5ace1ae36329ec5f6549620ddebe1"
+    },
+    {
+      "name": "mix-evidence-line02.png",
+      "sha256": "1290138163be027a4d45a7ce2b8c776319e8696c0bd24b35bb75e10bddd91837"
+    },
+    {
+      "name": "mix-evidence-line03.png",
+      "sha256": "09324a1469182f32b7233967533289c9b48c02c16be4b64adde45c772cf39a98"
+    },
+    {
+      "name": "mix-evidence-line04.png",
+      "sha256": "26ef20b53ef0064ebb1c30d256a8e1f76d01b94dcf3232f4c62cbcd7946e5b7f"
+    },
+    {
+      "name": "mix-evidence-line05-06.png",
+      "sha256": "a45209b6d360d4e65c0f1ef9aad24be469a7f97efc9269ce0e805b02401f6e33"
+    },
+    {
+      "name": "mix-evidence-line07-08.png",
+      "sha256": "12bf92719b48b8bbe5ffb660e141f582e3e1ea2e53feb34eb6b374d694cde12d"
+    },
+    {
+      "name": "mix-evidence-line09-10.png",
+      "sha256": "493651eeee8a23a71742151555207e0636548e04c4342479c4c91bf0eb8c476a"
+    },
+    {
+      "name": "mix-evidence-line11.png",
+      "sha256": "84896c6b4780bd9e09d6465fe17de645107c94be26cb7c79b4182a4d15596e13"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0eee5fde0abe3bbf",
+  "source_id": "zhouzhou-218",
+  "work_id": "work-6b1797c84172",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T23:58:32.490300+00:00",
+  "sha256": "ae708a9f95032162fd80a9fe1868d957c8d9ad3a633234582a33853bc9f87e0b",
+  "source_sha256": "be0f71ad2ed0bf6e2b64850bb506206295e7bb8b15cdee893f550d289d0c4b41",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=MtV_NiKVgJs",
+    "edition": "official-2016-film-song-studio-release; 老狼 / 任素汐; 我要你; 2016-10-21",
+    "audio_sha256": "6e0d122033bce9a469dc11555d6dcf913d16733455706fc7510bc1320bd19bf3",
+    "start_seconds": 46.44
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 37,
+    "maximum_parser_boundary_error_seconds": 1.956514950052224e-09,
+    "playback_pitch_comparison": "Each C# MIDI pitch equals the reviewed recording MIDI pitch plus 12 semitones."
+  },
+  "review_note": "逐音对照2016电影歌曲录音室版本，明确选取第二段主歌；修正6处与录音不符的八度，恢复低音入口、重复音之间的停顿及完整尾音，形成37音校正版；整段升八度以适配App音域，节奏及相对音程保持。",
+  "note_count": 37,
+  "event_count": 63,
+  "duration_seconds": 27.69000000130434,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "All playback notes are exactly one octave above the reviewed recording melody so the B2 notes fit the App C3-C6 range. Relative intervals and every timing boundary are unchanged.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "2dad6755129aa89f3e4dec34074940dabd0fee70582e11e86b0cab9fc0b2bcbe"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "71647acd66353762568fa4ddce00f3579024ac5d576f43cd7ffaa86547232c0c"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "9268027384aec3aed7a0dc7fe1a42a056ce14f12e9740decd53ac4f25dff5f33"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "aff21830a5ee98fc7bbc65f7045408fa225aabf377d2cb874b481486d049457f"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "3fc461116b0eae9315688f13ae70ee9845edf29e966fb00bbb220449e96791d8"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "5134f81ad588748332a7e3a492d6fd2b3c79f872852487f67971ce48bbd98efd"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "5a928637ac3ecad1999b7a44b0ecb30a9d9821d0d2d3aff30dc05501adc631df"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "25e921e9faaf6c13991a0fd8b122a00fd438197786f273b1d288431062a33b03"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "6c06048fdbbc6a742d466eff60d8d4156a9cf4a1ea750e45affcee16d3da75b0"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "a89a63834e591bc5e715bc8d031b0737520bc59e18d5db17f3861d6d35dc8d95"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "141479a32b8688e64210e644fad1372db7837c88d4df3e6db33259ddeacb7b58"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "43789448a3ab09c9cbba4b93a578672f15e111a4e312cdb6f199287a89bfa9ef"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "4ab343900e70a7160ea40c5c94b72310e1367c2e78cd68c9098062a10c692e0c"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "84bbe89fa0aaab8e7d54af9c4e8d7c054e30f414b88d1b101c206074a8d8cd6f"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "04ea73e3a74f332d861152af4cbbc2b2c12f81d5e6e17ba64c421b83818e132e"
+    },
+    {
+      "name": "first-phrase.png",
+      "sha256": "7ff15af20c775910fb13eda7195df612679cc9fb24ad883f105f5a3f22191755"
+    },
+    {
+      "name": "first-phrase.json",
+      "sha256": "2c12458b8adefb11767cb02e55b04884dd6c72f1fd13c0df136d3f4d189d4a0f"
+    },
+    {
+      "name": "second-phrase.png",
+      "sha256": "c44371c5ccd6d87fd9e07216468447b411e82e5f2b44a07b619b5e8db9290005"
+    },
+    {
+      "name": "second-phrase.json",
+      "sha256": "94e7dfa80b8009b60da5a80181d90b6bf0992197e3cf89a58caa3b747ebab44b"
+    },
+    {
+      "name": "third-phrase.png",
+      "sha256": "2123f03d819ac5715cd9442d0f9d2bc0202e00b221ab56e5e58dad2f82301317"
+    },
+    {
+      "name": "third-phrase.json",
+      "sha256": "08d4edfe8116f77e33888cecb50286a5d2e2d3c73408ae9548134f06338fb73f"
+    },
+    {
+      "name": "final-phrase.png",
+      "sha256": "e9f5441e5ab135a7d0cd1550905a52ec48207ac766c0d3927a60d31017cb8797"
+    },
+    {
+      "name": "final-phrase.json",
+      "sha256": "178e2b4d9800b6df50dfd94545a07d5692f1bbdace6f63c1f359b81e58fd361b"
+    },
+    {
+      "name": "first-entry-release.png",
+      "sha256": "b17a6bb1abb2729146caa5923a538512c5b63c6f6baba2e53bf2bbe4d4166113"
+    },
+    {
+      "name": "first-entry-release.json",
+      "sha256": "01dd46239c690f50d92a34990a86692fb113a23017305ba71f29efb0f733b96a"
+    },
+    {
+      "name": "second-entry-release.png",
+      "sha256": "e2757b6f9f67c82e917aa7ace49cbfad656d8ad81ede50b2ad197c5a5d43c38e"
+    },
+    {
+      "name": "second-entry-release.json",
+      "sha256": "be51d7f96cdca014388e518d31b538e73ed107cdac6e5271f0e8f711f2cf3aab"
+    },
+    {
+      "name": "third-phrase-closure.png",
+      "sha256": "75c69bd46fe08523da664036bf2a68dd15f374809169168d94430d63c11242cc"
+    },
+    {
+      "name": "third-phrase-closure.json",
+      "sha256": "c675894444d5eb950035b76a0fd3e3c600263c6e86b28519519328355aaa532c"
+    },
+    {
+      "name": "time-phrase.png",
+      "sha256": "30d4a5689425fb697c0471a387950bb18427ef1343f2510f75dc9a6742ba8494"
+    },
+    {
+      "name": "time-phrase.json",
+      "sha256": "d288f0010e38d4b82ef2e78cf87afccd7d3ce16d98ff693252adca8ba8a5d0e9"
+    },
+    {
+      "name": "low-ni-phrase.png",
+      "sha256": "2ebfb011c39439d978775689eb0d35eca2bd43493065ae07e157ad2c3d9bb972"
+    },
+    {
+      "name": "low-ni-phrase.json",
+      "sha256": "83667ee429e77df1e2456470bacf846fc651b15472774e4f915465af06e3ea4b"
+    },
+    {
+      "name": "final-closure.png",
+      "sha256": "285774f021bdba5220c040a2e8c3de7c9c8bcfcdead244475a92c888678dc33b"
+    },
+    {
+      "name": "final-closure.json",
+      "sha256": "95e9ad9bc5fa80b8a30c3d7e8d422fa2a91cd8a96511b47ad78b5f300a5c20fc"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

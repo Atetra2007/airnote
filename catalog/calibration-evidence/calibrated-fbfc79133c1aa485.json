@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fbfc79133c1aa485",
+  "source_id": "social-jLHYo8HxLNhy",
+  "work_id": "work-9544a5fa4d8a",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jLHYo8HxLNhy",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T19:56:09.622572+00:00",
+  "sha256": "75c868080d895718e6b94ff414f8be0146c16987d3d7b23968bc87454541854d",
+  "source_sha256": "9b5a4fdd1ced113f8317d44ce95c90b0f5b790a0a683f1a56221c7d7b51bfcc7",
+  "reference": {
+    "url": "https://www.gov.cn/guoqing/guoge/",
+    "edition": "政府发布官方管弦乐录音版本",
+    "audio_sha256": "c660a3e79b67a9dbe87ac50fb37e5131a5f106741963fcd9cfb8039b3c9e3ee2",
+    "score_sha256": "00d4487d1af9f91efbb9f9f7b30efb26af5a23bbc3b8bc996893a4a631b76774",
+    "start_seconds": 7.787256235827665
+  },
+  "review_method": "Original-source excerpt identity checked against the independently transcribed statutory score; all 84 note pitches and rhythms checked; all five original-audio chroma/onset panels inspected; official conducted beat map transferred to every note and rest; actual C# parser compared event by event.",
+  "validation": {
+    "production_parser": "passed",
+    "maximum_parser_boundary_error_seconds": 4.910020834358875e-09,
+    "reviewed_note_count": 84,
+    "independent_attack_supported_notes": 84,
+    "maximum_grid_attack_offset_ms": 49.886621315193835
+  },
+  "review_note": "84 个音对照官方简谱及管弦乐录音，恢复原调、末段八度、三连音和休止；逐拍跟随录音速度变化。",
+  "note_count": 84,
+  "event_count": 92,
+  "duration_seconds": 39.86439909702127,
+  "limits": [
+    "No human auditory or real-game test is claimed.",
+    "Harmonica tone, orchestral voicing, accents and reverb are not reproduced.",
+    "Audio analysis uses about 10 ms frames; onset-grid offsets are diagnostics, not absolute accuracy claims.",
+    "Keys release 10 ms before the written note end; the final orchestral reverb is excluded."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "official-score-transcription.json",
+      "sha256": "275a2d352e3ce65709d7d31bfd874c8e2ca6cfcf4657122f3b2359c6f7680ff2"
+    },
+    {
+      "name": "onset-review.json",
+      "sha256": "633f22746dc8ca2919f6e11b64476ba17dc6874c93907445e6645da64ab1e895"
+    },
+    {
+      "name": "candidate-timeline.json",
+      "sha256": "ccbc6a4257eac32c30a380c63c160f0f463a80a9332a8cadc2612a3282edbd6d"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "bdce39e2b9d228f381d63e7dacdd38de07899024528b54f54b0b68b377df839f"
+    },
+    {
+      "name": "onset-review-1.png",
+      "sha256": "9596664dbbc9497216d58d89dc4ea933ea76035332ff1614a7f9118767f76630"
+    },
+    {
+      "name": "onset-review-2.png",
+      "sha256": "afedb6a46b1700a6b108af711942c534292e36e5ca43821c914baee2d20ad47f"
+    },
+    {
+      "name": "onset-review-3.png",
+      "sha256": "9bbe64cd317a50ce8a81597a7b9f727cb25d5223e53a313d8e92f9c4dbabfb56"
+    },
+    {
+      "name": "onset-review-4.png",
+      "sha256": "997b8d9124d3eaaa71f36792ab30c5a1fc9bc5d82bf807c56606721a21e9da76"
+    },
+    {
+      "name": "onset-review-5.png",
+      "sha256": "a0ad9768c33e8f63757c568db049a03cf5342d7f2731786dc00ac5a2cf45f64e"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

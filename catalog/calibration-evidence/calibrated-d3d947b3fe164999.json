@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d3d947b3fe164999",
+  "source_id": "zhouzhou-216",
+  "work_id": "work-9be03a92c934",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T23:29:39.802980+00:00",
+  "sha256": "e6bf457a88bf81a12ede2a4e97e9e20284ff5d4f2ea5dc5be326ace26c6714c2",
+  "source_sha256": "988d66063df57900edafb6eeb92c681724132c65a62cfe0d4def9415112c1cf5",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=KCW1-CTND1g",
+    "edition": "official-original-2003-studio-album-reference; exact score-source recording edition pending melody comparison; 李健; 似水流年; 20030901",
+    "audio_sha256": "ebc60d61763a819f8554b296d2c32c8b0401b0f24e5a641a123ce4556c2c6420",
+    "start_seconds": 217.9
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 43,
+    "maximum_parser_boundary_error_seconds": 1.5625118976458907e-09
+  },
+  "review_note": "对照李健2003原版专辑录音复核43音，拆分两组三连同音并纠正一处低音，恢复弱发音、换气及完整尾音；明确此校正版采用原唱版本，源作者版本未指定。",
+  "note_count": 43,
+  "event_count": 51,
+  "duration_seconds": 28.87000000125,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "ebfa153fad1555cf95dc323f3766735527258d618089833aa07ec7f747dced0e"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "175777601f2a19069eab4c236215127ab63201eb6ad1acb3b8e0d561f11518a5"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "c6484c1e8c07c2edcb001a05b916e9889a5545879c17e81add8f3972a29c0c11"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "e3afd6e78ce1ea1345d97d6bb9261ea241d3fd135b7de298a77bef0b909f0757"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "975c9227af0c586c89ffb07b53c2c4ca85188096cafc727380a1d4aa7d682e16"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "101b0a764a183c47d0eb60328c08c6fa86ecbc2e6979479880c20bc40baaaf78"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "197040d7cfcfd9dac3368ff04ca34d9285afa9b78e26a5afb7296a3b4d614018"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "aabf31984491a136050a6e5485d2d74917f2ecea776c33ad34dafac5012aa449"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "a06190b6b2f5f0dc3d42a7bc1c024fae9f55a0a43211c97c71a0469dc640b149"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "fe82590535d541a8878eb7f6aa899e32a69d6b1922ec70d12dc49d4972bd430f"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "790be60607174a384c3749a5d164ecdabfca561c0ae40068f638fe06cbc30355"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "cde903074be9c7409bb0463fdab53c9f0ed7bd4f12f019adcd44b1f81a47aef7"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "e92cea48c9f75c8f26745eab0b0946bedc66ca7e6fc57e14093e4dc3c0dc9a01"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "70cd1adff49b4fa6a7515b85e365b4a22fd22d14b0a113af1900a8118ceced40"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "2bb797b50bb74f9cad880499e6434f98063c35302cc195813a6f81935da1b089"
+    },
+    {
+      "name": "first-line.png",
+      "sha256": "9be5b7bc078974053005352a26675bc2569a17e77115b2257558ca15c55bec4f"
+    },
+    {
+      "name": "first-line.json",
+      "sha256": "ee0efb2831d860665228b83816b019e76a4671d4bc7ef13700202e8ca8f96be5"
+    },
+    {
+      "name": "second-line.png",
+      "sha256": "f5a256fa6afd31165ab254b13c3ef74c2156f6b636a4b1ab788444870d493c22"
+    },
+    {
+      "name": "second-line.json",
+      "sha256": "9ab73d6e4bec906303c68aa05ec79f672a5ae4352a25d2780af679c256bda59d"
+    },
+    {
+      "name": "third-line.png",
+      "sha256": "7a5fade646e15df68ffc5317143892aea01d388a18f94936bd432fbe1b015f95"
+    },
+    {
+      "name": "third-line.json",
+      "sha256": "6e6a4923606f9501cfc63bcb000e8c5b32f96543ec52f13d2015d7b681ab7ed1"
+    },
+    {
+      "name": "final-line.png",
+      "sha256": "b0f84f6b2fd9caa18a4ee60e13c6cb01183a821356f0e9599036850ae22f09c1"
+    },
+    {
+      "name": "final-line.json",
+      "sha256": "c41a57fcc129ec05684550ecf3ce2df1a64bf40cf2b4987e54ffe0fc49600073"
+    },
+    {
+      "name": "first-repeats.png",
+      "sha256": "fb35029164abeb842f241ed93d1b897e48dee467ebe333ffdad00bd19133fe0c"
+    },
+    {
+      "name": "first-repeats.json",
+      "sha256": "e390351fe509f8cf7838dbe96aa7b36049ed45e70a9f300d437db422322fdbf0"
+    },
+    {
+      "name": "third-repeats.png",
+      "sha256": "39a79b6dccfcfc8785d338bf896ee7b5a9be679870fc28cacde3567138923c2e"
+    },
+    {
+      "name": "third-repeats.json",
+      "sha256": "0ecb06701b2fe0ba7bb0f3ebb002447135eb46730a1ea1ba5da1a21a5ea511fe"
+    },
+    {
+      "name": "final-release.png",
+      "sha256": "e9a194b20a8a3dd5430ca8c97f0dd370faa76c56d7243f3e344203c205b7b29d"
+    },
+    {
+      "name": "final-release.json",
+      "sha256": "23a36f29b715010e19f9e8617b53801b261dcd848b838ff56a4e2c7de6bad26b"
+    },
+    {
+      "name": "first-line-release.png",
+      "sha256": "6d760680ab45e5747c3065c91ff7965120c642ad5185c0f543e590d7dbf2ef82"
+    },
+    {
+      "name": "first-line-release.json",
+      "sha256": "4e4b27c9dcd2b65794949b88e9987aa5ad0e610ef47f292cdb43e452e1483135"
+    },
+    {
+      "name": "second-line-release.png",
+      "sha256": "802a11683faaa1ea76f822d9cbd73066381a0cf4850e08f8073af832e3cd3ae1"
+    },
+    {
+      "name": "second-line-release.json",
+      "sha256": "8265bbdc9ee256699294f21163954802fb6b1488ebf45326e7313c50b4de53dd"
+    },
+    {
+      "name": "third-line-release.png",
+      "sha256": "a4087f39e75a9fa62a56ce1e17a877460159a28a0a762afa509b7dc9e847c9fb"
+    },
+    {
+      "name": "third-line-release.json",
+      "sha256": "6a6449cb31ba30099a13c465fa31ba0d764010c6b096162d5e0c98c4f1d95f04"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

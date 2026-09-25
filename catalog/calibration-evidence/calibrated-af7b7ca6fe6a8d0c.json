@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-af7b7ca6fe6a8d0c",
+  "source_id": "zhouzhou-009",
+  "work_id": "work-rain-love",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T22:17:14.904609+00:00",
+  "sha256": "187b6f6e6a43073becc6faa295ef9cc2ade6ad84ec35f3d5172d0e1f6dc81120",
+  "source_sha256": "8a1718a5665343f6eb2efac5f1d94ef68e54afe51e3d865a52ad9747485ad0ea",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=MirexJxv9PE",
+    "edition": "official-label-studio-album; Rainie Yang; Rainie & Love ... ?; 20091229",
+    "audio_sha256": "355d122ca396bbc9ce83152576a9e510c85cd209d195d0b19df507ee76b4e6c3",
+    "start_seconds": 53.2
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 54,
+    "maximum_parser_boundary_error_seconds": 1.7499957039035507e-09
+  },
+  "review_note": "按源谱歌词重新定位正确副歌，修正3处音高，补回2个旋律转折，并合并原录音中没有再次发音的结尾同音；逐音审核形成54音校正版。 075同段谱的第三句另有8处八度标记遗漏，逐音对照既有原曲时间线后纠正，并共用校正版。",
+  "note_count": 54,
+  "event_count": 61,
+  "duration_seconds": 23.679999998250004,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "2c437e98beba1dd7013fa093de3e22e9c97f1458c19958dfcdfe154bc2de1aa0"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "559573d53f5a719b127b3f08656e857036c62fc50d9f7727cad36dfad5a94b0e"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "0e0d3119cc26aa1c295f6ed37c0cb7cd2acfaa5ee63e1da5491d8f1dee2fadfe"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "8d695d0a9960e78103d8264c92f4c55b314d099f1b435744ff3accdac4755625"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "f94e9d217ab22533c4ebde46ae181a8a6bd4b6954b87c5e71085c9844408f5b3"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "c03bd7712c396ade6ee922098d3e8566433d0e8c75067a4c46b712cc27e8ae0f"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "fc7c7ad85f2a9e98df48d0ce9f3780a3184f50c76b34f98e39e0d4eb5f1ead56"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "5d8be461a657cca048ea2ca30f6f0758e1753f2687d6b85844181dacdc440688"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "66bd83a8226c250b7634800d39a85f66240b945ed393f2447da5d7627970441c"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "562a21c5e9bb0f76dedcd47cf2d955048af4920fcc54c8de310ba1e63ec53384"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "03e4204633885e5a82d8d589dd7778b5ecd2117380d4241f54ef5d000370f0e7"
+    },
+    {
+      "name": "first-chorus-match.json",
+      "sha256": "e70e36e8515f8fbf7557dcfd8d66827cf60dea012ff311a1329f1baf4fdf31cd"
+    },
+    {
+      "name": "later-chorus-lyric-timing.json",
+      "sha256": "3f1b6d0d1fd65639bbf9fbf0be6250e3cd3a06fa0d4b56a623721c4a71db4e7f"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "460a46685b67d809d41aa0c91cf31f63b638b8db9eb5926ccf41b7c473aa6375"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "e131b4ef32be7f87ada1dd7da749a027ab3e4df175b9f5db67bd6811eeac8909"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "6735c332e3690fa1fbe0b20d0d5652f5bbd5b7d2b8611067157cb7f9b4486d73"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "bf324b945a7ab305fd6e8d99ffa13d6bf730c48484eadf34a2cb995eedac821d"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "f4aa962d8cb0c141d62b3608fd3236861d05f2cecc7daf816e699c71e7d85d02"
+    },
+    {
+      "name": "spectral-5.png",
+      "sha256": "9b3e907b69cde5c3bacd32884076beedc7d2070785a38556db2962a3c6d83def"
+    },
+    {
+      "name": "first-chorus-opening.png",
+      "sha256": "1acf4d5a01c390be13df78b570e93882ce526e3f0771227f97f14638feed4b11"
+    },
+    {
+      "name": "first-chorus-opening.json",
+      "sha256": "22c908d4f88a4e0b6b8ae29480901352a5658099a4a689a14327a002d7c560f1"
+    },
+    {
+      "name": "first-chorus-middle.png",
+      "sha256": "1f6d48fccbaf16407d84a3bbd7616ce30ab46b4c0aff7401cd19a894c2db6597"
+    },
+    {
+      "name": "first-chorus-middle.json",
+      "sha256": "a05833454c52279a6528555f35adc2595491c09f85fda02267b529cf760205af"
+    },
+    {
+      "name": "first-chorus-ending.png",
+      "sha256": "eaf560b3cb2cbcc6423ca81d5d4ebe7f701725760de01a524585a428ff61b758"
+    },
+    {
+      "name": "first-chorus-ending.json",
+      "sha256": "6da87680deb654c45319ef680a2250fa3351ed96d78e7ea3caa0d920efec63df"
+    },
+    {
+      "name": "first-chorus-six-repeats.png",
+      "sha256": "a3870b51d64b859a24373651513de5106ad5d77420a2adb305dcf182fa6caf16"
+    },
+    {
+      "name": "first-chorus-six-repeats.json",
+      "sha256": "057333b8fa0f9fa617ad5948d14173447ee9c76c651495ebef4ac24fe6b40e7e"
+    },
+    {
+      "name": "first-chorus-love-repeat.png",
+      "sha256": "7ead08a58b1b66c0ac14829b862e30d94fe412775475b8a752503b79183c7e04"
+    },
+    {
+      "name": "first-chorus-love-repeat.json",
+      "sha256": "757578edbdc151c7524cf840b21a84d6d68b22b29da7bca8599f1dde4c33f99d"
+    },
+    {
+      "name": "rainie-love-syllables.png",
+      "sha256": "703993ac806fd590155c28a80c60e6c43bf92f0c6a99740569587170be58b8f3"
+    },
+    {
+      "name": "rainie-love-syllables.json",
+      "sha256": "8f83ab68ab80f5d9415f7bd7205239cac2cb3e829c592aa204692098683b44ff"
+    },
+    {
+      "name": "calibration-before-source-075.json",
+      "sha256": "40361197bcd4d8d26d16486377bf21c75c5928a93ec84f3060cf4f1cdf8b563d"
+    },
+    {
+      "name": "source-075-calibration-amendment.json",
+      "sha256": "377f42e83384e4c11d3c469e119834ad311e08cb20223a7dcc34f03923e8ac93"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

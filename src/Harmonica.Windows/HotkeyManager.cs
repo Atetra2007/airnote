@@ -33,11 +33,14 @@ public sealed class HotkeyManager : IDisposable
     private readonly nint window;
     private const int StartId = 0x4B31;
     private const int StopId = 0x4B32;
+    private const int OverlayId = 0x4B33;
     private bool disposed;
     public bool StartRegistered { get; private set; }
     public bool StopRegistered { get; private set; }
+    public bool OverlayRegistered { get; private set; }
     public event Action? StartRequested;
     public event Action? StopRequested;
+    public event Action? OverlayRequested;
 
     public HotkeyManager(nint window)
     {
@@ -80,14 +83,32 @@ public sealed class HotkeyManager : IDisposable
         if (disposed || message != 0x0312) return false;
         if (wParam == StartId && StartRegistered) { StartRequested?.Invoke(); return true; }
         if (wParam == StopId && StopRegistered) { StopRequested?.Invoke(); return true; }
+        if (wParam == OverlayId && OverlayRegistered) { OverlayRequested?.Invoke(); return true; }
         return false;
+    }
+
+    // Optional registration never takes down the existing start/stop pair.
+    public bool TryRegisterOverlay(string overlay, string start, string stop, out string error)
+    {
+        ObjectDisposedException.ThrowIf(disposed, this);
+        if (OverlayRegistered) NativeMethods.UnregisterHotKey(window, OverlayId);
+        OverlayRegistered = false;
+        if (!HotkeyChord.TryParse(overlay, out var chord, out error) ||
+            !HotkeyChord.TryParse(start, out var startChord, out error) ||
+            !HotkeyChord.TryParse(stop, out var stopChord, out error)) return false;
+        if (chord!.VirtualKey == startChord!.VirtualKey || chord.VirtualKey == stopChord!.VirtualKey)
+        { error = $"浮窗热键 {overlay} 与开始 / 停止冲突；原热键保留，请修改浮窗热键。"; return false; }
+        OverlayRegistered = NativeMethods.RegisterHotKey(window, OverlayId, chord.Modifiers | 0x4000, chord.VirtualKey);
+        error = OverlayRegistered ? "" : $"浮窗热键 {overlay} 被占用；可用主窗口的浮窗按钮。";
+        return OverlayRegistered;
     }
 
     private void Unregister()
     {
         if (StartRegistered) NativeMethods.UnregisterHotKey(window, StartId);
         if (StopRegistered) NativeMethods.UnregisterHotKey(window, StopId);
-        StartRegistered = StopRegistered = false;
+        if (OverlayRegistered) NativeMethods.UnregisterHotKey(window, OverlayId);
+        StartRegistered = StopRegistered = OverlayRegistered = false;
     }
 
     public void Dispose() { if (disposed) return; Unregister(); disposed = true; }

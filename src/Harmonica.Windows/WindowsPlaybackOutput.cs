@@ -31,12 +31,11 @@ internal sealed class WindowsPlaybackOutput : IPlaybackOutput
         }
     }
 
-    public Task NoteOnAsync(ScoreEvent note, float volume, CancellationToken cancellationToken)
+    public async Task NoteOnAsync(ScoreEvent note, float volume, CancellationToken cancellationToken)
     {
         cancellationToken.ThrowIfCancellationRequested();
         if (mode == PlaybackMode.Preview) lock (gate) tone!.Play(GameKeyMapping.Frequency(note), volume);
-        if (mode == PlaybackMode.Game) input!.NoteOn(note);
-        return Task.CompletedTask;
+        if (mode == PlaybackMode.Game) await input!.NoteOnAsync(note, cancellationToken).ConfigureAwait(false);
     }
 
     public async Task SilenceAsync(CancellationToken cancellationToken)

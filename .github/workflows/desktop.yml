@@ -39,11 +39,22 @@ jobs:
       - name: Restore locked dependencies, test, publish and build installer
         shell: pwsh
         run: ./scripts/Build-Desktop.ps1 -IsccPath $env:HARMONICA_ISCC
+      - name: Read artifact version from the desktop project
+        id: version
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          [xml]$project = Get-Content -LiteralPath 'src/Harmonica.Desktop/Harmonica.Desktop.csproj' -Raw
+          $version = $project.Project.PropertyGroup.Version
+          if ($version -notmatch '^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$') { throw "Invalid desktop version: $version" }
+          "value=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
       - uses: actions/upload-artifact@v4
         with:
-          name: HarmonicaDesk-0.2.0-preview.2-win-x64
+          name: HarmonicaDesk-${{ steps.version.outputs.value }}-win-x64
           if-no-files-found: error
           path: |
-            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe
-            artifacts/desktop/HarmonicaDesk-Setup-0.2.0-preview.2-win-x64.exe.sha256
+            artifacts/desktop/HarmonicaDesk-Setup-${{ steps.version.outputs.value }}-win-x64.exe
+            artifacts/desktop/HarmonicaDesk-Setup-${{ steps.version.outputs.value }}-win-x64.exe.sha256
             artifacts/desktop/publish-manifest.json
+            artifacts/desktop/HarmonicaDesk-${{ steps.version.outputs.value }}-win-x64.zip
+            artifacts/desktop/HarmonicaDesk-${{ steps.version.outputs.value }}-win-x64.zip.sha256

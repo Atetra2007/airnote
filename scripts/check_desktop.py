@@ -13,6 +13,14 @@ from pathlib import Path, PurePosixPath
 import tempfile
 import xml.etree.ElementTree as ET
 
+from check_repo import (
+    CATALOG_SCHEMAS,
+    validate_acquisition,
+    validate_bpm,
+    validate_catalog_calibration_evidence,
+    validate_catalog_variants,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCT = 'HarmonicaDesk'
 PROJECTS = {'HarmonicaDesk', 'Harmonica.Core', 'Harmonica.Windows'}
@@ -149,8 +157,34 @@ def copy_licenses(publish: Path, root: Path) -> None:
         destination.write_bytes(source.read_bytes())
 
 
+def validate_public_catalog(root: Path) -> None:
+    catalog_path = root / 'catalog/songs.json'
+    require(catalog_path.is_file(), 'Public catalog metadata is missing.')
+    catalog = json.loads(catalog_path.read_text(encoding='utf-8'))
+    schema_version = catalog.get('schema_version')
+    require(schema_version in CATALOG_SCHEMAS, 'Unsupported public catalog schema.')
+    songs = catalog.get('songs')
+    require(isinstance(songs, list) and bool(songs), 'Public catalog must contain song records.')
+    validate_catalog_variants(songs, schema_version)
+    for song in songs:
+        require(isinstance(song.get('title'), str) and bool(song['title'].strip()), 'Catalog record lacks a title.')
+        try:
+            validate_bpm(song, schema_version)
+        except AssertionError as error:
+            raise ValueError('Catalog BPM is outside the supported range or omitted illegally.') from error
+        try:
+            acquisition = validate_acquisition(song, schema_version)
+        except (AssertionError, KeyError, TypeError) as error:
+            raise ValueError('Catalog acquisition or verification metadata is invalid.') from error
+    try:
+        validate_catalog_calibration_evidence(songs, root)
+    except (AssertionError, KeyError, OSError, TypeError, UnicodeDecodeError, ValueError) as error:
+        raise ValueError('Catalog calibration evidence is missing or invalid.') from error
+
+
 def validate_payload(publish: Path, root: Path = ROOT) -> list[dict]:
     require(publish.is_dir() and not publish.is_symlink(), 'Publish directory does not exist or is a symlink.')
+    validate_public_catalog(root)
     deps = json.loads((publish / f'{PRODUCT}.deps.json').read_text(encoding='utf-8'))
     allowed, packs = dependency_files(deps)
     sources = {name: root / source for name, source in SOURCE_FILES.items()}
@@ -244,7 +278,14 @@ def self_test() -> None:
         for destination, source_name in SOURCE_FILES.items():
             source = root / source_name
             source.parent.mkdir(parents=True, exist_ok=True)
-            source.write_text('original test resource', encoding='utf-8')
+            if source_name == 'catalog/songs.json':
+                content = json.dumps({'schema_version': 3, 'songs': [{
+                    'id': 'external-fixture', 'title': 'External Fixture', 'bpm': 92,
+                    'acquisition': 'external-import', 'source_url': 'https://example.com/reference',
+                }]}, ensure_ascii=False, indent=2) + '\n'
+                source.write_text(content, encoding='utf-8')
+            else:
+                source.write_text('original test resource', encoding='utf-8')
             if not destination.startswith('Licenses/'):
                 output = publish / destination
                 output.parent.mkdir(parents=True, exist_ok=True)

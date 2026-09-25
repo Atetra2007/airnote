@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bc2095b5dc055096",
+  "source_id": "zhouzhou-026",
+  "work_id": "work-5baf8dca3f77",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T20:14:47.456119+00:00",
+  "sha256": "323a4bf026efd9fbd00424c0d1ca6e1fe5451d72f385e78140c0bbc8e7710bb2",
+  "source_sha256": "1b2a59242d36b837e8bb6314f50a0b6298211f83efba1e9d49690ae6c791ef35",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=wpJkdFYBtIY",
+    "edition": "label-provided-studio-album; 周杰倫; 魔杰座; 20081014",
+    "audio_sha256": "528a4ebcd947bfaacf7effb38ababb5c5e6ed96301c32ec1a6e607e592df9b9b",
+    "start_seconds": 177.6
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 40,
+    "maximum_parser_boundary_error_seconds": 1.5789574092650582e-09
+  },
+  "review_note": "逐音核对原版专辑录音的40音片段，修正首音及第三句错位，保留重复音和换气，按实际演唱起止重排时值。",
+  "note_count": 40,
+  "event_count": 43,
+  "duration_seconds": 24.559999998947365,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "1188b8a313b5918d0043ba86cbc48a8379789c3511e1165f2eeb30e9060e3d57"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "63a37fff255744d7cc4ec8bb9386184e4b0a2d097803d09f9490a0cc1c2e6a13"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "d5533a8dcf0c2325408b254b064349d24a1dc12633216e5ba164609e6c442dea"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "132dda70048439a735499646181d1cc0e6f4654c39b22dcec30a60b5c3f50112"
+    },
+    {
+      "name": "work-5baf8dca3f77.json",
+      "sha256": "bdbe77c83899ff58c72867202e5ff6d7c589384d3ccf1beaa383dff6800d7ae9"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "0111c67d350b5c758118d4694975545f33a197effac09a8b8969d9b418377c5a"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "b2815aea6cbb39d7bcd09457dd56ef03921e8b7bcac49a9abce0adf0c447d295"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "f3bc09516877304fc488b78e863549d46394da00cb9c275416d8e5d33577f597"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "8d10c4cfd9ad917652956ac802abfb521f7bdf5a4481097454f014fc48ec60f6"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "fc0f48f0abe4aeac71e53ae69d9964812962493f9d06dda1f680391eef8c7a8f"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "385f1b502884982945c4f4a5434775a86af800ba900aa0d4395d708f360bae85"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

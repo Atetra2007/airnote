@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-436e5b654d0de955",
+  "source_id": "zhouzhou-115",
+  "work_id": "work-1f7f0db90f93",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T21:52:04.423476+00:00",
+  "sha256": "b091aec1a0cc038e0447ba403e9ba4ae544bfd573847a9f22f11c45d823ffed2",
+  "source_sha256": "9045cfb50354aa885b2ef062893443e5f2cb6520d5164e4698f9bbca4c6b8ebf",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=velFl0yfLnM",
+    "edition": "official-label-issued-studio-album-release; 林俊傑; 和自己對話; 20151225",
+    "audio_sha256": "5f8cff716edcfeea6e8f7b36082ee9efcc92bac0f2cdb5ce38d2a99fa67467bd",
+    "start_seconds": 40.82
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 48,
+    "maximum_parser_boundary_error_seconds": 2.647059460514356e-09
+  },
+  "review_note": "对照林俊杰原版录音复核48音，修正第14音与第21音入口，按完整音节、句间换气和尾音安排时值；保留简化旋律及末字旋律转折。",
+  "note_count": 48,
+  "event_count": 57,
+  "duration_seconds": 28.730000001176474,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "5db740b1c98952e88b1ca2b9a2ca8582e821b4ec67ebd8168ddbaf08e5c3692a"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "3f506c1de9338b6b3d1ffed7883d7f3468052d4770a182ea171d627aaf1d6ede"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "928197442f97235c8f4072c50d5e216fe5c79c84c3f09b5c7323e4f42822e267"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "6e4b958242f026fa6e3b4f6096e72d984400edb8dae9ecdefcb61e8877fe828e"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "6a1e38523f0ec77656fe3fdf0f70b0bcd65bc2fc3eeb4a0582d72ba3e70418e6"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "a659648cbc797c4822a1560a6c09314a9dddfeb45f6cb846183523ba038e5ecd"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "ac671deb4fbe7b79651d989dddbaacf5bc0549347377b474a60a59b423394535"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "4fb831fa834465e9a1b2e1685e8c1d762de01bce33e48a8cb74ead2bf2435c8a"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "557670619a11d96e147197309748a952f7e276c51fb6355a2fb12bc5970d597e"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "cc5facff8099c0405cefa8d4bfb90feb805939a89d5414e222d515b29ddcf75d"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "8dfd3d27e93e360afd4e39bc2a73f3ecada1d947f8e3f700193147cc7866482c"
+    },
+    {
+      "name": "first-two-lines.png",
+      "sha256": "9dbb6880d27913b897a78fe7374cc329145bb46cbe7fb27d1f3ca45a5f942ae5"
+    },
+    {
+      "name": "first-two-lines.json",
+      "sha256": "cdab331d0f8085b8d40cee8c1c979e77122a8346412724450797d08b7dd77b98"
+    },
+    {
+      "name": "middle-phrase.png",
+      "sha256": "3aa94199636af9612a0c45eed7aa4a0ae2d91066061e7470072c9192f9726312"
+    },
+    {
+      "name": "middle-phrase.json",
+      "sha256": "9324ea842e9ea4d102c05fab10886f30585dadd130f4c138f525988c0754031b"
+    },
+    {
+      "name": "next-phrase.png",
+      "sha256": "395216a6b8f11e9de6d46450b6f58f9296b16d008b8d77da5cca6d186f656d76"
+    },
+    {
+      "name": "next-phrase.json",
+      "sha256": "33a947b417f28894bd47b92228b33c816d29b6f18bd57a95669a2be7d4859da1"
+    },
+    {
+      "name": "ending-phrase.png",
+      "sha256": "e07601fd480a429ae2a667f0f4cbb69d7a18e408cb07c9f3e3b319b162dc5b79"
+    },
+    {
+      "name": "ending-phrase.json",
+      "sha256": "6c802843381c18eb83ff03e5d5f4f7353ae633084d816f3b5a9d111aac5e6078"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

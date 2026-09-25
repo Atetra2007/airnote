@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5784bbae8e8c62e1",
+  "source_id": "zhouzhou-183",
+  "work_id": "work-e2a88d534525",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T02:31:23.522870+00:00",
+  "sha256": "2d73405271286288cd80802d1aa9e60392e6396970231a76513639c473065c63",
+  "source_sha256": "67e864e4a1d85ea22b1c43451c9642250e2cff431a3c0f763fcb52b50cc7cd9b",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=nQsWKF64L6U",
+    "edition": "official-artist-issued-original-studio-release; 狼戈; 苹果香; 20210226",
+    "audio_sha256": "57a4612c3b575c2f37532c48a42e0a695c30b8f588c68a0246aebe6e0d203c50",
+    "start_seconds": 96.72
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 60,
+    "maximum_parser_boundary_error_seconds": 1.0658141036401503e-14,
+    "playback_pitch_comparison": "Each C# MIDI pitch equals the reviewed recording MIDI pitch plus 12 semitones."
+  },
+  "review_note": "对照狼戈2021原版录音逐音复核60音，修正低音、八度及同音分唱，补回六个漏记发音或转折事件，恢复完整尾音；按单音改编保留长滑入，整段升八度以适配App音域。",
+  "note_count": 60,
+  "event_count": 82,
+  "duration_seconds": 26.939999999999998,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "a2290ac3a09e10e90e8a535eb0dd66c543a33e79a473b23f8e036b6c9f198fb2"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "ab126e574008ff0caa14dd86980c3cfbe1a4385225f551084148bd95002d394f"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "ffda491550a0742e3cb07ba77da41619bbff99ba67f4a50dd7fc1f26fbb1dd79"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "072c665af708df8a61bc4f1c910fabf6fe6e19edb449bd86b4ae8b198a99b64e"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "37f248eed6d3755a5e521272af3bd515cee7530a766ba3a571294989f991a248"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "7e85d518ecb05b4ac0fa001441204597f0fe77500c1e29c6dac29163c5c6bb8d"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "0ff4a1f912db9d796debae3030efa3ec4e4bb7c29d42cacab47b248d20c0e2a6"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "146630939092e34b1c3d84e8520cdf7f0ee3d7c9b87e704e801744d90606f519"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "dbf950d71273bb1314e2f90c8d40c8b9f49b2f0b05054252ac75992165230df3"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "1335bfd7388d26aa1bc51649f49b7f484fcb7313c4555b8e85c30f951cbdce8f"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "e5b7807033566cfb10f8568f124bff112c3e21771d437aaf028647785f02f2eb"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "b6a65aa052b610636691f1eb0f721c84117aca153b43e9973fa9598f4a6af512"
+    },
+    {
+      "name": "root_review_183.py",
+      "sha256": "d929eb8d74e11c545c395fd72e1cde852591849b604c193379405590e1265a6a"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "ba0fa8b995d334d9d35d11a85d677a57632ee522b13439d467493bd3fcff05fa"
+    },
+    {
+      "name": "independent-visual-review-2026-09-25.md",
+      "sha256": "075bf1bf7a42d29283f3e8ff35de795d3eb4c49ae8ac01013324966346358b94"
+    },
+    {
+      "name": "root_review_183.py",
+      "sha256": "c6f23605e0bc0cf78d2b1940947cc800da35f6bf4db28d54cef35d35a4b18304"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "1b9b94e07134c76a6caafaacd48595fe1f7b9b921802095d7c444fc872b05cc7"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "2102cc52d0548d0bae4e582366b0cac9719dfdf9871e91b56ea52e9c3612477d"
+    },
+    {
+      "name": "root-review-notes.md",
+      "sha256": "a4b681d25318bb7506c14fb5d33456ef23008402375d7d6c218dc10e46f1b133"
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "f6fa331f15f4da09f4cbd8d6e50a2e3532d266a176fe57bb9569e7705e5d7083"
+    },
+    {
+      "name": "articulation-1.png",
+      "sha256": "b23602cf7f394a402b8597b0bb3b10fedafe42da8fce3d4a695dc4568222e3fe"
+    },
+    {
+      "name": "articulation-2.png",
+      "sha256": "fc8c4441515e2f0370517d012e980f18bfbbd448e855e3408335b8e42e0fac34"
+    },
+    {
+      "name": "articulation-3.png",
+      "sha256": "6e6c3939c8f853ea1a01037ac94d69a06c2e9bd46660c47194974647d3140735"
+    },
+    {
+      "name": "articulation-4.png",
+      "sha256": "0e60d9e37675c0793cf7335e9935c68ed54f03a8bd2b8a617f97c5844b7e1be6"
+    },
+    {
+      "name": "articulation-5.png",
+      "sha256": "f080bd0ed78b1a6077ddf7633a57465815e04454819689b4e0cddf0e0b17dd39"
+    },
+    {
+      "name": "articulation-6.png",
+      "sha256": "9580a18521bebce693b6a744077ebccb26cbbaac4a5cccd234b455536a3a17c1"
+    },
+    {
+      "name": "articulation-7.png",
+      "sha256": "c4fb5abeb72dca765d02686e3a2ce257b620b7739d607da6067f6735e1e98275"
+    },
+    {
+      "name": "root-183-first.png",
+      "sha256": "2b3c833ff3914919b99e38cffd577dbae7db7472bedc76b365b1c33440d7efc6"
+    },
+    {
+      "name": "root-183-first.json",
+      "sha256": "48844ef4f6a911a4bc1e667c3625283d0e85a5893a2c69cc3ab025ee569e0955"
+    },
+    {
+      "name": "root-183-first-attacks.png",
+      "sha256": "fb966ce9a91761cda0974624f483cf9242ee521bbe79694478369020fa51028b"
+    },
+    {
+      "name": "root-183-first-attacks.json",
+      "sha256": "1ae2d50dc246b8794607674f739be1870e0166a4fe0753d8a518e7c9445e50db"
+    },
+    {
+      "name": "root-183-qinsheng.png",
+      "sha256": "7d4ce5c95f96e2b8471547641b1e4161658979491fe594a4b1d7ac32304df6f6"
+    },
+    {
+      "name": "root-183-qinsheng.json",
+      "sha256": "20f3d10321ffe2b04753485b9caa597281abc29d178379f97c951a88db7834e0"
+    },
+    {
+      "name": "root-183-second.png",
+      "sha256": "dfb90cbafb7fddd32fd94586cf1889878f083ef3358439c5ab9f920b200c37bd"
+    },
+    {
+      "name": "root-183-second.json",
+      "sha256": "d1e25cb0ce2fd62640620660374127dfc0eb6edda329f68beefd26dda4b8cd28"
+    },
+    {
+      "name": "root-183-bread-opening.png",
+      "sha256": "6b862f1823cdd57ec59241a07a6a7b032dbadcccfc53f2cc409c330f80c9448a"
+    },
+    {
+      "name": "root-183-bread-opening.json",
+      "sha256": "a24ba402541bc6ba8249c138f22bca418a4348ddd0f6a5e3768408fcb2f70499"
+    },
+    {
+      "name": "root-183-bread-ending.png",
+      "sha256": "8dcc263cadf29cc17d6f3dab2f7a929b9bd33970ec6b46297bf3ab0c2f0a8a9f"
+    },
+    {
+      "name": "root-183-bread-ending.json",
+      "sha256": "dc0aa4bdc62f2b856e20d37af781ec4465cd3b73edb2bca0db20de7af9177eda"
+    },
+    {
+      "name": "root-183-bread-turn.png",
+      "sha256": "80c7e38b7af5ddbf5ac5cdf388fe870db4642a27c7e4594cab1ee2ccb7e2e464"
+    },
+    {
+      "name": "root-183-bread-turn.json",
+      "sha256": "85ec07aa800a9b6979e344460edcfea80abbec4c048152d042cd4b7e9550b16e"
+    },
+    {
+      "name": "root-183-third.png",
+      "sha256": "08dbd8666d74f1dd6fcece90b5376bad46e2dbfd34afb123736cf34d31dc5a7a"
+    },
+    {
+      "name": "root-183-third.json",
+      "sha256": "53e39253bcb09fcd9fbacee53ed042dddf8eaa916d9274dd48fe5e617df9e138"
+    },
+    {
+      "name": "root-183-nanyuan.png",
+      "sha256": "2e38160428866d9f55f2df68cd37395bd20db886bbbb385ae19c2845469af7c4"
+    },
+    {
+      "name": "root-183-nanyuan.json",
+      "sha256": "a227801a52e52a2a764e2b995a631261deeb49be4a665c97ea2a80e7bfbbd9b1"
+    },
+    {
+      "name": "root-183-gushi.png",
+      "sha256": "db4ef6b327b0a8875b49293ef25284c7580a0df946900559fd088abf0197ecc4"
+    },
+    {
+      "name": "root-183-gushi.json",
+      "sha256": "4d4d7d976035c37cf1c00a39206751d989fd119c9cfbdf47b45ac77f69e86c0d"
+    },
+    {
+      "name": "root-183-fourth.png",
+      "sha256": "4030b820bf80f9815b89ea01c0ab2a54493f71fb59141f93578ed423ec379537"
+    },
+    {
+      "name": "root-183-fourth.json",
+      "sha256": "b00f22147423fa17aeb453d1ea96ae29db9273f87c957c91bfc175c53b59dae3"
+    },
+    {
+      "name": "root-183-haizi.png",
+      "sha256": "07af17297e9085ae21b6149db134aa7f2875217facdd24cbe1aa5e9661174861"
+    },
+    {
+      "name": "root-183-haizi.json",
+      "sha256": "b82a7a76c2ed5d34bb718568e17f7f958c43446a30910a507f55a0a0be800687"
+    },
+    {
+      "name": "root-183-meng.png",
+      "sha256": "a4a4c8f7379a1df2ea777bd5e8d4fa03cbfadb0a3bcdf805a408f3773bec4df6"
+    },
+    {
+      "name": "root-183-meng.json",
+      "sha256": "589835b19bf13279bf0f7c23e682c37b818fc37eeb0a79000402bfb8c0c5c1d6"
+    },
+    {
+      "name": "root-183-final-release.png",
+      "sha256": "af473aee9bd84d7833cfa256770e4ae04fba91b8f755d89a4aa13c863c9d312f"
+    },
+    {
+      "name": "root-183-final-release.json",
+      "sha256": "edb8305e835ed110a0cfb6f26ecacb194fe7ca6231b561ff7ed856fc9440fc69"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "cfcbab2ccd8971e60b55bc7e7bb6f5b1d5e34daa356384e9723a962fbb16ef9c"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "68c7bd8adc24634b947eed29811ea5a9f0a26c2da4f15aed7753a104dd4ca908"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "773a228697eeb327a2e76ba8e25cc6ae351d359c6bd45a58a59dacdd4b0f8ca7"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "cc330ecf045e31338e9b32627a7cd9786b56fd072fd081366dfbd62aceb3ec8f"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "00e75f93b3b0b71fe517e94e8ce0db83f5ec53c93b55e5bdf637dea96264cc6b"
+    },
+    {
+      "name": "spectral-5.png",
+      "sha256": "04cf06584b8c546976fdeee60c9ae1e4ca67c2e7934e2c20345f19b1c4d85c63"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

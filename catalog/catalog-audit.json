@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "date": "2026-09-24",
-  "product_version": "0.2.0-preview.2",
-  "scope": "anonymous-source-integrity-and-local-conversion",
-  "original_count": 10,
-  "new_count": 48,
+  "date": "2026-09-25",
+  "product_version": "0.4.0-candidate",
+  "scope": "public-source-integrity-and-production-conversion-not-original-audio-calibration",
+  "original_count": 58,
+  "new_count": 42,
   "musical_listening": "not-reviewed",
   "game": "not-tested",
   "songs": [
@@ -635,6 +635,468 @@
       "event_sha256": "580f15ba252e7aa0aa90dd8e1fe399d29595fcaa7cb2977b248572385db77145",
       "source_sha256": "553f72406f57f99d3ac1d94034ffea393c59f38909e80e2311a554221988ab31",
       "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-426ca228fc761a02",
+      "status": "passed",
+      "source_sha256": "6caac0810b9813c0fbcf6bd8e46bb6433dc9d0dc0192b6c02eeb48884b27f643",
+      "converted_sha256": "95d5c62c8ebd711f6b51e8f8a29e36e4debea6bddb08b9a301021f0dba00f85c",
+      "events": 519,
+      "beats": 159.972917,
+      "duration_seconds": 106.64861133333333,
+      "event_sha256": "edd8096e298fec06f77953b991d687f51876dd7260799dc6c9550ace9fe253f2",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-4519cfc30f7a8962",
+      "status": "passed",
+      "source_sha256": "55d93a030ace5fc7dcbf287af47f2f78c4da7ae8d29edb71323f943324e5b8e2",
+      "converted_sha256": "cec812ed2f23b53587d0f69814f23f7f721fe14b59951ae60426965887610dba",
+      "events": 283,
+      "beats": 133.5,
+      "duration_seconds": 100.125,
+      "event_sha256": "177a411c72f3cd2b3673425b9d0bb79352047118a7ee04b268e2e0af7cce3084",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-7686181d1158e0f9",
+      "status": "passed",
+      "source_sha256": "fcbe5cd77157d6fd9456e48c99c6b66c39f812dda9dcd25484c0b997c9e115bd",
+      "converted_sha256": "5ed09d7a8cea253723a9a6b5b85ab6a5bee837b42d1ed53088caab7607b3de86",
+      "events": 71,
+      "beats": 57.141675,
+      "duration_seconds": 28.5708375,
+      "event_sha256": "c5ff63783da9ecf9f8f0f6f3a82a750b2c78995fef555d80d79e4a1d1e4f592e",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-8e6f09ba3e6b4d02",
+      "status": "passed",
+      "source_sha256": "aa96f73fe1385c62fb78389c9f15a82a802e8d4e18641257469271f4a6776270",
+      "converted_sha256": "98694d417237a6526db5835476683edb9ea7f76da6905c2be4091a77cd3bbb3f",
+      "events": 323,
+      "beats": 191.844292,
+      "duration_seconds": 82.21898228571429,
+      "event_sha256": "264b00b4ff4fd57bc54b95228455c376d10ed355872b7cc7ba6112fd88cbc7a7",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-c73e46b41b60dd12",
+      "status": "passed",
+      "source_sha256": "c19b248de379555b153060113054c5d536ef526ed8eb4eb733c60f21dacfee03",
+      "converted_sha256": "cf44c2b35c10376280d171272b9e5d44cf61bf46acb0088598d0b491d14e5791",
+      "events": 143,
+      "beats": 62.947917,
+      "duration_seconds": 31.4739585,
+      "event_sha256": "8e9acf891097381b083936245d3c1a8a318a7df487244e4ef956c653419621e5",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-864312e19abe22a7",
+      "status": "passed",
+      "source_sha256": "8a4776321aa44746d5d30f5a38fe7d8364aa4ee5a5154cf888f0aac97f193219",
+      "converted_sha256": "c7ba4e53b9124326fa6be4af4e6971ca7e9cc30ea78e8fc12dc8e086cf3206eb",
+      "events": 108,
+      "beats": 79.5,
+      "duration_seconds": 60.379746835443036,
+      "event_sha256": "c928360c3ada25dd7385d5624202e226dbadb74e02f4db03498f18cb4f32bbc0",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-fe13732de9d41d68",
+      "status": "passed",
+      "source_sha256": "b356a26c7a70b905ae6fcdd3c64696da0a48a671056776529f66a2d2cff5a9f5",
+      "converted_sha256": "422cd7922e28b81ea794b6bacf1bca39e65fc7363744da28f94afac6627ee716",
+      "events": 293,
+      "beats": 128.4375,
+      "duration_seconds": 64.21875,
+      "event_sha256": "40998415045e00655aecc4488ce0541b6788fc8cc311c63db72b58a714ee0694",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-e50f5e36ae6888d4",
+      "status": "passed",
+      "source_sha256": "7c0a0c8fe33378cc67261cd48dcf7887b4da44edce29ec5b35773cb10030eece",
+      "converted_sha256": "2d0532de3286a419dca5aace16f8ba435e35c696786d65e59938cd8570961792",
+      "events": 475,
+      "beats": 306.35,
+      "duration_seconds": 241.85526315789474,
+      "event_sha256": "2275a1573fa35de7c97dd733d11eed74bf386425acbfad17004fc6a53ca34623",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-d59e54bd9175f1d1",
+      "status": "passed",
+      "source_sha256": "da68d975a6d7a01276fa4aad2ee5d5b6f7a6a38fa911214fa7d3f061a6181282",
+      "converted_sha256": "41be1f3f6a667622c6f432340ee5eb90478bc74117e8e009b5d089bd08c79ef3",
+      "events": 24,
+      "beats": 16.0,
+      "duration_seconds": 7.384615384615385,
+      "event_sha256": "fd943de5797ce4142e59877c84840a53a082af2ecd1c6d23f5ae51c502aefa6d",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-f52e62d0a295c38e",
+      "status": "passed",
+      "source_sha256": "f01468bdd19a7d8cd0a524a6f8b233dfa9d5df0dd34488fd9c0d500bcf893e63",
+      "converted_sha256": "548c21bccf45ed0b6eb6f7a2cce50cdf1c87f445f552a2a15a7373a9d8b95ee2",
+      "events": 545,
+      "beats": 258.75,
+      "duration_seconds": 77.625,
+      "event_sha256": "fb87b450f2d7f452a001244be4ff4bd8ed85a8ee3976d8651b2085e0183ac518",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-9c71fb87584628c4",
+      "status": "passed",
+      "source_sha256": "6f5cc192079a70c88c2e8070c3fe998d3c219e609d04db2114ce39a84419120f",
+      "converted_sha256": "f5515b610480d5e66eb5fe1f890ed2588a05118fb9e93adee1d43a920652222c",
+      "events": 311,
+      "beats": 158.9,
+      "duration_seconds": 68.1,
+      "event_sha256": "294c494821ce9a38ace75b4e3e068ce76f8cec20ade3b65dcdd799b1ffa666fa",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-7af555e40973faef",
+      "status": "passed",
+      "source_sha256": "714300913f66fd952e11263690eff6c5b8b27a1c32849c68685dc3aae39ae6d9",
+      "converted_sha256": "28503a6351d94ef22739b316ecbaad8a9105ce2e65f924883ae93222613662fd",
+      "events": 152,
+      "beats": 55.997917,
+      "duration_seconds": 23.999107285714285,
+      "event_sha256": "e5bc9ba19df43c77c58a5d14a5e09bafb88d66bc1554256956c70e03df4a2dcc",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-d9041f7726fcebd8",
+      "status": "passed",
+      "source_sha256": "66a0b37356f7ed44410300d677be70a59ccefd13fbd06f6aeecffd0396e396b9",
+      "converted_sha256": "1117fed34b928ff944f733ff32ddaff3859260a1181c7fbcd5fa5de6a374b198",
+      "events": 496,
+      "beats": 209.8,
+      "duration_seconds": 95.36363636363636,
+      "event_sha256": "81d48e098f07f83a0028b0f7c30d8ae590313bf30320ae394fcde54564a45c30",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-01f47dea7e4c6aa4",
+      "status": "passed",
+      "source_sha256": "32ff488ffc9d813ef8d315cb87e48de5be3b9c6d424909ac65c37737d8dd1d98",
+      "converted_sha256": "7829a2c1d6da39d66264c4b3d233d7b595d3d0ec2919c61f1fe5edda61394209",
+      "events": 2476,
+      "beats": 643.800013,
+      "duration_seconds": 257.5200052,
+      "event_sha256": "db1f5cc7590b8971223507cc7f37c86df1d5353cfe46a843722cb4b71b919b91",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-4f7def70901bd537",
+      "status": "passed",
+      "source_sha256": "54cf9d99d49217441440f4b94c4565fb9aa61656bb679f5a2685b66ea4f8ea52",
+      "converted_sha256": "bce1522485cd26ab473b26bc022d925f26ceb077767132c0a94c58b0e2ee70da",
+      "events": 241,
+      "beats": 192.25,
+      "duration_seconds": 115.35,
+      "event_sha256": "873b91e1cead9c84f91b0c373c38f3bf349e622a48d5552e54d325cb763b6598",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-eba4b54c08521094",
+      "status": "passed",
+      "source_sha256": "8206f853e7c5da33d12a80075dceb184294382a4eb12ecb083882e7c2e4cfc7a",
+      "converted_sha256": "e6cffab23d246768e404744261eb8f43637e53670366675439359e37bfd7106a",
+      "events": 71,
+      "beats": 47.5,
+      "duration_seconds": 22.265625,
+      "event_sha256": "8834cc644cbff50268e175175f09c8b052c5c3c02193f3e36c6bb5512be69e3d",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-8627c603941b59ce",
+      "status": "passed",
+      "source_sha256": "9ee9cabff6be859ed13ba07e2ae4a2c3b0d31112c5b91ad37a50c1c11fdb7fee",
+      "converted_sha256": "90f70ae9fd16cc80733919180895227614a81f947e89d3b21eef37ab16b8eff7",
+      "events": 74,
+      "beats": 30.364,
+      "duration_seconds": 15.182,
+      "event_sha256": "7eb638cfa8e7dfe1bde6a4481a595297fcaffe9dec9ab4111e74961fa6549169",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-f09581e7aedf9cb0",
+      "status": "passed",
+      "source_sha256": "7703d972ef42f40bd1a05e1c70e89b6a764c8282019228ba0f913ce56ce86e44",
+      "converted_sha256": "b16151b3633b4be24326b2f044b67803b2796a6534fc80d593d5ff5793c561ab",
+      "events": 422,
+      "beats": 262.5625,
+      "duration_seconds": 201.97115384615384,
+      "event_sha256": "94814bf6ff2bb2f72a8143fe698068b5e019a43f0cf6603aae8dbf8516d543ab",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-a8c6cd73cdb2ae10",
+      "status": "passed",
+      "source_sha256": "04ef7f3cdd243d08efdd4ff4aeb11339f60aba7299aadd19a9d3a7a9bc9c04c6",
+      "converted_sha256": "957bc2ec8ce7d381b19df7171b19e4db2ae05749c527d1086ebe7fce58826203",
+      "events": 110,
+      "beats": 129.0,
+      "duration_seconds": 88.96551724137932,
+      "event_sha256": "2690e21ecb7d3592c6ab1250bafd6131043a68df1465b5c20765171e6afa74b3",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-73a5a1d6c3c46dc5",
+      "status": "passed",
+      "source_sha256": "5b921cd36b773b2b9ee4e4ad00a307a0591738abe1c4a117fee7adfcf780699d",
+      "converted_sha256": "30f71ab6d2d932d7b08b7af81eaaf796d635aa3d9acd7d1996e4117e793ea3f5",
+      "events": 367,
+      "beats": 223.004168,
+      "duration_seconds": 84.15251622641509,
+      "event_sha256": "96b3f7c91141309b05c169a58c1e6c4a3fc33c087cb8af27950f3b4d169932e5",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-b363da60338e1918",
+      "status": "passed",
+      "source_sha256": "fac497b54b06a6b4a4076823e352a6d3b4e0de9c2136c03e066458259d348d54",
+      "converted_sha256": "5b414e3397bd30175011027d8d9a8377bad36bb4f7c1ea6bec21b2adc0184cef",
+      "events": 216,
+      "beats": 172.5,
+      "duration_seconds": 129.375,
+      "event_sha256": "9ee5e7dc047153d1c22e6be6e5a50afdae699be15e70764e7a5c4d6ccc4e5a61",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-a1ec3185c6dea837",
+      "status": "passed",
+      "source_sha256": "9555a42c3fbac8ddda6aa431d497f8ba3c69c6d3091ecf42d1cecaa8c29d8e93",
+      "converted_sha256": "650db7b7a079870f88a6a66114d3df67c48509f784d1823134b8cf822e061962",
+      "events": 143,
+      "beats": 120.0,
+      "duration_seconds": 90.0,
+      "event_sha256": "33d82551f5526dff08bd2e3bf8595e957c1faf66c4025b3fa252a2c30b5d4b89",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-101b2177059b6129",
+      "status": "passed",
+      "source_sha256": "97aa090d83ca67b37ef14c24fad9bb41ffbfce2063edef79260182ada97211cf",
+      "converted_sha256": "97fe8cc0a4380a33a91a59b52221882ff0b92057add8aa7106f111a506fd4a25",
+      "events": 319,
+      "beats": 192.004167,
+      "duration_seconds": 94.42827885245902,
+      "event_sha256": "222e27c11fa187a8e6a1294d278971231663928d4b05e8dc89360f2080a6ca7f",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-1c6a455a27e316f4",
+      "status": "passed",
+      "source_sha256": "7480f3100299fcae1ba57d8e179428cd6b54407498a65c223ee4e144469e1370",
+      "converted_sha256": "9b67babf751773f201c4b82cb190d3d5f2da5e53972c8fb2a46a9d29d0143313",
+      "events": 324,
+      "beats": 124.968749,
+      "duration_seconds": 57.67788415384615,
+      "event_sha256": "a65c448b9beb0f1f8bf958aead7fb1dffbc7cc215a55ce0ba63c013008b4f095",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-bc60aced2007dc13",
+      "status": "passed",
+      "source_sha256": "5df6787d8569fbb36d7ef19a27e19373059684b73fc097be88e496c5d5b263f7",
+      "converted_sha256": "b838ccd70e0f12abac5f2b1f80136e1f47470f7911dd2039da2b40d3b3d2c419",
+      "events": 185,
+      "beats": 87.25,
+      "duration_seconds": 74.78571428571429,
+      "event_sha256": "e1c14707f3ff3cdb30f4e16b7175e9bfe37cd43bc8616a1b57333d8b7238949b",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-849e6ab3d9fe5511",
+      "status": "passed",
+      "source_sha256": "2ab30968f01dcf4f23a2122f2fd9daa1f32c081d621c3cedf6799cb18dc93a48",
+      "converted_sha256": "93583a8b49c63de9bbfdc39f579c09af5dc41bcaa16e72fd0b603b413ca577fe",
+      "events": 214,
+      "beats": 124.5,
+      "duration_seconds": 113.18181818181819,
+      "event_sha256": "394bfd16922dc90bf26d2edbc2df7c0b7d578df43d0bcda77ab61342afc5cf87",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-39ed47f37b63f90b",
+      "status": "passed",
+      "source_sha256": "c9055fa03a31649caf26999f72103b487a00000da7d5b0d7777298b56f28f03f",
+      "converted_sha256": "85c8c59f72777e22728991e87ec53cb986c4aab269c62260e98885627eca7da3",
+      "events": 680,
+      "beats": 405.5,
+      "duration_seconds": 250.82474226804123,
+      "event_sha256": "2cf4204099a56929acc4d23d5b861f81692a6be402662355318f229b8e09ef1c",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-8c7c5796e90abd97",
+      "status": "passed",
+      "source_sha256": "548065f80603d01fe23db4b55d34842054f919d0fe484a172d92202ce2bacd46",
+      "converted_sha256": "7d63016aac810645114a4dc515b85a31380472c9f77acf1f74946527fcc55e52",
+      "events": 1111,
+      "beats": 446.610407,
+      "duration_seconds": 223.3052035,
+      "event_sha256": "164d4b83f9d791d9b2f349d6bbe5a738fca602f0ba65d74298f3f1bb23d0cd38",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-57bb90420ef7703b",
+      "status": "passed",
+      "source_sha256": "d9453294a4f499c5f2eb4314621f4086f30996ae3c7a84a091fb92986d8d9154",
+      "converted_sha256": "d50b159a1ffdbd500c6cdfb4fe10ddf2e22b15ffd6911d5e7032ae4cc93eb55f",
+      "events": 100,
+      "beats": 65.0,
+      "duration_seconds": 32.5,
+      "event_sha256": "8a243f37489ba6dd0e52fe03ef31ba0e6c7c952bd4bc7adeb10669dc9e49cabd",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-705eb8b66b804440",
+      "status": "passed",
+      "source_sha256": "5aa7da2ebee3976dbe88142261dc2387c397b07b42da8a264c2188879b17ea07",
+      "converted_sha256": "0025eb7c96f8f8fef7a79efe5f912d6294b5d1610561a63bef3dd17f1553b2cd",
+      "events": 101,
+      "beats": 75.777344,
+      "duration_seconds": 60.6218752,
+      "event_sha256": "241af3b3bbdc6cf9168c965bd06fd2d69b7a9baa5a341c07a6b94aa0eab165b9",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-26fe292fc36120f3",
+      "status": "passed",
+      "source_sha256": "5ddce6bd4b3f1c262c77b26e85c247b0562bf45c564d0544c5b9b18c46ebb3bb",
+      "converted_sha256": "deb9520146fc59531db9ae65b73a7a4c0f7dbd9b1181be62fd0ba71de695db90",
+      "events": 200,
+      "beats": 116.25,
+      "duration_seconds": 94.25675675675676,
+      "event_sha256": "ffae9297677825e356bcf5ee28a87c0ec7d8f3a9aa8e1e85d47dfdf8c2208836",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-21b47adc9e9f2cbb",
+      "status": "passed",
+      "source_sha256": "af0b087ea81802ead484653810b71ea73eefd6d8d24b79d580db098aacbcc609",
+      "converted_sha256": "c092c1ab954ff40757659f9bcbb8005e6b3c9e7a711982fc86da8cdd337024be",
+      "events": 521,
+      "beats": 428.0,
+      "duration_seconds": 183.42857142857142,
+      "event_sha256": "b679f3a69246bd75704ef75358fb4b18a7c248eb15bf611868995268238c03cf",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-6db38200fb415064",
+      "status": "passed",
+      "source_sha256": "be7a7a45220c15bd12ad0bebe0b459c6cba914fcf7485bb8df398dffee68be2b",
+      "converted_sha256": "89f87cabc963b44419f0e425acff0a8ce4e900c4be7cbfb6b104dca4d14d3482",
+      "events": 645,
+      "beats": 193.5,
+      "duration_seconds": 116.1,
+      "event_sha256": "ef2d911df0acc77c30d0c66ff31f67a0605a60cedae758ff159efe167511e82a",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-9fd84ee9be4c5a74",
+      "status": "passed",
+      "source_sha256": "f8fe592ba237f8e51b1f03cb7876eafaaef593cb5aca2f63f46265cb8e6a559d",
+      "converted_sha256": "096cf7e40cb635882511b573228c5d4c27acd22a2ff320829f9d5420559fccf1",
+      "events": 91,
+      "beats": 96.0,
+      "duration_seconds": 55.922330097087375,
+      "event_sha256": "286f39afc63533eb0850ac99feaa7fa9158d3ab648a09cf34bf92d14149b391a",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-b3f73d5cb002b829",
+      "status": "passed",
+      "source_sha256": "05950ed9207c517753b6073ededab31082472ae04324aa1cb756d0cc779fe023",
+      "converted_sha256": "e8ee00e88564e7c236e1d86fd77d06c461b3992b0bbf29eaa5927a83cd80cd46",
+      "events": 64,
+      "beats": 32.0,
+      "duration_seconds": 21.818181818181817,
+      "event_sha256": "d55fd3177265bdc0d7adac4dd641111df012dcc694e3c9911fced61070951b84",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-7ed3986df7b2bc43",
+      "status": "passed",
+      "source_sha256": "16356ff9fb7929ef107f5d9e9ec4e0bbd12a419b7179825890da0317fd3d6953",
+      "converted_sha256": "4efebd88e88617e5df272f5c37b9d859a84cca87a0c34a72d4a0e9fc3b412843",
+      "events": 1203,
+      "beats": 307.991667,
+      "duration_seconds": 230.99375025,
+      "event_sha256": "52615aca3f01f4b4c6f25c29058ca693b23e507ec13ac9bc34fbd69247a5a3b2",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-ae985813ffa59bd3",
+      "status": "passed",
+      "source_sha256": "74ecbd5122cd27aac3403c4a82185dd0df10dc229cc1d1533ab691d5c2d60beb",
+      "converted_sha256": "1a3aec8682c363da28619f8082bb859befcbcac041d758020c1ac524b4323b20",
+      "events": 145,
+      "beats": 95.122917,
+      "duration_seconds": 71.34218775,
+      "event_sha256": "1d0683d42f66fbeb71529e0049843876895c476aaf69566bf39cddfb1aec6fa2",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-95c071d7345bde0d",
+      "status": "passed",
+      "source_sha256": "f751729b1701431c5fc7eae273c71ef49e5c1cfc4f634453bcfe1afd87de4d19",
+      "converted_sha256": "50585d0b517728900c20e1c50b63185ca162dd454aea2073e473ec317db3caa2",
+      "events": 425,
+      "beats": 467.81041,
+      "duration_seconds": 175.42890375,
+      "event_sha256": "6ff2c402c6536ab7b03d0661052a5c5330e524721a7f1b8de40aab0684398db2",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-b96d6a0a7dd8919c",
+      "status": "passed",
+      "source_sha256": "9379e8b48c9a5955a361aced00ecd8fb05f00fbaa044e2c7710452811e910f3b",
+      "converted_sha256": "bbb37574c9ebd3b8534e5ffdaad65cd1aa0bb3cc7f74d112fcd682842202c631",
+      "events": 484,
+      "beats": 349.0,
+      "duration_seconds": 193.88888888888889,
+      "event_sha256": "aacf7c55498580df4fbb45276ccc4f0b9a85b4ea441d3ea6b307968d9114d57d",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-829db327ff6d3321",
+      "status": "passed",
+      "source_sha256": "74279212d33fdd984b01554c8c2dd30d842c47d5bddb7a8ca604e96e4ec0e459",
+      "converted_sha256": "bc56e2a5df14ac9e4bfeff6e15648cd45d4858c941676379da5794e234280d58",
+      "events": 483,
+      "beats": 174.5,
+      "duration_seconds": 193.88888888888889,
+      "event_sha256": "2e3cbb268071d6d2e3938bead9741fd77963a768ea1544d9bd167901c94de0dc",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-9c31f1880c45711f",
+      "status": "passed",
+      "source_sha256": "8fa512174b42c704bf86a4886f614f2e6576bc03e5bd407c3b01468696457b0a",
+      "converted_sha256": "63b0dc16228f1b36c17cdfcf12e70005379d265ff01019028f36043af1f10f1e",
+      "events": 502,
+      "beats": 280.5,
+      "duration_seconds": 137.95081967213116,
+      "event_sha256": "047ffa251a436921dfcef8fdac9c13e85df70ecdcfa5e7290336a8387e3b0a01",
+      "independent_event_comparison": "passed"
+    },
+    {
+      "id": "community-2d179e0f65f874a3",
+      "status": "passed",
+      "source_sha256": "7446d002d88eeff7be48d5cd4391633ca406f2db400f5f93892d7520814ba4be",
+      "converted_sha256": "37b6411f6a6272c89852d309e4c7d4f06740f666d7a2b93380d1860da6c8b461",
+      "events": 605,
+      "beats": 439.0,
+      "duration_seconds": 219.5,
+      "event_sha256": "81a884efc81b72e81738363114d593aaa0516648149e66fa2c90c2a1643f89e6",
+      "independent_event_comparison": "passed"
     }
   ],
   "excluded": [
@@ -650,5 +1112,27 @@
       "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%83%85%E4%B9%A6-Luv-Letter-DJ-OKAWARI-Jiko-201de5dd2f.deltamusic",
       "reason": "第 32 行，第 10 列：超出本程序支持的口琴音域。"
     }
-  ]
+  ],
+  "audited_downloadable_count": 100,
+  "source_rejections": [
+    {
+      "id": "community-162ded5d756f044e",
+      "title": "いつも何度でも Always with you",
+      "source_sha256": "44c354de945fec9b50513b0530dbd78068eab19d390df95b02689b4a4829c749",
+      "reason": "MethodInvocationException: Exception calling \"Read\" with \"1\" argument(s): \"第 30 行，第 5 列：超出本程序支持的口琴音域。\""
+    },
+    {
+      "id": "community-d4fc4fef4a76371d",
+      "title": "奇迹再现",
+      "source_sha256": "776240e90f29e7b6c77324f5974cdd26e9eaaddbe45a3b953fc7561f67585010",
+      "reason": "MethodInvocationException: Exception calling \"Read\" with \"1\" argument(s): \"第 47 行，第 5 列：拍数必须大于 0 且不超过 64。\""
+    },
+    {
+      "id": "community-b39a766fcd5c69b5",
+      "title": "蒲公英的约定",
+      "source_sha256": "53336d03d97d7b0783d86ccde6b24d867019ee1f6a6d45966982bcc96c0b648b",
+      "reason": "MethodInvocationException: Exception calling \"Read\" with \"1\" argument(s): \"第 6 行，第 62 列：音符时长必须大于音符间隔；请降低 BPM、减小间隔或修改时值。\""
+    }
+  ],
+  "event_hash_format": "sha256 of UTF-8, LF-joined midi-or-rest:beats rows; beats formatted by .NET 0.###### invariant culture, no terminal newline"
 }
