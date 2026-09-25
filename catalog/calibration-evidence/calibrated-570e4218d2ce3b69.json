@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-570e4218d2ce3b69",
+  "source_id": "zhouzhou-179",
+  "work_id": "work-44329b9372eb",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T01:43:08.433292+00:00",
+  "sha256": "9b49a02f870ab909ec7c1216221ea3d1f25e64e4746489b7577bf5710c8003a4",
+  "source_sha256": "ce141be2c6c6c6e0611f8ce29f268a8e42bd81bad87742ab8b597e2267a36057",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=PBhfSwS6MuM",
+    "edition": "official-label-issued-original-studio-release; 是七叔呢, 刘涛, 堇临/刘涛; 燕无歇; 20201021",
+    "audio_sha256": "203ffcb1569b2500800ba26ea688416dcb480f2eac8deea552f1a16679added4",
+    "start_seconds": 30.94
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 73,
+    "maximum_parser_boundary_error_seconds": 2.200000182028816e-09
+  },
+  "review_note": "对照是七叔呢2020原版录音逐音复核73音，修正一处错音、同音分唱及自动定位遗漏的短音；按完整发音与换气重排时值，并排除尾响造成的拖长。",
+  "note_count": 73,
+  "event_count": 105,
+  "duration_seconds": 28.840000001399996,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "161e92ad8443d0aeddf396bcf1172b533fd17445e88647d461447e54f7f7c16e"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "5d39c0a473155d49383fbec099414964ed1a622e5c078a68206fcecdbfb4db65"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "04b29d0ad15385412cebfdfbb2768d3f5b3a8ed1a536ebe4d8f84198482b246b"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "5c0ceec71a447acdecbb4f7711f2d111b951b07d6d50326d851cda813f32c362"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "a418ad33ebe77b222aa8d348b1a140299e507de189cba6fd96beb5dab035cfbb"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "6c1e0c28713fda3fe510802d13de080dd61a505d76d376ec121cd1c86ce1f956"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "792f0152c857825c7dec94a896b81937ce93473481749b32b2ecb6b0b85c2fb7"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "f1dcaecafc9ed8b4340b471f8b43dc30f6a749be12f38722a96da5f472876be1"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "5904ae73c3cab4e5d508bf924b905ec72a6536aaff0c8b54d5f212577e7a01bd"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "815b31c7aced4bebd6b0c422e068351c9f05f05e498cb69dca59242854cef09e"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "cc58fd78affdf63f90374f0932d2b81316454a6885372e033c31f6130ecee32b"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "144a2083cd3aec025b38c38b2d7bda58589f45300c50b071b81c8bf4ef296077"
+    },
+    {
+      "name": "root_review_179.py",
+      "sha256": "23e074cddff0f85ef6b8aa0ddbc92fa183f2113e9e521363696ae3cf022f4fe5"
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "af6b2dec7510de1420cd31e017bb2e770245f38019399b9392471ebfe6f6e6e3"
+    },
+    {
+      "name": "articulation-1.png",
+      "sha256": "7ebefad2f76ae6cf35b49abfc008adf4c67783bb3229b91111321fb6a96a8df9"
+    },
+    {
+      "name": "articulation-2.png",
+      "sha256": "bf296dde553cc1a25ab8fae3d1dc3e63176ced9d012c13771d8141d9e2aa3db3"
+    },
+    {
+      "name": "articulation-3.png",
+      "sha256": "0beb166b47b2da8d8a5b18e9d4d14ebdeea953b65f05de517a45da865934a58f"
+    },
+    {
+      "name": "articulation-4.png",
+      "sha256": "f6e5fb9c594fb6ce46c1f125f4fbe5e8268998c338ad68f3eb483cd56eaedf95"
+    },
+    {
+      "name": "articulation-5.png",
+      "sha256": "4cf69990ee0c19231b479a32f9d761ed9b41e83dcc5bcf41be2af35d1d0071b5"
+    },
+    {
+      "name": "articulation-6.png",
+      "sha256": "15c5b54446823d1e56d892e07390b08b5cd3e34f8c61b9e7ce857789fcba84fa"
+    },
+    {
+      "name": "root-179-opening.png",
+      "sha256": "2b860eb45da70d50b031cae855f85bfbcc42dcd2c522d7d1016fb4aab4ede33e"
+    },
+    {
+      "name": "root-179-opening.json",
+      "sha256": "a533597457e8f5d717d8e2b99f8abacdb6d2e22a4814eb3e305d2236f7ca74ba"
+    },
+    {
+      "name": "root-179-second.png",
+      "sha256": "349d8bcc61504ba45b9a234702fac5f932c6fd6f5a8ec5c36da7dd0bed61a37b"
+    },
+    {
+      "name": "root-179-second.json",
+      "sha256": "1e8e1bef81b2060f0b0c698c4465e88b919e9f1c6baa31de6766cf630adaea3e"
+    },
+    {
+      "name": "root-179-third.png",
+      "sha256": "1b80e2089a7dbfca4abf2fb7c26f5e6f96bf1403e7528e13b18674078d7fd626"
+    },
+    {
+      "name": "root-179-third.json",
+      "sha256": "b52399db87aa7afad45df76b2282c63ad4db3ac29ccee558e3fe40735e718585"
+    },
+    {
+      "name": "root-179-fourth.png",
+      "sha256": "b5747ffe3e107ee02996bdfc05010bfdc607cf42e22c4ae11d829b8ede2eba12"
+    },
+    {
+      "name": "root-179-fourth.json",
+      "sha256": "54f10486a6105977f7093aa4f3418574b2298273e21d9fe8135969618688368f"
+    },
+    {
+      "name": "root-179-fifth.png",
+      "sha256": "07071d6c9bbef0bb362dadb40dce3798fe384160c16b216769a16b83dc6304fc"
+    },
+    {
+      "name": "root-179-fifth.json",
+      "sha256": "0fde0ddfad83f220ce409c3217830d9b8eda8cdc218cbc89dd12e1604e393485"
+    },
+    {
+      "name": "root-179-sixth.png",
+      "sha256": "c6c041d18a2e9d60b9f88f6548e35e0c6d364df73473a9e6101c67d51df89997"
+    },
+    {
+      "name": "root-179-sixth.json",
+      "sha256": "18140e7bd2e3d63669bad99efa946f91cabd3258f1cc6e12d19c980932df1c57"
+    },
+    {
+      "name": "root-179-hanchang.png",
+      "sha256": "0fce523f5a066d8b4ee89f525279515993d32cb8758674d6150297160a99c57a"
+    },
+    {
+      "name": "root-179-hanchang.json",
+      "sha256": "7a283827636373a07f9deda8d88001a22f6418b71d6aa6cdca13851346ae6411"
+    },
+    {
+      "name": "root-179-ni-aizhe.png",
+      "sha256": "c90bae49070fe4ade59a1aab7f2a326a98206f3d8f0063981dae768b3f02b216"
+    },
+    {
+      "name": "root-179-ni-aizhe.json",
+      "sha256": "abc4f6c8bc2c86cce53c66597db4a53fe4b88f1be29e1cc37e099affdf1c7f86"
+    },
+    {
+      "name": "root-179-huike.png",
+      "sha256": "c5342758218550a6dd9b057f0b0fad15dfaf04dfee3cebf166ff4b5ce9939623"
+    },
+    {
+      "name": "root-179-huike.json",
+      "sha256": "f85007e7da6e9799e313fadc81a3edfca7bc02aee2ff9cf4066c7aea3e438c2c"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "4acdb6c56d12fc2104decb6ee6ecfec9b0992a76ea26389dd1cbb48465da94f8"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "8f0392664abca26880e5e84248e8a5a59750f637d2d71d55a2ab72d2b726e04b"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "e82a8c82e3b17e5c81697580f79f5f6cab0b2b05ea0b5e4867fe8a6427cbcaff"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "6a5e9d6301ce01631bf83a7608e14521f569e2848439caa331108c8b934f3e03"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "5aa409f78d6b583e3cad796398a388c036cc0949cc1a7ffc332210b9c0a9cb5f"
+    },
+    {
+      "name": "spectral-5.png",
+      "sha256": "c37158d58487e13673ff9783637584fef15fd3a131c031d0802ccb44638417cd"
+    },
+    {
+      "name": "spectral-6.png",
+      "sha256": "ba4c6531fb44bdb1c0cace2eb086453252bd1d97dcca90bc14bb46854b45eb2e"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-07ac0314e381eec3",
+  "source_id": "zhouzhou-203",
+  "work_id": "work-96ed62ff7ee6",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T23:39:53.573420+00:00",
+  "sha256": "84ded61b588ae6015de90d77e11cc26ffad88a42a33cd07f6948dfd71f408db9",
+  "source_sha256": "21db84628ec9cc095c4abd7ba40fbbe4a696da5faa3bddc6b02c175f07348c6b",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=Q1t86vGSH_U",
+    "edition": "official-label-issued-2013-original-studio-album-release; 薛之谦, 薛之谦, 薛之谦; 意外; 20131111",
+    "audio_sha256": "78dc1810ed170c312d908232a806f3c015f2060b4c4c6b39f7b8d0c09eaa55f6",
+    "start_seconds": 81.15
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 71,
+    "maximum_parser_boundary_error_seconds": 1.0169491915235085e-09
+  },
+  "review_note": "对照薛之谦2013专辑原版复核七句副歌，修正错位的歌词入口、同音分唱和一处音高，补回七处旋律转折并保留换气，形成71音校正版；独立提案与主审修订证据均保留。",
+  "note_count": 71,
+  "event_count": 97,
+  "duration_seconds": 30.689999999999994,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "557b5da320217b5dcd810ba5f9f54e7549346aa87241074cfc06612ecc0ac9b8"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "e1945bc7d7c5f014c66dbb203e159de692f8f50779855dc0617acf8010c50385"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "e2e99c6d889e048ba7cfe8332dbc3bb402df1f728e49c2056bca68b0a49d663f"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "7ac620bf1ca1c43fcc8157f4a48dc5f2e3f6192902912f25a40d578e4ffeff23"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "c7bb3264ced4c9480a026ffa2d890ff3990806e73088f6852ccb83efbd8a83d6"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "1a3324450abf3ff4913072e9bbce4e010ad262f1543c1599ce29a377c4c6f18e"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "568205c334b703d88cdc92c40897dd787125e895906f6075a38f4ddbf6bb587d"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "aa85e7f519f0bbba5730a8a322e3feac7452d367ac687a9338bbfebec859c947"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "26bf518a284d1f4ecfe22fcba6a0780fd56777c1203dc6988abaa3e4ca64418c"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "116d70f14029f5e55fe18c351987089d5a003a6910de2e8f640b49faa826ae25"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "f997cf45be0965dd012a3551a6b9c517481141ea1c3f9e33d1eb47768e080024"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "f0c5a21fbc16da90b61323e0fbf2d5222f41477e48e91b07635f87559b297975"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "e9b818a669bce4d6a92e65486d5ec6f0f288a28eb050ab29cce8a5cea813d870"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "03b82eba8af9b77bf15e63a5b1c3030353e524260876f94571e50af561e6f47d"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "f42b965e3f8a4f30a1c98660e48435c75697a3fa307fcfeaf2db83c4cd6db96f"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "61848b0f7a582d0b51211b06d6c358b3f563a34774cc686478e7844a66bb58d6"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "5c032dfd6c27d29efcec06dd1946b84a9e9bf369394f100baad42daf6c72fa3e"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "e1068dca9322880e5f1b2c5813b2fcb291a388fb289d31049e88418129090826"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "f63f8fd949e57fcd3866580c930a4933134b15c5a1b73f02b8b9fa419ab83d83"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "1ad6f6f2bf0e4fc229d4b7524f89ba40b4394d81e0b4cfd3c03d145842169f5e"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "02cd54016e448b165ce84a582be9b0d011babd53ee191a2c101e6cf70dc71b08"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "0cf595067c30839c63684131e022874906d15bc4b796a79f8bed531caf86e5d9"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "f6e3e54f96d4ec4ca6bf74c2e4ea43ee511c76d5f4842e030bbd95d62873baaa"
+    },
+    {
+      "name": "zhouzhou-203-01.png",
+      "sha256": "d00392308fe2994fe18c7593a89268cac3d9290608c5d2b18a43ceb2c33df61f"
+    },
+    {
+      "name": "zhouzhou-203-01.json",
+      "sha256": "b8572e142dddbfe61ea8bc774b75fd35f872f691c0bd4179f9c6a6f3bc9e1872"
+    },
+    {
+      "name": "zhouzhou-203-02.png",
+      "sha256": "d25d42a6e656fa2a38c89d65d095e086fef9b3ff9b52a713ee71e07cb8a5b5fb"
+    },
+    {
+      "name": "zhouzhou-203-02.json",
+      "sha256": "a00015a1874b00e64309cc877b17dd0dadc7549459e927205c648326c0b0fd7b"
+    },
+    {
+      "name": "zhouzhou-203-03.png",
+      "sha256": "300731425fd28445f06b476b888507b6fe2dd75e05d88fb06f17f75d16537d6d"
+    },
+    {
+      "name": "zhouzhou-203-03.json",
+      "sha256": "49de6d594d2a8cffd17f5d4f61f2501483e3085ff2fe0b85f7f43286a53b9cf0"
+    },
+    {
+      "name": "zhouzhou-203-04.png",
+      "sha256": "0744c89d3cdc741855e452dc62f6c06cba4a2dbce7eb71b9ec6d8f7e6520c5b9"
+    },
+    {
+      "name": "zhouzhou-203-04.json",
+      "sha256": "7b6e9247d21b9bbbf122d484c39affbfbbf5823f82d26764d598352e3e879d1d"
+    },
+    {
+      "name": "zhouzhou-203-05.png",
+      "sha256": "cbffad1cd01dca3960f2551fcf41a7d2e313ebf6b188f44f32bee35aa61ae21c"
+    },
+    {
+      "name": "zhouzhou-203-05.json",
+      "sha256": "868c7217a1381273dc9abaa8d99c3ba0339897bc3b1f4c7f6294e576916e52b1"
+    },
+    {
+      "name": "zhouzhou-203-06.png",
+      "sha256": "c12d9adabfc931ef7c272e55e0336b2d696ddf979caec96ce7e730a78b5588d8"
+    },
+    {
+      "name": "zhouzhou-203-06.json",
+      "sha256": "04fa018c4a3691c641ad545b4cf48e8e6fcded7317d780b63effa959b379d20a"
+    },
+    {
+      "name": "zhouzhou-203-07.png",
+      "sha256": "408393d001364b076fb8661e22d992a02055fc3fc158149079a9cf605fae160e"
+    },
+    {
+      "name": "zhouzhou-203-07.json",
+      "sha256": "90c72ab7584cfa2fc93a380ec3ff64175a6c0b6043c5f6eaa8886366dc08b23c"
+    },
+    {
+      "name": "root-sixth-opening.png",
+      "sha256": "90394e78ef2aea1ec06b04c67e9cc406fed6fd9f4b0aea8d7defc2548229dcdf"
+    },
+    {
+      "name": "root-sixth-opening.json",
+      "sha256": "1404c089faa33cfc17975555f97bdf39292770cc18a398553850662db4f3ee2c"
+    },
+    {
+      "name": "root-final-repeats.png",
+      "sha256": "2714631ada428371a2479267f11b5552229ede7171ac7346c0e58e1ef7535d48"
+    },
+    {
+      "name": "root-final-repeats.json",
+      "sha256": "a1acf7bed7877b93167aaafce1c50ac37c0d11b1577770b967eabbed797b24f0"
+    },
+    {
+      "name": "root-third-entry.png",
+      "sha256": "86774a9e0ef3e9661d1798dd406cff16c0024dcb2b9238410d88742c665c8244"
+    },
+    {
+      "name": "root-third-entry.json",
+      "sha256": "2729139d126e799e1db64b712fdba91cc25a64c18190609ac53f31875106a059"
+    },
+    {
+      "name": "root-final-release.png",
+      "sha256": "7e0a903ab56387315c95bcf62a2fbd615d4e29a5009f5d7a46c76354f56fd3d9"
+    },
+    {
+      "name": "root-final-release.json",
+      "sha256": "6d90ccc5a1ba7571aab8bd7b910cef75733e2cbc3c53e4364453e0119e923156"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

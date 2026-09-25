@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6bcf3d8e68745eed",
+  "source_id": "zhouzhou-105",
+  "work_id": "work-dbf3584d0b43",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T02:09:48.171866+00:00",
+  "sha256": "4959b3e1afd193b63f84ce47756ff7588d1b954538f55040b787a59744bd4426",
+  "source_sha256": "a3595cd7629f35ac804a56c455d495f39c541adb86e3d11c40389b530713a7d7",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=aXjMogbOrzs",
+    "edition": "label-provided-studio-album; 王力宏; 心中的日月; 20041201",
+    "audio_sha256": "d56174672b0a578919e58bd7a4708bca0b222c9645610fb9160e6880b901e6e7",
+    "start_seconds": 36.35
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 61,
+    "maximum_parser_boundary_error_seconds": 2.000003718194421e-09
+  },
+  "review_note": "对照王力宏2004原版录音，修正主歌末尾与副歌之间的整音转调，分别复核15音前段及46音副歌，恢复同音分唱、换气和释放；副歌与已审抖音版逐音比较一致，形成61音校正版。",
+  "note_count": 61,
+  "event_count": 77,
+  "duration_seconds": 36.260000001000016,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "24c74472e33d8612af70b642e29301a82dfa2c1dd903b2ebc579c341dc9a774e"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "c2a0145b9bc13ced5b8be12e9a532a352aac4b86e0508b327a42c699f5263280"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "f55ab8215ab6fea12dfbbf8e3dff94bda176e8d6fe7351949ae304abbe3b8a02"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "387484dd57479f2b47117ecfc8a55fae61b201cb4f34d20adb07b7e5cf39c62c"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "70bebb90cf9c58233d38c1052f70dc0224177722fd8392db8fe12478f85def08"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "fab3dddd912b0167c5ef14b708a618ae3f78d3f1745727a02947da619f91f529"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "0ced4a6b63aed5bf397c202fb279d09eb708e4839fdf408ffc58da9b8868e5f4"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "4b947826d78513e13b7e4c0b34e70d48020e39c64f7faac4a0dc8c273e8c4867"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "bedf60cf74ae427965b7018d30b652ded6cf8b4315d3cd74a90948b1b017d60c"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "6e755a435549b48924ac929150c2a01474c4782daeac24739174d020cc3b7e2a"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "52a80f00f762269df5d55e28fc2307e3728736f8564efe30281a39262486d87b"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "71a0da3b6df6d2b73f354bef2f8b4e21fa731799041aa536203c3b1869bfb094"
+    },
+    {
+      "name": "manual-timing-7.png",
+      "sha256": "bb2f79ebc5cc86706daa638a745b15d6d1db5fbb9adc22bd282c0cf8f275dec5"
+    },
+    {
+      "name": "previous-social-calibration-used.json",
+      "sha256": "e2427242a05a33eb1bf91843a5acadbff7278451ef0a98d16d35d236681415cc"
+    },
+    {
+      "name": "shared-chorus-review.json",
+      "sha256": "b3d676313c4d99c874deda47213f357202fae2344953d28f73f2361fd89128fa"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "db4a78e6d3f558bbaf156aca649e11d3c5af6cccbf7e30cee06a65944d2ac1f9"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "b5a6ef0c8b292b585b26e9b48ebba72a240c08e808946480eccbeabbfbc0a213"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "9e8330b02d296a6d9d6e0cef2e61a1aab1754bdbfbe1f0a58ea6582065814007"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "09cc582aa36a38a57e3fb331bdfc3394672c02962475f73459c6f707fbdd435a"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "70bebb90cf9c58233d38c1052f70dc0224177722fd8392db8fe12478f85def08"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "2205c0d93df0b1dcfff0752c36a6f534413f5519672cf01b6fce6ea475755eb8"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "fc0af3a7d535195e170ea8b75de205dc5acf5f2af7aa61a495d0f3cae98a8734"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "bdfd1578a445ef460fbe1bd53ab60eede2fdeb8b5a67ef12dacedc5ea3519ab5"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "9e90401a870ce9b0c203cebbb3ff740f6e8823f8a4a0554920f9fd707d07341d"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "958ad3082d32e5e35180d3d30b34134fc98552858554e42301b34360fe11654c"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "e752ec5ae92148e029f8d4c6c5fa41d90080b2f874c1ec35dc491da698b91b36"
+    },
+    {
+      "name": "source-pitch-interpretation-used.json",
+      "sha256": "75c46101394c6073ca9bc832e88d5ded871ded0948c5a7b421409425c219d792"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "4558ed82395696fc2310fe12fefdfa6948b54e3d5171f4380e1d15cc42ae9fb3"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "1d9f0937484eb46ba9edb92d7468ba76e29ce574aa774abfc24de323276f3544"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "ae72c8c9906642b2c2e13c49a3b0d9f32e518c166de114f1975cd607094d4fdb"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "717d799545559d78434df0573c83e61721e4590417c37a675ed0cc59427daac0"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "2571b2b8f5d02ab49f814d043d65ae01ec5cf94706d886295681f16474cc95e4"
+    },
+    {
+      "name": "first-two-lines.png",
+      "sha256": "40499e856411c4e280e111af823df7b0db410be86f5418ac7595489115766504"
+    },
+    {
+      "name": "first-two-lines.json",
+      "sha256": "fe0cb57791726ea0e1fcc131297f30ab307d7ea4740bce5d90ef175334ca7958"
+    },
+    {
+      "name": "third-fourth-lines.png",
+      "sha256": "44eea0a1551c812f912050d28531fcb45707e7c9eb6026653045b8089c940f72"
+    },
+    {
+      "name": "third-fourth-lines.json",
+      "sha256": "2402296245727352d3fe527495c40a8e16fe9aa59851f9115ef78c843f082643"
+    },
+    {
+      "name": "fifth-sixth-lines.png",
+      "sha256": "7ac6b61cd265c947be7b6ae8541a078e3cbe1ca0f2b3d3be6eae352720946e67"
+    },
+    {
+      "name": "fifth-sixth-lines.json",
+      "sha256": "42725fa8f52c329f59fd0372b08782a56c765531c090670c7fdd6f1b2e8be87d"
+    },
+    {
+      "name": "final-two-lines.png",
+      "sha256": "de18fddcc03cc46f05473b809736c16180e1a538e69cab7b6c93bfda6e561947"
+    },
+    {
+      "name": "final-two-lines.json",
+      "sha256": "ec7c5851e76723e60b511296ab013c6d13c8a05f13d53f12acd72ad499b48b6d"
+    },
+    {
+      "name": "repeated-so-yi.png",
+      "sha256": "ec6aa4453cb5cec9e130fbc4eaa7c187489ba6f8d5f8b6c492d6e9f40eb46997"
+    },
+    {
+      "name": "repeated-so-yi.json",
+      "sha256": "2f2b13ffb7768255ec5e70c2563c13b5dac799f5efc200e173663cc05f93e736"
+    },
+    {
+      "name": "final-repeated-turn.png",
+      "sha256": "fff43d96e38a4ebe121ad3fb31fa782b37342bdcca82486bd0ac7478fd885e02"
+    },
+    {
+      "name": "final-repeated-turn.json",
+      "sha256": "f0d3907418b32d926226f8f00a0d1ded67453d8042a98b4ecd9b1453c5b0728d"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "98f64b1eef50527c9e288d03c833d55a4eb8422b9cc6f5dd60be4783daea6ea8"
+    },
+    {
+      "name": "root_review_105.py",
+      "sha256": "071f9c0a098882bd3df4ace0bb6eab6c9d3a5bb92184d5c999dd2591a8b87e62"
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "48700d11fb9ffc9b1e16440d787e3d7b2d254b4e0b8058df9dbe0bdfb7f7510b"
+    },
+    {
+      "name": "articulation-1.png",
+      "sha256": "c73707eafc4fae111da14385c4777af636302fd3426d73abac0cbdb775480948"
+    },
+    {
+      "name": "articulation-2.png",
+      "sha256": "dc126ba83270fd35ecac1eabffc235dcbd624fc4344068ad4cff6f92e76c507c"
+    },
+    {
+      "name": "articulation-3.png",
+      "sha256": "ba7e7e174b6487c37947df509b62e390f9b4458e5b5a0343377870bf14e22c2f"
+    },
+    {
+      "name": "root-105-verse-ending-one.png",
+      "sha256": "511c08682d98d02e810abe3a735983490510ae0185e1cd162b6697252083ce52"
+    },
+    {
+      "name": "root-105-verse-ending-one.json",
+      "sha256": "b5d415750c9c3840a00ad5358ac3cfef818f3338d93636bb67b6b1487d81906f"
+    },
+    {
+      "name": "root-105-verse-ending-two.png",
+      "sha256": "05d6753aabe7a6a189ad46ea69e5eb1b3b496828a46a325aa031013862e18c2a"
+    },
+    {
+      "name": "root-105-verse-ending-two.json",
+      "sha256": "fd19f309a4c38a247f0382e819630959314d82a114ac4febc1ff20cddcd835a4"
+    },
+    {
+      "name": "root-105-dongtian.png",
+      "sha256": "c32a704fc3fd1104a93f162003696de0d5a842044fa759e9b45f66812dcd6878"
+    },
+    {
+      "name": "root-105-dongtian.json",
+      "sha256": "1f4b10995a1dec55bb5c8ff850c71162c018c9e45de3897b27eaaa87bd634679"
+    },
+    {
+      "name": "root-105-beifeng.png",
+      "sha256": "ed9d85cf9093e1221c9d236eb1d01ddc6b74ec7ce1cb5b3bbe417488338b7abb"
+    },
+    {
+      "name": "root-105-beifeng.json",
+      "sha256": "9a913b8429f444f4090b80c335e0d2a329b196a990dbca942d5f54583860accb"
+    },
+    {
+      "name": "root-105-shuo-oh.png",
+      "sha256": "b3f147271eb52f62c2bbbeaab2c4ac855cb3d08039c047cd9d6acf866db03e1e"
+    },
+    {
+      "name": "root-105-shuo-oh.json",
+      "sha256": "fc7f1ab8a568fc87b98b0d41e258b33dc41becc2e56c6322b241e1ae4da06c32"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "b33ad5522ec1c45d72d1f546d1355f8ff197d26b4c56de429169372bb483dc20"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "482f560b8a595b4ddfb401bcc328603f3c3882802ffe8e470466172cedccf454"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "35b3a2fc286f46b44e325205e3b200386c09bca8671b63d0082db7783878cdb2"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "33beca86503f1647cfb2a5f24008e3146fc86ee3c6c5de078389a82023e85994"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

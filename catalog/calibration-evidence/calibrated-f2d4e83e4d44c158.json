@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f2d4e83e4d44c158",
+  "source_id": "zhouzhou-204",
+  "work_id": "work-2da3b80f3882",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T02:41:42.686108+00:00",
+  "sha256": "76643a5fe35b88897c8dfdf1249cc6306b210ffbbe8bc44c42f8b71bd561de4c",
+  "source_sha256": "2a87f6b992326a7b0c6a9b874a3ac7f95805aa116bea8aa50e71e71b7c28edc7",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=PiWC2z1InVo",
+    "edition": "official-label-issued-1996-original-studio-album-release; 許茹芸; 淚海; 19960328",
+    "audio_sha256": "60a752f4183ab256a773156783f1cab9ee23c7cba4dc8abfc5d7230619817135",
+    "start_seconds": 155.22
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 58,
+    "maximum_parser_boundary_error_seconds": 3.050860897246821e-09
+  },
+  "review_note": "对照许茹芸1996原版专辑录音逐音复核58音，修正三处音高并补回两处漏记事件，恢复同音分唱、换气及完整长音；明确不同副歌唱法和滑音的单音改编边界。",
+  "note_count": 58,
+  "event_count": 80,
+  "duration_seconds": 36.37999999932203,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "331a05bd0e685ab6ac8fb8b05b88c9177d523230f7548a413bc3d55b1b41510c"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "3ea70201f3666ea3792b80051aa9f1f0544d372e52a3e68015e6aa05e51161ee"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "3a58868cea346148b323ce482dec5222a2e28b2028822942b510bb7142b9f7e5"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "5106938daa8df9d600f38a42bfb7cee0d56f291ab47ea95aef11e2c860b24ffc"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "b255938b1b1e5a0423457d79ac4b9ee32a9bd6416a058232db8e49b9488892c6"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "9d43e29d6604f1b960f28890f47d35c174adb8eeaf7959629542fd30233aab9e"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "e3f2d7bf27356b673395915f811468a60856d4d3c1b524a57a6924e4a4dcb551"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "6dda4ea6fa08a2739478cb5208aa56059ad175b4332eab02b24c10116d9fce71"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "1f89ef199bf87b336dc40eb58b0ed147da0aabd31fd7f703706636cde8f3b434"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "8fd87c565c3815b6ada116689c156d47eebb539b6500c624b510980204b55ef4"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "dd2d944e31d7bc939520b463ef2dfb2e1cc114554728bc3801cd4a9d504002e7"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "f2927f8ff7e5beefb2c10cd12272b88fd08664251c409b03763be964058f1c32"
+    },
+    {
+      "name": "manual-timing-7.png",
+      "sha256": "d0ae1ef8c17cfbe7d3dbd1d0e70f5fbb0521dae45267d459f6792d937dd4e2f8"
+    },
+    {
+      "name": "root-working-spec.json",
+      "sha256": "b64fe694dabe75061f8a5d57ccc7d0d10eb6c94f871e5a00186141c479ae2a38"
+    },
+    {
+      "name": "root_review_204.py",
+      "sha256": "074ffecf5e30202576e220c309dae0b24adae068a96e5cf907048c2f69d3f8e8"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "028871aca7e999f9f633e736f1a393358c41da49ed7d77006bdf2a44463a6ca0"
+    },
+    {
+      "name": "root-review-notes.md",
+      "sha256": "4522d62374893158f14d5aeedf4b791d44937f913ba74d5a82dc118e09d50385"
+    },
+    {
+      "name": "auxiliary-jianpu69866.gif",
+      "sha256": "fe409b7a8ed9cdf5b3e0c7dfea92026f585686a17294f9eff13489f34fa7d65b"
+    },
+    {
+      "name": "auxiliary-jianpu69866-assets.json",
+      "sha256": "224a789fdb1ec1e039fec12303cf20d09aa1fc2f360b113b5066e07f4e4dd90a"
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "b9a6eebd762bbd84b72532d67e1f09846b9edecd8b02babb81fa5992c6139927"
+    },
+    {
+      "name": "articulation-1.png",
+      "sha256": "a3185400c53276911809ee5dd8657c734aef7a3f02071a19645ba8d99b3484db"
+    },
+    {
+      "name": "articulation-2.png",
+      "sha256": "e1434b2150d68b90b7817c8b36d364d992a46d32988aa6840f2951edfef6790d"
+    },
+    {
+      "name": "articulation-3.png",
+      "sha256": "2da97cda4bfc8971b602af59c959baa208e9ff619cf40c73703e8a6ba8b971ae"
+    },
+    {
+      "name": "articulation-4.png",
+      "sha256": "73e2b7edbb5e21a7ef006e6b095fc63a833dd1cbe189aa6f74f2593c16ec9324"
+    },
+    {
+      "name": "articulation-5.png",
+      "sha256": "eeb65a8ee2dc065d399abe7c5d9b052d5e0f71ee87f9900c3183f963a2651cc7"
+    },
+    {
+      "name": "articulation-6.png",
+      "sha256": "814c63e2a4cbe1368286e9d42e56f9fb6a7fd07172a183ae2209917dcaa68f80"
+    },
+    {
+      "name": "articulation-7.png",
+      "sha256": "26bcb2e5b4352634572f11d3aa672faca7b8b11a7055bf141a178270855ef89e"
+    },
+    {
+      "name": "articulation-8.png",
+      "sha256": "2c384d09871f407e4a0e8b6bb2256fbad0b2c9438a378ab22399c6d9a1e90bca"
+    },
+    {
+      "name": "articulation-9.png",
+      "sha256": "1e5455e78e0d46f0a4185e56da31b72c2b78409588a3ba604b685a0f04e817fb"
+    },
+    {
+      "name": "articulation-10.png",
+      "sha256": "95c9fb7657919704b34eb40037fc594a9eda4b549c0328ba075efdb0a59e2666"
+    },
+    {
+      "name": "root-204-first.png",
+      "sha256": "e65d0a3c6af27623d965e1cea480bc147f01dbe8246413a079cef5204791793a"
+    },
+    {
+      "name": "root-204-first.json",
+      "sha256": "34390528d34577eb0368213de099d75a98cbf6a497f6164c52e8f12d6477bfb2"
+    },
+    {
+      "name": "root-204-second.png",
+      "sha256": "05be97d597862574d109bfba29ea1d7b3c02ca87bb8ad73288ce934bcfb2a8ce"
+    },
+    {
+      "name": "root-204-second.json",
+      "sha256": "4d93bd2f5a1735124c8ce95d67a3059520c46ae6cd65ad9e9f937d86ddc82f91"
+    },
+    {
+      "name": "root-204-third.png",
+      "sha256": "9248d395c714246b7010d85c223ea7c3b56ed7797a4f02231fdd4537ccbb32df"
+    },
+    {
+      "name": "root-204-third.json",
+      "sha256": "56e2ad9ce9f1c66da0794f98482485d1dd1dee0189e4ccb819632effa5b65132"
+    },
+    {
+      "name": "root-204-fourth.png",
+      "sha256": "e6b17228c3e9469c84ee41d2533da94ead8d042cd5e107f7df5eca35165ab060"
+    },
+    {
+      "name": "root-204-fourth.json",
+      "sha256": "07dfb2082decc2619ff782f298b16d029839b335a3fc15261cd990d6c0938eef"
+    },
+    {
+      "name": "root-204-fifth.png",
+      "sha256": "b0c5e1b6864ea3fafec41c857585b9d18d7208d4b28738ec5a1e769815bbd263"
+    },
+    {
+      "name": "root-204-fifth.json",
+      "sha256": "8b8ee2fdc733780acbc16cdc4363b415e097ff886eb52358f5b90da76740eff7"
+    },
+    {
+      "name": "root-204-derang.png",
+      "sha256": "7d7f78b7c71333c421561d23f5749586c4d15fd96701b571b85da2dce7b55694"
+    },
+    {
+      "name": "root-204-derang.json",
+      "sha256": "cdc66f0b4fc506d231617f3e55bdb30d278700182d93f4f86c9b368544f776f1"
+    },
+    {
+      "name": "root-204-lei-liu-xiang-hai.png",
+      "sha256": "6796a05d12bdb6bad3c7390a69f426994a0cb163be88ba66065f990848c2209f"
+    },
+    {
+      "name": "root-204-lei-liu-xiang-hai.json",
+      "sha256": "cafd831cf23eba415ac8e42e84ca28e1efae48f42c9389861d432e5e4cc7c265"
+    },
+    {
+      "name": "root-204-first-release.png",
+      "sha256": "7cad1582393c7b31b1d632d074ec297f67035575f32ae760656343c1f1ad68e9"
+    },
+    {
+      "name": "root-204-first-release.json",
+      "sha256": "73b0f84f63506e73202e2dacc8232866bc25a9a4154ae109f4a1f59b012d760b"
+    },
+    {
+      "name": "root-204-third-opening.png",
+      "sha256": "e354ae9d69839f1ac17f6b4397e284c18bfdbe587ae5c2033dbedeac9b13dd85"
+    },
+    {
+      "name": "root-204-third-opening.json",
+      "sha256": "382634c26c0e987d22a855ae72d288f2a747972d014d1661f63daa6838ccf3ba"
+    },
+    {
+      "name": "root-204-shiyimumu.png",
+      "sha256": "314faed9e5eafe349c99393be75f85b743e6c405a15dd842b926b7795247bffd"
+    },
+    {
+      "name": "root-204-shiyimumu.json",
+      "sha256": "a42b29b8b664cc3d4811c8f80f2b534285fafb66fab90491436b298db3949268"
+    },
+    {
+      "name": "root-204-final-yanmai.png",
+      "sha256": "ad125e21c435855da863ba8f3f3440bc829b658c71de679e1b6f5f16a85cab62"
+    },
+    {
+      "name": "root-204-final-yanmai.json",
+      "sha256": "78a23a6a8830d6ba87b80a83c903c81189316d9f14e763c422fb62ff95da81e4"
+    },
+    {
+      "name": "root-204-opening-v2.png",
+      "sha256": "76511bf30976d1c11c6f4b8ec10b6d404729f1ed1aee08f5b1f5c016ee49c0c5"
+    },
+    {
+      "name": "root-204-opening-v2.json",
+      "sha256": "69a56d387bdc7e74b96c7fc864301313c3466a11b64c87b0944e46b0ac53adb0"
+    },
+    {
+      "name": "root-204-third-opening-v2.png",
+      "sha256": "0bd18cfd4c28f5f7999a5c3b6a20582ff65fc36cb87bfa8292ed1d0d9e08c6ca"
+    },
+    {
+      "name": "root-204-third-opening-v2.json",
+      "sha256": "dd83ae95fd0129004fe99795bda8278ede0d03c1ba74325a6c345c9cbaf0f9e1"
+    },
+    {
+      "name": "root-204-last-words-v2.png",
+      "sha256": "aac9979fe44f09d8b412a782fb906ff7f0141dc318476cdffe34670ca44169df"
+    },
+    {
+      "name": "root-204-last-words-v2.json",
+      "sha256": "4625990b69129f88315d3a3f39fac7ba3da012f6423ddb4b8b1020e4ec647614"
+    },
+    {
+      "name": "root-204-middle-v2.png",
+      "sha256": "b60c877f0dbacd834d0a82836fcb3507fe89b061a1910d105cfa8eb625342f0e"
+    },
+    {
+      "name": "root-204-middle-v2.json",
+      "sha256": "1a3796f3bdc3a1543c99eaeda20ec826548c1c2d219840e7b511e8772de445d2"
+    },
+    {
+      "name": "root-204-yanmai-v3.png",
+      "sha256": "1ae4f675b6f68a9b1560eb318721768d62464f7d1c30ce9adbae23352c3208db"
+    },
+    {
+      "name": "root-204-yanmai-v3.json",
+      "sha256": "35859ee2c259ed15e038a350aec8256e7d9463caa300941aefe2d174edb9d30b"
+    },
+    {
+      "name": "root-204-shede-v3.png",
+      "sha256": "8a8dff4950106d06f14a42ce942eb9b18b876c335b0bfd598b141326ced7ab99"
+    },
+    {
+      "name": "root-204-shede-v3.json",
+      "sha256": "31aaff096bd6450c63a0b520764064ff7e0681b8faaffefae8d5fc9193b42218"
+    },
+    {
+      "name": "root-204-rangwo-v3.png",
+      "sha256": "c9b2afe7fae8a7821cc005911c687c00d19c65d7aa1f94dacc729f083b8b37a2"
+    },
+    {
+      "name": "root-204-rangwo-v3.json",
+      "sha256": "63a0201c588bf2956fecd5ddd5f2b564f9f5b5f770f85a50f5f33d8bdb67043c"
+    },
+    {
+      "name": "root-204-qingyong-v4.png",
+      "sha256": "ab593c09a0801c0871dd78c2cccfcc8ec50c5ace94758d5639996ebe40905e1b"
+    },
+    {
+      "name": "root-204-qingyong-v4.json",
+      "sha256": "6eb1b96aa5422dba31e47dc9a57b84efd4166a71f747a8640948d10079626526"
+    },
+    {
+      "name": "root-204-huilai-v4.png",
+      "sha256": "85080d60b8eb8968e862a635a1bc755dfd5fe681f79c579c1cec63804270edf9"
+    },
+    {
+      "name": "root-204-huilai-v4.json",
+      "sha256": "0caa9020d1f2907cf66169b5a0b99c3c2c8baf47c2b381c3ba43c387ec4929cc"
+    },
+    {
+      "name": "root-204-yimumu-v4.png",
+      "sha256": "6321c9715fb8177370e9f2b75e9e0264ee26865d6368189727ad77d7cf3a5796"
+    },
+    {
+      "name": "root-204-yimumu-v4.json",
+      "sha256": "6a3b39f850d2dd7b6fbf73dcf77cc6abf61e6cf2bca61d367c4625d958ca1b73"
+    },
+    {
+      "name": "root-204-chaoshui-v4.png",
+      "sha256": "31074522daefe2f5a6a63f21016a435663d6584190840c7ecdd606986b4b4a1e"
+    },
+    {
+      "name": "root-204-chaoshui-v4.json",
+      "sha256": "f7af6fb3a752236db4cbc565b15dbb757960db6dac778b9547c6af45c5bbc82a"
+    },
+    {
+      "name": "root-204-final-release-v4.png",
+      "sha256": "07c578933e7794c5970a0820ee123385db74012eeacf62e8873a62a05fef4590"
+    },
+    {
+      "name": "root-204-final-release-v4.json",
+      "sha256": "4b998417caacd195ba9686b17ed94422c2650102814a1d579353e53d34ab207b"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "70a5729353ca3f78f795f51ef746095d41c49ca32b3e0341998386e829135f89"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "bd126852f1762ab80c4de94c8ea57305b0dc3f9adfc84a6b4a71f586ff2b080b"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "e888b076b3c82d6a11aefcc1981538100f43f582156e4543bfb3c44dac3bb07e"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "78bc6ec02f5293054ab1d287b13aee859fb126162526472a247ac0fb4b064ca1"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "0ffdd65d1ac619ab94708ea6a38439d4a93075059013290b2360aeccc6ea69e8"
+    },
+    {
+      "name": "spectral-5.png",
+      "sha256": "938b0bf4d29cc6731f30044038ef4777a8eb6d80829ffba6176bc6abe22b0c5a"
+    },
+    {
+      "name": "spectral-6.png",
+      "sha256": "6a0c2849d3ca7368c969b86cc427bd0bb0fc18e2bd11c1700c2ead61d76fe7b2"
+    },
+    {
+      "name": "spectral-7.png",
+      "sha256": "da9911e9fdf96e0d36d20331242a4885183ff2217aaa67eb02f5e629de4991b8"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

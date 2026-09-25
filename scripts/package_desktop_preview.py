@@ -17,6 +17,15 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
     version = metadata["version"]
     docs = {"使用说明.md": ROOT / "docs/GUIDE.md", "验证记录.md": ROOT / "docs/GUIDE-VALIDATION.md",
             "游戏验证.md": ROOT / "docs/GAME-VALIDATION.md", "演奏节奏修复.md": ROOT / "docs/RHYTHM-VALIDATION.md"}
+    catalog_status = ""
+    if version.startswith("0.4.0"):
+        docs.update({"曲库与校准状态.md": ROOT / "docs/RELEASE-0.4.0-STATUS.md",
+                     "合并歌单.md": ROOT / "docs/RELEASE-0.4.0-SONG-LIST.md",
+                     "曲库盘点.json": ROOT / "catalog/release-0.4.0-inventory.json"})
+        catalog_status = (
+            "本包包含曲库开发候选，不代表正式 0.4.0 已发行或全部歌曲已校准。\n"
+            "新增来源和校正版需要在本机导入；具体缺口见 曲库与校准状态.md。\n\n"
+        )
     readme = (
         f"口琴小曲库 v{version} · Windows x64 本地预览\n\n"
         "完整解压 ZIP 后，打开 App 文件夹，双击 HarmonicaDesk.exe。\n"
@@ -31,6 +40,7 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
         "此包是本地功能预览；真实游戏、物理键鼠组合和多显示器兼容性仍待验收。\n"
         "详细说明见同目录 使用说明.md；发行边界见 App/Licenses。\n"
     )
+    readme += catalog_status
     # Preserve an existing archive if verification fails before the final replacement.
     temp = output.with_suffix(output.suffix + ".tmp")
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -42,6 +52,10 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
             for name, source in docs.items():
                 text = source.read_text(encoding="utf-8")
                 for original, packaged in (("GUIDE-VALIDATION.md", "验证记录.md"), ("GAME-VALIDATION.md", "游戏验证.md"), ("RHYTHM-VALIDATION.md", "演奏节奏修复.md")):
+                    text = text.replace(f"({original})", f"({packaged})")
+                for original, packaged in (("RELEASE-0.4.0-SONG-LIST.md", "合并歌单.md"),
+                                           ("RELEASE-0.4.0-STATUS.md", "曲库与校准状态.md"),
+                                           ("../catalog/release-0.4.0-inventory.json", "曲库盘点.json")):
                     text = text.replace(f"({original})", f"({packaged})")
                 archive.writestr(name, text)
             archive.writestr("开始使用.txt", readme)

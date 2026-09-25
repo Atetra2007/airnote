@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a3292a8d2e445f1d",
+  "source_id": "zhouzhou-147",
+  "work_id": "work-9ee4c2b19799",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T22:06:39.563919+00:00",
+  "sha256": "89bd55b5b516f3d34dbcb3697d114eba2589c6b41685a391c946f734e3ae698c",
+  "source_sha256": "91c32346afeb668a7d2d1b33f36ddc1d7baaf6aa695321a5bc9c0097a072a094",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=b_DpvbPuWbU",
+    "edition": "official-film-soundtrack-original-song-release; 张小斐; 《你好，李焕英》电影原声大碟; 20210312",
+    "audio_sha256": "4f3cf09cd26ca125c4ba29549431b267c601c36015bfc538b7e2a1be3c490f66",
+    "start_seconds": 18.49
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 47,
+    "maximum_parser_boundary_error_seconds": 2.999982484652719e-09
+  },
+  "review_note": "对照张小斐电影原声复核47音，恢复两组三连同音、完整音节入口、十二处间隔和结尾拖音，按录音重新安排时值。",
+  "note_count": 47,
+  "event_count": 59,
+  "duration_seconds": 34.35000000299999,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "1d707ba982207ad8dcd1afa86d074008acf54be98d904f38eec2bb08d88ace10"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "7efbd190d58f31300a5ad0bd59392c39024d69e9ac580b1b1fc86c7d123c9f48"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "a909165743bcca4353bfce0c1d4a1f6705808d5fa22e130829fb2dddbab27354"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "9d395c01f8a45908405737624d21c85c802ed109d1d0b8a6cfcbc0f3ec9405a8"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "66c44c6b2cbf7139d0a98bcb38287873936cd5ddbfe767b387c2b89bc3249124"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "086f384e9b6ed1d4465fb1e89942953a1a0d088345a1953198fda6204bb0c2c5"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "5fb117c0fe32bf00390f0d324585ed7e77f87e013a035ff70732ba706c22cd86"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "0ee1a1fdefe0e4cb6fbaf98d77dd489b746bf61e5d2071032983510172442bed"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "1a3064e0ebe11070c19854967347e775af7981918718174e90ec6eb2d4104e4b"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "cd7476f03f27e7bd450f56e9b8261cddd37aae926a3d2a80f4f0b8cfe927f896"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "63807f2075ea29130d09330584eb0765a8e81f96cb3c00f23d6d2d01e955cd77"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "2f2e5ab202ac53d2de2903da693aff5baaa9d35c6e2987bf8a79177102d03c4a"
+    },
+    {
+      "name": "opening-phrase.png",
+      "sha256": "3ddb8bb0738659d92dbbe2ee9666a5505ffa9bab41945d8ebea8d7111b6293a1"
+    },
+    {
+      "name": "opening-phrase.json",
+      "sha256": "bed0bd62b06aa74165ee0d1e7b3f11bb316fa9c11ce4c7180f7addc6ef3696ab"
+    },
+    {
+      "name": "second-phrase.png",
+      "sha256": "483d9e6aab54b204c58d4be6729dd406e0bf8d4e5826087450147412ef64cd3e"
+    },
+    {
+      "name": "second-phrase.json",
+      "sha256": "8b24fb7c175676a4be94ecb886fdfe28e4fbab274a3767144b31eb8121d9d0a2"
+    },
+    {
+      "name": "repeated-phrase.png",
+      "sha256": "22bffb1b11fdbd82a22dc6e16f16cea43d71aa027cddc73a44e3ff32736fb30a"
+    },
+    {
+      "name": "repeated-phrase.json",
+      "sha256": "83587a81722dbc2d048d93f027ac877ff4be436d5a0d8a26c2db5ec660637303"
+    },
+    {
+      "name": "ending-phrase.png",
+      "sha256": "b59b4e5ffaefff9b471aafa45766e73639e06d28e72887f326c0e23202c55fec"
+    },
+    {
+      "name": "ending-phrase.json",
+      "sha256": "58e22cb68211928c1c17e8ea037453f69a40900d52a88d33c72fd65cbb46a786"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

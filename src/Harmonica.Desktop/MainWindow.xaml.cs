@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
@@ -64,8 +65,9 @@ public partial class MainWindow : Window
         hwndSource?.AddHook(WindowMessage);
         RegisterHotkeys();
         RefreshLibrary();
-        var initial = store.Items.FirstOrDefault(item => item.Id == store.Settings.LastSelectedId && item.Available)
-            ?? store.Items.FirstOrDefault(item => item.Example && item.Available);
+        var initial = store.Items.FirstOrDefault(item => item.Id == store.Settings.LastSelectedId)
+            ?? store.Items.FirstOrDefault(item => item.Example && item.Available)
+            ?? store.Items.FirstOrDefault(item => item.IsDefaultVariant);
         if (initial != null) await SelectItem(initial);
         foreach (var warning in store.Warnings) Log(warning);
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
@@ -99,24 +101,32 @@ public partial class MainWindow : Window
     {
         if (SongList == null) return;
         var query = SearchInput.Text.Trim();
-        var items = store.Items.Where(item => item.Matches(query));
-        if (FavoriteFilter.IsChecked == true) items = items.Where(item => item.Favorite);
-        if (RecentFilter.IsChecked == true) items = items.Where(item => item.LastPlayed != null).OrderByDescending(item => item.LastPlayed);
-        else items = items.OrderByDescending(item => item.Example).ThenByDescending(item => item.Available);
+        var items = store.GetWorks().Where(work => work.Matches(query));
+        if (FavoriteFilter.IsChecked == true) items = items.Where(work => work.Favorite);
+        if (RecentFilter.IsChecked == true) items = items.Where(work => work.LastPlayed != null).OrderByDescending(work => work.LastPlayed);
+        else items = items.OrderByDescending(work => work.Variants.Any(item => item.Example)).ThenByDescending(work => work.Variants.Any(item => item.Available));
         var filtered = items.ToList();
         selectionGuard = true;
         SongList.ItemsSource = filtered;
-        SongList.SelectedItem = filtered.Contains(current!) ? current : null;
+        SongList.SelectedItem = filtered.FirstOrDefault(work => current != null && work.Variants.Any(item => item.Id == current.Id));
         selectionGuard = false;
         EmptyLibrary.Visibility = filtered.Count == 0 ? Visibility.Visible : Visibility.Collapsed;
-        LibraryCount.Text = $"{store.Items.Count(item => item.Available)} 首本地 · {store.Items.Count} 首全部";
+        var works = store.GetWorks();
+        LibraryCount.Text = $"{works.Count(work => work.Variants.Any(item => item.Available))} 首本地 · {works.Count} 首作品";
     }
     private void Search_Changed(object sender, TextChangedEventArgs e) { if (IsLoaded) RefreshLibrary(); }
     private void Filter_Changed(object sender, RoutedEventArgs e) { if (IsLoaded) RefreshLibrary(); }
     private async void SongList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (selectionGuard || SongList.SelectedItem is not LibraryItem item || item == current) return;
+        if (selectionGuard || SongList.SelectedItem is not LibraryWork work || work.SelectedVariant == current) return;
         if (closing || busy || !await ConfirmUnsaved()) { RefreshLibrary(); return; }
+        await Stop();
+        await SelectItem(work.SelectedVariant);
+    }
+    private async void VariantPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (selectionGuard || VariantPicker.SelectedItem is not LibraryItem item || item == current) return;
+        if (closing || busy || !await ConfirmUnsaved()) { UpdateVariantPicker(); return; }
         await Stop();
         await SelectItem(item);
     }
@@ -126,7 +136,7 @@ public partial class MainWindow : Window
         busy = true; UpdateAvailability();
         try
         {
-            var next = item.Available ? await store.ReadDocumentAsync(item) : new ScoreDocument(item.Title, item.Bpm, 20, "");
+            var next = item.Available ? await store.ReadDocumentAsync(item) : new ScoreDocument(item.Title, item.Bpm, 20, "", NeedsBpmConfirmation: !item.BpmKnown);
             InvalidateGuideDocument();
             current = item;
             document = next;
@@ -136,6 +146,7 @@ public partial class MainWindow : Window
             BpmInput.Text = next.Bpm.ToString(CultureInfo.InvariantCulture);
             BodyInput.Text = next.Body;
             loading = false;
+            UpdateBpmLabel();
             dirty = false;
             editMode = false;
             SetEditorVisibility();
@@ -143,13 +154,24 @@ public partial class MainWindow : Window
             ScoreView.Visibility = item.Available ? Visibility.Visible : Visibility.Collapsed;
             BodyInput.Visibility = Visibility.Collapsed;
             var source = item.SourceId != null && store.Catalog.TryGetValue(item.SourceId, out var catalogSong) ? catalogSong : null;
-            SourceText.Text = source?.Description ?? (item.Example ? "本项目原创测试谱，可分享。" : "个人本地曲谱，不会上传。");
-            ReferenceButton.Visibility = source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
+            ConfigureUnavailable(item, source);
+            var referenceInfo = item.Reference is null ? "" : string.Join(" · ", new[] { item.Reference.Artist, item.Reference.Edition }.Where(value => !string.IsNullOrWhiteSpace(value)));
+            SourceText.Text = string.Join("\n", new[]
+            {
+                source?.Description ?? (item.Example ? "本项目原创示例，可分享。" : "个人本地曲谱，不会上传。"),
+                referenceInfo.Length > 0 ? "参考：" + referenceInfo : "",
+                item.IsCalibrated ? "当前文件已校准。" : source?.RhythmStatus == "reviewed" ? "来源版本有校准记录；当前文件尚未匹配。" : "节奏尚未听校。"
+            }.Where(line => line.Length > 0));
+            ReferenceButton.Visibility = item.Reference?.Url != null || source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
             store.Settings.LastSelectedId = item.Id;
+            store.Settings.SelectedVariants[item.WorkId] = item.Id;
+            UpdateVariantPicker();
             await store.SaveSettingsAsync();
             ParseEditor();
             RefreshLibrary();
-            if (!item.Available) Status("点击“下载曲谱”从作者来源获取，或导入已有 TXT。");
+            if (!item.Available) Status(item.Acquisition == "external-import"
+                ? "点击“导入 TXT”选择本机已有曲谱，或查看来源。"
+                : "点击“下载曲谱”从作者来源获取，或导入已有 TXT。");
             else if (!bpmConfirmed) Status("文件未注明 BPM。请修改速度，或开始时确认当前速度。", true);
             else Status("本地试听使用合成音；来源与校对记录可在下方展开查看。");
         }
@@ -159,9 +181,33 @@ public partial class MainWindow : Window
     private async void Favorite_Click(object sender, RoutedEventArgs e)
     {
         e.Handled = true;
-        if (closing || (sender as Button)?.Tag is not LibraryItem item) return;
-        item.Favorite = !item.Favorite; item.Refresh();
+        if (closing || (sender as Button)?.Tag is not LibraryWork work) return;
+        var favorite = !work.Favorite;
+        foreach (var item in work.Variants) { item.Favorite = favorite; item.Refresh(); }
         try { await store.SaveLibraryAsync(); RefreshLibrary(); } catch (Exception ex) { ShowError(ex); }
+    }
+
+    private void UpdateVariantPicker()
+    {
+        if (VariantPicker == null) return;
+        selectionGuard = true;
+        LibraryItem[] variants = current == null ? [] : store.Items.Where(item => item.WorkId == current.WorkId)
+            .OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Variant, StringComparer.OrdinalIgnoreCase).ThenBy(item => item.Id, StringComparer.Ordinal).ToArray();
+        VariantPicker.ItemsSource = variants;
+        VariantPicker.SelectedItem = variants.FirstOrDefault(item => item.Id == current?.Id);
+        VariantPicker.Visibility = variants.Length > 1 ? Visibility.Visible : Visibility.Collapsed;
+        selectionGuard = false;
+    }
+
+    private void ConfigureUnavailable(LibraryItem item, CatalogSong? source)
+    {
+        if (item.Available) return;
+        var external = source?.Acquisition == "external-import" || item.Acquisition == "external-import";
+        UnavailableTitle.Text = external ? "这份版本尚未导入" : "这首曲谱还未下载";
+        UnavailableDescription.Text = external
+            ? "从本机选择 TXT 曲谱导入，也可查看下方来源说明。"
+            : "从作者的固定来源获取，仅保存到你的电脑。";
+        DownloadButton.Content = external ? "导入 TXT" : "下载曲谱";
     }
 
     private ScoreDocument ReadEditor()
@@ -172,7 +218,7 @@ public partial class MainWindow : Window
     private void Editor_Changed(object sender, TextChangedEventArgs e)
     {
         if (loading || !IsLoaded) return;
-        if (sender == BpmInput) bpmConfirmed = true;
+        if (sender == BpmInput) { bpmConfirmed = true; UpdateBpmLabel(); }
         dirty = true;
         DirtyText.Visibility = Visibility.Visible;
         parseTimer.Stop(); parseTimer.Start();
@@ -181,12 +227,12 @@ public partial class MainWindow : Window
     {
         parseTimer.Stop(); scoreError = null; parsed = null; lastParseMessage = null;
         LocateErrorButton.Visibility = Visibility.Collapsed;
-        if (current is { Available: false }) { InvalidateGuideDocument(); NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{current.Bpm} BPM  ·  {current.EditionLabel}  ·  尚未下载"; TimeText.Text = "00:00 / " + (current.DurationSeconds is double seconds ? FormatTime(seconds) : "00:00"); ProgressBar.Value = 0; UpdateAvailability(); return false; }
+        if (current is { Available: false }) { InvalidateGuideDocument(); NotesPanel.Children.Clear(); noteTiles.Clear(); MetadataText.Text = $"{(current.BpmKnown ? current.Bpm + " BPM" : "速度待确认")}  ·  {current.EditionLabel}  ·  {(current.Acquisition == "external-import" ? "尚未导入" : "尚未下载")}"; TimeText.Text = "00:00 / " + (current.DurationSeconds is double seconds ? FormatTime(seconds) : "00:00"); ProgressBar.Value = 0; UpdateAvailability(); return false; }
         try
         {
             var candidate = ReadEditor();
             parsed = ScoreCodec.Parse(candidate);
-            MetadataText.Text = $"{parsed.Events.Count} 个音 / 休止  ·  {parsed.TotalBeats:0.###} 拍  ·  {FormatTime(parsed.DurationSeconds)}";
+            MetadataText.Text = $"{(bpmConfirmed ? "" : "速度待确认  ·  ")}{parsed.Events.Count} 个音 / 休止  ·  {parsed.TotalBeats:0.###} 拍  ·  {FormatTime(parsed.DurationSeconds)}";
             TimeText.Text = "00:00 / " + FormatTime(parsed.DurationSeconds);
             if (!engine.IsPlaying) ProgressBar.Value = 0;
             RenderNotes();
@@ -261,6 +307,13 @@ public partial class MainWindow : Window
             doc = doc with { NeedsBpmConfirmation = false };
             if (target == null || copy) current = await store.SaveCopyAsync(doc);
             else await store.SaveDocumentAsync(target, doc);
+            if (current is { } saved)
+            {
+                store.Settings.LastSelectedId = saved.Id;
+                store.Settings.SelectedVariants[saved.WorkId] = saved.Id;
+                await store.SaveSettingsAsync();
+                UpdateVariantPicker();
+            }
             document = doc; dirty = false; current?.Refresh();
             DirtyText.Visibility = Visibility.Collapsed;
             RefreshLibrary(); Status(copy ? "已保存为独立副本，原谱保留。" : "已保存到个人曲库。", false);
@@ -288,7 +341,15 @@ public partial class MainWindow : Window
         if (bpmConfirmed) return Task.FromResult(true);
         var accepted = WithModal(() => MessageBox.Show(this, $"这份曲谱没有注明速度。按 {BpmInput.Text} BPM 使用吗？\n不确定时请选择“否”，核对速度后再开始。", "确认曲谱速度", MessageBoxButton.YesNo, MessageBoxImage.Question)) == MessageBoxResult.Yes;
         bpmConfirmed = accepted;
+        UpdateBpmLabel();
         return Task.FromResult(accepted);
+    }
+
+    private void UpdateBpmLabel()
+    {
+        if (BpmLabel == null || BpmInput == null) return;
+        BpmLabel.Text = bpmConfirmed ? "速度 BPM" : "速度待确认";
+        AutomationProperties.SetName(BpmInput, BpmLabel.Text);
     }
 
     private async void Import_Click(object sender, RoutedEventArgs e)
@@ -342,12 +403,14 @@ public partial class MainWindow : Window
     {
         if (!await PrepareImport()) return;
         InvalidateGuideDocument();
-        current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true);
+        current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true); bpmConfirmed = false;
+        UpdateVariantPicker();
         SourceText.Text = "个人本地曲谱，不会上传。";
         ReferenceButton.Visibility = Visibility.Collapsed;
         loading = true; TitleInput.Text = document.Title; BpmInput.Text = "120"; BodyInput.Text = document.Body; loading = false;
-        dirty = true; bpmConfirmed = false; editMode = true; DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
-        Status("输入你的谱面并保存。默认速度 120 BPM，请按来源调整。");
+        UpdateBpmLabel();
+        dirty = true; editMode = true; DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
+        Status("输入你的谱面并保存。请核对速度后再试听。");
     }
     private void More_Click(object sender, RoutedEventArgs e)
     {
@@ -371,7 +434,26 @@ public partial class MainWindow : Window
     private async void Download_Click(object sender, RoutedEventArgs e)
     {
         if (closing || current == null || busy) return;
-        var item = current; busy = true; DownloadButton.IsEnabled = false; UpdateAvailability();
+        var selectedItem = current;
+        if (!selectedItem.Available && selectedItem.Acquisition == "external-import")
+        {
+            if (!await PrepareImport()) return;
+            var dialog = new OpenFileDialog { Title = "导入所选版本", Filter = "TXT 曲谱|*.txt" };
+            if (WithModal(() => dialog.ShowDialog(this)) != true) return;
+            busy = true; UpdateAvailability();
+            try
+            {
+                var importedItem = selectedItem.SourceId is string sourceId
+                    ? await store.ImportSourceAsync(dialog.FileName, sourceId)
+                    : await store.ImportAsync(dialog.FileName);
+                await SelectItem(importedItem);
+                Status("已导入所选版本，原文件保留。");
+            }
+            catch (Exception ex) { ShowError(ex); }
+            finally { busy = false; RefreshLibrary(); UpdateAvailability(); }
+            return;
+        }
+        var item = selectedItem; busy = true; DownloadButton.IsEnabled = false; UpdateAvailability();
         operationCancellation = new CancellationTokenSource();
         Status("正在下载并核对曲谱来源…");
         try { await store.DownloadAsync(item, operationCancellation.Token); await SelectItem(item); Status("曲谱已下载并校验，可以试听；下次断网也可打开。"); }
@@ -381,15 +463,17 @@ public partial class MainWindow : Window
     }
     private void Source_Click(object sender, RoutedEventArgs e)
     {
-        if (current?.SourceId is not string id || !store.Catalog.TryGetValue(id, out var source)) { Status("这份曲谱保存在本地；原创示例随本项目 MIT 许可分享。"); return; }
-        if (Uri.TryCreate(source.SourceUrl, UriKind.Absolute, out var url) && url.Scheme == "https" && url.Host == "github.com")
+        if (current?.SourceId is not string id || !store.Catalog.TryGetValue(id, out var source) || source.SourceUrl is null)
+        { Status("这份曲谱保存在本地；原创示例随本项目许可分享。"); return; }
+        if (Uri.TryCreate(source.SourceUrl, UriKind.Absolute, out var url) && url.Scheme == Uri.UriSchemeHttps)
             try { Process.Start(new ProcessStartInfo(url.AbsoluteUri) { UseShellExecute = true }); } catch (Exception ex) { ShowError(ex); }
     }
     private void Reference_Click(object sender, RoutedEventArgs e)
     {
-        if (current?.SourceId is not string id || !store.Catalog.TryGetValue(id, out var song)) return;
-        if (Uri.TryCreate(song.EvidenceUrl, UriKind.Absolute, out var url) && url.Scheme == "https" &&
-            url.Host is "www.bilibili.com" or "www.douyin.com" or "shushu.fan")
+        var referenceUrl = current?.Reference?.Url;
+        if (referenceUrl is null && current?.SourceId is string id && store.Catalog.TryGetValue(id, out var song))
+            referenceUrl = song.Reference?.Url ?? song.EvidenceUrl;
+        if (Uri.TryCreate(referenceUrl, UriKind.Absolute, out var url) && url.Scheme == Uri.UriSchemeHttps && string.IsNullOrEmpty(url.UserInfo))
             try { Process.Start(new ProcessStartInfo(url.AbsoluteUri) { UseShellExecute = true }); } catch (Exception ex) { ShowError(ex); }
     }
 
@@ -491,6 +575,7 @@ public partial class MainWindow : Window
         BodyInput.IsReadOnly = occupied;
         EditButton.IsEnabled = !occupied && current is not { Available: false };
         SaveButton.IsEnabled = !occupied && parsed != null;
+        VariantPicker.IsEnabled = !occupied;
         ImportButton.IsEnabled = !occupied;
         PreviewMode.IsEnabled = !occupied; GameMode.IsEnabled = !occupied;
         UpdateGuideAvailability(occupied);

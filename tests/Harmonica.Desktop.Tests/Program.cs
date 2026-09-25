@@ -14,6 +14,14 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("中文路径复制导入、保留原文件与内容去重", ImportCopy),
     ("同名不同内容和保存副本均不覆盖", SameNameAndCopies),
     ("曲谱、收藏和设置重启持久化", Persistence),
+    ("旧曲库迁移保留未知字段", LibrarySchemaMigration),
+    ("作品分组、多版本选择与同名独立", WorkGroupingAndSelection),
+    ("外部来源未知速度导入实际 BPM 并在重启后保留", UnknownCatalogBpmImport),
+    ("schema 2 与直接下载来源仍要求合法 BPM", StrictCatalogBpmValidation),
+    ("外部来源加载、校准SHA绑定与编辑撤销", ExternalImportAndCalibration),
+    ("指定来源导入相同个人文件后保留两项并应用校准", ExplicitSourceImportWithExistingPersonalDuplicate),
+    ("同来源本机导入版本标签与默认身份重启保留", CatalogCopyVariantPersistence),
+    ("拒绝带userinfo的HTTPS来源、参考和下载链接", HttpsUserInfoRejected),
     ("未知速度确认状态与新格式保存", BpmConfirmation),
     ("无效谱面和超限导入不修改曲库", InvalidImports),
     ("损坏索引恢复保留已编辑示例", DamagedIndexRecovery),
@@ -114,6 +122,301 @@ static async Task Persistence()
     Check(reopened.Settings.Theme == "Dark" && reopened.Settings.Volume == .35f && reopened.Settings.LastSelectedId == item.Id, "设置应重启保留。");
     Check((await reopened.ReadDocumentAsync(saved)).GapMs == 25, "曲谱间隔应持久化。");
 }
+
+static async Task LibrarySchemaMigration()
+{
+    using var fixture = new Fixture();
+    var sourceRecord = new
+    {
+        id = "legacy-source", title = "旧版来源", filename = "legacy.txt", bpm = 100, size = 1,
+        sha256 = LibraryStore.Hash([49]), download_url = "https://raw.githubusercontent.com/example/example/main/legacy.txt",
+        source_url = "https://github.com/example/example", future_catalog_value = new { keep = true }
+    };
+    await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = 2, songs = new[] { sourceRecord } }));
+    var root = Path.Combine(fixture.Root, "个人 数据");
+    Directory.CreateDirectory(root);
+    await File.WriteAllTextAsync(Path.Combine(root, "library.json"), "[{\"Id\":\"old-user\",\"Title\":\"旧个人谱\",\"Favorite\":true,\"future_library_value\":{\"keep\":7}}]");
+    var store = await fixture.CreateStore();
+    var legacy = store.Items.Single(item => item.Id == "old-user");
+    var source = store.Items.Single(item => item.SourceId == "legacy-source");
+    Check(legacy.WorkId == legacy.Id && legacy.VariantId == legacy.Id && legacy.IsDefaultVariant, "旧个人条目应迁移为独立作品和默认版本。");
+    Check(source.WorkId == "legacy-source" && source.VariantId == "legacy-source" && source.IsDefaultVariant && source.Acquisition == "direct-download", "schema2 来源应兼容迁移为单版本作品。");
+    Check(store.Catalog["legacy-source"].ExtraData?.ContainsKey("future_catalog_value") == true, "catalog 未知字段应保留在扩展数据中。");
+    var persisted = await File.ReadAllTextAsync(Path.Combine(root, "library.json"));
+    Check(persisted.Contains("future_library_value") && persisted.Contains("\"keep\": 7") && legacy.Favorite, "保存迁移后的曲库不能丢弃未知字段和收藏。");
+}
+
+static async Task WorkGroupingAndSelection()
+{
+    using var fixture = new Fixture();
+    var records = new[]
+    {
+        new { id = "work-a-default", title = "同名作品", bpm = 90, work_id = "shared-work", variant_id = "default", is_default_variant = true,
+            acquisition = "external-import", source_url = "https://www.bilibili.com/video/BV1xx411c7mD", variant = "原版", reference = (object)new { url = "https://www.bilibili.com/video/BV1xx411c7mD", artist = "演奏者", edition = "现场", segment_start_seconds = 12.0, segment_end_seconds = 40.0, future_reference_value = "kept" }, future_catalog_value = "kept" },
+        new { id = "work-a-alt", title = "同名作品", bpm = 100, work_id = "shared-work", variant_id = "alternate", is_default_variant = false,
+            acquisition = "external-import", source_url = "https://www.douyin.com/video/123", variant = "副歌", reference = (object)null!, future_catalog_value = "kept" },
+        new { id = "different-work", title = "同名作品", bpm = 90, work_id = "different-work", variant_id = "different-work", is_default_variant = true,
+            acquisition = "external-import", source_url = "https://www.bilibili.com/video/BV1xx411c7mD", variant = "原版", reference = (object)null!, future_catalog_value = "kept" }
+    };
+    await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = 3, songs = records }));
+    var store = await fixture.CreateStore();
+    var shared = store.GetWorks().Single(work => work.WorkId == "shared-work");
+    Check(shared.Variants.Count == 2 && shared.SelectedVariant.SourceId == "work-a-default", "同作品多个来源版本应聚合，默认版本应先选中。");
+    Check(store.GetWorks().Count(work => work.Title == "同名作品") == 2, "同名但不同 work_id 的作品必须保持独立。");
+    var alternate = shared.Variants.Single(item => item.SourceId == "work-a-alt");
+    alternate.Favorite = true;
+    alternate.LastPlayed = DateTimeOffset.Parse("2026-09-25T10:00:00Z");
+    await store.SaveLibraryAsync();
+    store.Settings.SelectedVariants[shared.WorkId] = alternate.Id;
+    await store.SaveSettingsAsync();
+    var reopened = await fixture.CreateStore();
+    var restored = reopened.GetWorks().Single(work => work.WorkId == "shared-work");
+    Check(restored.SelectedVariant.Id == alternate.Id, "所选版本应重启后保留。");
+    Check(restored.Favorite && restored.LastPlayed == alternate.LastPlayed, "版本收藏和最近使用应显示在所属作品上并持久化。");
+    var firstSource = reopened.Catalog["work-a-default"];
+    Check(firstSource.Reference?.Artist == "演奏者" && firstSource.Reference.ExtraData?.ContainsKey("future_reference_value") == true, "reference 元数据和未知字段应可读。");
+    Check(firstSource.ExtraData?.ContainsKey("future_catalog_value") == true, "schema3 catalog 扩展字段应保留。");
+    var external = reopened.Items.Single(item => item.SourceId == "work-a-default");
+    Check(!external.Available && external.Subtitle.Contains("需导入"), "没有直链的外部版本应可载入并明确提示导入。");
+    await Throws<InvalidDataException>(() => reopened.DownloadAsync(external, CancellationToken.None));
+}
+
+static async Task ExternalImportAndCalibration()
+{
+    using var fixture = new Fixture();
+    var verifiedText = ScoreCodec.Write(new ScoreDocument("外部曲谱", 90, 25, "1 2 3 0 |"));
+    var verifiedBytes = Encoding.UTF8.GetPreamble().Concat(Encoding.UTF8.GetBytes(verifiedText)).ToArray();
+    var verifiedHash = LibraryStore.Hash(verifiedBytes);
+    var record = new
+    {
+        id = "external-reviewed", title = "外部曲谱", filename = "external.txt", bpm = 90,
+        work_id = "reviewed-work", variant_id = "reviewed-variant", is_default_variant = true,
+        acquisition = "external-import", source_url = "https://www.bilibili.com/video/BV1xx411c7mD",
+        verified_sha256 = verifiedHash, source_sha256 = new string('a', 64),
+        verification = new { rhythm = "reviewed", app_import = "not-tested", log_playback = "not-tested", game = "not-tested" },
+        review_note = "逐音核对 25 个音符。", review_method = "音高、起音和生产解析器逐项比较。",
+        evidence = new[] { new { file = "catalog/calibration-evidence/reviewed-variant.json", sha256 = new string('d', 64) } },
+        validation = new { production_parser = "passed", reviewed_note_count = 25, independent_attack_supported_notes = 25, maximum_parser_boundary_error_seconds = 0.000001 },
+        reference = new { url = "https://www.bilibili.com/video/BV1xx411c7mD", artist = "演奏者", edition = "现场",
+            audio_sha256 = new string('b', 64), score_sha256 = new string('c', 64), start_seconds = 12.0 }
+    };
+    await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = 3, songs = new[] { record } }));
+    var store = await fixture.CreateStore();
+    var sourceItem = store.Items.Single(item => item.SourceId == "external-reviewed");
+    Check(!sourceItem.IsCalibrated && sourceItem.VerifiedSha256 == verifiedHash, "不可用版本即使有期望SHA也不能显示已校准。");
+    Check(!new LibraryItem { Available = true, RhythmStatus = "reviewed" }.IsCalibrated, "缺少实际和目标SHA时不能显示已校准。");
+
+    foreach (var missingField in new[] { "source_sha256", "review_method", "evidence" })
+    {
+        using var invalidFixture = new Fixture();
+        var invalidRecord = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(JsonSerializer.Serialize(record))!;
+        invalidRecord.Remove(missingField);
+        await File.WriteAllTextAsync(Path.Combine(invalidFixture.Assets, "catalog.json"),
+            JsonSerializer.Serialize(new { schema_version = 3, songs = new[] { invalidRecord } }));
+        await Throws<InvalidDataException>(() => invalidFixture.CreateStore());
+    }
+
+    var wrongPath = await fixture.Source("wrong.txt", ScoreCodec.Write(new ScoreDocument("外部曲谱", 90, 25, "3 2 1 0 |")));
+    var scoresBefore = Directory.GetFiles(store.ScoresDirectory, "*.txt").Length;
+    await Throws<InvalidDataException>(() => store.ImportReviewedAsync(wrongPath, "external-reviewed", "reviewed-work", "reviewed-variant"));
+    Check(!sourceItem.Available && sourceItem.FileName == null && Directory.GetFiles(store.ScoresDirectory, "*.txt").Length == scoresBefore, "错误SHA不能关联来源或写入目标文件。");
+
+    var verifiedPath = Path.Combine(fixture.Root, "verified.txt");
+    await File.WriteAllBytesAsync(verifiedPath, verifiedBytes);
+    var imported = await store.ImportReviewedAsync(verifiedPath, "external-reviewed", "reviewed-work", "reviewed-variant");
+    Check(imported.IsCalibrated && imported.Hash == verifiedHash && imported.Hash == LibraryStore.Hash(await File.ReadAllBytesAsync(store.ScorePath(imported))) && imported.Available, "仅实际文件SHA精确匹配时才能显示已校准，并须保留原始字节。");
+    Check(ReferenceEquals(imported, await store.ImportAsync(verifiedPath)), "同SHA文件再次导入应复用版本。");
+    var preservedPath = store.ScorePath(imported);
+    var tamperedText = ScoreCodec.Write(new ScoreDocument("外部曲谱", 90, 25, "4 5 6 0 |"));
+    await File.WriteAllTextAsync(preservedPath, tamperedText, new UTF8Encoding(false));
+    await store.ReadDocumentAsync(imported);
+    Check(!imported.IsCalibrated && imported.CalibrationRevoked && imported.VerifiedSha256 == null, "读取到本地文件被修改后应立即撤销校准。");
+    var corrected = await store.ImportReviewedAsync(verifiedPath, "external-reviewed", "reviewed-work", "reviewed-variant");
+    Check(corrected.Id != imported.Id && corrected.IsCalibrated && File.ReadAllText(preservedPath) == tamperedText, "重新导入校正版不得覆盖用户已修改的文件。");
+    await store.SaveDocumentAsync(corrected, new ScoreDocument("外部曲谱", 90, 25, "7 6 5 0 |"));
+    Check(!corrected.IsCalibrated && corrected.CalibrationRevoked, "保存编辑后的谱面应撤销校准。");
+}
+
+static async Task UnknownCatalogBpmImport()
+{
+    using var fixture = new Fixture();
+    var record = SourceRecord("unknown-bpm", "unknown-work", "unknown-variant", null);
+    record.Remove("bpm");
+    await WriteSourceCatalog(fixture, record);
+    var store = await fixture.CreateStore();
+    var unavailable = store.Items.Single(item => item.SourceId == "unknown-bpm");
+    Check(!store.Catalog["unknown-bpm"].BpmKnown && !unavailable.BpmKnown && unavailable.Bpm == 120,
+        "缺失 BPM 的 schema3 外部来源应只在内部使用 120 占位，并标记速度未知。");
+    Check(unavailable.Subtitle.Contains("速度待确认") && unavailable.VariantDisplay.Contains("速度待确认"),
+        "曲库和版本选择器不能把未知占位显示为 120 BPM。");
+
+    var text = ScoreCodec.Write(new ScoreDocument("已标注速度", 92, 25, "1 2 3 0 |"));
+    var imported = await store.ImportSourceAsync(await fixture.Source("known-speed.txt", text), "unknown-bpm");
+    Check(imported.Bpm == 92 && imported.BpmKnown && !imported.NeedsBpmConfirmation,
+        "未知来源导入带 BPM 的 TXT 后应保存文件中的实际速度。");
+    var reopened = await fixture.CreateStore();
+    var restored = reopened.Items.Single(item => item.SourceId == "unknown-bpm" && item.Available);
+    Check(restored.Bpm == 92 && restored.BpmKnown && (await reopened.ReadDocumentAsync(restored)).Bpm == 92,
+        "重启加载仍未知速度的来源元数据时，不得覆盖导入文件的实际 BPM。");
+
+    var nullRecord = SourceRecord("null-bpm", "null-work", "null-variant", null);
+    nullRecord["bpm"] = null;
+    await WriteSourceCatalog(fixture, nullRecord);
+    var nullCatalog = await fixture.CreateStore();
+    Check(!nullCatalog.Catalog["null-bpm"].BpmKnown, "显式 null BPM 也应表示未知速度。");
+}
+
+static async Task StrictCatalogBpmValidation()
+{
+    using var fixture = new Fixture();
+    foreach (var schemaVersion in new[] { 2, 3 })
+    foreach (var bpmValue in new object?[] { null, 19, 301, 90.5, "90", true })
+    {
+        var record = SourceRecord($"direct-{schemaVersion}-{Guid.NewGuid():N}"[..20], "direct-work", "direct-variant", null);
+        record["acquisition"] = "direct-download";
+        record["download_url"] = "https://raw.githubusercontent.com/example/repo/main/song.txt";
+        record["size"] = 1;
+        record["sha256"] = LibraryStore.Hash([49]);
+        record["bpm"] = bpmValue;
+        await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = schemaVersion, songs = new[] { record } }));
+        await Throws<InvalidDataException>(() => fixture.CreateStore());
+    }
+    foreach (var schemaVersion in new[] { 2, 3 })
+    {
+        var record = SourceRecord($"missing-{schemaVersion}", "direct-work", "direct-variant", null);
+        record["acquisition"] = "direct-download";
+        record["download_url"] = "https://raw.githubusercontent.com/example/repo/main/song.txt";
+        record["size"] = 1;
+        record["sha256"] = LibraryStore.Hash([49]);
+        record.Remove("bpm");
+        await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = schemaVersion, songs = new[] { record } }));
+        await Throws<InvalidDataException>(() => fixture.CreateStore());
+    }
+}
+
+static async Task ExplicitSourceImportWithExistingPersonalDuplicate()
+{
+    using var fixture = new Fixture();
+    var scoreText = ScoreCodec.Write(new ScoreDocument("个人版本名", 90, 25, "1 2 3 0 |"));
+    var bytes = Encoding.UTF8.GetBytes(scoreText);
+    var hash = LibraryStore.Hash(bytes);
+    var path = await fixture.Source("before-source.txt", scoreText);
+    await WriteSourceCatalog(fixture, SourceRecord("reviewed-source", "reviewed-work", "reviewed-variant", null));
+
+    var store = await fixture.CreateStore();
+    var personal = await store.ImportAsync(path);
+    personal.Favorite = true;
+    personal.LastPlayed = DateTimeOffset.Parse("2026-09-25T10:00:00Z");
+    await store.SaveLibraryAsync();
+    Check(personal.SourceId == null && personal.Title == "个人版本名", "来源校准前导入的文件应保持为个人曲谱。");
+
+    await WriteSourceCatalog(fixture,
+        SourceRecord("reviewed-source", "reviewed-work", "reviewed-variant", hash),
+        SourceRecord("same-bytes-other-source", "other-work", "other-variant", hash));
+    var reopened = await fixture.CreateStore();
+    var restoredPersonal = reopened.Items.Single(item => item.Id == personal.Id);
+    var linked = await reopened.ImportReviewedAsync(path, "reviewed-source", "reviewed-work", "reviewed-variant");
+    Check(linked.SourceId == "reviewed-source" && linked.Id != restoredPersonal.Id && linked.IsCalibrated,
+        "显式校准导入必须建立已绑定、已校准的来源项，不能把同SHA个人曲谱直接返回。");
+    Check(restoredPersonal.SourceId == null && restoredPersonal.Title == "个人版本名" && restoredPersonal.Favorite &&
+        restoredPersonal.LastPlayed == personal.LastPlayed && File.ReadAllBytes(reopened.ScorePath(restoredPersonal)).SequenceEqual(bytes),
+        "建立来源项不能改写个人条目的来源、标题、收藏、最近记录或谱面字节。");
+    var sameSourceAgain = await reopened.ImportReviewedAsync(path, "reviewed-source", "reviewed-work", "reviewed-variant");
+    Check(ReferenceEquals(linked, sameSourceAgain), "同一来源、同一SHA的重复显式导入应复用已关联项。");
+
+    var otherSource = await reopened.ImportReviewedAsync(path, "same-bytes-other-source", "other-work", "other-variant");
+    Check(otherSource.SourceId == "same-bytes-other-source" && otherSource.Id != linked.Id && otherSource.IsCalibrated,
+        "相同SHA属于不同来源版本时，应分别保留精确的来源关联。");
+}
+
+static async Task CatalogCopyVariantPersistence()
+{
+    using var fixture = new Fixture();
+    await WriteSourceCatalog(fixture, SourceRecord("local-copy-source", "local-copy-work", "local-copy-variant", null));
+    var store = await fixture.CreateStore();
+    var firstText = ScoreCodec.Write(new ScoreDocument("作品", 90, 25, "1 2 3 0 |"));
+    var secondText = ScoreCodec.Write(new ScoreDocument("本机版本", 90, 25, "3 2 1 0 |"));
+    var first = await store.ImportSourceAsync(await fixture.Source("first-version.txt", firstText), "local-copy-source");
+    var copy = await store.ImportSourceAsync(await fixture.Source("second-version.txt", secondText), "local-copy-source");
+    Check(first.IsDefaultVariant && !copy.IsDefaultVariant && copy.VariantLabelOverride == "原版（本机导入）",
+        "同一来源的第二份不同内容应成为带本机标签的非默认版本。");
+
+    var reopened = await fixture.CreateStore();
+    var variants = reopened.Items.Where(item => item.SourceId == "local-copy-source" && item.Available).ToArray();
+    var restoredFirst = variants.Single(item => item.Hash == LibraryStore.Hash(Encoding.UTF8.GetBytes(firstText)));
+    var restoredCopy = variants.Single(item => item.Hash == LibraryStore.Hash(Encoding.UTF8.GetBytes(secondText)));
+    Check(restoredFirst.IsDefaultVariant && restoredFirst.Variant == "原版",
+        "目录默认版本重启后仍须保留默认身份和来源标签。");
+    Check(!restoredCopy.IsDefaultVariant && restoredCopy.VariantLabelOverride == "原版（本机导入）" && restoredCopy.Variant == "原版（本机导入）",
+        "本机导入副本重启后仍须保留其本机版本标签与非默认身份。");
+}
+
+static async Task HttpsUserInfoRejected()
+{
+    using var fixture = new Fixture();
+    var sourceUserInfo = SourceRecord("userinfo-source", "userinfo-work", "userinfo-variant", null);
+    sourceUserInfo["source_url"] = "https://user:secret@example.com/source";
+    await WriteSourceCatalog(fixture, sourceUserInfo);
+    await Throws<InvalidDataException>(() => fixture.CreateStore());
+
+    var referenceUserInfo = SourceRecord("userinfo-reference", "reference-work", "reference-variant", null);
+    referenceUserInfo["reference"] = new { url = "https://user@example.com/reference" };
+    await WriteSourceCatalog(fixture, referenceUserInfo);
+    await Throws<InvalidDataException>(() => fixture.CreateStore());
+
+    var downloadUserInfo = SourceRecord("userinfo-download", "download-work", "download-variant", null);
+    downloadUserInfo["acquisition"] = "direct-download";
+    downloadUserInfo["source_url"] = "https://example.com/source";
+    downloadUserInfo["download_url"] = "https://user:secret@raw.githubusercontent.com/example/repo/main/song.txt";
+    downloadUserInfo["sha256"] = new string('a', 64);
+    downloadUserInfo["size"] = 1;
+    await WriteSourceCatalog(fixture, downloadUserInfo);
+    await Throws<InvalidDataException>(() => fixture.CreateStore());
+}
+
+static Dictionary<string, object?> SourceRecord(string id, string workId, string variantId, string? verifiedHash)
+{
+    var record = new Dictionary<string, object?>
+    {
+        ["id"] = id,
+        ["title"] = "目录规范标题",
+        ["filename"] = "source.txt",
+        ["bpm"] = 90,
+        ["work_id"] = workId,
+        ["variant_id"] = variantId,
+        ["is_default_variant"] = true,
+        ["acquisition"] = "external-import",
+        ["source_url"] = "https://example.com/source",
+        ["variant"] = "原版"
+    };
+    if (verifiedHash is not null)
+    {
+        record["verified_sha256"] = verifiedHash;
+        record["source_sha256"] = new string('a', 64);
+        record["verification"] = new { rhythm = "reviewed" };
+        record["review_note"] = "测试逐音审阅记录。";
+        record["review_method"] = "测试音高、时值与解析器比较。";
+        record["reference"] = new
+        {
+            url = "https://example.com/reference-recording", edition = "测试录音版本",
+            audio_sha256 = new string('b', 64), start_seconds = 0.0
+        };
+        record["evidence"] = new[]
+        {
+            new { file = $"catalog/calibration-evidence/{variantId}.json", sha256 = new string('c', 64) }
+        };
+        record["validation"] = new
+        {
+            production_parser = "passed", reviewed_note_count = 10,
+            maximum_parser_boundary_error_seconds = 0.000001
+        };
+    }
+    return record;
+}
+
+static Task WriteSourceCatalog(Fixture fixture, params object[] records) =>
+    File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"),
+        JsonSerializer.Serialize(new { schema_version = 3, songs = records }));
 
 static async Task GuideMigration()
 {

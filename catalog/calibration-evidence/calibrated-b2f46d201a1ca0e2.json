@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b2f46d201a1ca0e2",
+  "source_id": "zhouzhou-007",
+  "work_id": "work-sunny-day",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T00:20:02.389309+00:00",
+  "sha256": "fe8205059dc516006adadd594d0feb07fe1f3b804d7c1e7058e79d3cff75d990",
+  "source_sha256": "6134b88dc065c828e9a760d3d2dfd4b2ae0241209d4e55773177e064a54d535a",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=SJKoWAd5ySo",
+    "edition": "label-provided-studio-album; 周杰倫; 葉惠美; 20030729",
+    "audio_sha256": "dc180b4b882e03d0dfb3cc38e19ce0d94d74a76562fe6b480407feb2046a7c18",
+    "start_seconds": 182.84
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 54,
+    "maximum_parser_boundary_error_seconds": 2.6277433562427177e-09
+  },
+  "review_note": "对照周杰伦原版录音复核四句副歌，纠正初稿的歌词与同音边界错位，修正四处音高并补回四处旋律转折；恢复完整辅音入口、换气与尾音，形成54音校正版。",
+  "note_count": 54,
+  "event_count": 86,
+  "duration_seconds": 27.570000002627737,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "49b018ecc6140e4feb85e07d5e34c780fb34d15b7df26265b3d1e27fe2b4a460"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "fa7f7f92fce36784354c877b40fbe9059b33b39a847b81f474a16c7a0c7586ee"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "6535d66c7b1d6b48abc47117c406625d55d7aa4416889a991c7eea9e32ec2eb9"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "f097a8680ccebeeb7fdde8534e392776ed2f911c58d31f7d398c6ec6d4ffdddc"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "e1350769114fc5c3bac5a52c57ea18141e85300db4d8a94292c8b6e9b5c796e1"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "a18c739c89f8128facd45f12f970c36023ad0103c53a99db16af835e0e01613b"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "176e917465dc8708cc64ccc6e1da187d428ac789c8d5febef2afd221803c48cb"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "5d6b63a68e25e636d7e05cc244d62f9343e26efef319d63001107657cae0ef23"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "8b35c70a77c9bec0ba04e8ecb95a145811a5f26eb517ef42831b85ac8f85cbc9"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "8ae337d02c312190b093b30e09958b44dd0f800c8104c3a00e2b66f9d3ff7d15"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "ddb6d1ac167ad870e3399dd44dc36ee81b0628390b3c23eddf6577d9607f78e9"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "9f05b3c914ae57555f9a03f783c4860e7df7b6b40a10ce42346007d4c3d926c6"
+    },
+    {
+      "name": "manual-timing-review.png",
+      "sha256": "79d1a830e30aaf98b3daa82a889edbb0987a3e2cd3096c747c8e3980da3790a8"
+    },
+    {
+      "name": "build_manual_timing_proposal.py",
+      "sha256": "0efb79b892a331c9077c39aeb44957d146397fa6d2e59d44858dedc0c5414042"
+    },
+    {
+      "name": "spectral-panels.json",
+      "sha256": "c877c22b4dc395c3b0078442e24d06e06766b4a4e736aaded2443709535719e3"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "7ea69e606c83936b9555a7ca242a466d48db29f0b7b05160c579dadb4ad943c2"
+    },
+    {
+      "name": "spectral-2.png",
+      "sha256": "11034315bb1d0ed3352f1e06b57282767088f0bd2fc2eefc6e0911313beb19bd"
+    },
+    {
+      "name": "spectral-3.png",
+      "sha256": "1651c8d1f9f18bbb49a3455c3dabfc0432d5ddfed6377f18b3d670410d2126d2"
+    },
+    {
+      "name": "spectral-4.png",
+      "sha256": "08998341bafadf1f4130d96af480f19ed6ea713239b7e11b2b57e3a575bf1f7c"
+    },
+    {
+      "name": "spectral-5.png",
+      "sha256": "cf5dbc123f46c7d5f1cde33c7c304ef942c35cb1b1735403a1f1fa27be7076d5"
+    },
+    {
+      "name": "zhouzhou-007-line-1.png",
+      "sha256": "1d3405c824cb05509316785019c7723d4ff3ebba7011dcb80ab34bc988e762c2"
+    },
+    {
+      "name": "zhouzhou-007-line-1.json",
+      "sha256": "ada90289139fa22be360ee941547e3a49df3ad529b366f402372d2e9c7f642d2"
+    },
+    {
+      "name": "zhouzhou-007-line-2.png",
+      "sha256": "b900909788aa240c78caa65d3849aee4c0ea4643efd7d4400763bcd644bd3cbd"
+    },
+    {
+      "name": "zhouzhou-007-line-2.json",
+      "sha256": "df2d06d310b0358ea96c840f0e8362e760841573ba4749495718dd6699ae20af"
+    },
+    {
+      "name": "zhouzhou-007-line-3.png",
+      "sha256": "5562725f9a287eef89db981e90c78ba4bb4b908a162e87d14f97d02d6682cba1"
+    },
+    {
+      "name": "zhouzhou-007-line-3.json",
+      "sha256": "25a0570a5c21eafa0d35fb1766d5236f1323f71d51a717253937e5ee261c7d76"
+    },
+    {
+      "name": "zhouzhou-007-line-4.png",
+      "sha256": "8469c7c954e9971ad03a8fd1a92208e94e76e2cbaa78fb0b649cb28f18d9249e"
+    },
+    {
+      "name": "zhouzhou-007-line-4.json",
+      "sha256": "53648b50b5b74e03b4e873b09f2c85b8ced0f3791164eeeff58c277babec74e1"
+    },
+    {
+      "name": "root-pian-yu-jian.png",
+      "sha256": "79b95a8f84d3435d7346d284d86720fb8f84441bf2ea01cc4186861f9b9bcc19"
+    },
+    {
+      "name": "root-pian-yu-jian.json",
+      "sha256": "1287cac7bf2ca739ee2908897d6b72d2d355beef1ad72c70196fe7dd278ed53e"
+    },
+    {
+      "name": "root-da-dao-kan-bujian.png",
+      "sha256": "40189f868a8606791c79b2a934c46bb0c36058d4d4c5b2f954c091cd1429672e"
+    },
+    {
+      "name": "root-da-dao-kan-bujian.json",
+      "sha256": "67308c03e9f4928fdb2f43cf6bb34a2e692a3fce25e97e39af74313d120b74b6"
+    },
+    {
+      "name": "root-wo-cai-turns.png",
+      "sha256": "fb1c5706eff499283de6aa79497724eeeb4e366fd876720653c6b999c40d118d"
+    },
+    {
+      "name": "root-wo-cai-turns.json",
+      "sha256": "29b355b4ed434177d319ce8c4ffc178b2510fbced2eb79183c25ff80b9d9a23a"
+    },
+    {
+      "name": "zhouzhou-007-repeat-dengdiao.png",
+      "sha256": "cbee93ba36fc0374dda61c5532fa240af7580a9b536f79e0586c9e1b0d83c90f"
+    },
+    {
+      "name": "zhouzhou-007-repeat-dengdiao.json",
+      "sha256": "40d61983b5bd80d52b2f9fbfb1e4b03fadf28f559d12d55a28b250b6db81a5c1"
+    },
+    {
+      "name": "zhouzhou-007-ending-yidian.png",
+      "sha256": "0220b15b5451f18fc09b0808f7a40b145135882620f261a3f501ff67161ca5ab"
+    },
+    {
+      "name": "zhouzhou-007-ending-yidian.json",
+      "sha256": "0d131372d8186f0a1a6fa4a187bfb2e1bb10be504a34fed6f9475e63e9f1ce48"
+    },
+    {
+      "name": "zhouzhou-007-repeat-shenbian.png",
+      "sha256": "94c941cf4af5e4ce8afae52fdd2b4ec9a5f39cb0159ebd2d8bb54eaeb17e2b43"
+    },
+    {
+      "name": "zhouzhou-007-repeat-shenbian.json",
+      "sha256": "764d4ada5c5bbdc3fa4e2d9253b88c6f21460feb3167242b3d22c9a703648d61"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

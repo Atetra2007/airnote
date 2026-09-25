@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7346327a59cd2ba8",
+  "source_id": "zhouzhou-131",
+  "work_id": "work-25c40310c9dc",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-24T21:01:31.784136+00:00",
+  "sha256": "720a6e0576b9fbdbba2f69619d3bcbe2863365dcc0582d4d41cbd6e34794dc46",
+  "source_sha256": "06f02d699b7b20f925044f2e17b3ae38f862c1b1b017312b109fa0ed53d1bdbb",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=z34enKCqRGk",
+    "edition": "official-2019-original-game-soundtrack-topic-release; Andrew Prahlow; Outer Wilds (Original Soundtrack); 2019-06-01",
+    "audio_sha256": "afd9b9d8a97658f82e411748b998281ccbda91389e58d7bdad316a0f17ca9289",
+    "start_seconds": 0.0
+  },
+  "review_method": "Every one of the 46 pluck entries inspected against mixture waveform, fundamental/upper-partial spectrum, independent pitch estimates and onset strength; quieter entries recovered under ringing louder strings. Every C# parser event compared with the exact reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 46,
+    "maximum_parser_boundary_error_seconds": 5.652157852864548e-09
+  },
+  "review_note": "合并三份相同主题的移调谱，按2019年官方原声逐音校正开头46次拨弦的节奏；198版本逐音对应既有审核时间线。",
+  "note_count": 46,
+  "event_count": 46,
+  "duration_seconds": 20.860000005652157,
+  "limits": [
+    "Times are reviewed instrumental onset choices, with analysis resolution and pluck attack ambiguity; no millisecond accuracy guarantee.",
+    "No human listening or real-game verification is claimed.",
+    "The 2022 Encore is a distinct work with related material; source authors’ exact edition choice remains unknown.",
+    "The app releases keys 10 ms before the chosen note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "88ce5a2846cc689f34aeea6282d2b7c1be51c0b43deab9706b62df5961626354"
+    },
+    {
+      "name": "work-25c40310c9dc.json",
+      "sha256": "035ff42787b5e2f0ce5f179dd7635586334f044930ed723253aaf9b79c31864e"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "4e38d85a15a40474684ab9a0c9a3b4f6b133832ae23565014b6b79bcb8b3cc1c"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "c789668f1b2bcb4c0ac0fc2d52ed9abd24294cc6b7fba8595e6b8f9465dd841b"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "aaa553a74a8a88cf56181e75ce34d9da2ca9c53000f79559e5626635d21b169a"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "a220d0561af5e5aaa02aa285f9706d1a2c9708d7d55386d30c73b7e91736ad6e"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "348d0a59d37a27a5ab50946671b70f2d084fa13db6ffc7b999f345e9644ca16c"
+    },
+    {
+      "name": "spectral-1.png",
+      "sha256": "d3b02da564c9b7c07752764fc76e12a869268af79054377df57e858f305407c0"
+    },
+    {
+      "name": "work-25c40310c9dc.json",
+      "sha256": "470d097d70e02c755847095dbc42b10bdd74d9f37b461bff539912010fe228cc"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "288f6a4a4cb6b07886e264651dac6568a7ce62ba284097c0a6431886184cc295"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "350946e9e3cfbad4c05a5ad97bd2c87ec47ea5a85466de63c4465dc96da7557d"
+    },
+    {
+      "name": "calibration-before-source-198.json",
+      "sha256": "ce6ae087782ccd46ca107743f78bdd6a7ff013130336d2c0ebcd0c836f845123"
+    },
+    {
+      "name": "source-198-calibration-amendment.json",
+      "sha256": "25da8d5c5e5a284430bb21af1bde337a42225e95a1ef8ad82cf7a01d37a145e7"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}
