@@ -283,7 +283,7 @@ public sealed class LibraryStore
         }
         if (rhythmStatus != "reviewed")
         {
-            if (rhythmStatus is not ("not-tested" or "not-reviewed")) throw new InvalidDataException("外部来源节奏校准状态无效。");
+            if (rhythmStatus is not ("not-tested" or "not-reviewed" or "deferred")) throw new InvalidDataException("外部来源节奏校准状态无效。");
             return;
         }
 

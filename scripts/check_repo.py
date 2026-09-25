@@ -59,7 +59,7 @@ def validate_external_verification(song, schema_version):
             assert verification[field] in untested, f'External import cannot claim {field} verification.'
     rhythm = verification.get('rhythm', 'not-reviewed')
     if rhythm != 'reviewed':
-        assert rhythm in untested, 'External import rhythm status must be not-tested, not-reviewed, or reviewed.'
+        assert rhythm in untested | {'deferred'}, 'External import rhythm status must be not-tested, not-reviewed, deferred, or reviewed.'
         return
 
     assert schema_version == 3, 'Only schema 3 external imports may claim reviewed rhythm.'
@@ -344,6 +344,7 @@ OPTIONAL_REPO_FILES = {
     'catalog/social-research-2026-09-24.json',
     'docs/RELEASE-0.4.0-SONG-LIST.md',
     'docs/RELEASE-0.4.0-STATUS.md',
+    'docs/RELEASE-0.4.0-NOTES.md',
     'docs/SOCIAL-CATALOG-2026-09-24.md',
 }
 REPO_ONLY_FILES.update({
@@ -435,7 +436,7 @@ def check_repo():
                 assert run['bpm'] == song['bpm']
                 assert run['events'] > 0 and run['beats'] > 0
                 assert abs(run['expected_seconds'] - run['beats'] * 60 / run['bpm']) < 0.001
-            assert verification['rhythm'] in {'not-reviewed', 'reviewed', 'issues-found', 'source-timing-verified'}
+            assert verification['rhythm'] in {'not-reviewed', 'reviewed', 'issues-found', 'source-timing-verified', 'deferred'}
             assert verification['game'] == 'not-tested'
     assert set(runs) <= direct_download_ids, 'External imports cannot inherit original-player log runs.'
     calibration_evidence_files = validate_catalog_calibration_evidence(songs, ROOT)

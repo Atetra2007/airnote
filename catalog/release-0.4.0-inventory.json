@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "status": "pre-release-inventory-not-complete",
-  "source_ledger_sha256": "50284156cdf58c4bb6561f77156f868169acb1f58b87901bb61cb2f9f5cdcb45",
+  "status": "v0.4.0-tiered-catalog-inventory",
+  "source_ledger_sha256": "be8aae4a05ecb30ccad051eb656f018df549e0b68529eef1209adae2a05e4b4f",
   "coverage": {
     "baseline_records": 58,
     "zhouzhou_records": 220,
@@ -11,14 +11,14 @@
     "additional_text_records": 1,
     "alternative_records": 77,
     "total_records": 415,
-    "provisional_work_groups": 254,
+    "provisional_work_groups": 253,
     "saved_records": 404,
     "calibrated_records": 39,
     "calibrated_variants": 34
   },
-  "new_work_groups": 196,
+  "new_work_groups": 195,
   "works_with_reviewed_excerpt": 32,
-  "works_with_saved_source": 254,
+  "works_with_saved_source": 253,
   "works_without_saved_source": [],
   "pending_original_source_records": [
     "social-3338bddee058",
@@ -4809,11 +4809,13 @@
     {
       "work_id": "work-45614eec3954",
       "title": "薪火永燃",
-      "aliases": [],
+      "aliases": [
+        "薪炎永燃-02"
+      ],
       "added_since_baseline": true,
-      "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "grouping_status": "reviewed",
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -4823,28 +4825,7 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "reviewed"
-        }
-      ],
-      "reviewed_excerpts": [
-        {
-          "variant_id": "calibrated-a6d4ac50fc3ce5d4",
-          "note_count": 96,
-          "duration_seconds": 54.56999999294121
-        }
-      ]
-    },
-    {
-      "work_id": "work-d163eb1d1e82",
-      "title": "薪炎永燃",
-      "aliases": [
-        "薪炎永燃-02"
-      ],
-      "added_since_baseline": true,
-      "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
-      "reviewed_excerpt_count": 0,
-      "sources": [
+        },
         {
           "id": "zhouzhou-119",
           "kind": "zhouzhou",
@@ -4854,7 +4835,13 @@
           "calibration_status": "not-reviewed"
         }
       ],
-      "reviewed_excerpts": []
+      "reviewed_excerpts": [
+        {
+          "variant_id": "calibrated-a6d4ac50fc3ce5d4",
+          "note_count": 96,
+          "duration_seconds": 54.56999999294121
+        }
+      ]
     },
     {
       "work_id": "work-f52d7ab9b17d",

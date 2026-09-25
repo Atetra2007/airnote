@@ -92,8 +92,8 @@
       bpmCell.append(bpm);
       const stateCell = node('td');
       const verification = verificationOf(song);
-      const reviewedLabel = acquisitionOf(song) === 'external-import' ? '片段节奏已复核' : '节奏已复核';
-      const rhythmBadge = node('span', isReviewed(song) ? reviewedLabel : verification.rhythm === 'source-timing-verified' ? '来源时值已核对' : '待音乐校对', `review-badge${isReviewed(song) ? ' reviewed' : ''}`);
+      const reviewedLabel = acquisitionOf(song) === 'external-import' ? '已复核片段' : '节奏已复核';
+      const rhythmBadge = node('span', isReviewed(song) ? reviewedLabel : verification.rhythm === 'deferred' ? '暂缓校对' : '参考谱 · 未校准', `review-badge${isReviewed(song) ? ' reviewed' : ''}`);
       if (song.review_note) rhythmBadge.title = song.review_note;
       stateCell.append(rhythmBadge);
       stateCell.append(node('div', isLogTested(song) ? '导入 / 日志通过' : verification.app_import === 'passed' ? '导入通过 · 日志待测' : verification.conversion === 'passed' ? '本地转换 / 解析通过' : '导入 / 日志待测', 'song-version'));

@@ -1,9 +1,9 @@
 # 0.4.0 合并歌单与新增曲目清单
 
-**这是发布前盘点，0.4.0 尚未发布，全部歌曲校准尚未完成。**
+**v0.4.0 按已复核片段、参考谱·未校准、暂缓校对分级。此表记录来源保存与复核覆盖，不表示全部歌曲已校准。**
 
-现有 58 条来源与微信 220 条、社交和社区补充来源合计 415 条，暂归为 254 个作品组；其中 196 组未出现在原58条索引中。微信原始谱220项已保存。
-254 / 254 个作品组已有至少一份已保存曲谱来源；仍有 11 条最初指定的社交帖子未保存，替代作者的曲谱保留独立来源关系。保存覆盖不等于原曲校准或可自动弹奏。
+现有 58 条来源与微信 220 条、社交和社区补充来源合计 415 条，暂归为 253 个作品组；其中 195 组未出现在原58条索引中。微信原始谱220项已保存。
+253 / 253 个作品组已有至少一份已保存曲谱来源；仍有 11 条最初指定的社交帖子未保存，替代作者的曲谱保留独立来源关系。保存覆盖不等于原曲校准或可自动弹奏。
 当前有 34 份逐音视觉音频复核片段，覆盖 32 个作品组。复核片段不等于整首原曲，也没有声称人工听音或游戏实测通过。
 
 同一作品的原谱、不同片段和校正版作为版本保留；作品身份仍有待确认项，因此这里的去重数量为暂定。完整第三方谱、音频和校正版只在本机保存，以下只列元数据。
@@ -21,7 +21,7 @@
 
 以上版本经过原版伴奏节拍与旋律时间位置复核，仅改整体速度，未计入逐音校正版数量。
 
-## 新增作品组（196）
+## 新增作品组（195）
 
 | 曲目 | 来源版本数 | 已保存 | 复核片段 | 来源 |
 |---|---:|---:|---:|---|
@@ -204,8 +204,7 @@
 | 萱草花 | 1 | 1 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 葬花 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 蒲公英的约定 | 3 | 3 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社交](<https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=5yHVN93cpbge>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%92%B2%E5%85%AC%E8%8B%B1%E7%9A%84%E7%BA%A6%E5%AE%9A-%E5%91%A8%E6%9D%B0%E4%BC%A6-11111-e670379ae91756f23051e.deltamusic>) |
-| 薪火永燃 | 1 | 1 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
-| 薪炎永燃 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
+| 薪火永燃 | 2 | 2 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 虫儿飞 | 3 | 3 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%99%AB%E5%84%BF%E9%A3%9E-%E9%83%91%E4%BC%8A%E5%81%A5-boringy-12ac06fe20380cbd4162b.deltamusic>) |
 | 蝶吹笛子 | 2 | 2 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 说好的幸福呢 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |

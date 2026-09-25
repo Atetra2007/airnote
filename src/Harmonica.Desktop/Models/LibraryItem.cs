@@ -35,7 +35,9 @@ public sealed class LibraryItem : INotifyPropertyChanged
     [JsonIgnore] public string SourceAuthor { get; set; } = "";
     [JsonIgnore] public bool IsCalibrated => Available && !CalibrationRevoked && IsSha256(Hash) && IsSha256(VerifiedSha256) &&
         string.Equals(Hash, VerifiedSha256, StringComparison.OrdinalIgnoreCase) && string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase);
-    [JsonIgnore] public string RhythmLabel => IsCalibrated ? "已校准" : string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase) ? "校准未匹配" : "尚未听校";
+    [JsonIgnore] public string RhythmLabel => Example ? "原创示例" : IsCalibrated ? "已复核片段"
+        : string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase) ? (Available ? "校准未匹配" : "已复核片段 · 待导入")
+        : string.Equals(RhythmStatus, "deferred", StringComparison.OrdinalIgnoreCase) ? "暂缓校对" : "参考谱 · 未校准";
     [JsonIgnore] public string VariantDisplay => string.Join(" · ", new[] { string.IsNullOrWhiteSpace(Variant) ? "默认版本" : Variant, BpmKnown ? Bpm + " BPM" : "速度待确认" });
     [JsonIgnore] public string FavoriteGlyph => Favorite ? "★" : "☆";
     [JsonIgnore] public string Subtitle => $"{(Example ? "原创示例" : Available ? "本地曲谱" : Acquisition == "external-import" ? "需导入" : "可下载")}  ·  {(BpmKnown ? Bpm + " BPM" : "速度待确认")}";
@@ -57,8 +59,8 @@ public sealed class LibraryWork
     public bool Favorite => Variants.Any(item => item.Favorite);
     public string FavoriteGlyph => Favorite ? "★" : "☆";
     public string Subtitle => Variants.Count > 1
-        ? $"{Variants.Count} 个版本 · {(Variants.Any(item => item.Available) ? "本地已有" : SelectedVariant.Acquisition == "external-import" ? "需导入" : "可下载")}"
-        : SelectedVariant.Subtitle;
+        ? $"{Variants.Count} 个版本 · {(Variants.Any(item => item.Available) ? "本地已有" : SelectedVariant.Acquisition == "external-import" ? "需导入" : "可下载")} · {SelectedVariant.RhythmLabel}"
+        : $"{SelectedVariant.Subtitle} · {SelectedVariant.RhythmLabel}";
     public string EditionLabel => Variants.Count > 1 ? SelectedVariant.VariantDisplay : SelectedVariant.EditionLabel;
     public DateTimeOffset? LastPlayed => Variants.Where(item => item.LastPlayed != null).Select(item => item.LastPlayed).Max();
 

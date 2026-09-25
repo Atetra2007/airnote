@@ -104,7 +104,9 @@ public partial class MainWindow : Window
         var items = store.GetWorks().Where(work => work.Matches(query));
         if (FavoriteFilter.IsChecked == true) items = items.Where(work => work.Favorite);
         if (RecentFilter.IsChecked == true) items = items.Where(work => work.LastPlayed != null).OrderByDescending(work => work.LastPlayed);
-        else items = items.OrderByDescending(work => work.Variants.Any(item => item.Example)).ThenByDescending(work => work.Variants.Any(item => item.Available));
+        else items = items.OrderByDescending(work => work.Variants.Any(item => item.Example))
+            .ThenByDescending(work => work.Variants.Any(item => item.IsCalibrated))
+            .ThenByDescending(work => work.Variants.Any(item => item.Available));
         var filtered = items.ToList();
         selectionGuard = true;
         SongList.ItemsSource = filtered;
@@ -160,7 +162,7 @@ public partial class MainWindow : Window
             {
                 source?.Description ?? (item.Example ? "本项目原创示例，可分享。" : "个人本地曲谱，不会上传。"),
                 referenceInfo.Length > 0 ? "参考：" + referenceInfo : "",
-                item.IsCalibrated ? "当前文件已校准。" : source?.RhythmStatus == "reviewed" ? "来源版本有校准记录；当前文件尚未匹配。" : "节奏尚未听校。"
+                item.RhythmLabel + "。"
             }.Where(line => line.Length > 0));
             ReferenceButton.Visibility = item.Reference?.Url != null || source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
             store.Settings.LastSelectedId = item.Id;

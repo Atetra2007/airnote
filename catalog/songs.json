@@ -2,8 +2,8 @@
   "player": "HarmonicaPlayer/0.2.1",
   "source_commit": "0c3735ed7c261349105ff7fc564f92eddcd922cf",
   "schema_version": 3,
-  "updated_at": "2026-09-25",
-  "notice": "254 个作品、415 条来源、34 个逐音校正版、4 个整体速度调整版。速度调整版仍待逐音校准。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
+  "updated_at": "2026-09-26",
+  "notice": "253 个作品、415 条来源、34 个已复核片段、4 个整体速度调整版。参考谱未校准，部分难曲暂缓校对。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
   "songs": [
     {
       "id": "father",
@@ -212,7 +212,7 @@
         "integrity": "verified",
         "text_audit": "utf8-and-filename-bpm-checked",
         "app_import": "not-tested",
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "game": "not-tested",
         "log_playback": "not-tested",
         "desktop_parse": "passed"
@@ -226,7 +226,7 @@
       ],
       "download_format": "harmonica-txt",
       "legacy_compatible": true,
-      "review_note": "已重新通过本程序解析与时长检查；原有音乐节奏状态仍为待校对，旧版日志记录保留。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "work_id": "work-dystopia-mashup",
       "variant_id": "dystopia-mashup",
       "is_default_variant": true
@@ -4296,9 +4296,9 @@
       "redistribution": "permission-unconfirmed",
       "indexed_by": "Atetra2007",
       "arranger": "洲洲分析助手曲库投稿者",
-      "review_note": "来源曲谱待导入和原曲节奏核对。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "game": "not-tested"
       },
       "source_fingerprint_sha256": "d0a2fb04ccb1c4edd33d1e9b2fd6a7298806a2cb38b6ec83db893a07c63a5917",
@@ -4400,6 +4400,7 @@
       "work_id": "work-45614eec3954",
       "variant_id": "zhouzhou-052",
       "aliases": [
+        "薪炎永燃-02",
         "薪火永燃"
       ],
       "is_default_variant": false,
@@ -4885,9 +4886,9 @@
       "redistribution": "permission-unconfirmed",
       "indexed_by": "Atetra2007",
       "arranger": "洲洲分析助手曲库投稿者",
-      "review_note": "来源曲谱待导入和原曲节奏核对。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "game": "not-tested"
       },
       "source_fingerprint_sha256": "66494bad6e94ca89a6593e972621ab76748aa9ab0fe05dc09ce21967e011b4c4",
@@ -6306,7 +6307,7 @@
     },
     {
       "id": "zhouzhou-119",
-      "title": "薪炎永燃",
+      "title": "薪火永燃",
       "acquisition": "external-import",
       "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
       "variant": "洲洲 · 薪炎永燃-02",
@@ -6323,12 +6324,12 @@
       "source_fingerprint_sha256": "f21a0cb1769b1913c1bdb47e08c793f30241f5db149cded1ebfd7640650e611c",
       "source_location": "洲洲分析助手 / 琴谱",
       "source_index": 119,
-      "work_id": "work-d163eb1d1e82",
+      "work_id": "work-45614eec3954",
       "variant_id": "zhouzhou-119",
       "aliases": [
         "薪炎永燃-02"
       ],
-      "is_default_variant": true,
+      "is_default_variant": false,
       "reference": {
         "url": "https://www.youtube.com/watch?v=4wFFT_usvzY",
         "edition": "official-label-issued-game-theme-release",
@@ -9125,9 +9126,9 @@
       "redistribution": "permission-unconfirmed",
       "indexed_by": "Atetra2007",
       "arranger": "洲洲分析助手曲库投稿者",
-      "review_note": "来源曲谱待导入和原曲节奏核对。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "game": "not-tested"
       },
       "source_fingerprint_sha256": "32c924a1bf46718865bd9f1f130b9bfcf82fc7362042900672c39f8e67dbed33",
@@ -13403,9 +13404,9 @@
       "redistribution": "permission-unconfirmed",
       "indexed_by": "Atetra2007",
       "arranger": "EOPer",
-      "review_note": "完整钢琴原谱已保存。单声部提取会遗漏超音域音符或压缩和弦，转换草稿仅供本机复核；此版本尚无发布级口琴谱，未标为可播放或已校准。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "game": "not-tested"
       },
       "bpm": 68,
@@ -13969,12 +13970,12 @@
       "extent": "unconfirmed",
       "sample": false,
       "redistribution": "permission-unconfirmed",
-      "review_note": "Pinned source bytes were SHA-256 checked and the candidate passed production ScoreCodec event-by-event validation. This is a source-format conversion only: musical identity/rhythm review is incomplete, redistribution permission is unconfirmed, app import has not been runtime-tested, and game behavior is untested.",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
         "integrity": "verified",
         "conversion": "passed",
         "desktop_parse": "passed",
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "musical_review": "not-reviewed",
         "app_import": "not-tested",
         "log_playback": "not-tested",
@@ -14291,10 +14292,10 @@
       "extent": "unconfirmed",
       "sample": false,
       "redistribution": "permission-unconfirmed",
-      "review_note": "固定提交的原解析器与生产 ScoreCodec 逐事件对比通过：保留 120 BPM、421 个音符、19 个休止和 8 组三连音，起止拍数及秒数完全一致。此项仅验证来源格式转换，尚未对照原版录音校准。",
+      "review_note": "暂缓原曲逐音节奏校对；保留来源谱供参考，不计入已复核片段。",
       "verification": {
         "integrity": "verified",
-        "rhythm": "not-reviewed",
+        "rhythm": "deferred",
         "musical_review": "not-reviewed",
         "app_import": "not-tested",
         "log_playback": "not-tested",
@@ -15335,6 +15336,7 @@
       "duration_seconds": 54.56999999294121,
       "is_default_variant": true,
       "aliases": [
+        "薪炎永燃-02",
         "薪火永燃"
       ],
       "reference": {

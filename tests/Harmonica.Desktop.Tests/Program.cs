@@ -19,6 +19,7 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("外部来源未知速度导入实际 BPM 并在重启后保留", UnknownCatalogBpmImport),
     ("schema 2 与直接下载来源仍要求合法 BPM", StrictCatalogBpmValidation),
     ("外部来源加载、校准SHA绑定与编辑撤销", ExternalImportAndCalibration),
+    ("暂缓校对来源可导入且不会获得校准状态", DeferredSourceImport),
     ("指定来源导入相同个人文件后保留两项并应用校准", ExplicitSourceImportWithExistingPersonalDuplicate),
     ("同来源本机导入版本标签与默认身份重启保留", CatalogCopyVariantPersistence),
     ("拒绝带userinfo的HTTPS来源、参考和下载链接", HttpsUserInfoRejected),
@@ -179,6 +180,22 @@ static async Task WorkGroupingAndSelection()
     var external = reopened.Items.Single(item => item.SourceId == "work-a-default");
     Check(!external.Available && external.Subtitle.Contains("需导入"), "没有直链的外部版本应可载入并明确提示导入。");
     await Throws<InvalidDataException>(() => reopened.DownloadAsync(external, CancellationToken.None));
+}
+
+static async Task DeferredSourceImport()
+{
+    using var fixture = new Fixture();
+    var record = SourceRecord("deferred-source", "deferred-work", "deferred-variant", null);
+    record["verification"] = new { rhythm = "deferred" };
+    await WriteSourceCatalog(fixture, record);
+    var store = await fixture.CreateStore();
+    var path = Path.Combine(fixture.Root, "deferred.txt");
+    await File.WriteAllTextAsync(path, ScoreCodec.Write(new ScoreDocument("参考谱", 90, 25, "1 2 3 0 |")));
+    var imported = await store.ImportSourceAsync(path, "deferred-source");
+    Check(imported.Available && !imported.IsCalibrated && imported.RhythmStatus == "deferred", "暂缓曲谱可作为参考导入，但不能声称校准。");
+    await Throws<InvalidDataException>(() => store.ImportReviewedAsync(path, "deferred-source", "deferred-work", "deferred-variant"));
+    var reopened = await fixture.CreateStore();
+    Check(reopened.Items.Single(item => item.SourceId == "deferred-source").RhythmStatus == "deferred", "暂缓状态必须重启保留。");
 }
 
 static async Task ExternalImportAndCalibration()
