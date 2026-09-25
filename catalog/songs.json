@@ -3,7 +3,7 @@
   "source_commit": "0c3735ed7c261349105ff7fc564f92eddcd922cf",
   "schema_version": 3,
   "updated_at": "2026-09-25",
-  "notice": "254 个作品、415 条来源、31 个逐音校正版、4 个整体速度调整版。速度调整版仍待逐音校准。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
+  "notice": "254 个作品、415 条来源、34 个逐音校正版、4 个整体速度调整版。速度调整版仍待逐音校准。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
   "songs": [
     {
       "id": "father",
@@ -272,7 +272,7 @@
       "review_note": "已重新通过本程序解析与时长检查；原有音乐节奏状态仍为待校对，旧版日志记录保留。",
       "work_id": "work-bird-poem",
       "variant_id": "bird-poem",
-      "is_default_variant": true,
+      "is_default_variant": false,
       "reference": {
         "url": "https://www.youtube.com/watch?v=7mZlRSAUSsU",
         "edition": "label-provided-studio-soundtrack",
@@ -4402,7 +4402,7 @@
       "aliases": [
         "薪火永燃"
       ],
-      "is_default_variant": true,
+      "is_default_variant": false,
       "reference": {
         "url": "https://www.youtube.com/watch?v=4wFFT_usvzY",
         "edition": "official-label-issued-game-theme-release",
@@ -7791,7 +7791,7 @@
       "aliases": [
         "九万字"
       ],
-      "is_default_variant": true,
+      "is_default_variant": false,
       "reference": {
         "url": "https://www.youtube.com/watch?v=fjXH5OfVNfY",
         "edition": "official-artist-issued-original-studio-release",
@@ -14549,6 +14549,51 @@
       "arranger": "本机原曲校准"
     },
     {
+      "id": "calibrated-082ed376ce92484d",
+      "work_id": "work-bird-poem",
+      "variant_id": "calibrated-082ed376ce92484d",
+      "title": "鸟之诗",
+      "acquisition": "external-import",
+      "variant": "原曲片段主旋律编配（两音省略）",
+      "version": "0.4.0",
+      "source_record_id": "zhouzhou-006",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "source_sha256": "36ecf70d3c94a8875f044705719edf056e922d19ec20e38b3c46bac2550fcad2",
+      "verified_sha256": "b4983e8fc8ecec19b3db5017111e45b3f654ce6d74c0dc13f656467635d8e304",
+      "bpm": 124,
+      "duration_seconds": 21.72999999870968,
+      "is_default_variant": true,
+      "aliases": [
+        "鸟之诗"
+      ],
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=7mZlRSAUSsU",
+        "edition": "label-provided-studio-soundtrack; Lia, VISUAL ARTS / Key; AIR ORIGINAL SOUNDTRACK; 20020927",
+        "audio_sha256": "ec0e0283297c3a2ef5f3a67257f8525b4d3541ccf904987f7c9e2404cabc61e4",
+        "start_seconds": 263.24
+      },
+      "review_note": "对照原版录音复核51音主旋律编配，修正一处E4及短D4入口、重复发音和尾音；源谱两处无法确认的低音尾迹显式省略，两组连续同音各保留一次按键及双源索引。软边界约有50至100毫秒不确定性。",
+      "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+      "validation": {
+        "production_parser": "passed",
+        "reviewed_note_count": 51,
+        "maximum_parser_boundary_error_seconds": 1.4516086110916149e-09
+      },
+      "evidence": [
+        {
+          "file": "catalog/calibration-evidence/calibrated-082ed376ce92484d.json",
+          "sha256": "6ae398aa45e139be27fcb5db04268738b696afc52352319d44da89a1697261cd"
+        }
+      ],
+      "verification": {
+        "rhythm": "reviewed",
+        "game": "not-tested"
+      },
+      "redistribution": "permission-unconfirmed",
+      "indexed_by": "Atetra2007",
+      "arranger": "本机原曲校准"
+    },
+    {
       "id": "calibrated-0eee5fde0abe3bbf",
       "work_id": "work-6b1797c84172",
       "variant_id": "calibrated-0eee5fde0abe3bbf",
@@ -14629,6 +14674,51 @@
         {
           "file": "catalog/calibration-evidence/calibrated-0fa58dc0e44713ff.json",
           "sha256": "db6ee6e30175bab93f4d0f20af4f2d2a9473329e79c72e17ff8b3b043a4e935b"
+        }
+      ],
+      "verification": {
+        "rhythm": "reviewed",
+        "game": "not-tested"
+      },
+      "redistribution": "permission-unconfirmed",
+      "indexed_by": "Atetra2007",
+      "arranger": "本机原曲校准"
+    },
+    {
+      "id": "calibrated-34a17408765fc5c7",
+      "work_id": "work-5c70df55da75",
+      "variant_id": "calibrated-34a17408765fc5c7",
+      "title": "九万字",
+      "acquisition": "external-import",
+      "variant": "原曲片段主旋律编配（两音省略）",
+      "version": "0.4.0",
+      "source_record_id": "zhouzhou-170",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "source_sha256": "0113ed761edff72bc806ffb99128599ee1797a53a687f84e5ad8d675a41e93f0",
+      "verified_sha256": "7ccae0eef2a8e9f620345864a662d3f96c62a7bcedaf50090032aa87c384b3c5",
+      "bpm": 60,
+      "duration_seconds": 47.86999999999999,
+      "is_default_variant": true,
+      "aliases": [
+        "九万字"
+      ],
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=fjXH5OfVNfY",
+        "edition": "official-artist-issued-original-studio-release; 黄诗扶; 九万字; 20181228",
+        "audio_sha256": "b21f3e35ed4b39b84a36b92ec67e9f1e05f6b3fa3fcf982158f945d6976c841d",
+        "start_seconds": 51.13
+      },
+      "review_note": "按原版录音复核88音片段编配，修复短高音错位、换气和五处句尾，源62/63采用一次按键；两处无法确认的源音显式省略。局部滑音、短音音高与软边界仍有近似；60 BPM仅为一拍一秒的时值单位，实际节奏由逐音秒数保留。",
+      "review_method": "Independent six-line original-mix spectral review, both cached vocal pitch estimators, onset and waveform review; focused correction of short pitch turns, repeated-note treatment and five phrase releases. Every generated C# parser event compared to the reviewed timeline.",
+      "validation": {
+        "production_parser": "passed",
+        "reviewed_note_count": 88,
+        "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+      },
+      "evidence": [
+        {
+          "file": "catalog/calibration-evidence/calibrated-34a17408765fc5c7.json",
+          "sha256": "59798c9caa70485a26de7039f547f6d76e0e54e53c2472b03b4934009a2c08ed"
         }
       ],
       "verification": {
@@ -15219,6 +15309,51 @@
         {
           "file": "catalog/calibration-evidence/calibrated-a3292a8d2e445f1d.json",
           "sha256": "e60995d8f7ae8449f206777b5993f16e571959c1ca70050d0e8d3d5bf7b5fe38"
+        }
+      ],
+      "verification": {
+        "rhythm": "reviewed",
+        "game": "not-tested"
+      },
+      "redistribution": "permission-unconfirmed",
+      "indexed_by": "Atetra2007",
+      "arranger": "本机原曲校准"
+    },
+    {
+      "id": "calibrated-a6d4ac50fc3ce5d4",
+      "work_id": "work-45614eec3954",
+      "variant_id": "calibrated-a6d4ac50fc3ce5d4",
+      "title": "薪火永燃",
+      "acquisition": "external-import",
+      "variant": "原曲片段主旋律编配（两音省略）",
+      "version": "0.4.0",
+      "source_record_id": "zhouzhou-052",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "source_sha256": "c37952ede70f370310d7ca4ae8830c8a2bf71cb54f489f0c2596d12821ce6d7c",
+      "verified_sha256": "a53eb8ca73d1c4c335265e27f14256e1e0a745e2ca0fb75176722e8b019dc37a",
+      "bpm": 68,
+      "duration_seconds": 54.56999999294121,
+      "is_default_variant": true,
+      "aliases": [
+        "薪火永燃"
+      ],
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=4wFFT_usvzY",
+        "edition": "official-label-issued-game-theme-release; HOYO-MiX / 茶理理 / TetraCalyx / Hanser; Moon Halo (Everlasting Flames); 2021-07-09",
+        "audio_sha256": "278cda4e97fa33dc507793150a24c183bebf654c0e06305c2ad548a8f34fbb19",
+        "start_seconds": 8.74
+      },
+      "review_note": "按原曲复核96音人声主旋律编配；源谱两处无法确认的人声低音显式省略并保留原文件，连续G4只触发一次，修正提前入口并补两处旋律事件。C4目标近似B3到C4滑入；词音对应及软边界存在明确限制。",
+      "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+      "validation": {
+        "production_parser": "passed",
+        "reviewed_note_count": 96,
+        "maximum_parser_boundary_error_seconds": 7.352909392466245e-09
+      },
+      "evidence": [
+        {
+          "file": "catalog/calibration-evidence/calibrated-a6d4ac50fc3ce5d4.json",
+          "sha256": "18032868a4f73a010fae7003720992e752ca1ae7d212b6bb4c88c15f1bfe7a5c"
         }
       ],
       "verification": {

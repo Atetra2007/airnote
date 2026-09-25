@@ -4,7 +4,7 @@
 
 现有 58 条来源与微信 220 条、社交和社区补充来源合计 415 条，暂归为 254 个作品组；其中 196 组未出现在原58条索引中。微信原始谱220项已保存。
 254 / 254 个作品组已有至少一份已保存曲谱来源；仍有 11 条最初指定的社交帖子未保存，替代作者的曲谱保留独立来源关系。保存覆盖不等于原曲校准或可自动弹奏。
-当前有 31 份逐音视觉音频复核片段，覆盖 29 个作品组。复核片段不等于整首原曲，也没有声称人工听音或游戏实测通过。
+当前有 34 份逐音视觉音频复核片段，覆盖 32 个作品组。复核片段不等于整首原曲，也没有声称人工听音或游戏实测通过。
 
 同一作品的原谱、不同片段和校正版作为版本保留；作品身份仍有待确认项，因此这里的去重数量为暂定。完整第三方谱、音频和校正版只在本机保存，以下只列元数据。
 
@@ -71,7 +71,7 @@
 | 两只老虎 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 中国人能飞 | 2 | 2 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社交](<https://www.douyin.com/search/三角洲%20口琴%20图文?modal_id=7685652369925429882>) |
 | 义勇军进行曲 | 2 | 2 | 1 | [社交](<https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jLHYo8HxLNhy>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2-%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C-Meimei-e1690001f7.deltamusic>) |
-| 九万字 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
+| 九万字 | 1 | 1 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 亮剑主题曲 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 亲爱的旅人 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 人鱼的眼泪 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
@@ -204,7 +204,7 @@
 | 萱草花 | 1 | 1 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 葬花 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 蒲公英的约定 | 3 | 3 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社交](<https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=5yHVN93cpbge>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%92%B2%E5%85%AC%E8%8B%B1%E7%9A%84%E7%BA%A6%E5%AE%9A-%E5%91%A8%E6%9D%B0%E4%BC%A6-11111-e670379ae91756f23051e.deltamusic>) |
-| 薪火永燃 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
+| 薪火永燃 | 1 | 1 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 薪炎永燃 | 1 | 1 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 | 虫儿飞 | 3 | 3 | 1 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%99%AB%E5%84%BF%E9%A3%9E-%E9%83%91%E4%BC%8A%E5%81%A5-boringy-12ac06fe20380cbd4162b.deltamusic>) |
 | 蝶吹笛子 | 2 | 2 | 0 | [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
@@ -282,7 +282,7 @@
 | 雨爱 | 4 | 4 | 1 | [原索引](<https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E9%9B%A8%E7%88%B1%20bpm80-%E6%96%B0%E7%89%88.txt>) · [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9B%A8%E7%88%B1-%E6%9D%A8%E4%B8%9E%E7%90%B3-%E6%A7%91%E6%A7%91%E6%A7%91-3635a345402742b583428.deltamusic>) |
 | 雪之华 | 1 | 1 | 0 | [原索引](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9B%AA%E4%B9%8B%E5%8D%8E-%E4%B8%AD%E5%B2%9B%E7%BE%8E%E5%98%89-Jiko-803ba1ac7b.deltamusic>) |
 | 青鸟 | 1 | 1 | 0 | [原索引](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9D%92%E9%B8%9F-%E7%94%9F%E7%89%A9%E8%82%A1%E9%95%BF-Jiko-60df2692f2.deltamusic>) |
-| 鸟之诗 | 4 | 4 | 0 | [原索引](<https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E9%B8%9F%E4%B9%8B%E8%AF%97%20bpm86.txt>) · [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Jiko-1ca3113843.deltamusic>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Wind-02-aeb96868c2.deltamusic>) |
+| 鸟之诗 | 4 | 4 | 1 | [原索引](<https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E9%B8%9F%E4%B9%8B%E8%AF%97%20bpm86.txt>) · [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Jiko-1ca3113843.deltamusic>) · [社区](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Wind-02-aeb96868c2.deltamusic>) |
 | 龙卷风 | 2 | 2 | 0 | [原索引](<https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%BE%99%E5%8D%B7%E9%A3%8E-%E5%91%A8%E6%9D%B0%E4%BC%A6-Jiko-f73b7c0527.deltamusic>) · [微信](<https://www.bilibili.com/video/BV16Uhv6LE5W/>) |
 
 机器可读清单：[release-0.4.0-inventory.json](../catalog/release-0.4.0-inventory.json)。源台账指纹固定在该文件中，避免把旧盘点当作最新验收。

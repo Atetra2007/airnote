@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-082ed376ce92484d",
+  "source_id": "zhouzhou-006",
+  "work_id": "work-bird-poem",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T12:27:34.561350+00:00",
+  "sha256": "b4983e8fc8ecec19b3db5017111e45b3f654ce6d74c0dc13f656467635d8e304",
+  "source_sha256": "36ecf70d3c94a8875f044705719edf056e922d19ec20e38b3c46bac2550fcad2",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=7mZlRSAUSsU",
+    "edition": "label-provided-studio-soundtrack; Lia, VISUAL ARTS / Key; AIR ORIGINAL SOUNDTRACK; 20020927",
+    "audio_sha256": "ec0e0283297c3a2ef5f3a67257f8525b4d3541ccf904987f7c9e2404cabc61e4",
+    "start_seconds": 263.24
+  },
+  "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 51,
+    "maximum_parser_boundary_error_seconds": 1.4516086110916149e-09
+  },
+  "review_note": "对照原版录音复核51音主旋律编配，修正一处E4及短D4入口、重复发音和尾音；源谱两处无法确认的低音尾迹显式省略，两组连续同音各保留一次按键及双源索引。软边界约有50至100毫秒不确定性。",
+  "note_count": 51,
+  "event_count": 101,
+  "duration_seconds": 21.72999999870968,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Whisper misrecognizes sung words and is used only as rough independent syllable timing evidence.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "Source indices 17 and 54 remain unconfirmed low-energy tails and are explicitly omitted from this vocal-melody arrangement; the original author score is unchanged.",
+    "Source groups 32/33 and 51/52 each use one instrument event; separate attacks are unconfirmed, not proven absent.",
+    "Approximate soft boundaries carry about 50-100 ms uncertainty; slides and weak tails have wider uncertainty. This is a 21.73-second excerpt, not a full-song transcription.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "fe3973c6245ac93fa4f2ad93f73ec019d42b5e0b86138266f459f7329f46f05c"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "fa8e6026954bf2c81f0ba4fd581f62f079d8d02ff70424d0ea21683efb066b7a"
+    },
+    {
+      "name": "lyric-timing.json",
+      "sha256": "fb843434138ebb0ea8b604f9553b319e981c03da060ff5c801f1efc426562f75"
+    },
+    {
+      "name": "rhythm-evidence.json",
+      "sha256": "448948e8770779806403b3534a4fbae22dd834c224f02ec82c37a8765778375e"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "c6613fc4ed5d727e99997c34a988b7ef800a29e07385d97df00a47db076859b9"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "455db7285b94af7e53f44aa599f752c39a3b648009a294d839b429184f48f869"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "92fa26b39f5c1347db8de698bfb5fce095be0ebbda5c47caa10dea4ac2c11cd2"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "79fbb319585ce1a933f39df205848b93335e1a436d6475d0d3ac695e4f9dd41a"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "c0066fbf0b4632e3c5a638a70c90f3cd4c0b7112eb45af73cb6f98e522d0fdd1"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "1aef18eddeb5ff7af151bb74f6cca2ab45fff0a3b3abad31251fef506bcb5e3c"
+    },
+    {
+      "name": "high-timing-proposal.json",
+      "sha256": "c6c1de9a39c0a659977cbf48067fcb185a95ec3df4e1e3c59df9b55267a09009"
+    },
+    {
+      "name": "high-timing-review-20260925.md",
+      "sha256": "b3a859a2ae5911494d84e42c9952e291a35c3f437ba2c1696b89590f1df124c8"
+    },
+    {
+      "name": "root-adjudicated-spec.json",
+      "sha256": "47f768f8db011f0af1591a73737375b53c980d6f142e20d2756f45d033058d19"
+    },
+    {
+      "name": "root_adjudicate_006.py",
+      "sha256": "567e18529daad8cf2b089a63a97742aba12662285229df1f00eedad670d3bb2d"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "d7d1c6b5e3cd494b25805736358efe44ee93a3a8af813b883c7089eb02f59a34"
+    },
+    {
+      "name": "timeline-proposal.json",
+      "sha256": "d2e9b06b2d98f113bbc8a82b088a9a21164f5c92a8ba6511128dbe98b68612fc"
+    },
+    {
+      "name": "opening-melody.png",
+      "sha256": "451c163857926acb50f80fbb91f50efbde8611d590689fd7228d4f6f50d98b63"
+    },
+    {
+      "name": "opening-melody.json",
+      "sha256": "d9e3732e6e3893f3799fa06ecc31a3f0fb71a63753e97ae783c9683564c98c3f"
+    },
+    {
+      "name": "second-melody.png",
+      "sha256": "30e3a64ff6cf6a4fe7d6b886a9df67e7655d3b67347730ea78dfcfed72569d71"
+    },
+    {
+      "name": "second-melody.json",
+      "sha256": "f5ddd2dcdec500eee8bde80a2e72a11f312a6c5ffd6a81dc7f5f9ececf592694"
+    },
+    {
+      "name": "third-melody.png",
+      "sha256": "809ba4872d2d27ceda4c9853f79e48ac7dd7f37ecad15acbb6b735b3f7213b0d"
+    },
+    {
+      "name": "third-melody.json",
+      "sha256": "c8659b53e7e1d197b1b868f743cbda3cf8084c5b6d0e8a1ba8a2665286dd2266"
+    },
+    {
+      "name": "fourth-melody.png",
+      "sha256": "1cc070d19fe98bda391f8b31fadefcfab7acf14c249a3e9b8796cc40dce26126"
+    },
+    {
+      "name": "fourth-melody.json",
+      "sha256": "b8165715b6300f3e2d059d0d0b5c59c8bf7f6639b3031dcb862bd9445ff0c36f"
+    },
+    {
+      "name": "fifth-melody.png",
+      "sha256": "359e75ebb8489fddbb4557c50055f5fb446f53fe46d013e29d72e77d2dd77572"
+    },
+    {
+      "name": "fifth-melody.json",
+      "sha256": "e1bc1d61206c2795e4278ca5c4c43a8287252acea60078acf2439d8b33abb5ea"
+    },
+    {
+      "name": "sixth-melody.png",
+      "sha256": "37ec360144c34f1772fb9141525d19634097387031d5290fefb183cc3155e9da"
+    },
+    {
+      "name": "sixth-melody.json",
+      "sha256": "4492e5ec3448b32854047d53374d14df274e9b7fb64bed97d8adb088e2db5644"
+    },
+    {
+      "name": "first-repeated-vowel-detail.png",
+      "sha256": "e0f301bd161562b4a2ee219bc942980defa599314bc94c3640b32182d5f08a13"
+    },
+    {
+      "name": "first-repeated-vowel-detail.json",
+      "sha256": "8af973bd553dd7a948f5b175c4a8bd4ed699ad8b775bb392e90e874fa3b53fb3"
+    },
+    {
+      "name": "later-first-ending-detail.png",
+      "sha256": "d0f786547ec432c37d286162af81f8168a618b4619675112b692fa8ea5b2af7b"
+    },
+    {
+      "name": "later-first-ending-detail.json",
+      "sha256": "b27b73355727db1661543cd79ec97c47fc8e2349263267c307532fed71951134"
+    },
+    {
+      "name": "fourth-repeated-vowel-detail.png",
+      "sha256": "06e6b246faf5b99ec9e9fb958495980f690b1e08028ab3abd3de473474738573"
+    },
+    {
+      "name": "fourth-repeated-vowel-detail.json",
+      "sha256": "2b33aff46beaa9c79ecd8b2ee4f332ad14115272817df7fb3c0ad0f1edc79268"
+    },
+    {
+      "name": "last-two-syllables.png",
+      "sha256": "811f30eaf4f8420d6757673d3994aa65432fe96569adedd1805e64100ec6bc06"
+    },
+    {
+      "name": "last-two-syllables.json",
+      "sha256": "c4f9f137bfe442a3cf73f5e3391283123886addca85e55ad471c898c664872fb"
+    },
+    {
+      "name": "later-last-ending-detail.png",
+      "sha256": "64886b748b3435f24dee43c20c1c382c44ae78910145e9ba194b63de384b58d3"
+    },
+    {
+      "name": "later-last-ending-detail.json",
+      "sha256": "5b6ad2957fa981955895588e68c307142d80fc8d21013bb731afab746b91ee5c"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-34a17408765fc5c7",
+  "source_id": "zhouzhou-170",
+  "work_id": "work-5c70df55da75",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "reviewed_utc": "2026-09-25T12:40:22.762788+00:00",
+  "sha256": "7ccae0eef2a8e9f620345864a662d3f96c62a7bcedaf50090032aa87c384b3c5",
+  "source_sha256": "0113ed761edff72bc806ffb99128599ee1797a53a687f84e5ad8d675a41e93f0",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=fjXH5OfVNfY",
+    "edition": "official-artist-issued-original-studio-release; 黄诗扶; 九万字; 20181228",
+    "audio_sha256": "b21f3e35ed4b39b84a36b92ec67e9f1e05f6b3fa3fcf982158f945d6976c841d",
+    "start_seconds": 51.13
+  },
+  "review_method": "Independent six-line original-mix spectral review, both cached vocal pitch estimators, onset and waveform review; focused correction of short pitch turns, repeated-note treatment and five phrase releases. Every generated C# parser event compared to the reviewed timeline.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 88,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "按原版录音复核88音片段编配，修复短高音错位、换气和五处句尾，源62/63采用一次按键；两处无法确认的源音显式省略。局部滑音、短音音高与软边界仍有近似；60 BPM仅为一拍一秒的时值单位，实际节奏由逐音秒数保留。",
+  "note_count": 88,
+  "event_count": 95,
+  "duration_seconds": 47.86999999999999,
+  "limits": [
+    "No human auditory listening test or real-game test is claimed.",
+    "Gradual vocal attacks and releases have no single exact boundary; these are inspected instrumental arrangement decisions, not accuracy guarantees.",
+    "Breath noise, vocal slides, vibrato, dynamics, harmony and recording reverb are not reproduced.",
+    "The displayed BPM is nominal; per-note fractional durations preserve the reviewed recording timeline.",
+    "Source numbers 48 and 65 (one-based) are unconfirmed and explicitly omitted; 62/63 use one instrument event with both source indices preserved.",
+    "Source 26 is discretized into C-sharp5 then E-flat5; source 27 retains the written B-flat4 target. The restored brief E-flat5 has only 30 ms of high-confidence dual-estimator support after filtering; full cached pitch and mix evidence, not a minimum-frame threshold, supports the finite arrangement.",
+    "Source 59 approximates a slide with the written E-flat5 target; source 60 remains a low-confidence written B-flat4 target rather than a confirmed stable vocal plateau.",
+    "60 BPM here is an explicit one-beat-per-second encoding unit, not a measured musical tempo. Individual durations preserve the reviewed seconds.",
+    "Typical onset uncertainty is 40-100 ms and release uncertainty 60-120 ms; this is a limited 47.87-second arrangement.",
+    "The app releases each key 10 ms before the note end."
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "dcaa78816a56dfa902db5f9b20e6e0d2c811c91903b6a9a37f00e2d3cefd3542"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "d087d1993802f876da905a4bd5e20780fcb03290f9b50829e9986d348fe1e404"
+    },
+    {
+      "name": "reference-review-used.json",
+      "sha256": "e721207c6d61d0b61cfa3b6296f76dfea7b5ed1c80c1974860e7f07a2d7718f6"
+    },
+    {
+      "name": "csharp-events.json",
+      "sha256": "9158db5d4af33f6d61f5c839334d6523955ccce0974ea936deef5f6ba4529dfc"
+    },
+    {
+      "name": "manual-timing-1.png",
+      "sha256": "def490f63cab89a9b121a38415990f2ebf900ed47a3df99f4b1373a1cb7ea4e8"
+    },
+    {
+      "name": "manual-timing-2.png",
+      "sha256": "558b6319343d5e040e8d129107541fa663e01e0dc28b7f3d5917a627e8c7a976"
+    },
+    {
+      "name": "manual-timing-3.png",
+      "sha256": "4e72cccc3211e5c0df86e3a01df2bf05ab4cc7007112251c0e4990e156c17b20"
+    },
+    {
+      "name": "manual-timing-4.png",
+      "sha256": "e167ac17e392fc287ecf041f197fc4e5eae1cd34cd788ca6fe8373887db0164e"
+    },
+    {
+      "name": "manual-timing-5.png",
+      "sha256": "e4039ccf54d2aa1318807ff84b123ec97a432143dcf1cdd2b00eec79e3490a0b"
+    },
+    {
+      "name": "manual-timing-6.png",
+      "sha256": "13b630a6bd579f5ab0d5e2db47a84ad3b4eba5ed7e8a279dea08391e0b88e926"
+    },
+    {
+      "name": "manual-timing-7.png",
+      "sha256": "d52281de68a3c085eb62fd86fa4b2f9d70196e74ef5449cefa8071165e4c19d3"
+    },
+    {
+      "name": "manual-timing-8.png",
+      "sha256": "c706e53a4ed042649aeb4b15a38fb1fccbcf5859739e3307aa06eb3380f090a6"
+    },
+    {
+      "name": "manual-timing-9.png",
+      "sha256": "7a962648964fbbc0df0403b36fabe420d92ccaba7ab97a41aacea1b8db53173c"
+    },
+    {
+      "name": "root-adjudicated-spec.json",
+      "sha256": "a6e68ea95c58ab05a9e00c088f7674439321f83cac9e7e772b43e98683d0039d"
+    },
+    {
+      "name": "root_resolve_turn_26.py",
+      "sha256": "84943e82c902c870247de543092ee8bd284d48b7800bc8a0817612044186f6cb"
+    },
+    {
+      "name": "root-final-review.md",
+      "sha256": "8c398b6bbc72aa8909f0a770254fff6d8f0be7af77b4000c5531eab2a700631e"
+    },
+    {
+      "name": "high-timing-proposal.json",
+      "sha256": "4d33e06d0b742af25e5aaca7ece438c36121ba08c1e5cc0cec6fb06a569389dc"
+    },
+    {
+      "name": "high-timing-review-20260925.md",
+      "sha256": "0d6b57231c81f61a60e75cf5daaf4392e47b1700f034a5ccb90a05857767c250"
+    },
+    {
+      "name": "high-timing-addendum-26-27-20260925.md",
+      "sha256": "846e579fd78d758800a60804d7c8a9bfe6216ac2e00d06c0445134c7089cb39e"
+    },
+    {
+      "name": "root_adjudicate_170.py",
+      "sha256": "2110a4d717dd13c9a613e7b5e2cdaf6d0bf63f249d1ee4cdced7fad7b53dd5fd"
+    },
+    {
+      "name": "manual-timing-proposal.json",
+      "sha256": "bcc2acdad8ff91c11c7712d2a1d8cc10575cdd063e32486ec47f1eb6d0e58fd5"
+    },
+    {
+      "name": "manual-timing-review.json",
+      "sha256": "7475fc8da4d4886f423261bef2100e93e9c808dd3da340d1f30602750f9c6ee2"
+    },
+    {
+      "name": "timing-review-evidence-manifest.json",
+      "sha256": "620708b8283a3d236a61c6cd92a1675d5da151b026480ae873848afc5edfc793"
+    },
+    {
+      "name": "root-independent-review.md",
+      "sha256": "d852554ae5fd298a858e0c12e79b29c38b07c0f8d6d61ddf58b72ce9f9f8e6c8"
+    },
+    {
+      "name": "timing-recording-only-line-01.png",
+      "sha256": "a046a5533191b7a3e2c9ce52b031a9b92396ee26bcf28e9a3de1ac00f6462e09"
+    },
+    {
+      "name": "timing-recording-only-line-02.png",
+      "sha256": "4d17f9a66856a2efddbfbecc4ff68096e7271afe9fca1b2183d74c6b953857f4"
+    },
+    {
+      "name": "timing-recording-only-line-03.png",
+      "sha256": "56bd896daafe5353bcfd64379722ee69e8490e3bd07cd53b12140b80ac03170c"
+    },
+    {
+      "name": "timing-recording-only-line-04.png",
+      "sha256": "b089ab7a18739d961c8e1c369242931af05181966495ba821a47ba6ae1ff6556"
+    },
+    {
+      "name": "timing-recording-only-line-05.png",
+      "sha256": "78d721747f7c42c2c4ae3a2b874c3c69cc913795a2cf87d3557ded5f4f718a00"
+    },
+    {
+      "name": "timing-recording-only-line-06.png",
+      "sha256": "4448e332ae5ef0253418dd6f08a8f35e3b8bf124c4fdfa77b9f4981018456ea0"
+    },
+    {
+      "name": "timing-repeat-adjacent-29-30.png",
+      "sha256": "9cf2d329bccb8e67fa54c15e96a42294ae2a8ae0249032fe912cb2c310b26ae1"
+    },
+    {
+      "name": "timing-repeat-adjacent-3-4.png",
+      "sha256": "e9626372307f149e4341ab6ad16ca050995716a8268534cde868535c26dbc774"
+    },
+    {
+      "name": "timing-repeat-adjacent-37-38.png",
+      "sha256": "fe68c76ef1213b601d6277f5fa381c281f7d216469ba99032922d85f4a17b726"
+    },
+    {
+      "name": "timing-repeat-adjacent-62-63.png",
+      "sha256": "e73b6293d9f4a9413fa219fbcb72c23be579eff7a4040fec23d65794ac516319"
+    },
+    {
+      "name": "timing-repeat-adjacent-66-67.png",
+      "sha256": "fc3266d86177b95ee5fb3e66307c56c59ffabcb8d4e27feb175d374736d76fc1"
+    },
+    {
+      "name": "timing-repeat-adjacent-70-71.png",
+      "sha256": "fda5768323552eea6592fa84da7a2f9dd775961db4bb3eec43b159a7ae947ae9"
+    },
+    {
+      "name": "timing-repeat-group-12-13.png",
+      "sha256": "f7e820476025cfdca31af33e056e58a858a6d2a3252efd6144ff4ea781c350f8"
+    },
+    {
+      "name": "timing-repeat-group-4-5.png",
+      "sha256": "5f2efeaa80c6dd31179acac66d932c621c5de4735d54e0ecebab354accbb4ab7"
+    },
+    {
+      "name": "timing-repeat-group-40-41.png",
+      "sha256": "b325a0cf7e28827a4f15e4c19e76f215ccaeacc980b20a3708fa4f86710c2057"
+    },
+    {
+      "name": "timing-repeat-group-45-46.png",
+      "sha256": "39690a648b804e0d4f024b79c53bc95e1cdf363cc7edecf9ebcb79379aa0977c"
+    },
+    {
+      "name": "timing-repeat-group-6-7.png",
+      "sha256": "c6fb3bbdda9ca534a9557d680b280de4f1aee56383bdbb03658f8d24a9205689"
+    },
+    {
+      "name": "timing-repeat-group-72-73.png",
+      "sha256": "8d771248494a1dca32d746b6cf257b06501d8a3eab7fe2a44982865cd2bbd9d9"
+    },
+    {
+      "name": "timing-repeat-group-78-79.png",
+      "sha256": "73b81da1d876636cc901637c4e6b59ff46654018fc3fe43eb5da5429822691fa"
+    },
+    {
+      "name": "timing-repeat-group-82-83.png",
+      "sha256": "e033fac83bd78cd62b800ae0742d21f01d8c51e91c2d6fd77cca5bf3f49b7798"
+    }
+  ],
+  "availability": "The full source score, audio, review panels and corrected file are local-only."
+}

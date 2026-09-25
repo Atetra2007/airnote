@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "pre-release-inventory-not-complete",
-  "source_ledger_sha256": "1051bfed24861ab6d831091b12f73f346a9582cec6a2e2bf842ae46dd451cdd0",
+  "source_ledger_sha256": "50284156cdf58c4bb6561f77156f868169acb1f58b87901bb61cb2f9f5cdcb45",
   "coverage": {
     "baseline_records": 58,
     "zhouzhou_records": 220,
@@ -13,11 +13,11 @@
     "total_records": 415,
     "provisional_work_groups": 254,
     "saved_records": 404,
-    "calibrated_records": 36,
-    "calibrated_variants": 31
+    "calibrated_records": 39,
+    "calibrated_variants": 34
   },
   "new_work_groups": 196,
-  "works_with_reviewed_excerpt": 29,
+  "works_with_reviewed_excerpt": 32,
   "works_with_saved_source": 254,
   "works_without_saved_source": [],
   "pending_original_source_records": [
@@ -1291,7 +1291,7 @@
       "grouping_status": "provisional",
       "source_count": 1,
       "saved_source_count": 1,
-      "reviewed_excerpt_count": 0,
+      "reviewed_excerpt_count": 1,
       "sources": [
         {
           "id": "zhouzhou-170",
@@ -1299,10 +1299,16 @@
           "title": "九万字",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
-          "calibration_status": "not-reviewed"
+          "calibration_status": "reviewed"
         }
       ],
-      "reviewed_excerpts": []
+      "reviewed_excerpts": [
+        {
+          "variant_id": "calibrated-34a17408765fc5c7",
+          "note_count": 88,
+          "duration_seconds": 47.86999999999999
+        }
+      ]
     },
     {
       "work_id": "work-3cf8072a4435",
@@ -4808,7 +4814,7 @@
       "grouping_status": "provisional",
       "source_count": 1,
       "saved_source_count": 1,
-      "reviewed_excerpt_count": 0,
+      "reviewed_excerpt_count": 1,
       "sources": [
         {
           "id": "zhouzhou-052",
@@ -4816,10 +4822,16 @@
           "title": "薪火永燃",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
-          "calibration_status": "not-reviewed"
+          "calibration_status": "reviewed"
         }
       ],
-      "reviewed_excerpts": []
+      "reviewed_excerpts": [
+        {
+          "variant_id": "calibrated-a6d4ac50fc3ce5d4",
+          "note_count": 96,
+          "duration_seconds": 54.56999999294121
+        }
+      ]
     },
     {
       "work_id": "work-d163eb1d1e82",
@@ -6979,7 +6991,7 @@
       "grouping_status": "provisional",
       "source_count": 4,
       "saved_source_count": 4,
-      "reviewed_excerpt_count": 0,
+      "reviewed_excerpt_count": 1,
       "sources": [
         {
           "id": "bird-poem",
@@ -6995,7 +7007,7 @@
           "title": "鸟之诗",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
-          "calibration_status": "not-reviewed"
+          "calibration_status": "reviewed"
         },
         {
           "id": "community-9c31f1880c45711f",
@@ -7014,7 +7026,13 @@
           "calibration_status": "not-reviewed"
         }
       ],
-      "reviewed_excerpts": []
+      "reviewed_excerpts": [
+        {
+          "variant_id": "calibrated-082ed376ce92484d",
+          "note_count": 51,
+          "duration_seconds": 21.72999999870968
+        }
+      ]
     },
     {
       "work_id": "work-deck-4f8ae99fc7e5",
