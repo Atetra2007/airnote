@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "pre-release-inventory-not-complete",
-  "source_ledger_sha256": "12a1010ff26e90d0e0164122be89820e32db537257277427e39295daa98cee13",
+  "source_ledger_sha256": "1051bfed24861ab6d831091b12f73f346a9582cec6a2e2bf842ae46dd451cdd0",
   "coverage": {
     "baseline_records": 58,
     "zhouzhou_records": 220,
@@ -13,11 +13,11 @@
     "total_records": 415,
     "provisional_work_groups": 254,
     "saved_records": 404,
-    "calibrated_records": 35,
-    "calibrated_variants": 30
+    "calibrated_records": 36,
+    "calibrated_variants": 31
   },
   "new_work_groups": 196,
-  "works_with_reviewed_excerpt": 28,
+  "works_with_reviewed_excerpt": 29,
   "works_with_saved_source": 254,
   "works_without_saved_source": [],
   "pending_original_source_records": [
@@ -4259,7 +4259,7 @@
       "sources": [
         {
           "id": "alternative-score-8e1574920694d5ef",
-          "kind": "alternative-score-reference",
+          "kind": "alternative-score",
           "title": "真的爱你",
           "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0.txt",
           "acquisition_status": "source-saved",
@@ -4765,7 +4765,7 @@
       "grouping_status": "provisional",
       "source_count": 3,
       "saved_source_count": 3,
-      "reviewed_excerpt_count": 0,
+      "reviewed_excerpt_count": 1,
       "sources": [
         {
           "id": "zhouzhou-169",
@@ -4773,7 +4773,7 @@
           "title": "蒲公英的约定",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
-          "calibration_status": "not-reviewed"
+          "calibration_status": "reviewed"
         },
         {
           "id": "social-5yHVN93cpbge",
@@ -4792,7 +4792,13 @@
           "calibration_status": "not-reviewed"
         }
       ],
-      "reviewed_excerpts": []
+      "reviewed_excerpts": [
+        {
+          "variant_id": "calibrated-6d1fd6801c786cc0",
+          "note_count": 77,
+          "duration_seconds": 57.200000003823526
+        }
+      ]
     },
     {
       "work_id": "work-45614eec3954",

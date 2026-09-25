@@ -3,7 +3,7 @@
   "source_commit": "0c3735ed7c261349105ff7fc564f92eddcd922cf",
   "schema_version": 3,
   "updated_at": "2026-09-25",
-  "notice": "254 个作品、415 条来源、30 个逐音校正版、4 个整体速度调整版。速度调整版仍待逐音校准。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
+  "notice": "254 个作品、415 条来源、31 个逐音校正版、4 个整体速度调整版。速度调整版仍待逐音校准。外部谱面在本机导入；来源索引与安装包不附第三方谱面或音频。",
   "songs": [
     {
       "id": "father",
@@ -7760,7 +7760,7 @@
       "aliases": [
         "蒲公英的约定"
       ],
-      "is_default_variant": true,
+      "is_default_variant": false,
       "reference": {
         "url": "https://www.youtube.com/watch?v=O3UxZrf0AAk",
         "edition": "official-label-issued-original-studio-album-release",
@@ -14274,7 +14274,7 @@
       "id": "alternative-score-8e1574920694d5ef",
       "title": "真的爱你",
       "acquisition": "external-import",
-      "variant": "来源参考 · 真的爱你 · AlexBybye",
+      "variant": "来源谱预览 · 真的爱你 · AlexBybye",
       "source_record_id": "alternative-score-8e1574920694d5ef",
       "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0.txt",
       "source_repository": "AlexBybye/Delta_Music_Force",
@@ -14283,25 +14283,31 @@
       "git_blob_sha1": "8e1574920694d5ef5bf0db22c095c89b2a6b8de7",
       "source_sha256": "73c31c95e8ee7f2e0c5b7cc94dca71d6ddfa157009d5bb5d24e72ee4f0b0bf86",
       "source_fingerprint_sha256": "73c31c95e8ee7f2e0c5b7cc94dca71d6ddfa157009d5bb5d24e72ee4f0b0bf86",
-      "sha256": "73c31c95e8ee7f2e0c5b7cc94dca71d6ddfa157009d5bb5d24e72ee4f0b0bf86",
-      "size": 3099,
-      "filename": "8e1574920694d5ef5bf0db22c095c89b2a6b8de7.txt",
+      "sha256": "eec6846b7b9f09f82bfcbd485c4296b423bfb651ce6ac19dcd6134b1b4465e58",
+      "size": 4911,
+      "filename": "真的爱你-triplet-roundtrip-120.txt",
       "version": "source-175cd31d66",
       "bpm": 120,
       "extent": "unconfirmed",
       "sample": false,
       "redistribution": "permission-unconfirmed",
-      "review_note": "Source bytes are retained and hash-checked, but no local ScoreCodec preview is recommended. Current ScoreCodec does not support this source notation: unsupported score-body char 'T' at offset 25 The original score remains an external reference; no timing approximation, musical review, source-recording calibration, app import, or game test is claimed.",
+      "review_note": "固定提交的原解析器与生产 ScoreCodec 逐事件对比通过：保留 120 BPM、421 个音符、19 个休止和 8 组三连音，起止拍数及秒数完全一致。此项仅验证来源格式转换，尚未对照原版录音校准。",
       "verification": {
         "integrity": "verified",
         "rhythm": "not-reviewed",
         "musical_review": "not-reviewed",
         "app_import": "not-tested",
         "log_playback": "not-tested",
-        "game": "not-tested"
+        "game": "not-tested",
+        "conversion": "passed",
+        "desktop_parse": "passed"
       },
-      "source_reference_only": true,
-      "import_recommended": false,
+      "source_reference_only": false,
+      "import_recommended": true,
+      "events": 440,
+      "beats": 261.0000000000001,
+      "bpm_known": true,
+      "duration_seconds": 130.50000000000006,
       "work_id": "work-934bc5deb368",
       "variant_id": "alternative-score-8e1574920694d5ef",
       "aliases": [
@@ -15030,6 +15036,51 @@
         {
           "file": "catalog/calibration-evidence/calibrated-6bcf3d8e68745eed.json",
           "sha256": "5484a3820e38e7aa637487b59049ae4c96f94ed304186587839d356aba3e4a65"
+        }
+      ],
+      "verification": {
+        "rhythm": "reviewed",
+        "game": "not-tested"
+      },
+      "redistribution": "permission-unconfirmed",
+      "indexed_by": "Atetra2007",
+      "arranger": "本机原曲校准"
+    },
+    {
+      "id": "calibrated-6d1fd6801c786cc0",
+      "work_id": "work-b0ac9f598a21",
+      "variant_id": "calibrated-6d1fd6801c786cc0",
+      "title": "蒲公英的约定",
+      "acquisition": "external-import",
+      "variant": "原版录音片段校正版",
+      "version": "0.4.0",
+      "source_record_id": "zhouzhou-169",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "source_sha256": "e5b7a6df5a79a89d4e37f996096cc88c0a688f9ef31d194ed2b7ee690d07a10b",
+      "verified_sha256": "f5e3354629ef61c8def33cf3b23073478596e2d83d166fc65a804b95dc02be5a",
+      "bpm": 68,
+      "duration_seconds": 57.200000003823526,
+      "is_default_variant": true,
+      "aliases": [
+        "蒲公英的约定"
+      ],
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=O3UxZrf0AAk",
+        "edition": "official-label-issued-original-studio-album-release; 周杰倫; 我很忙; 20071102",
+        "audio_sha256": "47dbeda3151d5e91f570038ffd99214db3705e80dcee98f9acbc66dd0779d492",
+        "start_seconds": 169.9
+      },
+      "review_note": "对照周杰伦2007原版专辑录音复核完整76音源片段，修复同音分唱、换气及截短尾音，保留三处短转音；修正结尾D4并补回C4尾段，形成77音校正版。该D4-C4为同一音节内下滑的离散口琴近似，不是新增独立发音。",
+      "review_method": "Per-note visual review of independent CREPE/FCPE pitch, vocal onset/RMS, and recording-only lyric timing; explicit entry, repeat and release decisions. Every generated C# parser event compared to the reviewed timeline.",
+      "validation": {
+        "production_parser": "passed",
+        "reviewed_note_count": 77,
+        "maximum_parser_boundary_error_seconds": 3.823537042535463e-09
+      },
+      "evidence": [
+        {
+          "file": "catalog/calibration-evidence/calibrated-6d1fd6801c786cc0.json",
+          "sha256": "b5cd3904634ad826abaddc5c33b3a5d9c213c9b1bd73c77de8133fb3cbb38597"
         }
       ],
       "verification": {
