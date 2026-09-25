@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "pre-release-inventory-not-complete",
-  "source_ledger_sha256": "56f57cbef2e00180cc24ef6972111c42fbcaf3c984e34317a6acf018490feac6",
+  "source_ledger_sha256": "12a1010ff26e90d0e0164122be89820e32db537257277427e39295daa98cee13",
   "coverage": {
     "baseline_records": 58,
     "zhouzhou_records": 220,
@@ -9,14 +9,82 @@
     "supplementary_records": 4,
     "additional_visual_records": 3,
     "additional_text_records": 1,
-    "total_records": 338,
-    "provisional_work_groups": 250,
-    "saved_records": 327,
+    "alternative_records": 77,
+    "total_records": 415,
+    "provisional_work_groups": 254,
+    "saved_records": 404,
     "calibrated_records": 35,
     "calibrated_variants": 30
   },
-  "new_work_groups": 192,
+  "new_work_groups": 196,
   "works_with_reviewed_excerpt": 28,
+  "works_with_saved_source": 254,
+  "works_without_saved_source": [],
+  "pending_original_source_records": [
+    "social-3338bddee058",
+    "social-95168df81f85",
+    "social-450f07410b01",
+    "social-5f99da052cec",
+    "social-a2e6a75d4372",
+    "social-7286efe072aa",
+    "social-ab69e2b07902",
+    "social-58d30ffb37e3",
+    "social-5d585b235958",
+    "social-1806d1f39882",
+    "social-c312f0815638"
+  ],
+  "exact_byte_duplicate_groups": [
+    [
+      "zhouzhou-024",
+      "zhouzhou-106"
+    ],
+    [
+      "zhouzhou-048",
+      "zhouzhou-080"
+    ],
+    [
+      "zhouzhou-066",
+      "zhouzhou-097"
+    ]
+  ],
+  "tempo_adjusted_variants": [
+    {
+      "source_id": "community-101b2177059b6129",
+      "variant_id": "tempo-101b2177059b6129",
+      "work_id": "work-6469846ed00b",
+      "title": "忘川彼岸",
+      "original_bpm": 122,
+      "bpm": 84,
+      "status": "tempo-adjusted-not-note-calibrated"
+    },
+    {
+      "source_id": "community-849e6ab3d9fe5511",
+      "variant_id": "tempo-849e6ab3d9fe5511",
+      "work_id": "work-1b5a288e9c96",
+      "title": "戒烟",
+      "original_bpm": 66,
+      "bpm": 60,
+      "status": "tempo-adjusted-not-note-calibrated"
+    },
+    {
+      "source_id": "community-705eb8b66b804440",
+      "variant_id": "tempo-705eb8b66b804440",
+      "work_id": "work-dbf3584d0b43",
+      "title": "爱错",
+      "original_bpm": 75,
+      "bpm": 73,
+      "status": "tempo-adjusted-not-note-calibrated"
+    },
+    {
+      "source_id": "community-ae985813ffa59bd3",
+      "variant_id": "tempo-ae985813ffa59bd3",
+      "work_id": "work-c20f24975fc7",
+      "title": "辞九门回忆",
+      "original_bpm": 80,
+      "bpm": 72,
+      "status": "tempo-adjusted-not-note-calibrated"
+    }
+  ],
   "limits": [
     "Work grouping is provisional. Aliases and equal title text do not prove the same composition.",
     "A reviewed excerpt is not a full-song transcription or an auditory listening test.",
@@ -221,12 +289,13 @@
       "title": "His Theme",
       "aliases": [
         "His Theme（传说之下）",
-        "His Theme Toby@宇智波沈"
+        "His Theme Toby@宇智波沈",
+        "His_Theme"
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -242,6 +311,14 @@
           "kind": "zhouzhou",
           "title": "His Theme Toby@宇智波沈",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-426ca228fc761a02",
+          "kind": "community",
+          "title": "His_Theme",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/His-Theme-UT-loigsa-cfb013bbdda3c327a7009.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -294,6 +371,29 @@
           "kind": "zhouzhou",
           "title": "Luvsic",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        }
+      ],
+      "reviewed_excerpts": []
+    },
+    {
+      "work_id": "work-522440d04642",
+      "title": "Mariage d’Amour",
+      "aliases": [
+        "Mariage d'Amour"
+      ],
+      "added_since_baseline": true,
+      "grouping_status": "provisional",
+      "source_count": 1,
+      "saved_source_count": 1,
+      "reviewed_excerpt_count": 0,
+      "sources": [
+        {
+          "id": "alternative-score-18a672f41a0540da",
+          "kind": "alternative-score",
+          "title": "Mariage d'Amour",
+          "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/mariage/mariage_damour_melody_only.mid",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -371,8 +471,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -388,6 +488,22 @@
           "kind": "social",
           "title": "See You Again",
           "source_url": "https://www.douyin.com/search/三角洲%20口琴%20图文?modal_id=7687430539896294694",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-4519cfc30f7a8962",
+          "kind": "community",
+          "title": "See You Again",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/See-You-Again-%E8%80%81%E5%A4%A7-11111-8e45566e0368197f6cd2e.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-eb08a83d87b498c0",
+          "kind": "alternative-score",
+          "title": "See You Again",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/See%20You%20Again.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -617,12 +733,14 @@
       "work_id": "work-22d66a033a22",
       "title": "いつも何度でも",
       "aliases": [
-        "永远同在（千与千寻）"
+        "永远同在（千与千寻）",
+        "いつも何度でも Always with you",
+        "千与千寻"
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -640,6 +758,22 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-162ded5d756f044e",
+          "kind": "community",
+          "title": "いつも何度でも Always with you",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB-%E4%B8%BB%E9%A2%98%E6%9B%B2-Always-with-you-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-02f43d3ed74ea433fe3ff.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-d9041f7726fcebd8",
+          "kind": "community",
+          "title": "千与千寻",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB-%E5%AE%AB%E5%B4%8E%E9%AA%8F-11111-9a98419b3345b32923fd0.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -650,8 +784,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -660,6 +794,14 @@
           "title": "エイミー",
           "source_url": "https://www.bilibili.com/read/cv53069097",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "webvideo-4841b5cfce85965a",
+          "kind": "web-video-sheet",
+          "title": "エイミー",
+          "source_url": "https://www.youtube.com/watch?v=KEEdGm0DYNo",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -912,8 +1054,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -923,6 +1065,14 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-2359ee5dfd05411e",
+          "kind": "piano-reference",
+          "title": "不谓侠",
+          "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2/%E8%90%A7%E5%BF%86%E6%83%85Alex%20-%20%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2.eop",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -930,11 +1080,13 @@
     {
       "work_id": "work-6e28c160aca4",
       "title": "世上只有妈妈好",
-      "aliases": [],
+      "aliases": [
+        "世上只有妈妈好（找妈妈的来）"
+      ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -942,6 +1094,14 @@
           "kind": "zhouzhou",
           "title": "世上只有妈妈好",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-c73e46b41b60dd12",
+          "kind": "community",
+          "title": "世上只有妈妈好（找妈妈的来）",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%96%E4%B8%8A%E5%8F%AA%E6%9C%89%E5%A6%88%E5%A6%88%E5%A5%BD-%E6%89%BE%E5%A6%88%E5%A6%88%E7%9A%84%E6%9D%A5-111-11111-dde2efce776d3e5fbed8d.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -954,8 +1114,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -964,6 +1124,14 @@
           "title": "世末舞厅",
           "source_url": "https://www.bilibili.com/read/cv53069152",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "websheet-a167af59d7e6e109",
+          "kind": "web-sheet",
+          "title": "世末舞厅",
+          "source_url": "https://piastudy.com/Intermediate/WJrjlx1d",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -1086,8 +1254,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -1097,6 +1265,14 @@
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jLHYo8HxLNhy",
           "acquisition_status": "source-saved",
           "calibration_status": "reviewed"
+        },
+        {
+          "id": "community-864312e19abe22a7",
+          "kind": "community",
+          "title": "义勇军进行曲",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2-%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C-Meimei-e1690001f7.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": [
@@ -1310,8 +1486,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1319,6 +1495,14 @@
           "kind": "social",
           "title": "你看到的我（大哥小曲）",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=1r0Eso9G7U7D",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-fe13732de9d41d68",
+          "kind": "community",
+          "title": "你看到的我（大哥小曲）",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%9A%84%E6%88%91-%E5%A4%A7%E5%93%A5%E5%B0%8F%E6%9B%B2-%E9%BB%84%E5%8B%87-%E4%BB%BB%E4%B9%A6%E6%80%80-%E6%A7%91%E6%A7%91%E6%A7%91-cf7222fc2f4779be23603.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1412,6 +1596,27 @@
       "reviewed_excerpts": []
     },
     {
+      "work_id": "work-e8a9601f69ab",
+      "title": "克罗地亚狂想曲",
+      "aliases": [],
+      "added_since_baseline": true,
+      "grouping_status": "provisional",
+      "source_count": 1,
+      "saved_source_count": 1,
+      "reviewed_excerpt_count": 0,
+      "sources": [
+        {
+          "id": "alternative-score-64b9b57128d64eed",
+          "kind": "alternative-score",
+          "title": "克罗地亚狂想曲",
+          "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/croatian/croatian-rhapsody.mid",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        }
+      ],
+      "reviewed_excerpts": []
+    },
+    {
       "work_id": "work-5baf8dca3f77",
       "title": "兰亭序",
       "aliases": [
@@ -1419,8 +1624,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -1444,6 +1649,14 @@
           "kind": "social",
           "title": "兰亭序",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=shejl4xzOOn5",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-e50f5e36ae6888d4",
+          "kind": "community",
+          "title": "兰亭序",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%85%B0%E4%BA%AD%E5%BA%8F-%E5%91%A8%E6%9D%B0%E4%BC%A6-11111-9b5c8e833f6f3c5cbce1b.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1531,8 +1744,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1540,6 +1753,14 @@
           "kind": "zhouzhou",
           "title": "冲锋号",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-d59e54bd9175f1d1",
+          "kind": "community",
+          "title": "冲锋号",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%86%B2%E9%94%8B%E5%8F%B7-%E5%86%B2%E9%94%8B%E5%8F%B7-ZhGr-e9ea74134d.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1578,11 +1799,14 @@
     {
       "work_id": "work-ebae18240f14",
       "title": "加勒比海盗",
-      "aliases": [],
+      "aliases": [
+        "加勒比海盗（当渔政的来）",
+        "加勒比海盗高潮"
+      ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1590,6 +1814,30 @@
           "kind": "social",
           "title": "加勒比海盗",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=pHE4TTltcveP",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-f52e62d0a295c38e",
+          "kind": "community",
+          "title": "加勒比海盗",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-Klaus-Badelt-mouse1-a372b76f25059c60ee512.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-9c71fb87584628c4",
+          "kind": "community",
+          "title": "加勒比海盗（当渔政的来）",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-%E5%BD%93%E6%B8%94%E6%94%BF%E7%9A%84%E6%9D%A5-%E6%B5%B7%E7%9B%97-11111-744ed99eab5584add12c7.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-7af555e40973faef",
+          "kind": "community",
+          "title": "加勒比海盗高潮",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97%E9%AB%98%E6%BD%AE-%E6%B5%B7%E7%9B%97-%E5%92%95%E5%92%95%E5%98%8E%E5%98%8E-891eb812de536868603e5.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1686,8 +1934,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1695,6 +1943,14 @@
           "kind": "zhouzhou",
           "title": "友谊地久天长",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-b55316b70b8e415a",
+          "kind": "alternative-score",
+          "title": "友谊地久天长",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8B%E8%B0%8A%E5%9C%B0%E4%B9%85%E5%A4%A9%E9%95%BF.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1843,8 +2099,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1860,6 +2116,14 @@
           "kind": "social",
           "title": "喀秋莎",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=a0Syq1Uvp2DA",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-d1411b549a59a430",
+          "kind": "alternative-score",
+          "title": "喀秋莎",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%96%80%E7%A7%8B%E8%8E%8E.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -1895,8 +2159,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1905,6 +2169,14 @@
           "title": "嘘月",
           "source_url": "https://www.bilibili.com/read/cv53068915",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "websheet-2de45a5915b03930",
+          "kind": "web-sheet",
+          "title": "嘘月",
+          "source_url": "https://piastudy.com/Intermediate/1iGCT5KJMl0",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -1960,8 +2232,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 1,
+      "source_count": 3,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1979,6 +2251,14 @@
           "source_url": "https://www.bilibili.com/video/BV1LF411a7Xg/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-ef3eef99f9a79837",
+          "kind": "piano-reference",
+          "title": "夜航星",
+          "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E5%8A%A8%E6%BC%AB/%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED/%E4%B8%8D%E6%89%8D%20-%20%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED.eop",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -1989,8 +2269,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -1998,6 +2278,14 @@
           "kind": "social",
           "title": "大东北我的家乡",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=q1PO3rDLdFx6",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-8627c603941b59ce",
+          "kind": "community",
+          "title": "大东北我的家乡",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A7%E4%B8%9C%E5%8C%97%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1-%E4%BD%95%E7%8E%89-kili-017b3330233b0e37cc762.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2106,8 +2394,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2115,6 +2403,14 @@
           "kind": "zhouzhou",
           "title": "奇迹再现-迪迦奥特曼",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-d4fc4fef4a76371d",
+          "kind": "community",
+          "title": "奇迹再现",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A5%87%E8%BF%B9%E5%86%8D%E7%8E%B0-ryanixer-ryanixer-c483db43ceedf6f2b0a9f.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2148,12 +2444,14 @@
       "aliases": [
         "寂寞的人听着伤心的歌-手速要求很高",
         "得吃小曲",
-        "寂寞的人伤心的歌（得吃小曲）"
+        "寂寞的人伤心的歌（得吃小曲）",
+        "（三角洲适配）寂寞的人伤心的歌—得吃小曲",
+        "寂寞的人伤心的歌 加快版"
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 6,
+      "saved_source_count": 6,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2177,6 +2475,30 @@
           "kind": "social",
           "title": "寂寞的人伤心的歌（得吃小曲）",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=u72RCmw4crJP",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-8e6f09ba3e6b4d02",
+          "kind": "community",
+          "title": "（三角洲适配）寂寞的人伤心的歌—得吃小曲",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%89%E8%A7%92%E6%B4%B2%E9%80%82%E9%85%8D-%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C-%E5%BE%97%E5%90%83%E5%B0%8F%E6%9B%B2-%E9%BE%99%E6%A2%85%E5%AD%90-%E6%9D%A8%E6%B5%B7%E5%BD%AA-%E6%A7%91%E6%A7%91%E6%A7%91-c94b3e92de38c76270e19.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-73a5a1d6c3c46dc5",
+          "kind": "community",
+          "title": "寂寞的人伤心的歌 加快版",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C-%E5%8A%A0%E5%BF%AB%E7%89%88-%E9%BE%99%E6%A2%85%E5%AD%90-%E6%9D%A8%E6%B5%B7%E5%BD%AA-%E6%A7%91%E6%A7%91%E6%A7%91-ea169bbaa7c41e85ea952.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-3d79c0adda2f7360",
+          "kind": "alternative-score",
+          "title": "寂寞的人伤心的歌",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2220,8 +2542,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2229,6 +2551,14 @@
           "kind": "zhouzhou",
           "title": "小星星",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-eb14a96294b6782e",
+          "kind": "alternative-score",
+          "title": "小星星",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E5%B0%8F%E6%98%9F%E6%98%9F.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2241,8 +2571,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2252,6 +2582,14 @@
           "source_url": "https://www.bilibili.com/video/BV1DaaF6AEBs/",
           "acquisition_status": "pending",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-63c7ac471906a5cb",
+          "kind": "piano-reference",
+          "title": "小跳蛙",
+          "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F/%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F%20-%20%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F.eop",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -2259,11 +2597,13 @@
     {
       "work_id": "work-6a66290370bc",
       "title": "左手右手",
-      "aliases": [],
+      "aliases": [
+        "喜羊羊与灰太狼-左手右手"
+      ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2271,6 +2611,14 @@
           "kind": "zhouzhou",
           "title": "左手右手",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-4f7def70901bd537",
+          "kind": "community",
+          "title": "喜羊羊与灰太狼-左手右手",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%96%9C%E7%BE%8A%E7%BE%8A%E4%B8%8E%E7%81%B0%E5%A4%AA%E7%8B%BC-%E5%B7%A6%E6%89%8B%E5%8F%B3%E6%89%8B-%E5%96%9C%E7%BE%8A%E7%BE%8A-11111-45342a2125ce3521a9b33.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2421,8 +2769,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -2432,6 +2780,14 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "reviewed"
+        },
+        {
+          "id": "community-101b2177059b6129",
+          "kind": "community",
+          "title": "忘川彼岸",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BF%98%E5%B7%9D%E5%BD%BC%E5%B2%B8-19102-%E6%A7%91%E6%A7%91%E6%A7%91-41f1a4403e613eb8122f7.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": [
@@ -2448,8 +2804,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2457,6 +2813,37 @@
           "kind": "zhouzhou",
           "title": "忘情牛肉面",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-1c6a455a27e316f4",
+          "kind": "community",
+          "title": "忘情牛肉面",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BF%98%E6%83%85%E7%89%9B%E8%82%89%E9%9D%A2-%E9%A9%AC%E5%BB%BA%E6%B6%9B-%E6%A7%91%E6%A7%91%E6%A7%91-5be744edd167fb49d06e6.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        }
+      ],
+      "reviewed_excerpts": []
+    },
+    {
+      "work_id": "work-9453aeb47efc",
+      "title": "念张师",
+      "aliases": [
+        "念张师 主旋律"
+      ],
+      "added_since_baseline": true,
+      "grouping_status": "provisional",
+      "source_count": 1,
+      "saved_source_count": 1,
+      "reviewed_excerpt_count": 0,
+      "sources": [
+        {
+          "id": "alternative-score-4872a0a3ea2efef0",
+          "kind": "alternative-score-reference",
+          "title": "念张师 主旋律",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E5%BF%B5%E5%BC%A0%E5%B8%88%20%E4%B8%BB%E6%97%8B%E5%BE%8B.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2490,8 +2877,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2499,6 +2886,14 @@
           "kind": "zhouzhou",
           "title": "恋人",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-bc60aced2007dc13",
+          "kind": "community",
+          "title": "恋人",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%81%8B%E4%BA%BA-%E6%9D%8E%E8%8D%A3%E6%B5%A9-%E5%A4%B1%E8%AF%AD%E5%B7%B7-230320b3bb920870edc3a.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2626,8 +3021,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2636,6 +3031,14 @@
           "title": "愿戴荣光坠入天渊",
           "source_url": "https://www.bilibili.com/video/BV1ppe36dEwL/",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "websheet-560807be971c6a83",
+          "kind": "web-sheet",
+          "title": "愿戴荣光坠入天渊",
+          "source_url": "https://piastudy.com/Intermediate/wzZVQQAn",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -2766,8 +3169,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2775,6 +3178,14 @@
           "kind": "social",
           "title": "戒烟",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=oEuqaxJytL1l",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-849e6ab3d9fe5511",
+          "kind": "community",
+          "title": "戒烟",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%88%92%E7%83%9F-%E6%9D%8E%E8%8D%A3%E6%B5%A9-11111-209a1b0854eb5e02d40f0.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -2868,8 +3279,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 0,
+      "source_count": 2,
+      "saved_source_count": 1,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -2878,6 +3289,14 @@
           "title": "放晴（晴る）",
           "source_url": "https://www.bilibili.com/read/cv53069007",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "websheet-5e4458d9c3135267",
+          "kind": "web-sheet",
+          "title": "放晴（晴る）",
+          "source_url": "https://piastudy.com/Intermediate/WNctWN8W",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -3131,8 +3550,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3158,6 +3577,14 @@
           "source_url": "https://www.douyin.com/search/三角洲%20口琴%20曲谱?modal_id=7685318024852753705",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-57bb90420ef7703b",
+          "kind": "community",
+          "title": "欢乐斗地主",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%AC%A2%E4%B9%90%E6%96%97%E5%9C%B0%E4%B8%BB-33-33-47-2f2ad966299ca4a1a70c4.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -3170,8 +3597,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3187,6 +3614,14 @@
           "kind": "zhouzhou",
           "title": "欢乐颂02",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-b45499e9ad280629",
+          "kind": "alternative-score",
+          "title": "欢乐颂",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%AC%A2%E4%B9%90%E9%A2%82.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -3310,8 +3745,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 1,
+      "source_count": 3,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3328,6 +3763,14 @@
           "title": "海屿你",
           "source_url": "https://www.bilibili.com/read/cv53035053",
           "acquisition_status": "pending",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "websheet-3df07cbd02312adc",
+          "kind": "web-sheet",
+          "title": "海屿你",
+          "source_url": "https://piastudy.com/Intermediate/1RwZo1RAr",
+          "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
       ],
@@ -3454,8 +3897,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 5,
-      "saved_source_count": 4,
+      "source_count": 6,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 2,
       "sources": [
         {
@@ -3497,6 +3940,14 @@
           "source_url": "https://www.douyin.com/search/三角洲%20口琴%20图文?modal_id=7686525482061549989&type=general",
           "acquisition_status": "source-saved",
           "calibration_status": "reviewed"
+        },
+        {
+          "id": "community-705eb8b66b804440",
+          "kind": "community",
+          "title": "爱错",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%88%B1%E9%94%99-%E7%8E%8B%E5%8A%9B%E5%AE%8F-Jiko-29ce9ee5b8a303ea4360b.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": [
@@ -3560,8 +4011,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3569,6 +4020,14 @@
           "kind": "zhouzhou",
           "title": "猪猪侠",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-21b47adc9e9f2cbb",
+          "kind": "community",
+          "title": "猪猪侠",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0-11111-252ca21ad57c25a68203c.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -3789,6 +4248,27 @@
       "reviewed_excerpts": []
     },
     {
+      "work_id": "work-934bc5deb368",
+      "title": "真的爱你",
+      "aliases": [],
+      "added_since_baseline": true,
+      "grouping_status": "provisional",
+      "source_count": 1,
+      "saved_source_count": 1,
+      "reviewed_excerpt_count": 0,
+      "sources": [
+        {
+          "id": "alternative-score-8e1574920694d5ef",
+          "kind": "alternative-score-reference",
+          "title": "真的爱你",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        }
+      ],
+      "reviewed_excerpts": []
+    },
+    {
       "work_id": "work-6fadd005df7c",
       "title": "神秘光头指挥官",
       "aliases": [],
@@ -3815,8 +4295,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3824,6 +4304,14 @@
           "kind": "social",
           "title": "稻香",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=qRkdlFf0qtvT",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-1533c637e78e0c10",
+          "kind": "alternative-score",
+          "title": "稻香",
+          "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/daoxiang/%E7%A8%BB%E9%A6%99%E2%80%94%E5%91%A8%E6%9D%B0%E4%BC%A6%EF%BC%88%E9%80%82%E5%90%88%E9%AC%BC%E7%95%9C%E8%B0%83%E6%95%99%EF%BC%89.mid",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -3951,8 +4439,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 2,
+      "source_count": 6,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -3976,6 +4464,30 @@
           "kind": "social",
           "title": "红尘客栈 主歌+副歌",
           "source_url": "https://www.douyin.com/search/红尘客栈%20三角洲口琴?modal_id=7684089365730982811&type=general",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-5e3e6d0d30e51f26",
+          "kind": "piano-reference",
+          "title": "红尘客栈",
+          "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6.eop",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-360d9bd6d53b08bf",
+          "kind": "piano-reference",
+          "title": "红尘客栈",
+          "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2.eop",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "piano-19591b733bdcbd10",
+          "kind": "piano-reference",
+          "title": "红尘客栈",
+          "source_url": "https://github.com/artisdom/midi-piano/blob/7b576afa98ffe11b9cc25b920412adc56f9d0d2a/assets/midi/JustPiano2-20160326/%E6%B5%81%E8%A1%8C%E7%A9%BA%E9%97%B4%EF%BC%881134%EF%BC%89/%E5%B0%8F%E9%A1%B9A%EF%BC%9A%E5%8D%8E%E8%AF%AD%E6%B5%81%E8%A1%8C%EF%BC%88897%EF%BC%89/z%EF%BC%88198%EF%BC%89/%E5%91%A8%E6%9D%B0%E4%BC%A6%EF%BC%8884%EF%BC%89/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.mid",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4172,8 +4684,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4181,6 +4693,14 @@
           "kind": "social",
           "title": "菊次郎的夏天",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=ICCZqRDm5GaN",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-6db38200fb415064",
+          "kind": "community",
+          "title": "菊次郎的夏天",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%8F%8A%E6%AC%A1%E9%83%8E%E7%9A%84%E5%A4%8F%E5%A4%A9-%E4%B9%85%E7%9F%B3%E8%AE%A9-%E6%A7%91%E6%A7%91%E6%A7%91-bc1ee4a5b2223df9fa752.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4243,8 +4763,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4260,6 +4780,14 @@
           "kind": "social",
           "title": "蒲公英的约定",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=5yHVN93cpbge",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-b39a766fcd5c69b5",
+          "kind": "community",
+          "title": "蒲公英的约定",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%92%B2%E5%85%AC%E8%8B%B1%E7%9A%84%E7%BA%A6%E5%AE%9A-%E5%91%A8%E6%9D%B0%E4%BC%A6-11111-e670379ae91756f23051e.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4318,8 +4846,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -4335,6 +4863,14 @@
           "kind": "zhouzhou",
           "title": "虫儿飞（全）",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-9fd84ee9be4c5a74",
+          "kind": "community",
+          "title": "虫儿飞",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%99%AB%E5%84%BF%E9%A3%9E-%E9%83%91%E4%BC%8A%E5%81%A5-boringy-12ac06fe20380cbd4162b.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4407,8 +4943,8 @@
       ],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4434,6 +4970,14 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-7ed3986df7b2bc43",
+          "kind": "community",
+          "title": "起风了",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%B5%B7%E9%A3%8E%E4%BA%86-%E4%B9%B0%E8%BE%A3%E6%A4%92%E4%B9%9F%E7%94%A8%E5%88%B8-%E6%A7%91%E6%A7%91%E6%A7%91-5a742bcca665ae60f93f7.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -4444,8 +4988,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4453,6 +4997,14 @@
           "kind": "zhouzhou",
           "title": "辞九门回忆",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-ae985813ffa59bd3",
+          "kind": "community",
+          "title": "辞九门回忆",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E5%86%B0%E5%B9%BD-%E8%A7%A3%E5%BF%A7%E8%8D%89-%E6%A7%91%E6%A7%91%E6%A7%91-15d88e8a58003473094a4.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4544,8 +5096,8 @@
       "aliases": [],
       "added_since_baseline": true,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4561,6 +5113,22 @@
           "kind": "social",
           "title": "青花瓷",
           "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=kz5fxDdz058B",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-b96d6a0a7dd8919c",
+          "kind": "community",
+          "title": "青花瓷",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9D%92%E8%8A%B1%E7%93%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-Rainink-c9e3050882a7cc1aa17a6.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-829db327ff6d3321",
+          "kind": "community",
+          "title": "青花瓷",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9D%92%E8%8A%B1%E7%93%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E6%A7%91%E6%A7%91%E6%A7%91-0eff17735794f18b01970.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4790,11 +5358,13 @@
     {
       "work_id": "work-deck-f9bed8df32ff",
       "title": "七里香",
-      "aliases": [],
+      "aliases": [
+        "七里香副歌1"
+      ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4802,6 +5372,14 @@
           "kind": "baseline",
           "title": "七里香",
           "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8c538e936a.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-7686181d1158e0f9",
+          "kind": "community",
+          "title": "七里香副歌1",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99%E5%89%AF%E6%AD%8C1-111-%E4%BA%8B%E5%AE%9E%E4%B8%8A-506b82dd294a5360ecef7.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4940,8 +5518,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4957,6 +5535,14 @@
           "kind": "zhouzhou",
           "title": "千本樱",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-01f47dea7e4c6aa4",
+          "kind": "community",
+          "title": "千本樱",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E6%9C%AC%E6%A8%B1-%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5-%E6%A7%91%E6%A7%91%E6%A7%91-217034cfd504e38343ca8.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -4990,8 +5576,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -4999,6 +5585,14 @@
           "kind": "baseline",
           "title": "反乌托邦 x 拼凑",
           "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6%20x%20%E6%8B%BC%E5%87%91%20bpm120.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-d16dcb8c55b586b5",
+          "kind": "alternative-score",
+          "title": "反乌托邦 x 拼凑",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6%20x%20%E6%8B%BC%E5%87%91.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5073,12 +5667,13 @@
       "title": "圣诞快乐劳伦斯先生",
       "aliases": [
         "圣代快乐劳伦斯先生",
-        "圣诞快乐 劳伦斯先生"
+        "圣诞快乐 劳伦斯先生",
+        "圣诞快乐劳伦斯先生(高潮部分）"
       ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5102,6 +5697,14 @@
           "kind": "zhouzhou",
           "title": "圣诞快乐 劳伦斯先生",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-eba4b54c08521094",
+          "kind": "community",
+          "title": "圣诞快乐劳伦斯先生(高潮部分）",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90%E5%8A%B3%E4%BC%A6%E6%96%AF%E5%85%88%E7%94%9F-%E9%AB%98%E6%BD%AE%E9%83%A8%E5%88%86-%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80-%E5%A4%9C%E6%B3%8A%E7%A7%A6%E6%B7%AE%E8%BF%91%E9%85%92%E5%AE%B6-e5ff3190293974da74aeb.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5135,8 +5738,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 1,
-      "saved_source_count": 1,
+      "source_count": 2,
+      "saved_source_count": 2,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5144,6 +5747,14 @@
           "kind": "baseline",
           "title": "天外来物",
           "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9-%E5%89%AF%E6%AD%8C-%E8%96%9B%E4%B9%8B%E8%B0%A6-ZhGr-5374cfda3e.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-f09581e7aedf9cb0",
+          "kind": "community",
+          "title": "天外来物",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9-%E8%96%9B%E4%B9%8B%E8%B0%A6-ZhGr-d4e8d4c70f.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5158,8 +5769,8 @@
       ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5175,6 +5786,14 @@
           "kind": "zhouzhou",
           "title": "天空之城@Alan",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-a8c6cd73cdb2ae10",
+          "kind": "community",
+          "title": "天空之城",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-3d39404450.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5289,8 +5908,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5306,6 +5925,22 @@
           "kind": "zhouzhou",
           "title": "当年情",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-b363da60338e1918",
+          "kind": "community",
+          "title": "当年情",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E5%BC%A0%E5%9B%BD%E8%8D%A3-czw12138-01bc8cffb48e6993b7124.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-a1ec3185c6dea837",
+          "kind": "community",
+          "title": "当年情",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E9%A1%BE%E5%98%89%E8%BE%89-MRBIG-mrbig-a1c1f9e5184cc05c4a1b9.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5386,11 +6021,14 @@
     {
       "work_id": "work-spring-shadow",
       "title": "春日影",
-      "aliases": [],
+      "aliases": [
+        "春日影~",
+        "春日影（CRYCHIC ver.）干净无杂音,适合三角洲"
+      ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 5,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5408,6 +6046,30 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-39ed47f37b63f90b",
+          "kind": "community",
+          "title": "春日影~",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%98%A5%E6%97%A5%E5%BD%B1-%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90-Wind-02-3966a98631.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-3a9f16335d28258a",
+          "kind": "alternative-score-reference",
+          "title": "春日影（CRYCHIC ver.）干净无杂音,适合三角洲",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%98%A5%E6%97%A5%E5%BD%B1%EF%BC%88CRYCHIC%20ver.%EF%BC%89%E5%B9%B2%E5%87%80%E6%97%A0%E6%9D%82%E9%9F%B3%2C%E9%80%82%E5%90%88%E4%B8%89%E8%A7%92%E6%B4%B2.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-3eaf095bbcc898b3",
+          "kind": "alternative-score",
+          "title": "春日影",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%98%A5%E6%97%A5%E5%BD%B1.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -5415,11 +6077,13 @@
     {
       "work_id": "work-sunny-day",
       "title": "晴天",
-      "aliases": [],
+      "aliases": [
+        "13074-晴天-原调简单版-周杰伦"
+      ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 5,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -5443,6 +6107,22 @@
           "kind": "social",
           "title": "晴天",
           "source_url": "https://www.douyin.com/search/三角洲%20口琴%20图文?modal_id=7686525482061549989&type=general",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-2bf62fa4932cd5ce",
+          "kind": "alternative-score-reference",
+          "title": "13074-晴天-原调简单版-周杰伦",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/13074-%E6%99%B4%E5%A4%A9-%E5%8E%9F%E8%B0%83%E7%AE%80%E5%8D%95%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-895ddecb24e6616c",
+          "kind": "alternative-score",
+          "title": "晴天",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%99%B4%E5%A4%A9.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5503,8 +6183,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5520,6 +6200,14 @@
           "kind": "zhouzhou",
           "title": "未闻花名",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-8c7c5796e90abd97",
+          "kind": "community",
+          "title": "未闻花名",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D-%E9%82%A3%E5%B9%B4%E5%A4%8F%E5%A4%A9-11111-9396e7aa8bf00f4c6f56b.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5625,8 +6313,8 @@
       ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 4,
-      "saved_source_count": 4,
+      "source_count": 5,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5660,6 +6348,14 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-38e8ad1e5d0f8ff8",
+          "kind": "alternative-score",
+          "title": "死别",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%AD%BB%E5%88%AB.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": []
@@ -5688,11 +6384,13 @@
     {
       "work_id": "work-father",
       "title": "父亲",
-      "aliases": [],
+      "aliases": [
+        "父亲（筷子兄弟）"
+      ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 5,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5708,6 +6406,30 @@
           "kind": "zhouzhou",
           "title": "父亲",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-26fe292fc36120f3",
+          "kind": "community",
+          "title": "父亲",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%88%B6%E4%BA%B2-%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F-%E6%A7%91%E6%A7%91%E6%A7%91-1849f84c4d968d35ba165.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-4625b0276f87a416",
+          "kind": "alternative-score",
+          "title": "父亲（筷子兄弟）",
+          "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E7%88%B6%E4%BA%B2.txt",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-19c01310063e5bac",
+          "kind": "alternative-score",
+          "title": "父亲",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%88%B6%E4%BA%B2.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5838,8 +6560,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 3,
+      "saved_source_count": 3,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5855,6 +6577,14 @@
           "kind": "zhouzhou",
           "title": "花海",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "alternative-score-e8d7fcff30eb33f4",
+          "kind": "alternative-score",
+          "title": "花海",
+          "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E8%8A%B1%E6%B5%B7.txt",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -5951,12 +6681,13 @@
       "aliases": [
         "决别书",
         "诀别书@Narkissos的曲谱室",
-        "诀别书-02"
+        "诀别书-02",
+        "诀别书-片段"
       ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 4,
-      "saved_source_count": 4,
+      "source_count": 5,
+      "saved_source_count": 5,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -5988,6 +6719,14 @@
           "kind": "zhouzhou",
           "title": "诀别书-02",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-b3f73d5cb002b829",
+          "kind": "community",
+          "title": "诀别书-片段",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%AF%80%E5%88%AB%E4%B9%A6-1-%E9%82%93%E5%9E%9A-%E5%81%B7%E5%BE%97%E6%B5%AE%E7%94%9F%E5%8D%8A%E6%97%A5%E9%97%B2-3c0bb14ea8a8c87fe5bd6.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
@@ -6139,8 +6878,8 @@
       ],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 3,
-      "saved_source_count": 3,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 1,
       "sources": [
         {
@@ -6166,6 +6905,14 @@
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
           "acquisition_status": "source-saved",
           "calibration_status": "reviewed"
+        },
+        {
+          "id": "community-95c071d7345bde0d",
+          "kind": "community",
+          "title": "雨爱",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9B%A8%E7%88%B1-%E6%9D%A8%E4%B8%9E%E7%90%B3-%E6%A7%91%E6%A7%91%E6%A7%91-3635a345402742b583428.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
         }
       ],
       "reviewed_excerpts": [
@@ -6224,8 +6971,8 @@
       "aliases": [],
       "added_since_baseline": false,
       "grouping_status": "provisional",
-      "source_count": 2,
-      "saved_source_count": 2,
+      "source_count": 4,
+      "saved_source_count": 4,
       "reviewed_excerpt_count": 0,
       "sources": [
         {
@@ -6241,6 +6988,22 @@
           "kind": "zhouzhou",
           "title": "鸟之诗",
           "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-9c31f1880c45711f",
+          "kind": "community",
+          "title": "鸟之诗",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Jiko-1ca3113843.deltamusic",
+          "acquisition_status": "source-saved",
+          "calibration_status": "not-reviewed"
+        },
+        {
+          "id": "community-2d179e0f65f874a3",
+          "kind": "community",
+          "title": "鸟之诗",
+          "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%B8%9F%E4%B9%8B%E8%AF%97-Lia-Wind-02-aeb96868c2.deltamusic",
           "acquisition_status": "source-saved",
           "calibration_status": "not-reviewed"
         }
