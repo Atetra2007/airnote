@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Automation;
@@ -73,7 +74,15 @@ public partial class MainWindow : Window
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
         if (hotkeyWarning != null) Status(hotkeyWarning, true);
     }
-    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY v0.3.0-preview.2 · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
+    private void Window_ContentRendered(object sender, EventArgs e) => Log($"READY {GetProductVersion()} · {App.StartupTimer.ElapsedMilliseconds} ms（程序启动至首次呈现）");
+    private static string GetProductVersion()
+    {
+        var assembly = typeof(MainWindow).Assembly;
+        var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
+            ?? assembly.GetName().Version?.ToString() ?? "未知版本";
+        var metadataSeparator = version.IndexOf('+');
+        return metadataSeparator >= 0 ? version[..metadataSeparator] : version;
+    }
     private nint WindowMessage(nint hwnd, int msg, nint wParam, nint lParam, ref bool handled)
     {
         noteInput?.HandleMessage(msg, wParam, lParam);
@@ -101,7 +110,10 @@ public partial class MainWindow : Window
     {
         if (SongList == null) return;
         var query = SearchInput.Text.Trim();
-        var items = store.GetWorks().Where(work => work.Matches(query));
+        var quality = SelectedQualityFilter();
+        var items = store.GetWorks()
+            .Select(work => work.Filter(query, quality, current?.Id))
+            .OfType<LibraryWork>();
         if (FavoriteFilter.IsChecked == true) items = items.Where(work => work.Favorite);
         if (RecentFilter.IsChecked == true) items = items.Where(work => work.LastPlayed != null).OrderByDescending(work => work.LastPlayed);
         else items = items.OrderByDescending(work => work.Variants.Any(item => item.Example))
@@ -116,14 +128,31 @@ public partial class MainWindow : Window
         var works = store.GetWorks();
         LibraryCount.Text = $"{works.Count(work => work.Variants.Any(item => item.Available))} 首本地 · {works.Count} 首作品";
     }
-    private void Search_Changed(object sender, TextChangedEventArgs e) { if (IsLoaded) RefreshLibrary(); }
-    private void Filter_Changed(object sender, RoutedEventArgs e) { if (IsLoaded) RefreshLibrary(); }
+    private LibraryQualityFilter SelectedQualityFilter() => QualityFilter.SelectedIndex switch
+    {
+        1 => LibraryQualityFilter.LocalAvailable,
+        2 => LibraryQualityFilter.ReviewedFragment,
+        3 => LibraryQualityFilter.UnknownBpm,
+        _ => LibraryQualityFilter.All
+    };
+    private void Search_Changed(object sender, TextChangedEventArgs e)
+    {
+        if (!IsLoaded) return;
+        RefreshLibrary();
+        UpdateVariantPicker();
+    }
+    private void Filter_Changed(object sender, RoutedEventArgs e)
+    {
+        if (!IsLoaded) return;
+        RefreshLibrary();
+        UpdateVariantPicker();
+    }
     private async void SongList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         if (selectionGuard || SongList.SelectedItem is not LibraryWork work || work.SelectedVariant == current) return;
         if (closing || busy || !await ConfirmUnsaved()) { RefreshLibrary(); return; }
         await Stop();
-        await SelectItem(work.SelectedVariant);
+        await SelectItem(work.SelectedVariant, !work.HasTemporarySelection);
     }
     private async void VariantPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
@@ -132,7 +161,7 @@ public partial class MainWindow : Window
         await Stop();
         await SelectItem(item);
     }
-    private async Task SelectItem(LibraryItem item)
+    private async Task SelectItem(LibraryItem item, bool persistSelection = true)
     {
         var wasBusy = busy;
         busy = true; UpdateAvailability();
@@ -165,10 +194,13 @@ public partial class MainWindow : Window
                 item.RhythmLabel + "。"
             }.Where(line => line.Length > 0));
             ReferenceButton.Visibility = item.Reference?.Url != null || source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
-            store.Settings.LastSelectedId = item.Id;
-            store.Settings.SelectedVariants[item.WorkId] = item.Id;
+            if (persistSelection)
+            {
+                store.Settings.LastSelectedId = item.Id;
+                store.Settings.SelectedVariants[item.WorkId] = item.Id;
+            }
             UpdateVariantPicker();
-            await store.SaveSettingsAsync();
+            if (persistSelection) await store.SaveSettingsAsync();
             ParseEditor();
             RefreshLibrary();
             if (!item.Available) Status(item.Acquisition == "external-import"
@@ -185,7 +217,7 @@ public partial class MainWindow : Window
         e.Handled = true;
         if (closing || (sender as Button)?.Tag is not LibraryWork work) return;
         var favorite = !work.Favorite;
-        foreach (var item in work.Variants) { item.Favorite = favorite; item.Refresh(); }
+        foreach (var item in work.AllVariants) { item.Favorite = favorite; item.Refresh(); }
         try { await store.SaveLibraryAsync(); RefreshLibrary(); } catch (Exception ex) { ShowError(ex); }
     }
 
@@ -193,11 +225,13 @@ public partial class MainWindow : Window
     {
         if (VariantPicker == null) return;
         selectionGuard = true;
-        LibraryItem[] variants = current == null ? [] : store.Items.Where(item => item.WorkId == current.WorkId)
-            .OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Variant, StringComparer.OrdinalIgnoreCase).ThenBy(item => item.Id, StringComparer.Ordinal).ToArray();
+        var matchingWork = current == null ? null : store.GetWorks().FirstOrDefault(work => work.WorkId == current.WorkId)
+            ?.Filter(SearchInput.Text.Trim(), SelectedQualityFilter(), current.Id);
+        LibraryItem[] variants = matchingWork?.Variants
+            .OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Variant, StringComparer.OrdinalIgnoreCase).ThenBy(item => item.Id, StringComparer.Ordinal).ToArray() ?? [];
         VariantPicker.ItemsSource = variants;
         VariantPicker.SelectedItem = variants.FirstOrDefault(item => item.Id == current?.Id);
-        VariantPicker.Visibility = variants.Length > 1 ? Visibility.Visible : Visibility.Collapsed;
+        VariantPicker.Visibility = variants.Length > 1 || variants.Any(item => item.Id != current?.Id) ? Visibility.Visible : Visibility.Collapsed;
         selectionGuard = false;
     }
 
@@ -572,6 +606,7 @@ public partial class MainWindow : Window
         bool occupied = closing || busy || engine.IsPlaying || GuideActive;
         PlayButton.IsEnabled = !occupied && !engine.NeedsCleanup && parsed != null && (GameMode.IsChecked != true || hotkeys?.StartRegistered == true && hotkeys.StopRegistered);
         StopButton.IsEnabled = occupied || engine.NeedsCleanup;
+        if (GameNoteCheckButton != null) GameNoteCheckButton.IsEnabled = !occupied && parsed != null;
         TitleInput.IsEnabled = !occupied && current is not { Available: false };
         BpmInput.IsEnabled = !occupied && current is not { Available: false };
         BodyInput.IsReadOnly = occupied;
@@ -614,6 +649,75 @@ public partial class MainWindow : Window
         finally { busy = false; UpdateAvailability(); }
     }
     private void Details_Expanded(object sender, RoutedEventArgs e) => LogBox.ScrollToEnd();
+    private void GameNoteCheck_Click(object sender, RoutedEventArgs e)
+    {
+        if (!ParseEditor() || parsed is not { } score) return;
+        try
+        {
+            var gameGapMs = store.Settings.GameNoteGapMs;
+            var issues = PlaybackEngine.InspectGameNotes(score, gameGapMs);
+            var speedNote = score.Document.NeedsBpmConfirmation
+                ? $"速度尚未确认；仅按当前输入的 {score.Document.Bpm} BPM 计算，本次不会确认或保存速度。"
+                : $"按当前速度 {score.Document.Bpm} BPM 与设置的游戏留白 {gameGapMs} ms 检查。";
+            var report = issues.Count == 0
+                ? "未发现短音时序问题。\n\n这只是时序预检，不代表游戏内实测。"
+                : $"发现 {issues.Count} 项短音时序问题：\n\n" + string.Join("\n\n", issues.Select(issue =>
+                    $"第 {issue.EventNumber} 个音（{issue.Label}）\n时值 {FormatMilliseconds(issue.DurationMs)} ms · 留白 {FormatMilliseconds(issue.GapMs)} ms · 预备 {FormatMilliseconds(issue.PreparationMs)} ms · 可按时长 {FormatMilliseconds(issue.HoldMs)} ms\n{issue.Message}"))
+                    + "\n\n这只是时序预检，不会发送输入或播放音频，也不代表游戏内实测。";
+            ShowGameNoteReport(speedNote, report);
+        }
+        catch (Exception ex) { ShowError(ex); }
+    }
+
+    private void ShowGameNoteReport(string speedNote, string report)
+    {
+        var content = new Grid { Margin = new Thickness(16) };
+        content.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+        content.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+        content.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+        content.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+        content.Children.Add(new TextBlock
+        {
+            Text = "演奏时序预检",
+            FontSize = 17,
+            FontWeight = FontWeights.SemiBold,
+            Margin = new Thickness(0, 0, 0, 8)
+        });
+        var context = new TextBlock { Text = speedNote, TextWrapping = TextWrapping.Wrap, Margin = new Thickness(0, 0, 0, 12) };
+        Grid.SetRow(context, 1);
+        content.Children.Add(context);
+        var scroll = new ScrollViewer
+        {
+            VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+            HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
+            Content = new TextBlock { Text = report, TextWrapping = TextWrapping.Wrap, Margin = new Thickness(10) }
+        };
+        Grid.SetRow(scroll, 2);
+        content.Children.Add(scroll);
+        var close = new Button { Content = "关闭", MinWidth = 78, Padding = new Thickness(12, 5, 12, 5), Margin = new Thickness(0, 12, 0, 0), IsDefault = true };
+        var actions = new StackPanel { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right };
+        actions.Children.Add(close);
+        Grid.SetRow(actions, 3);
+        content.Children.Add(actions);
+        var window = new Window
+        {
+            Title = "演奏时序预检",
+            Owner = this,
+            Width = 560,
+            Height = 440,
+            MinWidth = 440,
+            MinHeight = 300,
+            WindowStartupLocation = WindowStartupLocation.CenterOwner,
+            ResizeMode = ResizeMode.CanResize,
+            Background = SystemColors.WindowBrush,
+            Foreground = SystemColors.WindowTextBrush,
+            Content = content
+        };
+        close.Click += (_, _) => window.Close();
+        WithModal(() => window.ShowDialog());
+    }
+
+    private static string FormatMilliseconds(double milliseconds) => milliseconds.ToString("0.#", CultureInfo.InvariantCulture);
     private void Status(string text, bool error = false)
     {
         StatusText.Text = text;

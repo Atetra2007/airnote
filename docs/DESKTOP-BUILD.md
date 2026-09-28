@@ -14,7 +14,7 @@
 
 首次开发时，为三个测试项目运行 `dotnet restore <测试工程路径>`，为桌面项目运行 `dotnet restore src/Harmonica.Desktop/Harmonica.Desktop.csproj --runtime win-x64 -p:SelfContained=true`；它们的工程文件已启用锁文件，审查并提交生成的 `packages.lock.json`。不要以全局命令行属性把锁文件生成传播到没有外部依赖的共享库，否则测试和桌面发布的 RID 不同会冲突。发行脚本遇到缺失锁文件会中止。构建时先正常退出开发输出目录中的应用；GUI 验收可使用发布目录的单独副本，避免锁住待编译文件。
 
-主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.3.0-preview.2`，Windows 文件版本 `0.3.0.1`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
+当前版本 `0.4.1-preview.1` 通过 [GitHub Release 预发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.1-preview.1)提供；仓库为私有，下载需要仓库访问权限。主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.4.1-preview.1`，Windows 文件版本 `0.4.1.0`。资源必须按确定路径复制：`Resources/catalog.json` 和 `Resources/Examples/` 下三份原创谱；不能用递归整个仓库的方式准备发行内容。
 
 额外的跟谱组件检查：`dotnet run --project tests/Harmonica.LayoutChecks -c Release`。它不创建实际桌面窗口，输出最小／默认尺寸、三种 DPI 的布局图及长谱绘制记录到 `artifacts/guide-validation/components`。使用独立数据做实际 UI 验证：`HarmonicaDesk.exe --data-dir "本机测试目录"`，不要覆盖个人数据。
 
@@ -22,7 +22,7 @@
 
 物理输入接收器：`dotnet run --project src/Harmonica.InputProbe -c Release -- --guide`。此入口只运行只读监听与等键引擎；开始前不监听，需人工按真实键鼠。它还提供 100 次监听注册／释放自检和证据导出。普通自动化模拟按键不等于物理 Raw Input；原有自动输入接收测试仍是无 `--guide` 的入口。
 
-`-SkipInstaller` 也会生成经过逐文件校验的 `HarmonicaDesk-0.3.0-preview.2-win-x64.zip` 和 SHA-256。ZIP 包含 `App/` 内的自包含程序和根目录使用说明，原始截图、个人数据和测试接收器不进入包。此本地预览未发布 Release。
+`-SkipInstaller` 生成的 ZIP 命名为 `HarmonicaDesk-0.4.1-preview.1-win-x64.zip`，并附 SHA-256。ZIP 包含 `App/` 内的自包含程序和根目录使用说明，原始截图、个人数据和测试接收器不进入包。本机旧预览快照不能代表 Release 中 CI 附件；下载或安装时应核对 Release 同批 manifest 与哈希。构建产物本身也不代表完成全曲听校、游戏实测或覆盖升级验收。
 
 ## 安装器
 
@@ -36,13 +36,13 @@
 
 也接受自行准备的 `local/tools/InnoSetup6/ISCC.exe`。没有编译器时使用 GitHub Actions 的 **Build Windows desktop**：工作流在临时 Windows runner 上下载官方固定版本，核对 SHA-256 和 Authenticode，静默安装编译器后打包；不会改变本机系统。官方安装程序 SHA-256 为 `9c73c3bae7ed48d44112a0f48e66742c00090bdb5bef71d9d3c056c66e97b732`。
 
-最终附件：
+Release 附件命名：
 
-- `HarmonicaDesk-Setup-0.3.0-preview.2-win-x64.exe`
+- `HarmonicaDesk-Setup-0.4.1-preview.1-win-x64.exe`
 - 同名 `.exe.sha256`
 - `publish-manifest.json`：实际打包文件的名称、大小、SHA-256，无开发机器绝对路径。
 
-CI 只生成并保存附件，不会自动发布 GitHub Release。下载 CI 附件后应与同批摘要核对。应用与本项目安装器尚未配置代码签名；编译器签名有效不表示生成的安装器已签名。
+CI 产物是否已上传、Release 附件是否完成核验以及安装升级是否通过，以[0.4.1 状态记录](RELEASE-0.4.1-STATUS.md)为准。不要将早前本机预览包的 manifest 或 SHA-256 当作 GitHub Release 文件证据。应用与本项目安装器尚未配置代码签名；编译器签名有效不表示生成的安装器已签名。
 
 ## 安装、升级与数据
 

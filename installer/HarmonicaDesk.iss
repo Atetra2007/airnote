@@ -14,6 +14,9 @@
 #ifndef AppVersion
   #error AppVersion is required. Use scripts/Build-Desktop.ps1.
 #endif
+#ifndef AppFileVersion
+  #error AppFileVersion is required. Use scripts/Build-Desktop.ps1.
+#endif
 #define AppExe "HarmonicaDesk.exe"
 
 [Setup]
@@ -42,9 +45,9 @@ LicenseFile={#RepoDir}\LICENSE
 SetupIconFile={#RepoDir}\src\Harmonica.Desktop\Assets\App.ico
 OutputDir={#OutputDir}
 OutputBaseFilename=HarmonicaDesk-Setup-{#AppVersion}-win-x64
-VersionInfoVersion=0.4.0.0
+VersionInfoVersion={#AppFileVersion}
 VersionInfoProductName=口琴小曲库
-VersionInfoProductVersion=0.4.0.0
+VersionInfoProductVersion={#AppFileVersion}
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern

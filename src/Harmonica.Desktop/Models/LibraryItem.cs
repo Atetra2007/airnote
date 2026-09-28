@@ -44,38 +44,67 @@ public sealed class LibraryItem : INotifyPropertyChanged
     [JsonIgnore] public string EditionLabel => string.Join(" · ", new[] { Variant, DurationSeconds is > 0 ? FormatDuration(DurationSeconds.Value) : "" }.Where(s => s.Length > 0));
     [JsonIgnore] public string AvailabilityGlyph => Available ? "" : "↓";
     public bool Matches(string query) => string.Join(" ", new[] { Title, BpmKnown ? Bpm.ToString() : "速度待确认", SourceAuthor }.Concat(Aliases)).Contains(query, StringComparison.OrdinalIgnoreCase);
+    public bool MatchesQualityFilter(LibraryQualityFilter filter) => filter switch
+    {
+        LibraryQualityFilter.LocalAvailable => Available,
+        LibraryQualityFilter.ReviewedFragment => IsCalibrated || (!Available && !CalibrationRevoked &&
+            string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase) && IsSha256(VerifiedSha256)),
+        LibraryQualityFilter.UnknownBpm => !BpmKnown,
+        _ => true
+    };
     private static bool IsSha256(string? value) => value?.Length == 64 && value.All(Uri.IsHexDigit);
     public static string FormatDuration(double seconds) { var whole = (long)Math.Round(seconds); return $"{whole / 60:00}:{whole % 60:00}"; }
     public event PropertyChangedEventHandler? PropertyChanged;
     public void Refresh() => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
 }
 
+public enum LibraryQualityFilter { All, LocalAvailable, ReviewedFragment, UnknownBpm }
+
 public sealed class LibraryWork
 {
     public string WorkId { get; }
     public IReadOnlyList<LibraryItem> Variants { get; }
+    public IReadOnlyList<LibraryItem> AllVariants { get; }
+    public bool IsFiltered { get; }
+    public string PreferredVariantId { get; }
+    public bool HasTemporarySelection => SelectedVariant.Id != PreferredVariantId;
     public LibraryItem SelectedVariant { get; }
     public string Title => SelectedVariant.Title;
-    public bool Favorite => Variants.Any(item => item.Favorite);
+    public bool Favorite => AllVariants.Any(item => item.Favorite);
     public string FavoriteGlyph => Favorite ? "★" : "☆";
-    public string Subtitle => Variants.Count > 1
-        ? $"{Variants.Count} 个版本 · {(Variants.Any(item => item.Available) ? "本地已有" : SelectedVariant.Acquisition == "external-import" ? "需导入" : "可下载")} · {SelectedVariant.RhythmLabel}"
+    public string Subtitle => Variants.Count > 1 || IsFiltered
+        ? $"{Variants.Count} 个{(IsFiltered ? "匹配" : "")}版本 · {(Variants.Any(item => item.Available) ? "本地已有" : SelectedVariant.Acquisition == "external-import" ? "需导入" : "可下载")} · {SelectedVariant.RhythmLabel}"
         : $"{SelectedVariant.Subtitle} · {SelectedVariant.RhythmLabel}";
     public string EditionLabel => Variants.Count > 1 ? SelectedVariant.VariantDisplay : SelectedVariant.EditionLabel;
-    public DateTimeOffset? LastPlayed => Variants.Where(item => item.LastPlayed != null).Select(item => item.LastPlayed).Max();
+    public DateTimeOffset? LastPlayed => AllVariants.Where(item => item.LastPlayed != null).Select(item => item.LastPlayed).Max();
 
-    public LibraryWork(string workId, IEnumerable<LibraryItem> variants, string? preferredItemId = null)
+    public LibraryWork(string workId, IEnumerable<LibraryItem> variants, string? preferredItemId = null,
+        IEnumerable<LibraryItem>? allVariants = null, bool isFiltered = false, string? savedPreferredItemId = null)
     {
         WorkId = workId;
         var ordered = variants.OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Title, StringComparer.OrdinalIgnoreCase).ToArray();
         if (ordered.Length == 0) throw new ArgumentException("作品至少要有一个版本。", nameof(variants));
         Variants = ordered;
+        AllVariants = (allVariants ?? ordered).ToArray();
+        var savedPreference = savedPreferredItemId ?? preferredItemId;
+        PreferredVariantId = AllVariants.FirstOrDefault(item => item.Id == savedPreference)?.Id
+            ?? AllVariants.FirstOrDefault(item => item.IsDefaultVariant)?.Id
+            ?? AllVariants[0].Id;
+        IsFiltered = isFiltered || ordered.Length < AllVariants.Count;
         SelectedVariant = ordered.FirstOrDefault(item => item.Id == preferredItemId)
             ?? ordered.FirstOrDefault(item => item.IsDefaultVariant)
             ?? ordered[0];
     }
 
     public bool Matches(string query) => Variants.Any(item => item.Matches(query));
+
+    public LibraryWork? Filter(string query, LibraryQualityFilter quality, string? transientPreferredItemId = null)
+    {
+        var matching = Variants.Where(item => item.Matches(query) && item.MatchesQualityFilter(quality)).ToArray();
+        if (matching.Length == 0) return null;
+        var preferred = matching.FirstOrDefault(item => item.Id == transientPreferredItemId)?.Id ?? SelectedVariant.Id;
+        return new LibraryWork(WorkId, matching, preferred, AllVariants, matching.Length < AllVariants.Count, PreferredVariantId);
+    }
 }
 
 public sealed record CatalogSong(string Id, string Title, string FileName, int Bpm, long Size, string? Sha256, string? DownloadUrl, string? SourceUrl)
@@ -98,7 +127,37 @@ public sealed record CatalogSong(string Id, string Title, string FileName, int B
     [JsonExtensionData] public Dictionary<string, System.Text.Json.JsonElement>? ExtraData { get; init; }
     public string DownloadFormat { get; init; } = "harmonica-txt";
     public string? ConvertedSha256 { get; init; }
-    public string Description => $"{Variant} · {Author}\n{ReviewNote}";
+    [JsonIgnore]
+    public string Description
+    {
+        get
+        {
+            var lines = new List<string> { $"{Variant} · {Author}" };
+            if (Reference is { } reference)
+            {
+                if (reference.StartSeconds is double start && double.IsFinite(start) && start >= 0)
+                    lines.Add("参考录音定位：" + FormatReferenceTime(start));
+                var hasSegmentStart = reference.SegmentStartSeconds is double segmentStart && double.IsFinite(segmentStart) && segmentStart >= 0;
+                var hasSegmentEnd = reference.SegmentEndSeconds is double segmentEnd && double.IsFinite(segmentEnd) && segmentEnd >= 0;
+                if (hasSegmentStart || hasSegmentEnd)
+                {
+                    var startLabel = reference.SegmentStartSeconds is double from && double.IsFinite(from) && from >= 0 ? FormatReferenceTime(from) : "未注明";
+                    var endLabel = reference.SegmentEndSeconds is double to && double.IsFinite(to) && to >= 0 ? FormatReferenceTime(to) : "未注明";
+                    lines.Add($"参考片段范围：{startLabel}–{endLabel}");
+                }
+            }
+            if (DurationSeconds is double duration && double.IsFinite(duration) && duration > 0)
+                lines.Add("谱面时长：" + FormatReferenceTime(duration));
+            lines.Add(ReviewNote);
+            return string.Join("\n", lines);
+        }
+    }
+
+    private static string FormatReferenceTime(double seconds)
+    {
+        var minutes = (long)(seconds / 60);
+        return $"{minutes:00}:{(seconds - minutes * 60).ToString("00.##", System.Globalization.CultureInfo.InvariantCulture)}";
+    }
 }
 
 public sealed class ReferenceMetadata

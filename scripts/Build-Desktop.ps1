@@ -11,7 +11,12 @@ $repoRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $desktopRoot = Join-Path $repoRoot 'artifacts\desktop'
 $publishRoot = Join-Path $desktopRoot 'publish'
 $project = Join-Path $repoRoot 'src\Harmonica.Desktop\Harmonica.Desktop.csproj'
-$appVersion = ([xml](Get-Content -LiteralPath $project -Raw)).Project.PropertyGroup.Version
+$projectProperties = ([xml](Get-Content -LiteralPath $project -Raw)).Project.PropertyGroup
+$appVersion = [string]$projectProperties.Version
+$appFileVersion = [string]$projectProperties.FileVersion
+if ($appFileVersion -notmatch '^\d+\.\d+\.\d+\.\d+$') {
+    throw 'The desktop project must specify a four-part Windows FileVersion.'
+}
 $testProjects = @(
     @{ Path = 'tests\Harmonica.Core.Tests\Harmonica.Core.Tests.csproj'; Kind = 'test' },
     @{ Path = 'tests\Harmonica.Windows.Tests\Harmonica.Windows.Tests.csproj'; Kind = 'run' },
@@ -51,6 +56,7 @@ if (-not (Test-Path -LiteralPath $project -PathType Leaf)) { throw "Desktop proj
 
 Push-Location $repoRoot
 try {
+    Invoke-Checked $python @('scripts/catalog_status.py', '--check')
     if (-not $SkipTests) {
         foreach ($test in $testProjects) {
             $testProject = Join-Path $repoRoot $test.Path
@@ -129,7 +135,7 @@ try {
         throw 'Use Inno Setup 6 to build this installer.'
     }
     Invoke-Checked $IsccPath @('/Qp', "/DPublishDir=$publishRoot", "/DOutputDir=$desktopRoot",
-        "/DFilesInclude=$filesInclude", "/DRepoDir=$repoRoot", "/DAppVersion=$appVersion", (Join-Path $repoRoot 'installer\HarmonicaDesk.iss'))
+        "/DFilesInclude=$filesInclude", "/DRepoDir=$repoRoot", "/DAppVersion=$appVersion", "/DAppFileVersion=$appFileVersion", (Join-Path $repoRoot 'installer\HarmonicaDesk.iss'))
     $setup = Join-Path $desktopRoot "HarmonicaDesk-Setup-$appVersion-win-x64.exe"
     if (-not (Test-Path -LiteralPath $setup -PathType Leaf)) { throw 'Compiler completed without the expected installer.' }
     $digest = (Get-FileHash -LiteralPath $setup -Algorithm SHA256).Hash.ToLowerInvariant()

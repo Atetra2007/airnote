@@ -16,6 +16,8 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("曲谱、收藏和设置重启持久化", Persistence),
     ("旧曲库迁移保留未知字段", LibrarySchemaMigration),
     ("作品分组、多版本选择与同名独立", WorkGroupingAndSelection),
+    ("质量筛选只显示匹配版本并保留已保存选择", LibraryQualityFiltering),
+    ("版本说明显示参考片段定位与谱面时长", CatalogVersionDescription),
     ("外部来源未知速度导入实际 BPM 并在重启后保留", UnknownCatalogBpmImport),
     ("schema 2 与直接下载来源仍要求合法 BPM", StrictCatalogBpmValidation),
     ("外部来源加载、校准SHA绑定与编辑撤销", ExternalImportAndCalibration),
@@ -180,6 +182,72 @@ static async Task WorkGroupingAndSelection()
     var external = reopened.Items.Single(item => item.SourceId == "work-a-default");
     Check(!external.Available && external.Subtitle.Contains("需导入"), "没有直链的外部版本应可载入并明确提示导入。");
     await Throws<InvalidDataException>(() => reopened.DownloadAsync(external, CancellationToken.None));
+}
+
+static async Task LibraryQualityFiltering()
+{
+    var calibratedHash = new string('a', 64);
+    var pendingHash = new string('b', 64);
+    var defaultVariant = new LibraryItem { Id = "default", Title = "筛选作品", WorkId = "quality-work", Bpm = 90, IsDefaultVariant = true };
+    var calibrated = new LibraryItem { Id = "calibrated", Title = "筛选作品", WorkId = "quality-work", Bpm = 100,
+        Available = true, Hash = calibratedHash, VerifiedSha256 = calibratedHash, RhythmStatus = "reviewed" };
+    var awaitingImport = new LibraryItem { Id = "awaiting-import", Title = "筛选作品", WorkId = "quality-work", Bpm = 100,
+        VerifiedSha256 = pendingHash, RhythmStatus = "reviewed" };
+    var mismatched = new LibraryItem { Id = "mismatched", Title = "筛选作品", WorkId = "quality-work", Bpm = 100,
+        Available = true, Hash = new string('c', 64), VerifiedSha256 = new string('d', 64), RhythmStatus = "reviewed",
+        Favorite = true, LastPlayed = DateTimeOffset.Parse("2026-09-26T10:00:00Z") };
+    var invalidHash = new LibraryItem { Id = "invalid-hash", Title = "筛选作品", WorkId = "quality-work", Bpm = 100,
+        VerifiedSha256 = "not-a-sha256", RhythmStatus = "reviewed" };
+    var unknownSpeed = new LibraryItem { Id = "unknown-speed", Title = "筛选作品", WorkId = "quality-work", Bpm = 120, BpmKnown = false };
+    var work = new LibraryWork("quality-work", [defaultVariant, calibrated, awaitingImport, mismatched, invalidHash, unknownSpeed], defaultVariant.Id);
+    var reviewed = work.Filter("100", LibraryQualityFilter.ReviewedFragment);
+    Check(reviewed is { Variants.Count: 2 } && reviewed.Variants.Any(item => item.Id == calibrated.Id) && reviewed.Variants.Any(item => item.Id == awaitingImport.Id),
+        "已复核筛选应接受校准通过的本地版本与目标SHA有效的待导入片段。");
+    Check(reviewed!.Variants.All(item => item.Id != mismatched.Id && item.Id != invalidHash.Id) && reviewed.HasTemporarySelection,
+        "校准哈希不匹配或目标哈希无效时不得列为已复核，且筛选出的替代版本应标为临时选择。");
+    Check(reviewed.Favorite && reviewed.LastPlayed == mismatched.LastPlayed && reviewed.AllVariants.Count == 6,
+        "临时筛选仍按整部作品统计收藏与最近记录。");
+    Check(work.Filter("100", LibraryQualityFilter.LocalAvailable)?.Variants.Select(item => item.Id).Order().SequenceEqual(new[] { calibrated.Id, mismatched.Id }.Order()) == true,
+        "本地可用筛选应按文件是否在本机区分，不替代已复核状态。");
+    Check(work.Filter("速度待确认", LibraryQualityFilter.UnknownBpm)?.SelectedVariant.Id == unknownSpeed.Id && work.Filter("999", LibraryQualityFilter.All) == null,
+        "未知速度筛选与搜索必须同时匹配同一版本。");
+
+    using var fixture = new Fixture();
+    var records = new[]
+    {
+        new { id = "filter-default", title = "搜索作品", bpm = 90, work_id = "search-work", variant_id = "default", is_default_variant = true,
+            acquisition = "external-import", source_url = "https://www.bilibili.com/video/BV1xx411c7mD", variant = "原版" },
+        new { id = "filter-alt", title = "搜索作品", bpm = 100, work_id = "search-work", variant_id = "alternate", is_default_variant = false,
+            acquisition = "external-import", source_url = "https://www.douyin.com/video/123", variant = "副歌" }
+    };
+    await File.WriteAllTextAsync(Path.Combine(fixture.Assets, "catalog.json"), JsonSerializer.Serialize(new { schema_version = 3, songs = records }));
+    var store = await fixture.CreateStore();
+    var savedDefault = store.Items.Single(item => item.SourceId == "filter-default");
+    store.Settings.LastSelectedId = savedDefault.Id;
+    store.Settings.SelectedVariants["search-work"] = savedDefault.Id;
+    await store.SaveSettingsAsync();
+    var searchMatch = store.GetWorks().Single(item => item.WorkId == "search-work").Filter("100", LibraryQualityFilter.All);
+    Check(searchMatch is not null && searchMatch.SelectedVariant.SourceId == "filter-alt" && searchMatch.HasTemporarySelection && searchMatch.PreferredVariantId == savedDefault.Id,
+        "搜索命中替代版本时保留原偏好，并识别为临时选择。");
+    await store.SaveSettingsAsync();
+    var reopened = await fixture.CreateStore();
+    Check(reopened.Settings.LastSelectedId == savedDefault.Id && reopened.Settings.SelectedVariants["search-work"] == savedDefault.Id,
+        "筛选后关闭并重开时，未被显式更改的上次选择和作品版本偏好保持原值。");
+}
+
+static Task CatalogVersionDescription()
+{
+    var source = new CatalogSong("timed-source", "校对曲", "timed.txt", 120, 0, null, null, "https://example.com/source")
+    {
+        DurationSeconds = 42.25,
+        ReviewNote = "整段升八度并简化了伴奏部分。",
+        Reference = new ReferenceMetadata { StartSeconds = 81.15, SegmentStartSeconds = 10 }
+    };
+    Check(source.Description.Contains("参考录音定位：01:21.15") && source.Description.Contains("参考片段范围：00:10–未注明") &&
+        source.Description.Contains("谱面时长：00:42.25") && source.Description.Contains(source.ReviewNote),
+        "版本说明应展示已知录音位置、片段边界、谱面时长并保留移调或简化说明。");
+    Check(!source.Description.Contains("录音结束") && !source.Description.Contains("02:03"), "未知的源录音结束位置不得被推算或展示。");
+    return Task.CompletedTask;
 }
 
 static async Task DeferredSourceImport()

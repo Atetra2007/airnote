@@ -11,6 +11,7 @@ var tests = new (string Name, Func<Task> Run)[]
     ("Game articulation separates notes without changing BPM or rests", GameArticulation),
     ("Delayed releases retain gaps and full rests instead of catch-up", LateGameRelease),
     ("Unplayable short game notes fail before emitting input", ShortGameNotes),
+    ("Read-only game inspection lists every blocked note with event positions", GameInspection),
     ("Mouse pitch modifiers settle before the note key", ModifierSettling),
     ("Modifier setup fits within beats without accumulating tempo drift", ModifierTimeline),
     ("Cancel or focus change during modifier setup sends no note key", ModifierSetupCancel),
@@ -145,6 +146,30 @@ static async Task ShortGameNotes()
     // A score can still be inspected locally; no pitch, BPM or note is silently changed.
     await engine.PlayAsync(Parse("1:0.010417", 60, 10), PlaybackMode.Log);
     Equal(1, output.Notes.Count);
+}
+
+static async Task GameInspection()
+{
+    // Positions include rests, just as the editor and playback progress do.
+    var score = Parse("0:0.02 1:0.02 （1）:0.04 2:0.1", 60, 10);
+    var issues = PlaybackEngine.InspectGameNotes(score);
+    Equal(2, issues.Count);
+    Equal(2, issues[0].EventNumber); Near(10, issues[0].HoldMs, .00001);
+    Equal(3, issues[1].EventNumber); Near(24, issues[1].PreparationMs, .00001);
+    Near(6, issues[1].HoldMs, .00001);
+    Equal("0:0.02 1:0.02 （1）:0.04 2:0.1", score.Document.Body);
+    Equal(0, PlaybackEngine.InspectGameNotes(Parse("1 （1） 0", 60, 10)).Count);
+    // A larger requested gap can change eligibility. No playback state is involved.
+    var borderline = Parse("（1）:0.047", 60, 10);
+    Equal(0, PlaybackEngine.InspectGameNotes(borderline, 0).Count);
+    Equal(1, PlaybackEngine.InspectGameNotes(borderline, 60).Count);
+    Throws<ArgumentOutOfRangeException>(() => PlaybackEngine.InspectGameNotes(score, 251));
+    var clock = new FakeClock();
+    var created = 0;
+    await using var engine = new PlaybackEngine(() => { created++; return new FakeOutput(clock); }, clock);
+    try { await engine.PlayAsync(score, PlaybackMode.Game); throw new Exception("Expected timing rejection"); }
+    catch (InvalidOperationException ex) { Equal(issues[0].Message, ex.Message); }
+    Equal(0, created); Near(0, clock.Seconds, .00001);
 }
 
 static async Task ModifierSettling()

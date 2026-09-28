@@ -29,7 +29,7 @@ internal static class Program
         ((RadioButton)main.FindName("GuideModeButton")).IsChecked = true;
         ((FrameworkElement)main.FindName("GuideControls")).Visibility = Visibility.Visible;
         ((TextBlock)main.FindName("GuideRangeLabel")).Text = "A 10000 → B 10000";
-        var mainNames = new[] { "PreviewMode", "GameMode", "GuideModeButton", "PlayButton", "StopButton", "BpmInput", "VolumeSlider", "GuideKind", "GuideSpeed", "AdjustGuideButton", "GuideOpacity", "GuideEventNumber", "SeekGuideButton", "SetGuideAButton", "SetGuideBButton", "GuideLoop", "ClearGuideRangeButton", "GuideRangeLabel", "ScoreView" };
+        var mainNames = new[] { "PreviewMode", "GameMode", "GuideModeButton", "PlayButton", "StopButton", "BpmInput", "VolumeSlider", "GuideKind", "GuideSpeed", "AdjustGuideButton", "GuideOpacity", "GuideEventNumber", "SeekGuideButton", "SetGuideAButton", "SetGuideBButton", "GuideLoop", "ClearGuideRangeButton", "GuideRangeLabel", "ScoreScroll", "QualityFilter", "GameNoteCheckButton", "AllFilter", "FavoriteFilter", "RecentFilter" };
         var checks = new List<object>();
         var settings = new UserSettings { StartHotkey = "F7", StopHotkey = "F8" };
         var dialog = new SettingsDialog(settings, 20, output);

@@ -8,6 +8,12 @@ public enum PlaybackMode { Preview, Game, Log }
 public sealed record PlaybackProgress(string State, int EventIndex, int EventCount,
     double ElapsedSeconds, double TotalSeconds);
 
+public sealed record GameNoteIssue(int EventNumber, string Label, double DurationMs,
+    double GapMs, double PreparationMs, double HoldMs)
+{
+    public string Message => $"第 {EventNumber} 个音（{Label}，{DurationMs:0.#} ms）过短，无法留出换音与按键时间。请降低 BPM 或校对该短音；本次未发送按键。";
+}
+
 /// <summary>A monotonic clock; absolute deadlines prevent per-note work accumulating drift.</summary>
 public interface IPlaybackClock
 {
@@ -88,18 +94,8 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
         if (score.Document.Bpm <= 0 || score.Document.GapMs < 0 ||
             score.Events.Any(e => !double.IsFinite(e.Beats) || e.Beats <= 0))
             throw new InvalidOperationException("曲谱速度、间隔或时值无效。");
-        if (mode == PlaybackMode.Game)
-        {
-            for (var i = 0; i < score.Events.Count; i++)
-            {
-                var note = score.Events[i];
-                if (note.Degree == 0) continue;
-                var duration = note.Beats * 60d / score.Document.Bpm;
-                var preparation = GameKeyMapping.ForNote(note).Any(k => k.Mouse) ? GameInputSession.ModifierSettleSeconds : 0;
-                if (duration - NoteGap(duration, score.Document.GapMs, gameGapMs) - preparation < .012)
-                    throw new InvalidOperationException($"第 {i + 1} 个音（{note.Label}，{duration * 1000:0.#} ms）过短，无法留出换音与按键时间。请降低 BPM 或校对该短音；本次未发送按键。");
-            }
-        }
+        if (mode == PlaybackMode.Game && InspectGameNotes(score, gameGapMs).FirstOrDefault() is { } issue)
+            throw new InvalidOperationException(issue.Message);
         lock (gate)
         {
             ObjectDisposedException.ThrowIf(disposed, this);
@@ -148,6 +144,30 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
 
     internal static double NoteGap(double duration, int scoreGapMs, int gameGapMs) =>
         Math.Max(scoreGapMs / 1000d, Math.Min(gameGapMs / 1000d, duration * .25));
+
+    /// <summary>Checks timing only. Never creates an output or sends keyboard, mouse or audio.</summary>
+    public static IReadOnlyList<GameNoteIssue> InspectGameNotes(ParsedScore score, int gameGapMs = 60)
+    {
+        ArgumentNullException.ThrowIfNull(score);
+        if (gameGapMs is < 0 or > 250) throw new ArgumentOutOfRangeException(nameof(gameGapMs));
+        if (score.Events.Count == 0) throw new InvalidOperationException("曲谱没有可播放的音符。");
+        if (score.Document.Bpm <= 0 || score.Document.GapMs < 0 ||
+            score.Events.Any(e => !double.IsFinite(e.Beats) || e.Beats <= 0))
+            throw new InvalidOperationException("曲谱速度、间隔或时值无效。");
+        var issues = new List<GameNoteIssue>();
+        for (var i = 0; i < score.Events.Count; i++)
+        {
+            var note = score.Events[i];
+            if (note.Degree == 0) continue;
+            var duration = note.Beats * 60d / score.Document.Bpm;
+            var preparation = GameKeyMapping.ForNote(note).Any(k => k.Mouse) ? GameInputSession.ModifierSettleSeconds : 0;
+            var gap = NoteGap(duration, score.Document.GapMs, gameGapMs);
+            var hold = duration - gap - preparation;
+            if (hold < .012)
+                issues.Add(new(i + 1, note.Label, duration * 1000, gap * 1000, preparation * 1000, hold * 1000));
+        }
+        return issues.AsReadOnly();
+    }
 
     private async Task RunAsync(ParsedScore score, PlaybackMode mode, int gameGapMs, CancellationToken token)
     {
