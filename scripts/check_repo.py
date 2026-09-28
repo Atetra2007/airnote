@@ -335,6 +335,10 @@ REPO_ONLY_FILES = {
     'tests/Harmonica.Windows.Tests/Program.cs', 'tests/Harmonica.Windows.Tests/packages.lock.json',
     'tests/Harmonica.Desktop.Tests/Harmonica.Desktop.Tests.csproj',
     'tests/Harmonica.Desktop.Tests/Program.cs', 'tests/Harmonica.Desktop.Tests/packages.lock.json',
+    'catalog/catalog-status.json', 'docs/CATALOG-STATUS.md', 'docs/CALIBRATION-QUEUE.md',
+    'docs/RELEASE-0.4.1-NOTES.md', 'docs/RELEASE-0.4.1-STATUS.md',
+    'scripts/catalog_status.py', 'tests/test_catalog_status.py',
+    'scripts/Audit-SelectedScores.cs', 'scripts/prepare_listening_review.py',
 }
 OPTIONAL_REPO_FILES = {
     'src/Harmonica.Core/packages.lock.json',
