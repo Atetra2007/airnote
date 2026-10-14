@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d222979ad3eec884",
+  "source_id": "zhouzhou-154",
+  "work_id": "work-3e7e59baf342",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6e064b4e4ea2fa0f131cff201e7f4179e44ceb77f3ce58437a879c3d920f6d27",
+  "source_sha256": "d0db55f86be54e54df97e537cf6a4bab80c6d70094b65b5b63f7713774e022af",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tw.everyonepiano.com/Number-14926.html",
+    "edition": "Tiancc full58bars, printed1=Ab/4-4; highestRH head each onset; uniform-8; fixed92practice, finalprinted50 recorded",
+    "score_sha256": "dbbd2797fd9afc17e1e4c150c6d9bbca7374555b0ceb03f921cbe862a17a145c"
+  },
+  "review_method": "完整58栏数字谱二读，75源token鲜解，原两高主题具体对应桥段并核24音高锚；明确整版新增段与前奏/收束异版重编，615输出独立重建，无真人或游戏验收。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 543,
+    "maximum_parser_boundary_error_seconds": 1.1084466677857563e-12
+  },
+  "review_note": "Root实际看完整3页数字谱及全部58栏行图，逐组复核所有十六分音符、休止和八度点；另看同版五线第1/3页确认无点1为Ab3、首F5以及桥段8va，未冒称root全读了另外3页五线谱。重新录入58栏，615事件/543音/72休止/232拍逐一吻合。 原59头及16编辑分隔共75token从JSON鲜解核对，第三整数8是编辑字段，不作为八分音符或时值证据。原所有时值未知，各原音和原低前奏均完整保存在逐源处置中。 原前24头的作者精确前奏仍未证，明确两完整intro组分别用印谱1–4及5–8重编。原两高主题实际对应27–30与31–34桥段，已纠正旧候选把第二高主题错误归到快速尾段的处置；24个精确同音高锚点只证明音高身份，不冒称原节奏已恢复。 原36–40第一主题收束及45/46/54–57第二主题变体原样保留，按所选完整桥段的真实低声部旋律与终止重编。原58末B4对应34栏四拍B4完整保留；原高主题的两个四栏组保持先后顺序，未被快速音型取代。 9–24快速主段、25–26两整栏休止、35–50快速重现和51–58完整尾奏分别明列为采用完整独立版本时新增的段落；不虚构这些615事件与原59头一一等价。完整58栏到双终止线，最终G3四拍是新增尾奏的真实终止。 全谱统一降8半音，无逐音折八度，真实范围50–84；最低m4/m54的D3不能误报55。m20/46第二组3375与m12/38的3575不同；m21/47为6531，m13/39为6631，v2已纠正后由root实际复核。 92来自印谱主体；最终58栏原印50，输出固定92为明确练习版。151.304348秒只属新完整独立编配，非原短谱时长、录音对齐、真人试听或游戏验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "dbbd2797fd9afc17e1e4c150c6d9bbca7374555b0ceb03f921cbe862a17a145c"
+  },
+  "note_count": 543,
+  "event_count": 615,
+  "duration_seconds": 151.30434782608697,
+  "limits": [
+    "originalintro24exactintentionunproven",
+    "originalhigh35actuallyroutedtotwofourbarbridgeswith24exactpitchanchors;closureandvariantsnotclaimedrecovered",
+    "lowerRHchordheadsandLHexplicitlyomitted",
+    "finalprinted50played92practice",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-154-eop14926-complete58-v3.review.json",
+      "sha256": "9648d6e5b6016b084a94f4b8927ee48216aab56f3f7ee04b6a8dc0afd0f2a68d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2d1d4f3903042e15285ae4219a84fc5d188695df8e843cd8353ba9a2d30c4fc9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "9b867c76afb5e11377cfd90bd84a3049f64440c259574cd3c3dc067718af5d34"
+    },
+    {
+      "name": "0001-1b99e9be735d.json",
+      "sha256": "81a4b9b2bce173ab6759e9841a00c0bf5997fcd4efcaa7e505a8113bd9ec95bf"
+    },
+    {
+      "name": "public-review-summaries-20261013-lost154-v1.json",
+      "sha256": "8102207373e5dbe80ae02842d74f40b3e69627ae977f15df8a360b385a2e52cb"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

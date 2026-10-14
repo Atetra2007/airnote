@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-826e26b406365300",
+  "source_id": "zhouzhou-217",
+  "work_id": "work-dd60959aaf0a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "57eeb02cd7c30c279e9a1d478f1f1256d0c25c48fe50426099a3083e444411d0",
+  "source_sha256": "32c924a1bf46718865bd9f1f130b9bfcf82fc7362042900672c39f8e67dbed33",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/158685.html",
+    "edition": "桃李醉春风CRITTY版C#4/4打印58BPM，副歌拾音至第一结尾疤",
+    "score_sha256": "4dda9d0cd19da8e2ad8ecaa0a2d2b20797334484d00781f1e3e3c7a44ba19e6b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 91,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "全部91原音，副歌1.25拍拾音及8小节，首结尾疤完整两拍。 洲洲217完整8行91音，从向江南折过花至相赠眉间一道疤；所有原音逐一保留映射，源多连续竖线是分隔而非四拍空白，不凭其数量添加休止。 主选158685桃李醉春风CRITTY版本，C#调4/4打印四分58BPM，C#4降1半音至C4以保留原音区。345251/76262萧忆情版作身份/版别对照，不混入其不同节奏和时值。 初始向字3与江南折过3/2/1/2均十六分.25，共1.25拍拾音；先前价字低6和0.75拍休止在来源之前，不加入。从这五音开始覆盖全部原源，未按整小节裁掉拾音。 源10红字原2按所选版改6；源49过字原5按所选版改2，其余89原音高保持。Source多情总是我与选版多情似我等歌词字面差异作为版别记录，不以歌词字数自动删音。 副歌每4拍小节附点八分.75/十六分.25对按所印执行；两处1高音和6/5是不同音弧，保留独立起音，未发现此范围需合并的同音延音。 第一结尾疤字6两拍完整保留，不加入之后括号器乐、第二结尾转调D或后段。91音91事件、33.25拍58BPM34.396551724秒；无新增、删除、合并原音，无源内休止。 独立二读发现候选尾小节间一道下划线误读；root回看原158685与末行裁图确认7/6均十六分.25，随后5为八分.5。修正source87时值.5→.25、source88起点30.75→30.5、source89起点31→30.75且时值.25→.5；91音及33.25拍不变，最终6两拍完整。旧候选与失败报告冻结保留。 全91原音逐项解码及映射核对；修订后91音全起点/时值/音高与独立图像转录相符，正式软件检验另绑定；未人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "4dda9d0cd19da8e2ad8ecaa0a2d2b20797334484d00781f1e3e3c7a44ba19e6b"
+  },
+  "note_count": 91,
+  "event_count": 91,
+  "duration_seconds": 34.39655172413793,
+  "limits": [
+    "SelectedCRITTY edition differs from萧忆情 version; all2 pitch changes disclosed.",
+    "Existing source chorus only, first ending selected.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-217-buweixia-complete-source.review.json",
+      "sha256": "dee682e251ce137e48700a19cf840c866b4f22352a25e5fa37497dce8c4fdc2c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "edc7b7ad28cfc33735f55f7a576b0078b4548ba2b1d62f589c6cf4b8b0930e7c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0317da819a1b9c53d33c0e9d956b2c80433e9b7fa5738102561369810c342b51"
+    },
+    {
+      "name": "0001-bf880f898ceb.json",
+      "sha256": "294806bf6fe30ffc6ced0ba5ff2bb6643f8ec4d1b9d6bf0fee636e09725c8484"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

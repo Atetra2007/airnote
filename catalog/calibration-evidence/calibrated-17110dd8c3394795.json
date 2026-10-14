@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-17110dd8c3394795",
+  "source_id": "zhouzhou-190",
+  "work_id": "work-4f70cbc87333",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d492bd2731a52d470148ead22ada0934c499741d25c57f84eefc824461f33dc5",
+  "source_sha256": "32ddaa32427b1ad15b1491bb6064c64f5e9acdb16148e36885c75e3d238dd415",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/read/cv15482196/",
+    "edition": "complete one numbered page26bars; entire monophonic harmonica line chosen, uniform+7; fixed95practice tempo, printed90bars1-9 and95from10",
+    "score_sha256": "bf1b8ff9eaabf65b652b00c05c28da4e5ab753e152a0a9d48c2e2675b61f3cf5"
+  },
+  "review_method": "Root完整26栏口琴谱二读、49原头/53token鲜解核对及120输出事件逐个重建；原高7头及尾变体明确选完整独立谱重编，原时值仍未知；95固定练习速，非原版逐头恢复、非人耳或真实游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 109,
+    "maximum_parser_boundary_error_seconds": 1.2789769243681803e-13
+  },
+  "review_note": "Root实际看完整26栏数字口琴谱，并放大复看9–20栏的变音、附点、休止与三连音；重新录入全部26栏，独立重建120事件逐个对最终文本/timeline。属非盲完整谱表二读，无人耳试听宣称。 原49头、4个layout共53token由root从原JSON重新逐项读回，音高/行/token完全吻合，原时值全部保持未知。三连音按每头1/3拍、横线按延长、完整26栏各4拍，总104拍，11休止109头均完整保留。 完整所选口琴版整体升7，开头16头、后续6头与重现4頭可直接核到原音高；原22–28高A5/B5/C6/B5/G5/D5/C5的原作者意图仍未证实，明确用完整第一主题续段及桥段重新编配，不能声称这些原音均属错音。 原33–47尾主题变体逐头保存在证据中，用完整所选19–26栏主题重现取代；原最后B4以26栏四拍B4完整收束，未知时值不猜。新的104拍完整独立版不是原49头逐攻击等价恢复。 保留打印前9栏90、从10栏95的证据；输出固定95是明确练习选速，第一段比印谱略快，不称原录音对齐。参考权威为完整单声数字谱，未混入同名其他钢琴或6/8版。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "bf1b8ff9eaabf65b652b00c05c28da4e5ab753e152a0a9d48c2e2675b61f3cf5"
+  },
+  "note_count": 109,
+  "event_count": 120,
+  "duration_seconds": 65.68421052631571,
+  "limits": [
+    "original22-28exacthighpassageauthorintentionunproven",
+    "original33-47editedtailvariantnotone-to-onecorrected;fullreferenceversionchoiceexplicit",
+    "printed90firstsectionplayed95explicitpracticechoice",
+    "staffpagesareexistingcompanionmaterials;selectednumberedpageisbeatandpitchauthority",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-190-complete26-numbered-edition-v1.review.json",
+      "sha256": "b1f45fe61b5c3fee954b5baa1d1d1d85624c1aecea5267966d48d395aa362bf6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c753ebf5581a6f6b2c98e42d7364fd4fda17b8a31effcb019acb62de51909065"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "28cd4bd104db7f3ce68de162a5f261744d279e499dd91fe26a3cd7665fb26975"
+    },
+    {
+      "name": "0001-b8c2687c50aa.json",
+      "sha256": "b84faa654b59aaf26f40194dc9ec7be63b77fdacfce70e670d26def18499a035"
+    },
+    {
+      "name": "public-review-summaries-20261013-karte190-v1.json",
+      "sha256": "bb4cec4144128236f12a3deca23cb4f2cbfa4761b62c43a90dcfd41a49c1c482"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

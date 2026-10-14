@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8db4bc9dc426df2e",
+  "source_id": "social-e7769a02e5575a73",
+  "work_id": "work-634ba8da08e9",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=YG3qHumO5SW6",
+  "status": "reviewed",
+  "sha256": "b23153f4a1c53f89e9c885d30f50b91f12433e053220f79b6b0e533934ec0cee",
+  "source_sha256": "3bb261abd76d75ca9403d6cb79ca9dcf8397dc923a029ba4e27013cd9f64fbc3",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/834818527109054488",
+    "edition": "Complete public author119barCmajor110BPM score; source113bar form selected through explicit instrument voices and repeated m54–61 chorus groups",
+    "score_sha256": "0cce0490fbeb98acd24fe42ae58211e975296aad270c5bf5ab5fc7cc723295ab"
+  },
+  "review_method": "Root全5页119栏谱表交叉复核、926原DFHS头/296静默/925边界完整核验及656输出逐事件重建；公开作者完整曲式单线重编，明确声部与分段八度差异，非原逐头还原；未做人耳试听或真实游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 654,
+    "maximum_parser_boundary_error_seconds": 3.979039320256561e-13
+  },
+  "review_note": "Root实际看完作者公开5页119栏和全部手录表，并复看5/10/11、25–36、105–116原像素细图，完成全部所选音头的非盲谱表交叉复核。无第二次盲录119栏、人耳试听或原录音精确对齐宣称。 Root鲜解原MIDI中的完整926头DFHS和850头SMF，逐项回读全部926原头、296并集静默及925有符号边界；76个因音域未导出的原头仍完整保留在证据和编配处置中，未以850替代926。 完整原曲式按18段改编成452拍113个所选4拍栏：原前奏、两次主歌、四个第三主题8栏、三段器乐、低区过渡和完整器乐尾均有明确音头出处。这里113栏是所选曲式框架，原DFHS精确时值仍为62469/128拍，不把诊断小节网格当原谱精确拍数。 源734–811及812–892为两个完整第三主题回现，结合全部原头识别后采用作者54–61完整8栏两次，不按同编号硬换作者86–101不同的织体。所有四个第三主题8栏都取谱面八度，避免其最后高5再升八度超域，整段内部轮廓保留。 全曲作者C相对原B降1再按原导出降3，共降4；主歌等段明确+12，四个第三主题及低过渡保持书面八度，前奏低声部整体+12。音域53–84，各段八度适配均明示。 m9完整4拍和m77前三拍选择打印休止，原持续及伴奏明确换版。器乐34–37/62–63/65–69选真实LH脉冲，不删除原器乐。尾102–104和110–113选具体完整和弦头；末原925对应完整4拍C4，原4.1拍门控尾改用打印4拍，未裁掉尾段。 105–109保完整五栏；105先取低3前三拍再接真实543三连音，106–108低2/1与高543为按原低高分组明示的八度编配。原四八分5432重编为公开最后一拍543三连音，所有原尾头已逐项处置，不虚称原逐头恢复。 110BPM来自作者打印谱，原120BPM演奏门控不作为打印节奏；新全曲246.545455秒。Root独立拼出所有所选头与真实连音，逐个核656事件音高/起止/比例和最终文本；同作者EOP仅诊断辅助，权威仍是原公开数字谱。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0cce0490fbeb98acd24fe42ae58211e975296aad270c5bf5ab5fc7cc723295ab"
+  },
+  "note_count": 654,
+  "event_count": 656,
+  "duration_seconds": 246.54545454545442,
+  "limits": [
+    "This selects a complete independent author alternative arrangement, not a literal reconstruction of every original attack/voice.",
+    "Original source9 sustain and m77 accompaniment replace actual printed rests, explicitly disclosed within full-length source sections.",
+    "Printed thirds are exact Fraction1/3 in timeline; text decimals roundtrip within1e-10, not byte-equal rationals.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-e7769a02e5575a73-complete926-author-selected-v2.review.json",
+      "sha256": "56bb39ae1729010b373c129dcacfb83530872d678622b282af35a0a1c62100d8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "461ff10f723a23279dbd88e8c4f10a9509a566c30aecace369bd5001c6a81cfd"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b5e5aee8abe7073b72834fa06f48925a1e7dd3c72c4618e5ab74ecd2a3b3f1f4"
+    },
+    {
+      "name": "0001-ba3226c84274.json",
+      "sha256": "684110f125570256de3b9a971e346d780fb8f52963a74c08b58fd1cef1b45761"
+    },
+    {
+      "name": "public-review-summaries-20261013-onelast926-v1.json",
+      "sha256": "f19ad7afe667a44736f3017222efbb5ecac79a25c831a3463dc9e7f1e38cbc2c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

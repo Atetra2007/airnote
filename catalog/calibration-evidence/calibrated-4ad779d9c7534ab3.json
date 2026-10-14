@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4ad779d9c7534ab3",
+  "source_id": "zhouzhou-143",
+  "work_id": "work-4cb58ad1138d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "71c456c1d1c28d3b2106199a2f3a7cec7976771e79fb4586b2c4c5ef57db7074",
+  "source_sha256": "7ece8013fe2b0e651585ad98c8e098c6cb04f8450225d945e5e08b10273a3bdb",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/14948.html",
+    "edition": "F4/4quarter138;source-orderP2m24last2beats-m40thenP1m1-4;Coutput",
+    "score_sha256": "6de8582dd0b92a9267d7840b1035c12c0d2f275bcd001488a90cbd08c5ecde08"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 86,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-14
+  },
+  "review_note": "P2m24 final2beats throughm40;thenP1m1-4;complete85source notes 完整原源85音、9未证实边界均处置。原源时值/BPM未知，不把边界解释成小节线。原源标题指EXO Baby Don't Cry；尾20音为前奏式回接，不是南拳妈妈同名曲。 选用公开14948七页F调钢琴简谱；全部七页已实读。主体P2m24最后2拍至m40结束，接P1m1–4，保留来源自身顺序，82拍，印刷四分138BPM；F到C统一减5半音。只选右手旋律声部，高音和弦取与来源同音的旋律音，非全钢琴音。 source4与18各含印谱两个相邻高1起音；分别展开为半拍高1及跨小节1拍高1，明确恢复两个起音。第二音在m25/29末半拍和m26/30首半拍之间有同音tie；下一高2为1.5拍。不是把所有相邻同音合成一个延音。 m33 source32与33为相同高3的四分之一加八分tie，合为0.75拍一次起音。首和弦旋律高3是附点八分0.75拍，后源34/35均0.5拍；不是五个独立高3起音。 m31源25为高5，印谱该5上方有八度点，保留高5。m35高5也带点，均不可下移八度。m40源64普通7按右手和弦最高声部普通7保留。 尾source78原普通5按P1m4改升5；其余84源音音高保留。m1–3末高1各为0.5+1+1=2.5拍同音延续；m4八个八分音均分，source78确有升号。 9个参考静默段共10拍：m25/29各1，m26/30各1.5，m32共2，m37/38各0.5，m40两段各1。前m24首2拍的休止不属于原源选段，未引入；m40末1拍参考休止保留后接前奏。 候选需root独立音乐复核及正式软件审核。未试听、未录音对齐、未实际游戏，不声称音乐已验收。 Root完整查看适用P1/P2与P3上下文，按21所选参考位置另录度数/十六分tick，95输出事件82拍与候选全一致。原85音9标记94token从原JSON重解码，唯一改音source78普通5改#5。 m25/29末有两个独立高1起音，source4/18各拆为.5及跨线1拍；m33的source32/33真tie合.75拍。m31/m35高5八度点、m40普通7选声部均完整原页确认。 P2m24仅末2拍到m40完整结尾，保留10拍印谱静默后接P1m1–4。P1m4#5为明确升号；F整体降5到C，138BPM有印刷证据，未知原标记不编造时值。 完整来源音型和尾段保留。正式软件审计随后绑定，未真人试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6de8582dd0b92a9267d7840b1035c12c0d2f275bcd001488a90cbd08c5ecde08"
+  },
+  "note_count": 86,
+  "event_count": 95,
+  "duration_seconds": 35.65217391304348,
+  "limits": [
+    "Communitypianotranscription;monophonicselectedmelody,chordothernotesnotplayed.",
+    "Sourceorderincludeschorus-to-introcut,notfullsong.",
+    "Source timing unknown;selectededition printed timing used.",
+    "Noaudio/UI/GPU/listening/alignment/gamechecks.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-143-mermaid-v2.review.json",
+      "sha256": "ec95105cf3a3638c7da2102abdf83c596e64bbc59792a5435deab775a4c1d3b6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "730b098141fe031461a2b2387f4a5200109a6481af3ce20b55f5598051fa8464"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c18599978b6f55dcc84f9104f80afb820538d3c7059f1660a73a88411ba699db"
+    },
+    {
+      "name": "0001-7a73ab6e768f.json",
+      "sha256": "907381aa93363f4e41c49561be5d092193cfbea7207cb33015eaefd8d419005f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

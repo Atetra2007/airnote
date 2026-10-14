@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-28b66eeccff6abd1",
+  "source_id": "social-f7db6153d10a5670",
+  "work_id": "work-8dbd5b30d5e7",
+  "source_url": "https://www.bilibili.com/video/BV1DaaF6AEBs/",
+  "status": "reviewed",
+  "sha256": "deeb35d404ae0e1584d723dd70286e58f0799142922a80c776452137066bfa10",
+  "source_sha256": "e77ce0255f0179dcd9bbbb4c90e67dab36a4cf14ee0f3ade02e5661186cca3ff",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/353102.html",
+    "edition": "陈洲宏 vocal numbered score m4 last1.5 beats through m16 first2 beats; source chorus octave preserved",
+    "score_sha256": "edba920b4c95dbfa3654fd1ce907c36651af8f37028631214c14b95e7709525a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 73,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "complete-existing-three-page-69-glyph-video-fragment;no-original-pitch-glyph-omitted m4 first2.5 beats of this selected-slot record are a placeholder for unselected instrumental content, not an assertion that original full m4 contains rests. Only m4 beat2.5 onward is selected. m8 contains four separate E4 attacks after the three A4 and G4, counting the ornament E4 sixteenth. m10 contains three distinct C5 attacks: sixteenth after D5, quarter, then eighth. The D5-C5 curve is a slur between different pitches. m11 F4 dotted-eighth plus sixteenth is a same-pitch tie, total one beat. D4-C4 last-sixteenth curve is a slur, not tie. Final C4 and next-bar C4 are not tied. The video shows a higher chorus register: selected m12 beat2 onward through final m16 E is shifted +12 semitones, explicitly preserving the source register. No BPM printed in vocal source. Practice tempo110 is adopted from same-work EveryonePiano41378 and clearly not claimed to be the video tempo. Social fragment ends on m16 first E, held2beats as published. Full-song later material and nonpitched rap are not appended. Every original note glyph on all three video score pages is retained in exact order and pitch. Six dash hold markers are individually disposed; source contains no quantified rest notation. Four missing written melody attacks are restored from selected edition if the reference comparison lists four; exact insertion list is authoritative. Repeated-note glyph mapping is sequential bookkeeping because original onset times are not printed. Original two simultaneous panels show mobile and desktop versions of the same score; they are not duplicated as two sequential performances. All seven sampled frames and ending32/34/35 seconds inspected, no additional score page found. No source-video timing or listening claim: original file is video-only; written rhythms and 110 BPM practice tempo come from published sheets. Root完整查看三个独立原视频谱页及各放大图，另录69音与6横线；全部与代理源读一致。再从两页353102参考另录所选75事件，音高/时值/起点/秒数全部一致。 4补音对应m8 E4、m10 C5、m11 F4真tie合1拍、m12 C4；全部69源音按原顺序原音高保留，6源横线也有明确处置。 m12第2拍起高八度保留原视频黄字/右键语义；两组白字高1由上方点确认。无半音误加，未双重播放同时展示的手机/桌面谱。 源短片段结束在m16 E5二拍，47.5拍完整范围不擅自补全曲；110明确练习速度，未测视频演奏速度，无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "edba920b4c95dbfa3654fd1ce907c36651af8f37028631214c14b95e7709525a"
+  },
+  "note_count": 73,
+  "event_count": 75,
+  "duration_seconds": 25.90909090909091,
+  "limits": [
+    "No human listening, original-recording alignment or real-game test.",
+    "Nominal written-note duration with 10 ms output release gap is an explicit practice articulation choice.",
+    "Original source content was seen before numeric reference transcription; no blind-review claim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-f7db6153d10a5670-xiaotiaowa-reference-v1.review.json",
+      "sha256": "e77c07a1fe39d1f27d28944bf88e3dd476b243cb2524f02b6e32abe132f7e88c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bdd65f10490c3b91592c19fbdcb3134a775908841cdb0ac3e61cd7622e756344"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "e8512bb45eabcaa07564c976f9a0ba571919911077d20104750f099140826dee"
+    },
+    {
+      "name": "0001-97cd0abc6c24.json",
+      "sha256": "f33bbb8179517957b5d3f9de52914dc387b645698e94dd4cd54b62dc0c908736"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

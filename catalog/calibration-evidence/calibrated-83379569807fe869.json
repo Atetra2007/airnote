@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-83379569807fe869",
+  "source_id": "alternative-score-64b9b57128d64eed",
+  "work_id": "work-e8a9601f69ab",
+  "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/croatian/croatian-rhapsody.mid",
+  "status": "reviewed",
+  "sha256": "000e40601365e28a9f9aebda5e7a0c3ab8726ee3afdf7a15b0e017c5abe8c3b4",
+  "source_sha256": "c8f85dd7f498f44aea5cbf0e20b7b58a23c354fca80224435c5f483ca36cb0a5",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Music-2155.html",
+    "edition": "Seven full-size pages,84 bars,C minor→C sharp minor at56; elected highestRH with explicitly declared LH middle bridge and final inner chord root",
+    "score_sha256": "586b2f11ba699d6064f7ec5c1592debf7ed5104dcff71e9a2ead2d33de03e4a3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 1012,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "All676 original SMF heads,676 text silences and complete84bar chosen musical version; original331.5beat tail explicitly extended to printed336beat ending Root实际完整视读七张原始2480x3500印谱，以及m34/35、m71放大图；独立输入全部84栏音名/时值并展开，逐个等于worker v2。已知候选，属于非盲第二读。 重新从原始SMF解码全部676攻击，且全部1352原TXT事件重读一致；原TXT相对SMF整体-5，原Violin40、0拍三降号与220拍四升号独立确认。SMF模式字节为大调，解码标签Eb/E；对应作品采用关系小调Cm/C#m，不把SMF标签误称为Cm/C#m。原材料没有逐音消失。 明确选择同作品完整84栏钢琴主线版本；原676弦乐旋律并不全是错音，所有替换按13段曲式和具体共同旋律/重奏/调号/终止位置解释。接受的是有声明的完整钢琴编配，并非宣称676音逐音一致。 同音tie与重起逐栏区分：m15/17/44/46中间C4延音.75，m61/63/77/79为上G#4同音tie；m14/16等第三音保留四分音符。m31后半踏音G4而m52为Bb4。 m34自然A6及m35 Bb6半音符已按加线计数确认；m35后半与m36明确选左手桥，上移三八度，m37返回右手。没有借机器EOP的B6/C7错音覆盖印谱。 m56四升号开始，m71为D#5/G#4/B#4等上行，包含升B；末m83选择和弦内C#6并随末乐句下移八度，真正同音tie延至m84。原末331.5拍明确补至336拍，新增4.5拍有印谱依据。 1012音/1014事件/336拍，范围48-84；速度96来自同版公开EOP头而非纸谱打印。所有八度移调按已声明完整乐句。软件检查不代表人耳试听、录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "586b2f11ba699d6064f7ec5c1592debf7ed5104dcff71e9a2ead2d33de03e4a3"
+  },
+  "note_count": 1012,
+  "event_count": 1014,
+  "duration_seconds": 210,
+  "limits": [
+    "Complete84bar piano main-line edition with explicit original violin voice replacements.",
+    "96BPM is same-edition EOP header, not printed tempo or recording alignment.",
+    "Final printed tie extends original terminal extent by4.5beats.",
+    "No human listening or real-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-64b9b57128d64eed-croatian-full84-piano-selected-v1.review.json",
+      "sha256": "317f948d504a53bb34b7af7e417801bf00cdfe16876b9a4531590099c83513eb"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d53d872052ea5750ed45f42b9af1f486c2a73023e325ff92ab6370fae0da225b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f504d2ab21dab87e8f3bf2133512c9cb7e1efa76b496d33d9406a7d8c4751340"
+    },
+    {
+      "name": "0001-8cb900496bf1.json",
+      "sha256": "b4b58ee1ca56c7991b7b0dff3a4ac59efcab0d8607463d3ab6d79ec09a0ace07"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d119650de36a29db",
+  "source_id": "zhouzhou-067",
+  "work_id": "work-312ef322e7a7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5ef7668c4ad41e6ada51d5beb9881880b851ad8598bc7935379c736aaba004cf",
+  "source_sha256": "0915a37f98d910faa1ad5a475696aa1c9582b3bc3f1e5f53548466261d18be97",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1jmVH6oEvk/",
+    "edition": "C4/4quarter95;LHm1-4folded;RHm5/6repeated3;source24expliciteditorfill",
+    "score_sha256": "63656f16ef7881af8f0e073af8e18f38915bf0d3bb4576cb7b5f98e5cd31fc56"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 61,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "Complete67sourcecontent;LHintro+threeRHthemeiterations;oneexplicitA4connection 固定原源67音/76rawtokens（9分句竖线）完整解码；原源25个前奏音+14音主题×3均完整处置，不把67音截成只做右手主题。来源每音时值/BPM均未知。 公开完整参考iPiano《Luvsic》C4/4quarter95BPM，多格式三页实际同一16小节（staff/numbered/finger-numbered），全页已看；所选完整适用m1-4左手前奏与m5-6右手主题三次源作者重复。后续m7-16变奏原源没有，不扩展。 左手m1-4前24音全部按原源C4-B4音级保留，原钢琴宽音区折到一八度是明确编配选择；数字音级与原和声循环一致，不能冒称统一移调后维持钢琴原音程。右手主题参考D4/E4/G4整体+12到D5/E5/G5，全部原源主题音高保留。 source24=额外A4是明确源作者连接音：选择印谱m4最后半拍0槽位，改为A4:.5。其时值是编辑选择，不称原源可证时值；该处印谱右手并没有A4，亦不以另处A3+12作精确对谱论据。此单独fill始终突出显示；不是将未决尾音删掉。 每次源奇小节3连音源(a+3,a+4)对应印谱一个quarter E，同音起音合组；每次奇末D/偶首D (a+6,a+7)按印刷跨小节tie合1.5拍。共6合组均明确列出，不合异音slur。其他61输出攻击全有来源，无新加来源外音。 打印LH每栏4拍八个halfbeat槽，两个0分别位于1.5和3.5拍；m4末0由上述fill替换，其余7个halfbeat静默全保留。输出40拍@95，61音7休止68事件25.263158秒。源9个竖线全作为排版分句，未假定它们时间。 候选完整节奏、源音帐与self-check准备；root独立读谱/编辑fill句法判断和正式软件审计待做。无音频、录音对齐或实机游戏验证。 Root实际读完五线及数字两完整页、前奏和主题细图，独立录m1–4左手折八度及m5–6右手主题三次，全部68事件40拍一致。原76token新解码，9布局线无时值、67原音一次完整归属；原音高全部保留。 左手八度折叠保留音级而改变钢琴宽音程；原source24 A4位于m4末半拍原休止槽为明确编辑连接音，经句法检查占原空拍、不改变4/4、不挤压后续主题。该.5拍不是原源可证时值，印谱该处没有右手A。 source28/29、42/43、56/57原两次E攻击选为印谱单四分E，明确编辑合组而非原印刷tie；source31/32、45/46、59/60按跨栏D同音tie合1.5拍。三次主题之间仍保留独立起音，末D半拍不再跨接。 95取打印速度；原source25后14音组×3仅用m5–6主题，不从后页m7–16变奏偷换或补长。source24编辑保留与实际参考音分开标注。未音频试听、录音对齐或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "63656f16ef7881af8f0e073af8e18f38915bf0d3bb4576cb7b5f98e5cd31fc56"
+  },
+  "note_count": 61,
+  "event_count": 68,
+  "duration_seconds": 25.263157894736842,
+  "limits": [
+    "Source24halfbeatfillisexpliciteditorselectionnotactualprintnote/originaltimingproof",
+    "PianoLHfoldedintooneoctave;threeRHthemeiterationsaresourcechoice",
+    "Communityarrangementnotpublisher;noaudioalignment/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-067-luvsic-v1.review.json",
+      "sha256": "e6a70482a8b04466fbb5ec6a1d444a0282925cb32d46847efd637ad0083641db"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b275fcec6a55a7b35300b5051ccb806842e09c0efb7780877ba04632a0c3bc3d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2431d2d777c0e4820ebcf69503d966a324901fbcbb60863447641821c8f4af18"
+    },
+    {
+      "name": "0001-93b034fbc03b.json",
+      "sha256": "43c0f2694dbb53848a9b8e76a0fb2dd417bb92f9fdb917a76cf1f86da6938859"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

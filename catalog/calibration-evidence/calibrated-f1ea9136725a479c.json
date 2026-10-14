@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f1ea9136725a479c",
+  "source_id": "zhouzhou-050",
+  "work_id": "work-f12c14c63b4a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "aceb1052cd61627c1816ba4a47842baefea361ea92b1d912c22f83653f81cb44",
+  "source_sha256": "1c358a22350dcc2076faf4d2490d507b074256c8396fc58bd2a54395b873819b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tv.sohu.com/v/dXMvNDIwODM2NjU0LzUxNTUwNTc1Ni5zaHRtbA.html",
+    "edition": "G-major public dynamic numbered score; chosen voice and full source form disclosed",
+    "score_sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 129,
+    "maximum_parser_boundary_error_seconds": 4.973799150320701e-14
+  },
+  "review_note": "complete-existing-source-content-with-explicit-phrase-voice-and-repeated-attack-decisions Complete existing source content is mapped phrase by phrase. No later full-song verses are appended to an existing excerpt. Exact full source form and all original notes/rests are retained as evidence. Selected reference is the complete public Sohu dynamic score in G. At printed vocal bar21 video has3 35 3-, whereas auxiliary HTTP printed image has3 33 3-. Video edition is explicitly selected. These sources are not claimed pixel-identical. All opposite-pitch slurs preserve separate notes. Only bar50 same3 tie combines repeated3 attacks. Source note gate gaps are reconstructed as notated note lengths and true rests with10ms standard practice release. 140 BPM is an explicit practice tempo preserved from the existing140-BPM community arrangement and chosen for the other excerpts. The score video has no printed BPM; there is no recording alignment or original-tempo claim. The opening parenthesized instrumental pickup is absent from the retained musical forms and not appended. Vocal la-la groups and full endings present in each source are preserved. Short050 uses source +2semitones for verse rows1-8, -5 for chorus rows9-12, with explicit +7 for source notes121-128 to restore their internally shifted chorus register. Every register and edition pitch change is listed. Short054 uses -5 throughout. Alternative491 uses the printed upper alternative voice at33-36 in every occurrence, matching existing high chorus. Community266 uses lower/main voice in those bars. No octave folding is applied. Community266 initial isolated C3 is not part of this score melody and is explicitly replaced by one preparatory rest beat. Its chromatic Bb4 neighbor at source65 is an explicitly omitted ornament; source note durations and raw data remain recorded. Selected repeated-attack consolidations in050 are arrangement choices, not falsely described as printed ties. Unselected source ornaments/variant attacks and missing reference attacks are individually listed. Short054 row4 is a selected published-phrase reconstruction where the source has a different ascending fill. 独立代理先看完整7帧视频图和放大图再录数值，未见root数组或候选；51主槽加5异声部共306事件与root一致。最终槽51上下声部标签相反，显式对应后两组数字全部一致，未更改音乐数值。 独立审查再从其自己的图读数、完整原源解码及另写段落展开核对每个输出和全源处置；root也逐项重建输出期望并检查所有事件、时间和末尾。 050的12/13及122/123是来源重复起音的选版并组而非谱示tie；alt484/485才是m50真实同音tie。054第4行三改音七补音为明确选谱乐句重建。所有选择不称原始录音实测。 community266最前C3改一拍准备休止及65 Bb4邻音省略明确；完整48小节后尾E4二拍保留。alt完整89小节356拍含上声部与真正末E5二拍。 140为明确练习速度，所有参考材料仅用于谱面和软件核验，无人工试听、录音对齐或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "note_count": 129,
+  "event_count": 129,
+  "duration_seconds": 41.142857142857146,
+  "limits": [
+    "No human listening, recording alignment or real-game test.",
+    "140 BPM is a practice choice.",
+    "Published-edition reconstruction with fully explicit local phrase variants.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-050-lonely-reference-v1.review.json",
+      "sha256": "2f2efe6ae9adcbdcc827e9ed68f11307a6216614d080e4e7d066bd07a1334aec"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f0d8c6b682764962c218249c00c242dd69f4a8c458cf48a0e793d41a7af11ade"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "dfeb13a75da014cd7bf58922dde7e5fdf1c0c7e71421115560ba4a6928e638a8"
+    },
+    {
+      "name": "0003-3db507c2b48d.json",
+      "sha256": "6d436777bacbda17086b06fa2ce6164199f6b2606a339dd036db941370c8e8f2"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

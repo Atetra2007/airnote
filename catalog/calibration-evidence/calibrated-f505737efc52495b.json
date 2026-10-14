@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f505737efc52495b",
+  "source_id": "zhouzhou-020",
+  "work_id": "work-dd6fbf763c74",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d86b6498c9e4b5d6953c697f60b62adeca69186c77cb0c276f79a714c8d4d3c3",
+  "source_sha256": "3792c3d20f7587906bd572be9c160fde9985ea420477f01d6ee3d77c1a3ce781",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Happy_Birthday_to_You",
+    "edition": "Public published score: happy-birthday; exact edition bound by its SHA-256.",
+    "score_sha256": "acf4e32ec33967f4642a148a1687ee0190ba65d9246fa20878b1d1249ba4cda3",
+    "midi_sha256": "e69b4ddaa1f430d6dfd2fceda09ce9097d7036e0f5aec106004dd39b71cb271a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 25,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 完整25音核对；原来源第20、21音B4与公开G调谱整体降2半音后的Bb4不同，修订为Bb4（#6）。其余23音吻合。 补齐3/4拍弱起、附点八分音符与十六分音符、句尾二拍长音；第19音的延长记号采用公开MIDI在第17拍的速度变化，折合本版2.25拍。 保留来源从C4开始的F调旋律，整体比公开G调谱低2半音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "acf4e32ec33967f4642a148a1687ee0190ba65d9246fa20878b1d1249ba4cda3"
+  },
+  "note_count": 25,
+  "event_count": 25,
+  "duration_seconds": 16.833333333333332,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "90 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "延长记号时长有演奏自由；本版采用公开MIDI示例时长，不把它当成唯一标准。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-020.review.json",
+      "sha256": "0fa745d80bd876529cf6ba36303ce25a838b57f081147ebdcdef91b77fc40c67"
+    },
+    {
+      "name": "review221-zhouzhou-020.timeline.json",
+      "sha256": "4c16561a8230d77b9e58f3b9c07ede5106035d1ee0ecf0996418f6b5ebb3672d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0001-39607666c482.json",
+      "sha256": "21400c484c06647abf3f5fbbef81bd4ad7cd99210706015db4a4b0a7dd361c58"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a295710fe92fea16",
+  "source_id": "webvideo-4841b5cfce85965a",
+  "work_id": "work-3eed2cf902d5",
+  "source_url": "https://www.youtube.com/watch?v=KEEdGm0DYNo",
+  "status": "reviewed",
+  "sha256": "2ee860fbbd0c146113a164f43a46df63c28d97b7b1808e3f78480c33062865fe",
+  "source_sha256": "4841b5cfce85965adadc402b1ef91ef71ed036e1f84b985950340beae10e3ca7",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=KEEdGm0DYNo",
+    "edition": "PolaliceAlvireo;all109bars;highestRH;Bb/Db4/4quarter125;uniformoctave-12;accompanimentomitted",
+    "score_sha256": "c777b55816dc4344e52db5a6c8e71277b2e23a60a85c831130dbc935d9a99f95"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 561,
+    "maximum_parser_boundary_error_seconds": 1.5631940186722204e-12
+  },
+  "review_note": "Complete109printedbars;624selectedhighestRHnoteheads+85rests,notallpolyphonicheads;allLHandlowerRHaccompanimentomittedbyexplicitper-barpolicy. 原来源为完整公开视频六页静态五线谱，实际署名Polalice Alvireo；旧采集说明的末永音楽堂不沿用。全部109小节逐页、逐系统双人手读，最后103–109系统含7小节。 选择所有小节每个同时起点最高RH音；全部LH和同起点低RH作为伴奏省略。624是所选上声部印刷音头数，不是复调总谱音符总数；未穷举伴奏音头，完整709所选印刷事件均有处置。无小节删截、额外反复或从social89来源继承验收。 印刷125BPM、4/4，109×4=436拍。Bb调1–25和43–67，Db调26–42与68–109；25/67末Ab5有临时降号。统一下降12半音，输出MIDI48–73。 624印刷音头中63为同音延音续头，合并为561攻击；85休止全部保留，输出646事件。m107末Db5八分跨108与109两个全音符合为8.5拍，真实tie，不重复起音。 m41三连十六分各1/6拍；m82五连十六分各1/5拍；m83三连十六分各1/6拍，保留准确有理数时值。异音连线不合并。 root首读v1与独立初读均保留；按原像素解决副歌高音组Ab5/Bb5/C6/Db6、36/40/104的A4还原与Bb4、83/84的Db5/Eb5以及108延音。root v2与独立v3全部109栏音高、起点、时值、tie逐项一致。 本编配全长209.28秒按印刷速度计算；视频头尾和页面切换时间不冒充录音对齐。谱面/软件检验，不代表真人试听或实机游戏。 生产ScoreCodec646事件与时间线逐项相符，隔离导入/重启与0/60/250ms虚拟播放通过。唯一>8拍提示为末8.5拍真实延音，按原谱独立确认并另存SHA绑定处置；原production issues-found报告保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c777b55816dc4344e52db5a6c8e71277b2e23a60a85c831130dbc935d9a99f95"
+  },
+  "note_count": 561,
+  "event_count": 646,
+  "duration_seconds": 209.280000000001,
+  "limits": [
+    "All109barscoveredbyhighestRHselection;entireLHandlowerRHomittedasaccompaniment.",
+    "624countsselectedprintedheads,notallpolyphonicheads.",
+    "Printedtempo,ties,rests;noaudioorreal-gamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-webvideo-4841b5cfce85965a-amy-complete109-RH-v1.review.json",
+      "sha256": "73f214f0fa5b7eaeb3c9edcc76b03a7bf5e111ce3aff1a6847eedcef24b11dde"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d1cd57b2734221e93872a40431d5126c4b3d79057ad7656ef81d917db87b38c1"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0b93f22351d0ccb3f8ecd482fbfbd864842751ea7e43fc04b2aba19b17c34443"
+    },
+    {
+      "name": "0001-551ea804196e.json",
+      "sha256": "726be7b2d549711e2a3bc58321da7031df2d70f8b67574dd81149c62c2b7644e"
+    },
+    {
+      "name": "root-amy-ending-duration-resolution-v1.json",
+      "sha256": "8be7a908b358b4e31f10587234a0527d5adf4aecbe8ecb6c8c403431c6033d83"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

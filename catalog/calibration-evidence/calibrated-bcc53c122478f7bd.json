@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bcc53c122478f7bd",
+  "source_id": "zhouzhou-135",
+  "work_id": "work-1213f51e7e6d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "2873166e1df59b8c0fe14634ca2fce9d47659a379453323ac098c75534cc1232",
+  "source_sha256": "181488472e51482b28a4efbe84c2b68b89bb1235667540e0318a1cafbddce832",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=eo4Ud95BdiI",
+    "edition": "co piano public piano-roll; selected 4-beat bars at measured 180 BPM; reference -7 semitones; first four attacks muted editorially",
+    "score_sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 18,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-16
+  },
+  "review_note": "Complete17notes+4original0;explicit4silentattackslots;1source-split 原源17音+4个[0,1]未知时值休止=21事件及全部raw分隔完整解码/SHA绑定，四个0永远保持输出rest，不改为C5或推为普通1。 135原21事件框架与003首主题位置相同，四0占003最初4个C5攻击槽；后17源pitch除event9 C5 vs003D5外全部相同。基于完整后续主题定位，选择co piano原bar1四个G5攻击槽的名义1/.5/.5/.5拍作编辑静默恢复，4原0逐一对应原G5参考slot但播放rest。原0本身没有确时值，这是明确选版，不称原作者休止精确秒数可证。 参考co piano白键piano-roll同003完整核读；C4/C5/C6/C Major键轴、多bar帧与完整无音轨视频都绑定。四拍一栏明确编辑4/4，视频bar间约1.334s选180BPM，不冒称co独立印刷BPM。 尾17源全部定位到co firsttheme后18攻击：event4单A5拆为E5:.5+E5:1两输出A4；sourceevent9 C5选参考A4-7=D4(delta-10)单列，sourceevent17 G5选参考E5-7=A4(delta-10)单列；其余15源整体降12到同旋律音区，17源音全部处置、不截尾。 四原0保持四个独立静默事件，不合为一长休止隐藏原event数。其余参考m2和m4末各1拍静默保留，合6输出rests；输出18音+6休止24事件16拍@180=5.333333秒。 源第一4静默slot只借所选参考音节的位置和节奏、不称卷帘原来静默；完整18输出攻击真实视频on/off帧仅旁证，数字颜色机械检查不当音乐验收。 原135未知0定位已作为明确编辑选版候选，root须独立判断这种静默前4攻击是否在句法/源位置上成立。无音频播放、GUI、GPU或游戏验证。 Root实际看完整适用九栏首帧及focus00，独立手录8栏的MIDI与半拍ticks；再用不同的y690键面扫描逐帧解码，45次攻击全部音高一致。四拍一栏的明确编辑速度为180，最大起音偏差0.051秒内、键释放偏差0.017秒内。 固定高度圆角ドレミ标签不是音长；手录节奏依据栏距和实际键开关。重复键之间短暂变白属于显示/断奏间隙，不补成乐谱休止；第二轮第7栏两个C5再攻击已逐一确认。 参考统一降7半音，逐一重解原raw tokens/源音并验证拆音、版本改音、未知分隔符与全源映射，无未处置尾部；这是所选co piano公开卷帘编配，不是印刷五线谱，也未声称原录音或人工听感检验。 Root确认135四个原[0,1]各自保持独立休止。按完整后17源音确定同一主题，明确选择首4攻击静默版本；四槽1/.5/.5/.5拍是编辑选择，不是原0时值或公开视频休止的证明。source event9 C5到D4、event17 G5到A4和首音拆两攻击均明示。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "note_count": 18,
+  "event_count": 24,
+  "duration_seconds": 5.333333333333333,
+  "limits": [
+    "4original0timingisexpliciteditorialslotrestoration-not-originaldurationproof",
+    "First4referenceG5attacksmutedtocorrespondsource0",
+    "Video4/4and180editorial;noindependentprintedcoBPM",
+    "NoaudioGPUorrealgame",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-135-shark-copiano-muted-v2.review.json",
+      "sha256": "57fcb6a3459bfc71b68c69efd477fce0ae7aaff081faba7574267b05b2b4b894"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b74a89941c314bed81ae4e24efd77c5540ed5ce79bee4f7a72253288a42bb089"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fc8788417a98d7841e269b57d8b58a9b605a7bb3ccfa1f336cd62e663f3db5ec"
+    },
+    {
+      "name": "0001-05837f03edd4.json",
+      "sha256": "ca901c16aaa36ec70db8baf897f18906111160b2e0d9e23ce06f8109f44d993b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

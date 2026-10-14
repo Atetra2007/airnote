@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fb08c7022cf2693e",
+  "source_id": "community-c73e46b41b60dd12",
+  "work_id": "work-6e28c160aca4",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%96%E4%B8%8A%E5%8F%AA%E6%9C%89%E5%A6%88%E5%A6%88%E5%A5%BD-%E6%89%BE%E5%A6%88%E5%A6%88%E7%9A%84%E6%9D%A5-111-11111-dde2efce776d3e5fbed8d.deltamusic",
+  "status": "reviewed",
+  "sha256": "70400c4754835960f9addbb7da7db00a54aee999f8f9436e2c8da4538c6b2ce3",
+  "source_sha256": "c19b248de379555b153060113054c5d536ef526ed8eb4eb733c60f21dacfee03",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/111381.html",
+    "edition": "EveryonePiano1=C、4/4、96BPM；双结尾两遍，最高旋律降八度，桥接收尾明确按该版重配",
+    "score_sha256": "e888061ab1a6657efeb8ad7b7d7249e6b235f7da2cc2e8e2f01f908f1f2cd366"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 73,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整72源音143事件逐项处理，双遍主旋律与两个不同结尾；桥接/终止选EOP版明确重配，73起音64拍。 采用EOP公开钢琴简谱1=C、4/4、96BPM，两遍1–7小节分别接第一结尾8、第二结尾9，共16小节64拍；选最高主旋律整体降八度为G3–C5。 原社区72音143事件逐项处置；名义C编码整体降5半音对齐本C调主旋律，原metadata1=F及120BPM不作为本编配调速。 每遍投进妈妈的怀抱中，在原G4四分和A4之间补一个G4八分，把A4缩为八分；后面E4/D4按公开版各一拍，区别原1.5/0.5。 第一结尾桥接四音：来源移调后G3/A3/C4/E4，所选EOP版是C4/D4/E4/G4；明确用后者重配，不判定原作者四个音均为错误。 第二结尾原G3附点四分+D4八分+G4短音，公开版选G3二分后取琶音和弦最高G4二分。原经过D4不保留起音，与前G3合为2拍；最终G4按谱延成2拍。 71个源短休止为0.002083/0.027083/0.04拍的音门间隙；按原120BPM分别约1.0415/13.5415/20毫秒。完整记录并并入前音的名义拍位；参考没有有量休止。最终73起音无休止40秒。 这是对完整社区谱的所选公开钢琴版重配，包含明确的桥接/收尾版别选择；不宣称与源作者或原歌手录音逐音完全一致。 独立第二读谱人完整重建73输出音与时值，核实72源音和143源事件逐一处置；桥接与结尾为明确版别重配。旧提案的音门单位说明已更正，音乐内容不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e888061ab1a6657efeb8ad7b7d7249e6b235f7da2cc2e8e2f01f908f1f2cd366"
+  },
+  "note_count": 73,
+  "event_count": 73,
+  "duration_seconds": 40,
+  "limits": [
+    "ExplicitEOPeditionrearrangement,notproofthatsourcebridgeorpassingDwaswrong.",
+    "Rolledchordreducedtohighestvoiceonly;accompanimentomitted.",
+    "Nooriginalrecording,humanlisteningorrealgamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-c73e46b41b60dd12-piano-rearranged.review.json",
+      "sha256": "02c922d36ed86406c442fad7bbf04057e27ce4360c848280975661160115cfc3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ada2099b10d1808fedccaf299ee1eb61bd1378537a0c4bacb39bd2513a332d9c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b2ff44a71732b1a946e838547e77e4388d0f044b01064194dbe43cd1346816fa"
+    },
+    {
+      "name": "0001-e91dcf3d700b.json",
+      "sha256": "c6dde60a1cd44d3f256356c58077537aa0281f5b3de64d3e13b3dc9e522ebc25"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-34241cf5c4a15f5d",
+  "source_id": "zhouzhou-002",
+  "work_id": "work-deck-7061e1e2fcec",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e5fadb91656c7699caac03d063f014a6361bdccceceda5d3630a35ba2609ea3d",
+  "source_sha256": "652edb66926350014be28d5df8a387ae0b307cb723c3fd10c4260340e2bbe996",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/382690.html",
+    "edition": "EveryonePiano / 钢琴上的美妙旋律 F调2/4 四分音符120，第一、二页上方主旋律",
+    "score_sha256": "b3dad6e7b69a13f4cd6bfce3592d17b58a8338e85ad51215b0ff6984950332d2"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 38,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源38音，五星红旗至第一个繁荣富强；第5小节末拍至第21小节首拍，非整曲。 以EveryonePiano公开F调2/4、四分音符120编配为唯一音高时值依据，原C度数全体升5半音，38个来源音全部吻合；保留低5弱起，音区C4–F5。 五星、胜利、歌唱、爱的、从今等按附点八分加十六分音符0.75/0.25拍，不能把原稿的两个八分标记等分。 亮的同音连线跨12/13小节合并3拍，第一个强跨20/21小节合并3拍；异音4/6、3/2不合并。 本段终止于第一处繁荣富强的连音释放；后续歌唱、第二遍旋律与主歌均不在38音来源范围。 唐浩东声乐谱的首次五星比本来源高八度，但其返回段为低5；采用与来源一致的EOP低5入口，不混用两版。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "b3dad6e7b69a13f4cd6bfce3592d17b58a8338e85ad51215b0ff6984950332d2"
+  },
+  "note_count": 38,
+  "event_count": 38,
+  "duration_seconds": 16,
+  "limits": [
+    "Public secondary piano arrangement, not original composer manuscript or recording verification.",
+    "Only complete38-note existing-source excerpt is covered; no human listening or actual game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-002-sheet.review.json",
+      "sha256": "808fe90f3a03273d992ca0e22badd3d9dc78f396ee899cc6039ec79e288e3d30"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2c8ff66cbc36c5b61a09a42519e1fa19b4fc1c8dc5b0cbd88b7e1e08ce8f020e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3ca247bcbbcbf8c612f756cb2dc3a19064b20bd038d64474be4a6a046ed87b2f"
+    },
+    {
+      "name": "0001-7f68df75fdde.json",
+      "sha256": "e78e3319407487799b04a25745d368b201a16a55d40e8d6c06416995ae902208"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

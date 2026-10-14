@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f93316c8b8197262",
+  "source_id": "zhouzhou-072",
+  "work_id": "work-deck-4f8ae99fc7e5",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "47b6781131619c4fd49770827591b58a729e97e222135e0e344443e93aff9f48",
+  "source_sha256": "aef21eda1adaf3ffc7e0f4b48cc2849334a6c9456a42381aebb1ce65f4c254d6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/361593.html",
+    "edition": "玩易/卢家兴A调4/4完整声乐简谱行，主谱未打印BPM，明确练习72BPM",
+    "score_sha256": "b163e3bad350614c5b616ad99a427e383db46de1243c194bd4dc2271454152ba"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 237,
+    "maximum_parser_boundary_error_seconds": 9.999965300266922e-09
+  },
+  "review_note": "原35行235音：四小节器乐前奏、八小节主歌、四小节过渡、八小节副歌、四小节末段全部保留，共112拍。 完整主参考361593玩易/卢家兴A调吉他弹唱谱三页，只读独立声乐简谱行，不把吉他和弦或指法当旋律。全部页已查看。V4与V8确有低降6，因此社区字面F4不是应被改成E4的错误；原1=A标签不再额外移调。 主参考361593没有打印数值速度，明确选择四分72BPM。来源deck打印72，另385301完整三页C调键盘简谱打印72；这两者仅支持选用练习速度，不能宣称主声乐谱打印72或与录音节拍对齐。 来源范围与原顺序全部保留。副歌前三组5/4/3等每音均1/3拍三连音，保留3与3、5与5相邻的独立起音；不能把三连音上括号当延音弧。 V4何字打印1 .75下降至低5 .25。V8走字1 .5后5 .25到静6 .25是异音连奏，完整保留5与6；P1首另一个6 .5是新的起音，不与V8静合并。 P3小弧端点在两个1上，低6在弧外：1 .25连1 .25合.5，不新增起音。P3末4 .25跨小节4 .25合.5；P4的2 .75连1拍合1.75。旧候选误读保留，root与原代理原像素重读一致纠正。 C4的源3/2/3/4/3/4六音在社区写成等长三连音，本选版按印谱.5/.25/.25/.5/.25/.25重建；是公开声明的节奏选版。C4、C8最初两组1/2前各补半拍休止，并把相应2还原.25，不能靠把2拉长掩盖休止。 所有人工读谱以Fraction精确保存三连拍值，TXT写9位有效十进制。原谱完整字面事件和原时值另存，程序仅检查映射覆盖，不把序列相似或默认等拍当音乐依据。 Root逐页复核完整参考、独立输入全部事件、逐字面解码全部原源；所有最终音高/起点/拍值一致，P3误增起音已纠正。正式软件检验另绑定，未人工试听或实机测试。 来源最高C6超当前选用范围，整份统一降八度，输出G3至C5。声乐主参考A4主音降9半音至C4；前奏副参考385301 C调高1旋律降12半音，取打印前4小节完整顶层旋律。前奏重复数保留原4小节，不复制打印后4小节。 全部235来源音恰一次映射，无遗漏/合并；只加V4末低5与V8的5共2音，237音6休止。原P3单1持.5正确，不补重复起音。全部35原行与尾段保留。 除整体降12半音外另6处音高选版：source11前奏第二小节5再降八度至G3；source55/76低6改打印降6（Ab3）；尾段source214/224/234最后1按第三结尾第2/3/4小节改2（D4）。末段首小节source204末1由主参考第3结尾支持，予以保留。 末四行采用361593第3结尾最初4小节：首小节1/低5/3/1/4/3/1/2/3/1，其余三小节末2。保留来源四行完整长度，不自行追加打印更多反复和最终尾奏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "b163e3bad350614c5b616ad99a427e383db46de1243c194bd4dc2271454152ba"
+  },
+  "note_count": 237,
+  "event_count": 243,
+  "duration_seconds": 93.3333333233333,
+  "limits": [
+    "Selected72BPM is explicit practice tempo, not printed361593 speed or recording alignment.",
+    "Complete original source extent, not whole-recording claim.",
+    "All arrangement omissions, register shifts, rhythm changes and terminal3note scope explicitly recorded.",
+    "No human listening or actual-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-072-tornado-complete-source.review.json",
+      "sha256": "cf38dd7c30408d60f7f17748802c0b6d4137e0a9e2baaf4528408547e409e90c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2646be1c856ad74cb25d30a2d6aeace35e7fa79a1fe448089ec38bb7d61ec6b9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ead20b226f85c7a7bedf4d99c3c6d6bdcf7fce28202783d4a1f835e82d7a5312"
+    },
+    {
+      "name": "0001-32bb5f058029.json",
+      "sha256": "7eccd4437fe7b31baf323507de7c09aa9de8f03113a520020f9fc2bd07f28b74"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

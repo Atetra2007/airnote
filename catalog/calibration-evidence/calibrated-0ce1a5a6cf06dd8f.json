@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0ce1a5a6cf06dd8f",
+  "source_id": "zhouzhou-022",
+  "work_id": "work-b22ed4e45f9c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f7798ee6e1346126df6c9f6789db83999f38afffc1956a6d360a8901376798ce",
+  "source_sha256": "d0790555542737ac58976618d4bc32fe8e62a91fd55bd278f2f12451fae091a1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/337394.html",
+    "edition": "F#调4/4买辣椒也用券声乐版，打印80BPM",
+    "score_sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 182,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原13歌词行174音，从这一路上到就随缘去吧；V30拍+P30拍+C30拍，完整90拍。 唯一主参考337394买辣椒也用券版完整声乐谱，打印F#调4/4、四分80BPM，两页已完整查看；所用原有范围均在第一页。336788为不同75BPM与音区/节奏的比较版，未混入本候选。 全部原source音与词行、原d/b提示及排版符号完整保留；依据主参考人工重建每一拍，而非把缺省时值当准确节奏。只处理每份已有完整范围，不因文件名完整版就补入原本不存在的第二遍主歌、末段或间奏。 337394 P1/P5看与翻的7跨小节同音延音，与前方流连的独立7分开；P2/P6高1到7到6的异音连奏保留全部三个起音，不能因弧线合成高1到6。 P3一字5同音延长合半拍；遍字3连续三段.25/.5/.25合一拍。P6及防两个高3明确同音弧合一拍；P7你字前两枚高3没有同音弧，保持.25和.5独立起音。P7笑字5 .25跨同音5 .25合半拍，随后短6 .25，再独立6半拍连四分合1.5拍。 主歌V4的1到2以及V6的1到低6是异音连奏，其后同音重复2及低6各须独立起音。副歌同音跨bar的5、2、6、高1仅按明确同音弧合并，异音弧不合并。 副歌C4笑之后话字打印2/3/2小回转，原简化或不完整时明确补齐并逐项记录。C7去的6到短高1为异音弧；随后吧的另高1才跨小节延长，两高1不能误合一音。 本候选为完整原有范围的所选声乐版修正，root已完成独立全范围二读，正式软件审计另绑定；无人工试听、音频对齐或实机验证。 全部174源音保留，源110/111高3同音合并；9个印谱起音新增，182音12休止。V4/V6各恢复独立重复2/低6；P2/P6各补7，P7补短6；副歌C4补外侧3与末2，C6补相邻5之间6，C7补去字短6。 三处音高选版修正：源75 B4改C5，并补后续B4 .25以呈现眼到前的完整下行；源172/173 C4改C5，分别是去的短高1及吧的独立高1。其余171源音音高保留。 C4源146 D5与147 E5按顺序映射话字回转前两音D/E，所选谱在前补笑字独立E .25、在后补话字终D .5；明确是补齐所选版花腔，不把原两个音当完整花腔。 Root另录完整起音与休止数组，全部音高、拍值、起点一致；每个原音逐项映射校验，原始文件和提案均保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "note_count": 182,
+  "event_count": 194,
+  "duration_seconds": 67.5,
+  "limits": [
+    "Selected337394 edition at printed80BPM, not recording alignment.",
+    "Every original event accounted for; full existing source scope only.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-022-wind-complete-source.review.json",
+      "sha256": "26dc85c0af4e1398247d2f464e83cdec25a2d84ac107a5a73fcec23eaa3dc5ff"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e2fac507a522b7ea6d332ed14a463f9d6c96e38485e7f6773bf83d7ca6b21119"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "365aae5691e708aea425b29c8d92543151e7d131585be6e0d8d7a47511ae82be"
+    },
+    {
+      "name": "0002-4fef28fa9393.json",
+      "sha256": "c535e49a7d8846097ad0bd6f5d5ad451f0fecf4fadb1d0db54bf9058b702d935"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

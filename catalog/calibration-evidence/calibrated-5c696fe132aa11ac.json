@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5c696fe132aa11ac",
+  "source_id": "zhouzhou-127",
+  "work_id": "work-333c7144abb7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c09bb59cbd47546db57183d3b33f1c262e23b7ab0b89c7969e512b76fed98712",
+  "source_sha256": "bb7bf34a25704761758f51f4fb4aa3478fdad052b7aac7f2c4ab8ddfbbdbd60a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Westminster_Quarters",
+    "edition": "change4/5in5/4;hourfermataandbong4/4;sourceauthored4repeats",
+    "score_sha256": "aa46f5061133092466bdd5f8f286ee3ac7a24cff5acfcbda65e0615892075249"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 12,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "All12sourceattacks;explicitcanonicalWestminsterhourbellselectededition 完整固定来源12音/21rawtoken（9分句分隔）全解码，来源无休止和时值；所有12原音逐一有处置。非完整60分钟Westminster序列，更非实地学校铃声录音还原。 独立参考Wikipedia Westminster Quarters第三刻钟变化4/5的前两完整小节，5/4各1+1+1+2拍。E大调G#4/E4/F#4/B3及B3/F#4/G#4/E4，统一+8半音精确吻合前8源音，不省略这8音。 按源末4次同音攻击，显式选择小时报时E3全音符×4，+8=C4。参考小时图实际印刷三次，第四次是保留来源4攻击数量的明确编辑重复，不宣称图上四次。原末4G4全部改C4，-7半音，四次均记账。 两组钟声后加入小时谱5/4整小节休止的名义5拍；图有fermata，实际钟声等待长度未给定，输出仅选名义5拍，不称实际钟塔/学校秒数。 输出13事件/12音/1休止31拍，练习60BPM31秒。没有印谱数值BPM，60是编辑练习速度，不能称原钟楼速度。 全SVG、原HTML/Lilypond文及所渲染两图已实际查读，印谱音高/时值、全部12原音处置独立self-check；root独立音乐复核和正式软件审计待做。无声音/录音比对/实机游戏。 Root实读两张完整高低音谱，独立录入绝对MIDI/拍值，与13输出事件31拍完全一致；12原音21原token从原JSON逐项核对。 批准Westminster规范报时的明确选版：前8音保留，原末四G4全选C4；印谱只三次E3报时，第四次为保留原攻击数的明示重复。此版不称实际学校铃声的逐秒恢复。 5/4全小节休止带fermata，只选名义5拍；实际额外延长未知。练习60非印刷或录音速度。完整原12音均保留处置，无静默删尾。 正式软件审计随后绑定，无试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "aa46f5061133092466bdd5f8f286ee3ac7a24cff5acfcbda65e0615892075249"
+  },
+  "note_count": 12,
+  "event_count": 13,
+  "duration_seconds": 31,
+  "limits": [
+    "Explicitselectedhourbell/registerandfourrepeatarrangement;notactualschoolrecordingtiming",
+    "Fermataextraactualdurationunknown;onlynominal5beatprintedrestchosen",
+    "Noaudio/recordingalignment/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-127-westminster-v1.review.json",
+      "sha256": "3353e24f6538f8b54fdc9514a5b80a16efe72cfe2505a19ef011f5780359fcc2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "81f47eb436bb82d630a686a6f88fc22b53fb41c8ac88dc64154123b14961cea6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "64c355c79be6627125760e1d9eee78387ac77cd8987e4b8905ea9e61138fbd3c"
+    },
+    {
+      "name": "0001-fc20b72de005.json",
+      "sha256": "b40862e21ab3f49b24997d2122014c157e08741173aa148ab5878ed29d463b14"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

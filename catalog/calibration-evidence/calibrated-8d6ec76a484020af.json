@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8d6ec76a484020af",
+  "source_id": "community-9c71fb87584628c4",
+  "work_id": "work-ebae18240f14",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-%E5%BD%93%E6%B8%94%E6%94%BF%E7%9A%84%E6%9D%A5-%E6%B5%B7%E7%9B%97-11111-744ed99eab5584add12c7.deltamusic",
+  "status": "reviewed",
+  "sha256": "da1a05a719e01345c6de2b66e9b297b4dab055f0f6b504152a4169289ad110b9",
+  "source_sha256": "6f5cc192079a70c88c2e8070c3fe998d3c219e609d04db2114ce39a84419120f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/368163.html",
+    "edition": "Lee Dongyeol, complete 86-bar guitar/tab arrangement, quarter=200, 6/8",
+    "score_sha256": "7b261bee793af24c22da08b36398de587202b46d4504ae11ec0ca89f329b956d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 242,
+    "maximum_parser_boundary_error_seconds": 2.4158453015843406e-13
+  },
+  "review_note": "complete-existing-source-arrangement;explicit-crop-and-form-decisions-in-comparison Selected entire 86-bar Lee Dongyeol public guitar arrangement as the musical reference; all pages read before writing numeric reference. Original material was seen earlier and the review is disclosed as nonblind. Standard guitar tab sounding pitches used. Source register changes are retained as explicit +12 semitone adaptations; guitar bass accompaniment is excluded. Straight 6/8 with quarter-note BPM 200 selected from printed score. The original dotted .75/.25 versions and mixed .7-unit section are replaced with consistent written subdivisions. Only actual melody ties merge attacks; m46/m48/m50/m72 keep three quarter-note attacks and m80 keeps two A attacks. Accompaniment-only spans become real rests. Every original note and rest has a disposition; omissions and inserted melody notes are explicitly listed. Reference m19 F-F-F-G restores one missing F and places G on final eighth. Reference m35 is F-F-G in three quarter notes and adds no F. Reference m37 final C-natural replaces source C-sharp. M77 initial D is one beat followed by half-beat melody rest. Reference m86 final chord melody is 3 quarter beats, not 3.75. Reference m22 final natural and m43 Bb3 confirmed by separate detail crops in v2. Reference v3 corrects seven prior worker reading errors after independent root image review and worker detail-image reinspection; old v1/v2 evidence and old candidate v1 remain preserved. Preserve edited source extent: crop starts at reference m2 beat 1.5; m38 first note plus 2-beat transition pause; skip m39-45 and m79; finish after m85. Existing m34/m36 missing melody attacks and differing later fills are repaired from selected published edition, all changes listed. No final m86 appended. Root全86小节逐图复读并另录数值，发现7个小节旧候选误读；代理逐图确认后另存v3参考/v2候选，旧材料保留。Root自身m45多录主音也由清晰裁图纠正为休止，完整resolved数组与v3逐项一致。 m35 F-F-G各一拍；m46/48/50/72保留首中末三次独立四分起音；m77首D一拍加半拍声部休止；m80两次A各一拍，连线只在下方伴奏。 Root另从三份原始delta-music JSON逐token解码，以及社交MIDI逐消息重解，全部来源事件与处置表一致；独立按原段落裁剪、八度选版重建输出期望，每个输出音高/时值/起点/秒数完全一致。 所有标为rest的位置是此版单旋律选择中的伴奏独奏段，不声称吉他原谱整件乐器无声；片段、删节、八度移位和全部省略补入有明确处置。 音乐谱面复核通过；正式软件审计随后执行，没有人工试听或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "7b261bee793af24c22da08b36398de587202b46d4504ae11ec0ca89f329b956d"
+  },
+  "note_count": 242,
+  "event_count": 274,
+  "duration_seconds": 67.95,
+  "limits": [
+    "Published monophonic reduction with explicit source-register and form choices.",
+    "No human listening, recording alignment or real-game test.",
+    "Originals were seen before reference transcription; no blind-review claim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-9c71fb87584628c4-pirate-reference-v2.review.json",
+      "sha256": "7df18fb71c6e1d323ce96fca19537da1e8cbb1e271decf34eb2221619507eab6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "89359662b0fe0f0410efee32bd7d998e5100748dd8612eba3e23733bfdbb7cce"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "65305862190bfb52c2ee8e5489a9b2a7d45a4e4a872ecf67378adad44463a328"
+    },
+    {
+      "name": "0003-d66b70ea50bb.json",
+      "sha256": "375d3146d6bb056601b955cf49bb3af57744022ed93dd1d893c873ed6d82bed0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

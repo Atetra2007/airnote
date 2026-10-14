@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6121c9ce27204370",
+  "source_id": "piano-ef3eef99f9a79837",
+  "work_id": "work-2ae2808181a9",
+  "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E5%8A%A8%E6%BC%AB/%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED/%E4%B8%8D%E6%89%8D%20-%20%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED.eop",
+  "status": "reviewed",
+  "sha256": "6c19121af2365837523b02aedcd567fca142d1e438dad582e07c57d260072359",
+  "source_sha256": "659a15bec0a77d7c0c8c2e1b69aa405697e57b1cea1d51f4c9596466cd5807e7",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Stave-11193.html",
+    "edition": "Complete74 printed bars, upper-staff upper head; printed82 BPM and D/C# key route",
+    "score_sha256": "38cc17a2fd46408aa6158ee7cb94282337f9701a19895555b21b64c876cbcbb5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 379,
+    "maximum_parser_boundary_error_seconds": 6.252776074688882e-13
+  },
+  "review_note": "Complete74 printed bars, upper-staff upper head; printed82 BPM and D/C# key route 固定原source piano-ef3eef99f9a79837，按baseline取canonical work_id。完整752音、136全声部静默、12无音高原键位事件、末终止、完整header全部处置；1517物理记录另存。 完整EOP11193五线4页和简谱4页共74小节实际读全，逐攻击选择上方谱上头，保留真正同音tie，省373伴奏/下头，不使用unknown hand标签。 五线印82和原EOP header82一致；辅助数字谱现89及m16的91不采用。全74小节296拍，用固定82明确替代原每栏演奏变速、提前松键与时移。 原EOP保持C实音；印谱D段m1–14/40–50须源+2，C#段m15–39/51–74须源+1，完整379所选音均逐项对应。不声称整曲统一源移调。 参考实音统一−12；m9/m45所选低6=B3=59会降至47，唯此两次完整tie攻击明确抬12至59。参考59–96→输出49–84；不是隐式折叠。 m5/13/41/49末7真tie到半音符，共.25+2=2.25拍；末横线是延长不是休止。m9/45有先中6再低6，与低6的延续相连；不漏前一个中6。 m12/48的5无低八度点；末上头7有下点，B3。m23/59末选上头2；m24/60起点只有一个附点2，不能把上小节末2误当额外起音。 m31/67半音符2后完整32分音与休止：1=.125，0=.125/.75/.25/.125/.5，#2=.125；所有休止总1.75拍，不用含混拍补齐。m32/68后半为2拍休止。 m36黑2与灰2真tie，保留.25+.25；末7为高双点。m72尾两个32分2/1=.125/.125，低7=.25并跨m73低7=.5真tie，总.75；m74末7四拍，全尾保留。 m40简谱#6作用保留至同小节末6，两者实音C5=72；五线C自然亦72。源m40首音时轴少1/16拍，选印.75并恢复后续拍位。 m15/51首selected源音延后约21.067ms，伴奏更迟；32分源键有半长release，保留全原ms而按印刷有理时值输出，不任意裁掉短音。 算法匹配用于检查人工读谱表与完整原源对应，不作为音乐验收。待root独立74小节二读及正式软件检验；无试听、录音对齐、UI/GPU/游戏输入。 Root实际阅读全部4页五线和4页辅助简谱，另手录所有74栏上声部最高音头，精确分数合并99个真实tie续头并重录所有休止，全部407事件的音高/起点/时值与候选完全一致；并非仅继承worker匹配结论。 Root独立从原二进制解XOR、90键映射、1517物理记录，改按原scan键FIFO重配752音，与worker按pitchFIFO全部一致；另从全音区间并集重算136段静默，12无音高键位记录、终止/header均完整保留。379选择按原攻击时序一对一对应，373其余音明确作为钢琴伴奏/和弦下头省略。 纠正候选决策第5条文字下界：实际输出始终48–84，而非49–84。m72末低7=C4在整体降12后C3=48，跨m73真tie合3/4拍；没有改变谱。只有m9/m45 B3降12越界，分别整个tie音明确抬12至59。 m31/67所有32分与各段休止逐一核对，两处休止合7/4拍，末临时升2与m32/68的3是不同音不连音。m36最后2两个头真实tie；m72节奏与m36不同，单独完整手录。m40两个#6均按C自然，源时移与换调差异采用公开谱逐项纠正。 主五线谱印82BPM，与原header一致；辅助简谱89/91不同，未用于输出节奏。全曲296拍216.58536585365854秒，固定速度公开谱选编不等于原录音/原EOP实际演奏时轴。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "38cc17a2fd46408aa6158ee7cb94282337f9701a19895555b21b64c876cbcbb5"
+  },
+  "note_count": 379,
+  "event_count": 407,
+  "duration_seconds": 216.58536585365854,
+  "limits": [
+    "Printed piano version selected; does not recover every performed timing nuance.",
+    "Two low heads explicitly octave raised.",
+    "EOP hand unknown; whole selected line visually verified.",
+    "No audio or game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-piano-ef3eef99f9a79837-night-eop-upper-v1.review.json",
+      "sha256": "bed4f424af1e954638c9b29d817f92cc023307caf0cbe5e472b6566ddd7949ba"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "93fa0ab558795e0feef7da638f2f541f305648eb13f53783673acb2bc0e457a8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a350041d90659c195fad87eff009742182db5d95269b31b3af3baf38a708222c"
+    },
+    {
+      "name": "0001-34aea04e96da.json",
+      "sha256": "ecbe5c58a5e3c0b6fcb82d98a4cfa2e57b3cd2c16d45948ef677a2552be7dea4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

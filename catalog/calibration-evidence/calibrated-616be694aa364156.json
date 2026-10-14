@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-616be694aa364156",
+  "source_id": "community-b3f73d5cb002b829",
+  "work_id": "work-deck-aeec77d24e62",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%AF%80%E5%88%AB%E4%B9%A6-1-%E9%82%93%E5%9E%9A-%E5%81%B7%E5%BE%97%E6%B5%AE%E7%94%9F%E5%8D%8A%E6%97%A5%E9%97%B2-3c0bb14ea8a8c87fe5bd6.deltamusic",
+  "status": "reviewed",
+  "sha256": "559dfa0c84de353576d755f5ad36d813f63d6b213d7fb92b242928caa9b3e939",
+  "source_sha256": "05950ed9207c517753b6073ededab31082472ae04324aa1cb756d0cc779fe023",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/377885.html",
+    "edition": "邓垚曲/指尖旋律改编，原神风物之诗琴谱，第1页，C调4/4、印刷100BPM",
+    "score_sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 64,
+    "maximum_parser_boundary_error_seconds": 2.4868995751603507e-14
+  },
+  "review_note": "完整64源音，所选第9–24小节右手；明确公开诗琴改编版本。 唯一选定参考377885第一页，为邓垚曲、指尖旋律改编的原神风物之诗琴简谱。它是明确改编版，不声称原钢琴录音原样转写；采用其右手单旋律与初段印刷100BPM。 按原稿完整现有范围逐音映射，源始终保留、修订另存；原谱范围后续第25小节112BPM及其他页均不在这些来源内，不额外加入。 本版不取左手和声；印谱高音点及减时线逐项独立读取。第12/16/20/24终止各四拍，不把整小节终止缩成来源默认短拍。 没有补音或删音；每个来源音一对一映射，既有分隔条/编辑器默认8不当作可靠时值。真正同音连线以单次起音表示。 音乐视觉复核、软件检验、真人听感、真实游戏分别记录；本提案未做原录音对齐、真人听感或实机测试，仍待root独立音乐复核。 完整64源音对应第9–24小节，参考降八度，G3–B4；源调号元数据1=F与实际C调/A小调字面音列不符，以逐音实际音高为准，不再套用F调移调。 源64音全保留且音高不变；源时值恰为选定谱的一半，因此本选定改编版32→64拍，88→100BPM，原21.8181818182秒→38.4秒。明确改变速度与时值单位，不宣称维持原来源播放速度或原录音速度。 Root独立另录全部小节与四来源逐音比较一致；引子四个六拍延音、主题四个四拍尾音、029降7半音、community降八度及拍长倍增、166源31八度纠正全部复核。明确选用公开诗琴改编版，非原钢琴录音核对。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "note_count": 64,
+  "event_count": 64,
+  "duration_seconds": 38.4,
+  "limits": [
+    "Selected published lyre arrangement, not verified against original piano performance.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-b3f73d5cb002b829-farewell-book-selected-lyre.review.json",
+      "sha256": "857e331a927869f639644ac81ef7f6b08b0aed3096dc42add7e00abe1c0b443a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "25f66d47d061d99e6eb4a765ebee13cb021b918959ab4f0143ba95f4bda448fd"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c321f45c0c72237f38a0e84f32dab97db677406f4d73d90813b8639336165f62"
+    },
+    {
+      "name": "0004-3ef049cf18b8.json",
+      "sha256": "143e29e1dc0b837eda808cf3c92820060a6906f3f73d76f60609886a0edb8f6c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

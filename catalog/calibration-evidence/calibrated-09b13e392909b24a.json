@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-09b13e392909b24a",
+  "source_id": "zhouzhou-124",
+  "work_id": "work-29145bc9acba",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "bf1fe86a81c6b6f4a6791f8f2e3fca58df680f59a04594eeb211d7c342ace58d",
+  "source_sha256": "805755709c4ee04a3c2a20639b180efb3e08ad40fb50e0a27b8186fb1d16ecd5",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-19502-1.html",
+    "edition": "EOP19502, printed C,4/4,quarter120BPM; explicitly selected right-hand melody from piano arrangement",
+    "score_sha256": "6a336c90b4603806fcfc57f009da4db413e043e073feca960fa88f29ab51744d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 108,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "EOP m6 start through the end of the first three beats of m29, transposed -12; then the saved extra octave-up final phrase uses m35 last beat, m36 and m37 untransposed. The source has only that reprise, not the intervening repeated chorus. The final A5 is the printed whole note in m37. This is an explicit melody selection from the right-hand piano stave, not an authenticated vocal edition. Chord members are recorded before melody selection; m14a3 and m24a1 use the lower member. Printed pitch and duration are transcribed manually. No automatic highest-note extraction, blind-test claim, audio analysis or game test. Every digitized bar sums to four quarter-note beats. All selected notes are separate attacks; the selected spans contain no printed ties or rests. m28a2 and m36a2 have two dots above 1, hence C6/MIDI84 in the original reference octave. Sources 013 and 102 have a local octave drop in lyric row5 after the initial A; the initial A remains in the intended register. Source124 does not have that drop. Repeated source attacks consolidated under this chosen piano edition are editorial changes, not literal printed ties. Source groups and changed pitch assignments are disclosed per candidate. All saved source notes are represented. Source editor separators and visual hold fields are preserved in the decoding, but are not invented timed rests. EOP m6 start through the end of the first three beats of m29, transposed -12; then the saved extra octave-up final phrase uses m35 last beat, m36 and m37 untransposed. The source has only that reprise, not the intervening repeated chorus. The final A5 is the printed whole note in m37. Reference-to-output shift is 0 for013; -12 for102; -12 for124 main section and 0 for its saved extra high final phrase. There is no blanket source-to-output transposition. m7/m15/m11/m19 and m22 contain fewer attacks in the selected piano edition than the corresponding source groups. Those repeated source attacks are consolidated explicitly, retaining all source indices in coverage; this is a version choice rather than a claim that the sources originally notated ties. m25 explicitly reads A4-A4-G4-B4-A4(dotted quarter)-C5(eighth). Source013 C5 at87 becomes G4; source102 C4 at96 becomes A3 and A3 at98 becomes B3; source124 G3 at86 becomes B3. Sources013 and124 split their first A into the two printed A eighths. Source124 [87,88] A3 attacks consolidate to the dotted-quarter A3. Source013 extra C at10 combines with11 at m8; its row5 C4 at44 is raised to C5 and combines with45 at m16. Source102 trailing repeated Ds [9,10],[49,50],[87,88] combine to the respective printed D holds. No artificial pauses are added at source editor line or bar separators. The chosen musical spans have no rests, and the raw sources have no formal timed-rest events. Root独立两页27小节音级/有理时值复读，依各来源原有范围重建全部输出一致；m14第3攻击及m24首音明确选下声部D5/E5，非机械最高音。 m25明确两枚A八分，G八分、B八分、附点A、C八分；m28及m36的第二攻击C6高两点核实。 三源合并均为所选钢琴版本的编辑处理，不称源真tie；124末句明确从m29三拍后跳接m35末拍，保留原高音区及最终四拍A5。无试听/原唱对齐/实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6a336c90b4603806fcfc57f009da4db413e043e073feca960fa88f29ab51744d"
+  },
+  "note_count": 108,
+  "event_count": 108,
+  "duration_seconds": 52,
+  "limits": [
+    "Community-hosted piano transcription, not publisher or vocal-edition authentication.",
+    "The monophonic line is selected explicitly from the right-hand piano stave; m14a3 and m24a1 are lower chord members.",
+    "Editorial consolidations and pitch corrections alter source attacks as itemized; full coverage does not mean unchanged source notes.",
+    "Raw editor tuple widths, hold flags and separators do not establish authoritative source timing.",
+    "No listening, recording alignment, UI, game or GPU test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-124-dongnan-reference-v1.review.json",
+      "sha256": "9d8d88d1af2fe59f14f8108666d2d3f919754e6fd43b60364eb600ba1f70c418"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "06ee81f11a5dfec509c0a90880a72117183c611b4a7db9a5a7957df4b0832f59"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f9956cfbfc1d53f6938a663fc69835dc1b8298ceb501df384f908602bcd67ab0"
+    },
+    {
+      "name": "0003-faedce639770.json",
+      "sha256": "5e4412620ebd0bfc7da3fc43391d9b677225fda5e669297a18bf88d20ddd0088"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

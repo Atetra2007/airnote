@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0bf062326a6ae27a",
+  "source_id": "zhouzhou-114",
+  "work_id": "work-36dfb0a43e68",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f2c3ae04a1bb4a2e4f9033a28cb107c286a0942749a3ab38fe86da05ee76a1e5",
+  "source_sha256": "8327f3e587507374c4bfd6821e433e211dd76b195da5f6500c0f66da4ed53f78",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/321425.html",
+    "edition": "桃李醉春风记谱毛不易版，Bb4/4，打印四分68BPM；两倚音明确.125拍",
+    "score_sha256": "59ad6586593e8da1bbd63ca41d27333b9ef8600775280b530ff49da7ea8ffc56"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 132,
+    "maximum_parser_boundary_error_seconds": 1.9895196601282805e-13
+  },
+  "review_note": "全部原122音，从不愿染拾音至末一回，保留来源跳段；明确补完已开始的回字尾音，88.5拍。 主参考321425桃李醉春风记谱毛不易版，Bb4/4打印四分68BPM；全单页与所有使用段落放大图已看。322204孙世彦Bb68版仅作比较，不混入时值或修饰音。 原洲洲114完整11行122音逐个映射；源无歌词和可靠整曲节奏。保留原形：首次主歌8小节、第二次开头2小节后直接跳回忆辗来回至远飞4小节、副歌至一回。原未包括第二次心中的花枯萎至不回，明确保留该跳段，不把参照录音整曲强塞进节选。 主参考Bb4降10半音至C4以保持原稿音区：高1=C5，普通6=A4，低6=A3。源65普通2改3；源111、112两枚普通3升八度至高3，其余119源音音高保持。 源111原数组[3,0,8]的第三项8是受控导出确认的八分时值提示，音高仍E4；并非高八度。依所选谱更正为E5并取十六分.25，证据分别保留原数组及新印谱，不使用默认四分值推定整歌节奏。 首次不回V4打印5 .25、3 .5、3 .25连同音3 1；还原前一枚3 .5并把source23配到后一枚3合计1.25。5→3的异音弧不是延音；第二3才接后续同音3延音。 V6身尘灰：source35的2按打印小倚音保留，补主1；倚音明确取.125拍，主1借时后.875拍。C3回字前同样将打印小高2赋.125拍并把主高3改.875。两处数值是演奏编配选择，印谱倚音未标数值。 V7、R5清/世等5的同音连线分别合成持续时值。R4心扉打印5 .25→6 .25是异音连奏，后面的6 .5独立起音；新增短6并把source71映射后一6。 R6远飞的普通3 .75、普通6 .25连普通6 2、普通6 .5、高1 .5；两枚连线6合成2.25拍。全图和专门放大确认这几枚6均普通音，不降八度、不新增同音起音。 C1灰末高3 .25跨小节连C2高3 3，共3.25拍。随后source92为独立高3 .5，source93高2 .25，新增末普通6 .25；source94保留下一小节独立普通6 1。 C3生7 .25接同音7 .5合.75；无5 .5之后C4悔前还有独立5 .5，予以补齐，source100主3 .5连3 2合2.5。数字之外波形回音/颤音装饰简化为所印主音，不宣称这些装饰音本身错误或已精确实现。 C5高4 .25连高4 .5合.75。C6高5 .75、高4 .25连高4 .5、高3 .25/高2 .25、高3 1、高3 .5/高2 .5；原111/112升八度并补短高2。C7普通6 .25连普通6 .5，补其后的高2 .25，再接source118高3 .25。 原source121结束在回字高1。明确把这一字补全为高1 .25、7 .25、6 .5连6 2；补两枚7/6共2.75拍，止于已开始的回字持音末端，不加入随后愿这桥段拾音。不是声称原122音已包含这一结尾。 全部122源音保留对应，新增10数值音（其中一枚为C3小倚音），补10个印谱半拍休止；132音10休止142事件，88.5拍，打印68BPM，78.088235294秒。 Root完整读原图及主歌/第二主歌/副歌放大图，另录142输出事件的音高/时值/起点全部一致；122原音另逐字解码与映射完整。两倚音借时、颤音简化、原跳段及尾字补完明确披露。正式软件审计另绑定；未人工试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "59ad6586593e8da1bbd63ca41d27333b9ef8600775280b530ff49da7ea8ffc56"
+  },
+  "note_count": 132,
+  "event_count": 142,
+  "duration_seconds": 78.08823529411765,
+  "limits": [
+    "Two unmeasured graces explicitly assigned .125beat borrowed from principals; printed trill/turn signs simplified.",
+    "Source phrase skips preserved; final begun 回 phrase explicitly completed with7/6.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-114-buran-complete-source.review.json",
+      "sha256": "e117c259dc927b3a03822815f6988b74322fd5fc0f5cb8be813707e2c9819383"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5787d1cf498990e81eca1dd885aeefefd2d695c5dec826c8eab2089560e29e23"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f03f4ee84a84c9ed0a40ea368d1c76227af85b63799dbe7214c8e8788f0b763d"
+    },
+    {
+      "name": "0001-efea691ef6a4.json",
+      "sha256": "d91713ee75ed57845fc79109d9eeadad8c0c3fab97f792eab5a0d0d80c4d66a0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

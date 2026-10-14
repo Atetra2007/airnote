@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f819f0e655ab4a53",
+  "source_id": "piano-2359ee5dfd05411e",
+  "work_id": "work-dd60959aaf0a",
+  "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2/%E8%90%A7%E5%BF%86%E6%83%85Alex%20-%20%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2.eop",
+  "status": "reviewed",
+  "sha256": "516bdcfa86ff86546c9bf5cb383c0df4c1af6a2f90ec35f4345978684d49d28b",
+  "source_sha256": "e3843016f69e91f65db7b2362537414f94c552af0b97fb68f351b5013c6e9210",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-10755.html",
+    "edition": "G4/4quarter68;complete38bars;GtoCminus7",
+    "score_sha256": "e235d335fd7370e55f9edc8c343c7e3a761a0b432a34ec4f0c756c51d80005d4"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 340,
+    "maximum_parser_boundary_error_seconds": 6.252776074688882e-13
+  },
+  "review_note": "Complete557originalnotepairs1114events38bars;340printedmelodyretained217printedaccompanimentexplicitlyomitted 原源EOP完整557note-pairs、1114on/off及终止record全部重解保存；手字段unknown不能冒称原文件标注右手。依据完整印谱逐小节/起音/音高绑定，217伴奏每一音逐索引明确省略，340旋律音全部保留，不使用highest-per-onset或越界静默丢弃。 参考EOP10755两页完整38小节G调4/4四分68，原EOP同曲68。G至C统一-7，全部557音音乐网格吻合所选右/左声部。最高A5，最低旋律G3；5个G3是右手旋律，不能用>=57阈值误归伴奏。 原50ms释放间隔与下一起音间的真实差全部保留，所印音长等于原按键hold加50ms；不是将50ms槽每个写成乐谱休止。完整各原note-on/off时间戳保留，输出使用印谱时值与真实rest。 印谱首0+0+附点八分0合2.75拍；源首真实onset=5.0166666667拍，超出印谱首起音的2.2666666667拍作为来源录制前置padding明确省略，绝不称印谱休止。最后源bassA1持续4拍/50msrelease完整保留但选右手静默4拍。 m7/m15第二组低7/6十六分、低5八分；最后低6两拍。source88/195低G3是右手低5，完整保留。m20最后低G3半拍source273也属于印谱右手，不按bass阈值删除。 m9/m17普通3十六分与后附点四分同音tie合1.75；m11/m19普通1十六分与后四分tie合1.25；m12普通2十六分+两拍延续合2.25；m13普通3十六分+三拍合3.25，均为一次起音。 m20第二2十六分与后十六分tie合.5；普通5十六分与后八分tie=.75，最后低5半拍另起。m24/m32末组低6/低5/低6/普通1四个十六分，source335/471低5完整保留。 m21低6两拍、rest附点八分.75及五个十六分；小节4拍。m25/m33与m28/m36的十六分组合各手读，不按重复近似套错。 m37末普通6两拍后m38右手四拍rest；源m38仅bassA1四拍，明确单声部选版省略。38小节152拍，340音及印谱真实rest完整，不截尾。 全两页及适用细图实际view_image，候选仍待root独立全谱二读与正式软件检验；未音频/UI/GPU/录音对齐/实机游戏。 Root独立完整两页38小节与十整行裁图二读，另录340旋律音及217伴奏音的音级/八度/有理ticks，352播放事件152拍全部一致。完整557源音及1114原on/off重新解码，终止record保存。 m20第二2由两个十六分tie合.5拍；其5是十六分+八分=.75，纠正文案，输出时值原本正确。m9/17 E4 tie1.75、m11/19 C4 tie1.25、m12 D4 tie2.25、m13 E4 tie3.25皆核对。 source88/195/273/335/471五个G3真实位于印谱右手且全部保留；省略217项仅按整幅印刷左手声部逐索引绑定，不按音域阈值分类。m38左手A1四拍明确省略，右手终四拍休止保留。 起始原5.0166667拍减非音乐padding34/15拍，保留印谱首11/4拍休止；源50ms release gaps保存但不冒充独立音乐休止，印谱时槽与原hold+50ms逐项一致。 参考G至C统一-7，原源所有保留音无移调改音。此为完整来源单声部选版，未试听、录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e235d335fd7370e55f9edc8c343c7e3a761a0b432a34ec4f0c756c51d80005d4"
+  },
+  "note_count": 340,
+  "event_count": 352,
+  "duration_seconds": 134.11764705882354,
+  "limits": [
+    "MonophonicprintedRHselected;217LHsourceattacksomittedexplicitlywithfullsourceevidence.",
+    "OriginalEOPhandfieldunknown;voicedispositionfromprintedreference.",
+    "2.2666667beatsleadingrecordingpaddingomitted;printed2.75restpreserved.",
+    "Noaudio/UI/GPU/recordingalignment/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-piano-2359ee5dfd05411e-buweixia-v2.review.json",
+      "sha256": "356a2b239d5f02441187b46caa820e9c35a98e793ac77808f351b5db6bdab050"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bd6586d47b4a59f622609e7a4f5f47bae4f09946f42d9952d2eedcbb98cc8034"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4cace5f2ef45f9c0a4f3aa6da2783d85469308bb2ea82870524e9521e80d43e9"
+    },
+    {
+      "name": "0001-d588af1e6b36.json",
+      "sha256": "befc6243212e0259699965de51903c810151599c885457a60dabafe632d0e18f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

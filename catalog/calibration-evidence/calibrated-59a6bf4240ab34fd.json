@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-59a6bf4240ab34fd",
+  "source_id": "zhouzhou-004",
+  "work_id": "work-father",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "699c3e7b12b360f8191f4e3fdc4be0049bbb4c852610b4031fdffc6063565ff5",
+  "source_sha256": "0f5c554773ba8398e51be5ffea73b5650c38011e3555366b93c8b9e6edf8d60b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/22168.html",
+    "edition": "筷子兄弟父亲，孙世彦E4/4两页声乐谱，打印72；明确来源音区、装饰简化与曲式",
+    "score_sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 187,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "完整184源音/184事件；父亲（主歌桥段及完整副歌） 身份为王太利词曲、筷子兄弟《父亲》，来源完整旋律和歌词与22168孙世彦制谱互证；不是同名的刘和刚作品。 主参考为22168孙世彦E调4/4声乐两页，打印四分音72BPM。已完整视读两页主歌、桥段、副歌和结尾；118470声乐版仅比对身份，不拼接其细节。其他已下载钢琴/吉他版未视读，不作为本提案音符依据。 按每份来源实际范围选定曲式，不追加来源不存在的主歌、完整第二遍或器乐间奏；公开整曲与源片段不混称。全部现有源音与休止均逐项处置，修订另存副本。 同音延长弧合成持续音；异音圆弧是连奏，不合并起音。C4长字655的弧始于6，故保留6、5、5三次起音，并保留留字另一个长5；尾句3高至2高同样是连奏。 B4安字的3一拍半、2半拍是两个起音，下一B5康字2三拍再次起音。来源只有一个末2时，保留源末2为康并显式恢复其前经过2，不把同音跨字误当延音。 所有节奏以所选声乐版为明确修订依据；默认一拍/长按提示不冒称已知原节奏。源异音装饰合并只是显式选择该声乐旋律，不宣称源演奏必然错误。 本编配完成逐音视觉音乐校对和root独立二读；全部677事件精确匹配。软件审计单独绑定；尚未人工听感、录音对齐或实际游戏验证。 004原始结构化JSON完整14歌词行184音；b=1是长按提示，并非降号，也不能量化为固定拍数。保留主歌C4、副歌C5的源音区，以打印72重建全部115拍。 首4源G4/C4/E4/G4按印谱总是向你改C4/G3/C4/E4；源75F4改G4，78D4改E4，79C4康改D4，并恢复安字后D4八分经过。原87B4不要改A4，101B4换改C5。 C4在源105A4和106G4长留之间恢复两个G4(.25/.5)起音。完整184源音对应187音16休止203事件、115拍72BPM。末啦字A4选C16三拍终止，不追加来源不存在的器乐或后续主副歌。 Root完整视读两页及全部四来源原件，独立输入每个事件，与此版本完全一致；复核音区、插入音、装饰简化、同音延长及末段截点，所有原源事件均有处置。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "note_count": 187,
+  "event_count": 203,
+  "duration_seconds": 95.83333333333333,
+  "limits": [
+    "Explicit selected-vocal-edition arrangement, not proof every original ornament is wrong.",
+    "No human listening, acoustic alignment or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-004-father-source-form.review.json",
+      "sha256": "618635cac0fb9a5477900040b4fc35d9c4af7d7301885836ee92a7df753909ef"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1935211cb250bf0190bd852e88f35c7ec281ef7150757fc812287ce4b2cd87c7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f047cbf0ba08e155779a742521a9070bab84dd631bd4ee571d80512713fbb09b"
+    },
+    {
+      "name": "0002-4ae57ec0c854.json",
+      "sha256": "27d9cd18604e745c17b6b184d5720b2c03664cb9bd392e1c60f2332dc5cbbf9f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

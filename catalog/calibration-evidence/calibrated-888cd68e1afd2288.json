@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-888cd68e1afd2288",
+  "source_id": "social-32f28d6c9392b006",
+  "work_id": "work-633dba425b38",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=1r0Eso9G7U7D",
+  "status": "reviewed",
+  "sha256": "2bcd42ba4941b9a78bfc89e552ae89a0a44cb18afd13f0f931be6272f834aa12",
+  "source_sha256": "e4d07204b031b3470a86415891d5aeea333d33fcd12aec000f510c41c90311de",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Stave-15284.html",
+    "edition": "Complete-original216-twoverse-twochorus;EOP18-51-RHminus12;quarter128;explicit-source215-extraCexcluded",
+    "score_sha256": "8d72b92ba336ccf06c4814c695c8da972502856632d049fb9c8606386802207c"
+  },
+  "review_method": "Root complete34bar physical second-reading plus fresh full216 original source decoding and all phrase/tail edition dispositions; 216 independent events matched",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 212,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Root已实际看完整三页简谱与五线谱第2/3/4页全部所选18–51栏，另录216声音事件136拍，并在复读中发现初稿37/45错误高G；v2已改为实际G4，统一降八度后G3。不是盲读，未由算法匹配分数批准音乐。 本次root重新解码全部原始来源，社区293事件含216音77休止；社交216SMF音与216DFHS音含57处一tick差异、78SMF间隙均入证。按完整两主歌两副歌曲式选择公开21音声部钢琴版，所有216原音均有逐项处置。 完整段落路由逐组审查：原0–52第一主歌闭C，53–109第二主歌闭E；110–159第一副歌与160–214第二副歌闭A。公开18–25、26–34及35前休止、35后至43首E、43后至51对应完整两轮段落，DJ重复头和变体过门都明确按印谱改编，不声称逐头原版恢复。 原215末C4是独立的额外结尾，来源身份仍未证实；正式新编配明确选择印谱51末A3终止，原C逐项记为excluded并保留原稿。此为有据版本修订，不是将未知C认成A或凭空删除后声称原版通过。 印谱23/31真实A5降A4、39/47中间E4和37/45 G4均保留；42→43及50→51相同E有真实重新起音，不因音高相同误作tie。终51 E5二拍接E/D/C/A各半拍完整保留。 公开quarter128、全RH降12，212音4休止/136拍。社交另保原225tick120BPM开头休止物理.234375秒，对应新128BPM半拍，故217事件136.5拍；社区216事件136拍。真人试听与实机游戏均未执行。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8d72b92ba336ccf06c4814c695c8da972502856632d049fb9c8606386802207c"
+  },
+  "note_count": 212,
+  "event_count": 217,
+  "duration_seconds": 63.984375,
+  "limits": [
+    "Explicit published21note melodic edition, not original literal certification",
+    "Source215 extraC not musically verified; explicitly excluded from new ending",
+    "No live game or listening validation",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-32f28d6c9392b006-full216-selected-piano136-v2.review.json",
+      "sha256": "e7de8a9bdee292b64703e72f8e89e0067e779d0a2ee5c4fabdbaa7a8681f69c1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3393259e35eda1073c185b26fd4fda8a520ae075965c77d326908846ee0e480f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c9299d18d3ead0c1fd9f28d08887332099ee569ed7d890503e2a6103eac38eba"
+    },
+    {
+      "name": "0002-86c9d0727c0b.json",
+      "sha256": "40fbf325223787fbe4c1ed9a7d355d383e952b7d998bf8b6b582a57d301a1669"
+    },
+    {
+      "name": "public-review-summaries-20261013-seeme-two-v1.json",
+      "sha256": "46f814c2a8ba59a4279b039e86dc901ff4f67769a481c5de90adb1afef9fac3b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

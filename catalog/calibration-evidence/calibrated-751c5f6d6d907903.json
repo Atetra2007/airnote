@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-751c5f6d6d907903",
+  "source_id": "zhouzhou-212",
+  "work_id": "work-fbc15267a9be",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "0db145e1694273e7fb22f930d108da412730c749c87498fd403fb7ac794aa820",
+  "source_sha256": "0fc4968c182635292180e1be8d2f2bb723da218454f8d7e5ecef6eb5f1068890",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/418980.html",
+    "edition": "C4/4声乐版100BPM，完整来源两遍采用第一英文声乐段；省器乐与后续返始",
+    "score_sha256": "2d61f4034bf01b34dce4a28431e88b00596c7941dee9697fe8dcbb3ba1cdc7df"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 74,
+    "maximum_parser_boundary_error_seconds": 8.526512829121202e-14
+  },
+  "review_note": "完整76源音，两遍声乐主段；全部来源映射保存。 全来源八行76音完整读取，第一遍37音、第二遍39音；源没有定量节奏或BPM。所有原源保存，修订另存。 选418980《你是我的阳光》声乐版，1=C4/4、印每分钟100拍。只采用第一组英文声乐16小节，按原来源重复两遍；不添加谱面的器乐前奏/间奏/后续再现和结束句。 源第6与43自然2按所选谱上行中的#2改为D#4；439370及380209另版亦印#2。旧451171吉他版只开头15音提案从未验收，不继承该部分候选。 第二遍源52/53两个A4在所选when位置合为一拍，源73/74的E4/D4回转选为E4一拍。两个多余起音明确按所选印谱简化，原源每一音均有去向；D→E不是同音延音。 数字1显式置C4、低5为G3，保持来源音区。保留所有印谱有量休止（含gray后1拍、please前两次1拍、每遍尾1拍），仅省最初起音前1拍休止。 最终74音19休止93事件、127拍、100BPM、76.2秒；两遍源末不同2音回转已完整处置，不以第一遍覆盖第二遍。 Root完整视读全部参考主段和76源音；独立读谱复核全部93事件一致，5l/5与#2/♯2只是记号字符串差异，已单独留证解释。正式软件审计另绑定；未人工试听、未录音对齐、未实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "2d61f4034bf01b34dce4a28431e88b00596c7941dee9697fe8dcbb3ba1cdc7df"
+  },
+  "note_count": 74,
+  "event_count": 93,
+  "duration_seconds": 76.2,
+  "limits": [
+    "Explicit selected vocal edition and source-register arrangement, not recording reconstruction.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-212-sunshine-two-pass-vocal.review.json",
+      "sha256": "f49ecad753b4bc5c8da74183766bc475cf755a7f72f9caa75443bef1506a4d85"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6429079415bb7cb0dc66b101a572168f5332173b1cef900a2c1a962801bb84b2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "5570c419081bf7f0152e9c8cde7679603c9b712f8e38f6ba0058724429a74cbc"
+    },
+    {
+      "name": "0001-6624a61059f4.json",
+      "sha256": "edb65a8f5551fc6b682837173249a3a66ecda00ffc1c5591cf62a727e22d0585"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

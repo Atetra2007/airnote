@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e7969004999551e4",
+  "source_id": "zhouzhou-184",
+  "work_id": "work-418185d58d4a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d884f1afc5538c3a9fff8ac27f53c5335d0edc6c35031dde33a521da7d6bdddb",
+  "source_sha256": "5b12376fcc5cf3d810594d5c77a40e0cdd7d40eea36a83d054c8f0ae9db1d745",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/301051.html",
+    "edition": "C调4/4声乐谱，两遍主歌及副歌至我字；无印刷数值BPM，明确练习80",
+    "score_sha256": "d0bbf08abb663ee4a30e82473bf0f2dfa0e85805e87c8fb547297013ec3fb8ba"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 153,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部143源音处置；两遍主歌、副歌至只要你记得我，不加间奏及其他歌词。 完整184原件8行143音：两遍各60音主歌，16音副歌与7音只要你记得我。保留两遍主歌先后再副歌的源曲式，不加参考前奏、括号间奏、第三四遍主歌或最后如果你会梦见我。全部143音均有明确输出或省略处置。 主参考301051清晰C调4/4简谱，一页已全页及五段原像素裁图读取。423751/444899较小同族谱与451199吉他版已看作对照；具体音高/时值只取301051，未拼接其他版花饰。 源音区A4至C6，统一降12半音后再按选版校正；输出A3至C5。原源没有可靠BPM和完整时值，本次明确选择练习编配80BPM，不把它宣称印谱数值或录音测速。参考未印数值BPM。 每遍V1–V12共48拍，两遍96拍；副歌C1–C7共28拍，C8只保留源末句7/6/延长6两拍，止于我字之后、括号间奏之前。总126拍94.5秒；153音12休止165事件。 V4的3到2、V5的3到5、V9的3到2、V10的5到6皆为异音连奏，其后重复2/5/2/6仍需独立起音。每遍补短2半拍、5半拍、2一拍、6十六分各一，共8起音。V9装饰3/2各四分之一拍，V10附点5/6为.75/.25，不以凑拍代替减时线。 V7开头两个3同音连线合1拍，随后另一个3半拍仍独立；V7末6到V8首3是异音连奏，V8第二3与第三3同音延长合1.5拍，V8首3半拍保持另一起音。源逐位选版将31/91 G改E、36/96 G改A、37/97 A改E，并保留38/98 E作为第二组延长。 V3第二2上的波形装饰按主音简化，源14/74 E改D；V11末参考明确低6，源58/118 B3选版改A3，且V12首低6没有跨小节延音线，独立3拍。它们是所选参考版差异，不把替代旋律虚称必错。 C1两个2有明确同音弧，合2拍；C2先5到3连奏，后3再同音延长合2.5拍。C3的低7到低6为异音连奏，C4主低6另起，补C3低6半拍。C5源130 E邻音是波形装饰的源写法，本次明确省略装饰，保留两个打印D起音1.5/.5拍；全部原值保存。 C6附点5到6后仍有一个独立6，补.25拍A4与1拍A4；然后休止半拍与高1半拍。C7高1附点1.5、7半拍、另7附点1.5、高1半拍，保持连奏不合音。源137 B4改C5、138 C5改B4以匹配此完整高音末句。C8 B4半拍、A4半拍连A4一拍，总2拍；不虚加谱面后续间奏。 全部源143音处置：142起音保留、1源装饰邻音明确省略、11印谱起音新增；统一降八度外12处选版音高更正完整列明，12个音乐休止依据印谱加入。无原音频节奏猜测。 Root完成全143源音视觉复核，独立十六分单位数组165事件完全匹配；11补音/1装饰省略/12选版改变逐项确认。正式软件检验另绑定，未人工试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "d0bbf08abb663ee4a30e82473bf0f2dfa0e85805e87c8fb547297013ec3fb8ba"
+  },
+  "note_count": 153,
+  "event_count": 165,
+  "duration_seconds": 94.5,
+  "limits": [
+    "Explicit vocal-edition differences and singleornament omission itemized.",
+    "80BPM selectedforpractice, not a printed or measuredoriginaltempo.",
+    "Completeexisting sourceform only, not full commercialrecording.",
+    "No audio alignment, human listening or actualgamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-184-summer-fruit-complete.review.json",
+      "sha256": "70c05aa24715be79f957834503c520125933c9a4d381ed8bf4212f3ddd27c368"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a2f8dd24c10ec0ce82622a578ffa804452624f4b5482fda64f091c07e9ca37ae"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2d70f01a8aea2704477031c6fd718855a9d0a5dfbea329c01afbce0e4d7aa5f4"
+    },
+    {
+      "name": "0001-fd28a6ab2ed0.json",
+      "sha256": "b26b04b45644cb0e0b42342855a363bf3d634a7db14db0f1b4a36f3419c4976f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

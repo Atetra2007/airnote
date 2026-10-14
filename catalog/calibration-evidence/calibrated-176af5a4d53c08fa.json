@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-176af5a4d53c08fa",
+  "source_id": "zhouzhou-213",
+  "work_id": "work-078e56bffcd4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "8f611e80f7bf0d3cebc365eb75893c27442d6fcfd2af245252733507aae9966c",
+  "source_sha256": "e1a90ee25f9cec6091aa4ea9e231eaea8fe4729d3d5646ab7816ff609896b2d9",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://truongca.com/images/sheet/pdf/don/don-t-forget-piano-toby-fox-truongca.com.pdf",
+    "edition": "Torby Brand piano arrangement, printed75, no key signature4/4, highestRHmelody; source49attackextent",
+    "score_sha256": "a09ab541776c9c70b2a0cedae760e2a9ecfa51fb160a48b0ce60a99a6fbcdb98"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 49,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "完整49源音主题段，弱起至第11小节前三拍；不扩充原源不存在的钢琴尾奏。 完整原JSON7行49音，所有音保持一对一映射，不删去原段落。旋律身份为Toby Fox DELTARUNE的Don't Forget。 所选独立参考为Torby Brand钢琴编配PDF第1页，无调号4/4、打印75BPM。从开头2拍弱起至第11小节前3拍持续C5终止；其后E5/D5再次起尾句及钢琴结束段不存在于本来源，未添加。第2页是来源说明而非缺失谱页。 右手最高正常音为主旋律，和弦其余音及左手伴奏不混入。参考全部音降12半音，显式源音区G3–C5；保留源连续起音。 源7、33低5(G3)与参考C5降八度后的C4不符，改为C4。源24G4改为A4，源25D4改为E4；这是按所选钢琴版明确修订，不宣称参考等同原录音。其余45源音音高不变。 第5小节E5二拍延至第6小节二拍，合4拍；第6随后E5一拍独立起音。第9末C5半拍连第10首半拍，合1拍；第10第二C5半拍连本小节3拍及第11开头3拍，共6.5拍，是不同的第二次起音。第12才出现rit，本来源止在此前，采用打印75固定速度。 最终49音无休止41拍32.8秒；源长按提示b不作为量化节奏。参考VGLeadSheets为不同编配和调性，77BPM不混入本候选；ninsheetmusic下载403记录保留。 Root和独立阅谱完成全部49音范围；初读时值及音高误差在原图复查后以最终报告明确更正，完整原始初读保留。正式软件审计另绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a09ab541776c9c70b2a0cedae760e2a9ecfa51fb160a48b0ce60a99a6fbcdb98"
+  },
+  "note_count": 49,
+  "event_count": 49,
+  "duration_seconds": 32.8,
+  "limits": [
+    "Monophonic octave-down selection from named piano arrangement.",
+    "Four explicit sourcepitch changes.",
+    "No listening, recording alignment or actual-gamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-213-dontforget-piano-melody.review.json",
+      "sha256": "b0b88dff3f7bc2a82639ff88ef36836dd97d60d2e3af9b79240848c573292b71"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e486f58ffd39c5291e60fc8f57cd33d4c9fb368671cd69f9e4c154dfe1c24f88"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "effb1359cfd506da19394b43d888e5e3ca3862903f49c617d679ec8e1583dbd0"
+    },
+    {
+      "name": "0001-476c1e53039c.json",
+      "sha256": "2dc3547917b57695ff0c51692b926d5096c708075869c4a7a088c4023ad81484"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

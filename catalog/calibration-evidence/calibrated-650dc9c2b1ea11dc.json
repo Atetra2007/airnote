@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-650dc9c2b1ea11dc",
+  "source_id": "zhouzhou-057",
+  "work_id": "work-333c7144abb7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d5a5cd13e7401a188641292c6312ac740464c9ab2524c683ea096a95856cc6a6",
+  "source_sha256": "d8f0857caaeccf3a7260d49df8786a985bf20d15cf502e417dbebc7c3b6ff54d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Westminster_Quarters",
+    "edition": "Wikipedia published LilyPond score westminster-kja3w163",
+    "score_sha256": "0a158949f6ae4d72c46c766f191aa3dc13a3144747bbb30cb0236bf35796bcdf",
+    "midi_sha256": "e7bbc9efddbdd97efe417458ec0ba9227deb8442c94171b035007338d29b4a5c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 8,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整现有来源逐音对照；输出采用明确的公开曲调编配 全部8音与公开 Westminster Quarters 动机4、5一致；正确读取原JSON字典中的独立o字段，未将高音误读为低八度。 补齐公开5/4谱每动机1、1、1、2拍；100 BPM为明确选定的编配速度。来源b字段仅作原始显示元数据，不据此发明音乐节奏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "0a158949f6ae4d72c46c766f191aa3dc13a3144747bbb30cb0236bf35796bcdf"
+  },
+  "note_count": 8,
+  "event_count": 8,
+  "duration_seconds": 6,
+  "limits": [
+    "这是可演奏的单旋律谱例编配；人工听感、真实游戏未验证。",
+    "没有用通用曲调推断特定商业录音的速度、音色或版本。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-057.review.json",
+      "sha256": "8f4be280cb6343c75dd77919bf8783d9e5b81090fc597e4eab7c88fcf25379c5"
+    },
+    {
+      "name": "review221-zhouzhou-057.timeline.json",
+      "sha256": "1c9486f2d697cff5b10a4e4fc782ed3b2355ea058dc66aa729b085e2d9e5b788"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fdac07aee27b9a82b9ac038b5f696e0616aef6c7c78ccdf1dd50ddaf6ed59275"
+    },
+    {
+      "name": "0002-6d26a52e7e71.json",
+      "sha256": "ea39166557e909b88094ef614d8700bfae1eb2514d840b340733a04421cf62ec"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

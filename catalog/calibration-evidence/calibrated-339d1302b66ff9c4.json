@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-339d1302b66ff9c4",
+  "source_id": "deck-11ab3540b048",
+  "work_id": "work-deck-11ab3540b048",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B9%8C%E5%85%B0%E5%B7%B4%E6%89%98%E7%9A%84%E5%A4%9C-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-3976eef92c.deltamusic",
+  "status": "reviewed",
+  "sha256": "aa5377bc68b09eb672954364a90edee58c261791aa94d0b2fc9fa0b0330c500f",
+  "source_sha256": "ecec254a88a3c1bad2957e1b3cd732fed0ee9819332311cd77333c7d09450e37",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/383715.html",
+    "edition": "丹正母子演唱/天恩记谱，降E调2/4；首段主歌加副歌主干旋律；明示65BPM编配",
+    "score_sha256": "bdfaae14e33a1767c252ba1327ca15cd3a1653f9755a2687a5676eef2daa8ee8"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 49,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "来源49音及5休止全覆盖；从穿过弱起至第一遍连风都听不到后的休止，主干旋律1拍弱起+16个2拍小节=33拍；非整曲。 单一依据为天恩丹正母子声乐谱，降E调2/4；主音Eb4，名义C来源整体升3半音，输出G3–C5（MIDI55–72）。原始1=E、meter=4/2元数据由该版本替代。 源34/35那么在印刷谱为两个八分音，各从0.25拍改0.5拍，其余47音的音高顺序、时值及全部5休止相符。 源20/21/37/48分别已编码5的1.5拍、3的2拍、低6的1拍、尾低6的3拍同音连线，保持；异音弧线不合并。 首个有词弱起后16个2拍小节，第一结尾低6延续和休止后结束，不引入前奏、第二段或后部对比段。 仅实现主干旋律；明示省略原稿亦未编码的未量化波音与末低6前倚音，不声称精确复刻装饰性演唱。 65BPM为沿用来源的明示编配速度，原图只有中速文字。其他已查看的大欢/汤晶锦版本不供音符。 Root独立转录17个谱面片段共33拍，与所有54事件完全相同。第11小节静之后的那么均为单横线八分；来源34/35误写双下划线，各补四分之一拍。 Root确认主歌末醉了的5跨小节共1.5拍、酒的3跨小节2拍、副歌静的低6内部连音共1拍、首结尾到的低6共3拍；相邻无同音连线的重复音保留各自起音。 原1=E、4/2为原稿元数据，采用天恩降E调2/4版本后明确替换；低3为G3、最高6为C5，未混入其他公开演唱版。 看见但省略两处波音及结尾低6前小倚音；这些不在原稿49音中，也无固定可继承时值。本次验收的是明确简化的主干旋律，不是逐装饰原唱复刻。 run07文件核验发现原站.png链接实际返回JPEG。保留原错误后缀来源记录，主参考改为字节完全相同的383715-1.jpg及image/jpeg，未转换或改写谱面像素；原错误媒体声明与失败记录另行归档。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "bdfaae14e33a1767c252ba1327ca15cd3a1653f9755a2687a5676eef2daa8ee8"
+  },
+  "note_count": 49,
+  "event_count": 54,
+  "duration_seconds": 30.46153846153846,
+  "limits": [
+    "Public secondary vocal transcription, not original performer recording orofficial score verification.",
+    "The main-melody realization omits disclosed unmeasured ornaments and uses explicit65BPM arrangement tempo.",
+    "No human listening or actual game check performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-11ab3540b048-vocal-sheet.review.json",
+      "sha256": "b43e08cae3d89ad9806d341942b4fada23f832636bd650d220c6b74159f81fb0"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a53472c4c0349efd5ca7b9b7c71c0ba34a3ff4cc3e4d951fad33bbc533f10596"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c7126f8196ce266a5ec9637898e3e8e90c37b0ec429511647849676c22e21189"
+    },
+    {
+      "name": "0001-a12a9ca6712b.json",
+      "sha256": "b29575a5713a707369d07205f158360b39730dfe3da667425ab39f61d9f123a0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

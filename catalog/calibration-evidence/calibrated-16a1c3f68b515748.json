@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-16a1c3f68b515748",
+  "source_id": "zhouzhou-178",
+  "work_id": "work-deck-c3003322bbda",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6648510755b82c06229f9781613ccffbd3e0c86039b29038f75c8b81b1e154bd",
+  "source_sha256": "48dbd9661bf26273213381cdc5e2cb9b3c47f962095c2e6c69043f9654f3d912",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/411067.html",
+    "edition": "孙世彦F调4/4打印120，第一遍23小节，显式装饰音版别选择",
+    "score_sha256": "8e2aed1b3ee733422946e85acd0e71b680232cee30637b8c75487d24f5c3e457"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整68源音，从在我的怀里至第一遍牵手；公开声乐版72音21休止。 完整原件6行68音全部解码并按歌词顺序映射，范围在我的怀里至第一遍牵手。不是37小节deck版本，也不是整首商业录音；源无可靠BPM及完整节奏，b与第三数组项仅保留为原提示，不当作绝对时值。 选择411067孙世彦F调4/4声乐谱打印120BPM，第一遍参考1–23小节；整体降5半音置C4。仅去原件范围前的开头1拍静默、末手字后1拍静默，内部所有印谱休止保留。总90拍45秒，范围G3–A4。 原68音恰好各映射一次，不省略原音事件；补4个印谱起音得到72音，内部21休止，93事件。最后手字E4保持3拍，没有补后续这一生一世等源无内容。 m7/15/22异音连奏后的重复2是独立四分起音，各补一个D4；m15夜字1到低7的下行补B3半拍，随后m16晚字A3一拍。不同音连奏绝不合成同音延长。 10处显式音高变化全部列出：源16/38 C4改B3，源40 C4改E4，源42 E4改C4；源49–54原A4/B4/C5/B4/G4/D4选择改为A3/A4/G4/G4/A4/G4。源55走字E4仍同。 原如云般游走的7音装饰未在取得的411067、379343、418474、19815、26342、339042、317387、136172版本中原样确认。本提案明确采用411067的同词声乐版：低6.5、正常6.5、5一拍、5.25、6.25、5.5、3三拍；是公开参考版编配替换，不把原装饰声称已逐字验证。 m18两个6第一低音、第二正常音：独立审查已用原像素裁图确认，先前第二审查员初读误低八度已保留原错误数组及resolved报告。末565为.25/.25/.5，三音连奏，不能误作三连音或同音延音。 Root全68原音、6歌词句复查，并用既有独立23小节读谱数组比较全部93事件一致；接受明确411067声乐选版重编，原如云般装饰的原样准确性仍未确认。正式软件审计另绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "8e2aed1b3ee733422946e85acd0e71b680232cee30637b8c75487d24f5c3e457"
+  },
+  "note_count": 72,
+  "event_count": 93,
+  "duration_seconds": 45,
+  "limits": [
+    "Selected411067 vocal edition explicitly replaces source-specific melisma; exact original ornament remains unverified.",
+    "Only sourcefirstverse scope, not entire commercial recording.",
+    "Source timingunquantified; selected120BPM is printedscore not audio measurement.",
+    "No human listening or real game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-178-baikal-first-verse.review.json",
+      "sha256": "2b13f87806635fb279335604b89f600943ed31a8c2d8c1f9208ebe27762a2413"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "da10a757b562533caae6145c87525679e3161548075d82d109395b67415d43e8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fe6b7d82dcea9b47688f8280dd2760205ed65abac80cdab77a7b852c9fe2153e"
+    },
+    {
+      "name": "0001-295923bb6f6f.json",
+      "sha256": "9cf82a2d093272c2224c2cbc0984bca92a8223b11bf8a2c31b147f1e9ba07c20"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

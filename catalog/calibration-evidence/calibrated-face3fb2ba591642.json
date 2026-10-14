@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-face3fb2ba591642",
+  "source_id": "social-ef5d462bf4923955",
+  "work_id": "work-8d295e045a97",
+  "source_url": "https://www.bilibili.com/read/cv53069152",
+  "status": "reviewed",
+  "sha256": "1d679381f216a069fa3c503d563dd5b5a49cd73c531acea0490c3b38013cfa7b",
+  "source_sha256": "8ea972675e27a39043509537718d843698b8be7fe09b600e6f0c8e6ad84c7046",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/WJrjlx1d",
+    "edition": "m44–58 upper printed line plus m59 first four attacks; reference pitch minus8 semitones; original85 source attacks all accounted",
+    "score_sha256": "fc08535a0847014af323318ec98de92f535c4e1225562646e732339f3b6fb40b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 85,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "m44–58 upper printed line plus m59 first four attacks; reference pitch minus8 semitones; original85 source attacks all accounted 原cv53069152完整HTML中85数字音、85键位、85节奏恢复，16栏全覆盖；不是另一个1765音来源。完整原59.5显式拍值保留，不先凑64拍。 明确选同曲五页独立钢琴谱的m44–58完整上方谱+m59前四攻击，85攻击与原16组顺序逐音一一对应；单声部采用每个参考和弦上音。 采用参考实音统一-8半音，source音无整体转调。原85音全部保留无增删、无合并拆分，只有原21/42/43/65四音按明确所选参考版修订。 四音为原21 D4→C#4；42 E4→C#5；43 A4→E5；65 C#5→C5。是明确改选参考钢琴版，不推断原作者意图。 原m3/7/15的3拍行映射参考m46/50/58，分别补其两个明确八分休止；原m11的3.5拍行映射m54，补一个明确八分休止。七个参考静默事件共3.5拍，不均匀摊进音符。 原末84 A4标1.5拍，所选m59第四E#5移-8为A4仅.5拍；明确修时值为.5，终止在该小节第2拍。后参考一拍休止及高F#6不在原来源，不加入，不声称原整曲。 原#7/M#以C4键位等音C5=72完整保留；m6/14#7对应参考G#5移-8=72，没有改B。 采用所选版印171BPM、4/4，明确替代原数字导出声明120BPM，不声称原120是作者节奏错误。参考转调选编总62拍/21.75438596491228秒，85音+7休止92事件。 原全部数字/键位/节奏文本、20个源标记、原节奏矛盾及修订原因完整保留。与1765来源共享参考图，但不继承它的源验收，root必须独立核原85映射。 未试听、录音对齐、UI、音频、GPU、实机游戏；root完整音乐复读与正式生产审计待办。 Root已经独立视读完整五页谱并单独手录61小节；此85源再选m44–58及m59前四攻击，逐音与root独立表对照，92事件62拍全部一致，不继承长MIDI来源的原源验收。 Root实际读取原HTML全部16栏数字/键位/时值，并重新解码85音59.5拍，逐一核对原音到输出的一一对应；4处改音21/42/43/65和末84的1.5→.5拍均明确选版，无原音或尾部省略。 Root确认缺拍处是七个印刷八分休止，位于输出9/11/25/27/41/57/59拍；参考统一降8，保留原等音#7=C5。原声明120保留为原始证据，输出171是选用印谱速度。末段到m59前2拍止，不补无源高F#6。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fc08535a0847014af323318ec98de92f535c4e1225562646e732339f3b6fb40b"
+  },
+  "note_count": 85,
+  "event_count": 92,
+  "duration_seconds": 21.75438596491228,
+  "limits": [
+    "Explicit alternate piano-edition reconstruction of complete85-note source fragment, not original author intention.",
+    "Four pitch changes, one terminal duration change, seven printed rest insertions disclosed.",
+    "Source120BPM replaced with reference171BPM as edition choice.",
+    "No audio/UI/GPU/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-ef5d462bf4923955-shimo85-v1.review.json",
+      "sha256": "40a354ffc31ec9a3708bf4c320783230d3840d7b65e218be016105032692345a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "17d2a06828e265ebf891649ec835a7bb48bf5c250804e91e39a829d6cc23acce"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "41acefeec6d14dc769deab4fbb26a68cee165ae12c14f7f13d66a93bfea8dd1e"
+    },
+    {
+      "name": "0001-5e6da0e9ffba.json",
+      "sha256": "2089f992d4bcdbded83dd20731113612707917f4ce3b138296c19c105cff527c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

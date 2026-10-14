@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fbf2664f3b46bb01",
+  "source_id": "websheet-3df07cbd02312adc",
+  "work_id": "work-31d9743659b0",
+  "source_url": "https://piastudy.com/Intermediate/1RwZo1RAr",
+  "status": "reviewed",
+  "sha256": "fdf4dabb4ff52bf5540b5763c7e1491e520c7ce866622e686dc8f16e837f39d7",
+  "source_sha256": "3df07cbd02312adc225576ee87f1c36bf58faef41e229cc126d22e9862144bb8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/1RwZo1RAr",
+    "edition": "Abquarter75→Bm41-44→Ab;59physical80expandedbars;originalRHrestedition;explicitEOPm17tie-repair;Cminus8",
+    "score_sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "review_method": "Root完整6页及细图视觉复核，独立59小节起音音级手录与原SVG464音头音名/时值/变音复算，31休止/59连线/80小节反复路线及全部1422源音逐项核验。所有正式ScoreCodec事件与已审时间线比较；隔离导入和重启通过，虚拟播放未发送真实输入。人工听感与实机未验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 568,
+    "maximum_parser_boundary_error_seconds": 5.826450433232822e-13
+  },
+  "review_note": "海屿你完整右手旋律休止选版。原1422音（575右手、847左手）全部逐音处置；847伴奏声部明确省略，29处伴奏版别音高差异另有记录。原三页59小节按1–35、13–33、36–59展开80小节，320拍、75BPM、256秒。保留原SVG休止版，独立EOP部分以延音代休止，二者不被谎称同节奏。统一写谱-8半音，输出G3–A5；m41–44转B、m45回Ab，所有相对八度保留。原m16末至m17后部错误长tie按独立EOP修为m17局部tie，第一遍缺失降B4于第66.75拍补.75拍（输出D4）；第二遍source693提前.25拍延为.75拍。source265/674/980过长保持改为.25/.25/.5拍；八处重复导出tie续音并入已有攻击。568音、40休止，休止总25.25拍。Root实际读全6页和细图，另手录59小节起音音级、重读原SVG464右手音头时值/音名/附点/变音符号，逐项检查31物理休止及59真tie，并以独立MIDI库复核1422音及3640消息。完整原始证据、具体逐源映射和完整复核决策保留本地且SHA绑定。正式软件解析、时间线、隔离导入及重启通过；真人试听、原录音对齐与实机游戏未测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "note_count": 568,
+  "event_count": 608,
+  "duration_seconds": 256,
+  "limits": [
+    "OriginalRHrestedition,EOPholds-versus-restsdifferencesexplicit.",
+    "OneexplicitfirstpassmissingBattack;source693onsetrepair;source265674980durationrepairs.",
+    "AbsoluteCregisterchosenfromoriginalwrittenstaffminus8;LHwholevoiceomitted847notes.",
+    "Printed75notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-websheet-3df07cbd02312adc-haiyuni-full-v1.review.json",
+      "sha256": "e7f28004428f2fbd289cdb585fad63ad3164ee3734ccfb11a9a62962947aeb73"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "39a55c776c38cefd229cd69e7876892a8afe348f7c573a2031694f1763bbef0c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fcaed0c8c984c3d48f23c51edc1fd47400f7da44c1a6a51e26040056e5fad01c"
+    },
+    {
+      "name": "0001-a89828e19127.json",
+      "sha256": "b30895ec1d7a5ffd916c75cc111891b273d4b42bbc758f82adbcc287b3f7c867"
+    },
+    {
+      "name": "public-review-summaries-20261013.json",
+      "sha256": "bfea5dfa2089359e5d57cddab921538af3756ae13df1787cc8091bcfd0c3b45f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

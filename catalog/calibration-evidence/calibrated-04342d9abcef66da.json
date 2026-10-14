@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-04342d9abcef66da",
+  "source_id": "community-01f47dea7e4c6aa4",
+  "work_id": "work-deck-c03da52ba0d7",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E6%9C%AC%E6%A8%B1-%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5-%E6%A7%91%E6%A7%91%E6%A7%91-217034cfd504e38343ca8.deltamusic",
+  "status": "reviewed",
+  "sha256": "3560a79da0495f4328b029a5ef665d4b7f53db9479b3dcacc388ccd29184f589",
+  "source_sha256": "32ff488ffc9d813ef8d315cb87e48de5be3b9c6d424909ac65c37737d8dd1d98",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/148597.html",
+    "edition": "EveryonePiano EasyVersion Fmajor150BPM;m1-161;minus12 and additionalminus12 in m13-20/61-68/153-161",
+    "score_sha256": "bf4dc9767173eb2e623e68c28f60f93ea41d3a16481046e29452ad3b833c2979"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 1290,
+    "maximum_parser_boundary_error_seconds": 3.836930773104541e-12
+  },
+  "review_note": "complete-original1268notes;entire161soundingbars;notfullpianoarrangement One selected complete edition: EveryonePiano SenbonzakuraEasyVersion148597,Fmajor150BPM,ninepages. All161soundingright-handbars are retained; printedm162right-handfourbeatrest is absent in source and is not appended. Every1268 source note matches a printed attack at the same structural onset within0.000013beats;1263 source pitches equal printedminus12. Five sourceGs become Gsharps from explicit sharp2 signs in m146/150/152/154/158, corrected after independent root image review; m152 final natural2 remains natural. Fullsource comparison research precedes candidate creation. No source notes omitted or merged. All2476source events are individually disposed, including1208source rests/articulationgaps. Original rawtext and rationaltiming remain preserved in decoding/comparison; exactprintedrhythm replaces ad hoc short-note gaps. Output nominalpracticegap10ms. Restore22missing printed attacks: m16five,m19one,m64five,m67one,m156seven,m159three. Originallong rests at m16/64/156 and elongated notes at m19/67/159 are explicit high-register substitutions. Recover full printedruns with coherent phrase lowering. Uniformminus12 from printed register; additionalminus12throughm13-20,m61-68,m153-161. This whole-phrasearrangement keeps the recovered highruns and outputMIDI48-82. It is disclosed playable octavecompression, not original piano-register playback. Printedties are merged into sustain; dottedrhythms and sixth-beattriplets use exactrationaltiming. Three quarter-beatrests after tiedE in m36/84/128 are restored. The final E in m161 lasts2beats instead ofsource1.8. m112 C followed by Csharp arpeggios and m137whole-stepmodulation use absoluteprintedpitches and measure-scopedaccidentals. No source-derived guessing substitutes for the image reading. 1290outputnotes+3rests=1293events,644beats,150BPM,257.6seconds. Left-hand accompaniment and source-absent finalsilence are not part of this monophonic melody arrangement. Nonblind image reading; fullsource exactmatching and software selfchecks do not equal humanlistening, recordingalignment or realgame testing. Rootindependentimage review and formalproductionaudit remain required. Root完整第3至9页复读并另录全部音级/有理时值，前1/2页复用root已冻结独立读谱，全1293事件一致。 m16/19/64/67/156/159恢复5/1/5/1/7/3个印谱起音，指定三段降八度保留跑句；1268源音逐项覆盖、1208源休止全区间记账，无省略合组。 root放大确认m146/150/152/154/158三连音中间印有#2，修正v1漏读五升号；m152末自然2双高点还原。核对m112升号跨同小节同音高适用、m119半拍起音及m120升2延音、m137后移调、m152末自然2；末m161两拍E保持，m162右手全休止在源范围外不追加。无试听/实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "bf4dc9767173eb2e623e68c28f60f93ea41d3a16481046e29452ad3b833c2979"
+  },
+  "note_count": 1290,
+  "event_count": 1293,
+  "duration_seconds": 257.5999999999997,
+  "limits": [
+    "Nonblind image reading.",
+    "Published150BPM and octavearrangement; not recordingverified.",
+    "Monophonic right-hand melody only; no piano accompaniment.",
+    "No humanlistening orrealgame test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-01f47dea7e4c6aa4-senbonzakura-reference-v2.review.json",
+      "sha256": "799429fe413fffa35f279d2e09fc9917b5b172a824bd4e49799cf1d3068a5709"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f842552ec80d0c41a56a10fbcaa4c006ed2deaeb26674cb30950894ad80cc197"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b991678f56dd6d568d39e209415f1a0a0d3419bb2526a59bef217996cdc0b01e"
+    },
+    {
+      "name": "0001-c7bee8ca1e87.json",
+      "sha256": "69da39f7e723434da6b5d035aeab578370afa5ae6d6db3a1d9140ce1731dd2f3"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

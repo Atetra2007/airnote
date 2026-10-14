@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-81c8b8da9128a2b2",
+  "source_id": "deck-a52fdaa99ded",
+  "work_id": "work-deck-a52fdaa99ded",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E7%BA%A2%E5%87%AF%E4%B9%8B%E6%AD%8C-%E6%AC%A7%E5%B8%83%E5%A5%A5%E7%89%B9%E6%9B%BC-%E5%B0%8F%E8%A5%BF%E8%B4%B5%E9%9B%84-worldLink-e74ffb220b.deltamusic",
+  "status": "reviewed",
+  "sha256": "b82101a5b9a1bc390021cd8d905cc080bceecf3330a940d78cbd0848fe234262",
+  "source_sha256": "8e58255e7c0324879840399fd6ed73e2cea5bf47f395542e63cfef45833454aa",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.cangqiang.com.cn/d/40630.html",
+    "edition": "Complete37 printed bars; printed A B C C A B C D E form,271beats,C88; A/C+12; shortC7/D7/E1 preserved literally",
+    "score_sha256": "455100224b01a97d43e9f3a563060eaf0cab62d0678023107bcff261367bda42"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 299,
+    "maximum_parser_boundary_error_seconds": 4.831690603168681e-13
+  },
+  "review_note": "Complete37 printed bars; printed A B C C A B C D E form,271beats,C88; A/C+12; shortC7/D7/E1 preserved literally 完整388音387原休止775事件均按原索引逐项保留。全原对象包括所有literal边界/元数据保存，baseline775音高/时值逐项一致。 曲目为Ultraman Orb Gais Orbnica/M-7，非主题曲オーブの祈り。唯一选版为公子涵40630整页C88，完整37印刷栏实际整图和五块view并手录。 全印刷顺序A B C C A B C D E展开69栏；A/C统一+12，B/D/E原实音，形成单音口琴原E4/C5/A4/C5音域。不是原匿名文件唯一正确意图的恢复声明，而是全范围明确参考选版。 C7/D7和E1各印3拍，虽全谱头4/4，按真实可见减时线保留短栏。3次C7、1次D7、1次E1共5短栏；不补缺失拍、不声称全部69栏4拍。总271拍88BPM。 38音主题×4保留，源17+18、56+57、202+203、245+246四组G4/E4装饰合打印G4quarter1。#4跨栏真tie共1拍；主题尾C5真tie共2.5拍。 吉他C/D所有G4/A4pickup组合、C5/D5 passing组合、D5/E5 passing组合、A4/B4组合及两次A4额外重起合组全部列明。54组总降低54攻击，无新增音。 原六连接段35攻击精确省去：78–84、130–136、182–184、224–227、267–273、318–324；每音均附原音原时值和具体前后参考位置。尤其高A5/B5/A5/G5/E5/D5/C5七音不是未读而是所选D1开头不含的明确版本省略。 所有三个C及D吉他段完整处理，包括原后半D段及最后E尾；不拿短口琴前段验388长版。末source386 G4原约4拍选印1拍，source387 A4原约6拍选印E4#4跨E5真tie F#4共4.5拍，明确版本终止差异。 补印刷首两quarter准备休止；所有原387休止另存处置，打印rest跨栏相邻时合事件但保留每个reference head。输出299音、13休止312事件，范围62–76。 完整39484 C80也保存实际看全，用于研究区分，不把其尾、速度或短栏混进40630候选。 仅候选，短栏/版本取舍需root独立音乐二读确认，之后才正式软件审计和接账。无GUI、音频、试听、录音对齐、GPU、游戏输入、构建、提交、发布或公共账本改动。 Root实际看完整40630谱头/ABC…E路线与A/B/C/D/E五放大图，另录37栏绝对MIDI与分数时值，展开69栏后312事件逐项一致。 确认C7/D7首2、1为普通八分，第三7八分、第四7四分、末6八分，共3拍；E1单四分休止也使其3拍。保留五个短栏为所选印谱实际内容，非补拍误读。 全388源音/775事件另从原raw逐token解码，逐索引验证全部处置。接受35个明确连接音省略、54个明确经过/重起合组的完整参考版编配；原数据留存，不称逐音无删或匿名源唯一正确恢复。 四次主题#4跨栏合1拍，末1真tie2.5拍；最终E4#4到E5#4真tie4.5拍。原末G4约4拍/A4约6拍明确换作印G4一拍/F#4四拍半，完整尾部已审核。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "455100224b01a97d43e9f3a563060eaf0cab62d0678023107bcff261367bda42"
+  },
+  "note_count": 299,
+  "event_count": 312,
+  "duration_seconds": 184.77272727272728,
+  "limits": [
+    "Full-source editorial arrangement with35 explicit connector omissions and54 explicit passing/repeat consolidations.",
+    "Five printed3beat short bars retained literally despite4/4 header; root must explicitly review this limitation.",
+    "Final source A4 cadence replaced by printedF#4 ending.",
+    "No listening/game evidence.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-a52fdaa99ded-orbnica-editorial-v1.review.json",
+      "sha256": "524b1e368746d39952fa55d00b830e58faf4e10198f1b6f78603fb149aa0a20c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "363af9ade8f4552f6b9e9b8ec85f699939b29dfeabb8fd8c2d2c0cf5b378b779"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "831890daab8cd6832f8c14cf50eaed758f3ea879f4ccbda08173bb39cb03fc66"
+    },
+    {
+      "name": "0001-d5e850eed796.json",
+      "sha256": "20ca2d51a2a017fb185cbb267fdfb0975db16e0d4c323f1c19c548b517cccecd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

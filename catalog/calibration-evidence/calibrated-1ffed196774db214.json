@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1ffed196774db214",
+  "source_id": "zhouzhou-120",
+  "work_id": "work-b9be4b91bd3d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f85d2cff6d917e6bbabac6cf1d61a0794fe46337b1c3d1c3761ec2f049e8d119",
+  "source_sha256": "19ddc92da755572bf0ab612f5f07c535e4f5665ff5e244e0ba4143464bbdbf4f",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=8tf-gVaHdag",
+    "edition": "Toby Fox / UNDERTALE Soundtrack / His Theme",
+    "audio_sha256": "7dea316b9a5025e1a2d953f3faba6f6ae5aa8183e38cef0e849ae6c693e73d45",
+    "start_seconds": 0.0
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 26,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源主题选项；原录音0.00至10.666667秒 逐音核对26个原谱音高；保留原谱的整体移调，补齐原材料缺失的时值与90 BPM依据。 相同音高的第5/6、11/12、18/19音均保留独立起音，附点时值分别为0.75拍。 来源120中的两段是同主题的替代移调编配，分别输出；夹在说明文字旁的零为版面占位，不转为音乐休止。 输出音高相对于录音整体移调-18半音；不把整体移调称为错音。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "7dea316b9a5025e1a2d953f3faba6f6ae5aa8183e38cef0e849ae6c693e73d45"
+  },
+  "note_count": 26,
+  "event_count": 26,
+  "duration_seconds": 10.666666666666666,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "这是单音改编，未重现和声、音色、力度及原录音混响；原录音声音尾迹可能跨越下一起音。",
+    "90 BPM 网格及旋律已逐音对照频谱/起音检查；谱中发音结束和短留白为明确的演奏编配，不是声学精确收音测量。",
+    "复核只覆盖各来源现有内容；社区版约106.65秒，不含125.33秒录音的全部尾段。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-120-c.review.json",
+      "sha256": "0e70d23db710f83cc04890977510fbfd0c96fa9e09d0091eff70f07f929093a4"
+    },
+    {
+      "name": "review221-zhouzhou-120-c.timeline.json",
+      "sha256": "09aa7d2f64d78d410d8f12325d182df685a7fa090c867ed283a79004cf5f5502"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3b89729c801f0c24ed3869409a72219ae08267b9983292f68d3ca99c0ec0f1a0"
+    },
+    {
+      "name": "0001-52bbfcfc0bab.json",
+      "sha256": "f9cfc5d238544d29b0c76fe4bc23391582e12c179d899c94bb749f5ebda3ac67"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

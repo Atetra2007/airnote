@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-495afcfdc3363b9b",
+  "source_id": "social-9652e4f7638f4b11",
+  "work_id": "work-7bf9fe625d34",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687095573152910627",
+  "status": "reviewed",
+  "sha256": "06e60afddbd56b5ed10d5da5627dfa67a159312c12d7bf7a103fb4ce63fe0de4",
+  "source_sha256": "2eefcd6344b15f94c478d065affacfac89ce185e0a28ab6ada8780842fd88414",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/373633.html",
+    "edition": "简单吉他E调首副歌，E4降4至C4，70明示练习；高#1八度以365811P4校勘",
+    "score_sha256": "1cf44abae7b6fc48a398be4891e0790b5581d754214625c84942fc020e35df8c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 75,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "All7source rows72notes throughfinal了,including full ending.8pitch corrections,3added attacks,6rests. 完整原两页7行72个按键格已逐个读取，粉色大写为高音、黑色小写为普通音，全部72音映射一次，无省略。不能用088的来源覆盖代替此图的独立原源读取。 使用同373633简单吉他版首副歌：已由root完整读过三页，透明复用同一版数值读谱，不声称又做一次独立参考复读。印谱E4降4到C4，源本来C键名无需全局移调；与088的F区练习编配有意不同。 source5/14/23三处黑色b普通G4按参考升为G5；source25按前述冲突修正为普通G4；source28高1加升号为C#5、31高2降为C5、43普通6降为Ab4、46高3降为Eb5，8处逐项披露。是字高#1仍明确以365811P4同句作单点八度校勘，不声称主参考点位清楚。 原72音缺3独立起音：冲尾G4十六分；手的跨小节下一D5附点八分；谁记得后的第二G4两拍。三者分别有印谱位置，补回后75音。手两D5及得两G4之间都无同音弧，不能合为一次长按。 原图无0，不猜图中的长按符号精确时间；恢复完整参考范围内6个休止。开头我之前的半拍休止在来源起点外不加入，从我起音到最后了G4两拍止，共37.5拍、81事件。末字了与后器乐拾音不混合。 70BPM为明示练习速度，主参考没打印数值；37.5拍约32.1429秒。独立审查员仍需核对全72源及完整81输出事件，不能仅复用088的匹配结论。没有人工试听、没有实机测试。 Root再次直接看两张完整原图。修正旧候选第二条说法：第三行第8格是带长按点的粉色B，与其他粉键相同；不存在可以由缺八度点推导的数字/按键冲突。所有上点依图例仅表示长按，音区来自键色。source25的G5仍按参考G4作降八度选择，此纠正不改音符结果。旧候选保留，错误说明由本条取代。 另一审查者完整72格按键/数字/颜色与root读取全相等；来源逐格独立，参考透明复用088完整82事件去首休止再升7半音，81输出事件音高/起点/拍长全部验证一致。是字高#1沿用已明示365811P4八度校勘，不能用一致数组证明373633本身字形无歧义。 72原音全部映射一次，8处音高选择、3独立新增与6参考休止核对；手跨小节两次D5、得两次G4保持独立。旧候选待二读说明为历史，本包完成音乐核对，另行正式软件审计；未人工试听/实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1cf44abae7b6fc48a398be4891e0790b5581d754214625c84942fc020e35df8c"
+  },
+  "note_count": 75,
+  "event_count": 81,
+  "duration_seconds": 32.142857142857146,
+  "limits": [
+    "Selected edition,8explicit pitch changes and3missing attacks.",
+    "Source thirdline以 has numeric/color disagreement explicitly resolved.",
+    "No listening/game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-9652e4f7638f4b11-miss-complete-source.review.json",
+      "sha256": "7df71411dddc75d29f0aa305fd90502432b2db32597f2718b12173c28e43671a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c1f09bbcea255d000224ba9c036336eb393a388625eea316d56ff3611231a251"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "e647ee87d9d60c279371e7dcce4331417a972efb1f534a835aa6d64c6be64183"
+    },
+    {
+      "name": "0001-ecdb5cdcacec.json",
+      "sha256": "a6891b932058579163fa283dae46d170fa0e869b07915742d0eb9b52d29458ae"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

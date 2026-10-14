@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0060bdbc1b4e4174",
+  "source_id": "zhouzhou-073",
+  "work_id": "work-6fadd005df7c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5248cb976a122446f8c1b4fda4f5b6af8be5a7b31f6290f5343a514bab998a4c",
+  "source_sha256": "2b4f74817fbc5253e21bb674c6757aefcf1eabf2d8f3d28acf1d4ca553a587c1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-19502-1.html",
+    "edition": "C printedquarter120;m6-13monophonicselectedmelody",
+    "score_sha256": "6a336c90b4603806fcfc57f009da4db413e043e073feca960fa88f29ab51744d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 31,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "page1m6-13entireselectedright-handmelody;onecompletefirstverse;saved30notescomplete 冻结源073按inventory映射074-如果可以文件，内标题神秘光头指挥官及逐行歌词全部保留。作品IDwork-6fadd005df7c来自冻结queue，不改名或替换来源。 内歌词明确对应殷正洋东南苦行山开头。明确选择EOP19502m6-13钢琴单声部，整段C/4拍/印120BPM，完整30原音到31输出，32拍16秒。 主要source+12八度到印谱；所有额外音高转换逐源列明：10低C3到C5、16/18极低C2到C5/D5、19D4到C5、20E4到D5、21G4到E5、22E4到G5、23D4拆E5/D5/E5。 source7/8两个E4攻击明确选m7a2一个E5四分，异源攻击合组是编辑选版；印谱此音无tie，不称原源或印谱真延音。 source23窗末单D4按选版拆E5.5/D5.5/E5一拍；source24龙为m11最后E5一拍独立起音，两个连续E5不合并。 印谱m8a1/m10a1选高1，m12a2选中1；右手和弦的每次选择都有明示位置，m7a2/m11a2a3a4没有额外高八度，不能机械选和弦最高音。 全部原始30音及四行歌词对应范围完整，无删尾/新增无来源音/静默标记；未设置原源缺失节奏，候选时值均来自人工读选谱。 根代理独立全选段音乐二读和正式软件审计待办；未试听/录音对齐/UI/游戏验收。 Root完整适用P1及P2上下文实读，独立八分tick录m6–13全8小节31音32拍，和候选逐事件一致；30原token从冻结SHA原文件重新解码。 source7/8合成m7第二个E5一拍是明确编辑攻击选择，不是印谱tie；source23按m11拆E5/D5/E5，m11末E5仍独立新起音。全部来源音符有逐项映射。 9项整体升八度之外音高调整核对一致；原source16/18为C2原值36完整保留证据。用印谱C5/D5修复选版，未伪造原数据。 冻结ID073对应074文件并以SHA确认，内部神秘光头标题歌词对应东南苦行山；保留canonical work身份并明确别名。原始来源未改。印四分120。无试听/实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6a336c90b4603806fcfc57f009da4db413e043e073feca960fa88f29ab51744d"
+  },
+  "note_count": 31,
+  "event_count": 31,
+  "duration_seconds": 16,
+  "limits": [
+    "Communitytranscriptionnotpublisherauthentication.",
+    "Explicitselectedpianoedition,notzero-changeoriginalsingerclaim.",
+    "Completefirstversefragmentonly.",
+    "Noaudio/UI/GPU/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-073-dongnan-v1.review.json",
+      "sha256": "b85dd8d7490ee53ca7601cf5fdfbd7cb4e8efd41004a35c8cf95728a3ab0770a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4fabd5524bdf3ab3658daa716643665ded01a5b427b92c59fb93006dbb88ba67"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c8f7af28065df40da6bca55ef40e71780b80eddbdb95ef98842776e08ccfde7a"
+    },
+    {
+      "name": "0001-0099ee5d84fd.json",
+      "sha256": "da0bc31f3ef1aa0c0843a38808e793c33291c031ba16ff97b361bae8197a7eec"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

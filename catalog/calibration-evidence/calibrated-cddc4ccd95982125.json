@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-cddc4ccd95982125",
+  "source_id": "zhouzhou-207",
+  "work_id": "work-ce4fb1b5513c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e364a584c7e500605638eb720ec892096ff72ce82a74418267e676eaaa162dfc",
+  "source_sha256": "2f9ba47c208e5a7b04c09f03bb775214073317e1c7a457b791edc7ba96cc953c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/14625.html",
+    "edition": "毛不易一程山路数字钢琴谱；图头错排一路山程；C2/4打印96；最高旋律降八度，原两遍完整保持。",
+    "score_sha256": "a024faf1f409f4b1d94cfa8a73ceef502f22ebcf1fd4d55f7ef7369b370140ca"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 156,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整16源行151音，32小节最高旋律按源两遍，包含每遍末C4全部4.5拍。 固定207原文件SHA2f9ba47c208e5a7b04c09f03bb775214073317e1c7a457b791edc7ba96cc953c，全16源行151有声音、无原休止。原数组只有音高而无可信节奏；原0..75与76..150为两遍相同旋律，均完整保留。 参考选14625两页数字钢琴谱：网页标题为毛不易《一程山路》，谱图标题错排为《一路山程 / The Way to Mountain》。此标题差异明确披露；完整32小节旋律与来源相符支持身份，不凭文件名认曲。主证据只前两PNG，后续页面文章照片不作为谱证。 页头C、2/4、四分音符96。只读取右手最高旋律声部，开头1h/3叠置和弦仅取1h，其他低和弦与左手伴奏不导入单旋律。字面高1C5统一降12半音为来源C4，普通5/6为G3/A3，所有高低音一致移调。 每遍完整32小节64拍、78音2休止。遵循来源重复两遍，128拍96BPM为80秒；第二遍不是参考图另外一页的不同旋律，也不截为一遍。每遍最后C4均为末30小节半拍连31/32各2拍，合4.5拍。 第3小节6八分连同小节6四分再连第4小节6四分，合2.5拍；第5小节6八分连6四分合1.5；第7至8、23至24的3合4拍；第11至12的1合3；第19至20末1合1.25；第27至28末1合2.5。 第13至14的3跨线有同音连弧，合1拍；但第29末3到第30首3无连弧，两个黑色3均独立半拍，不能借前段相似句误合。第14末1与第15首1也无连弧，第15首1独立起音再连第16首1合3拍。 两遍均补原源没有的三枚印谱起音：第6小节末2h十六分D4（在原17/18及92/93之间）、第15小节首1hC4三拍（原32/33及107/108之间）、第30小节首3hE4半拍（原72/73及147/148之间）。六新增有完整小节与来源边界记录。 第一遍原source9/10/11连写三个C4，所选第4小节实际只有两个独立C4八分；source10与11显式选版合为后一个C4半拍。此为原重复攻击的选版合并，不伪称原图有一条连音弧。第二遍source85/86本来只有两个C4，保持独立。 第二遍原source102A3、103G3与第13小节印谱5/6顺序相反，明确改为G3/A3；第一遍source27G3/28A3已正确。所有其他原音高均保留。 第18与26小节2h八分、2h四分、1h八分为三个独立起音。第19小节后组三枚1h十六分、2h八分、1h十六分；第22小节开组三枚普通6十六分、2h八分、2h十六分后另2h八分和1h八分。清楚区分单/双减时线，所有小节各2拍。 每遍第13与29首0八分，共四个半拍印休止恢复。151原事件全部处置，无省略源事件；仅1次显式起音合并、6新增及2改音。已完成root独立音乐复读，另送正式软件审计，未人工试听、未录音对齐、未真实游戏。 Root独立读14625全部32小节最高声部并冻结两遍160事件数组，之后才读取候选数值；全部音高、时值、起点一致。另独立解码151源音复核两遍、首遍10/11选版合并、6新增及second102/103改音；所有尾音与中间休止完整。读前收到代理概述，故不是完全盲读。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a024faf1f409f4b1d94cfa8a73ceef502f22ebcf1fd4d55f7ef7369b370140ca"
+  },
+  "note_count": 156,
+  "event_count": 160,
+  "duration_seconds": 80,
+  "limits": [
+    "Reference image title permutes title to 一路山程; webpage attribution and full melody establish selected work identity.",
+    "Only upper piano melody used; all accompanying chord and left-hand voices omitted deliberately.",
+    "Original source traverses same32bars twice, so no source second-pass reduction.",
+    "Six printed attacks added, one source repeated attack consolidated and two second-pass pitches corrected by selected edition.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-207-mountain-complete-source.review.json",
+      "sha256": "7550182c231d816059557d49e0051459305dc1b60b108e12171832678fb86731"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "403ef4dc5f18ec3e4769dae321dde059fa9a83e6b5618525dc788a0393ecfbb9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ee0067bab27344d213a88f1c12f45f0ae2e28c2a9f685d82dbd5c947a0891e79"
+    },
+    {
+      "name": "0001-3d862aad9f31.json",
+      "sha256": "d0e52ba3e91365f9c47ff4eb98e0d7ad4e273920654551cf6d1195e661e62e05"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

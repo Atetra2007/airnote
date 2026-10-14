@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a3f21476cf5cb664",
+  "source_id": "zhouzhou-059",
+  "work_id": "work-b336e93f61b2",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "36cce303518d218e218545e9fc21edcb147ff086ce7021cc56e7c63e9b27759f",
+  "source_sha256": "78146c05f380a89a67e7b659a9e79657ad028518d4329a3079e15806c4cb7646",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/75756.html",
+    "edition": "F-major4/4soprano excerpt; oneverse+chorus; explicit100BPM arrangement",
+    "score_sha256": "f6e67c97c7dd3fba8a2c84f41db64d8f050f082bf66e5510e61cd8a34497a53a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 56,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "来源59音全部逐项处理；一段主歌加一段副歌，女高主旋律56次起音/64拍；不展开四段歌词反复。 采用公开F调4/4女高主旋律：75756单声部摘录与18820合唱总谱第一声部逐音相符，后者其他声部不混入。 原59音的9/24/53三个经过2归到随后1，形成56音；这是选择公开谱版本，不能据此称原唱或其他经过音唱法错误。 所有相邻重复3保留分开的起音；弧线连接5→3及3→1或3→5，不能误并同音。源44高1明确保留F5。 F4为主音，来源名义C度数升5半音，真实输出C4–F5（MIDI60–77）。 弱起1拍、15个完整4拍小节、末尾3拍共64拍；100BPM为明示编配速度，图片未打印速度。 两GIF按原像素无损解码PNG，RGBA像素逐项相等，原GIF与PNG各自哈希保留。 Root独立逐小节转录与worker全部56音高及64拍一致；所有59来源索引分别获得处置。两张谱同属同一合唱编配，不能包装为两个独立来源。 Root确认副歌的5到3、3到1及3到5为异音连奏线，相邻两个3有各自起音；源44的高1在两张女高声部都明确出现。 采用公开谱后，三个来源经过2不纳入输出；原始59音谱及录音版草案均保留，未宣称原演唱中的经过音错误。100BPM仅为明确编配选择。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f6e67c97c7dd3fba8a2c84f41db64d8f050f082bf66e5510e61cd8a34497a53a"
+  },
+  "note_count": 56,
+  "event_count": 56,
+  "duration_seconds": 38.4,
+  "limits": [
+    "One public soprano arrangement family supplies the musical reference; not original singer validation.",
+    "Oneverse pluschorus only; the four lyric stanzas are not unfolded.",
+    "100BPM is an explicit arrangement tempo, not printed or measured.",
+    "No human listening or real-game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-059-sheet.review.json",
+      "sha256": "f27e0825468fecaf2cf7bced2ae165d64ef6d3acb8566832cddb5f9fdecb5fb9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "dd64693add676463269e4ae0f444427cec355ae0d0d9fbdf82785a121f4d476d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "de78745b4327be3f332bd857f2bd2ab966f0327228c9fc4e3b64f694beed8b80"
+    },
+    {
+      "name": "0001-df0bf145a98e.json",
+      "sha256": "b75c9c2aaf649bcce8d4d77407ac899ed6f9bb2e70826178f82d85dac74c75b8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

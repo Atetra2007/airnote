@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3981ebaddccab826",
+  "source_id": "alternative-score-38e8ad1e5d0f8ff8",
+  "work_id": "work-farewell",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%AD%BB%E5%88%AB.txt",
+  "status": "reviewed",
+  "sha256": "5556330b60eddf6dc5d2593ff55e8e06e4f6b30fb2716193687a6a8ff585fa81",
+  "source_sha256": "7626ee18ed6450d8d104dcbf6c76d37b424a726c0f7cd2e466b2570703ada0a6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1PdMjzbETF/",
+    "edition": "C8/4 complete41bars;selectedoriginalroute1..29+36..41;whole−12;explicit120practicepace",
+    "score_sha256": "ccaa82ffca954d5edd513c465bbf9a2cb5030d7282cda7bc4b8cb328ae02e3db"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 435,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Full435source/454events/19rests/280beats independentlyreparsedandindividuallyaccounted;complete35barabbreviatedroutefrom41barreference;4pitchclasscorrections;nooriginalnote/restomission 固定farewell和alternative-score-38e8ad1e5d0f8ff8各自435音/454事件/19休止/280quarterbeats全部重解且SHA绑定；两个完整音高/开始/时值序列相同，但各自原文件/原rawtokens/原metadata和逐项处置独立保存，绝不以另一份验收继承。 正常匿名公开yt_dlp取得BV1PdMjzbETF完整video-only，无音频，不绕登录或412；全范围11帧及41单栏放大实际view，逐数字/上点/双上点/单双下划线/附点/休止完整手录同版C调8/4简谱。参考41栏526事件328拍，所有原435与独立尾奏均已有同版完整可读依据。 保留原完整35行选曲路线：reference1..29与36..41，明确原版本省去reference30..35六栏48拍，不把它们冒称不存在，也不新增该反复段。原35行全部454事件435音19休止、280拍，原尾32..35完整对应reference38..41连续八分尾奏。 原来源435个音全部保留、454原音或休止逐项对应，0原源省略/0合并/0拆分/0插音。原raw行界和所有非音乐小节分隔符保留为证据。整reference−12，C调输出55..72；reference双上点14bar高C6降到C5，原低音落点均保持，无暗折单音。 四个明确音级改音：source note9 E4→D4和10 D4→E4，恢复reference1中十六分2-3顺序；note433 A3→B3和434 B3→A3，恢复reference41末两个八分7-6顺序。全部原pitch/raw/start/duration保留，其余所有音/时位/时值精确逐项一致。 每个单/双下划线分别1/2或1/4quarterbeat，bar7/19/26等4附点四分1.5拍；所有真同音连续重击仍分别输出，不凭相邻同音合并，无印刷tie被杜撰，无用小节残差补休止。原最后两个1拍休止均保留，无截尾。 本C简谱视频没有打印BPM，作者公开说明自行耳扒和速度存在问题，原文完整保存在acquisition JSON。本候选明确人为选择quarter120练习速度；已实际view另一EOP18513版打印quarter120作为节拍参考，但不声称是本视频打印或原唱原速，不从EOP移入任何音符/节奏。JTP另一吉他版quarter92不参与本谱事件或速度。 worker完整来源音乐候选待root独立完整41栏数字谱/35栏route/435源处置二读与正式三gap软件审计；未做音频、人耳、UI、真实游戏、GPU或重构建。 Root second full41bar visual reading with separately entered526event literal array exactly agrees; all454 events freshly parsed from each actual raw source separately; four explicit pitch corrections only. Full printed route includes six referencebars30..35 absent in original; preserve all original35bars without inserting that extra48beats. Source tail fully covered through printed41 terminal twoquarterrests. Author states ear-transcribed score and video-speed problem. Acceptance is this named score-version practice arrangement with selected120BPM, not officialscore/originalperformance validation.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ccaa82ffca954d5edd513c465bbf9a2cb5030d7282cda7bc4b8cb328ae02e3db"
+  },
+  "note_count": 435,
+  "event_count": 454,
+  "duration_seconds": 140,
+  "limits": [
+    "Selfear-transcribedpublicscoreedition;authorreportspeedissue",
+    "120isexplicitpracticepace;notthisvideoprintedtempoororiginalspeed",
+    "Originalabbreviated35barroutekept;reference30..35notinserted",
+    "Noaudioorrealgameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-38e8ad1e5d0f8ff8-death435-fullroute-practice120-v1.review.json",
+      "sha256": "f3c8e330c1ed18298fa4e860754706c816df9ea93a9ba8c18718cb18259529aa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b2c3e3b7dec8048d2f0050e7e3a3072c2b2c0f409b54d4a418b08af1a8e925b0"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4a96d3541408927ace5be4c8ac97c8806b1e5d564c3a7d4cfefeed78d55defd1"
+    },
+    {
+      "name": "0002-1c425f9989c1.json",
+      "sha256": "5c552681871191eb5db905c5d21b19e317358c34974d2bf8dd7d7450820f750d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

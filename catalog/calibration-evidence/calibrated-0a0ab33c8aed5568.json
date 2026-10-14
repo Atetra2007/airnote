@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0a0ab33c8aed5568",
+  "source_id": "zhouzhou-132",
+  "work_id": "work-cfefb9391ec4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "2c89dbba2d3561ab8284162d571318ebc58a824aaf9071addab643388734e376",
+  "source_sha256": "39603c74910c26338b0643c498f4945e9a1d9a40cb2771f43cfa2310905efb82",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18856.html",
+    "edition": "Ab,4/4,70BPM;RHchosenfragment,uniformminus20",
+    "score_sha256": "685e86bcf4825219858c25e4b89a91c28a5a3d8cefd242ad3725a1c03e4d7b5d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 69,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "completeexisting66notes;m20last1.5beats+m21-28+m29firsttiebeat Complete fixed raworiginalsource andeveryevent/token accountedfor. SelectedEOP18856completeimages are publiccommunitytranscription; identityLiRonghao恋人. Uniformreference-to-outputminus20semitones maps Ab4tonictoC3andpreserves originalCencoded sourceoctaves. Print4/4quarter70. All image samepitchtrue ties folded. Final m28dotted3 continuesfirst1beatm29;terminalfragmentendsatthattrue-tied2.5beatsustain. Sourcepipes do not establish bars or musicalrests. Unknownzhoueditorrhythm is not inferred. Shortsource66notes retained;three missingrepeatedD4printattacks added atm27one andm28two. Nooriginalnotesmerged/omitted/pitchchanged. Threeprintedhalf-beatrests restored. Complete shortexistingcontent coversm20lastthreepickupattacks throughm28plusm29firsttiecontinuation;34.5beats. Nootherverse added. Root complete selectedimagecrossreading andformalproductionaudit pending. Noaudio/UI/GPU/gameverification. Root看全3页并完整重读所选m8至m29首拍，独立十六分tick展开；175/72事件全部音高及有理时值一致。Ab整体下20半音至C3主音。 长源三处重复攻击[40,41]/[46,47]/[57,58]为明确印谱选版合并，不宣称原始攻击就是真连；63 E4改F4，m28补D4。原尾4拍静默作为来源收尾保留。短源保留全部66源音，补3个D4音头与三处0.5拍休止。 m28末E4附点1.5拍连m29首1拍，合为2.5拍；只校对现有旋律范围，未扩至后间奏。原无时值竖线仅保存边界，不伪造静音。未试听/原唱对齐/实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "685e86bcf4825219858c25e4b89a91c28a5a3d8cefd242ad3725a1c03e4d7b5d"
+  },
+  "note_count": 69,
+  "event_count": 72,
+  "duration_seconds": 29.571428571428573,
+  "limits": [
+    "Communityselectededitionconsolidationsaredisclosed;notclaimofliteraloriginalties.",
+    "Sourceclosingpaddingisnotprintedmusicrest.",
+    "Communitytranscriptionnotpublisherauthentication.",
+    "Noaudio/recordingalignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-132-lover-eop-v1.review.json",
+      "sha256": "aa395387aa1054103c57a59e12ba9a2ccdf575d4a2db2e331266debe4854c7a4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "76fb5d7147a5621932394a5e624c5f9803f3853a41383e7e5db39ed81b02bd55"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0262b60acccff8ad540a47e95c1b8930d318fae66003ab56dc4c399f1c81f1f6"
+    },
+    {
+      "name": "0002-fea90a568526.json",
+      "sha256": "16efac53249569b98e9d8d6ca8e5623e5b53e53aff4770af9d3555edaae957d5"
+    },
+    {
+      "name": "work-id-corrections-20261012-v1.json",
+      "sha256": "58dac36f490e8d84560779b6121fb7b6ddb77831815b43f5dbda966c10704caa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

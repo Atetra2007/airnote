@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8d125dc968f6716f",
+  "source_id": "zhouzhou-027",
+  "work_id": "work-dd3001f6ef33",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "ec307bd885119c774fa49d6ff5e52a4e168cd7cff619d578bae71b524102ecf7",
+  "source_sha256": "50b3a3604b42c2290b55b24ba4e8ddad5f05bfe33dd547b350cafabe0f5993c5",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tv.sohu.com/v/dXMvNDIwODM2NjU0LzUxNTUwNTc1Ni5zaHRtbA.html",
+    "edition": "Sohu G/4-4 version, complete original source027 selects printed slots1–8 and17–24",
+    "score_sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 88,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "Sohu G/4-4 version, complete original source027 selects printed slots1–8 and17–24 固定zhouzhou-027/work-dd3001f6ef33不归并其他同旋律队列身份；原完整840字节、5行、109tokens=88音+6零+15边界全部处置，94原音/零事件保持原顺序与不明时值字段。 原曲完整对应《寂寞的人伤心的歌》公开Sohu G调谱的slots1–8再17–24；适用16栏全部另手录，不从已验收其他版本继承027验收。 全部88原实音映射88输出攻击，不省音、不加音、不把异音弧线当tie。6原零中audio5/28对应slot2/6各半拍休止；其余audio50/56/74/80为所选版没有的零，四项明确省略。 5处选版音高：audio72 B4→D5按Sohu slot21实际3/35/3-中5；audio85–87三D4→D5按slot23三5；audio92 F4→F#4按G调slot24低7。其他83音不改。 末audio93原[3,0,8]字段保留；明确采用所选完整slot24末低6半音符2拍，代替其原名义八分字段，不声称恢复原作者尾时值，也不追加其他旋律或后续小节。 选140BPM是明确练习速度，延续该作品既有练习安排；原027无数值BPM，公开Sohu谱无印速度，没有测原录音或加速原曲。 最终88音+2半拍休止=90事件64拍，范围64–74，约27.4286秒；所有原边界/双竖线和未知字段保留证据，不拿完整源的一小段命中声称全部完成。 尚待root独立适用16栏音乐二读/完整原源重读和正式软件检验；无音频/播放/GPU/UI/游戏输入。 Root实际看Sohu005/025/055/090全部四张原帧，独立录入1–8及17–24共16栏，G调音高及每个有理时值对90输出事件全部一致；21栏3/35/3-的5是D5，23栏三5均D5，24栏低7是Fsharp4。 Root重新逐token解原5行109条（88音、6零、15边界），完整88音一一保留，5处改音完整逐项一致；原5/28两零对应各半拍打印休止，50/56/74/80四多余零明确从此选版播放省略而保留源证据。 最后原[3,0,8]保留，选择完整参考slot24末2拍E4作为该来源片段收尾，属于公开参考编配节奏决定。140只是明确练习BPM，不冒充原源/图谱印刷速度，不由动态播放秒数推断。工作身份保持原work-dd3001f6ef33。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "note_count": 88,
+  "event_count": 90,
+  "duration_seconds": 27.428571428571427,
+  "limits": [
+    "Full original content covered, selected16-bar phrase is excerpt.",
+    "Explicit5pitch edits and4source zero omissions.",
+    "Final source raw eighth replaced by explicitly chosen printed half-note2beats.",
+    "140 practice tempo, no original tempo claim.",
+    "No audio/game acceptance.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-027-dechi-lonely-v1.review.json",
+      "sha256": "49837fef3d612f2ea0809d9611152f164ddfa862d401add13562560c5956fef8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "28709a1775140291180d8ddd873d8da0e7854f2cace69490e7c740b5046242bf"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "85a5c70495ae7a88eb07ea355bacb23c35f312a43974a345570f837058b3ba30"
+    },
+    {
+      "name": "0001-8dd2b6e0c359.json",
+      "sha256": "d738cce3f76c663344ab1b525f51a062833b16df9586451d7323a725cf14e2cf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

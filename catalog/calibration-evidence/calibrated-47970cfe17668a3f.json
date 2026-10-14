@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-47970cfe17668a3f",
+  "source_id": "deck-8f3a74d58753",
+  "work_id": "work-deck-8f3a74d58753",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%8A%E6%B5%B7%E6%BB%A9-%E5%8F%B6%E4%B8%BD%E4%BB%AA-Jiko-9f506c4d34.deltamusic",
+  "status": "reviewed",
+  "sha256": "f74e30fadcc2f1d2c882a3e0c2da514d9226bf5a293dab7a9f131298ec8ea19f",
+  "source_sha256": "5f1988d566824308e7d3a2568d5f1962dd8803b4b3eebd9b9eadf3cee8e23b3b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/9912.html",
+    "edition": "C,4/4;no printed numeric BPM;89 retained as source practice speed;optional unmeasured grace ornaments not realized",
+    "score_sha256": "b7cc793df7b71c92567b2b195bcbe4d1486573384a0c85b8e60415266edf52c4"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 211,
+    "maximum_parser_boundary_error_seconds": 1.7053025658242404e-13
+  },
+  "review_note": "complete-existing-source-content;all203notes-and36rest-events;four-verses-two-bridges-saved-silent-interlude-and-extended-ending Select LingnanYinxiang C vocal transcription9912. WangGuohua382312 is saved as an alternative but not mixed in: it explicitly gives a triplet where9912 gives sixteenth-sixteenth-eighth and differs in note grouping. All normal-size notes and rests within the saved source structure are read. Tiny unmeasured E-before-D and A-before-G grace figures and a turn above B are treated as optional ornaments and not separately realized; source has no distinct grace events to preserve. R2B3 contains A3-C4 sixteenths before E4 eighth; this applies to the repeated early stanzas. The later fully written R10B5 has G4 eighth-C4 quarter-E4 eighth instead, and is retained as its own edition variation. R3B3/R11B3/R12B2 printed A3 eighth tied to A3 half becomes2.5beats. R12B1 printed G4 eighth tied to G4 half becomes2.5beats. R11B5 last E4 eighth ties across the line to R12B1 first E4 eighth. Final R12B4 C4 whole ties to R12B5 C4 half, totaling6beats. The final printed one-beat rest lies after the original source EOF and is not appended. Every source #7 is B-sharp/C5/MIDI72; no silent reinterpretation as B4. Saved source has a32beat rest after source123. Restore the printed final0.5beat of C4, keep remaining31.5beats silent, then resume the existing bridge pickup at original beat159.5. Instrumental pitched content is outside the saved source and is not inserted. The selected image has no numeric tempo;89BPM is only the retained source practice speed. The final printed slow indication is qualitative and receives no invented tempo curve. Root完整9912原图非盲复读，独立音级/有理时值及重复路线展开219事件全部一致；重新解码239原事件和36休止区间。 早段低A-C两十六分与末段G八分/C四分是印谱变体；R11B5末E跨小节tie与最后C六拍已核实。所有203来源音保留，八处拆分；可选极小倚音/回音未实现，速度89仅来源练习值。 源32拍间奏前半拍恢复C延音，剩31.5拍静音，source124仍159.5拍进入；末source202按印谱6拍修正。长休止应由软件保留提示并逐项解释，不能伪称零提示。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "b7cc793df7b71c92567b2b195bcbe4d1486573384a0c85b8e60415266edf52c4"
+  },
+  "note_count": 211,
+  "event_count": 219,
+  "duration_seconds": 163.82022471910113,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "No printed BPM;89 is explicitly only retained source practice speed.",
+    "Optional tiny unmeasured grace/turn ornaments are not separately realized.",
+    "Original32beat rest interval becomes0.5beat restored C4 plus31.5beats silence; no instrumental note insertion.",
+    "Qualitative final slowing is not realized as an invented tempo curve.",
+    "No audio,UI,GPU,recording alignment or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-8f3a74d58753-shanghai-reference-v1.review.json",
+      "sha256": "f2c8e6f56d6e18754e81d7123830b1007554cafcd882b5c427b0a4eca836ec0f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "78dce9d07f0341a02ccae59304ed38daaa03ebdf9ca86138198525c8387eee16"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "99002ab1c4dc512940cf35f04b51ec77e77fb55ce05e47652b22700b32d3996a"
+    },
+    {
+      "name": "0001-ae66e68a5c73.json",
+      "sha256": "bccd13db81f3ecec43f916dd3cc96270650fe4548155dac41ac4df886d338f7d"
+    },
+    {
+      "name": "root-shanghai-long-rest-resolution-v1.json",
+      "sha256": "3d69270ef4a72abbb9ae1087658b3790599b1c769541e87ecb6c61244a014510"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

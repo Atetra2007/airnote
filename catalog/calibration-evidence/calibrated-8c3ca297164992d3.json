@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8c3ca297164992d3",
+  "source_id": "zhouzhou-214",
+  "work_id": "work-2a79ce8cb8d7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1a2ead5f78fa1f74a9d45d491fda9963ab95be86176a6caac866a1437e3ed867",
+  "source_sha256": "3432cd04ed3aaa28811c84a0aa15b2f50fcf623f4d85a66ec71d8ac349ec00cd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/314392.html",
+    "edition": "YunWen Dmajor3/4 Chinese lyrics completefirstverseandchorus; explicit110BPM",
+    "score_sha256": "ee69c72b58e3ab9f57ef9cabd3844e8f960852c1b6a1677d9e65d3b0b2fada0b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 122,
+    "maximum_parser_boundary_error_seconds": 8.526512829121202e-14
+  },
+  "review_note": "完整来源首段主副歌，1拍弱起与33个3/4小节，100拍。 选韵文制谱314392，周深演唱、沃特艾文儿填词、木村弓作曲，印D调3/4；参考整体降2半音至C，源音高全部保持。 与日文いつも何度でも为同一旋律的中文填词编配，本源独立核对，不继承其他来源通过状态，也不静默合并work ID。 完整来源对应首1拍弱起至第一次“让你动容”结尾1三拍；33完整小节加弱起共100拍，后面“亲爱的旅人”段落、反复及尾奏不展开。 中文填词版第4小节低7两拍、半拍休止、低5半拍；第7小节仅一个4附点四分，无第二个4；第30小节低6与低7各四分、1/2八分。原源恰与此版不同于日文版的音序一致。 123源音全部映射，音高均保持。该处来源连续5个3而谱面为4个3，单凭音序不能唯一定位哪一个源起音多余。本修订明确选择把源103/104（0基）跨行两个E4映射到第29小节首E4八分音的一次起音，因此输出122音；这是确定的编配映射选择，不声称唯一定位错误，也不是把异音连奏当延音。其余重复音保留独立起音。 补第4和12小节各半拍休止，以及第17小节两个四分休止。结尾没有跨小节同音延音，保持三拍。 314392没有印BPM，110是本修订明确选用的固定编配速度，不能声称该版印刷或录音实测速度；总时长54.54545454545455秒。 原稿保留，修订另存；人工音乐视读、软件检验、真人听感与实机是不同证据。未做真人听感、原录音对齐或实机。 独立二读的1拍弱起、33整小节、122起音、4休止及100拍与root数组逐项完全相符；结尾为图上第34小节首次“容”，下段未纳入；同音串多一源起音的不可唯一定位性保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ee69c72b58e3ab9f57ef9cabd3844e8f960852c1b6a1677d9e65d3b0b2fada0b"
+  },
+  "note_count": 122,
+  "event_count": 126,
+  "duration_seconds": 54.54545454545455,
+  "limits": [
+    "No numeric tempo printed;110 is explicit arrangement choice.",
+    "Completeexisting source extent only.",
+    "No human listening or actualgame validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-214-chinese-vocal.review.json",
+      "sha256": "7b40b1ce346eec8af57b99206c7485921c2330990055acdd48909a0f4f21a1d2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "477c39ead8220252092bc0de043a749aff85e549b32fefce08127c9dbeebfa11"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7defbb2ffb33db74a42b6a68fd37f659ccf25a0f88aa9ec7083a61c4874d0075"
+    },
+    {
+      "name": "0001-5470937385b0.json",
+      "sha256": "65fe21d2c3bdf091db98c830e6883fa1b79edf7ff037fc06a238c8d3f4b07461"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

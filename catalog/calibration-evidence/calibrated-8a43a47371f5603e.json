@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8a43a47371f5603e",
+  "source_id": "piano-5e3e6d0d30e51f26",
+  "work_id": "work-8f94ff8e4060",
+  "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6.eop",
+  "status": "reviewed",
+  "sha256": "b9a7a6f13a219e2753abd11fccd96a0991ae840df63b19d23cbc03771e53a1e6",
+  "source_sha256": "9433fdca5900e1c55bd59094bc0a21360e47ec91177b23907cc5841e9ad34342",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-14714.html",
+    "edition": "EveryonePiano14714 yuese102bars88BPM; explicit monophonic reduction",
+    "score_sha256": "685d61e09f84efef2d1a36f7378cf020ff576d4f347100276d0451ae7bfaba37"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 476,
+    "maximum_parser_boundary_error_seconds": 5.115907697472721e-13
+  },
+  "review_note": "complete-102-bar-piano-source;all-original-attacks-and-on-off-events-explicitly-disposed Complete 102-bar selected piano edition: intro, verses, choruses, instrumental transitions and outro retained. No vocal-only template or source truncation. Printed and source-header 88 BPM agree; no original-recording alignment or performance claim. Every one of 1028 source notes and 2056 raw on/off events is individually disposed, including accompaniment, inner chords and ornaments; every all-voice silent interval is listed. Every output note selects an actual source pitch before explicit register adaptation. No added attacks, pitch-class repairs or merged separate source attacks. Printed ties extend one selected attack across all reference segments. Full score opening 3.5beat rest retained; only explicit EOP file offset removed: 44/15 beats under original header tempo. Source MIDI has no extra offset. Source short note gates and performance/arpeggiation timing are replaced by the selected written voice rhythm. All onset and duration deltas are recorded individually. Printed upper melodic voice, selecting top chord tone in m3/26/28/57/66/68/101; m102 upper note C3 of the final left-hand C2/C3 octave, preserving final outro. Numeric reading unchanged from v1. All 102 bars transcribed before full source array alignment. m41 small D5 grace omitted while principal C5 half note retained. Mordent signs on m10/m18/m49/m58 are not expanded to invented extra notes. Lower chord tones and left-hand accompaniment omitted wherever selected right-hand melody/rest is active; m102 final C3 explicitly retained. Use10ms practice release gap; human_listening not-performed; real_game not-tested. 1487 m10/m18: three actual duration beams under regular notes, hence each triplet is1/12 quarter beat; source numbers do not establish printed duration. 1487 m39/41 two upper dots and m40 second chord upperE6 confirmed from enlarged page3. m35 inner-voice interruptions do not break upper tie. 1487 entire m42-44 left-hand outro selected; lowest printedG#2 raised toG#3. Last D4 tie lasts6.5 beats and becomesD5. 14714 m42 triplet group has two beams, each1/6 beat; m80 two D5 attacks remain distinct. m95 first half beat continues priorC5, then a newC5 3.5beats. 14714 m102 last left-hand octave topC3 sustained4beats, not clipped with right-hand rests. Earlier candidate performance/arpeggiation language is treated only as numeric source onset/gate variation; no human performance or recording alignment established. Root逐页核对完整八页、146小节，明确非盲复核；直接绝对音高重点数组另外保存。全部原始音、on/off、全声部静音区间及所有输出事件重新验算。 两份早期版完整44小节采用印刷100BPM与分段八度适配；完整版102小节采用印刷88BPM、无需移调。所有伴奏/下方和弦音/小倚音省略逐项透明保存，不称原谱错误。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "685d61e09f84efef2d1a36f7378cf020ff576d4f347100276d0451ae7bfaba37"
+  },
+  "note_count": 476,
+  "event_count": 491,
+  "duration_seconds": 278.1818181818182,
+  "limits": [
+    "Nonblind source exposure disclosed; early v2 corrected three visual octave/chord-selection errors after alignment.",
+    "Monophonic arrangement deliberately removes accompaniment/inner chords/small graces.",
+    "No human listening, original recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-piano-5e3e6d0d30e51f26-red-reference-v1.review.json",
+      "sha256": "197d4bfc667555682492bb6f0ac2e45e4935dc5c8bbf3de1d4e999ac5e11ffba"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4a9dfba6d20abd69dbb317c9d6b1e78575c03daf0748f97c09b5654dafcc384d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "69e925a936644aee0f845df699512d5b25e7b55428fae15242b68c07a53ba5af"
+    },
+    {
+      "name": "0003-1ce41dce1cb7.json",
+      "sha256": "96189cac4b2815106f9d570caafcd2de4f0c81c471396439fc5e491847becb8e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

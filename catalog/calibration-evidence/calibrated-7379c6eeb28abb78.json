@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7379c6eeb28abb78",
+  "source_id": "social-c7a45e00ef643634",
+  "work_id": "work-e90d862b7dd7",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=zK9OXkupBQ_U",
+  "status": "reviewed",
+  "sha256": "a0bf7a44f5d40500327f7da83490b9a672b8a052977110f8125ad27a1bd26284",
+  "source_sha256": "f04ca65fb0aa246887a1985108fcdea40f62a01eaba0b47cb4fa55cf3feec6ad",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/",
+    "edition": "Saved five-page B-major,124BPM,124-bar complete piano arrangement; explicit highestRH monophonic selection; outputuniformoctavelowerthanrootv1",
+    "score_sha256": "a0e51e03cfc52db9f8c9bff9fa27c4cff536cacf51a6f5bb31826b6c800a4939"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 539,
+    "maximum_parser_boundary_error_seconds": 8.810729923425242e-13
+  },
+  "review_note": "All582 source indices individually disposed, all581 inferred release/silence intervals preserved, all124 printed RH bars read 完整原SMF582音与DFHS582音重新解码，5页公开谱及30个完整放大系统实际读谱；所有582来源索引逐项保留，音乐第二读与正式生产审计待root。 明确选择公开B大调5升号/4-4/quarter124的124栏最高右手单旋律版，496拍、539攻击、46组可见延音合并。原125BPM是原来源版本速度，未声称与录音对齐。 原源存在填充、低和弦声部、不同起音和音高。各项按具体参考栏/音头/休止处置，不能把这份编配误报为原582音已经与公开谱全同。 原source0/1等落在印右手休止的音明确作为本源版本填充省略，证据全保留，不称这些音就是印左手音。所有省略列表可逐索引审核。 源32-39等采用印右手低和弦组件时，逐行明确选最高声部；原不同半音和再攻击处不自动断言为源错音，均作为印谱版本替换。 来源m108的428-432四拍空段作为来源多余整栏静默，后续原m109-125→印m108-124，总体后段减4拍。原m107低Fsharp4改为印连续延音Fsharp5；不会把源空m108当作印谱本来无音。 印m51的左手17连音和m87左手6+5连音虽跨入高音谱表，仍是左手voice；本最高右手版全部明确省略。m51印半休止2拍，m87右手半音符后的左手独奏2拍保留静默，未称全钢琴声部都已录入。 印m67最高Gsharp6/Fsharp6/Gsharp7/Fsharp7每音下移24，得到68/66/80/78，维持原来源的可演奏音区；最后印m124最高Csharp7(97)下移24为73，保留一拍，不推断延长记号时长或重放琶音内声部。 完整印谱的其他音区保持，包括两处Dsharp6(87)。输出范围66-87，未做任意逐音八度折叠；实机范围与试听没有验证。 完整参考的每个未映射来源音头单独列为印谱补入；所有原门控/静默581区间保留为证据。文本静态精确解析只证明格式和有理数时间，不等于音乐通过。 Root已非盲完整复核124栏/30系统，逐栏核实最高RH音高、时值、休止及46条真tie；原582音和581门控区间完整重新核对，不声称另版差异都是原谱错误。 所接受为明确完整最高RH编配版：44原填充音省略、31印谱攻击补入及全部音区/和弦取舍逐项留证；原文件保持。谱面和软件验证不证明真人试听或游戏实机。 v2全曲统一比已完整二读的v1降低12半音，输出范围由66..87变54..75，以满足生产解析器48..84音域；539攻击、48休止、496拍和所有源处置不变。前文音域与特殊小节移调描述属于保留的v1审核历史；v2具体最终音高以时间轴为准。 印m67四音与结尾m124先前局部-24再加统一-12，最终相对印谱-36；其余全部印谱-12。这是已声明的编配音区选择，不是原谱实际音区证明。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a0e51e03cfc52db9f8c9bff9fa27c4cff536cacf51a6f5bb31826b6c800a4939"
+  },
+  "note_count": 539,
+  "event_count": 587,
+  "duration_seconds": 240,
+  "limits": [
+    "Extensive editorial highestRH arrangement selection with source fills omitted and printed notes restored; cannot be called original582-note exact correction",
+    "LH crossstaff solos deliberately omitted",
+    "124printed bars differ from source125bar form",
+    "Production software audit follows this music freeze; listening and realgame remain untested.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-c7a45e00ef643634-house-complete-RH-octave-v2.review.json",
+      "sha256": "80d29cc2e3c2ff48ddba5b50e37ad9f6fbf90095c73531f3444110856e473547"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d5e82392738bae96c3758bdf9d8b41e580088d69d45a4163355da448de07e72a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "84ae36f76356166e6542a006192197f6d9f3c119f5db1b01a862da317d4d8e92"
+    },
+    {
+      "name": "0001-2d5d3c8b6236.json",
+      "sha256": "7127270c003a2b613f81201574ece6f2f06c6fce5ecbf59645918d8982ff8a61"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

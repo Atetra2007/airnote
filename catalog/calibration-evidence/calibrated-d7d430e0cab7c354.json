@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d7d430e0cab7c354",
+  "source_id": "zhouzhou-161",
+  "work_id": "work-086cff9fdd7a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c0872c67ee56b0c5352d4b4484a1608da156e1a68c49ca48de4fa2103c57519b",
+  "source_sha256": "056aa66f85f5db0515dab221fe4ea5d20b292549f53b2a467b2632f039327261",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tw.everyonepiano.com/Number-16434.html",
+    "edition": "PrintedEquarter120,m8pickupthroughm40mainvoice;key-4;one doublehigh3 chordtop octavefold andm33middlechordselection;explicit backing exclusions",
+    "score_sha256": "a8bd42ade3ffb0579d4299b386731d3889efbc012060085a66ae8fbce550dfd4"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 134,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "m8 final eighth pickup throughallm9-40;full129source note mainvoice excerpt source-main-vocal-selection: Source lyric rows explicitly contain all-rest backing phrases at19/20 and24;select main lyric voice. Exclude parenthesized echoed melismas m10/m12 latter2beats and backing m19afterbeat1,m20,m24,unlyric keyboard chord m32beat4;these windows remain explicit silence. Initialm1-8beforepickup andm41+ outside shortsource omitted source29-split: m14printed black1-prime/eighth then2-prime quarter consolidated as source29D5;split29 intoC5/.5+D5/1;source30E5→D5 and31D5→C5 restore printedm14final2/1 eighths repeated-attacks: Source68/105 singleA4 spans m27/28 and35/36;restore each boundary A4 reattack. Source69/106 singleB4 spans dotted-tiedB thensecondprintedB;restore separate reattack. All five source sustain splits explicit,not omitted or merged source85-122-125-pitches: Source85/122C5 shouldprinted high2 D5;source125 plain2 D4 shouldhigh2 D5 one-chord-octave: m19 printed double-high3 (Gsharp6 inE) lowered extra octave to outputE5 to followthis source vocal register;remainingkeytransposition-4uniform chord-middle: m33 first right-hand 6/3/1 chord:selectmiddle3-prime matchingthis source;m37 first5/3/1 selecttop5-prime;unselected chord tones excluded rests-and-markers: Original25zero tokens haveunknownindividual timing:11zeros row5 accountm19beat2→m21beat2 total8beats,14zeros row7 accountm24 all4beats. Allrawzero/markerfieldsandindices preserved;do notinfer individualb/array8 beat values Root完整前两页所选m8末弱起至m40读图，独立33位置十六分tick展开146事件全一致。129原音/25未知0/12边界从原JSON重解码，11零组8拍、14零组4拍及所有边界相邻原音重算。 明确批准来源歌词指定的主唱选版：m10/12括号回声各2拍静默，m19主唱尾之后至m21起音8拍静默、m24伴唱4拍静默、m32末无主唱和弦1拍静默。m19双高3另降八度，m33和弦选中3、m37选顶5，非整右手或统一最高音。 29拆C5八分+D5四分，68/105边界A4重起、69/106真连后B4重起恢复；六赋值音高更正图证确认，零漏音删段。原第三数组8是编辑器属性，不作为音高/时值。120BPM来自印谱；未试听/原唱对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a8bd42ade3ffb0579d4299b386731d3889efbc012060085a66ae8fbce550dfd4"
+  },
+  "note_count": 134,
+  "event_count": 146,
+  "duration_seconds": 64.25,
+  "limits": [
+    "Community piano transcription selectedmainvoice;not publisherauthentication or completekeyboard adaptation.",
+    "Original timing unknown;all original fields preserved.",
+    "Explicitly excludes backing echo lines andunlyric accompaniment chord;not fullpiano treble stream.",
+    "One printed doublehigh3 octavefold;one chordmiddlechoice;all sourcedispositions explicit.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-161-white-main-vocal-v2.review.json",
+      "sha256": "213ab94dbf7f82b68b79c93459d39db15d4eb5628b09b3fb450edfe2dc73275a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b0b12543df6cdbb7fc05d71b9fe887ca512c86805413b683f96bdbbdcb83746c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "239b6ffbcc97c4307161704af5a2963e43e6a23f52c3d0ab0e6f3ca27c5d5f4f"
+    },
+    {
+      "name": "0001-0629c673a342.json",
+      "sha256": "9f04bade65f7fa641900eac60fe71c3555b6d0267189554329b45ceacdcfb5e2"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

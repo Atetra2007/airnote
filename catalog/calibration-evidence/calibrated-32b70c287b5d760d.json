@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-32b70c287b5d760d",
+  "source_id": "social-deb9911629bc474e",
+  "work_id": "work-3a4718b15c1f",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=ICCZqRDm5GaN",
+  "status": "reviewed",
+  "sha256": "e5cf11d40639c31500e4088747d14a23a88d821408b7f7c9cbbfa068927ef05c",
+  "source_sha256": "461efaadbbc4f955f3b55c4fc151d43ef8488c44a63acd5fc516731ce762ff8c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/380021.html",
+    "edition": "EveryonePiano380021 D/G/D, globally-2semitones; printed90-to65tempo; explicit monophonic reduction",
+    "score_sha256": "34b90833dc6c351d8e7a150f87faa4d95bcf61237afcc7d6866a292a8a54df77"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 468,
+    "maximum_parser_boundary_error_seconds": 8.952838470577262e-13
+  },
+  "review_note": "complete-existing-source-form-with-every-omitted-accompaniment-and-grace-attack-explicit Complete source form1-12,5-9,13-43 retained. Source omits printed DS replay and proceeds34 to35 directly; no missing source section silently truncated and no absent DS segment appended. 380021 selected as one edition, transposed globally-2semitones. D-major parts become C; G-major rapid bridge becomes F. All468 output pitches match original source pitches; no replacement/addition/attack consolidation. All548 source notes and every original rest are accounted. Deliberate monophonic reduction omits67 accompaniment fills,6 lower rolled-chord attacks,and7 small grace attacks. These are arrangement omissions, not alleged wrong source notes. All192 sixteenth-note bridge attacks in bars19-30 retained at original pitch, including C6. Source internal accompaniment no longer interrupts tied melody holds or true written rests. First24 original bass attacks retained with original positions, explicit0-or12semitone adaptation relative to printed bass, and hold to next selected note. Source begins at printed first bar0.5beat; absent initial lowA2 is not invented. Community starts directly there; social retains its0.5beat opening rest. Ties retain a single attack with exact summed notation. Rolled-chord top notes in17/18 move to the main notated onset while lower rolled attacks are individually omitted; other source-to-reference timing differences individually recorded. Printed90BPM main and65BPM from42 through43 are represented with global90 and last8 notated quarter beats multiplied by18/13. This is tempo encoding only, not a rewrite of paper note values: notated_beats and performed_bpm retained separately. Final whole E4 is4notated beats at65BPM, replacing source6beats under100BPM metadata. It is neither truncated nor mechanically rounded; exact printed final duration is used. 15-significant-digit TXT decimals approximate exact rational beat encodings; independent self-check evaluates cumulative second error. Nominal score meter stays4/4 while encoded playback beats reflect the last tempo change. Use10ms practice release gap. No audio listening, recording alignment, original-performance tempo claim, or real-game test. Root重看完整三页与四份重点裁图，另录43小节绝对MIDI及合并真实tie后的时值，完整逐小节与代理数组一致；非盲复读，不声称盲审。 完整48小节来源表单(1..12,5..9,13..43)与24个来源所选前奏低音按全部起点核验；每548原音和645/646源事件完整重解码。67伴奏填充、6滚奏和弦下音、7小倚音为明示单音编配省略。 m18低7下点清晰，按谱得到B3；m36/38/40主音高双点C6保留。source505小E5倚音在时间轴m38末但属于m39引入，comparison的38是源时间位置而非否认它为m39倚音。 十二小节桥段192快速音全部保留；无改音新增合组。m42起印刷65，逐项另按名义拍/速度验算秒数，和主90下18/13倍率编码精确一致；最终E4四记谱拍完整。 source最后在100BPM下6拍改为印谱65下4拍，属于明确选版节奏，未拿原演奏证明。无真人试听、录音对齐或游戏输出。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "34b90833dc6c351d8e7a150f87faa4d95bcf61237afcc7d6866a292a8a54df77"
+  },
+  "note_count": 468,
+  "event_count": 475,
+  "duration_seconds": 130.05128205128202,
+  "limits": [
+    "Nonblind numeric reading.",
+    "Monophonic arrangement changes accompaniment texture and omits small graces; every original note is disposed explicitly.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-deb9911629bc474e-summer-reference-v1.review.json",
+      "sha256": "89aeb7cb9adc48aaa6d51c333ff8b6241c8e4f79b342e06d43adb8cf9d970418"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bc33499c112888a6c5fc12954c2bf9ea4b7763043616c99b21a7313d8978ae9b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "77f714a19741a9269e0d86aa03083d08af4e2a0decc02f048f54fc9a7d515c05"
+    },
+    {
+      "name": "0002-142c9c7e3d98.json",
+      "sha256": "a80f62ed1fafe0b96e202fe5d69100d54dcdcd1ae6916b4ac021116a76731448"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

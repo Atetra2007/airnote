@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-86e96ebb60dee537",
+  "source_id": "alternative-score-e8d7fcff30eb33f4",
+  "work_id": "work-deck-030917928649",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E8%8A%B1%E6%B5%B7.txt",
+  "status": "reviewed",
+  "sha256": "8659e3a5e1c46894622789d9fbc6174df8571805761bfbaff4450d95625f8ccf",
+  "source_sha256": "8e7f2cf4aa82cbb769f0663638092eb493f0b44a3ffc8e00e3cf9f874a8cdf90",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/296617.html",
+    "edition": "酷音小伟/小虎哥初级版C调4/4声乐旋律，打印75；移F调并保留来源额外重复",
+    "score_sha256": "79e1febce8fe6838724424b74239aa96a8fee9589ef4c5dd40f4da4c46f5d227"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 157,
+    "maximum_parser_boundary_error_seconds": 1.8474111129762605e-13
+  },
+  "review_note": "完整191源音/205事件/34小节；保留额外重复与全部开头结尾静默。 完整Alex固定原件191音14休止205事件、34个4拍小节136拍；开头3拍静默、两个主歌段、一个带额外重复小节的副歌及末2拍静默全部处理。原件无BPM，采用296617打印75；不能将解析器默认120当作原曲速度。 唯一主参考296617两页酷音小伟/小虎哥C调初级声乐谱，整页音乐已人工视觉读取；采用其声乐简化版明确移+5半音到F调，源1以F4作基准。六线伴奏不进入旋律。 原谱以4/6/#6/高1等写F调，但多处八度及音级与所选声乐旋律不同。逐源音变化全部列出，所选简化声乐版是显式编配选择，不声称所有原来源高八度选择必然错误。 V0静止了应F4.25/A4.5/A4.25；末A与下一所有起始A2拍同音延长。V2遥远了的源13G4改A4并与源14A4延长合映射。V2/V6源9/10与29/30两A拆分合为1.5拍。V10台字C5两段.5+1.5拍合为2拍，随后A4.25与.25拍休止保留。 所选V5/V6喜欢为低5(C4)，源27/28C5明确降八度；V3/4及V11/12爱/来字1为F4，源高F5按声乐版降低八度。V8源42G3改G4，V11源58A3改A4；原字符及改动均保存。 V14白字高1(F5)两段.5+.75同音延长，源74/75保留音高；源73A4按印谱1拍。V15末低7(E4)到1(F4)再到下一小节1(F4)的整弧始于异音7，是连奏，保留源83/84对应两个独立F4起音，不错误合并。 源小节22额外再次出现爱成了阻碍音型，保留为C5重复小节。首音源122C4明确改为F调5=C5、独立2拍起音，随后A4/G4/F4/G4/F4保持；没有静默删掉重复行。重复末F4继续与C6首F4合为谱面延长。 副歌其余采用296617第一次结尾，全部源191音均有输出或同音/跨八度更正后延长映射；没有补音。34个相邻双源组合合成157次起音，14休止全部对应保留。源高音末句按所选第一结尾恢复F4/E4/D4/E4/F4，终音总2.25拍，再保留两次1拍静默。 上游花海.review.txt只说原图片末省略7小节并停止在最后可确认小节。这个描述不是七小节的可读音乐证据；本提案仅覆盖现有全文，不擅补其未提供七小节。 最终157音14休止171事件136拍75BPM108.8秒。Root完整独立音乐二读与全源处置复核通过；正式软件审计另绑定。未人工听感、未录音对齐、未实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "79e1febce8fe6838724424b74239aa96a8fee9589ef4c5dd40f4da4c46f5d227"
+  },
+  "note_count": 157,
+  "event_count": 171,
+  "duration_seconds": 108.8,
+  "limits": [
+    "Selected simplified vocal edition and F-key arrangement; all source octave changes explicit.",
+    "Original ending says7omittedbars but no source image supplied; no missing material invented.",
+    "No audio alignment, human listening or game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-e8d7fcff30eb33f4-huahai-vocal-source-form.review.json",
+      "sha256": "21faee743f2206590851fe9586a65b5916b94d16f48078a831d5fbe89d7bc74d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c0cb9f0400a25c19856624c0cdfa32a030259452c12fc838051e4fe859c39f46"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d654addee140fed020da8a8b48086c38fdb021800a2f880980f501858e983cdd"
+    },
+    {
+      "name": "0001-52bfc019ba1d.json",
+      "sha256": "99e022aa1dd87d7b9b2deceedf01116650aba344e91a05309322525e6d2cc3ef"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

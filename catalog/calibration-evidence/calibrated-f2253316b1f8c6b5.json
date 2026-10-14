@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f2253316b1f8c6b5",
+  "source_id": "zhouzhou-129",
+  "work_id": "work-deck-cab097d18315",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1d523d5562def713a36a0274b726bb4a47fa84fa0a3ed40ec705c1fb7e64a72f",
+  "source_sha256": "9d894e294bd9693548e4839ca9e82a47c1b20bf6735615b3091ab03145a55897",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/150553.html",
+    "edition": "EveryonePiano C调88，17至20小节中间声部所选版编配",
+    "score_sha256": "610118dfa61a49035895cedd8e85968020c2c9f198747d850b7fbc9cddb07075"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 64,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-15
+  },
+  "review_note": "Complete existing 64-note source, with full ending. 完整原129共64音，对应EOP150553第17至20小节中间谱行的十六分音符内声部；明确选择该钢琴版内声部，不把它宣称成最上行主旋律。 选普通1=C4，高点1=C5，保留此内声部相对音区；4/4、四分88均来自印谱。64次独立起音各.25拍，总16拍10.909090909秒。 原来源部分分解音型与此版不同，明确按所选版替换并逐项列出：第17、18小节后两组为7-2-3-7与高1-2-3-高1；不得用前两组3/5机械复用。 第19小节第一处#4作用于本小节同音区其余4；第二组首音为高2。第20小节#5沿用到第二组5，末组5有还原号；第三组为高1-普通1-4-高1，末组7-2-自然5-7。 原64音按位置全部处置，无丢弃或新增音，无连线或休止；末普通7完整.25拍。所有音高差异在source-comparison逐项披露。 仅覆盖完整64音短源，不把同曲383事件长deck视为完成；需独立音乐二读与软件审计，无人工试听或实机。 Root再次独立录入原像素17–20小节中声部64个MIDI值，与全部候选音高/时值完全一致。审查员首读和resolved文字误记末组为还原2；复看自然号紧贴5，addendum纠正，原错误记录保留；候选末组自然5一直正确。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "610118dfa61a49035895cedd8e85968020c2c9f198747d850b7fbc9cddb07075"
+  },
+  "note_count": 64,
+  "event_count": 64,
+  "duration_seconds": 10.909090909090908,
+  "limits": [
+    "Explicit selected edition arrangement.",
+    "No human listening or actual-game test.",
+    "Same-work long source remains separate.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-129-rain129-complete-source.review.json",
+      "sha256": "fef1760f58afae3093c022714f78f53f940d504ad6387a68ee9178155245b865"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "91535491c8f0b0525fd886b681799a18288756ec16ea36a017a3bec12d1ea534"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "45915680aa23db319bb37f75da96db5a5f31d829d61a70d6477a1a9fae8d3935"
+    },
+    {
+      "name": "0001-c7e2e2937ac5.json",
+      "sha256": "e0085a1757b5dc8337d6e8610ecf630f14e125896f1237207acf1e4ccc3ab0c7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

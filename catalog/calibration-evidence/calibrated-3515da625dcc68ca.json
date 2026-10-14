@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3515da625dcc68ca",
+  "source_id": "zhouzhou-088",
+  "work_id": "work-7bf9fe625d34",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "8ff9b73eeb73fcb9e008255c61112c08df9224473730d6dd93f330f7a7f6fd55",
+  "source_sha256": "3bc29d01bc4a1d65f7de687f191611c8160b8b206dab55950b6bdcdfe72e103f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/373633.html",
+    "edition": "简单吉他1=E声乐首副歌，E4降11至F3；70为明示练习速度；是字高#1的八度以365811P4单点校勘",
+    "score_sha256": "1cf44abae7b6fc48a398be4891e0790b5581d754214625c84942fc020e35df8c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 75,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "All11source lyric rows81events throughfinal了. One explicitly added passing attack,4pitchchanges. 完整原源11歌词行81事件：74音、7个明确0休止。源b=1是按着横杠而非降号，依据既有受控编辑器导出04-eighth-dash/05-quarter-dash及04截图；横杠精确拍数不从格式猜测，原raw逐项保留，所有拍值另按印谱重建。 采用373633简单吉他版1=E、4/4的第一副歌：P1最后一行起我怀念的是无话不说，到P2第二行最后一小节了的两拍音止。共9完整小节加2拍，38拍。紧接的器乐拾音与后段不在来源，未加入；全部来源包括最后谁记得/谁忘了均保留。 参考实际标E，指法C与capo4不重复加4；本编配把参考E4移到F3（降11），把源整体降12。源音区关系全部保留，输出Bb3至C5；改动另列，不称调性零误差。 373633页2第一行是字的#1缺清楚高音点；显式校勘为高#1，以365811大伟吉他页4首行相同还是想要乐句的高#1为单点八度依据。仅这一八度取旁证，不借其速度/调名或其他时值；源31F4据此改F#4。其余三个改音为source事件38B3到Bb3（动）、47D4到C#4（也）、50A4到G#4（那）。 冲字后的回落5为印谱P2r1b1末独立十六分，原源37后缺失，明确增加C4四分之一拍。其余74源音及7原休止逐个映射一次，无省略。输出75音7休止82事件。 所选版想、那、空的同音弧按实际时值合并；右手跨小节的两个高2无同音弧，保留两次独立起音(.25/.75)，与源65/66一致。谁记得最后两个5也无弧，分别半拍与两拍，不误合。 页头无数字速度，70BPM是明确选择的练习速度，虽另一候选写70也不宣称本参考原唱或打印速度。38拍约32.5714秒。末了C4完整2拍；来源尾部不截断。 Root已看373633完整三页与所选三行近裁，365811页4交叉校勘及原格式受控截图；数值提案仍需另一审查者完整视读、冻结数值并比较后才可验收。未人工试听、未实机测试。 Root和另一审查者从图重录的完整82事件逐项音高、拍长、起点一致；81原始事件的原token再次与独立来源转录核对，74音与7休止全部映射一次，新增独立C4四分之一拍。来源事件31/38/47/50改音，不与音符序号混用。 独立复核已先见root资料，是非盲复核。审查报告将全部内容称作373633原图可读的表述需限定：P2r1b1是字高#1的八度点在373633不清楚，采用365811P4作为明确的单点跨版校勘。Root已直接查看365811P4旁证；一致数组不能证明373633单图无歧义。 原候选待复核状态为保留的历史记录；本包完成音乐证据核对，需另行生产软件审计。70为练习速度，不代表原录音速度；未人工试听、未游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1cf44abae7b6fc48a398be4891e0790b5581d754214625c84942fc020e35df8c"
+  },
+  "note_count": 75,
+  "event_count": 82,
+  "duration_seconds": 32.57142857142857,
+  "limits": [
+    "Selected edition, explicit octave emendation, practice70BPM.",
+    "No human listening/game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-088-miss088-complete-source.review.json",
+      "sha256": "1fff962e705ed242ba89334af43660aa302fc9bf668cd5410fc1a45829c3ccb4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d9ac6e1cba25e8d1420fce4c75abea8d20178710372e4323904c737b3f56deb8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1494ca797d99088b4408cf6c2588021e6b378c587465f0d73e164d845eb82e94"
+    },
+    {
+      "name": "0001-41c325424f38.json",
+      "sha256": "d4a7fa115166e3d18f8de8b0b6a626dd3b9ef66f5181b1416eb0050ba4fdcfcf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

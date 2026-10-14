@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1fbae04bdddaa4af",
+  "source_id": "zhouzhou-093",
+  "work_id": "work-e5f2bb467bb4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c2c66bcbab66803fdabbfceda062ef8e643e2f8cbe8f18260e5405a12361a9e8",
+  "source_sha256": "35aa11cc5277751cefa98dad13b0d8aefdf05c583f918787c15c2b156b174085",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=h0djuhl97Kw",
+    "edition": "Mili SAIKAI official recording h0djuhl97Kw; auxiliary Black Cow piano score for source79",
+    "audio_sha256": "a0e2df02a064f010f2f0245dcdc47457f0506a0658154d43b5ddb6c401e84c0f",
+    "start_seconds": 30.43,
+    "segment_start_seconds": 30.43,
+    "segment_end_seconds": 111.8
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 124,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-14
+  },
+  "review_note": "全部现有来源115音所对应片段，非全录音 Root此前已逐页检查全部来源对应的输出覆盖图及原始混音/人声细节，保留重复音的真实起音、休止与短转折。115个来源音各映射一次，输出124音。 48.17秒MIDI54、48.78秒新增53及74.55秒新增67按原频谱保留；来源94的短促64下探及66上行简化为F4目标，未逐瞬时音高重复发键。 来源95/96缺独立重复起音，合并；末来源113/114为110.61–111.80连续F4，删除人为重复攻击与111.10–111.26伪休止，下一歌词112.30不属于该来源范围。 来源79在95.02–95.20秒两模型存在高C5与低F3歧义。Root独立视读Black Cow公开钢琴谱第1页第27小节最高声部G5-C5-E5-F5-G5-C6-F5-E5，前五音下移八度与官方92.92–94.61片段连续对应，第六音支持短C5。 此第三方编曲为独立音高旁证，不替代官方录音的起音/释放检验。结合此前官方原混音轨迹及短音时间范围，接受当前C5目标；不据钢琴谱覆盖其他已审旋律细节。 原唱微分音、颤音和滑音保留为明确半音目标简化。60 BPM仅作一拍一秒的序列化单位。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "a0e2df02a064f010f2f0245dcdc47457f0506a0658154d43b5ddb6c401e84c0f"
+  },
+  "note_count": 124,
+  "event_count": 162,
+  "duration_seconds": 81.36999999999999,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "多声部录音的短音仍有声学不确定性；该单旋律目标另获独立钢琴编曲支持。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-093.review.json",
+      "sha256": "321d3432846fd9cd1fdc071d8db837b38b087d5d2f18ee4e1321be848e412617"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ebdc70273f6674348c93f80f21f781820ee4ce6f684feaf5b924af6d1c3047ef"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7ea55c0892f96757bfe4f3c3ea9ef1edacfa655b542a184017231c4407e238c1"
+    },
+    {
+      "name": "0003-4aa1a229f3ae.json",
+      "sha256": "8a11903c0048aa9b9af66e0531fe205f35c92c141a96baea5f920868117f05ca"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

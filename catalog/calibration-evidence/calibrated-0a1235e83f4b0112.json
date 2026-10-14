@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0a1235e83f4b0112",
+  "source_id": "alternative-score-b45499e9ad280629",
+  "work_id": "work-0a617fac3992",
+  "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%AC%A2%E4%B9%90%E9%A2%82.txt",
+  "status": "reviewed",
+  "sha256": "a64b1c59183582634aa6cf156d104ddd2c47bcb2b97d22b28c6c6a5cd50fb603",
+  "source_sha256": "f54458818ab087e0e81239b33b67f34294767cfb00e05c712937817fc91613af",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Ode_to_Joy",
+    "edition": "Public published score: ode-to-joy; exact edition bound by its SHA-256.",
+    "score_sha256": "14c11de73ba893305de7bf6a6eb9b72ebae78205684661e8dcc3faa668b5b1d1",
+    "midi_sha256": "dd7b76966b495281194d133b998907fc7e8bad4eab5174568c076d8fcfe75556"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 30,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 完整检查来源28音32拍；来源第4小节末把标准E附点四分、D八分、D二分简化为E二分、D二分；第8小节末同样简化为D二分、C二分。 修订副本恢复公开谱中的两个起音和附点节奏，共30音32拍，保留100 BPM；原28音简化编配完整保留在来源文件。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "14c11de73ba893305de7bf6a6eb9b72ebae78205684661e8dcc3faa668b5b1d1"
+  },
+  "note_count": 30,
+  "event_count": 30,
+  "duration_seconds": 19.2,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "100 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-b45499e9ad280629.review.json",
+      "sha256": "70abd3ecfd486658c6b5967ec64c9c613d7ac706510424c3747a6488bbced0da"
+    },
+    {
+      "name": "review221-alternative-score-b45499e9ad280629.timeline.json",
+      "sha256": "06919485187fb10dfa1e6652ecd841559412fd27134b6839a2be44893903da80"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0006-ef89dfbab38e.json",
+      "sha256": "80129b1955d1232b34224a3afbc315380adbc780766e505f47029326ab7d67d0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

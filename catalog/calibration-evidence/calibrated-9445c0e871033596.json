@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9445c0e871033596",
+  "source_id": "alternative-score-d1411b549a59a430",
+  "work_id": "work-10e764db8602",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%96%80%E7%A7%8B%E8%8E%8E.txt",
+  "status": "reviewed",
+  "sha256": "832973ed24628018a9c568e033fc64331f01dbf8fe4c3f0a65184b59b74a4d98",
+  "source_sha256": "a5389e7dd9385921276e3d62f18c96fbddc2e396d1e9e4adeb4ee660a7a71a19",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.quputu.com/mingequpu/tongsu/36819.html",
+    "edition": "廖昌永/罗文毅声乐谱，1=bA、2/4、四分音符110；完整来源引子+A+B+尾声",
+    "score_sha256": "87effe13312675245683fb82ae4b4f5ff3c605f8c1937d32ef70224112d95833"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 70,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "来源71音4休止全部逐项处理；引子8小节、主歌8、副歌8、尾声4，共28小节56拍；末F同音连线合并，输出70起音4休止。 唯一音乐依据罗文毅/廖昌永公开谱，1=bA、2/4、四分音符110；不从EOP或李娜等版本拼入音符。 完整保留原引子、单遍主歌、单遍副歌及尾声，共28小节56拍；不将片段谱验收覆盖这份长源，也不扩展全部歌词反复。 源9/52的6改低八度，16/62的1改高八度，23–41主歌音区全降八度，22已正确；输出C4–F5、MIDI60–77，音级类别均保持。 引子第8小节四个低6为0.5/0.25/0.25/0.5加0.5休止；副歌第5小节休止0.5、4一拍、两2各0.25。全部小节独立验算2拍。 尾声三个3为1/0.5/0.5，5为2拍，末两个6有明确同音连线，源69/70合成4拍单起音；其余反复同音不误合并。 原始Git固定源、已有转换TXT和原转换报告均保留哈希；新独立解析75事件与两份既有转换逐项相符。参考原图经magic及Pillow确认真实JPEG，裁图为PNG。 Root曾在缩略图中把引子第5小节2的字形底横误认成第二条减时线；经原像素5倍最近邻裁图及独立复核，确认只有一条独立减时线，末2本来就是0.5拍。整小节0.5休止+1拍4+0.5拍2=2拍，无需编辑补拍，撤回先前误读；输出音符时值未因此改变。 原稿所有75事件逐项处理；完整保留8小节引子、8主歌、8副歌和4尾声的一遍曲式。全谱所有音级保持，仅修正逐处音区、时值、休止及结尾同音连线。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "87effe13312675245683fb82ae4b4f5ff3c605f8c1937d32ef70224112d95833"
+  },
+  "note_count": 70,
+  "event_count": 74,
+  "duration_seconds": 30.545454545454547,
+  "limits": [
+    "Single public secondary transcription, not original recording oralllyricstanzas.",
+    "Source-specific onepass forminto printedcoda is explicit; no automatic catalogpromotion.",
+    "No human listening or actual game check performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-d1411b549a59a430-sheet.review.json",
+      "sha256": "8dbffb3e814e3960c5e8ff872a29add7a6a6d5cdf3dc4010e6eab26ff9eeec78"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6383d3cb97607bb3410417b230af5c5dc5acfaaec6ea0636dda129984ca1d98a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7bc7af74e721310b84e5778d1f7e3d4c8535c7a0f7aac69be3df9f25947127a7"
+    },
+    {
+      "name": "0001-e3700132e70c.json",
+      "sha256": "ce91a9484b8326ba4e6368e12c5718057c4e985fa6a3b81b55ac1c3d747c5fca"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

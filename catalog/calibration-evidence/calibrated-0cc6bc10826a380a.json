@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0cc6bc10826a380a",
+  "source_id": "alternative-score-1533c637e78e0c10",
+  "work_id": "work-27a4aca7d608",
+  "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/daoxiang/%E7%A8%BB%E9%A6%99%E2%80%94%E5%91%A8%E6%9D%B0%E4%BC%A6%EF%BC%88%E9%80%82%E5%90%88%E9%AC%BC%E7%95%9C%E8%B0%83%E6%95%99%EF%BC%89.mid",
+  "status": "reviewed",
+  "sha256": "eea16a5b62b353c6e9dbf40e7ec79a455f072e772d3f868ba3d79aa024924545",
+  "source_sha256": "d92a8a9dde3a72ab2b1b4f99fb1c3cb30808b685bfa770b504f4bb21e5fbc5b1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/933616424370307075",
+    "edition": "飞鸿踏雪泥制谱;1=A;4/4;printed quarter82BPM;explicit selected source form and register",
+    "score_sha256": "8baaef0b23143e65d52d7ba9e042d5407da7b8b7a31aa78500133d822269dc9f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 557,
+    "maximum_parser_boundary_error_seconds": 1.2505552149377763e-12
+  },
+  "review_note": "complete-existing-source-content;explicit-full-source-form-and-register Explicit editorial arrangement from the preserved community-posted 飞鸿踏雪泥 score, keyA,4/4,printed82BPM. The posting is not publisher authentication. Manual original-image reading covers55 relevant unique printed bars; four earlier instrumental intro bars are outside both source extents and not appended. All printed repeat, tie, dotted, beam and rest values were entered independently of the old undercounted text parser. All source notes and every source gap are accounted for. Source-onset timing identifies positions within already manually read and structurally selected bars; it is not a similarity threshold or automatic musical acceptance. Only same-pitch printed arcs are ties. R11B2 final1->2, R11B3 first2->1 and R12 first5->3 are different-pitch slurs and retain attacks. R14B2 printedX is explicitly an unpitched sound represented as silence in this melody. 593 source attacks become557: 40 explicitly listed source pairs consolidate; 3 source sustains split into distinct printed attacks; 1 printed notes added; zero source notes omitted. 60 local pitch changes after the declared register setting are individually listed. Consolidations can replace source passing pitches or extra subdivisions; they are not all called literal ties. No human listening, recording alignment, audible playback, UI action, GPU calculation, production import, or game test. Root independent musical review remains required. The authoritative queued source is the fixed text,593notes/627events. Fresh byte decode confirms its original MIDI also has593notes in one melody track; every pitch matches the text after its pre-existing declared-12transposition. Maximum old float onset error is0.000117beat; original96PPQ ticks identify the nominal bar grid. Full selected source structure: high instrumental intro, first verse/refrain, low+high interlude, complete rap section, repeat fromsegno with second ending, D.S. return to refrain, explicit ending coda. No rap or instrumental source span is skipped. Source102 splits to A3(1.5)+F#3(.5) atR5B1; source310 also covers the distinct A3 inR11B3; source401 splits the two written A3 attacks atR14B2. Insert one printed F#3 sixteenth atR10B1 inside the source gap. The final source A4 hold of about4beats becomes the complete printed4+2=6beat tie acrossR16B1/R16B2. Two final printed rests are outside the selected sounding ending; the source tiny0.020833beat EOF rest remains recorded rather than being called a musical two-beat rest. Root完整社区原图、四段大图和节奏细图二读，另录55小节绝对MIDI/时值，分别按长版与片段结构展开，全部输出事件一致。 原文/MIDI/DFHS新鲜解码核对，社交原287音含标准MIDI漏出的272/278两高音，原来源片段范围完整交代。 同音tie与异音slur区分，来源重复/经过音合并均为明示选版；印82BPM，声乐主音A3为单音编配选择；未真人试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8baaef0b23143e65d52d7ba9e042d5407da7b8b7a31aa78500133d822269dc9f"
+  },
+  "note_count": 557,
+  "event_count": 588,
+  "duration_seconds": 200.4878048780488,
+  "limits": [
+    "Community-posted score, not publisher authentication.",
+    "Explicit editorial melody and register selection; many source passing/repeated attacks differ from the printed version.",
+    "Temporal source mappings support inspection, not automatic musical acceptance.",
+    "No human listening, recording alignment or game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-1533c637e78e0c10-daoxiang-reference-v1.review.json",
+      "sha256": "20774b08e2780c795128b47e8dca8ae5521084ee67dce639fc09632dc4b5c5dc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ba22a9cabdb45541fd5f6c4e2f8c0634919ebb749a93eb7a6e450696b1e91dc6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "aef1247adae15fe802216948ef5cedcf4cddeef1dcadaa5d1ad4f248b6b1684d"
+    },
+    {
+      "name": "0001-0b2db90af503.json",
+      "sha256": "8f20ef6804a3e60b79ea00db84a207e93816bcf54a1ddc729f20fcd167898983"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

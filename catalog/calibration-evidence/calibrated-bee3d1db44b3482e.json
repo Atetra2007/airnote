@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bee3d1db44b3482e",
+  "source_id": "alternative-score-18a672f41a0540da",
+  "work_id": "work-522440d04642",
+  "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/mariage/mariage_damour_melody_only.mid",
+  "status": "reviewed",
+  "sha256": "3c5d4bef9fea721c574f6c5114738b010343862a55a91bb4bb496ad344dd785b",
+  "source_sha256": "34a88ef2c74d3d97ccfffca7d5b87a7be68cf3767454adf72469cc215417546b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Music-2421.html",
+    "edition": "Gminor printedquarter73;full43bars;upperRH8va;whole−12",
+    "score_sha256": "3d4ec8a0d4e23dc5fc0507522e2041e555ca43dff002c7239989b9a59949a438"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 537,
+    "maximum_parser_boundary_error_seconds": 1.3642420526593924e-12
+  },
+  "review_note": "Full576notes/1156SMF accounted;full43bar reference537notes/4rests;536source retained or merged40explicit omissions5insertions 完整原源576配对音、1156SMF事件、全部原始休止间隙逐项保留且SHA绑定。两轨ppqn960，0配对issue/0同键重叠，原tempo72.0000288、所有原duration240tick并不被当成可靠印刷持音时值。 完整公开EOP2421四页五线谱与三页简谱全部实际view，43栏逐栏literal_worker_reading手录，RH放大分段复核。参考Gminor两降号、number1=Bb、quarter73，混合4/4,3/4,7/8,6/8,12/8,9/8。手指编号不当音符。 明确采用完整EOP43栏参考版单旋律编配，537音4休止541事件212.5拍。原576中536音保留或真tie/明确版别合并，40音明确省略；5个明确插音：两小D5倚音m5/29各选编1/8拍从前大D5借时，3个完整印刷Bb6独立击奏插入m39位置.75/1和m40位置1。原版额外结尾反复全列省略，非不明段落被静默删尾。 全部真实16分同音双击保留，例如pickup与m2首G、A/A、Bb/Bb；不按相邻同音自动合并。只有m3/27最后Eb5印刷真tie、m25上下octave同G对应完整真tie、m36源两个首Bb对应参考首dotted8th四组合并，均列源组。 源m5/29第五16分C-equivalent改成参考D5；m10/34源C5-C5-A5明确改为参考C5-A5-G5。全部原pitch与原时位保留，编配变化逐项，不宣称原mid已等同参考。 m14..16、m23..25、m38..43明确读8va，RH octave双音选择上八度，低八度省略；m16/m25持G6时移动低声部明确伴奏省略。全谱reference−12保持Gminor，输出55..84无单音暗折八度。 尾段第一原结尾主题source538..550完整对应参考m42；source551末D、552..554低桥、555..565第二次额外主题prefix明确参考版省略，source566终G保留为参考m43完整G6真tie4.5拍，567..575移动伴奏省略。全部原218.25拍尾已解码处置，reference212.5拍属于明确版别路线变化。 m5 fermata和m43 final fermata无数值，明确选择完整印刷时值1拍和4.5拍，不发明停顿；m3/27 Eb真tie1.5拍、m16 G6 dottedhalf3拍、m25 G6真tie2.5拍全保留。printed quarter73为所选参考版速度，不把原72强当73。 worker完整音乐编配候选待root独立四页43栏音乐复核及正式软件审计。无音频、人耳、UI、真实游戏或GPU验证。 Root实际看完整四页五线谱及43栏全部高清系统，另核第一页简谱；独立绝对音高/精确时值541事件全部吻合，537音4休止212.5拍，reference统一−12，含所有8va和混合拍号。 Root发现两处小D5倚音需明确，worker另存v2；m5/29小D各取1/8拍向前借时，原大D余3/8与11/8，主音D6及D6附点由两条加线确认。原v1不采用。 Root独立mido配对576原音及1156事件，tempo72.0000288、每音240tick、142编码静默全核。逐源处置536保留、40明确参考版省略、四组合并、五参考补音均对应完整路线，不将相邻同音自动合并。 Root复核m38后低线与两结尾主题：完整原第二结束主题prefix555–565为明确版别省略，566终G作为m43的4.5拍真tie；567–575尾移动伴奏保留原证据并明确省略。全部576原音已解释，但所选43栏不等同原录音完整编配。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "3d4ec8a0d4e23dc5fc0507522e2041e555ca43dff002c7239989b9a59949a438"
+  },
+  "note_count": 537,
+  "event_count": 541,
+  "duration_seconds": 174.65753424657535,
+  "limits": [
+    "Explicit EOP reference-version arrangement and extra original ending repeat omitted",
+    "Unknown fermata extension not invented",
+    "No audio or real-game verification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-18a672f41a0540da-mariage576-eop43-v2.review.json",
+      "sha256": "4d21e46d1eb1f2897526f5d2ea6da617a61e11d96cbfc0e02f63a6011a968d91"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1ee01b383fe879859ae4dd83f131bd4ef469594e0b3912fccf258fb5d13902f9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "485eab19129c7db46c4aec479f2ff6aaf7fcc30fe4fe59466de39206f30b003f"
+    },
+    {
+      "name": "0001-be1c98da686a.json",
+      "sha256": "b03ff398326d39712362afe18857a72f3370a440a7df9c5d4462cc68b8886bbf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

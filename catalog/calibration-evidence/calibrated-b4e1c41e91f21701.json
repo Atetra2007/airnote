@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b4e1c41e91f21701",
+  "source_id": "zhouzhou-202",
+  "work_id": "work-3acf763ad898",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "b04efc0fb68e799404709a327ef454a136af05718d7bee1a4cd60e6f12c8b268",
+  "source_sha256": "9040adf8883a4affd1a60f758f440aadfdfa6e671f0d13e9ca8df86fb82712fb",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=Zh7gmg8VjFc",
+    "edition": "八三夭 想见你想见你想见你, first chorus of supplied recording",
+    "audio_sha256": "1263f67c16d4be715e79cb7f6163c17a7e51ec68503f09a62d3cc221cce19896",
+    "start_seconds": 63.3,
+    "segment_start_seconds": 63.3,
+    "segment_end_seconds": 95.93
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 65,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "完整来源65音及八行歌词，第一副歌；非全录音 Root独立阅读完整来源JSON八行与65音，并检查wantsee-first全部5页原混音/人声频谱、6处细节、结尾细节及最终全部5页输出覆盖。旧wantsee/panel为第二副歌比较，未将其误当成最终范围。 源谱下移6半音匹配所选第一副歌F#调；保留全部65个目标音。第二副歌末音有不同演唱处理，不用于修改第一副歌结尾。 只/想在68.12/68.41、难/解在82.87/83.18、你/也/和在86.55/86.79/87.05的独立辅音或共振峰变化支持逐字起奏；同音基频连续不等于单音。87.28释放后保留呼吸空隙。 穿/用等强滑入、依字先高后落和末句滑入均简化为来源目标半音；不将每一瞬间轨迹变化扩写为新增音符。 Root新增79.4–80.65秒细图核对机字：原混音和人声均显示约C#4–D4的短起伏，80.12–80.41在两音之间滑动，末部回到约C#4；保留源谱C#4作为单音简化，不宣称录音音高恒定C#4。 末意字F#4在93.50进入，95.93前高次谐波及幅度衰减后停止；不跟踪混响或后续伴奏增加时值。 60 BPM为绝对秒序列化单位。完整现有来源范围已核对；人工听感和实际游戏未测。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "1263f67c16d4be715e79cb7f6163c17a7e51ec68503f09a62d3cc221cce19896"
+  },
+  "note_count": 65,
+  "event_count": 98,
+  "duration_seconds": 32.63,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "滑音按目标半音简化，机字含C#4–D4起伏；起止边界通常有约50–100毫秒判断不确定性。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-202.review.json",
+      "sha256": "6a760f41235ed7d4bba4a3f75a49e84d461ae6ad719ef7646451a307178d5997"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "aa4bee9d90191fa973443f4af9812dad5e27b60ec5ec31cbc05f547739728ff6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "576f33befee2f25155ad2f7f6e364db10ee3c54a1a9a8b346bb2cae2b67d2e95"
+    },
+    {
+      "name": "0001-e1f9b3518b6b.json",
+      "sha256": "7c5645bfa2f7c6544a377b281ed5cf0da19321509412b1930f899b6b41ef9224"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

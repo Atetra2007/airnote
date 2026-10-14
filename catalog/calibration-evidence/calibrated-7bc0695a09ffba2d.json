@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7bc0695a09ffba2d",
+  "source_id": "zhouzhou-079",
+  "work_id": "work-a415b2eb6a0d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c2ee82cc3eb8dfe9b7632dd8e2d62fc5e052a3519f2b8ebb925e917b55ae0774",
+  "source_sha256": "058193a22a3f3a4806b51589068868639ff71c94a2a9357d5ac3c20b168842a2",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qinhun.com/pu/70090.html",
+    "edition": "石头音乐C调主唱完整来源范围，第1/2公开图覆盖到聪明；70BPM另据两份谱头",
+    "score_sha256": "167c8770aa48a04a6e5aeafe3b58bc6410508ae7a3437c5128c095ee5c52b186"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 94,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "全6行82原音2原0，从你真的懂到聪明；原0在如字处显式转为印刷B3，另一0保持。 固定物理原078-蝶吹笛子.source.json，内部题名唯一，SHA058193a22…；不更名、不替换基线。完整六歌词行82音2个0共84事件逐项处置。 旋律节奏只用qinhun70090石头音乐C4/4下方主唱数字声部。公开无登录页面直接显示第1/2张高清img src，两页已经覆盖源从你真的懂至聪明；第三张没有src且未获取。并未把未取得的第三页冒称已审。 70090未印数值BPM；明示选择70BPM，参考249927完整EOP钢琴页头与449516声乐预览页头均印四分70。该琴谱只作速度旁证，不用其延长钢琴旋律取代主声部休止；qinhun90464另一团谱打印72是另一选版，不混用。 70090谱字面普通1按C4读取，全局降12半音，使谱高1成为来源普通C4，普通5成为来源低G3，所有段落统一移调。不是把吉他和弦或弦品再做第二次移调。 来源从第一声你开始，排除主参考前奏及之前1.75拍0；V1保留后2.25拍。最后聪明为3高 .5、1高 .5，到明结束；排除随后全休止小节、间奏及后续反复。V2/V4等位于来源乐句之间的印刷静默都恢复，不以拉长前音代替。 V1懂高1两枚.25同音弧合.5；V5希高2两枚.25同音弧合.5。V6清高3 .25接高3 .5合.75；源缺厘字高2 .25按主参考补一音，能与清仍逐一映射。 并不简单四音source9/10/11/12原G3/B3/A3/B3，按主唱字下音改E4/C4/B3/A3。其后原event13=0正处如字位置，主谱该字普通7 .25同音连7 .25，显式纠正为B3 .5，来源0原数据与休止转音处置独立保留。呼source13 C4 .5、吸source14 D4 .25完整保留。 原第二个0为event24，在若字前，映射V7开头一拍印0；若source23 E4、没source24原B3改C4、交source25 B3、心source26 C4。两枚原0均有明确处置，没有静默删除。 我真的爱你保持source31-35五音；的后一拍0及下一小节四个1拍0均保留。句句不轻易按声乐一字多音补首句5 .5、次句3 .5；轻5 .5同音连5 .5合1拍，最终易5 .5独立再起音。 眼神中飘移按主谱补神的高5 .5、中的高3 .5、飘后的高5 .25三音；移高5 .5接下一小节高5一拍合1.5。总是在关键时刻等全部原词音仍顺序在位，时刻后静默与清楚洞悉尾0按谱恢复。 你的不坚定与死去中清醒两句各补的/去的高5 .5、坚/清后的高5 .25连高5 .5合.75两音；最终定/醒高5 .5为独立起音，不能与前一个同音弧全部合成长5。 颠沛流离的颠6 .5后补印5 .5，沛source66 5一拍保留；流source67原5改3 .5。明白source74/75原5/3改3/2各.5。末背着我按source77/78/79对应6 .5、5 .5、5一拍全部独立起音，聪source80原5改3 .5，明source81为1 .5。 82源音无省略、无源起音并组；12个增出的声乐起音中1个来自原休止转音、另11个为印刷经过音/厘字补音。输出94音42休止136事件，90.25拍，70BPM共77.357142857秒。所有84原事件恰好映射一次。 Root完整查看两页主唱图及两份70BPM旁证，另录136事件与提案全相符；独立解码82原音和2原休止，全部84事件恰好映射一次，9改音、11补音和1休止转音逐项核实。末聪明两个半拍音完整，未增加源范围外间奏。正式软件检验单独绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "167c8770aa48a04a6e5aeafe3b58bc6410508ae7a3437c5128c095ee5c52b186"
+  },
+  "note_count": 94,
+  "event_count": 136,
+  "duration_seconds": 77.35714285714286,
+  "limits": [
+    "Main melody edition has no numeric tempo;70 selected from separate published headings.",
+    "Reference has3pages; only public1/2 acquired and all source material ends within those.",
+    "One original rest explicitly corrected to sung note on 如; all source raw data preserved.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-079-only-complete-source.review.json",
+      "sha256": "a4a973e3afe871f54dd3b87dcc9680d143de0e0af9b2ee778920c66fc016fe13"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f893877cd897600753d535c2b9204cc2164b5952f1d7f253d4f788c2b860be53"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4d4632ca9317cb0a04f5cc422f8866682da78dba2649282677fc9f2303786a22"
+    },
+    {
+      "name": "0001-58a4af726ddd.json",
+      "sha256": "afb489e5f1747d951abd015391b08ec0d8cb2900f02771520fd94356f48441a3"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

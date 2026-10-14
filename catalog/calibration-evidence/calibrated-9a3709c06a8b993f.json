@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9a3709c06a8b993f",
+  "source_id": "zhouzhou-193",
+  "work_id": "work-d22258711825",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "67613b5b5729999ca46f18d9c80032d29f5986b8e54190240d48deb61d568893",
+  "source_sha256": "4cdf217140a0e2998d731f97b5394b6e95bf77fd003017257cebf95313df8629",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/22366.html",
+    "edition": "孙世彦D调6/8声乐谱，附点四分60换算四分90；完整来源C-V-V-C曲式",
+    "score_sha256": "3749480ca2c2fb265a3c210688a3287b02c9e804fb408340ce10109bcc0c56f5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 176,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "全部175源音处置；首尾副歌前半与中间两遍主歌选版，保留来源完整12行次序。 完整来源12行175音全部逐项处置，原文件与原行内分隔符完整保留。来源不含歌词或可靠时值，竖线仅保留为排版线索，不能直接当小节或休止。 纠正研究阶段的intro识别：首尾28音高度对应和我在成都的街头走一走至直到所有的灯都熄灭了也不停留副歌前半，并非所查公开谱前奏。完整保留源副歌片段—主歌—主歌变体—副歌片段曲式；没有擅自加入衣袖后半副歌、钢琴前奏或间奏。 中间61音及58音两组均按第一主歌让掉眼泪至挣扎的自由的旋律位置对应；第二组仍是来源的近重复变体，不冒称已核实第二段分别总是在九月歌词。采用22366同一声乐版复原两遍，补音及两个省略逐项披露。 主参考为22366孙世彦声乐谱，两页全图可读，所用主歌和副歌前半全部在第一页。打印1=D，6/8，附点四分音符60；软件以四分音符90表示，二者是同一速度。参考D4统一降2半音至C4，保留原源G3至C5主要音区。 每个副歌从和的3半拍弱起到C8留字主1结束，共24拍；主歌每遍从让的低5弱起至自由末长1及下一弱起前的一拍印谱静默，共51拍。完整24+51+51+24=150拍，90BPM共100秒，176音14休止190事件。 副歌C1为5一拍、5半拍、5半拍、3半拍、5半拍；C2/C6末字是2半拍，源对应1改为2。来源首尾首音低5改为参考和字3，并明确记为选版修正。C5开头两源5合为所选版附点5。C7补第二个独立1半拍，不能省成只有1/2/3。 C8留字前打印小装饰12；来源只有2/1，因此补装饰1。小1与小2各明确分配0.125拍，从后方主1的2.5拍借走共0.25拍，主1保留2.25拍。这个装饰时值是编配选择，非印谱精确量化。C8后面的你会两个低6不在来源范围内，未加入。 主歌V1/V5的1附点1.5、另1一拍、2/3各0.25照谱执行；两遍V5源均少第二1，明确补齐。V2的第二与第三3打印同音弧，合1.5拍；V10两个6同音弧合1.5拍；V14的后两个1同音弧合1.5拍。其它异音连奏不合并。 主歌V6原双5选版合为一枚5半拍；V8原重复2合成一枚2一拍；V9多余前5、V11多余中1、第一遍V14多余末1也按选版合并。所有源重复音仍逐项映射，明确是改为所选版起音数量，不能声称原无时值源本来写了延音。 第一主歌V11末为3，没有源74与135的5邻音；两处5明确省略，未把原装饰虚称已经核实。柔字印谱可选小2装饰省去，主3半拍与2一拍保留；这个简化与副歌保留来源已有装饰2的处理分别注明。 每遍V12让及V14是的低5半拍原缺，明确补齐。第一遍V15自字2到1各0.25，源末1映射由字4.5拍主音，故另补自字下行1；第二遍源末句缩略，补所选版的3一拍、2及1各0.25，再接其末主1。 自由中最后1不是把自字末1跨小节合并：自字2到1为异音弧；由字另起，跨后面三个附点1同音连线合4.5拍。其后两个八分休止合一拍用于接下一来源片段。 113876/27631钢琴参考的前奏与本来源首尾不同，不用于本提案音高和节奏；145740、76031用于版别比较，没有混用其不同节奏和速度。没有音频自动匹配替代人工印谱读取。 Root全图独立二读另录190事件，与提案全部音高/拍值/起点一致；完整175源音及所有新增、归并、省略逐项核查。正式软件审计另绑定；未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "3749480ca2c2fb265a3c210688a3287b02c9e804fb408340ce10109bcc0c56f5"
+  },
+  "note_count": 176,
+  "event_count": 190,
+  "duration_seconds": 100,
+  "limits": [
+    "Explicit selected-edition changes, consolidated source attacks, two omitted source neighbours, and restored printed attacks fully itemized.",
+    "Printed grace12 explicitly quantized .125/.125 by borrowing from principal1; not a claimed printed numerical grace duration.",
+    "Complete existing C-V-V-C source form; not the full commercial recording or a validated original intro.",
+    "No human listening or actual-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-193-chengdu-source-form.review.json",
+      "sha256": "1e9358d883ebf1b3c9754e7d634c300535acb01949dfda6a9305f50268932858"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "67f0c914bf6b8ca59b99c56f171c5549712f2066c39579f32650cefbf9669c22"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b8ac95934b0aad2b29a752b9749d74943007579bfc43b2f2a05592567e11d298"
+    },
+    {
+      "name": "0001-9f6258b5962f.json",
+      "sha256": "e78f5314d727dc72b41bf8912115b5a5349ac37f9ef4e7bd57f59cc6d45c6f95"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

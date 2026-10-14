@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9363967916d217d4",
+  "source_id": "zhouzhou-144",
+  "work_id": "work-9e5bfce23138",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e4e7c3d6ca3dae3be78be44d872679a8b3acfd15ce109844b49db46313169ff0",
+  "source_sha256": "b035caeb7705d0aff978b47befc57ae1c296c57ec2551f0d9fa9f88dca1c5e0e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/153608.html",
+    "edition": "Z.E.Z.简谱1=C、2/4、单遍32小节；明确编配120BPM",
+    "score_sha256": "f8e7f0a396406bddee376d27d221a3b0af079e4523d0573599d97885400b73a9"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 87,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整91音和2休止来源，全32小节单遍64拍；四组同音延音合并，输出87起音2休止。 同一Z.E.Z.简谱为唯一音乐依据，1=C、2/4；源单遍结构覆盖全32小节，不展开中途反复标记。 原稿所有音与休止逐项映射；跨小节同音连线3+在3–4、5在7–8、1在17–18、1+在31–32四处合并，其他同音保留分别起音。 源共产党的高7按第25小节无高音点的中7改B4，原为B5；其余所有源音高保持。 瓜儿离不开秧一小节为0.5/0.25/0.25/0.25/0.25/0.5拍，鱼儿离不开为0.75/0.25/0.5/0.25/0.25拍；所有32小节均独立读到2拍。 保留原有2个四分休止；末高1跨两小节延4拍后结束。公开谱未印BPM，明确选择120BPM编配，64拍32秒，不声称原录音速度。 独立第二读谱人重新读取完整93源事件和32小节，单独建立89输出事件数组逐项一致，确认四处延音、两休止和唯一源73八度修正。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f8e7f0a396406bddee376d27d221a3b0af079e4523d0573599d97885400b73a9"
+  },
+  "note_count": 87,
+  "event_count": 89,
+  "duration_seconds": 32,
+  "limits": [
+    "SinglepublicsecondaryZ.E.Z.sheet;sourceonepassformretained.",
+    "120BPMexplicitarrangementchoice,notprintedormeasured.",
+    "Nohumanlisteningorrealgametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-144-vocal-sheet.review.json",
+      "sha256": "8c0eb01dde23eca76fa81fe9a5535d988cf75528da25bf145af5a088d6effe3f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "95cf8cfce2c95d960625e6ba6b2032e86aeaca7673bfb9dd75af0551c8e6a713"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "13971591613028132e240aee6d948f15fee6766b4098fd8dfb97e43003f836a5"
+    },
+    {
+      "name": "0001-490bfc4c06e1.json",
+      "sha256": "484e77c95af5c9c1c5db1a1a37c87c242d74f498a9f7e145bcbad6463e5bb796"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

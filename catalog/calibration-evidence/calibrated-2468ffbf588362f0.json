@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2468ffbf588362f0",
+  "source_id": "deck-e8a2cb61a006",
+  "work_id": "work-deck-e8a2cb61a006",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9-%E5%89%AF%E6%AD%8C-%E8%96%9B%E4%B9%8B%E8%B0%A6-ZhGr-5374cfda3e.deltamusic",
+  "status": "reviewed",
+  "sha256": "532d7a7f42c9433b3f9b524a92b772b23c9ac7b8a73eceaad0c4745dc56829df",
+  "source_sha256": "d36fa49db77f232475e1a021293452547a5ff3596eca4119e003815a87428d4c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/248292.html",
+    "edition": "KuBao/EOP piano 68BPM;normalizeB/Csections toC;monophonic register/voice choices;source common endingm53-55",
+    "score_sha256": "5cb5c50bf02aad6f55a57ba08bed57a58162e7b48e7a57d64b7782c2a354affc"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 139,
+    "maximum_parser_boundary_error_seconds": 1.8474111129762605e-13
+  },
+  "review_note": "complete-original-source;all-notes-and-rests-disposed;explicit-ending-form-and-normalized-key Entire original source pitch/time/rest sequence decoded and fully disposed. Research sequence alignment only suggested mapping; all deviations below explicitly adjudicated, not accepted from a match score. Reference248292 KuBao piano arrangement: printedBmajor68BPM beforem56, Cmajor fromm56. Output normalizes both sections to C like source: +1semitone beforem56,0after; this intentionally removes printed semitone modulation and is a declared adaptation. Monophonic register choices are explicit: intro/interlude lifted octave; octave-doubled right-hand selects lower melody; m36-43 upper chord melody shifted down octave; m21 uses upper melody E5/C5/C5/C5 and omits source lower passingA4. These are not literal concert-pitch score transcription. Full source form follows printedm1-63 then earlier common endingm53-55, preserving source last melodic phrase instead of changing to printed64-66 variation. No missing4bar instrumental tailm67-70 appended. The lastC5 reads0.5beat with terminal tie removed because the source ends here; no followingmodulation measure appended. Source163 extra C5 one-beat reattack before interlude omitted explicitly. Four rearticulations156/198/290/356 merge into written same-note ties, and all original attacks remain individually identified. Restore printedm27B5 before different-pitchm28A5, threem58 instrumental fill notes, and untied newm63A5. Five added attacks are clearly listed. Preserve printedm46 F5 after firstG5, versus source repeatedG5. m52secondG5 is0.5beat (two tied sixteenths); followingfirstE5 is0.5beat (eighth). Root and secondary enlarged-beam review resolved the v1 boundary error; bar total unchanged. At m61 selected D5/E5/F5 replaces source E5/C6/B5 late variation, declared version selection. Atm63-to-earlierm53 splice the sustainedC5 is editorial and noncontiguous, not a printed continuous tie. 68BPM is printed reference piano tempo. Source78BPM metadata is not a recording measurement. No human listening, recording alignment, or real game verification. Short original137notes exactly equal complete source suffix226-362 in pitch/duration, independently decoded. Start at printedm43lastA4pickup; full original short scope kept, no complete source prefix imported. Root逐页完整读谱与第二代理70小节绝对MIDI/有理时值二读一致；m52按放大横线重新确认G5合计半拍及后E5半拍，v1保留但不接账。 长短源分别重新解码，全部原音和休止交代；按来源范围保留选段，明示统一C调、单音音区与结尾拼接选择。 68BPM为参考印刷速度；没有真人试听、录音对齐或真实游戏验证。 参考页清单元数据勘误：用材料生成器识别的additional_score_images声明全部四页，图像字节与音乐内容不变；旧冻结材料保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5cb5c50bf02aad6f55a57ba08bed57a58162e7b48e7a57d64b7782c2a354affc"
+  },
+  "note_count": 139,
+  "event_count": 161,
+  "duration_seconds": 79.63235294117646,
+  "limits": [
+    "Nonblind visual review; normalize-to-C, monophonic register/voice and nonadjacent ending choices are explicit adaptations.",
+    "No human listening, original recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e8a2cb61a006-sky-reference-v2.review.json",
+      "sha256": "673e7070a6b87b12677e93f2cd84abed8ca69113db9326a7cb307105804edb92"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f66057b05ed4e08a10aeddf745eef22e04592f0b1431ac316cdc92264c361688"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "deed4302f9b84d89c87f8d6f455ecb623b3faaad4b8b80dfd7abcdaad080959e"
+    },
+    {
+      "name": "0002-d4b7ce9e50db.json",
+      "sha256": "1041022140d471168931ed215f1340be2017c1663183dc950e89b21f1b0eb5fe"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-cabcc459123c9f86",
+  "source_id": "social-86f7fed4e084b18a",
+  "work_id": "work-639b92ede19e",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687795146175302921",
+  "status": "reviewed",
+  "sha256": "ecab1b97d79d772c6a60b222d20ed4956595efbb7e8a7b6377916fa7b77b1d06",
+  "source_sha256": "29bda4f51d6de1bd0cf3a32853f3b32455dcd0e1ec9838602d7b86246bcc9256",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/14844.html",
+    "edition": "Flower Dance C调钢琴版，打印82，m9-18右手最高旋律整体降12半音",
+    "score_sha256": "8a0b08e23a3193333ee10bc956635830c21425f393a30558c810a2b32ccc9dca"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 102,
+    "maximum_parser_boundary_error_seconds": 7.709388682997087e-13
+  },
+  "review_note": "Complete95cells across2images, through last row final5, m9-18 selectededition. 本来源两张图共8行95个音，非109的99音。逐图读完数字/点与粉色右键、黑色无鼠标键位，原数据和两页SHA保留；图无可量化时值/BPM。末两行放大确认全部粉色，不能套用109音区。 选14844 C调4/4打印82钢琴谱，完整第9至18小节右手最高旋律降12半音，输出A3–E5。root再次查看两页和原有近裁；这里明确复用先前root已读的同版小节事件，不称新的独立参考首读。独立审查仍待完成。 原社交图多数粉色高音，先统一降12作比较，再逐项明确按所选最高旋律校正不一致音区/半音。并不声称95源音都与印谱相符；所有差异逐项列在pitch_changes_after_explicit_transposition。 源39–50只有三组6-3-2-3；第15小节印四组，补第四组完整四个16分音。源51–64对应第16小节前三组与末组前两音，补末组C#6/E6（输出C#5/E5）。同一小节#1持续有效。 另补第12小节末独立E5半拍拾音（输出E4）；来源21的3明确映射第13小节长音。此对位为透明选版选择，不假称唯一原历史对位。共7新增音，95原音均一对一映射无省略/合并。 m9/13开头同音延音1.25拍，m11三连音各1/6拍，m14末5有还原号，m17/18双高点与单高点不同；输出按印谱音区，原图第17相应source74/76的3按第三组7修正。 保留完整末行至m18末G5十六分（输出G4.25拍）；不延伸到m19。102音1休止103事件40拍，82BPM29.268292683秒。源95音全部处置，等待独立音乐复核与正式软件审计，无人工试听或游戏。 Root再次亲看两张完整原图，独立审查员完整95格读取的数字/按键颜色均与root最初数组一致。粉色90格为高音，黑色5格为普通音；点依图例是长按，不作为八度依据，源未量化时值。 审查员初稿误把点称为八度点，保留initial与修正数组；修正数组顶层和rows仍残留旧说明且events误写所有格都有长按点，addendum明确废止：第一页行1第8–11格、行2第7格共5黑格没有点，其余粉格有点。该标记误述不影响独立按键颜色确定的95个MIDI。Root本次直接复查确认。 同14844参考的103事件完整音乐读谱透明复用已验收Flower109的双重数值读取；不同来源95原音单独映射且降12比较后40处音区/半音选择与7新增完整列明。非新的独立参考第三读、非盲读。最后G4四分之一拍保留，82打印BPM，未试听或游戏。 上述原候选待二读文字为历史说明，当前音乐复核完成，另送正式软件审计。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8a0b08e23a3193333ee10bc956635830c21425f393a30558c810a2b32ccc9dca"
+  },
+  "note_count": 102,
+  "event_count": 103,
+  "duration_seconds": 29.268292682927562,
+  "limits": [
+    "Explicit selected-edition reconstruction with seven added attacks and individually listed register/accidental corrections.",
+    "Sameedition reference reading reused transparently; socialsource itself independently decoded.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-86f7fed4e084b18a-flower-complete-source.review.json",
+      "sha256": "4a39e20191836b48b85134d68dde57b3f47e8cbb47276753b2623264146fbf9d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b4d21962bb363d42b74af6f142bd6434847d46558cee47fab6acc1c0bd7372e0"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1f5dafdd579d5502d4ffae6fda7e182455ce88f1fd517dde4f745c7bae56cb7d"
+    },
+    {
+      "name": "0001-bd726cec6660.json",
+      "sha256": "f98804d4d7055cf80a39436cb8956e7efdc38a6762206e240081ae0c2ed126f9"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

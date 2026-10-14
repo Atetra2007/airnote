@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-047690e72e62d8c5",
+  "source_id": "social-8503e4f313263956",
+  "work_id": "work-317bf81954cf",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=Xr1swzcO4VYa",
+  "status": "reviewed",
+  "sha256": "dfe9dd36dd1789b628288f0ee54b42698a31d2a6c3389e217e88c0b20876ec38",
+  "source_sha256": "fbbf6a3da7600ce38873cfa40549845c6a67df358ad7cd775f40ec9155f17407",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qinpu123.com/qiyue/gangqin/856995.html",
+    "edition": "C printedquarter62/124/62;full427source-selectedformwithexplicittheme/riffrepeats",
+    "score_sha256": "1ff47385c034b29d7ca81e465b4a81453115652e2b812248f6618e0fe00d6582"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 426,
+    "maximum_parser_boundary_error_seconds": 5.115907697472721e-13
+  },
+  "review_note": "All427sourceattacks;explicitselectedrepeatform;3pitchchanges1merge 完整SMF逐事件/DFHS快照均427音，所有427源音一一或明确合音处置；0配对问题/0同时起音/0同音重叠。862条原SMF事件完整映射或metadata处置，快照tempo/meter/marker原样保留；源文件和快照SHA绑定。 独立参考为公开琴谱123856995完整3页Date(Pinao)，3页全部实际view。本候选单独验427源，绝不沿用044短源已通过结论。C调，quarter62；m25..43印刷quarter124，m44印刷回62。 明确编辑选版形态：opening pickup+m1..8 →riff m9..16→伴奏m17..24→快速bridge m25..43→riff m9..16重复→opening pickup+m1..8重复→riff m9..16重复。所有原源段顺序保留。后两段riff的77源pitch分别与首段77完全一致，reprise36与开头36完全一致；以印刷相同主题选版反复，不宣称原谱自身该顺序。 不用后谱低八度的m70..77作为自动+12来源，而明确重复已读m9..16；不自动补入印谱m52..53、m62..69而原源没有的段。反复后每个末C均按m16附点二分3拍完整收束，不任意截尾。 源131 E4→F4及源137 G4→F4按m19可见两处F4；source187 B4与source188 C5合m27印刷C5八分，187明确+1。其余424源pitch保留，未隐去源B4。全源427输出426音，无插入音符或源省略。 每段开头E5/A4跨小节tie按62谱合3/3/3/4拍，4处八分休止恢复；与原source长门控/120元数据差异逐源记录，不将MIDI门控换算当音乐验收。三段riff每次Cquarter~eighth1.5拍、m12quarter~sixteenth1.25拍、m16终C附点二分3拍，真tie不重复起音，tie后C16真新攻击保留。 m18/m22末C16~下一栏C8合.75拍；m24 5/4尾D5附点二分3拍；bridge m32 E5八分~m33 E5八分合1印刷拍；m42 G5附点二分~m43 G5全音合7印刷拍。m43直到下一栏m44才回quarter62，故7拍均@124，输出基准62占3.5拍。 输出固定@62，将印刷@124段每个名义音长按1/2换成基准拍以保持该版速度变化，参考片段保留printed_bpm和printed_exact_beats。426音13休止439事件216基准拍@62=209.032258064516秒。不是自动从原120推出62。 完整3页读取及细部实际view，全原尾427参与反复映射。未音频/GUI/游戏/GPU验证；等待root独立音乐复核及正式软件审计。 Root实际查看完整三页参考，并重新按绝对音名手录m0–43全部主线和印刷时值，独立展开原源要求的m9–16/m0–8反复；439事件、426音及13休止全部一致，不以044短源验收替代427长源验收。 Root用mido独立读取所有SMF起落音及原字节DFHS解压，427音与快照逐项相同；862个SMF消息全部保留索引。原始120BPM仅元数据，采用参考明确62/124/62；m43的全音G仍属124，连m42共7印刷拍即3.5基准拍。 Root确认伴奏和弦选择上音、m18/19和m22/23真实跨小节C tie、m24为5/4；仅131 E4到F4、137 G4到F4、187 B4到C5三处改音，187/188按参考单C八分合并。全部427来源处置，0省略0补音。 后77/36/77源pitch与前段完整相同，明确按原源段落编配印刷主题反复，不声称按参考完整78小节字面顺序演奏；每次m16终C附点二分完整保留。 2026-10-13参考图片封装纠正：实际PNG/JPEG格式经完整解码核验，原始字节与SHA不变；另存正确扩展名副本并纠正MIME。音符、时值、谱文件及音乐决定不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1ff47385c034b29d7ca81e465b4a81453115652e2b812248f6618e0fe00d6582"
+  },
+  "note_count": 426,
+  "event_count": 439,
+  "duration_seconds": 209.03225806451613,
+  "limits": [
+    "Explicitselectedrepeatform;notliteralwholeprintedpianosequence",
+    "3sourcepitchchanges1merge;noomittedsourcenotes",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-8503e4f313263956-date427-v1.review.json",
+      "sha256": "cee6e2570825d9d119e8d1946775e274b6046c2824c3a43831c36587132085e4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7490f2656d683b41946edcedfafdf19b31e4902e4bd1f4bda567f099cc494841"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c00c7b7db487c875014b43cd931443201153c81a0d92e670f8a7b858f62a87a"
+    },
+    {
+      "name": "0001-a1509e4e2281.json",
+      "sha256": "e380df57befbbfdb559e92c96321f924e292e5c419cf42eddb3079ee78568261"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

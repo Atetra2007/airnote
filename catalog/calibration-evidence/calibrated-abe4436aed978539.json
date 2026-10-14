@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-abe4436aed978539",
+  "source_id": "zhouzhou-107",
+  "work_id": "work-9a91eae0dbbe",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "841322b593808ae0e98317342c930c41fc56022a9c3a57b0cfd122e948a0513f",
+  "source_sha256": "6a3b13bc65eb829eeb1273547797e721afb742ee9187f43f39b1d48af1768e94",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Music-19921.html",
+    "edition": "C4/4quarter80;m5..33firstending;full167sourceeditionwith1split1insertion18pitchchanges",
+    "score_sha256": "59dbeca89ff698a1400711cd81e0b02df47242335823e6de28fcd369196830e8"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 169,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete167sourceattacks;continuousm5..33;1split1insertion18pitchchanges 全167原源事件/音及全部rawtokens逐项解码SHA绑定，字典p/o/b解析保留已有b=1，其他未知不自动赋1；所有|为分组metadata不当小节。原DJ题名保留但明确选择公开原歌C调简单版名义节奏，不称DJ原录音80BPM。 参考EOP19921《雨爱C调简单版》杨丞琳，印刷C4/4 quarter80。完整3页数字与3页五线谱共6页实际view；网站每页明示可右键保存公开预览图，未下载收费MID/EOPN/PDF。完整单旋律m5..33第一结尾连续覆盖全部167，包括末source161..166。 五线谱辅助确认部分secondarybeam：m6/m10末是G16+G/A8+E16~次栏E附点四分，source7/24合1.75拍；m7/m11 short-run并非全16，m7 C5八分、m11 F5八分等各按局部beam。不能以凑满4拍代替读谱；primary逐事件记录图面分段和所有真tie。 18处pitchchange全部列出：source74/127 G5→G#5(+1)；source89 F5→G4(-10)；source106/159 B5→B4(-12)；m24 source108 A5→G#5(-1)、109/110 G5→G#5(+1)，升G五线谱临时升号在本栏所有同八度G延续而不是只第一音；source111..120十个原低八度音各+12与m24/25副歌同位置一致。其他149源pitch保留。 m24关键公开五线谱放大：G#5八分、G#5八分、F5十六分、G#5十六分、G#5八分~G#5四分、十六分休止、E5/D5/C5三个十六分。原source110单G5明确拆两个独立G#5攻击(.25+1.5)，F5独立.25拍明确插入，不错把前一个G#16也tie到后音。未删source108高A或source110。 m18/m26 G#5十六分~八分各.75拍；source72/125 E5十六分~十六分各.5拍。m21/22/29/30 C5十六分~八分各.75拍，B4为附点八分.75，不能将其认附点四分。 source54 F5跨m15八分~m16八分合1；source57 G5八分~四分合1.5；source104/157 C5八分~八分合1；最后source166 C5八分~m33全音符合4.5拍。整曲结尾完整含m33的4拍，不截原末音或延伸到未含的反复主题。 输出169音18印刷休止187事件116拍@80=87秒，1个源拆音1个插入音0源省略0合源。原已有字典b=1与选参考时值的差异逐项记explicit_source_duration_delta，不把原时值改动隐藏成unknown。 这是完整来源的参考版编辑校对，不声称原DJ歌词配合或原演出门控已验证；未音频/GUI/游戏/GPU验证，待root独立音乐复核及正式软件审计。 Root实际查看全部3页简谱与3页五线谱及m24细图，另按C音阶手录连续m5..33所有印刷音头/休止/时值，再仅按真tie合并，与全部187输出事件逐音高、起点、时值一致。全29小节各4拍，总116拍，采用印刷80BPM。 Root独立重解全部177原rawtokens（167音、10分隔符），逐音比较全部输出映射与18处显式改音；保留原已有b拍值并逐项复算与参考时值的差额，不将分隔符当小节，不猜原未知节奏。 m24临时升号对该栏全部同八度G持续有效：G#5八分两次、F5十六分、G#5十六分、G#5八分连四分；前一G#十六分不是tie。source110拆两个攻击，F5另补，全部原音保留。 m21/29末为A5，m21/22/29/30的B4为附点八分；最后C5跨m32八分至m33全音合4.5拍保留。来源不含后续反复，因此明确以第一结尾止，不扩大到整首歌。标题中的DJ来源身份保留，本版采用公开原歌谱，未宣称DJ录音对齐或实机验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "59dbeca89ff698a1400711cd81e0b02df47242335823e6de28fcd369196830e8"
+  },
+  "note_count": 169,
+  "event_count": 187,
+  "duration_seconds": 87,
+  "limits": [
+    "Selectedoriginalsongpianoedition;notDJoriginalrecordingtempo",
+    "18explicitpitchchanges1split1insertion",
+    "Originalexplicitdurationchangesrecorded",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-107-rain-eop-v1.review.json",
+      "sha256": "bf2031f3bb9710b6904924e2e9b5415b0250f0a5dc1a4884fbd944f082ad197f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c98e714f3df9a865c0314feb1d8b20447232fe582f4e26b9bdfc19634a3e7d75"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c18dbc4edfab1882fe4faed27d80e6fbc02356652c3e1191f6a6ae0ef66a6be3"
+    },
+    {
+      "name": "0001-a2806bf07bbc.json",
+      "sha256": "03670fb0871362e4e86c05a2f49255c199c64a75a0b7c6800105d0a33d7f3683"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

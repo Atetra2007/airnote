@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8ad6c8fd0ac99cc1",
+  "source_id": "deck-fc9521587689",
+  "work_id": "work-deck-fc9521587689",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9B%AA%E4%B9%8B%E5%8D%8E-%E4%B8%AD%E5%B2%9B%E7%BE%8E%E5%98%89-Jiko-803ba1ac7b.deltamusic",
+  "status": "reviewed",
+  "sha256": "deac87c8e83e733f745a5a7d305695d2dc82e25e4cc5f2081f8ff8f99b1622f7",
+  "source_sha256": "9effd021c9612f6332790d2a393f13e1564f04b0dcd1c9d6c758f77ab1b004c6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://ecywang.com/pic/雪之华口琴简谱/",
+    "edition": "B,2/4,printed71/72/60;complete-source-specific-structure-with-preserved12.5beatinterlude",
+    "score_sha256": "e343985307e9c8466ba129876d560d7ca4ea8b3c1eb763f6c771eb27154ce973"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 538,
+    "maximum_parser_boundary_error_seconds": 1.1084466677857563e-11
+  },
+  "review_note": "complete528-note969-eventexisting-source-all-verses-choruses-bridge-coda;2expliciteditionomissions;3printinsertions;10splits;1consolidation Complete original528notes/969events are preserved in the evidence and disposed individually. Chosen edition is the publicScotB-major2/4 vocal arrangement, not a claim of identical source/original singer timing. Retain source structure: two full verse/prechorus/chorus passages, original12.5beat interlude, complete bridge, two final chorus halves and coda. No initial printed instrumental intro is added because absent from source. Source52/222 D#4 attacks afterE4 are omitted in this explicitScotversion; printedr5b6 D#4 attacks beforeE4 are inserted instead. This is a disclosed edition change, not a reorder hidden as preservation. Source28/198,169/339,345,368,374,379 and46/216 are split into two printed attacks. Source393/394 consolidate into the singleC#5 five-and-half-reference-beat printed true tie. Three unassigned printed attacks are insertions:r5b6 D#4 in each verse and terminalr19b8 A#3. Source517 B3 becomes printedB4. All octave and other pitch changes appear individually in source-comparison. PrintedScot71/72/60 changes use storage72BPM and exactduration×72/tempo encoding. The original12.5beat interlude is preserved in beat count at72BPM; original60BPM seconds are not claimed preserved. Originalmicrorests are consumed whereScotshows a tie/continuous note, retained as evidence individually; printed breathing rests are restored. Six referencebeats of latecoda silence are part of the selected complete edition. Root independent complete image crossreading and formal software audit remain pending. No audio/UI/GPU/listening/recording-alignment/game tests. v3 corrects worker image-reading errors: r4b3 ordinary6, r4b4 ordinary5, r5b4 ordinary6 in bothverses; r10b4/r18b3 high2=C#5. No false source-pitch correction for these positions is retained. Priorv2 evidence preserved. Root完整单页、5幅放大及低点/高点细节复核，独立十六分单位重录全部所选唱段597事件完全一致，71/72/60印刷速度边界逐段重算。 拒绝v2错误八度点：r4b3普通6、r4b4普通5、r5b4普通6两遍核正；r10b4两次及r18b3高2都为C#5。v3仅余4项明确选版改音目标。 528源音/969事件重新解码，441休止组每项按最近保留源音和真实连线重算。2源D#4起音与印谱前置D#4差异明示省略/新增，10拆分和393/394真连合组均核准，无无解释段落。 第一完整副歌后原12.5拍间奏静默保留，使用72编码为10.4167秒；原源60BPM秒长不宣称保持。尾声末低7A#3起音补入、末B3真连3印刷拍及6印刷拍静默完整。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e343985307e9c8466ba129876d560d7ca4ea8b3c1eb763f6c771eb27154ce973"
+  },
+  "note_count": 538,
+  "event_count": 597,
+  "duration_seconds": 282.64906103285347,
+  "limits": [
+    "Publiccommunitytranscription, notpublisherscoreauthentication.",
+    "RawsourceBlabelisnotappliedassecondtransposition.",
+    "Frozenproposedcandidate;independentmusicreviewpending.",
+    "12.5beatinterludeandfullendingsilenceretained;noinstrumentationreconstruction.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-fc9521587689-scot-v3.review.json",
+      "sha256": "47130fcf2dcfe63d20ef5911314cbc09cd54a328e3f07326a2bcf7cacd4496ca"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "64c4fc571027ed18a7c604f8262780849e293b74b4e1ac6b58af8c6994b2302b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1a56614aa290ae7a1b937e8298ab5ed790e1e3e1515ab808db4bcf24fff469c4"
+    },
+    {
+      "name": "0001-27e363e56e07.json",
+      "sha256": "fb4f32135ef69858da0541724bc997a6516a47d90dda2125a277a2f0aa92b1b7"
+    },
+    {
+      "name": "root-snow-long-rest-resolution-v3.json",
+      "sha256": "d0566370c8cda1cd5453f97b2c33b25d9093431e5837743a8572a09b878d14f0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

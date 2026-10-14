@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-89e542d3737a1d66",
+  "source_id": "zhouzhou-019",
+  "work_id": "work-c26930029810",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "502dc7d37fc6691b6260f94f7b5f4c362037bcba8b916d399fd86a368cb50787",
+  "source_sha256": "62ca192722661dc36472b4d81cfebe2f681b157ca8627ab768da102bb38a90c8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1Gr7K6nEGH/",
+    "edition": "C4/4quarter80 vocal and first chorus printed version; explicit omission of small grace attacks for practice",
+    "score_sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 104,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "All original eight lyric rows, V1–V15 plusV16first3heads; explicit source84/85weak pickup merge, no chorus extension. 固定zhouzhou-019/work-c26930029810，原8行97音+8分隔=105事件逐项另解码；不能继承173/185/MIDI接受状态。 按8行歌词逐整词定位到印C声乐V1–V15以及V16前三头；第8行12音是V14末“卿”弱起+V15八音“和了胡旋君作汉宫”+V16三音“琵琶语”，不是整个V15–V16。 第7行末source84和第8行首source85均原6=69，经整体-12是A3，两个原攻击归所选打印V14末低6一1/4拍弱起。明确版本合组，未宣称原真tie或两个本来同一攻击；两原完整token/行位置同时保留。 source86–93按V15八个词音定位；source94–96按V16前三头定位。终止在印V16第三6=A4半拍，61.5拍；不追加后面的560turn、零、弹一首、副歌或收尾延长。 完整源-12是便于比较的音区基准；所有其他度数/八度差异逐项列pitch_changes，包括原source94普通高1在选谱V16首高1需要再升12。原提示字段不推定时值。 明确选择印声乐80BPM与每个beam/dot时值，替代源未知时值；所有97原音保持97条处置，经两弱起合一保留96攻击，加8明确印头=104音。 补8印头仅V1的两passing、V3三个passing、V4一个passing、V11一个passing与V12一重复5；不像148源添加V16turn或副歌，完整原源全部有位置。 选练习主线省印V5两个tinygrace1及V11/V12两个tinygrace4；普通異音slur不当tie。与其他四v3相同公开版，但本019独立完整歌词路线与逐音处置。 最终104音8休止=112事件、61.5拍、80BPM46.125秒、MIDI55–72；待root独立完整原词源/适用谱面二读和生产审计，无试听/音频/UI/GPU/游戏输入。 Root独立重解原8行97音8分隔，逐句核歌词及已实际完整视读V1–16，独立重录112事件/104音8休止均吻合。 Root识别第8行“卿和了胡旋君作汉宫琵琶语”应V14弱起+V15八头+V16前三头；原84/85是两真实token，明确版本合组而非称原tie，完整保留两条处置。 源94–96选C5/B4/A4，止61.5拍不补V16后半；8补音、23音高选择逐项核实，0省源音。输出80BPM46.125秒，练习主线四小grace省略公开。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "note_count": 104,
+  "event_count": 112,
+  "duration_seconds": 46.125,
+  "limits": [
+    "Source timing unknown; independently selected printed rhythmic version.",
+    "Two originalweak pickup attacks are explicitly merged by edition choice, not originaltie claim.",
+    "Eight printedpassing/repeat heads added; original pitch choices separately disclosed.",
+    "Ends atV16first3heads; no original terminal duration recovered.",
+    "No audio/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-019-pipa-lyric-v1.review.json",
+      "sha256": "7d6fb4621572e64a87ace504ddf5ecc98f32efe9cd7e4895f52e2d477485b230"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "72d3edb1ce3509cc10216e50331a7377742dc5fda7ac5462d0c7c3b218d58a19"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "680af5b82e3077d7f0fba20f678ef635de55eea1bf1500129e35a9d077ece540"
+    },
+    {
+      "name": "0001-eab10c13538a.json",
+      "sha256": "35b80e5d2f4039b42fb590ab6bda879d7dc884cc4934a397854defc4a27bf57a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

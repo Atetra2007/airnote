@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d51f6b3a50c983dd",
+  "source_id": "social-813ebf99d5470299",
+  "work_id": "work-6658a0393456",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=yOk2uQFlUWB5",
+  "status": "reviewed",
+  "sha256": "9995ce0b2b49daa04d8ee5d7249eb64da7a24adcb7860f8ad6a5c58e10c91f97",
+  "source_sha256": "eedcd4be5292476ab1dac7eb320599dc0f89ae68df90ce3dbf5f144faf7bfec5",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://bowlroll.net/file/315146",
+    "edition": "Community UST by Jiancheshiji; Jingzhe1Chinese numbered sections0175-0262, note3-81;130BPM;transpose+12;79attacks9rests;not composer score/audio alignment.",
+    "score_sha256": "10991a30205e4c92244a81eebdc04257e1ef11f86c270f6a8b30dea0c007534b"
+  },
+  "review_method": "Root逐项读取公开符号乐谱的原始编号音符、休止与速度，独立录入完整适用乐句并核对每个来源音的处置；SHA-256绑定原始符号乐谱，不把生成图当作出版谱图。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 79,
+    "maximum_parser_boundary_error_seconds": 1.2434497875801753e-13
+  },
+  "review_note": "Complete75originalnotesdisposed;explicitcommunityUSTChinesevocaledition;73mapped2omitted6added;continuous79notes9rests. 完整原75音鲜解码SMF及DFHS逐项一致；原始短门控和全部静默保留处置，不用SMF投影或片段代替全源。 明确选择检测试剂公开社区UST《惊蛰1中》中文主旋律字音版，不是原作者官方谱。完整连续UST音3–81，即原始section0175–0262；开头对应春日，末ne完整2拍收束，前导词和下一段长间奏不属于本来源范围。 73原音依次对应四句；原18号G5仅15tick及56号G5八分是所选UST中不存在的额外边界音，明确编辑省略，原证据不删。六个新增独立起音UST11/30/49/64/70/77由独立编号音符section支持，非按歌词臆造。 保留79个字音攻击和9个UST休止，所有音高、时值按此选版重配；不声称原来源演奏完全相同。UST237节245tick即49/96拍微小延长原样保留；全长6145/96拍，不擅自量化到64拍。 全段UST标注130BPM，无内部速度变化；不把原作者130/120元数据臆造为本段变速。参考音高统一+12，输出65–77；pitchbend、颤音、歌词和声库参数不用于单旋律键位输出。 Root独立解析原UST并手录全部88事件，与代理候选逐项相符；完整75原头与全部间隙逐项处置。纯符号乐谱/软件检验，未人工试听、录音对齐或真实游戏。",
+  "reference_media": {
+    "kind": "published-symbolic-score",
+    "format": "UTAU UST",
+    "media_type": "text/plain; charset=gb18030",
+    "sha256": "10991a30205e4c92244a81eebdc04257e1ef11f86c270f6a8b30dea0c007534b"
+  },
+  "note_count": 79,
+  "event_count": 88,
+  "duration_seconds": 29.543269230769386,
+  "limits": [
+    "Community UST edition; not composer official score.",
+    "All75 source heads accounted; two explicitly omitted and six selected UST attacks added.",
+    "UST symbol durations; vocal pitchbend and voice synthesis are not represented.",
+    "No human listening, recording alignment or real-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-813ebf99d5470299-jingzhe-communityUST-v1.review.json",
+      "sha256": "0148e81bbf59f24123ca968b1bebe36c6b0cefb27e7dc27676d91cb8c60eda7f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6a16de00578a3c2738c1acb32f68edb10f23c045a792e82a4f555ac581509581"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b18b4feebc5802c04ec579c5f53e405c87eff44a141d5f2bfa2a4bf526d03185"
+    },
+    {
+      "name": "0001-9aa74052f7a8.json",
+      "sha256": "cfda4fe6cdf2370e82596bd988116a8a92b05cb2e7bba0d02e09890b96cc00f0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -27,7 +27,7 @@ public partial class MainWindow
     private int selectedGuideEvent = -1;
     private DateTime lastGuideUi = DateTime.MinValue;
     private bool GuideActive => guide?.IsActive == true;
-    private bool InGuideMode => GuideModeButton?.IsChecked == true;
+    private bool InGuideMode => PlaybackModePicker?.SelectedIndex == 2;
     private static readonly double[] GuideSpeeds = [.5, .75, 1, 1.25, 1.5];
 
     private void InitializeGuide()
@@ -350,7 +350,7 @@ public partial class MainWindow
     {
         if (GuideControls == null) return;
         GuideControls.Visibility = InGuideMode ? Visibility.Visible : Visibility.Collapsed;
-        GuideModeButton.IsEnabled = !occupied;
+        PlaybackModePicker.IsEnabled = !occupied;
         GuideVisibilityButton.Content = overlayWanted ? "隐藏浮窗" : "显示浮窗";
         GuideVisibilityButton.IsEnabled = guide != null && !closing && !busy;
         AdjustGuideButton.Content = guideOverlay?.Editable == true ? "完成调整" : "调整浮窗";

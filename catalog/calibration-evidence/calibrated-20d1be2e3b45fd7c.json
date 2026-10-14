@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-20d1be2e3b45fd7c",
+  "source_id": "zhouzhou-062",
+  "work_id": "work-deck-42b90c6d3570",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "86a1f1f57e735306298cf5c710b4d171ca44c2ddb317d9db2b32ecd0538c9c10",
+  "source_sha256": "fc1d92276801abc8ab30eb307bfde30f1d81c0c02926c32e4b41fb34acf33dc2",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/252861.html",
+    "edition": "EveryonePiano F调112右手旋律，移至C4音区",
+    "score_sha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 56,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "Complete existing 56-note source, with full ending. 完整来源56音，对应EOP252861右手旋律第1至17小节；左手不纳入单旋律编配。原56音全保留，未增加或删除起音。 打印1=F、4/4、四分112，明确以普通1=F4为参考约定，整体降5半音至C4练习音区；源文件本身为C4读法，相对原56音高完全不变。 逐图复读所有减时线/附点/同音连线：第2小节3合2.5拍，随后3独立.5；第8至9小节低6合5拍；第10小节6合2.75拍；第12至13小节3合5拍；第14至15小节3合4拍。 第3小节两个6是1.5和.5拍独立起音；第11末两个5为.75和.25拍独立起音；不能把同音重复一概合并。 17个4/4小节，共68拍56音，无休止；最后低6完整4拍，112BPM共36.428571429秒。 原短源全部范围完成，92事件长deck仍须单独处理；需独立音乐二读和正式软件审计，未人工试听或实机。 独立审查员完成整17小节图像首读及后续数值比对；其freeze误读第11小节为存在6连线，原像素近裁确认弧仅在第10小节，另写resolved更正，冻结首读保留。root复看整图与全部音序及56原音另行解码，原提案音乐无改动。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0"
+  },
+  "note_count": 56,
+  "event_count": 56,
+  "duration_seconds": 36.42857142857143,
+  "limits": [
+    "Explicit selected edition arrangement.",
+    "No human listening or actual-game test.",
+    "Same-work long source remains separate.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-062-sun062-complete-source.review.json",
+      "sha256": "6d5a5b9990b109d1554dfd0fc11181a294d73b83517cab7940ce70203fd9ee61"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2da06dc3b49c9f91f2332ceac296ef8af1d21a3469c318f645bf8c7951fe0c1a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8e448c470c992c55fcd8d27cb3277e3512b3ce82750ee69f1ddadadb3f6957fb"
+    },
+    {
+      "name": "0001-4226e39b0511.json",
+      "sha256": "0e819d053c51df6dce7f17f5bd16329932ec7bd8071dfb170595645ccd6824ba"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

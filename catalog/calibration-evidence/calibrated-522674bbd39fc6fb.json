@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-522674bbd39fc6fb",
+  "source_id": "zhouzhou-077",
+  "work_id": "work-spring-shadow",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "cd17cac1ad5a849e3ee5e557f8d698858fa107b0d5c1bfd471d093ddb4c53cde",
+  "source_sha256": "c839e22bfe8e9ac11786cca4b46a4b408cd3d6e67e5074d8c6e951c5771223e1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/1025244505008242694",
+    "edition": "B,6/8,quarter97;normalizeC;source-specific intro octave and first-verse ending reprise",
+    "score_sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 145,
+    "maximum_parser_boundary_error_seconds": 7.815970093361102e-14
+  },
+  "review_note": "complete126note141event-source;8intro-bars-and-two-full12bar-vocal-verses Authoritative126note141event source is fixed075-雨爱@sky光遇.梦起.source.json SHA c839e22bfe8e9ac11786cca4b46a4b408cd3d6e67e5074d8c6e951c5771223e1. Internal title春日影 and complete melody structure reviewed against clear publicCRYCHICscore. Filename雨爱 is stale metadata; unrelated077-春日影file contains弱水三千 and is not used. All126source notes/6unknown-time0tokens/9ambiguous|markers retained in comparison. No original timing inferred from bare integers or octave arrays;all output rhythm manually selected from printed6/8 quarter97BPM. Primary public被遗忘者的哀伤CRYCHICBmajor6/8quarter97BPM score, normalized down11semitones toC;intro first8bars deliberately loweredoneadditionaloctave to sourceE4 register, vocal stays printed normalizedC4 range. Source two shortE tokens44/45 and92/93 represent single printed dottedEend;consolidated as explicit edition decisions, preserving|markers inside the mapped event rather than inventing bar duration. Missing intro D/F/E and C/Dpickup restored. Source37split to two printedCsixteenths;source49split to printedB16th then nextBquarter as two distinct attacks;source73/122split to two printedCs8ths. Other missing complete vocalF-E-D-E and Cattacks restored, all listed as insertions. Source53/54and102/103 mis-lowG3pitch positions explicitly corrected to printed A4/G4;source61/111 becomes printed lowG3;sourceHighCvoiceoctaves63-76/112-125 normalized to printedC4;do not silently retain their wrong octave. Second saved verse uses printedm21-28 then repeats the firstverse simplem17-20ending, matching the saved version rather than forcing printedm29-32different ending. No source section removed and no later chorus outside this saved source added. Complete32selected bars independently sum3printedquarterbeats per6/8bar;96beats97BPM. LastD4sixteenth is the original saved cut, not an invented final tonic cadence. No audio/recording-alignment/UI/GPU/game tests. Root完整两页及减时线放大复读，按原保存路线重录32小节151事件逐项一致；126音/6无时值0/9竖线重新解码，全部无时值事件窗口按前后原音重算。 更正笼统的序奏整8小节降八度说法：前7小节与第8小节前2.5拍器乐降八度；最后0.5拍普通1/2十六分是主歌弱起，保持C4/D4声乐音区。数值候选原本正确，本决策精确限定八度选择。 明确批准第二主歌再次采用第一主歌末四小节，与保存源音型相同；不强行换成印谱R8不同第二结尾。17补音、4拆分、2合组和20改音均图证确认，R5异音弧线不合并，R3B2双1十六分与R6B2单1八分保持区别。 物理源文件名雨爱为旧标签，JSON和整个段落身份春日影核实；引用固定原SHA而不是相邻077文件。未真人试听、未原唱对齐、未实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "note_count": 145,
+  "event_count": 151,
+  "duration_seconds": 59.381443298969074,
+  "limits": [
+    "Communityscore,not publisherauthentication.",
+    "Sourceversion ending reprised from printedfirstverse rather than the different printedsecond ending.",
+    "Sourcehas no quantitative timing;outputrhythm from print.",
+    "No listening,recordingalignment,or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-077-vocal-v1.review.json",
+      "sha256": "c25d841189e687db44ecc828340f81b7b9f24f2e4d5843e3b2a4e82f6f3b1264"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f566ce9136ffd18f8fbf1e3d86948a929fe0e6aeb3ee875fe12babd6bc9e64ab"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "41ce9ee4998ee8fa091d38b4769bf014b4013308cefb4fd76d1a82d633a4dd0c"
+    },
+    {
+      "name": "0001-9a1108d29875.json",
+      "sha256": "2b86a494338bfb77934e184c288b615e2a7282fef7d32afb7cc39818e8ae54f7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

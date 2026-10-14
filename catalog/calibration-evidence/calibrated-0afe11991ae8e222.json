@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0afe11991ae8e222",
+  "source_id": "zhouzhou-117",
+  "work_id": "work-e6526ebc37b9",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "cc8e9dd1d72418e19270280b77a3f0cd10ef1072fe8d0e82ec9472340a4e8981",
+  "source_sha256": "592f85824256f763410ae82e9d6d7294d66c3eb3774cec7030d323d1145e5091",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/438932.html",
+    "edition": "草原骑兵歌，古谢夫词、克尼贝尔曲，Ab4/4三声部之中间主旋律；保持源排列及逐段末尾",
+    "score_sha256": "f48cf00b1c7c95675c79df73a7eb72364f131834143555ff0e3b12b980e7b163"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 342,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-13
+  },
+  "review_note": "完整36源行342音9休止；9次前段再9次后段，保持源顺序。 完整源36行342音和9休止全部逐项读取，原排列为9次前段后接9次后段。本编配保持此排列，不擅自把前后歌词重新穿插成录音顺序。 主参考438932《草原呀草原/草原骑兵歌》，古谢夫词、克尼贝尔曲；打印1=bA、4/4、行军步进行速度而没有数值BPM。选100BPM是明确演奏编配，不是印谱或录音实测。 只选三声部版的中间歌词主旋律。前段印谱第1–4小节；后段第5–8加第9结尾，共20拍，每个后段都保留源中明确存在的终止音及休止，虽印谱前8遍应反复跳过末小节。 印谱Ab调相对音级移至C4主音，调类升4半音并选择来源主音音区。所有下加点6、5、7按谱置低音；原遗漏八度点明确改正。 第5和7小节的降7在本小节同八度后续7上仍生效，两个7都用降7；第6小节#1为升1，与自然1不同。所有改动逐源位置记录，参考双声部伴唱不混入。 源的时值代码、长按b标记及竖线数量不作为已知拍值，按主旋律实际节拍重建。全351源事件一对一，无删除、合并或补音；324拍、194.4秒。 Root与独立阅谱代理已完整复核351事件、342音、9休止及所有源行；升降号争议经放大谱面解决并保留更正记录。正式软件检验另绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f48cf00b1c7c95675c79df73a7eb72364f131834143555ff0e3b12b980e7b163"
+  },
+  "note_count": 342,
+  "event_count": 351,
+  "duration_seconds": 194.4,
+  "limits": [
+    "Source-order vocal arrangement differs from the printed interleaved nineverse form.",
+    "Tempo100 chosen explicitly; no printed numeric tempo.",
+    "No human listening or actualgame validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-117-grassland-complete-source.review.json",
+      "sha256": "ec7c5f96d6e10ff283f02a35401a061ecaf5e2cf6e1d448aab7fb25b47337b82"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "71e8fee36c58b2a4b1a0cb683ec270366c603c7bbcc64e429e23a423f2b25dcb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a3101e53c422437aeff696dc0e51f8b14d26dfaed67ae473cdb366535ba0ee93"
+    },
+    {
+      "name": "0001-1ec3cb9e7e94.json",
+      "sha256": "fca6d579e8c7ad56a2bc54e610ac1679dcd54123803e60d46f0aa0ef2ed16e45"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

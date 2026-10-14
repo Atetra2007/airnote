@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6f7a995b5f92fb0c",
+  "source_id": "alternative-score-3a9f16335d28258a",
+  "work_id": "work-spring-shadow",
+  "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%98%A5%E6%97%A5%E5%BD%B1%EF%BC%88CRYCHIC%20ver.%EF%BC%89%E5%B9%B2%E5%87%80%E6%97%A0%E6%9D%82%E9%9F%B3%2C%E9%80%82%E5%90%88%E4%B8%89%E8%A7%92%E6%B4%B2.txt",
+  "status": "reviewed",
+  "sha256": "6045e58d750ce2409df4cd69d5d027269a920fd8f3805d0b247367cfbe19e6b0",
+  "source_sha256": "7bf8e27f90b9ca17cc8e7138c49226be2bf46535a7c9753aeac246bbadde3bdc",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/1025244505008242694",
+    "edition": "C-normalized B major quarter97; complete original593-note source extent with explicit instrumental cuts and eight-head second-verse option",
+    "score_sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 587,
+    "maximum_parser_boundary_error_seconds": 7.389644451905042e-13
+  },
+  "review_note": "All593 original intervals retained as dispositions; selected source instrumental cuts, entire remaining melody including ending 原始593音102个标4/4栏从简谱/键位/节奏三行独立解码，所有原interval和21重叠对保留；原+1标题移调只保留元数据，不再次应用。 明确选择公开CRYCHIC主旋律，谱头B/6-8/quarter97，输出C调；原谱音高归一化+5用于逐源说明，不混进另一MyGO参考时值。 整段对应主谱既定重复路线，但保留原来源剪辑：P2R4B3只留末1/2拍C4 D4拾音；去除P2R4B4到P2R6B3完整24拍器乐桥段；保留P2R9B3完整旋律与R9B4到R10B1的E5真tie六拍，去除R10B2到R11B3完整18拍器乐段。源488/489/490/491正确定位R9B3的D5 E5 F5和随后E5长tie；拒绝旧算法误定位R10B4/R11B1。 第二次P1R8B3明确采用源具有的首遍8音图示变体，而非下方四音替代。source352..360九音逐项映8音，355+356同E4合组，末source360 C4按印低7选B3；并未删掉该段原音。 只省7个完整解读的前奏交错音source8/9/11/20/25/30/35，分别归一化A4 B4 D4 G4 G4 G4 G4，明确选纯旋律。12个列明同音合组和8个列明重起拆分，均非推测原存在真实tie。 纠正两次长C4错误后置匹配：source139/345分别对应P1R8B1首附点四分C4，source140/346分别明确拆末两个十六分C4。source163/185前移至首D4，source164/186持D明确拆后D；source392/228/507/591亦按逐表恢复重起。 仅5补音：P1R3B4末B4、P2R2B3末C5、P2R4B1末C4、P2R9B2内C5、P2R16B1末C4。每项在主谱可见，无增加未被原来源覆盖的整段音乐。 最终587音23印刷休止610事件360.5拍97BPM；原593interval全部单独处置。所有原4/4栏推断静默及21重叠不作为音乐依据，全部按明确公开谱重新配时，未删除原文件。 Root实际再次看两页完整主图、EOP仅作前奏低声部类型参考，并以此前独立十六分tick读谱阵列重算整个本来源选择路线；610输出事件逐项吻合。无人声试听、原录音对齐或游戏测试。 仅5补音：P1R3B4末B4、P2R2B3末C5、P2R4B1末C4、P2R9B2内C5、P2R16B1末C4。每项在主谱可见，无增加未被原来源覆盖的整段音乐。 最终587音23印刷休止610事件360.5拍97BPM；原593interval全部单独处置。所有原4/4栏推断静默及21重叠不作为音乐依据，全部按明确公开谱重新配时，未删除原文件。 Root实际再次看两页完整主图、EOP仅作前奏低声部类型参考，并以此前独立十六分tick读谱阵列重算整个本来源选择路线；610输出事件逐项吻合。无人声试听、原录音对齐或游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "note_count": 587,
+  "event_count": 610,
+  "duration_seconds": 222.98969072164948,
+  "limits": [
+    "Explicit monophonic edition with7 intro-interleave omissions,12 merges,8 splits,5 insertions",
+    "Original21 overlapping intervals are preserved in evidence and explicitly replaced by selected printed timing",
+    "No listening or game evidence",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-3a9f16335d28258a-spring-vocal-v1.review.json",
+      "sha256": "47f97e4ddee79f3223fd135b6ca8eb530802b86f967be23ff311d5127dd7c9a1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "781c72654c7f1f82af146ed27ef8bea41bde01d32c3871ea3b873a417297f51d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "47c69a28fcdb8eca86c2c84ca6ecc67ce508ecf1b0ed5e9af5348382803e621b"
+    },
+    {
+      "name": "0001-fb4f4448c528.json",
+      "sha256": "67d38a02c780e220d887d9f38bed102ecb467d6a80613b3f77a3c8f483f95738"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

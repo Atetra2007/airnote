@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9318b26350e65288",
+  "source_id": "zhouzhou-196",
+  "work_id": "work-33c2a135090f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c29b5ebc42ed93b66b30fb3eeedf3f4b30e58748609187735e2f1fd0b1d3a66b",
+  "source_sha256": "ba4aaa589d1bd5888a553a794a6b41f80de84addb8be11bc72e07a953d5703e7",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18003.html",
+    "edition": "C4/4quarter91;P1m2-m9first3beats-twice;printed-register",
+    "score_sha256": "e8591a42f7cc6866b1f92c707f503be392cd7b0f136e426a41298ca0c944edb1"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 52,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "Complete52source-notesandallrawhints;26notephraserepeated;allprintedtiescompleted 完整原源52音、4个未知边界、两处raw[5,0,8]均逐token保留；第三值8只是原始长度提示，未核实原始格式时值含义，不能声称原尾确定八分。 身份为Michita/Ami Cry For Me；依据EOP18003完整五页C调4/4四分91原神诗琴编配。17868四页Bb92完整版也全读但为不同版，不混其节奏与声部。 全原自身顺序为m2至m9前三拍两遍，各31拍，共62拍52次起音；不引入m1拾取音和m9末rest/.5及下一C5，未截掉原尾。 选择完整印刷音域：source0-14与26-40比印刷低12，明确逐索引升八度；15-25/41-51已经同印刷音域，全部保持。不是全局自动移调。输出最高A5/最低E4，均可玩范围；原低A3/低G3仍留原证据。 m2首高3=E5半音符2拍、高5=G5四分1拍、高6=A5与高3各半拍，末E5与m3首同音tie合1.5；m3高2/high1/普通6各1拍。 m4高2/high1/high5/high3均四分；末E5跨m5首同音tie合2拍。m5之后普通5=G4、高5=G5、高6=A5各1拍，不把plain5读成高5。 m6高3E5两拍、普通5G4一拍、普通6A4半拍及高1C5半拍；C5跨m7首同音tie合1.5。m7普通7/5/3分别B4/G4/E4各四分。 m8普通6/3、高1、普通7各四分，末B4与m9首同音tie合2拍；m9普通5G4半音符2拍。raw尾[5,0,8]依所选打印版改为2拍，原提示保留且未伪称已证时值；下一遍直接回m2。 所有边界|均未知，不自动渲染成休止。两轮全部26音各完整保留，0新增0删除；30项原源八度变化为明示所选社区编配。 91是选版练习BPM，不宣称录音速度；完整五页与三细图实际view_image逐段读谱，仍待root独立图读及正式软件检验。未UI/音频/GPU/录音对齐/实机游戏。 Root完整P1及P2上下文、m2–4/m5–8/m9三裁图独立实读；另录26音31拍×2，52事件62拍一致。56原token含4未知|与两处[5,0,8]完整逐项核验。 m3末6、m5第二攻击5、m6的5/6、m7的7/5/3、m8的6/3/7及m9的5均是无高点普通音，不混同相邻高点音。source0–14与26–40升八度按所选完整印刷音区，其余22音保持原高。 m2末E5 tie1.5、m4末E5 tie2、m6末C5 tie1.5、m8末B4 tie2核对；每遍m9普通G4半音符2拍后结束，保留来源自身重复，不附加无源的休止或下一拾取音。 尾[5,0,8]第三值语义未核实，不把8解释为确定八分；选版2拍只依据打印半音符。91为社区诗琴编配印刷速度。未试听、录音对齐或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e8591a42f7cc6866b1f92c707f503be392cd7b0f136e426a41298ca0c944edb1"
+  },
+  "note_count": 52,
+  "event_count": 52,
+  "duration_seconds": 40.879120879120876,
+  "limits": [
+    "Communitysimplepianoselectedmelody;sourceowncutorder.",
+    "30sourcepitchesexplicitlyraisedoctaveaccordingselectededition.",
+    "Sourceoriginaltimingunknown;allmarkerspreservednoarbitrarydurations.",
+    "Printedpractice91notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-196-cry-v1.review.json",
+      "sha256": "1aad8182220bc0c7e1184d8096581219daa6d184419f5f0d4a36f5fdf9758e3e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1fcf21f17c17fdf9e6751495babe96249e3cc984f864dda24a61eb25cefd2fe2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7c2df0442c36799a9dc9e673c8d2e20379c29a4a60dbd2470aaececa80192ffa"
+    },
+    {
+      "name": "0001-4e58bdb9f4e6.json",
+      "sha256": "1019ad3f50fdaea8dcce228ffd776c8dd86ba54fc875b45c24932118aac1d2fe"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

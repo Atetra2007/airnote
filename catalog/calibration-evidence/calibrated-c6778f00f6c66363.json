@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c6778f00f6c66363",
+  "source_id": "social-38a3392f25151e6e",
+  "work_id": "work-b9ba3d457459",
+  "source_url": "https://www.bilibili.com/read/cv53068915",
+  "status": "reviewed",
+  "sha256": "4742978d43cc8a56901e67336c08260c8c91ef69ad3c89baeb42637b70c8683a",
+  "source_sha256": "ff073c542f5040b36b56e0d07d2ff5ca2e6b67b72fd573d5da5b9e053df9311f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/1iGCT5KJMl0",
+    "edition": "D4/4quarter80;p2m32-p3m39beat2;melodyshift-9;twoexplicitattacksplits",
+    "score_sha256": "5fb43de6837d82058dbb745f20f15ed5da1850170b210ca129d5259c049eb9bf"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 43,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete41sourceattacks;selectedm32-m39beat2;2explicitsource-splits 完整恢复Bili cv53068915来源8栏41音及全部简谱/键位/节奏raw栏文本，原json和HTML/TextSHA绑定；来源各栏并不满足4拍，不将缺拍自动补休止。 既有公开Harry Qi/上传者Louo neil Jusbott七页D调钢琴SVG全页实际渲染并view；MuPDF初次渲染v1为空白而不作谱证，sharp v2实际可见七页谱。所选p2m32→p3m39beat2的可见旋律连续对应41源音。 参考统一-9半音：F#5→A4、E5→G4、D5→F4、A5→C5、C#6→E5、D6→F5，所有41源音高保留。D调F/C升号已作用，未遗漏key签名。 两处来源少记攻击：source10 F4对应m33末两个D5八分无tie，source18 G4对应m35两个E5八分无tie，各明确拆为两输出攻击，source-to-output一行含两事件。不是删除源音，也不是称印谱同音tie；原source rhythm .5用参考两攻击合1拍修复。 m33 source9对应E5八分~E5四分，真tie合1.5拍；m36source23 D5四分、m37source25 A5四分及source28 D5四分均按印刷时值，staccato点不是延长附点。各印刷休止逐项保留共5.5拍，未将未知源缺拍凑满。 范围m32..38七完整小节+m39前2拍，完整尾source38..40定位到该首句三个八分并止于beat2，后面的钢琴低音编配原源没有，不扩展。全源41音输出43音9休止52事件30拍@印刷80=22.5秒。 此候选只验social41短源，不宣称完整websheet钢琴MIDI2127音已音乐通过；其多声部完整解码与七页证据仍单独待审。未作音频、GUI、游戏或GPU验证，等待root独立读谱/软件审计。 Root实读P1速度/调号与P2/P3适用完整谱面、m32–35/m36–37/m38–39三裁图；按印刷F/C升调号独立录52事件30拍，原8栏41音及原节奏token完整重解码。 m33第三E5同音tie为.5+1=1.5拍；m33末两个D5与m35两个E5无tie，原source10与18各明确拆为两八分攻击，所有原音高保留，无来源省略。 m36/37音头正上方点为staccato，非右侧延长附点；D5与A5四分均保持1拍。m37末C#6与m38首D6分别转E5/F5，不能漏C升号。 完整短源对应m32至m39前2拍，前7栏4拍及末2拍共30拍；9休止逐项印刷读取，不自动补足原作者缺拍，不延伸到m39后续低声部。 统一参考-9选版；此41音来源不代替2127音多声部websheet来源验收。80BPM为参考谱速度，未试听、录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5fb43de6837d82058dbb745f20f15ed5da1850170b210ca129d5259c049eb9bf"
+  },
+  "note_count": 43,
+  "event_count": 52,
+  "duration_seconds": 22.5,
+  "limits": [
+    "Source10and18splitto2referenceattacks;originalauthortimingnotknown",
+    "Pianoarrangementcommunityedition;completewebsheetMIDIunaccepted",
+    "Noaudiorecordingalignment/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-38a3392f25151e6e-usotsuki-v2.review.json",
+      "sha256": "83a1889b03a0a133a5335aa7694d9d4547ea34c988b5a86892b04f1fc9bf05e5"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5ed861c8468a291fac0ca2750136e32ee20bcb11bd62ab0e1e8cc48e85740742"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d13ddc8c1ce0a256f6b6f699f5313811541e576192fff213fc5b7d6340c5ae4f"
+    },
+    {
+      "name": "0001-33068c7ad959.json",
+      "sha256": "e18e8bc4df67c17d536949eb13994efff6ba3fa33c48151f42d29a335790f83d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

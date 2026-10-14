@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4e639987ac469d3a",
+  "source_id": "zhouzhou-015",
+  "work_id": "work-378bb0eec39f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "cc6edc836342a423718ecbb207aaa996d7d434538602ad9e2ac77733dfd74153",
+  "source_sha256": "ed6dde2f39816a886fc710071ab7dfc5639bd8a59fda666f6d5e15578da83706",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/7792.html",
+    "edition": "天之韵E4/4声乐谱，完整副歌来源范围；练习速度80BPM（非印谱标速）",
+    "score_sha256": "7543c9c05108ff642d625513316ecec29a41dfbea1c47f1cd2a8c7b35b4850a7"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 53,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整6源歌词行48原音，所选声乐副歌53音1休止。 完整源6歌词行48音，从想把你抱进身体里面至能否让我把故事重写，全部48音逐项处置；没有加入原无主歌或间奏。 唯一主参考7792天之韵声乐版，江语晨演唱、宋健彰词、詹宇豪曲，打印1=E和4/4，无数值BPM。选80BPM为明确演奏编配；参考E4主音升8半音至C5以保留来源主音音区，范围G4–A5。 从副歌弱起5低/1/5开始；第一结尾写字1三拍结束，省略之后1拍无源静默。保留中间泪字后半拍休止。全32.5拍24.375秒。 所选谱里→面之间3到2为异音连奏，接着第二个2独立四分起音；看→见的2到1同理，两个1不能当一条延音。两次副歌句各恢复一个2及1起音，共4个。 第一段泪字前末3半拍与下一小节泪字3两拍之间未印同音延音线，恢复下一小节独立3起音。其余明确同音弧线按谱合并，异音3到2/2到1/5到3绝不合并。最终5新增起音、53音1休止54事件。 最后把字印谱低5，源43为高5(G5)，明确修正为G4；其他47源音音高保持。原源48音均映射一次，没有删除。 451622吉他版本仅作版别比较，不把其不同无附点节奏混入7792主参考；原无速度/长按标记不充当可靠拍值。 Root与独立阅谱者完成全部48源音、54输出事件的全范围校对；五个独立重复起音与把字八度经原图复核。正式软件审计另绑定；未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "7543c9c05108ff642d625513316ecec29a41dfbea1c47f1cd2a8c7b35b4850a7"
+  },
+  "note_count": 53,
+  "event_count": 54,
+  "duration_seconds": 24.375,
+  "limits": [
+    "SelectedTianzhiyun vocal edition with explicit80BPM, not a recordingtempo claim.",
+    "Five independent repeatedattacks restored, oneoctave correction.",
+    "No humanlistening or actualgamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-015-lastpage-vocal-chorus.review.json",
+      "sha256": "d931b25f9c97179a5b76e6d6d72ed43210cda4ba0829b61d833dfe539ca108d1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "623beb70b2440708c03767649047a5e230bd380c1f131765cb4f6a0163d18326"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "01cb2aa42472bb9da007e3b9f94b930769a3388279004046bcf1f7fe838c97cb"
+    },
+    {
+      "name": "0001-7fd4eca70af3.json",
+      "sha256": "571e08221919a8ec9155237994d25023b34a4eed5abbc92fc8b61daaa73ff286"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

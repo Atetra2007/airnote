@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a1f8e78e15036f34",
+  "source_id": "zhouzhou-101",
+  "work_id": "work-6e28c160aca4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c2d33765ded823fc77e2a96526fcd17137d5cf1d2e2bcbb1643719a77ccd2737",
+  "source_sha256": "b2331c8aa5a1db49c85685013a18a74cb924084e8bc69affac196eeca4afd55a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/26539.html",
+    "edition": "陈洲宏记谱1=C、4/4首个人声八小节34音；明确编配100BPM",
+    "score_sha256": "b55b36a978301c95919cb934d744dc818b1393326468e9b352f9dcebdf141298"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 34,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-15
+  },
+  "review_note": "原来源全部34音逐项覆盖；所选公开版本八小节第一段主旋律共34起音32拍，不含前奏及其他段落。 Root独立视读反复记号后的八小节34音，第4小节第二音6有明确低音点，应A3，修正候选A4。 公开谱1=C，来源无调号；明确将来源名义音高映射升5半音，源15–17的映射G4/E4/D4改为所选谱A3/G4/E4，其余31音与该移调相符。 来源末句幸福哪里找与本谱首段幸福享不了共享相同六音加结束音旋律，源歌词混用两个段落；本单旋律输出保留来源八小节长度，不声称歌词逐字对齐或扩展两段。 所有弧线均连接不同音，按连奏处理；同音5分别起音。无新增、合并或遗漏源音。 公开谱4/4没有BPM，100BPM为明确编配速度。32拍共19.2秒；不当作原录音速度。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "b55b36a978301c95919cb934d744dc818b1393326468e9b352f9dcebdf141298"
+  },
+  "note_count": 34,
+  "event_count": 34,
+  "duration_seconds": 19.2,
+  "limits": [
+    "Complete existing source only; selected published edition and explicit arrangement choices, not original recording fidelity.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-101-sheet.review.json",
+      "sha256": "36d3c4c097df12f542f97bc01d19aa4b463c7c88b5aa3b58a3c30586cddad5a3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "16ce7a313cda8c5cd7e8211a58c114e5642468d7737219b285cf5846b43c2b7c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a8aa933f2d9f205a08dae179b9699990960fc0790dcf90cb7fe26cbf4a584b3b"
+    },
+    {
+      "name": "0001-113d8ab1fec0.json",
+      "sha256": "e5214edfe93275cd6c56e6e740580fa7357ab521ac65dafcf7ad298767b9e8f4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

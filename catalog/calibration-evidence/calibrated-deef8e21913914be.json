@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-deef8e21913914be",
+  "source_id": "social-a651d5084408f771",
+  "work_id": "work-683067bf5491",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=3TAUojyj58ZU",
+  "status": "reviewed",
+  "sha256": "7a7d2ca484870a264b868e0917daf99e2bf540cf52f80392234b770409b08534",
+  "source_sha256": "3c583327b51d6ca93c7a654cd4aa94c138e8745ba1b3a8e699b41ba83de2a736",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://global.piastudy.com/musicDetail/1nkaoGmUX",
+    "edition": "Public40bar RH at122; original80bar complete form rebuilt with explicitly selected whole printed phrases and group octave choices; no literal source restoration.",
+    "score_sha256": "db46427ca5624a18f30ed9a8d6cccd794d79469627ff838daea8e1f7a8d825a9"
+  },
+  "review_method": "Root complete visible40bar two-page physical reading plus independent manual symbol/tie table; fresh567DFHS/SMF and complete80bar source-specific route",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 546,
+    "maximum_parser_boundary_error_seconds": 7.673861546209082e-13
+  },
+  "review_note": "Root实际看公开互动谱完整两页40栏及终止线，独立重录40栏所有右手符头、附点、休止、实际tie和21/29低音谱号；与原SVG可见音符几何解析逐符吻合。第10栏重叠G同音和弦只作一次起音，不虚增一拍；同层相接梁片不误当多一条梁。 原DFHS和SMF均567头，96/480 PPQ下全部音高/起点/时长完全一致；原1栏仅E4在1.5拍发1/96拍与D4在2.5拍发.25拍，证据保留，新版采用真正印谱完整首栏，明确新增开头，不声称恢复原演奏。原121BPM最后tempo标记在末音之后，音乐范围以第80栏320拍为止。 完整80栏曲式与567源音逐栏列出具体公开选段、移八度及处置。17–20高、21–24低、25–28高、29–32低以及57–64高低回应全部保留。主旋律0或完整段+12，不逐音折叠。公共原谱低声部21–23采用整体+12得E4；29–32原主题重复选高谱25–28原声区，不假装是印谱低部的逐符复原。 来源65–80继续E主题riff和每4栏C-B-D收束，不机械复制公开25–40，更未把全80栏截成40栏。明确用ref17/2/17/28两遍及ref5/6/7/28两遍对应全部最后16栏；末C6-B5-D5、最终D5半拍保留。source68/72/76/80的E-F-A-E pickup与所选28栏F-E-B-E不同，采用具体完整同尾型钢琴句重编并保原句证据。 原持续音/gate与出版休止有差异；原19/23等E的四个32分重击改实际16分，原20/24等B-C花奏改印谱休止及E拾音，原25–27等经过D改实际G连音，原33起E长音改实际1.5拍休止。这些是明确版别与器乐编配选择，不能说原567头逐音错误均已证实。 本版80栏320拍122BPM、范围60–84，为完整原曲式的公开钢琴句单线重编；不声称是独立公开40栏原版完整演奏。纸谱与软件核对没有真人试听、录音对齐或真实游戏验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "db46427ca5624a18f30ed9a8d6cccd794d79469627ff838daea8e1f7a8d825a9"
+  },
+  "note_count": 546,
+  "event_count": 658,
+  "duration_seconds": 157.37704918032787,
+  "limits": [
+    "Explicit complete-original-form published phrase re-arrangement, with all source evidence retained.",
+    "Substantive differences in initialbar, rhythm/gate, pickups and interior passing notes are edition choices, not proof of source error.",
+    "Not literal original567head edition and not the public40bar score played verbatim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-a651d5084408f771-complete80-published-phrase-v1.review.json",
+      "sha256": "717e5bd9dd117db1de2ef592bb31fa096e3acebb50821fdf78f94e1d4d6af68a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0d479e5ebe135fcd9a575ebc7eee541668ab78f4ded3100e6acfd58742655a12"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2285d45291a5f9c03e164f5b628f9bdf3ac536a771ec9a108c0a9cc449fa8295"
+    },
+    {
+      "name": "0001-de3a7f4219c5.json",
+      "sha256": "6d0e79eb92ad0ddda44f17fbde441951c8a3b7cb67d9e8e5951f4dcd2ef83785"
+    },
+    {
+      "name": "public-review-summaries-20261013-taked80-v1.json",
+      "sha256": "6a116e8041264fd4783d03de89ca5200053b402db0d3cbb16d8ef3fd9b952f8d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

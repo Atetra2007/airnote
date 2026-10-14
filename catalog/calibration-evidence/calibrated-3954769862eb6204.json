@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3954769862eb6204",
+  "source_id": "zhouzhou-177",
+  "work_id": "work-3e7e88b5306c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "eaf50f3e98f490633c1afb6b434718f376e6928a6df20f7b73781400a8b96802",
+  "source_sha256": "f275503da9a8cd5776cdf38abaadb37d0c003db1de93d1841814ab73a9c063a7",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://lupipi.com/s/c60919",
+    "edition": "C4/4quarter66;secondlyrics;R9B2-last1-through-first-ending-repeat-R7B3-to-R8B2-first3",
+    "score_sha256": "5507156aa759e9dc5ce537c211110e7866632fccffc6c6a4a6beda1bf7499a31"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 62,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "Complete62source-notes;32beats;first-ending-and-repeat;allprintedtiescompleted 完整原源62音及全部未知|逐token保留；原源时值未知，边界无时值，不自动插休止。 完整参考单长页实际查看：陈奕迅十面埋伏，C原调C、4/4、四分66；采用下方双歌词第二轮，source开头轨迹不是谱面首段。 片段按原顺序：R9B2最后1拍→R9B3/B4→R10B1/B2第一房→反复R7B3/B4→R8B1→R8B2前三拍，共32拍。只覆盖现有原源；谱外前文及原尾之后不添加。 R9B2最后两个高3各八分.5，对source0/1轨迹；R9B3十个印刷token中高1的第二/第三token两十六分tie为.5，高2的一对十六分tie为.5，末高1附点八分.75。 R9B4原source10单G4对应印刷普通5八分.5及十六分.25两个独立起音，逐源明示拆分；source11/12两个C5对应印刷高1十六分.25跨随后八分.5的同音tie，逐源明示合为一次.75。拆分与合并各一，原62音全部覆盖、输出62起音，非未经说明添音删音。 R9B4高2前两十六分tie为.5，后一个高2八分.5为另起音；随后高3/高5/高3各.5。source15/16/17即天空的E5/G5/E5，不改原pitch。 R10B1高1两十六分tie为.5，下一个高1八分.5另起；两个高3八分tie合1；末普通6/高1各.25。R10B2高3十六分.25跨八分.5 tie合.75，末两个高4各.5仍属第一房末尾，对source32/33。 回R7B3，首高4/high3各.5，随后两个高3十六分tie合.5；source41原高7=B5与印刷普通7=B4差八度，明确降低12，保留原证据，R7B3末B4八分跨R7B4首B4八分tie合1拍。 R7B4次、第三普通7八分tie合1拍，对source42；高5/高6各.5；高5两十六分tie合.5对source45，下个高5八分.5另起对source46，末高3.5。 R8B1高1两十六分tie合.5，后高1八分.5另起；末普通6/高1各.5。R8B2前高2两十六分tie合.5，下个高2八分.5另起，后高2两十六分tie合.5；末高3附点八分.75完整结束原分手分错了么，不添加其后两个高4。 所有印刷延音线逐component留档，八度改动仅source41，无全局移调；源歌词错字不作旋律时值证据。66为参考练习BPM，未宣称录音对齐；待root独立读谱与正式技术审计。未UI/音频/GPU/实机游戏。 Root完整长页及R7至R10适用行/细图实际二读，独立音级和四分之一拍ticks重录62事件，与候选逐项相同，总32拍。 R9B3最初两个十六分高1相连共半拍，下一高1另起四分之一拍；普通7是半拍。R9B4两普通5为半拍/四分之一拍，后高1的四分之一+半拍tie合.75；两高2tie合.5，随后高2另起.5。 R7B3末普通7跨到R7B4首总1拍；下一普通7再起并tie1拍。source41原高7降八度。R8B1末普通6与高1各半拍，区别于R10B1末各四分之一拍。 完整62源音和77原token重新解码：source10拆两攻击，source11/12明确合一；15原|无确定时值，不作为休止。选段起于R9B2末一拍，按印刷第一结尾/反复回R7B3并至R8B2前3拍结束。 C调参考不移调，66为印刷四分音符速度；谱面校验不代表试听、录音对齐或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "5507156aa759e9dc5ce537c211110e7866632fccffc6c6a4a6beda1bf7499a31"
+  },
+  "note_count": 62,
+  "event_count": 62,
+  "duration_seconds": 29.09090909090909,
+  "limits": [
+    "Communityselectedmelody;sourceowncutorder.",
+    "Source10splitintotwoprintedattacks;source11/12mergedasprintedtie;source41explicitlyloweredoctave.",
+    "Sourceoriginaltimingunknown;allmarkerspreservednoarbitrarydurations.",
+    "Printedpractice66notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-177-tenambush-v1.review.json",
+      "sha256": "8faac0dcc6118289d45e0a5e8c809b4f3f6bdba2cb36ff6f585ea53cec5352b3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3c690d108bd1adde274e58ef57b4eee61f72eb7935b17fc2ecac44af4de1c02b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "e5e021722e3c2b16eb2d44fdf7d84f235823a8b5a145729288524e0dc60728f8"
+    },
+    {
+      "name": "0001-f3bfd8a9e8d7.json",
+      "sha256": "f97e53b7cb0c8813c4ba3865e34f2a376257e8990840c16975d279f542149422"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

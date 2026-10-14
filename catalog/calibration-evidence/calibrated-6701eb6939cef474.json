@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6701eb6939cef474",
+  "source_id": "deck-e8459b100fd6",
+  "work_id": "work-deck-e8459b100fd6",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9E%AB-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8c78a83592.deltamusic",
+  "status": "reviewed",
+  "sha256": "ac40f3aa0dbc43d68674865fdd175e0705b5a9ac5060eeec67440f59e3b3f68e",
+  "source_sha256": "95546c0a99e97bf0bab97cf3b3f75978a4d1ac0302bc2b7371f6e3f07607a793",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/11894.html",
+    "edition": "11894 two-page vocal numbered score, C->Db,4/4,no printed tempo; explicit source common-ending arrangement instead of printed high coda",
+    "score_sha256": "933bc80764fd109ae2e139aa760a7c31221ba36c5c7af629fa968341436dd545"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 412,
+    "maximum_parser_boundary_error_seconds": 1.2505552149377763e-12
+  },
+  "review_note": "complete-existing-source-content;explicit-common-ending-form First printed instrumental row and initial vocal eighth-rest precede the source extent and are not appended. First source tone is the upper C at P1R2B1 beat0.5. The source covers verse A, verse B first ending, both C-chorus halves, complete 16-beat instrumental span, verse B second ending, complete eight-bar Db bridge and both Db-chorus halves. The source has 16.5 beats of silence after source198. The selected score instead splits source198 into two printed C attacks, the latter tied across the following4-beat vocal bar. Four beats of that original gap restore this written vocal hold; the remaining12.5beats stay silent through the full instrumental span and next verse pickup. Original16.5beat rest remains fully recorded in source comparison. Final Db chorus uses the source common-ending form: P1R8B4/P1R9B1/P1R9B2 transposed+1, followed by the literal P1R9B3 four-beat vocal tie. This is an explicit editorial repeat of the first ending, rather than the printed high coda after the jump symbol. The source has no printed-coda passage; no coda notes are silently claimed or omitted from source coverage. The last source402 half-beat Db splits to a printed sixteenth Db and a distinct Db tied4.25beats. The final sounding extent therefore grows4beats from271.5to275.5. No postlude or final rest is added. Ties join only same pitches; different-pitch arcs at P1R5B1->B2, P1R6B1->B2, P1R6B3 A->C, P1R9B2 D->C and P1R10B3->B4 remain distinct attacks. Page2 bridge is fully transcribed in Db. Large source melodic differences in its latter six bars are explicit selected-edition changes, not a transposition inferred by similarity. No music playback, UI or game operation, GPU work, install, production import or formal-ledger modification. 403source notes/442events become412notes/455events/275.5beats.11 source sustains split,2 source pairs consolidate,0 source notes omitted; every39original rest events has exact output-time disposition. Source sharp7 is B#4=C5(MIDI72), not B4. All other encoded pitches are absolute C-system numbers, with no second key transposition. C first verses and chorus change to Db for the entire bridge and D.S. refrain. Page2 literal notes already use Db; the P1 refrain is shifted+1only on its second pass. 65BPM is explicitly the preserved source practice setting; neither selected image prints a tempo and no original recording tempo is claimed. All46relevant unique printed vocal/bar-silence positions are manually transcribed with exact beaming/dots and separate same-pitch ties. Source correspondence is ordered and inspectable; software counts/onsets do not approve the music. Root完整两页声乐图非盲二读，独立录入46位置音级、有理时值并展开全曲，455输出事件一致。 异音slur分开起音；两组同音tie替代来源经过/分割攻击。原16.5拍间奏区间中4拍恢复印谱C5延音，12.5拍保持静默，下一source199仍在144拍。 末次副歌明确采用来源常规结尾并升半音，不声称照搬印谱高音coda；末Db5拆为0.25和4.25拍，输出比来源长4拍。65仅为练习速度，未试听/录音对齐/实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "933bc80764fd109ae2e139aa760a7c31221ba36c5c7af629fa968341436dd545"
+  },
+  "note_count": 412,
+  "event_count": 455,
+  "duration_seconds": 254.30769230769232,
+  "limits": [
+    "Community notation is not publisher authentication.",
+    "Final common ending is explicit editorial structure rather than the high printed coda.",
+    "Original16.5beat gap is fully accounted, but4beats restore voice sustain rather than remaining silent.",
+    "65BPM is practice/source metadata, not printed or measured performance tempo.",
+    "Software checks are not musical acceptance; no listening, recording alignment or game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e8459b100fd6-maple-reference-v1.review.json",
+      "sha256": "3a1f52b75f3eeeca1fef921330ba9161b1e521cd360d9a7d20efad3c2a57f7d9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b9d6d6c8e687c1c9f13a4d0724ab3efbf58f78a3fe7281fed88ab63dd4e9843c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "58b120e185370c9719f87e6e51bfb63147c0e11cd90702a6ea6d74b7e0656fcc"
+    },
+    {
+      "name": "0001-a3e6a2e27b33.json",
+      "sha256": "455cd711ea38900069a2e1536f0d9b388a3a416a5513866d88ddebd4b66ac71f"
+    },
+    {
+      "name": "root-maple-long-rest-resolution-v1.json",
+      "sha256": "abe33ddf88045bfd77c5caa6026a6b52d8e9a75d8575d5ef5aaa3b03865e7f4a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

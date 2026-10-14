@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-866640033742f87a",
+  "source_id": "zhouzhou-188",
+  "work_id": "work-02c0dec353ab",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5f267278df0d67a8f37240f5137680f366df4954905d74fcc82b335b9941c008",
+  "source_sha256": "029aa86d1ef9e906b64596f02c02950f679d3846b7ac8f12420b018c2ca430b8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/382841.html",
+    "edition": "焦响男声合唱谱1=bA、4/4、116BPM；源省略两小节，取单遍主副歌",
+    "score_sha256": "405aba09e567bcd039e0cc151225607525960679ac6c774dac5507f8e74822ed"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 74,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "73源音全部对应；省略原稿没有的主歌两小节，公开谱15小节60拍主旋律，另补一次重复3，共74起音。 采用焦响所制男声合唱主旋律谱，1=bA、4/4、四分音符116。源名义C音高统一降4半音，所有音級对应，另修正源30的八度。 完整原稿73音从这是一个晴朗的早晨起，经鸽哨声、和平年代也有激荡的风云接完整副歌，到前进；原稿省略但是这世界并不安宁两小节，维持该删节结构。 参考按人声首小节编号：选1–4、7–17共15小节60拍；不含前奏、间奏、重复歌词及最后扩充结束句。 源30对应有激荡的风中1，应Ab4；原名义C4经降4只有Ab3，故额外升八度。第17小节末7/6没有低音点，应G5/F5；其余72原音完全按统一移调匹配参考。 放心吧亲人对应第15小节，末两个3为十六分加四分，第二个3没有同音连线。原源只有一个3，保留该源音并补1拍重复起音，73源音形成74输出音。 所有附点八分/十六分独立读取；来临的5到6、前进的3到7均为异音连奏，不作合并。全谱没有需要补出的有量休止；停在第一结尾6二分音。 独立第二读谱人已按完整原稿及参考谱重建全部事件数组，音高、时值、范围逐项通过；本验收不依赖只比较文件或解析成功。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "405aba09e567bcd039e0cc151225607525960679ac6c774dac5507f8e74822ed"
+  },
+  "note_count": 74,
+  "event_count": 74,
+  "duration_seconds": 31.03448275862069,
+  "limits": [
+    "Onepublicsecondarychorustranscription;notrecordingvalidation.",
+    "Completeexisting73notesourcewithitsoriginaltwobaromission,notfullcomposition.",
+    "No humanlisteningorreal-gametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-188-vocal-sheet.review.json",
+      "sha256": "c6b378730f612850f0a908568ffea33b16ee4a8b73c2aee4d69d2c5c6fd6b449"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "14973cbf157139a2f8c0f802ea6e44e8ef3009aa4862be5639cb6b4daa464911"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "662968904f82c66a863029d787c1202cdab128178db91b45282d0c25e9860e8f"
+    },
+    {
+      "name": "0001-b4420bf6fda1.json",
+      "sha256": "cf5d15bb35f0863950922164aa8442e58d45de92d2629c7b4f3d2f1187ada1f9"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

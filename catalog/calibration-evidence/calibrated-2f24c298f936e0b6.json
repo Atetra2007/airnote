@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2f24c298f936e0b6",
+  "source_id": "deck-030917928649",
+  "work_id": "work-deck-030917928649",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%8A%B1%E6%B5%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8006ad600d.deltamusic",
+  "status": "reviewed",
+  "sha256": "5208b962ffbb694298551cfb7866cf7da4ab06d3410f5a36d90a202d56b77b4f",
+  "source_sha256": "a0f057d8f26c34f42f03b6a3db49ac4a095a222c5c53632f42447cd0351b003e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/251522.html",
+    "edition": "完整4页EOP钢琴A调75BPM，83小节，81为2/4；人工主旋律缩编",
+    "score_sha256": "ff78aa580a6a75eb2851198367b1e96c7dad28e572ebddc14648d8e93dce6729"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 411,
+    "maximum_parser_boundary_error_seconds": 6.821210263296962e-13
+  },
+  "review_note": "全部419音/824事件处置，参考83小节从首旋律至完整尾声；407源起音保留、12省略、4新增。 完整delta-music原件419音、405休止/门控间隙、824事件全部解码并逐项处置。源JSON虽写1=C，jianpu中的字面音高已是A调；不再附加转调。源总329.916665拍、75BPM。 采用251522完整4页EOP钢琴版，打印1=A、4/4、75BPM；共83小节，81小节2/4，82恢复4/4。仅取人工识别的右手主旋律，灰色同音延长合并，保持灰色高音延长时不把下方黑色和弦再起音当新旋律。左手与低和弦不加入。 参考完整330拍；源从m1第三拍第一音开始，按源范围不加开头两拍休止，因此输出328拍、262.4秒。既有前奏、两轮主副歌、间奏、完整尾声皆在，不能以一个副歌替代。 1以A3记谱基准，印谱高1为A4。m73第三拍起至m83尾声整体再降12半音，以保留源选定的尾声常用音区；包括m82高1输出A4、m83顶层3输出C#4。不是按最高音阈值单点折叠；此前所有音按参考音区。范围C#4至A5。 m9/41/73无量化时值的小字17倚音明确简化不演奏；恢复主音正拍，并保持其前一个7的完整半拍。m8/80多个独立1保留，不误合并。 m10和m50各最后两个2为分开的两个十六分起音，后者与下一小节首2连线。源把它们合为一个1拍音；各增加一次B4起音。m18是单个末2连下一首2，与m10不同，保持一个1拍B4。 m24和m56第3拍后半各有低7，源把前一A4延至1拍而吞掉这个7；各补G#4半拍，下一半拍G#4仍独立。m23/55最后半拍休止和m33/65第二拍后半休止全部恢复，不能让前音占据休止。 8处明确音高选择：源33 E5改A4(m6末)；源177/178/179与344/345/346由前奏用的A5/G#5/E5改所选副歌m36/68的F#5/E5/F#5；源253 E5改m51打印C#5。此为显式251522版本选择，不宣称所有替代旋律必然错误。 12个源音明确省略且原始值保留：93/94、260/261位于A4主音前的低音碎片；243/244非所选m49持续A4旋律，245占据其1拍休止；364打断m72的A4延长；402是m78打印1拍A中源多出的B；415/416打断m82持续A；418为m83低和弦E，所选顶层C#持续4拍。未将异音伪称同音延音合并，也未把未辨低音虚称已验证伴奏。 m15末及m16两次附点3恢复.75拍，后2恢复正拍1拍；m12/13提前1/4拍的段落边界修正；m71末A4延长2.25拍且m72末6/7各.5拍，消除原段额外2拍。m78末1为1拍，m79首1重新起音2拍；最后m82与m83各4拍完整收束。 405个源间隙全部记录；8个较长间隙分别对应1拍音乐休止，其他门控间隙按所选印谱音长吸收或随明确省略音处置。原源有8段音乐休止，所选谱恢复另5段；最终13休止。输出明确gap=10ms，不能把门控补齐误称录音精确对齐。 Root独立全83小节视觉二读，另录十六分单位424事件数组完全一致；419来源音和824事件全部有明确处置。正式软件审计另绑定，没有人工试听或实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ff78aa580a6a75eb2851198367b1e96c7dad28e572ebddc14648d8e93dce6729"
+  },
+  "note_count": 411,
+  "event_count": 424,
+  "duration_seconds": 262.4,
+  "limits": [
+    "Explicit single-voice EOP251522 arrangement; selected-edition pitch and omission changes itemized, not a verbatim transcription of all piano voices.",
+    "Source scope begins atfirst melody; leading2printedrestbeats and unmeasured ornaments excluded.",
+    "Outro frombar73beat3 is lowered12semitones consistently.",
+    "No audio alignment, human listening or game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-030917928649-huahai-piano-complete.review.json",
+      "sha256": "931416d63aef6e02d75a8102d0298b919081923c727c844369fff36c132fc3aa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "cf1f918f6a24ff2a1c01a627bcbaac919123444a76ba3e6a59cf901acf0a6570"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c5063ccdc0380a3ea28b956c7c00792d8337a1b14f051057093d9d7acc4eca1a"
+    },
+    {
+      "name": "0001-d6964fd6bd78.json",
+      "sha256": "5d275ee5060e39ae28b6b7422ed91f6418f1293f35fe0576d36eeae459f171e4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

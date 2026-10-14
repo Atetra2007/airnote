@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d656473701653fb4",
+  "source_id": "zhouzhou-023",
+  "work_id": "work-deck-aeec77d24e62",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3a309b860a188ce05a63743fc3be345ec4f8b39bc25afc68435f7d4279c7c207",
+  "source_sha256": "09518b56bce3da99efc63c10116259592bd399e31905573d6ef2e331d711c673",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/377885.html",
+    "edition": "邓垚曲/指尖旋律改编，原神风物之诗琴谱，第1页，C调4/4、印刷100BPM",
+    "score_sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 80,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "完整80源音，所选第1–24小节右手；明确公开诗琴改编版本。 唯一选定参考377885第一页，为邓垚曲、指尖旋律改编的原神风物之诗琴简谱。它是明确改编版，不声称原钢琴录音原样转写；采用其右手单旋律与初段印刷100BPM。 按原稿完整现有范围逐音映射，源始终保留、修订另存；原谱范围后续第25小节112BPM及其他页均不在这些来源内，不额外加入。 本版不取左手和声；印谱高音点及减时线逐项独立读取。第12/16/20/24终止各四拍，不把整小节终止缩成来源默认短拍。 没有补音或删音；每个来源音一对一映射，既有分隔条/编辑器默认8不当作可靠时值。真正同音连线以单次起音表示。 音乐视觉复核、软件检验、真人听感、真实游戏分别记录；本提案未做原录音对齐、真人听感或实机测试，仍待root独立音乐复核。 完整80源音对应第1–24小节；前16音为1–8小节引子，第1→2的高3、第3→4和5→6的高2、第7→8的高1各连成六拍。 保留原C调全部音高，G4–B5；96拍100BPM，57.6秒。 Root独立另录全部小节与四来源逐音比较一致；引子四个六拍延音、主题四个四拍尾音、029降7半音、community降八度及拍长倍增、166源31八度纠正全部复核。明确选用公开诗琴改编版，非原钢琴录音核对。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "note_count": 80,
+  "event_count": 80,
+  "duration_seconds": 57.6,
+  "limits": [
+    "Selected published lyre arrangement, not verified against original piano performance.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-023-farewell-book-selected-lyre.review.json",
+      "sha256": "fdcb391233f524ae999fda996e07f5c18d2f40fc6566a7aac2b5414b48583747"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4baaa2a116c79264f7031dfbbd01741885fd5913dd514f7fed00980dee6e6e2e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c321f45c0c72237f38a0e84f32dab97db677406f4d73d90813b8639336165f62"
+    },
+    {
+      "name": "0001-bc806696b4ef.json",
+      "sha256": "61b77a36b4d32dc0ddb13d775db7f9b6b23dac6af1a9f443487105cd78f7fd23"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

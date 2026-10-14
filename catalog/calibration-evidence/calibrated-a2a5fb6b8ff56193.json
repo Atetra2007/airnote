@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a2a5fb6b8ff56193",
+  "source_id": "community-a8c6cd73cdb2ae10",
+  "work_id": "work-deck-5ab2af376d26",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-3d39404450.deltamusic",
+  "status": "reviewed",
+  "sha256": "707f05190bf7576411deae708096d1c2f3323b2b1e9d60ede41fa577762504a9",
+  "source_sha256": "04ef7f3cdd243d08efdd4ff4aeb11339f60aba7299aadd19a9d3a7a9bc9c04c6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/380217.html",
+    "edition": "EveryonePiano C-major4/4 printed96, source-selected cut omittingbar32 and preservingregister",
+    "score_sha256": "8e5abe0dfd3649d4f8301f0e73e403701ef22491d0fd7f5cb44378ad027afcdc"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 117,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整109源音110事件；保留省略第32小节的删节，129拍，不扩充缺失整小节。 独立完整读谱依据为EveryonePiano380217：C调、4/4、四分音96。所选范围8末1拍、9–31、33–40、第二结尾42全小节，排除第一结尾41。 本来源只有32个完整小节加弱起，省略印谱第32小节；第33小节起始E原为第32的延音，此删节版明确重新起音，维持原129拍范围，不用084的较长范围覆盖。 参考上声部8–24主音之前下移八度，24末弱起起保持印谱音区；deck另整体再降一八度，保留两个来源本就不同的音区。全部110原事件经解码逐项确认两源严格相差12半音且时值一致，但各自独立保留原源和映射。 第15小节#4影响本小节后续同音，均为F#；15至16与25至26长弧跨不同音，是乐句线，保留独立起音。第36灰2和末2均单减时线为八分，不能把数字2字形底横看作第二减时线。 新增九个印谱起音：10末E、12末E、14末两个C、23第二A、26末G、33末E、37末E及40的G（均以社区音区命名，deck低一八度）。 源64的D经过音与65的E合成所选27小节E四分音；源75的高G改G低一八度；源94的E改为36末至37的连线D共3.5拍；源105的C改D、106的D改E。上述属于明确选定谱版差异。 源只有末一拍明确休止；补入印谱14两次八分休止、20八分休止、24四分休止、35和39的八分休止，逐音调整邻音时值保持每小节4拍。 109源音及110事件全部处置，九次新增、一次两音换一音得到117音及7休止，129拍；速度从源87改为所选谱印刷96，80.625秒。 原稿保留，修订另存。这里是完整来源范围的选定公开谱删节编配，没有原录音对齐、真人听感或实际游戏测试。 Root另用自录逐小节数组重建完整删节范围，124事件全部一致；两份完整来源逐项处置，保留各自音区。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8e5abe0dfd3649d4f8301f0e73e403701ef22491d0fd7f5cb44378ad027afcdc"
+  },
+  "note_count": 117,
+  "event_count": 124,
+  "duration_seconds": 80.625,
+  "limits": [
+    "Selected printed edition and source-preserved cut/register; not original recording transcription.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-a8c6cd73cdb2ae10-sky-complete.review.json",
+      "sha256": "a3ecaeb3dc840daaa919ef0f1f010fa79c2a95df17909cf8c3d0ac5fd4d0d823"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f1da768843ba6134344428551152d7ab91c504bce1f282af90afe14499553a52"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c4b0f273bac5ec243005ec87baed0fbd1fca9507c149b04e6f8000c5041a3a9b"
+    },
+    {
+      "name": "0001-3479ea6a9ac1.json",
+      "sha256": "58eec30a75469764ff544780e771f469aa0acf6a8d9778783d56058d2550b61c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

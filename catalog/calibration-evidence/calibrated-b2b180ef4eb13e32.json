@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b2b180ef4eb13e32",
+  "source_id": "social-52db5d2e01116d1f",
+  "work_id": "work-885a604c2096",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687430539896294694",
+  "status": "reviewed",
+  "sha256": "e6b39c22f6f00ec4838e646facbbcae3371c44a8360e21a7974a902733998e53",
+  "source_sha256": "b7f6c0d3ca33f51703de4e3b9b9217a45d1390049799ead10e7f3fc99dda400e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/380185.html",
+    "edition": "EOP four-page piano printedBb4/4quarter96; m1-3andm4first2beats; native-crop corrected octave reading; ordinaryBb3transpose-10.",
+    "score_sha256": "e6f2cb824fb135aa55e408bb3220fbf6fa2e4d59b095c4cc33767de8db410ac8"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 34,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "现有两文件唯一谱面全部四块34音；另一图为封面，下半谱不在现有集合。 完整现有社交集合：第一图四块10+10+10+4=34音；第二图为无谱封面。第一图印有第1/共2页和下一页主旋律下，但下半谱不在现有集合。只声称现有34音全覆盖，不虚构缺失页。 非盲修正版：原来已看四类原始源及旧候选。root指出前奏双高点误读后，先在380185-intro-full-native.png重新读完四小节，再查看root独立数组。此版不声称首次盲读；旧social目录及旧sya_reference_intro.py冻结不变。本v2完全替代旧错误候选。 真实点数：每小节第一5和第四3各一个上点；第二2、第三1及后六个十六分音各两个上点。按普通1=Bb3记录参考MIDI后全段统一降10半音；等价于普通1=Bb2再升2。输出轮廓G4 D5 C5 E4，随后C5 D5 E5 D5 C5 D5，绝不局部折叠八度。 源图黑b=G4，粉色X/Z/C为D5/C5/E5。仅source3/13/23/33四个G4按参考改E4；source0/10/20/30仍G4，其余30音高原样保留。无新增主要音、无合并、无省略。 380185第一页打印Bb、4/4、四分96，直接采用96BPM。前三小节前四音各.5、休止.5、后六音各.25；末小节仅源前四音2拍。3处印谱休止补入，m4后半休止及低音区主歌拾音不在本源范围。共34音3休止37事件14拍8.75秒。 所有34源音和事件逐个映射；两源文件及原参考四页、原尺寸裁图和新读谱脚本均绑定哈希。未人工试听、未录音对齐、未实游；待root独立音乐二读与正式软件审计。 Root直接查看原参考整页及原像素放大第一系统、原来源两图，发现旧版把双高点误读为单高点。旧候选被拒绝并保留；root在查看候选数值数组之前独立录入完整37参考事件与34源格，已知旧提案文字所以非盲。 修正v2完整37事件音高/时值/起点与root数组相等，34源格音高/颜色与逐源比较表相等。真实单/双高点用统一普通Bb3降10保留轮廓G4D5C5E4；4处原G4改E4，3个参考休止，最后E4半拍。 来源图点根据图例只表示长按，不应以点自行推出音区；原音区以按键颜色为依据。现有第二图确为封面，未声称缺失下页已完成。旧待root复核状态为历史，本包完成音乐核对后另送软件检验；无人试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e6f2cb824fb135aa55e408bb3220fbf6fa2e4d59b095c4cc33767de8db410ac8"
+  },
+  "note_count": 34,
+  "event_count": 37,
+  "duration_seconds": 8.75,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-52db5d2e01116d1f-see-you-again-complete-source.review.json",
+      "sha256": "ee84bcfe2233d02310803fe0f4d9048b6e4e0daeed25546db95fad1ce33a2a50"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "138245fd88814f5ee8e0c8b47b64f53e7e562deac2eecbf98970896341f3bf7f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3b568b7efbb06d72992f595e406f249cf55de2a47c770ffa9b11189107237012"
+    },
+    {
+      "name": "0001-7ef669d41d10.json",
+      "sha256": "385f3194d50e6bb4012a01397cffe23327940c47786ba84b71c6962bdd729707"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e4bb0b7eff2b11a4",
+  "source_id": "social-ca03e7bc3a5904e9",
+  "work_id": "work-dcc4d48d7e6d",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jhyTbzn1sNLY",
+  "status": "reviewed",
+  "sha256": "599868dc133b47caf3f36d10d38750c14356fb962e01764a148a2e0e36cefb82",
+  "source_sha256": "f6c645b6dd9bc88e8e552bf84bf7a4da2bcd687feed3cc96deddb1b8e32bdaf0",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Music-17855.html",
+    "edition": "Full337-source-explicit-TAB1-11+piano28-68+TAB53-61;globalminus3;LHfillplus21;quarter144practice",
+    "score_sha256": "a729b007affa2b9e2048630f6e0a0f2cefff995b414490c96160c3df10986702"
+  },
+  "review_method": "Root complete61selectedbar staff/TAB visual reread, independent346symbols/328events, original337DFHS/SMF and all sourcegroups checked; LH octave correction approved",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 315,
+    "maximum_parser_boundary_error_seconds": 2.2737367544323206e-13
+  },
+  "review_note": "Root实际看EOP17855第2/3/4页全部所选28–68栏，以及TAB frame001/002/003/012/013与second88覆盖所有1–11及53–61栏；独立按绝对MIDI重录346物理符、328声音事件，与修订v2逐符一致。 Root发现初候选LH31/35五线内C/D被误低八度，已保留旧稿并在v2修为C2/G2/C3/D3/Eb3/D3/C3（35先六头）。整组reference+21，RH/TAB统一−3，完整器乐句不截断，输出53–74。 全部337 DFHS/SMF原音重新鲜解核对，DFHS raw−7=真实SMF，不能将stored−7再次应用于SMF。63处微tick差异、54个SMF静默和50个DFHS静默分别保留；不是用默认格点覆盖源时值。 原前73头及末55头采用TAB完整11栏前奏和9栏尾奏；原73–281采用EOP28–68主段，89–102/119–130用实际LH完整填充，161–171采用钢琴延音/休止过渡的明确异版。来源246长音与60栏F/E半音过渡及280/281与67/68实谱收束的差异全部列出，不冒称逐头原版还原。 TAB3后两8在G弦、末10/8在D弦；2栏C/Bb为两16分；4/8/53/57拍型为.5/.5/.5/1/1/.5。11/61圆圈是二拍半音符，末休.5；仅真实同音tie合并，P/H保独立触发、无定量滑音起点只记装饰证据。 尾60真实七头阶梯为Bb3/D4/F4/Ab4/Bb4/D5/F5，经整体−3得G3/B3/D4/F4/G4/B4/D5，保留完整上行。原末后三头有整体折低，证据保留，新版不逐音折叠；61末Eb5−3=C5两拍后半拍休止，原末719tick是不同门限时值。 统一144为TAB打印练习速，主钢琴原印80、来源143均明示；244拍101.666667秒为此完整混合选版，非原录音同步。无真人试听或真实游戏通过宣称。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a729b007affa2b9e2048630f6e0a0f2cefff995b414490c96160c3df10986702"
+  },
+  "note_count": 315,
+  "event_count": 328,
+  "duration_seconds": 101.66666666666667,
+  "limits": [
+    "Explicit composite printed practice edition, not literal source fidelity",
+    "Root second musical reading pending",
+    "Production audit not real-game verification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-ca03e7bc3a5904e9-full337-tab-piano244-v2.review.json",
+      "sha256": "01dfafc645a7e372b0b36af82ca0ea5342ee2971f163bca6c3cae184a26efb39"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "731264fdf5ae8f6dc586a94536bd3fbea534fd4d207b2851cb895a7eaf5e0d1c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d92b23361ad76dcafc1ffd39ab14b82fc8c6493aa1d59370b51175d5260e7283"
+    },
+    {
+      "name": "0001-f3f77fe3fdcb.json",
+      "sha256": "c49b340949d5cb40ebb25c72b9f89b02ac5df50007ce498a5c98ff5109cf3242"
+    },
+    {
+      "name": "public-review-summaries-20261013-koi337-v1.json",
+      "sha256": "9bfbf495fafd4043e4cae5d83d167eac4aa586cb968b0f190d1527319453b587"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

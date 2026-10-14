@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5575a8a9accd5a07",
+  "source_id": "zhouzhou-035",
+  "work_id": "work-deck-1dfd3ba9333c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d2f159086da0256e64e8962d2bef74f704fa14654bb10f91198cb091bbaa29d6",
+  "source_sha256": "81a4d7462842a833f13ee44b2e115bb69f5c0d4a6d28ea1505c1e256afc7c4f4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/341330.html",
+    "edition": "赵小臭中文翻唱版，町田纪彦作曲/孙世彦制谱，Gb4/4印四分120；本范围完整在第1页前3行",
+    "score_sha256": "a7fda8743a2e4d91fdcef007289667635ccf1a789c64403a7d4a200cf6fe3380"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 55,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全6行56原音，首次副歌开头5至两句尾高1持音6.5拍结束。 从固定inventory识别zhouzhou035实际物理035-未闻花名.source.json，SHA81a4d7462842a833f13ee44b2e115bb69f5c0d4a6d28ea1505c1e256afc7c4f4，六行56音无0。原无歌词、演唱者和速度，不凭同名标题选择其他流行歌曲。 全56音旋律匹配町田纪彦Secret Base/君がくれたもの作品的开头副歌。本次明确选用341330孙世彦制谱、赵小臭演唱的中文翻唱版；页头Gb、4/4、四分120，使用本版旋律及本版打印速度。不能把同作品deck元数据88当作此版速度，亦不声称本版就是日本原唱录音速度。 参考字面Gb4整体降6半音至C4；参考高1变为C5，普通5变为G4，高5变为G5。原除9外55音音高保持，原9普通3(E4)改E5；其与原8高3是所选谱A1末至A2首的同音弧，明确合并.5+.5为1拍，无源音省略。 从首某的普通5 .5开始，前方0 .5为源范围外引入休止予以排除；一高1 .75、天高2 .25，共首1.5拍。后12个完整4拍小节，总49.5拍。 A1在2 .5、梦3 .5、里3一拍、梦3 .75为独立起音；见3 .25连到3 .5合.75；末月3 .5跨A2首3 .5合1。不得把梦的附点3 .75错并到下一见3。 A2光下的地点依次五个2 .5，再0 .5，最后你2 .5跨A3首2 .5合一拍。原15映射这枚完整1拍，未新增源2。 A3影子盘对应普通半拍高1及独立附点高1；旋的高1 .25连后高1 .5合.75；末在1 .5跨B1首1 .5合一拍。原16-21六枚高1一一映射，不能把所有连续同音都合并。 B1三个普通5半拍后0 .5、普通5 .5、高1 .75、高2 .25，完整保留原22-27。B2高2 .5和六个高3 .5均独立起音；末高5 .5跨B3首高5 .5合一拍，原35只映射此完整持音。 B3原36-42为3 .5、3 .75、3 .25、3 .75、3 .25、2 .5、1 .5，附点3与其后16分3无同音弧，不因同音合并。 B4你高2一拍、眼高3 .75独立；前高3 .25同音连后3两拍，并跨C1首3两拍，原45完整持音4.25拍。后C1休止一拍，花高2 .5、在高3 .5，原46/47顺序不变。 C2飞高2 .75；舞高1 .25连后高1 .5合.75映射原49；中高1 .5同音连后高1两拍并跨C3首高1一拍，原50持音3.5拍。C3其后两个一拍0，泪高2 .5、却高3 .5。 C4在高2一拍、缠高1 .5为独立音，绵高1 .5同音连高1两拍，再跨C5高1四拍；原55末高1完整6.5拍，排除其后括号内高3等间奏。不得止于原55第一次按键而漏掉六拍延长。 本范围无印小装饰，不新增量化装饰，不借拍；所有时值来自本版谱面。五个原谱休止分别恢复为.5/.5/1/1/1拍，原无0并不等于省略休止。 输出55音5休止60事件，原56音100%有去向，新增音0、源起音合并1、音高更正1、源音省略0。49.5拍在本版打印120BPM下为24.75秒。 Root另录60输出事件与提案全相符，单独解码56原音并核全部去向；原9升八度和8/9延音合并明确，末6.5拍完整，未添加后间奏。只035短版验收，同作品两个长来源仍独立处理。正式软件审计另绑定，无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a7fda8743a2e4d91fdcef007289667635ccf1a789c64403a7d4a200cf6fe3380"
+  },
+  "note_count": 55,
+  "event_count": 60,
+  "duration_seconds": 24.75,
+  "limits": [
+    "Explicit Chinese vocal cover edition selected;120 is printed on this edition and is not asserted as Japanese-original recording tempo.",
+    "Same-work long deck/community sources are not covered by this56note short-source proposal.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-035-secret-base-complete-source.review.json",
+      "sha256": "44898aa61e9faa698187ee3c5ea8991806c270f6c63b0704cce030214c68fbe1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0c02edd0c6c09462881d595d892765457ee8d35e838502643524b084c21f613b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a97b687cde7784d6ea93829c502c89729e59be49ece28d14e019cdbff85ee9ec"
+    },
+    {
+      "name": "0001-8642f637bbe8.json",
+      "sha256": "2bab4b81c7a19e1c834c5242106859d76780222b931d7f76429a9d018ac8d2db"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

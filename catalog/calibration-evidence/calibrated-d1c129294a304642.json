@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d1c129294a304642",
+  "source_id": "spring-shadow",
+  "work_id": "work-spring-shadow",
+  "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E6%98%A5%E6%97%A5%E5%BD%B1%20bpm98.txt",
+  "status": "reviewed",
+  "sha256": "7949c863b80e3548bcc7b0b1c7e9c64a9b119ae10ee28d99644980377afa63c7",
+  "source_sha256": "77f285e5049ea994ede94c2aa9f62b2860c16b89206160d4ba9fc620d7af5699",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/1025244505008242694",
+    "edition": "B,6/8,quarter97;normalizeC;complete source-specific135bar repeat route",
+    "score_sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 637,
+    "maximum_parser_boundary_error_seconds": 8.242295734817162e-13
+  },
+  "review_note": "complete639note664eventoriginalsource;full135bar selectedprintedrepeat route Complete639source notes664events25rests;all135expandedCRYCHICbars3quarterbeats each,405beats,637outputnotes662events. No source section omitted,no referenceinsertions,no sourcepitchchanges. Independent complete2page manualBiliCRYCHIC B-major6/8quarter97image transcription, normalized down11semitones toC. This selectedvoice melody preserves alloriginal pitches and every onset/rest. Old98BPMsource metadata replaced by printed97. Only corrections: source202/203 and410/411G4reattacks changed to two printed trueGties from P1R11B3lastquarter into B4dottedquarter;each1+1.5=2.5beats. No timing lost or new silence generated. Source route unfolded135bars:8intro+first12verse+second12verse+first12chorus+first-ending15bars;repeat secondversewith alternateR8B3footnote+12chorus;second ending bridge then fullcoda. R2B4normal1/2 pickup remains voiceC4/D4,not lowered with instrument. Every original rest remains byte/token evidence and maps to identical candidate onset/window;standaloneextensiondashes in rawbase retained in source decode with positions. Full original events collapsed onlyat two trueGties exactly equal every candidate pitch/onset/duration. Each version separately binds fixedinventory primary path andsha. AlternativeconvertedTXTsha496c… has underlyingraw3eaf file byte-identicalto baseline77f285…;this sharedsheet reading is reused transparently,not same-name inherited acceptance. No audio,humanlistening,recordingalignment,UI,GPU,or realgame tests;independentrootreview and formalsoftware acceptance pending. Root完整两页简谱二读；独立十六分tick及135小节路线展开，662事件全部音高/起点/时值一致。第一28小节复用本人短版读谱并恢复器乐高八度，末两个声乐弱起不升。 Root从固定主文件重新解码639音/664事件，25休止全部起止不变；仅202/203与410/411两对G4为同音真连1+1.5拍合并。零改音补音删音拆分，第二遍选印谱下方四音替代结尾。 97BPM为印刷四分速度；未真人试听、未原唱对齐、未实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "note_count": 637,
+  "event_count": 662,
+  "duration_seconds": 250.51546391752578,
+  "limits": [
+    "Communityvocalscore,not publisherauthentication.",
+    "97printtempo chosen instead of98source metadata.",
+    "No listening,recordingalignment,or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-spring-shadow-vocal-v1.review.json",
+      "sha256": "95908a4c5217a35d1b450d3e86fe244c132571bfccc9b9030615e59d6cd1329e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "127cfa5bc12067226ee26b4ca68f817e819d6810634bc61d5e47edcb1a7d5014"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "907a52943496ba13d031d2f6d25a528d3860083a84c0a479073878a4c923527d"
+    },
+    {
+      "name": "0001-9dc8085fd89a.json",
+      "sha256": "077a242a483b945a34720771dc6afdf1188de9b4aca52bb37b8f93b422a2d096"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

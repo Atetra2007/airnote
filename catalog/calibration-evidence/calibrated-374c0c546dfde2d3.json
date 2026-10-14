@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-374c0c546dfde2d3",
+  "source_id": "community-7686181d1158e0f9",
+  "work_id": "work-deck-f9bed8df32ff",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99%E5%89%AF%E6%AD%8C1-111-%E4%BA%8B%E5%AE%9E%E4%B8%8A-506b82dd294a5360ecef7.deltamusic",
+  "status": "reviewed",
+  "sha256": "d3353ef5fa81dafd3eb60aa1f7f3b163987f8011af060126eb352a7a935a024e",
+  "source_sha256": "fcbe5cd77157d6fd9456e48c99c6b66c39f812dda9dcd25484c0b997c9e115bd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/401046.html",
+    "edition": "周杰伦原唱/曲大卫改编钢琴伴唱正谱; Eb; selected vocal staves and common-refrain form explicit",
+    "score_sha256": "e729779b8e2c5942f1e2dc3a708db433767252fd8ad90f96184674024180a7b0"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 51,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "complete-existing51-note-source-excerpt Use the unvaried common six-note refrain at third full bar, as explicitly preserved in source, rather than late high melodic variationP9R3B1. This is a declared source-form selection within the same vocal edition. Restore written rests and continuous same-pitch printed ties; retain every source attack once. One noncontiguous selected-form sustained note is an explicit editorial exception, described separately. Final source Eb5 about3.25 nominal beats is replaced by printed tied-quarter-fragment plus full whole-note hold4.25; one-beat extension is a selected-edition ending restoration. No extra piano postlude appended. Root20261012 enlarged original P9R3B2: F5 G5 Ab5 G5 G5, both final sixteenth heads at the same G5 height above the top F5 staff line. Preserve source25G5; v1F5proposal and first worker zero-mismatch report were wrong. Source11Eb5->D5 remains the only selected-edition pitch correction. Event18 E-flat5 at35/4beats holds5/4beats across the editorial splice from P9R2B3 into P4R2B1. These are nonadjacent printed locations: this is an explicitly chosen sustained note preserving the source common-refrain phrase, NOT one contiguous printed tie. Other continuous printed ties are merged normally. All51 source attacks retained exactly once in full order; one explicit corrected step-down pitch; source25G5 preserved after root visual correction. 75 BPM is explicit practice tempo. The401046 reference has no readable printed tempo. Do not call source120 metadata or timing ratio an original performance measurement. Exact final output33beats includes six written eighth rests and Eb5 final4.25beat tied hold; original preparation/ended fragment is not padded into a full song. One1.25beat sustained note at event18 is an explicit editorial splice between nonadjacent same-edition passages, not a contiguous printed tie. A different-pitch slur is never treated as a tie. No human listening, recording alignment or game test. Root复看完整401046第4/9/10页；前后两轮非盲核查，v1 source25误改F5已撤回，正确保留G5=79，仅source11改D5=74。 全部51源音各映射一次，20源休止单独交代；57输出事件、33拍、6休止、末Eb5连至4.25拍。 Event18从P9R2B3跳P4R2B1持续1.25拍是明确编配延音，非原谱连续tie；沿用来源普通副歌乐句，不宣称对晚段变奏逐音忠实。 75BPM为明示练习速度；参考401046无印刷速度，不声称来自录音测量。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e729779b8e2c5942f1e2dc3a708db433767252fd8ad90f96184674024180a7b0"
+  },
+  "note_count": 51,
+  "event_count": 57,
+  "duration_seconds": 26.4,
+  "limits": [
+    "Source-aware numeric reading.",
+    "Selected common-refrain form replaces the later high melodic variation with earlier same-edition phrase, matching source structure.",
+    "Event18 is a1.25beat editorial sustain across nonadjacent selected passages, not a literal printed tie.",
+    "No human listening, recording alignment or game output.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-7686181d1158e0f9-seven-chorus-reference-v3.review.json",
+      "sha256": "cc012efecf19e5336c422378ecb937795a8559309a4f276864c3a8a5d085f794"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ade3dbe2f4f43ba35b8ed96617e577dd11962f3f57e3cfa9773daae2a09ad689"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6b405e7fc7f14653948dca0d2b803512d22d9383bc147b65e4c6c0f04b871dbc"
+    },
+    {
+      "name": "0001-c18c8014b05c.json",
+      "sha256": "36033b673786f2451a06d0e35bd869c8043489bba8713ff99f94de643b5349e6"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

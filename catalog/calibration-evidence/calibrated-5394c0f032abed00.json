@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5394c0f032abed00",
+  "source_id": "community-8627c603941b59ce",
+  "work_id": "work-d9e292cf78e6",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A7%E4%B8%9C%E5%8C%97%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1-%E4%BD%95%E7%8E%89-kili-017b3330233b0e37cc762.deltamusic",
+  "status": "reviewed",
+  "sha256": "e5ffc84226e2c9453b873ac610b0b05317a3fe47fb70fc38b05f6fa32278cc08",
+  "source_sha256": "9ee9cabff6be859ed13ba07e2ae4a2c3b0d31112c5b91ad37a50c1c11fdb7fee",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/157673.html",
+    "edition": "HeYu singer / LiuQi composer / XiaoYeZi transcription; F-major128BPM instrumental intro",
+    "score_sha256": "5ab61133b7c3a86c9d5e2402a4de56f8747258ce1ddb8cb1eabb941d2ed756e5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 48,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-existing-instrumental-intro-excerpt-with-explicit-endpoint Selected HeYu/LiuQi/XiaoYeZi F-major printed128-BPM edition; same-title different song sources explicitly excluded. Every source pitch and original note/rest event is individually accounted. No transposition, pitch replacement, omission, or source-note merge. Complete existing instrumental excerpt retained: first16 bars plus4-beat preparation for social, first8 bars for community; later full-song sections are not appended. Community lacks two separate written attacks: bar5 at1beat D5 and bar6 at0.5beat A4. Add those attacks and restore exact durations, including source bar6G4 shortened to quarter and source ending cut to2.364beats. Social original timings approximate a128-BPM performance imported under120-BPM metadata and drift from notation. Restore exact printed rhythms at the independently printed128 tempo; do not treat imported120 as authoritative written tempo. Social ends at bar16 finalD5 half note; its printed tie continues into bar17 outside source. Retain the selected excerpt endpoint explicitly instead of inventing absent continuation. Use nominal written durations with10ms game-practice release gap; original gates remain in evidence, not presented as faithful instrumental articulation. Root重看整页与两个放大图，另录绝对MIDI及时值全部16小节99音，与代理完整数值一致；非盲复读，不声称盲审。完整重解码原文件并核对每个原音、休止、输出起点时值。 纠正候选关于performance的措辞：social约0.9375倍率只是原数值与印谱时值比，不是演奏或录音实测。128 BPM仅以原谱明确印刷为依据。 两份均保留完整现有前奏片段；community两缺失起音补在m5拍1与m6拍0.5；social四拍准备休止保留，m16末D5二拍截取跨界tie片段，未补源中没有的m17。无真人试听、录音对齐或游戏验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5ab61133b7c3a86c9d5e2402a4de56f8747258ce1ddb8cb1eabb941d2ed756e5"
+  },
+  "note_count": 48,
+  "event_count": 48,
+  "duration_seconds": 15,
+  "limits": [
+    "No human listening, original-recording alignment or real-game test.",
+    "Intro excerpts, not complete vocal song.",
+    "Source seen before numeric transcription; nonblind.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-8627c603941b59ce-dongbei-reference-v1.review.json",
+      "sha256": "c8f1681443cc19713f28126ac92271b37efb4ce78220d4df11ff44dc0b3081f8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "83c602ad848df1d6f2dd80989d0470f17563d60c9230e50f8abc2ca5b0ec4477"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "06f8905149870d060adcc38ab153b14411d1c0cd53951a451c6bda2da5e25914"
+    },
+    {
+      "name": "0001-56d09bb097fd.json",
+      "sha256": "3443400ee5a5e18ed3ce56e2e5719dfbead4f6ed596419f5ae952f96324e7c65"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

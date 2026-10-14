@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9b700dd3ef76ab43",
+  "source_id": "zhouzhou-031",
+  "work_id": "work-farewell",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "600aec312dd4167798868959ee97b7fc6af44fe23cd090e8195da89b9c1dc8c0",
+  "source_sha256": "af68407418aa15c6ed9659fccc76713af9f128d93f4d98b479c9c5e20df139aa",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18513.html",
+    "edition": "F,2/4,printed120BPM;selectedm1-17RH;uniform+7toC5",
+    "score_sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 56,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-existing56note-shortsource;selectedEOP18513m1-17only Full56 original musical-note events independently decoded; every original raw note/pipe field retained. No originalpipe turned into timedrest; editor durations/defaults are not treated as reliable musical rhythm. ChosenEOP18513 m1-17 top piano melody (communitytranscription of Shannon/GUMI Shibetsu); fixed source is the existing17baropeningfragment, not the entire132barsong. PrintedF-major2/4 quarter120BPM; uniform+7semitones toC5tonic retains original highCsource register. No chromaticaccidentals are added from tuplethird8/b1. Every note maps1to1; source7/35 D5 become printed degree1C5 at m3/m11 fourthattack. No source omissions, insertions, splitting, consolidation or source rests. Root full selected-range imagecrossreading and formal software audit pending; no audio/UI/GPU/game test. Root完整看图复读EOP18513第1页m1-17，独立重录音级/时值，56事件逐项一致；1=F、2/4、120BPM，整体升7半音至高C保留原来源音区。 原结构JSON全部音/字段/编辑竖线逐一重新解码，无增删拆合、无将竖线推断为休止；031两处2改1、140第42音高1改普通6均由所选谱直接支持。原源仅17小节开头，不宣称全曲；末b1不是增加拍长依据。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "note_count": 56,
+  "event_count": 56,
+  "duration_seconds": 17,
+  "limits": [
+    "Communitytranscription,notpublisherscoreauthentication.",
+    "Completeexistingsourcefragmentonly;no132barfullsongclaim.",
+    "No original editorpipe timing inferred.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-031-death-eop-v1.review.json",
+      "sha256": "fc91ae7193f3ed58de46ba623c09f7558088de6807c599f91cb26a54b0aa5044"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7fde0c10e4e64f108b42293edc2a5aa594d5a8fb10ce662274071ddc88f91d10"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c75269392d2df0b2220cb641dbd4b02aed3c300f04621e19b76e44e8efdd44b9"
+    },
+    {
+      "name": "0001-73b02b12fdcf.json",
+      "sha256": "ac139e6c55f48db3ffb60d6160832f01eeaee951bedda8d1b9e83c9b8fa3d475"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

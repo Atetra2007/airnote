@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e8e91c6bb06450ec",
+  "source_id": "zhouzhou-061",
+  "work_id": "work-deck-f53e36bc38f0",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "2b591b0701d55a80085425e8a2017acd7b3559c7865df843f9cc89e778a98f55",
+  "source_sha256": "7180201245f06d078f1adb3993b3db99c5a3d06ea4b97b783788d06fb731f625",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=EX6XXNYDJuM",
+    "edition": "Sweety 樱花草 studio recording, supplied chorus excerpt",
+    "audio_sha256": "df546417f3d3b43bea68eb395a6e3405225d2925a1ca03519a359cdef203fbd6",
+    "start_seconds": 77.03,
+    "segment_start_seconds": 77.03,
+    "segment_end_seconds": 98.32
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 42,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "完整来源42音及六句歌词，非全曲 Root逐音检查全部4页原混音/人声频谱、4处细节和本版全部3页输出覆盖图，并独立阅读来源JSON的全部歌词与音符。 高音区数字源谱下移10半音匹配录音D大调；保留实际旋律MIDI62–71。 种字77.03–77.41以C4低位起音上滑至D4，选择源曲调的D4目标作为明确可演奏简化；并非声学轨迹恒定D4。花、膛、在、记等上下滑及其他接近音同样保留目标半音而不逐帧分键。 中/樱的85.10与膛/心的88.43分别有独立辅音及谐波变化；对应保留同音分字起音，短版中不存在的膛/心不添加。 末号字稳定D4在98.32结束，后续原混音与人声弱衰减尾不延长为按键；句间间隙依据波形及原混音保留。 60 BPM仅为一拍一秒的绝对时间序列化单位，并非录音测得速度。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "df546417f3d3b43bea68eb395a6e3405225d2925a1ca03519a359cdef203fbd6"
+  },
+  "note_count": 42,
+  "event_count": 67,
+  "duration_seconds": 21.290000000000006,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "宽滑音简化为明确目标音；起音/释放边界约有50–100毫秒判断不确定性。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-061.review.json",
+      "sha256": "4810b15d205165d23942eeb975eaaa88ab5851357b756435c443b2543ff6afac"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "60dc430a3b37537f389bc557804690797273d18e78bb78e34ec06a39ce841e44"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ae43931e848e2edb7d6398823df508fa5dee09b86ed76cdd8a86fe4215f5226a"
+    },
+    {
+      "name": "0001-eab329365165.json",
+      "sha256": "7fe703b7889d443c50fb93114a863640fce3f871c92cf2aed061fdafe2aeeb67"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

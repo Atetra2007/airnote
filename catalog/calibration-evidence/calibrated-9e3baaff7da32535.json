@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9e3baaff7da32535",
+  "source_id": "zhouzhou-089",
+  "work_id": "work-dc8e6f1daacc",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "698b211ab13b5c98ba8c135d1d0c451bb3aed82320b0be45fe5d40078c9ca57b",
+  "source_sha256": "b9b945e903538b018225a5166f2afdad8f29cc26e60a4cd92f8ba7e11a5b2435",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/423868.html",
+    "edition": "天恩Gb4/4声乐；完整原8句，中文rap一次、第二OH结尾和首副歌；省略小号倚音，统一降6半音，80练习速度。",
+    "score_sha256": "079c08886008eb7de859808dfc329b9db5eef25d3ecf49cfb736c6020fbc6053"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 83,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部原8歌词行79音；中文rap、OH及首副歌至足够。 完整原8歌词行79音，从那么伤到第一段足够；所有79原音均逐项映射，没有删尾。原文件没有可核准BPM或时值，使用所选印谱重建节奏。 主参考为天恩423868一页Gb调4/4声乐谱，取中文rap两小节一次、OH第二结尾两小节及首段完整副歌；跳过原源没有的英文首遍、第一OH结尾与后续器乐间奏。此为按来源歌词曲式明确选版，不宣称原来源包含整个原曲。 打印高音点1=Gb4统一降6半音至C4；全段保留来源主要普通音区。原10 C4→E4（痛），22 C4→G4（OH主音），43 D4→C4（抱），73 E4→D4（刻）；其余75原音不改音高。 OH按主谱补F4十六分、E4附点八分与D4四拍（末一拍与次小节三拍连线）；不配谈爱过句补一个G4十六分，保留其前G4八分独立攻击与后A4/G4经过。四个补音逐个附谱面位置。 原两个那么句末与后续同音3按谱连线持续；副歌之后/陷落/以后/有我等同音延音合并，打印另起音仍保留。OH、C8和足够处小号倚音明确省略，主音不借时；这是明示简化练习版。 选第一结尾足够的高1八分及再次高1八分加二拍连线，最终C4完整2.5拍；随后括号器乐7不属于原歌词范围，不额外添加。打印只有中速，80BPM为练习选择。 83音1休止84事件，共51拍80BPM=38.25秒；0.5拍起始休止与所有跨小节连线明确保留。尚待独立音乐二读及正式软件检查；没有人工试听、录音对齐或游戏验证。 独立代理先留图先读谱快照，再回图逐格修正首读rap末组及连线疏漏；最终报告完整13片段与root选段一致，83音1休止共51拍。未把不完整初读快照冒称零差异。 root另从冻结原JSON解码全部79音，逐项核对来源映射，完整84个参考事件/TXT/时间线的音高、起点、拍长和秒数一致。独立报告确认4个补音及足够两次起音。 本次为完整来源简化声乐编配谱面通过，正式软件检查另行运行；没有人工试听、录音对齐或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "079c08886008eb7de859808dfc329b9db5eef25d3ecf49cfb736c6020fbc6053"
+  },
+  "note_count": 83,
+  "event_count": 84,
+  "duration_seconds": 38.25,
+  "limits": [
+    "Main voice practice edition; small grace notes omitted explicitly.",
+    "80BPM chosen for practice; no recorded timing claim.",
+    "Independent review and formal software checks pending.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-089-fire-complete-source.review.json",
+      "sha256": "41e666f3fd9414a90461ce793b261c22edf34a825349879b9a24d8c3f2152764"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "734070fbd42286edfd6c10c2050589fd9d282a52c612b1c8bd169f6352bd227e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "841800bc27af36d4bbcfeee35a2fbc7db77e34f3e0abda5611d1c4f1aadae1aa"
+    },
+    {
+      "name": "0001-dd79ba1443d3.json",
+      "sha256": "4c45c75e34ee855ccf89e34ab50cdbc55a2da6da558bf944441a3202993b444c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

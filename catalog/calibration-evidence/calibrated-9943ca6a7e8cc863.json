@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9943ca6a7e8cc863",
+  "source_id": "community-57bb90420ef7703b",
+  "work_id": "work-d495f371b50d",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%AC%A2%E4%B9%90%E6%96%97%E5%9C%B0%E4%B8%BB-33-33-47-2f2ad966299ca4a1a70c4.deltamusic",
+  "status": "reviewed",
+  "sha256": "45a0b171400d8de643d72031fae87dd94f19081f37049bb066ad94c42003232e",
+  "source_sha256": "d50b159a1ffdbd500c6cdfb4fe10ddf2e22b15ffd6911d5e7032ae4cc93eb55f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/260463.html",
+    "edition": "塞边的沙柳 first-theme32bars in2/4; source extent and practice tempo disclosed.",
+    "score_sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 99,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部99音及终休止，对应260463第一主题完整32个2/4小节；不添加源没有的其后主题。 Root已见原源后，直接从260463第一主题32小节逐小节另录参考数组，再构造本候选；100个原事件逐一映射、全部99音和1终休止完整保留，无新增无省略。 原event37的6 A4根据主谱A12明确低6改为A3；event11低5和event37低6都把原2.5拍改为打印2拍。其他98事件音高及98事件时值原样相符。 原@source-meter4/4与主参考2/4分小节方式不同，统一按四分音符拍记时；共64拍。末C4三拍来自A31到A32的真实同音连线，终休止1拍保留。 原120BPM作为明确练习速度保留，260463只写欢快地未印数字，不冒充参考实测速度。候选待独立复读和软件审计；未人工试听或实机。 独立代理在打开候选前先从260463完整前32小节和149038引子另录数组并保存，root参考100事件及本候选全部事件逐项相符；原源音高、符号与逐项处置也通过。报告及脚本按哈希绑定。 原候选@meter=4/4显示字段与主谱2/4不一致；本v2只把头部改2/4，所有非头部音乐行与原稿逐行完全相同。旧候选和旧独立报告原封保留，其旧TXT哈希仍可查。 此次音乐证据复核通过后另行进行正式解析/导入/重启与安全时序检查；无人工试听、录音对齐或实游。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "note_count": 99,
+  "event_count": 100,
+  "duration_seconds": 32,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-57bb90420ef7703b-poker-complete-source.review.json",
+      "sha256": "2a03c5a5e561494bfd50dd642dc3e1182255fabff66ae6bf697d84b0878adb45"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2bf32394673545180bc9e6fac4819bdb07f288163c48d204c06c51bafc3e9767"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "92027b69324c668e02f9b57b4b4e424ca92db502ff90843290cfe62f5603b9a3"
+    },
+    {
+      "name": "0001-68f8b98e2f96.json",
+      "sha256": "89106ca98109ea1b911cb39fef529bb12f1f2e06a91ecab097df22cea304bea5"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

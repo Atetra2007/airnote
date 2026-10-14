@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-37b84cff43244d94",
+  "source_id": "alternative-score-eb14a96294b6782e",
+  "work_id": "work-f26be8690e94",
+  "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E5%B0%8F%E6%98%9F%E6%98%9F.txt",
+  "status": "reviewed",
+  "sha256": "39917cb3e2a28c59519337e6c7ed1497548afeb8a492d7ede95d34b6d6b15b25",
+  "source_sha256": "b35290f397b317ac815ec8c408ce8b3b0d6daa480f5dedb7a13f07d1a79b33d1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star",
+    "edition": "Public published score: twinkle; exact edition bound by its SHA-256.",
+    "score_sha256": "61b9cbc7e407c66f2c19aa66e4404a67df4f32fc098a09fea4aa1b98cc341d78",
+    "midi_sha256": "44d32c631215cd846acc2296bf7ea5eaa8e1cd419de246c72e295739ec745242"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 42,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 42个音高、全部起点和时值与公开C调谱一致；保留来源90 BPM演奏速度与完整48拍。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "61b9cbc7e407c66f2c19aa66e4404a67df4f32fc098a09fea4aa1b98cc341d78"
+  },
+  "note_count": 42,
+  "event_count": 42,
+  "duration_seconds": 32,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "90 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-eb14a96294b6782e.review.json",
+      "sha256": "c37c48bfeaf45cc6dbc1831d4b00e68a887bf890c8df1d05e74a76d507a08b69"
+    },
+    {
+      "name": "review221-alternative-score-eb14a96294b6782e.timeline.json",
+      "sha256": "225d4dc5d360cf71dd5e3491d28d36e12e28de173c34483967209ee03a1e58ea"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0003-1807f6cd28fc.json",
+      "sha256": "7077b670b7326b955dda2766d15e8efe42a63da5fa79fc2f497519079912218e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

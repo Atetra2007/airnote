@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b2d42446616f171b",
+  "source_id": "social-743c7ff23997093b",
+  "work_id": "work-d495f371b50d",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=WLvmb-w4cyiF",
+  "status": "reviewed",
+  "sha256": "2dee081297e1925ba6ced5c150c593e596f8dcf3ea8c5012c2f56d36ae043d03",
+  "source_sha256": "87290ac026abad02a2cdb03997ea6df8c2841709581b1e2780d51db322b427fe",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/260463.html",
+    "edition": "A first32 2/4bars andD last18 4/4bars at+12;C26998m1-4+m7 atnativepitchwithdurationsx2;completeexistingMIDI arrangement.",
+    "score_sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 245,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部原MIDI242音和4个两拍休止；A/C/D三主题完整原有范围，含完整176拍和末A5四拍。 完整原始MIDI逐note_on/note_off解码242音和4个两拍休止，共246事件176拍/88秒；全部原始事件逐项保留处置，不删尾不以短社交图替代。主旋律分A/C/D三段，对应64/40/72拍。 A透明复用root260463前32个2/4小节数组并核对我此前独立图读100事件全部一致；全段升12半音。C透明复用root26998全7小节数组并核对我此前独立图读74事件全部一致；只取原源已有m1–4+m7，打印每个时值乘2保留原源中段半速练习。D复用root260463末18个4/4小节v2数组并看完全D图，升12半音；此D读数非盲，待另审。 A7 source21/22两个G5起音按选版附点八分合成.75；A15 source47/48两个D5同理。A18 source58 A5两拍改1.5并补E5半拍；A26 source81同理。A21 source65 D5附点.75拆为已有D5.5加新D5.25；A29 source88同理。四个新增起音逐个标记，不冒充源有。 A14 source44 G5→A5、45 D5→E5、46 E5→G5；A19 source62 E5→G5、63 G5→E5、A20 source64 A5→G5；A27 source85 E5→G5、86 G5→E5、A28 source87 A5→G5。A31–32原末source96 D5四拍按真实打印跨小节连线改C5三拍并新增终休止1拍，A段完整64拍。 C1 source101 G4一拍改A4半拍，在其前补打印第二C5半拍；source100 C5一拍保持。C7 source139 D5半拍和140 E5半拍按打印首D5真实连线一拍对齐：先把E5改D5，再明确选版合并两次源起音，并非说原E5与D5同音。141 D5仍独立半拍。source147 G5→A5；完整末source148 C6两拍保留。 D2原图清晰“3 —”本就两拍，整小节4拍；root旧文字误读已在root-reference-d-reading-v2.json撤回，候选不得称人工补拍。D5 source187 E5→A5；D10 source211及D14 source227原A5据低6改A4，其他相邻音区逐个保持。 D7 source196/197/198三次A5的.625/.75/.625是原量化近似三等分；选打印两个独立A5起音1.5/.5：source196/197合到前1.5，198缩到后.5。明确改变起音数量和节奏，不称打印连线。 D11 source212/213/214三次A5的.625/.75/.625按打印四次.75/.25/.5/.5：212→.75，213→.25，补第三A5.5，214→末.5；D15 source228/229/230同样处置，分别补一新起音。四个两拍休止各保留原事件，对应打印两次四分休止合成；没有以休止修正掩盖删音。 D17 source238 C6 .625→.5、239 B5 .75→1、240 G5 .625→.5，对应打印八分/四分/八分。最终source241 A5四拍完整保持；所有音符、连线、跨段速度与休止区别已明示。 总245音5休止250输出事件、176拍@120=88秒；7新增音(4A+1C+2D)、1新增A末休止、4个合组(A2+C1+D1)、16原音高改变，原242音/246事件全部处置。120为原MIDI练习速度保留，两主参考均无数字速度；无人工试听、录音对齐或游戏实测。 root重新从原始MIDI解码全部242音的轨道、消息索引、tick、音高和力度，与逐源处置表全一致；全部246源事件均只处置一次。250个TXT音高/拍长和时间线起点、秒数与完整A/C/D参考选段一致。 独立代理先保存D18小节原图读数，再与root D v2及候选最后98事件逐项比较，音高、时值和起点全部相符；D2末3后延音横线明确可见，撤回旧缺拍判断。A/C此前独立完整数组透明复用并按既定+12或时值乘2选版。 完整三个主题、四原两拍休止、新增A尾一拍休止及终A5四拍均保留；本版4/4用于整体练习网格，A参考32个2/4小节按等总拍长排入其中。120为保留原源练习速度，不冒称参考印刷BPM。 音乐证据复核完成后另行正式软件审计；未人工试听、录音对齐或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "note_count": 245,
+  "event_count": 250,
+  "duration_seconds": 88,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-743c7ff23997093b-poker-complete-source.review.json",
+      "sha256": "8595c3b494617f94929da08005dc65f67a4bb6defa48a05e69f0d4cea0cad709"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2957f9c4df46c7bd1357024f6d1969058318c39d6d4a6fc03a491ad66039cd40"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "5e74860e9fd94c3374a36edd403b9e15bdc4525d61421b8dd7bdd6ca6431943e"
+    },
+    {
+      "name": "0001-a5084ec95a74.json",
+      "sha256": "777d78dddb9471f420da57a226867c31fd3addf91eeebd9dffe675a72452d2c4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

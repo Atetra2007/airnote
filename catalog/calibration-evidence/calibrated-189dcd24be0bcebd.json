@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-189dcd24be0bcebd",
+  "source_id": "zhouzhou-182",
+  "work_id": "work-a00de0855301",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "997303f41578ff649ec44e21b4ccb2e9eaddafd91483f3ee6b96d971f3466aa0",
+  "source_sha256": "692524839473312921fea027ebdd9bb9baaba171c2724300a3cf10b353824674",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Fr%C3%A8re_Jacques",
+    "edition": "Public published score: frere-jacques-main; exact edition bound by its SHA-256.",
+    "score_sha256": "f7f360532a3a756494067b12d0ed90e17a4f6fef9cba011fdf7271c1a12a93e1",
+    "midi_sha256": "964715dce3df2489eb66e2c5a7106c8be525718dfc0b8392df3725eb25ce1d76"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 32,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 完整32音对应Frère Jacques/两只老虎的8小节主旋律；公开F调谱整体降5半音后与C调MIDI主声部一致。 来源第28、31音把属音写在中音G4，公开谱为低属音G3；修订两处八度，其余30音保留。 补齐Sonnez/跑得快两句的四个半拍、两拍句尾；只采用一个主旋律声部，不重现公开MIDI中的四声部轮唱。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "f7f360532a3a756494067b12d0ed90e17a4f6fef9cba011fdf7271c1a12a93e1"
+  },
+  "note_count": 32,
+  "event_count": 32,
+  "duration_seconds": 19.2,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "100 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-182.review.json",
+      "sha256": "e73bb537d81defebd2ee63ecdfdd24ff1811882d04529051fa31d5c73de23f07"
+    },
+    {
+      "name": "review221-zhouzhou-182.timeline.json",
+      "sha256": "069977e9904e849e794a477da1169869bdc855d0759e6dbdc1797eb1d6b6910f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0007-3535750f7061.json",
+      "sha256": "3d6cfce7f89205c1ee5dfaf842f858746cd396ff6248a16fcd16b623c5f06eac"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

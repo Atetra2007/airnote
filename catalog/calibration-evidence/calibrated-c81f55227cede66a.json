@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c81f55227cede66a",
+  "source_id": "zhouzhou-037",
+  "work_id": "work-7f5bece0edcf",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f33c0d6f06cb7b8e10ce69c243d575bb251217916d610f639bd0dd4832901a14",
+  "source_sha256": "cc3230ab72b3272856316a00a2987be426ed527bbc0894f4550c37148483ab60",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=RZ7-YyBLphs",
+    "edition": "selected recording RZ7-YyBLphs, six supplied lyric lines",
+    "audio_sha256": "fcd9eb7f666c2ca246054a78507b2dd525c551cc36adfd33401b9f1cca94fe4f",
+    "start_seconds": 152.9,
+    "segment_start_seconds": 152.9,
+    "segment_end_seconds": 190.15
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 74,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "完整来源73音及六句歌词，非全录音 Root独立检查全部5页输出覆盖图、8处原混音/人声细节与额外光尾边界图；修改首音后重新检查第1页。73个来源音各映射一次，补1个寻字B4到A4转折，共74音。 首到字原方案153.04秒过晚；152.90已有独立波形及谐波起音并向C4滑入，Root要求更正至152.90。 于字155.38–155.46秒约D4的短促发声峰与原谐波对应，来源E4过高。本版保留短D4目标及之后辅音停顿。 章字183.58–184.17秒宽滑音在B4反复达峰并稳定收于B4，来源A4改为B4；不将瞬态下滑逐音化。 庆/幸、杯/光、段/不有独立的发音边界，保持同音的重复攻击；末寻字B4下转A4后，常字188.81另起A4。 E5–D5及杯/光E5由原混音高次谐波证实；FCPE短暂低八度结果不用于降低实际旋律音区。 宽颤音和滑入保持明确的半音目标简化。光在177.13–177.18原混音高次谐波及振幅下降，177.15作为释放，之后弱混响不延长为按键。末常主动元音约190.15结束。 60 BPM为一拍一秒的序列化单位，不是录音的测得歌曲速度。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "fcd9eb7f666c2ca246054a78507b2dd525c551cc36adfd33401b9f1cca94fe4f"
+  },
+  "note_count": 74,
+  "event_count": 146,
+  "duration_seconds": 37.25,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "单旋律编配简化宽颤音与滑音；起音和释放为可检查的近似边界。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-037.review.json",
+      "sha256": "b2f4901ee5bbe63624b4586954c0d19d4bf23c5dc076601d67645c4b80600d40"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "aeb3ce6a959e510be36f90fba000d468469cc36f7c08b1bdbbf105038bc16b9f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0fca95d6d21744fee6bb614e44c70837e3bc04b3fcc2ffc48869dd494fe14163"
+    },
+    {
+      "name": "0001-a9283a4d49c9.json",
+      "sha256": "7c40d6ebe865ca8f52e528b46ec41343afb32a01e852460692d9abfeb7c769f7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

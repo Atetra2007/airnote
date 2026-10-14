@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e27dab8f95dd689b",
+  "source_id": "zhouzhou-046",
+  "work_id": "work-deck-14a637705cb0",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "9d2d349c5d53cd95fcfdaf8cee29386808944cc89e3a7b6cb65ed7235e1d2c32",
+  "source_sha256": "0ba3a75039095d2efc3499a3fd148c0f683aa8e16a5595ca72de480ca9281f98",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://zh.wikipedia.org/wiki/送别_(歌曲)",
+    "edition": "Chinese Wikipedia displayed C-major16-bar vocal melody; associated LilyPond MIDI at96BPM",
+    "score_sha256": "15feac533011adecfa85bd086191d91ff139b85191384d2432eb4c4338f01893",
+    "midi_sha256": "0435b6d270e1a425ddf726cd822c9f7c7c970fdddf17237fbf9314acb8b79348"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 58,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整现有58音、八句歌词及公开谱16小节；不代表录音的所有重复段落。 来源第34音（0起算，地之角末音）把高音1写成中音1，依据第10小节C5二分音符升八度修正；其余57音一致。 逐小节补齐附点、八分音符、二分音符和三拍句尾；第4/8/12/16小节保留一拍休止，末休止明确用于小节闭合。 第11小节两个相邻A4属于不同音符，有各半拍，保持两个起音；异音弧线按连奏处理，不误合并。 96 BPM取配套MIDI的625000微秒每四分音符，图中没有印刷速度声明；保留C调B3–C5音区。 谱面一瓢与来源一壶属歌词异文；输出为无歌词器乐谱，不改变原件。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "15feac533011adecfa85bd086191d91ff139b85191384d2432eb4c4338f01893"
+  },
+  "note_count": 58,
+  "event_count": 62,
+  "duration_seconds": 40,
+  "limits": [
+    "Public secondary score and its MIDI are one edition, not independent composer-master evidence.",
+    "Complete existing-source extent is covered; human listening and real-game tests were not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-046-sheet.review.json",
+      "sha256": "1e6b8d478bb7fe9a5ad72a5960e3b70f9f82163a6bc806ca845d885f9c591bfd"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "eb516203f5e72f578ea30c8463440dad0602c5b1d49beb1c2deaa81c9573900e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "390526c07958df950108d5f10af79f17f14ef9c3b508f7d8ac23c9763d445d68"
+    },
+    {
+      "name": "0001-1f9843844152.json",
+      "sha256": "ca6d82786471317a588a2b0087c4a791a46e8fa31df76f996ce7d5c1c616f50d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

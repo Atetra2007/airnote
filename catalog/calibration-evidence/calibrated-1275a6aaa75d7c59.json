@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1275a6aaa75d7c59",
+  "source_id": "social-ac339b24e41723a0",
+  "work_id": "work-c89664987661",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7685761790654860544",
+  "status": "reviewed",
+  "sha256": "e61440d1eee28dd8cc73f3c7af1a9095e6fe06e7cf64a0a7e43c960fb1b9164f",
+  "source_sha256": "1efd2a5d7a1f2d29daaef464a5d3b50a5067f8484f087fbfec9e74b9222f2f4f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jpw123.com/jianpu/20269/7468.html",
+    "edition": "GoldMusic F printedquarter65; C4selectedsinglechorus withdisclosedgraceomission",
+    "score_sha256": "7d65932cde4d489cb618f2dea60ee8f9d689c9a17c28115e6c1e516da6b1f777"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 78,
+    "maximum_parser_boundary_error_seconds": 3.907985046680551e-14
+  },
+  "review_note": "P1R7B1lastthreepickupnotes→P1R7B2→allP1R8/R9/R10chorusbars→P2R1B1firstthreeprintednotes;originalsource-onlysinglechorus;noD.S./whole-songextension 原两张图全部71音独立重录，P1R4历史转写的末2/5已纠正为实际图符，不继承旧错转写。 原图粉色右键=高区，黑色n/6=中区；每个长按点仅为未知时值注记，未把点当八度或整拍。 原图歌词/新主谱共同确认李佳薇的2026同名歌曲，旧reference的1998三人版不适用；保留冻结work_id身份，不改旧baseline。 明确选金韵声乐版单副歌，F整体降5至C4；相对源绝大多数降一八度，所有例外逐音列出。源47的1据主谱高1输出C5，是整段转调后12半音纠正。 P1R7B2的清、怎么、P1R8B1的乙、其余同音连线仅按印谱连续延音；v2经root二读修正：src32独立2 .25拍，src33为后两格2 .25+.25=.5真连音；不能把三个连续2合为.75，全部原源起音均保留。 3个无时值小倚音2/6/2均明确省略；第一个小2两侧3的连续1.25拍是编配选择，非声称印刷真正连音。不同音slur仍保留攻击；src1/14/29/31/34/37/56的分音逐项记录。 P1末→P2开头不删尾。同情结尾1两格真连音1拍，最后1再起音1拍。原图结束处无休止，不强添之后两拍终止0；单副歌31拍65BPM。 候选只为完整既有图谱片段的明确声乐选版，根代理独立音乐二读和正式软件审计待办；未试听/音频对齐/GUI/实机测试。 Root完整读两张原WEBP、两张主参考页和全部七细图；独立十六分tick重录78事件31拍和完整71音原图颜色/长按标记解码均一致。 v1的R9B1错误合并被root退回；v2保留一的2十六分新起音和条的2连两格共半拍，不把三个2全称真tie。source32/33保留两攻击。 7处不同音拆分、9项相对原谱整体降八度之外的音高变更均逐项核验；无未处置原音，无原音删除。原图点是未知长按，不冒充定量拍数。 明确李佳薇声乐选版，F参考降5至C4、印四分65；省略三小倚音，R8B1两主3连续1.25拍为编辑简化，不称印谱tie。原终点后两拍休止不扩展。原1998同名歌曲reference不作为本版音乐依据。 2026-10-13参考图片封装纠正：实际PNG/JPEG格式经完整解码核验，原始字节与SHA不变；另存正确扩展名副本并纠正MIME。音符、时值、谱文件及音乐决定不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "7d65932cde4d489cb618f2dea60ee8f9d689c9a17c28115e6c1e516da6b1f777"
+  },
+  "note_count": 78,
+  "event_count": 78,
+  "duration_seconds": 28.615384615384617,
+  "limits": [
+    "Communitytranscription,notpublisherauthentication.",
+    "Completeoriginaltwo-pagechorusfragmentonly.",
+    "Disclosedgraceomission/alternate-source-pitchandattackchoices.",
+    "Noaudio/recordingalignment/GUI/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-ac339b24e41723a0-jybd-vocal-v2.review.json",
+      "sha256": "1e34d5e9557696a67f5912ab7037effa411fd055b339aef000357483b320a2a2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "987f894f122e7f105aefd76ddbab94a2c9742c27e8f62ebc2b30ceeaff6dc011"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c00c7b7db487c875014b43cd931443201153c81a0d92e670f8a7b858f62a87a"
+    },
+    {
+      "name": "0003-17b30dfcef8c.json",
+      "sha256": "a69d73a46de81f0df3dead6fae1534d89506404ad1bb91813661e02dc930b552"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

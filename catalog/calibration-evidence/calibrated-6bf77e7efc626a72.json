@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6bf77e7efc626a72",
+  "source_id": "zhouzhou-068",
+  "work_id": "work-20bc937b7768",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "42a552a9383ac21b3051f276584761e5ef5fb2e634215605b2e45a7aa7b80cc2",
+  "source_sha256": "76f16dc78bb1f9beff5f029ca87d400eaa12a7009fdfa6d63af40bfbd82d0003",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/363510.html",
+    "edition": "林飞/喵了个艺完整两页C调主唱简谱，2/4过渡与三连音明确；59BPM另据公开鼓谱头",
+    "score_sha256": "270e2d2b4c8b6c4e616970fa2a71c69f6a6c6570488c2601011e3f1b4f0190fd"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 196,
+    "maximum_parser_boundary_error_seconds": 1.1510792319313623e-12
+  },
+  "review_note": "全15行197原音，从你的回话至第一轮要怎么停呢；无省略源内容，两个选版并组明确。 原068全15歌词行197音全部解码、保留原raw/8/16/b提示及逐事件映射；原没有0事件。不把数组第三项时值标记当八度，不把b当降号。 主旋律全程选择363510林飞/喵了个艺两页C调吉他谱的下方独立主唱简谱，两张完整页及全部使用区域均已查看；不读取吉他TAB弦品为旋律。389230低清简谱仅对照，未把其中旋律或节奏混入所选版本。 363510主参考未印数值BPM；59BPM独立取自公开qinhun8396打鼓谱预览头四分59，作为选定演奏速度，不伪称363510印59或已与录音逐秒对齐。C调不移调，普通1=C4。 范围完整覆盖原你的回话…至第一轮要怎么停呢；不加入参考前奏、后续空小节和额外复唱。初始你的两个16分共.5拍，排除此前半拍0。最终呢高1 .75连高1两拍合2.75，排除其后末拍0。 V1/V5凌或地普通6 .25接同音6 .5合.75；着或扯普通5 .25接两拍5合2.25。V3/V7旁后5 .25接5 .5合.75，鸽/歌末高2 .25接高2一拍合1.25。所有不同音弧只作一字多音连贯，不合并音高。 第一句时字source10原5G4，所选363510为7B4；我还爱你呢的source39原高1C5，所选为7B4。这是明确选版差异，389230第一处采用5但未混入。 原source22是白鸽末后/甜蜜前额外普通3E4，source23随后高3E5。主参考相应只在甜上印一个高3 .5；二者以[22,23]显式合为该高3，source22上八度；下一蜜/散/落/了依次映射source24/25/27/28，中间source26高3过渡仍保留。并组不隐匿source22原有起音。 P1两个你冷了/倦了三音组的末2延音跨拍；P2的不快和手写原相邻1/5顺序与选谱相反，source81 C5→G4、82 G4→C5、88 C5→G4、89 G4→C5，共四处按印谱改，全部来源序号仍一一在位。 真的痛了原source100高4、101高3、102高2；所选363510高4 .25之后高2 .25同音连高2两拍，显式将101改为高2并与102合2.25拍。原高3→高2可能是另一版本，未说原作者错误；全197来源仍有处置。 所选363510的只给到这真的痛了为4/4完整4拍；其后专门标2/4小节：0一拍、0 .25、怎高1 .25、么高2 .25、了高3 .25，再回4/4。两枚印0保持分事件，合1.25拍；没有照低清389230未标拍号的布局猜配。 副歌每个高3/高2紧贴数字对都为普通16分，不是32分或装饰小音，全部逐段登记。了/的/呢等跨拍、跨小节同音弧合持音；歌词重复音仍保留独立起音。两次幸福的幸字source112/165原高4改所选高3。 我都还三个音高3、高4、高3明确印八分三连音，三个音各1/3拍合一拍；后记高5 .5、得高1 .5。Fraction精确累计拍子，TXT用小数表示1/3。 旋转着末原source191高2保留映射印高2 .5，前补印高3 .25形成3→2的着字转音；随后要普通5 .25、怎高3 .5、么高2 .25、停高2 .25跨末小节同音2 .25合.5，末呢高1合2.75。新增只此一个高3，没加原范围外尾句。 共81.5拍：.5初拾音、V1-V9九小节36拍、P1-P3三小节12拍、P4两拍、C1-C7七小节28拍、C8最后三拍。197源音映射、2次显式选版起音并组、1个添加，输出196音5休止201事件；59BPM共82.881355932秒。 Root完整查看363510两页及59速度另谱，另录201事件音高、起点、时值与提案全相符；独立解码全部197源音并检查两并组、唯一补音及10处音高差异。末呢2.75拍、2/4过渡和1/3拍三连音核实。正式软件检验单独绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "270e2d2b4c8b6c4e616970fa2a71c69f6a6c6570488c2601011e3f1b4f0190fd"
+  },
+  "note_count": 196,
+  "event_count": 201,
+  "duration_seconds": 82.88135593220237,
+  "limits": [
+    "Main melody edition has no numeric tempo;59 selected from separately published drum header.",
+    "Source22/23 and101/102 explicitly consolidated under selected edition, without claiming original transcription author wrong.",
+    "One ornament note added on 着; original191 remains present.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-068-happiness-complete-source.review.json",
+      "sha256": "c16ca98487133cc6613296b75bbf9e17525343e325c470cae859475644fec187"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f6b12615175b669de27afba20608af99ddf82807bea7d9663fbe57678723b122"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "5ea8ce1bf629c09c4ec228370661af667144bff151eddfb7ae9d4bba51206595"
+    },
+    {
+      "name": "0001-2aa8dbdd7d34.json",
+      "sha256": "8f6adea6389d0a421989d496071cb670708cdf53d9c406b26342cab88e754fd1"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

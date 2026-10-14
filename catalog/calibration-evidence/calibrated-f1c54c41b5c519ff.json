@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f1c54c41b5c519ff",
+  "source_id": "social-93947b5b50d7eb85",
+  "work_id": "work-fc06da5f7c31",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=WVkY5co145IL",
+  "status": "reviewed",
+  "sha256": "64f4b92335ac5ff23e52002cf9439796ce4f61105383b2b879262655f144cc6a",
+  "source_sha256": "9520fa53e35d41e77b8275a90187f93e597f6783f9bbed139e7449c169f8a075",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-15905.html",
+    "edition": "Complete71barCmajor4/4quarter132publicpiano; full118sourceform explicitly selectsRH8–29 and literalLH7/14/15prefix/30, with separate instrumental cadenza and lowtail variants",
+    "score_sha256": "c91b3b8b41fb09dd4de50913a246656e4ca68e4ba0fb0f9138929ad641321bfd"
+  },
+  "review_method": "完整选RH/LH谱面二读，118DFHS全部原音及边界/静默鲜解，116输出独立重建；下降华彩及低尾明确整组器乐异版选择，无试听/游戏宣称。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 113,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-14
+  },
+  "review_note": "Root实际看完整71栏三页，逐头二读所有选用RH8–29、LH7/14/15首拍/30，重新录入选择路线并逐项重建116事件。主副歌中的真实连音跨栏合并，m13/m29在改选LH处结束上方延音，是明确单线声部切换。 原DFHS118头与SMF113投影由root重新解码并与全部处置逐项核对；第93低G2与最后114–117四低音完整保留为原证据，未拿113头投影冒充全源。全部117边界和每段真实静默鲜算吻合，原120→60及非网格起点不篡改。 完整来源曲式保留前奏、两段主歌和器乐连接、前副歌、第一副歌、插入器乐华彩、最后副歌及低尾的角色。新主旋律取同曲钢琴版C整体升5到F；相应LH完整组升12，华彩完整LH14升24，输出53–81。 原95–99是C5/A4/F4/C4/A3下降F三和弦。明确重编为同F/C/A和声的完整八头钢琴LH14琶音，并保留在两副歌之间：方向和密度有实质变化，不能称原下降花奏已恢复。下接C5副歌起音，与新器乐末C5同音重新攻击。 原114–117低C2/F2/G2/G2没有删除，选完整LH30八个实际音头转为F3/C4/F3/A4/C4/F4/C4/A4器乐收束；最终A为新F主和弦三音，与原末G有版本差异。此处是明确选段结尾，不冒称71栏整曲终止线或原低尾逐头复原。 新编配共100拍132BPM45.454545秒，含3个实际四分休止；节奏依据公开谱，非原录音对齐。纸谱和软件验收不代表真人试听或真实游戏通过。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c91b3b8b41fb09dd4de50913a246656e4ca68e4ba0fb0f9138929ad641321bfd"
+  },
+  "note_count": 113,
+  "event_count": 116,
+  "duration_seconds": 45.45454545454545,
+  "limits": [
+    "Full118source-group alternate-piano arrangement, not literal original attack/rhythm restoration.",
+    "Descending cadenza direction/density and terminal originalG changed as explicitly approved instrumental edition choices.",
+    "Selected excerpt ends with actualLH30; not complete71bar song ending.",
+    "Upper printed ties released at explicit monophonic voice switches.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-93947b5b50d7eb85-complete118-piano-instrument-v1.review.json",
+      "sha256": "eb06072abd7a42add6c20d971cc2c4edc4150eeea09cd831c3c61e1e77924d03"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "869266580feeef5f983ea2c7852a3fd05e7e5d8aea95ce2607bcbe70024e40b7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "df73c7ebb83461787223e228516b0f6273abeb0620bd8d55c63760471ba0cde4"
+    },
+    {
+      "name": "0001-b5ce2a1698d0.json",
+      "sha256": "b0d702bed27d8018af24b56613fd91bac1721d1f368dc9386935a7ef0285e6c4"
+    },
+    {
+      "name": "public-review-summaries-20261013-bupa118-v1.json",
+      "sha256": "50256ab1f9d72bc62dd8b70151b8dc12c85a8c3ba6f62da98b3532996f97dcd0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

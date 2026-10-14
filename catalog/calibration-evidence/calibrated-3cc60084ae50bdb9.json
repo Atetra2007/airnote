@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3cc60084ae50bdb9",
+  "source_id": "deck-c3b8796f4b50",
+  "work_id": "work-deck-c3b8796f4b50",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E7%94%9F%E7%94%9F%E4%B8%96%E4%B8%96%E7%88%B1-1-19thill-9e6fa6fcf8.deltamusic",
+  "status": "reviewed",
+  "sha256": "be8953827c0da92a7ca220e92e0330f58852c54e5a5ad6641fb05356a17c1b39",
+  "source_sha256": "ea7bb9e643eb4eee2660d4b4ee146404cde8e0cbd36e0c12461f5eb263adee59",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-10700.html",
+    "edition": "E,4/4,134BPM;transposedC;source-specific structure and disclosed cadences",
+    "score_sha256": "f56814314b18dab00c219ad1a41ac37c6b958a84e8b82d7d4598d747a74e730f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 298,
+    "maximum_parser_boundary_error_seconds": 1.9895196601282805e-13
+  },
+  "review_note": "complete329originalnotes357events;all-dense-instrument-fragments,two-verses,two-choruses,two-extra-E5-reattacks,saved-reprise-and-final-vocal-hook Complete329originalnotes/357events/28rests accounted in original order. No source section omitted; original saved structure is shorter than full155bar piano arrangement. Primary selected edition EOP10700 numeric score and corresponding173994staff, printed E/4-4/134BPM, upper melody only, transposed down4semitones toC; descriptive sourcekey not applied twice. Manual full-page view_image of all8staff pages and all7numeric pages, plus Sevenhandwritten2pages and row enlargements. Numeric edition resolves instrument pitches and exact durations; source-specific vocal endings and reprises explicitly disclosed. Selected instrument route m1pickup,m2-m9,m17-m18 then two source extra E5quarter reattacks/rests. m10-m16 not in saved first source instrument structure; not silently added or deleting original notes. Voice m20-34 then m45-59. Upper secondverse m28-34 and secondchorus m53-59 octave-normalized to first-verse/vocal register; every source pitch displacement recorded. Smallm20leadinggrace omitted from reference, originalm22Dgrace retained with1/4beat borrowed from followingE. Source-dependent Sevenending descendinghook replaces EOPm60voice transition, no original difficult content removed. The source E pair includes printedm59final1/2beat plus next E1beat, so the full second chorus is9complete4/4bars; remaining same-degree attacks consolidated explicitly into two4/4cadence bars; originaltwo silence beats preserved. Later instrument complete source route m62-m77, including all originaldense16ths. Two missing printed lowE4passingnotes inserted in m9/m68; additional missing E4notes inserted in m48/m52/m56. All additions identified. Afterm77 retain original3beat silence, then detached original fragment E5+3beat silence and complete m73/74-derived remainder. Finalvocalhook uses Sevenconfirmed pitches with disclosed original rhythm and terminal4.5beatA3sustain; no claim of literal printed ending. Every original rest indexed and retained in evidence; source neighbor-window mapping records candidate silence and consolidated-source zero-window groups. No audio/recording alignment/game tests. Root完整复读所选EOP第1至4页及Seven两页，独立以十六分tick重录整条332事件路线，与候选音高/起点/时长逐项一致；重新解码329原音/357事件及17连续休止组全部一致。 明确批准保存来源的单声部混合编配：原准备1拍、两额外E5攻击、两次3拍间隔、离散m73/74回奏、Seven下降钩子与末4.5拍长音。其节奏属来源编配，并非声称出版谱字面时值；m20无来源倚音不补、m22倚音从主音借1/4拍。 v2第二副歌E1.5拍包含m59末八分和编配钩子四分，完整36拍；36合组中包含明确编辑延音而非全部真连。五个E4补音图证完整。全部源音范围保留，无删段；未试听、未录音对齐、未实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f56814314b18dab00c219ad1a41ac37c6b958a84e8b82d7d4598d747a74e730f"
+  },
+  "note_count": 298,
+  "event_count": 332,
+  "duration_seconds": 118.2089552238806,
+  "limits": [
+    "Community piano and handwritten vocal transcriptions, not publisher authentication.",
+    "Full original-source route covered;full155bar piano not copied because source shorter.",
+    "Several source-specific cadence/reprise/rhythm decisions explicitly recorded;not literal reference transcription.",
+    "No audio,recording alignment,UI,GPU,or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-c3b8796f4b50-piano-v2.review.json",
+      "sha256": "5b860118034888a5957da06df50dc57d40855d38e2dbf8579a0d336202886895"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "27c716449c7ba8a73752b060e95b2154a35210713df35a20f46dee39088fce18"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "056bfa87c1baaff786b9511cfe52bd157c654a5905a643a4d7fab26aa7e7738a"
+    },
+    {
+      "name": "0001-c63acb5f2572.json",
+      "sha256": "41ec45de62b87240173290933c6ca883e9d8e5e53f1d25c3be871ffe9d360597"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

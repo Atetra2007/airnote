@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-66792238d0b9fbf0",
+  "source_id": "deck-a332a5b7f529",
+  "work_id": "work-deck-a332a5b7f529",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%80%8D%E9%81%A5%E5%8F%B9-%E8%83%A1%E6%AD%8C-wobushigesheng-a42abb1cf8.deltamusic",
+  "status": "reviewed",
+  "sha256": "6f93736edea74015b2a5345422a2c49ae747b08c547c278c69c10b0803031a47",
+  "source_sha256": "c5ddd73cf4c47a6fb78ddd904fc2b5448f8cc90238fd39aff8d435b7fdd378ac",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.com/Number-18817.html",
+    "edition": "Full72barEmajorquarter72piano; selectsRH1–8prefix/LH8tail–24/RH25–32then25–31+33/LH8tonic. Whole−1semitoneEflatversion; groupoctavespreservefullinstrumentalform.",
+    "score_sha256": "c82c7907eff1a72d21dd4e8441b6cd25c09ec5f4817294c742db76948eb2cb88"
+  },
+  "review_method": "Root complete selected RH/LH physical crossreading; independently reconstructed364events and fresh464source tokens; all instrumental/chorus groups and final tonic reviewed",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 364,
+    "maximum_parser_boundary_error_seconds": 3.979039320256561e-13
+  },
+  "review_note": "Root实际看EOP18817完整四页，再逐系统二读全部选用RH1–8、25–33与LH1首拍、8尾–24；独立重录并重建364音/162拍，与候选逐事件一致。未把native起点/strum当作纸谱定时。 413原音与51休止、464事件从原raw JSON完整重新解码，原160.5拍、72BPM、首末E3及全部原token保存；来源99–193和194–283的两完整器乐组分别以实际LH8后半–16和17–24重编，未拿上方声乐线覆盖未知低音。 整版E统一降半音至Eb；首LH组整体+12、第二LH组整体+24、副歌整体−12。第一LH组原40–73，若只加12会越到85，统一−1后51–84；保完整组音程，不逐音折叠。原首末E3因此明确变为Eb3。 RH25首5半拍与三个上点音位置全核；RH27两个上1及尾上1，RH28第二半栏6无下点，RH29 #5本栏延续，RH30最高两点1；LH9/10实际5613四个16分，第16栏6无点而第24栏5三低点均保留。 所有真实同音延音合并，未定时倚音8/31/33不虚构时值，和弦/琶音只选该印刷时点最高实际头。第二副歌采用真实33栏第二结尾，未重用32栏第一结尾。 原末一拍E3独立处置为实际LH8两拍E2整体升12再降1的Eb3收束；新162拍135秒，较原多1.5拍，包含公开异版节奏与末音延长。完整原曲式选段，不称演完公开72栏整曲；无真人试听/实机验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c82c7907eff1a72d21dd4e8441b6cd25c09ec5f4817294c742db76948eb2cb88"
+  },
+  "note_count": 364,
+  "event_count": 364,
+  "duration_seconds": 135,
+  "limits": [
+    "Complete-source-specific alternativepianoline; not literal413attackrestoration.",
+    "WholekeyEtoEflat and finalhold1to2beats substantiveeditionchoices.",
+    "Full4pagepublishedscoreseen butselectedfull-sourceformuses1–33; laterbridgesoutsideoriginalformnotclaimedincluded.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-a332a5b7f529-complete413-instrumental-Eflat-v1.review.json",
+      "sha256": "51b0d9f7ab5c04a34e763e108e723691b00481b51bf11d7c51e82fae658ac5fe"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "94ea7f6af75783b78ff2ec4a9b1450744b1ca71caa0ea26f67fb6c3379d616d0"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "18aa25501d4d8fe4856b98ca7aece9334d7214d18eb3e7cbc10acc6172d5a2d9"
+    },
+    {
+      "name": "0001-6cf6acf4438d.json",
+      "sha256": "5d5144ce55e0395de3956e75f901bff858e43bd97442c8f4398ee3f112d7d30b"
+    },
+    {
+      "name": "public-review-summaries-20261013-xiao413-v1.json",
+      "sha256": "86ce208031a983c5348fd3cf7b6b0832a391c5babd6b9b060a630430d7519f42"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

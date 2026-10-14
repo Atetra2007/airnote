@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f8a68da63e86da1a",
+  "source_id": "alternative-score-eb08a83d87b498c0",
+  "work_id": "work-885a604c2096",
+  "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/See%20You%20Again.txt",
+  "status": "reviewed",
+  "sha256": "21da986cbd8c5a61d3d000b513fbbf49a16e5c0bfd130eefb40bf2e30e1af78c",
+  "source_sha256": "7b98a73c81c70cfa844e4776354efd74ea1fc815fbd6cfa9c5494e3e9de847db",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/251033.html",
+    "edition": "EOP251033 vocalP1m4partial-m12 at77;380185intro m1+m4partial andpianooutro m34-m38 atselected77 instead ofprinted96; explicit source-compressed intro andsection registers.",
+    "score_sha256": "6652fd8ac8bf0f4ed9c740b5d43a1bcd42ed488148753950554be0ba0c9522f4"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 99,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-14
+  },
+  "review_note": "原九段97音全部：缩短前奏、主唱旋律和完整原器乐尾声至最终C5；原源缺少的两轮前奏及rap不追加。 原GitHub固定提交27b7fc4eca457efcd85040294f027e14ff2633d4九段97音、BPM90。逐行独立解析原txt，^仅升八度，|为视觉分隔无可量化拍值。97音97事件全映射、0省略。未读取parsing-audit的converted candidate。 非盲：先看过原始来源；适用参考图均已从原尺寸完整读出，再对本97音来源独立映射。透明复用纠错后的intro_v2及vocal_outro_v2参考读谱，绝不把此映射声称为全新盲读，也不把舟舟118音提案当参考谱。 前奏只有14音：完整10音模式一次，加最后4音。按380185m1及m4前两拍对齐，共6拍，跳过该谱m2/m3的重复前奏；这是原源篇幅的保留，不添加原源没有的20音。真实一高点5/双高2/双高1/一高3统一普通Bb3降10，输出G4/D5/C5/E4；仅source3/13 G4改E4，插入m1半拍休止。 主唱251033P1m4后半至m12普通Bb3降10，尾部380185m34-38普通Bb3升2。统一采用主唱打印77BPM，明确改变原txt90、放慢钢琴谱96；不声称三者原速度相同或已对齐MV。全部按四分拍记时，输出60拍。 本源m8本来就有两次D4（34/35），均各.5拍保留，不照搬舟舟新增D4。37/38两个C4合入打印同音弧1.5拍；m9在42G4后补打印A4.5；m10将48原D4按参考改E4，与47E4合入打印E4同音弧1拍。49E4/50G4两八分独立保留。 尾部原source69开始B5，缺少m34倒数C6；在68C5结束后补C6.5再接69B5.5。m35在71G5和72B5之间，按原图补C5.25与C6.5两个不同音区的独立音，并保留.75休止；不是将这两音与前后原音合并。 m36原73A5/74B5/75A5/76G5/77E5全部上声部正确；78G4/79A4/80C5/81D5是随后单音四十六分，不抬高。m37十音节奏完整，m38最终source96C5两拍保留。原源没有rap及后续整曲内容，不追加。 输出99音9休止108事件，60拍77BPM约46.753247秒；3处音高纠正（3/13/48），2组合并（37/38、47/48），4独立补音（m9A4、m34C6、m35C5/C6）。全部97源音和97事件对应，原九段及终音均保留。未人工试听、未录音对齐、未实游；等待root独立二读和正式审计。 Root透明复用此前从251033和380185独立读入的130事件参考数组，按原源九段短前奏删除参考第4至12拍，再将后续起点前移8拍；108/108事件的音高、时值、起点逐项完全相符。此步骤属于已有参考读谱的复用，不声称为新的盲读。 Root另行逐行解析原TXT全部九段，97个raw、MIDI、行号、列号与处置表完全一致；每原音恰好处置一次。3处改音、2组合并、4处新增全部显式定位。原34/35两个D4各保留；m34缺C6补入；m35低C5和高C6分别补入；m36低四十六分不抬八度；原末96 C5两拍保留。 参考钢琴96放慢到声乐77是明示练习速度选择，原TXT90也相应改变。全原来源不含的两轮前奏及rap均不虚构追加。完成乐谱证据检验后另送正式软件检验；无真人试听、原录音对齐或实游。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6652fd8ac8bf0f4ed9c740b5d43a1bcd42ed488148753950554be0ba0c9522f4"
+  },
+  "note_count": 99,
+  "event_count": 108,
+  "duration_seconds": 46.753246753246756,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-eb08a83d87b498c0-see-you-again-complete-source.review.json",
+      "sha256": "758bd2697d9547d3cb0c2ee670ce17fbc91e7c195437acb0fb00e5013d36b8a3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "082ce25f26fbd4d9855356914bb62561b1baf8fed7e3944390af11e4a7d43a53"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7663a8363d0d95e515942575acecb8959d41b95805c98fff9839cf7e55a3881c"
+    },
+    {
+      "name": "0001-1c17123ae1cb.json",
+      "sha256": "8462d37e414f22e339d63eda095afeb328e3dbd6e13cb137fb60ae2b9bae9f61"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5a5a6464bc633a36",
+  "source_id": "zhouzhou-134",
+  "work_id": "work-c13d1fd7d68b",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "8441986305e24e36f70165ff4ea7dd2bc9f5e499f7d1e99d3a4cee615f199269",
+  "source_sha256": "6117336369a4b1c7eb2f4ba72aa232de615e952c619d79bac0252e0371bf2b10",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/385958.html",
+    "edition": "YiXiaoNaiHeXiaoShu2022.12.11 ZhouShen vocal, Csharp4/4, selected70BPM scope tofirst ending; transpose-1 and omitgrace",
+    "score_sha256": "3bff7e72edd2723293bdf9c8ebac58c12e0df0277f0d25f0027f784ec3751b84"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 118,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "完整117源音；M1-M24第一结尾前三拍；后续华彩未展开。 唯一音乐参考为385958周深演唱、尹约词、钱雷曲、一笑奈何晓数(2022.12.11)记谱；印刷1=C#、4/4。源168从第二个明确70速度标记的3236引子开始，前方62BPM华彩不在本源范围；源134从主歌海浪开始。 参考C#整体降1半音到C调，保持来源基本音区；速度采用所选范围的印刷70BPM。所有小节先完整人工视读原图与原像素裁图，自动检查只验证录入一致性。 统一编号I1-I8为选定70BPM器乐引子，M1-M24为主副歌；两源结束于第一结尾M24低6前三拍，不补末休止、不展开反复/后续华彩。 两源均省略小字倚音，本简化单声部明确保留该选择：M1/M5的前置5及M10/M14的前置2不奏，不虚构倚音占用拍数；正常大字经过音不能当倚音删掉。 M4角落按所选版为低6十六分(.25)、低7附点八分(.75)、低5二分(2)、四分休止(1)。两个来源都有低6/低5但缺低7，因此补入该独立经过音。异音弧线是连奏，不合并低6和低7。 M12烟波为2附点八分(.75)、3十六分(.25)连3四分(1)、四分休止、低6/1各八分；同音3合成1.25拍。M13翅膀为2附点四分1.5、1十六分.25、低6十六分.25连低6四分1、低6/1各八分；仅连线两低6合成1.25拍，后一个低6是独立起音。 补入7个四分休止：M2、M4、M6、M8、M12、M16、M20；Zhouzhou源的空格分隔不是有量休止，原始音长字段无可靠节奏，时值全部依据所选谱。 原来源完整保存，逐音映射且没有丢弃来源音符。音乐视读不等于真人听感或实际游戏测试；这里没有原录音对齐、真人试听或实机演奏声称。 117源音全部映射；源序号116（0基）末中6改为低6，纠正来源尾音八度。加M4一个经过音得到118音、7休止、95拍、70BPM、81.42857142857143秒。 Root独立逐小节另录完整音高时值，全序列一致；复核M4十六分/附点八分、M12/M13同音连线各1.25拍、70速度边界、I8两补音与134尾音八度。明确省略小倚音，源范围与版别选择均保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "3bff7e72edd2723293bdf9c8ebac58c12e0df0277f0d25f0027f784ec3751b84"
+  },
+  "note_count": 118,
+  "event_count": 125,
+  "duration_seconds": 81.42857142857143,
+  "limits": [
+    "Small printed grace notes omitted as an explicit source-preserving monophonic simplification.",
+    "Selected source scope ends in first ending; later repeats and cadenza not included.",
+    "No original-recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-134-bigfish-complete.review.json",
+      "sha256": "e1f5c61c0c0433b74d29c7439b609ef8c2317e76e6accc06803b5c297f91d8b3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b161360cc390f1dab008cbfc787692f8467dabb1271ed6df536f0ff4bd6c0d1e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "674f74aba091fcd083c997e4ea10ae368d146c3db45d9b41adf416aea28d7519"
+    },
+    {
+      "name": "0001-46f731278fb2.json",
+      "sha256": "711e95ba0b89fbd36c170ad798a4a2053c98ce4a4fe0cc4c163aa79ccbbd852b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

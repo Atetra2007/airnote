@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c9026b763176b29c",
+  "source_id": "zhouzhou-001",
+  "work_id": "work-deck-030917928649",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "2c008b8600459cb9acf35261325741e8fd2b509f6e115ab43c0ce33e5e6024b9",
+  "source_sha256": "b730fe9e215423606ddd7894e985148b337c0c99b4f03c5c0b648866e4813c7c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/296617.html",
+    "edition": "酷音小伟/小虎哥初级版C调4/4声乐旋律，打印75，副歌第一次结尾",
+    "score_sha256": "79e1febce8fe6838724424b74239aa96a8fee9589ef4c5dd40f4da4c46f5d227"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 85,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "完整八歌词行86源音，从不要你离开至爱已不存在。 完整原JSON八歌词行86音，身份为周杰伦花海；只有不要你离开到爱已不存在这一轮完整副歌，不补主歌、钢琴前奏或后续副歌。 唯一音符主参考296617酷音小伟编谱/小虎哥制谱初级版两页，原调A、选调C、打印四分音75、4/4；使用上方声乐简谱，六线吉他伴奏不混入旋律。完整视读两页，副歌从第一页末行不字弱起至第二页第一次结尾在字前2拍。 源以C4作1、C5作高1，低7/6为B3/A3；所选C调相同。86个源音的音高全部保留，BPM/时值为所选参考重建，原结构化谱未量化时值。 离开两5各为.25拍，第二5连至下小节2拍，共2.25；距离隔不开末3同样跨线总2.25。成海末高1连到下小节1.5，总1.75拍。C3/C11来字末6跨线.25+.25=.5，随后的6到5异音弧为连奏，5仍单独.75拍起音。 C7不来两个3同音延长，源41/42合为一个1拍E4；其后源43D4为2拍终止，仍独立起音。两处原谅/天空前各恢复1拍休止。无新增音高、无整句删去。 情歌被打败取印谱第一次结尾：C14后1跨C15的2拍；C15在字末1继续跨C16的2拍。保留源最后B3/A3/B3/C4，终音C4为2.25拍，停止于其后休止之前；不擅换第二结尾喔的低6。 最终85音2休止87事件、64拍、75BPM、51.2秒，音域A3–C5。主歌、第二结尾、循环以后段落均不属于该86音来源。 工作代理及root分别完成全范围视觉逐音校对。Root独立按八歌词句输入87事件完全相符；生产软件审计另绑定，人工听感、录音对齐、实际游戏未执行。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "79e1febce8fe6838724424b74239aa96a8fee9589ef4c5dd40f4da4c46f5d227"
+  },
+  "note_count": 85,
+  "event_count": 87,
+  "duration_seconds": 51.2,
+  "limits": [
+    "Original has no quantified timing; printed75vocal timing explicitly selected.",
+    "Full original chorus only; no full-song claim.",
+    "No audio alignment, human listening or game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-001-huahai-vocal-chorus.review.json",
+      "sha256": "dab54cda5d174c430edddeda816c3812c93edb52f1d24f9480b01f03de6261fc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8d8ec2c64a8d59bc9394fdf63bdd52f36a31e5f0e73fba14a581b802df0c9fbc"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4dc59c948dea45fc57c8bf7a70238466c601339f81552537de2063a89acb4ad0"
+    },
+    {
+      "name": "0001-5a01f919152e.json",
+      "sha256": "3a233d8d835044407e3082c1ee83bca0ced466a0f7c110e5c8b6d15f247e7fd6"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

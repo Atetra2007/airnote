@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-019fb78f4aff1872",
+  "source_id": "zhouzhou-209",
+  "work_id": "work-782663b3790e",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "acefac1b6e13f4fd57109f62cb2aa64779ea8b118935bbe13d07cf0e80c019c5",
+  "source_sha256": "44c7b30a922eda1632e4b8b9febdea286bebe90b0354438cd2437ab427e3f892",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.bilibili.com/video/BV1zhKw6HEF6/",
+    "edition": "Complete201.80..217.23 four-phrase manual recording practice selection; uniform+12,60BPM seconds encoding, not original45 exact restoration",
+    "audio_sha256": "7e0d5d1b21cf4d92787d93ae45431c6bd4e7adc393f0b0aaa0297fc2c4f659d4",
+    "start_seconds": 201.8,
+    "segment_start_seconds": 201.8,
+    "segment_end_seconds": 217.23
+  },
+  "review_method": "Root agent independently visually inspected complete four-phrase STFT/harmonics/articulation evidence and separately entered all45 selected pitches; all45 raw-source dispositions and77 event boundaries checked. Approximate recording practice with explicit merges, corrections and omissions; no human listening or live-game test.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 45,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "Root独立看完四张全频谱/波形图、四张高频共振峰/波形图，并检查四张双模型诊断图，另录完整四句音列与候选45音相符。判断依据为全选段可见基频、谐波和声幅边界；两模型一致仅作辅助，不冒充人工试听。 原45头及三个换行完整保存，所选为希声音乐转载的王以太/艾热AIR《周旋》201.80–217.23秒四句旋律练习编配。原版没有时值，本版不声称逐头/逐时值恢复。 首句连续C3和D3区的内部重复攻击无法确定，原0/1及2/3各合并成一个练习音；原头在逐项表保留，不任意二等分。原第二行14/15在所选录音的主音为C3/D3，与原D4/C4次序不同，明确采用录音修订。 208.34–208.81秒有稳定G#3；原19/22自然G修为升G，19/22、20/23、21/24分别合到同一G#3/A3/B3事件，避免重复跨行前缀。209.81/210.06/210.31/210.56所见A3/B3/B3/A3另加四次唱法。 完整第三句后段依次C4 B3 A3 G3 G3 A3，再以短E3/D3连接下一句；原33的G4在所选录音不成立，明确省略且保留原证，E3/D3记为两次新增。此处是完整乐句的公开选择，不隐去未知尾。 全部音统一升12半音成为C4–C5范围；无局部折叠。全45攻击和32练习休止逐项保留原录音秒数；过渡与滑音取稳定目标音，连唱处不凭空加停顿。攻音约±30–50ms、释放约±50ms是观测/编配精度，非原谱精确时值。 最后第四句C3 C3 C3 G3 F3 E3 F3 E3 C3 D3 D3全部核对。末D3声幅约216.88消退，练习门限设216.88，至217.23余0.35秒作为尾休止；不把模型残余f0直接算作持续击键。 60BPM只作为每拍1秒的存储约定，meter保持unmeasured，没有虚构原节拍或原BPM；总15.43秒。原音频是公开转载，非官方首发认证；复核由AI代理完成，旧候选中的human/人工用语并非真人参与，明确撤回这种称谓。未人工试听或实机游戏验收。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "7e0d5d1b21cf4d92787d93ae45431c6bd4e7adc393f0b0aaa0297fc2c4f659d4"
+  },
+  "note_count": 45,
+  "event_count": 77,
+  "duration_seconds": 15.429999999999996,
+  "limits": [
+    "公开转载录音，非官方身份认证。",
+    "AI代理视觉音高/攻击复核，没有真人试听。",
+    "约±30–50ms观测精度和显式练习门限，不能当精确原稿时值。",
+    "首两对重复头与三跨行前缀合并，原33明确省略，六音新增，全原稿保留。",
+    "60BPM仅秒数编码，不主张原曲节拍或速度。",
+    "未实机游戏验收。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-209-public-recording-fourphrases-practice-v3.review.json",
+      "sha256": "ef97a3fa2bb2495e955c1d26f6b17a7602bce38811537071eb4ed615d0e854b1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "510e173339224643fafd86f931ab4cc132b0f36c92803a862dae83b3c4d01ac7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "57a5efb188a32270957265ad758bfbaafe02e76dd78f07fe3cb231b1362efb76"
+    },
+    {
+      "name": "0001-53ad695d9056.json",
+      "sha256": "3f60bec618846a8a8a4cfec28f018725e420d66bf1a3e55459d276fb9c8f44b4"
+    },
+    {
+      "name": "public-review-summaries-20261013-zhou209-v1.json",
+      "sha256": "4ece8f9b2d8bf9407f6a629a2af0f2e0d3008f9117c412a9cb1a2be142c1a1dd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

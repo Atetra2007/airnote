@@ -4,7 +4,7 @@
   "product_version": "0.4.0-candidate",
   "scope": "public-source-integrity-and-production-conversion-not-original-audio-calibration",
   "original_count": 58,
-  "new_count": 42,
+  "new_count": 41,
   "musical_listening": "not-reviewed",
   "game": "not-tested",
   "songs": [
@@ -271,17 +271,6 @@
       "duration_seconds": 48.7470703125,
       "event_sha256": "b60088ee04f025fdd0bc1e0c034b519187dcf82dd280645b3df364bfb0d4f2ef",
       "source_sha256": "14148e856adf917fb5ca127f785132c81e69a74fbdf4c7d73aab4f79aee1dfd4",
-      "independent_event_comparison": "passed"
-    },
-    {
-      "id": "deck-14a637705cb0",
-      "status": "passed",
-      "converted_sha256": "bef09184dc595e969d8b2a1433907de7767a0452aef197425b16cb72d9b5bd39",
-      "events": 317,
-      "beats": 126.997917,
-      "duration_seconds": 95.24843775000001,
-      "event_sha256": "e666faed207b83810a3dd09464a9d886748f4f3091bd5307434bc64724465072",
-      "source_sha256": "de4550fe9e4d22267d52d085ced53047ac4c55016cfa6dd08c15da1a4d0ba3cd",
       "independent_event_comparison": "passed"
     },
     {
@@ -1113,7 +1102,7 @@
       "reason": "第 32 行，第 10 列：超出本程序支持的口琴音域。"
     }
   ],
-  "audited_downloadable_count": 100,
+  "audited_downloadable_count": 99,
   "source_rejections": [
     {
       "id": "community-162ded5d756f044e",

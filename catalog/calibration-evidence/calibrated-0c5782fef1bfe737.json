@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0c5782fef1bfe737",
+  "source_id": "zhouzhou-044",
+  "work_id": "work-bf144f7d9f12",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "7b77b8deba2237f1577f1bb1300c1f45548ac2293c2b22ab7072a2129dcb364e",
+  "source_sha256": "a4c84590655d0d60260744888b17315e01389b9657cca4e34ef39fc022a6294a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qinpu123.com/qiyue/gangqin/856995.html",
+    "edition": "C quarter62;4/4 and3/4;unnumberedquarterpickup-p1m12beat2.25;no-transposition",
+    "score_sha256": "1ff47385c034b29d7ca81e465b4a81453115652e2b812248f6618e0fe00d6582"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 71,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "Complete71sourceattacks;continuouspickup-m12beat2.25;allsourcepitchesretained 原来源泛题《你的名字》实际71音完整对应公开《デート(Pinao)/约会》C调谱。与三叶的主题曲另谱首句不同，不按影视总标题混同黄昏之时；全71原音同pitch无移调，无拆合、删音或补音。 完整源JSON逐事件及所有rawtoken/marker解码SHA绑定；原音无时值，不把未知时值写成1，不把source分隔|当拍号。 公开琴谱123856995完整3页均实际view，谱面印刷quarter62、C/common time及3/4交替。选范围不计编号的1拍pickup→p1m12前2.25拍；主E起音为m1，p1第二行标7的CD...为m7，CG音型为m9，页第三行标12为m12。 source8 E5为m1末四分~m2二分合3拍；source17 A4为m3末四分~m4二分合3拍；source26 E5为m5末四分~m6二分合3拍；source35 A4为m7末四分~m8附点二分合4拍。所有四处跨小节tie均有两个图面片段，不重新起音。 m9/m10/m11 source40/50/60 C5四分~八分各合1.5拍，然后source41/51/61 C5为在beat2.5真正新起的十六分，后续各C-G-C-G-C或C-D-C-E-C短音全部保留。不能把这里同音新攻击错误合入先前tie。 尾source66..69 C5/G5/C5/G5四个十六分，source70 C5四分~十六分合1.25拍，至m12beat2.25。谱后高E6装饰段原71源未包含，选择止在完整末原音tie结束处；不是截去原源尾。 4处印刷八分休止：pickup开头及m2/m4/m6beat2，各.5拍共2拍。m8全A4连音3拍不是整栏休止。完整71音+4休止75事件43.25quarter拍，quarter62=41.854838709677秒。 此为完整原源选择该公开钢琴版名义时值，不宣称原作者未写的节奏或原录音速度。另一个琴声如歌quarter76版本及三叶谱仅身份比较线索不作所选时值证。无音频/GUI/游戏/GPU验证，待root独立音乐复核和正式软件审计。 Root实际查看三页完整谱及首三行细图，独立按绝对音名录入全部75事件，包含四个休止；不编号的拾取为1拍，随后交替4/4与3/4及m9–12，合计43.25拍，印谱四分62。 Root独立解原71token全部音高，与输出71起音逐一完全一致；原标题你的名字实际旋律为デート/约会，保留原队列身份而注明实际曲名。没有增删音、移调、拆合或音高改动。 m9/10/11中的C5四分与后八分有tie，随后又有独立C5十六分起音，对应原41/51/61；末m12 C5四分与十六分tie完整1.25拍后终止，不补后续无源快速音群。 2026-10-13参考图片封装纠正：实际PNG/JPEG格式经完整解码核验，原始字节与SHA不变；另存正确扩展名副本并纠正MIME。音符、时值、谱文件及音乐决定不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1ff47385c034b29d7ca81e465b4a81453115652e2b812248f6618e0fe00d6582"
+  },
+  "note_count": 71,
+  "event_count": 75,
+  "duration_seconds": 41.854838709677416,
+  "limits": [
+    "Originalauthorrhythmunknown;selectedpublicpianoedition",
+    "Printedalternating4/4and3/4;quarterpickup",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-044-date-v1.review.json",
+      "sha256": "358cc448b21d8403cb864e869dbc18ef928e014b17ac7ba0ad8c8d0b6ce04fa8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "974b6bd935b99e547dc6fd3ce588582e82596a841851f04c84399efa8e8bc8b7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c00c7b7db487c875014b43cd931443201153c81a0d92e670f8a7b858f62a87a"
+    },
+    {
+      "name": "0002-0afc9180bb84.json",
+      "sha256": "1061a123531012d669aacfb94be0d94ee4d8614b9e1daa9a52590c37894c934b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1817a3938838fd40",
+  "source_id": "deck-c3003322bbda",
+  "work_id": "work-deck-c3003322bbda",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94-%E6%9D%8E%E5%81%A5-Jiko-0a301a67a5.deltamusic",
+  "status": "reviewed",
+  "sha256": "01f6f1f3de25d92e5869580773d4f7276cef234b2fb192ad8cafe18e6410f38e",
+  "source_sha256": "96a3c0623466421da2afc86b2aefe9ae2f0d45444f4aa34df828af0932c492b1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/411067.html",
+    "edition": "孙世彦F4/4声乐版打印120，完整source37barform，referencebars1-23+28-41",
+    "score_sha256": "8e2aed1b3ee733422946e85acd0e71b680232cee30637b8c75487d24f5c3e457"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 109,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整37源小节105音38休止；保留源曲式，所选印谱109音38休止148拍。 完整原source37小节105音38休止143事件，148拍，原速度76。此编配全部保持来源段落顺序与范围：印谱1–23小节，跳过来源原无的这一生一世/有多少你我4小节，再接印谱28–41。没有默删原曲式或补整段。 唯一主音符参考为411067孙世彦F调4/4声乐谱，打印120BPM。本次明确选打印120替换来源76；这是所选谱版速度，不是录音实测。相对音级置C4，参考F4整体降5半音。 源小节7、15、22、26、36把异音连奏后的同音再起写成了一个附点时值。按印谱分别恢复独立2或7四分音，每小节总4拍不变；不是把异音连线当同音延长。 源小节34末G4/F4两个八分经过按所选印谱简化为一个G4四分音，源小节35的F4保留为独立四分音，D4由2.5拍变2拍，随后休止与低7弱起保持。先前379343备选的相近花饰不拼接进本参考。 第28源小节的7四拍保留，印谱其前小字3/2倚音省略；所有单声部正常音保留。最后A3三拍与1拍休止均完整保留。 原38休止均一对一对应，新109音38休止147事件148拍120BPM74秒。所有143原事件恰好处置一次；5个恢复起音和1个装饰合并分别列明。 Root全源校对与独立图像先行147事件复核完成；第18小节第二6无低音点，保留A4，独立初读错误已通过原像素复查解决。正式软件审计另绑定，未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "8e2aed1b3ee733422946e85acd0e71b680232cee30637b8c75487d24f5c3e457"
+  },
+  "note_count": 109,
+  "event_count": 147,
+  "duration_seconds": 74,
+  "limits": [
+    "Selectedprinted120 differs from originalsource76; not a recording-tempo claim.",
+    "Explicit simplified vocal edition and sourceform, not whole commercialsong.",
+    "No humanlistening or actualgamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-c3003322bbda-baikal-source-form.review.json",
+      "sha256": "654a22d33f2a8f3303a609d600841a812d5c4e7c7b72cb138577fda526764262"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2b6dce21b7e33b10c2b08b578a6769476b46c4462922a91ef1bb0b00baa25bdd"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "9da89685d2bfdeacbce89c14ba337c87c4f32866f852ab411aeb6cfb5a640696"
+    },
+    {
+      "name": "0001-3fe84b96f8ab.json",
+      "sha256": "cea821c83b1eb51422e259d7590343426ea5199ec3e015855e96e93bac37d768"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

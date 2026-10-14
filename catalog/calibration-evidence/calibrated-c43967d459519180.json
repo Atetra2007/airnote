@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c43967d459519180",
+  "source_id": "zhouzhou-160",
+  "work_id": "work-fe1be539d5d8",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e35346c7efdd9a0c6f3f9dfbafdbc1cad29ff09fca3a78e841c9f63f001dc5e2",
+  "source_sha256": "93fc1655a83807e8e4bbbcb03cfc1dc7609becea62c4474697afdca9df02ea69",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.cangqiang.com.cn/d/47314.html",
+    "edition": "F4/4quarter72;pickup-lastbeat+m1..8;reference-minus5-to-C;four-explicit-graces",
+    "score_sha256": "1128e2e00938949218dab829e2a6c27f971ebced625c03eefce8d0586c3396e3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 57,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "Complete53sourceattacks;pickup-lastbeat+m1..8;12explicitupperoctavecorrections4insertions4graces Root全谱复读确认v1音乐结构，但v1两个高2为D6/MIDI86，超出GameKeyMapping上界。v2将全部57音统一降低12半音，参考F整体-5到C，保持全部相对音程、时值、真tie、四个明确编配倚音和完整原53音覆盖。原末12音的相对八度纠正仍保留；最终source1..41净-12，source42..53净0。没有单音隐式折叠。 All prior musical decisions describe the preserved v1 reference layout before the explicitly documented global game transposition. 原53音JSON和全部分组markers逐事件SHA绑定。原时值全未知。来源末部未截断，53个音均各对应一次输出。 选参考为苍强曲谱47314的公开首图，人鱼湾F4/4印刷quarter72，全图和三行放大均实际view。其余6下载图实际view均是推荐歌曲，完全不用作本曲证据。不以先前47333降B版或鸣知无拍号手写版混合定时。 参考F+7输出C，source1..41全部pitch保留；source42..53共12音低八度按印刷高音点纠正+12，其中原source36 C6已正确保留。m7第二upper1上方符号为笛子指法/技巧标，不是临时升号；字形不像印刷sharp且同图无升降号适用依据。 m1读法3八分、3八分~3十六分、独立3十六分、2附点十六分、3三十二分、4二分。原两E5分别对应第一八分和后tie;第三独立E5十六分明确插入，不能省略它或将两下划线误读成一条。 m3主1四分~十六分5/4拍；m5第二5八分~八分1拍。只同音真实tie合并，不将相邻独立音攻击合并。 四个小字倚音m2 grace4、m2 grace3、m3 grace2、m4 grace3，明确作为选编各用1/8quarterbeat，分别从后主5八分、主2八分、主1 tie5/4、主2附点四分扣1/8。不是声称倚音印刷节拍固定；不使用自动未知0定时。m2grace4即原source8F5，保留；其他三倚音明确插入。 选范围印刷起始全小节的最后1拍(八分休止+附点十六1+三十二2)到其后完整m1..8。印刷前3个四分休止为所选范围外前导空白，不是删去任何原休止(原源无休止)。输出57音+1休止58事件33拍@72=27.5秒，4插音12八度纠正。 T、倒三角、波音、呼吸V和落音箭头作为装饰/技巧标逐栏记录，不把呼吸符自动加休止。主旋律选择不额外展开波音或落音，不把它们当原源音符。末m8 upper1二分全部保留。 完整原源音乐候选待root独立读谱复核及正式软件审计，无音频/GUI/游戏/GPU验证。 Root实际全图和三行放大逐栏复读，另手录58个实际输出事件的全部音高/有理时值/起点，一一一致。m1三十二分、m3低6及m6/7高2明确核对；原53音原始JSON另解一一核对，12处相对八度纠正与4插音完整列示。 Root全谱复读确认v1音乐结构，但v1两个高2为D6/MIDI86，超出GameKeyMapping上界。v2将全部57音统一降低12半音，参考F整体-5到C，保持全部相对音程、时值、真tie、四个明确编配倚音和完整原53音覆盖。原末12音的相对八度纠正仍保留；最终source1..41净-12，source42..53净0。没有单音隐式折叠。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1128e2e00938949218dab829e2a6c27f971ebced625c03eefce8d0586c3396e3"
+  },
+  "note_count": 57,
+  "event_count": 58,
+  "duration_seconds": 27.5,
+  "limits": [
+    "4gracesexplicitlyarrangedwith1/8quarterbeatfromfollowingprincipal",
+    "12referenceeditionoctavecorrections",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-160-mermaid-game-v2.review.json",
+      "sha256": "ac4393531d7d1b59ea43448c7d7f798d44d0f5f15afb20968110c2284d81887f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c914d1084dfbb808c15b001b9ebd54212ed13f05fe7538c432648c0c8036b027"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4140dfb0315cb1ad17d87369402b9b127a09d404aa726d3f7da8988fe2dcbf13"
+    },
+    {
+      "name": "0001-a4d963c39807.json",
+      "sha256": "44ffc1070ad06fc6b1b3459c00e4c6ec396d223e07d427d9385520884a63ce77"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

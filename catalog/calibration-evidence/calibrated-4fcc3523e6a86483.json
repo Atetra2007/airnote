@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4fcc3523e6a86483",
+  "source_id": "zhouzhou-185",
+  "work_id": "work-c26930029810",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "fdb66cf263193b4d6819bb6fba21773e7c0caff39a09373977034d30a66cfd85",
+  "source_sha256": "1d6f6abe63fa59d2971ff405e44a525c8a4c2d0227430160b15cda9e5697f8f1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1Gr7K6nEGH/",
+    "edition": "C4/4quarter80 vocal and first chorus printed version; explicit omission of small grace attacks for practice",
+    "score_sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 159,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete original source content covered by explicit selected route V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,C1,C2,C3,C4,C5,C6,C7,C8 固定zhouzhou-185/work-c26930029810，完整148原音、154原事件独立逐项处置；无原音省略，不用同名或其他来源验收代替本源。 曲目是郑浩/冰洁《琵琶曲（人间琴悠扬）》，不能采用蔡幸娟/刘南安另一同名曲393923；tan8封面不是谱。 完整读公开木木弹琴C/4-4/quarter80的所选16主歌栏与前8副歌栏；前奏与其他间奏不从本源之外追加。 所选路线：V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,C1,C2,C3,C4,C5,C6,C7,C8。173保留来源跳过中间主歌的路线，未强加V5–V12。social4原全49音静态卡只覆盖V1–V8，未把18秒视频长度当拍数。 明确练习版省V5两个小grace1、V11/V12两个小grace4；所有常规打印passing/turn保留或补齐。异音弧线均按slur不合组；C8末两个同音1真tie合为5/4拍一攻击。 全部18音高/八度差异按源统一+0半音基准逐项披露；借独立印刷版本选旋律，非声称作者原音必错。 补入11个明确可见参考头，所有原音均单独保留；没有未知来源段落的笼统省略。 MIDI内DFHS PPQ96、transpose+12、148音、tempo130和物理148音独立保存；输出选印80BPM与可见拍值，所有浮动原字段保留。周周/视频原无定量BPM/时值，不凭视频秒数推算。 输出159音、17休止、96拍，范围55–81以内。只称完整原来源选段，不称整首发行录音。 候选尚待root独立全源数字/键位/内嵌以及完整适用谱面读审和生产软件审计；无真人试听/音频/UI/GPU/游戏输入。 Root实际看完整适用24栏及细图，绝对音高/有理时值独立重录；C8末C5真tie共5/4，V3两个5仅首低点、V4首5低点、V5第三1自然、V11两5自然均核。 Root独立原JSON/SMF与DFHS/全卡49音颜色键位重解，逐原音直序映射，全部来源音保留；补入常规passing与四个练习版grace省略均明确。 Root全148原音处置与全部176输出事件核对通过；18处参考版音高选择逐项记录，11常规参考补音；路线V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,C1,C2,C3,C4,C5,C6,C7,C8。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "note_count": 159,
+  "event_count": 176,
+  "duration_seconds": 72,
+  "limits": [
+    "Selected practice main voice omits four small printed grace attacks.",
+    "All original notes retained; explicit printed edition pitches and missing passing heads selected.",
+    "Complete source excerpt, not whole recording.",
+    "No audio/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-185-pipa-vocal-v3.review.json",
+      "sha256": "e191ad830ae752489625c897d87e8023d7bebe700a4850cac23a8d3d79be2c82"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8fb063317e90d96d54fabfee2c68c5f2c80df231d970aef0da2fe70ce1caa458"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8ef2cb305b0fc544270a6a149148f1cf647d23ece4714a9168cacd6c69171ed9"
+    },
+    {
+      "name": "0002-bb8e4263466f.json",
+      "sha256": "f2b859aeb4efee611d27f8b74635abfbfb790ed48212782c96a1da0ec61d3c65"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

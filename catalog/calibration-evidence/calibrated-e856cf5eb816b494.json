@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e856cf5eb816b494",
+  "source_id": "deck-f53e36bc38f0",
+  "work_id": "work-deck-f53e36bc38f0",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%A8%B1%E8%8A%B1%E8%8D%89-%E8%8A%B1%E8%A8%80%E4%B9%94%E8%AF%AD-Holen-3b69e979cf.deltamusic",
+  "status": "reviewed",
+  "sha256": "f8f259057186cda002a4dc76740c229a091b2c28d725ce2eeb94577e7f263f1c",
+  "source_sha256": "708fcf4fbc4e7c4d43a607a2981c440369e8c1869912ddd926553b82ad5e5fce",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/gangqinpu/30773.html",
+    "edition": "TC302(2008.3.12)D-major piano, full-source bars8pickup–29 and repeatbar1 firsteighth, D-to-C, source singlevoice and bass fold, fixed68 arrangement",
+    "score_sha256": "41b3159d729961fe6aae39d42eed82e53e81202ab91889d90ae37a5b09711f87"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 206,
+    "maximum_parser_boundary_error_seconds": 3.126388037344441e-13
+  },
+  "review_note": "完整212源音364事件；保留长谱主旋律与低音，六组同音连线合并；末截断反复首音补成八分音，未展开后续。 唯一选定音乐谱据为TC302署名2008.3.12的D调4/4钢琴谱30773；完整来源对应第8小节末一拍、第9–29小节，以及29反复后第1小节首个八分音。不扩展源稿没有提供的前奏、第二结尾或后续完整曲。 参考整体降2半音为C调；保留原稿单声部中主旋律与低音穿插的选择。第24小节末与25–29的八度叠置选来源所在的较低旋律八度，不把其误判为漏升八度。第29末琶音和弦选择最高E4，余和声音未加入。 全部212源音的音高均在相同谱面拍位找到对应；五处低音(源序号16/25/53/155/161，均0基)原已把低于C3的B2/E2/A2上折八度，本版明确保留这些编配选择。这里的相同音高不意味着同时奏响的全部钢琴声部均被保留。 六组源相邻同音重触发按印谱延音线合并：19+20、56+57、61+62、148+149、185+186、190+191（0基）。单声部仍在下一个保留低音/旋律起音处切换，未假称可以同时持续钢琴所有复调声部。 全部152个短休止为.022667或.039667拍的音门间隔；逐个归入对应前音的名义拍位，不作为有量休止。其余拍位逐项与手读谱面起音对齐，不能仅凭网格舍入声称完成音乐核对。 首E5连同音门原为.626734拍，补足第8小节附点八分音.75拍；末C5原为.051拍，印谱第一结尾反复后确为C5八分音，明确补足到.5拍。此谱仍以反复首音片段结束，不补写后续旋律。 TC302谱面未打印速度；保留源稿68BPM作为明确固定编配速度，不能称为该参考的印刷速度。最终206起音、无有量休止、85.5拍、68BPM、75.44117647058823秒；音域C3–A5。 原212音及全部364事件逐项处置，六组印谱连线只减少起音数；不继承另两份樱花草短版的验收。未执行真人试听、原录音对齐或真实游戏测试。 Root已独立读取完整选定总谱范围，另建206音数组逐项一致；核实六处延音、五处原低音折叠、左右手选择及两个截断边界的明确补足。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "41b3159d729961fe6aae39d42eed82e53e81202ab91889d90ae37a5b09711f87"
+  },
+  "note_count": 206,
+  "event_count": 206,
+  "duration_seconds": 75.44117647058823,
+  "limits": [
+    "Singlevoice piano reduction retains source voice selections and low-bass octave folds; not a complete polyphonic piano rendition.",
+    "Printed score has no BPM; 68 is explicit arrangement choice retained from source.",
+    "Two source boundary notes are explicitly completed to notation; last remains only first attack of reprise, not a newly expanded repetition.",
+    "No original-recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-f53e36bc38f0-piano-full.review.json",
+      "sha256": "a5fe017626934b0b9feddccb839088d78536990e739510f4f66c6e33efcf61e4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "83edcda9a2e197c05e0614598581f5108f5a481884db0d4f792a6d12544dadeb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "44360e24d81a56114d41b86465c01c97f8e5417d6c0e7c3a89da351d1029dbce"
+    },
+    {
+      "name": "0001-bcb5b88e43c7.json",
+      "sha256": "c65e4f62a8eb95d4a2f87a4c327bad7c605f875b507bc0868df19ae3fbfa6e7d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

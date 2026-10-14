@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-eb9236b45d9bddf2",
+  "source_id": "zhouzhou-122",
+  "work_id": "work-farewell",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e5643ed9f658027c5543c9083ea0095dc42e460e301b4900d338e3230abdef6d",
+  "source_sha256": "8c9a8c134907ccefcf9f97afe6b77886dbce916e07edbe752dc8e8d5f4082071",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18513.html",
+    "edition": "F/G,2/4,printed120BPM;m1-43RH;source-specificregisteredition",
+    "score_sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 127,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "completeexisting130notes;EOP18513m1-43topmelodyexplicitpianoeditionconversion Complete130 originalnote-events and141rawtokens decoded andpreserved; all four source sections correspond toEOP18513m1-43. The output is an explicit selected-piano-edition arrangement, not a zero-change claim about sourceversion. Fconcertpitch m1-25;uniformminus12m26-43F/G preserves source lower register. m27first6has no octave dot (D4output), secondhigh6D5output; m28+ highdegrees lower12. Missing m15 Bb4 restored as one new attack. Source18A4 becomes Bb4m7. Source88/89/90 threeA4 attacks consolidate into singleBb4m30quarter;differentpitch attackconsolidation is an expliciteditionchoice, not a tie. Source92/93/94 threeA4 attacks become F4/G4/G4/Bb4 m30last+m31; source94 splits intoG4/Bb4. Source104/105/106/107 G4/E4/G4/G4 consolidate intoF#4m36last. This is explicitalternate-source-to-selected-pianomelody conversion, not deletion of an unreviewed section. All pitchchangeassignments and source-to-output references are individually recorded. Printed rests fromm18-26/m35 are restored; editorpipe has no timedrestclaim. Printed2/4quarter120BPM,86beats43seconds. Original8durationcodes retained without assumingcorrect musical timing. Root independent complete selectedtwo-page image crossreading and formal software audit pending; noaudio/UI/GPU/gameverification. Root全选m1-43两页复读，并用独立音级/时值数组比较全部139事件；F调原音区至m25，m26后F/G整段降八度，m27第一D4后D5及跨m33/34真连确认。 明确批准两处版本重配：source88–90三个A4按m30改Bb4四分，source104–107的G/E/G/G四音短装饰按m36主音改F#4八分。前后完整段落对应，不声称原版真连或零差异；这些源攻击皆有明确输出处置，原件不改。 补m15的Bb4；source94拆成G4/Bb4两个攻击；原130音及141token全核查，无删段。结构字段第三8属编辑器八分设置（既有controlled schema图证），不虚构原时值或升降号。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "note_count": 127,
+  "event_count": 139,
+  "duration_seconds": 43,
+  "limits": [
+    "Explicitselectedpianoeditionconversionsincludeheterogeneoussourceattackconsolidationm36.",
+    "Communitytranscriptionnotpublisherauthentication.",
+    "No originalsourceeditorrhythmclaim.",
+    "Noaudio/recordingalignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-122-death-eop-v1.review.json",
+      "sha256": "2d36f76c4b11c9915bc1a1162e494960d617fb0432f5f22c03882d70973e9938"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ca98b378b2432e048a32ea180884537774e6f11a3071b019f334ba2354bf32f8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fada68f386236a298a488ad6b75513221fda20486e5ee552b48c0fb80b64f4ec"
+    },
+    {
+      "name": "0001-793b51eb0577.json",
+      "sha256": "f648c80885d895ed8731918d583208ed3aada99b3b017b3816a188c6d853b50c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7244cdb82d900be2",
+  "source_id": "zhouzhou-128",
+  "work_id": "work-aff6c3cc78b6",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "ee4ada70e32b62c44cc9072d462d8847048939480000416502f8d284906b75ae",
+  "source_sha256": "ffac845bb1cce2fb5fc620adef049926ba2ea8159309fe3295212fb37227964f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/116088.html",
+    "edition": "PrintedDquarter128;uniform-2;source-definedm17beat4throughm21beat3 thenm33beat3throughm48;actualequalpitchties",
+    "score_sha256": "f090aa4170789faecd5f72bf3bdf3744afee896b84505b01fb645473078d6128"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 57,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "m17lastbeat,m18-20,m21first3beats;source-defined jump to m33last2beats thenallm34-48 source-defined-two-fragments: All61source notes fit two selectedfragments;m17beat4→m21beat3 (16beats),thenm33beat3→m48end(62beats). Do notappend absentm21lastbeat/m22-33first2beats;clear jump isexplicit sourceextent preservingchoice,not continuousfullsongclaim four-source-merges: source3/4 A4m18,8/9 E5m19,13/14 A4m20,50/51 C5m44 consolidate two rawattacks into printed blackeighth+grayquarter same-pitch tie1.5beats;61source→57attacks;source8/9 merge isseparatefrom following10 E5reattack cross-bar-ties: Keep equalpitch continuation m36C→m37,m38D→m39,m42B→m43,m44C→m45 as singleattacks;gray continuation isnot a fresh attack. Different pitchlines remain separate chords: First17-21 stacked2-prime melody selected;lower ordinary3/2/1/5 chordtones excluded. Outputreference uniformly-2,allsource pitch values unchanged timing: Originalstructured timings unknown;all rawfields/indices/7ambiguousmarkerspreserved. Everycandidate time from printedquarter128,half/quarter/eighth/dottedquarter andtrue ties. m41firsttwoquarterrests retain2beats Root完整m17末拍至m21第三拍及m33末两拍至m48所有六适用谱行读图，独立21位置十六分ticks展开58事件全部一致。61原音68事件及7未知边界重新解码核验。 选右手最高主旋律；m18/19/20/21叠置2高音保留，下方和弦不纳入单声部。整体D至C -2半音，61源音高全未改。 四组原重复攻击合为图示真实同音持续：[3,4]/[8,9]/[13,14]/[50,51]；跨小节C/D/B/C真连保持；m19后一个高3保留重新攻击。m41前两拍静音按图。 来源包含两个选段16+62拍显式跳接，没有删除或强补来源未保存的中间篇幅。128BPM为印谱；未试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f090aa4170789faecd5f72bf3bdf3744afee896b84505b01fb645473078d6128"
+  },
+  "note_count": 57,
+  "event_count": 58,
+  "duration_seconds": 36.5625,
+  "limits": [
+    "Community transcription,not publisherauthentication.",
+    "Source-defined twofragment jump retained explicitly;not fullsong.",
+    "Four pairs sourceattacks consolidatedinto actualprintedtie.",
+    "Originaltiming unknown;allrawfields preserved.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-128-take-reference-v1.review.json",
+      "sha256": "a8ac1d157b4a093bac087126df9ab9f2069eb9f96418014e6df1d2ae1b97e3c2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f01db8bc5a707336f72d73d2cf15367a350d332718048845df866807a42fcd45"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "9b3e2d51ff962365ac8994aa7340bc35971f7375ef5016182f627d40cc9c082e"
+    },
+    {
+      "name": "0001-6e3a3fb0511a.json",
+      "sha256": "df80cb07746c660b28cb78fd0375b32a28b92bf7584c6b54731a70b9a23f04f4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

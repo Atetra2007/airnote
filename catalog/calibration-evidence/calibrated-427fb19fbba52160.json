@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-427fb19fbba52160",
+  "source_id": "zhouzhou-118",
+  "work_id": "work-0d6a14a9ab25",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "eb490cf3ea475f27b24f01c278ea5b07590b698681b52474598d889cdf880bfa",
+  "source_sha256": "2341ff39ee9f207acdb4bc590000988d3b82b2225d008b4e4bad63153eca7ff4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/117753.html",
+    "edition": "桃李醉春风B调胡歌声乐版，第一主歌/预副歌/首副歌；练习72BPM非印谱标速",
+    "score_sha256": "bcc60895af13711b492ef0622e5ece5a7af0f683685937c5301857823010ed71"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 150,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "完整134原音，主歌至第一副歌完整结束长音。 完整来源13歌词行134音，从我们变成一对至却憎恨别人奋不顾身；全134音按歌词及顺序逐项一对一映射，无删除原音。 唯一主谱117753桃李醉春风B调胡歌声乐版；以B3主音升1半音至C4，保留来源主歌中音与副歌高音。主谱没有数值BPM，72为明确练习速度，不从杜宣达改唱版129八分速度混用。 源完整第一主歌8小节、预副歌5个印谱小节（P4标2/4）、首副歌8小节及第一结尾长1。P4按其2拍记谱，P5虽未重印4/4但实写2--0共4拍，以音值执行并披露；完整86四分拍约71.666667秒。 主歌两次差点末6/5装饰起音、天分第二1、每个人之间独立6，以及都的短2和能的长2分别保留，恢复原缺少起音；不同音连奏不当延音，同音也只有画弧才合并。 预副歌你也不承认按所选版2/2/2/1/2/1处理，原第56/57/58音作选版修正；最后认字的1保留。P2同音4与3各合并，P3同音5合并；寸字小装饰2沿用原69音，明确给.125拍从后主1一拍中借出，后1剩.875拍。 P4依赖为4半拍、3及2各四分之一，接第二2四分之一、1半拍、末2四分之一并连后3拍；原缺第二2明确恢复。 副歌C1/C5变字印#5，后接同小节5仍受升号控制，合.75拍，修原82/108G5至G#5；四处几轮/每个/几番/多久后独立1不可漏掉。 C6越仔细有额外高1长.75拍，源略去故恢复；其末疼字源116G5选版修为C5二拍。C8最后1连下一全音符1共4.5拍，完整源结尾保留；后间奏及第二/三结尾不在来源范围。 Root完整谱面初读与再次视读，代理后续非盲全谱小节数组生成153事件逐字段相符。代理源索引组引用原候选，故root另独立解码全部134原音并逐项检验映射；原候选复制的报告单独标unaccepted，不作为独立音乐证据。没有人工试听或实机测试。 P5实际字形为2--0：2本音加两横线共3拍、0一拍；若旧复读说明写2---0属转录字形不准确，实际数组时值仍正确。C4/C8首6为普通音，相邻3/2才带高点；坐标裁图来自已放大的衍生图，不声称原发布图原生分辨率。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "bcc60895af13711b492ef0622e5ece5a7af0f683685937c5301857823010ed71"
+  },
+  "note_count": 150,
+  "event_count": 153,
+  "duration_seconds": 71.66666666666667,
+  "limits": [
+    "72BPM explicitly selected, not a recording match.",
+    "P4 printed2/4 and P5 written4-beat bar reported explicitly; grace2 timing is editorial.",
+    "No human listening or real-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-118-fingerprint-vocal-source-form.review.json",
+      "sha256": "6127bd3e67523c69b5d744baa6dc95c3675f096584106278c1f096e8d1ab8068"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "83f44580508ecaea6ee85e67caa1acf7f5f5dc433ead4e0fb04c587e89773290"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "845eef01a987048d274f43564aaee22d4751e87cad521390ae1b8a3f173869b9"
+    },
+    {
+      "name": "0001-ba2e7e6cab03.json",
+      "sha256": "c5b9fb3ef72424fa545a15e1c49fcb3020ec06e792db213796ee7080847c343e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-efa197ca761e1fd8",
+  "source_id": "zhouzhou-136",
+  "work_id": "work-0a4bb7387e06",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d523fe1483c4476d00637ccefd2f3639f3e5df14951502e15989210dc40e1119",
+  "source_sha256": "951a4fc18fb8d0215cc241fe503ed27b548d4e6a22b655bb066c2547aeac888d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://global.piastudy.com/intermediate/ugGo3DS1",
+    "edition": "Db6/8quarter60;p2m40beat1.5-p3m56beat2;melodyshift-1;explicitselectededitionchanges",
+    "score_sha256": "40e80227b7688ac1f3d5a3efccad0e9e22063b49c996c56f7d548d4137294ef8"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 79,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete77sourceattacks;continuousm40pickup-m56half;2splits1merge1insertion3pitchchanges 完整原源77音/77事件/84rawtokens及7个|分组全部逐项解码、SHA绑定。原时值均未知；|只保留分组元数据，不能当印刷小节或拍号。 参考为公开免费完整3页Piastudy ugGo3DS1 time machine(feat. aren park)原调独奏版（还原版）化身无编配，上传者Geofger Dulworth。全部3页实际view，Db五降调6/8，印刷quarter60。只用公开图片，无解密ibe资源或付费曲谱。 所选最高旋律连续范围p2m40后1.5拍→p3m56前2拍。统一参考-1半音到C系；全77原音覆盖，包括尾source67..76，不截掉未决尾。六八每小节3个quarterbeats；没有套4/4或任取速度。 明确参考版编辑，不称恢复原作者节奏。source5 A4→G4来自m41Ab4附点四分(-1)；source70 G4→A4来自m54Bb4两个八分真tie(-1)；source34 E5→C5与source35 C5合m47Db5四分(-1)。三处音高变化逐项列出。 source14与source55各单C5拆为m43/m51前三个Db5八分的前两个独立攻击，后第三攻击由source15/source56对应。可见beam没有tie；不是把三个音强行连成一个。 source34 E5、source35 C5合为m47Db5四分，明确选版merge而非声称原两音等价。m47末Eb5/F5两十六分映source36/37；m52Ab5/Bb5两十六分映source60/61，不把装饰短音删掉。 m45/m49/m53/m54 Bb4八分~八分真tie各合1拍，对应source24/45/66/70。m41Ab4为附点四分1.5拍，不能混同Bb4真tie。 尾m55Bb4四分、F5八分、Eb5八分对应source72/73/74，补入原缺记Db5八分，然后C5八分对应source75 B4，m56Db5二分对应source76 C5。保留原B-C尾进行；插入一个C明确来自印刷版。 输出79音0休止79事件48.5拍@60=48.5秒。音符均按印刷名义时值，无播放门控反推；选取最高旋律不把钢琴左手当原77音。等待root独立音乐复核及正式软件审计，未音频/GUI/游戏/GPU验证。 Root实际看完整3页及五张m40–56细图，独立用绝对音名手录全79起音；参考Db调统一-1，48.5拍全部逐项一致，未用自动音高匹配代替读谱。 Root重解原84token含77音7分组，另构建全77原音路由，验证14/55拆音、34/35合音、m55补Db5及5/34/70三处改音；没有省略或截掉原尾。 m43/m51的三个Db5是无tie的八分起音，m45/49/53/54的Bb4两八分有真tie；m47 Db5四分与末两十六分、m52 Ab5/Bb5十六分均保留；m55末C5和m56首Db5为原尾B4/C5。原作者未知节奏仍未知，此为明确公开谱版编配。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "40e80227b7688ac1f3d5a3efccad0e9e22063b49c996c56f7d548d4137294ef8"
+  },
+  "note_count": 79,
+  "event_count": 79,
+  "duration_seconds": 48.5,
+  "limits": [
+    "Selectedpianoedition;originalauthorrhythmunknown",
+    "Explicit3pitchchanges2splits1merge1insertion",
+    "Noaudiorecordingalignment/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-136-time-piastudy-v1.review.json",
+      "sha256": "518dcaa8dbb2f945eccc5d511bbb967c08fb928af2340e8e223dd197376b0567"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8e9e22e7968095ecb6c836ee314c0633522070fd25985c0a9c43516a53f82cde"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b8f9d0945f1466b6b393f9e8a802d1528240b8c017aa899118ccd50cef7fbad7"
+    },
+    {
+      "name": "0001-f41b92ca8246.json",
+      "sha256": "1186928f4cc675f1d9a3674d7926aa098c9d2e63cdfcdbabb1bac43df3f0dc8e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

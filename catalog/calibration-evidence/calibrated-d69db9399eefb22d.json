@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d69db9399eefb22d",
+  "source_id": "zhouzhou-172",
+  "work_id": "work-f95aeec359a2",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "62f0609d157865180dd1fa3c7d78662d568ea8ecf32602923da83ac1d3968837",
+  "source_sha256": "c5a96c09214db9e446f3f5c1de60313c88052994f94a18a19fbaa102a747cd1c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=2VFjpk0epkI",
+    "edition": "公开动态钢琴谱：Kevin liu / 刘匠《给你一瓶魔法药水》C调钢琴改编，190–219秒画面；SHA-256绑定原始MP4。",
+    "score_sha256": "bcac4bc0b0f624580d721609ddc41ff6a5f8ce5540a6e6f86f110cc97bbcd9e3"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 63,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-15
+  },
+  "review_note": "全部63个来源音；副歌及拥有你结尾片段，共46拍。不是完整歌曲。 唯一音乐依据为Kevin liu / 刘匠公开C调钢琴编配。未采用CPONUbyJ3YM录音的音高、起音、休止或时长。 63个来源音高全部与可见主旋律一致，保持G4至G5，转调0半音；青色伴奏及E5下方绿色G4/B4和弦排除。 所有相邻同音重复均由矩形接缝分开；不能把像素提取的合并长条作为一个音。 可见小节81至85间隔9.6秒、88至90间隔4.8秒；按每显示小节4个输出四分音符单位定义100 BPM。并非画面明文标速；边框1帧差异量化，时间全部来自这一份钢琴编配。 源60之后保留1拍休止；末尾B4半拍、C5四拍半。三个扫描行核对末尾C时长。 Root确认38–41为同一G4的四次起音，时值0.5/1.5/0.25/0.25；45/46两次短G4、49/50相邻E5和59/60相邻C5均有可见矩形接缝。 Root确认末尾C5重复后至B4留1拍休止，B4半拍后C5延续4.5拍；三条扫描行的2.683333秒中心像素加圆角边框一帧，对应2.7秒输出。 Root将100 BPM视为每显示小节分四拍的输出计量定义，来自2.4秒小节周期；不声称画面印有100 BPM或4/4，也不将屏幕行坐标称为音频起音。 保留G4–G5原音区；忽略青色伴奏和第31音E5下方G4/B4和弦。输出是公开钢琴改编的单声部摘录，不是录音原唱转写。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "bcac4bc0b0f624580d721609ddc41ff6a5f8ce5540a6e6f86f110cc97bbcd9e3"
+  },
+  "note_count": 63,
+  "event_count": 64,
+  "duration_seconds": 27.6,
+  "limits": [
+    "Public piano adaptation is a secondary source, not an official composer or studio-vocal master.",
+    "All63 existing source notes are covered; this is the existing chorus excerpt, not the complete song.",
+    "100 BPM is an explicit output beat-unit choice from the visible bar cycle; row timestamps are visual evidence only.",
+    "No human listening or real-game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-172-piano.review.json",
+      "sha256": "6d9838cfe0306118e43d9d7ee7f237879cd118a623a84030b4e91fe3102e9bae"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "12badc84c351948e3e1aac8780ecb89f3b2c056e5dba8f69899bb373838c00b6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "92c07b80b883979d2998e078e51bfaa85aee4c52c42b2b1f7201687cf0bfc59b"
+    },
+    {
+      "name": "0001-ae36a3ef0f16.json",
+      "sha256": "9e43d3652d9786009bc3f3ff7e551a033f57fde53bb33a7d143d82241328726f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

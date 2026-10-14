@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bcf6a5444d1e1938",
+  "source_id": "deck-c03da52ba0d7",
+  "work_id": "work-deck-c03da52ba0d7",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8D%83%E6%9C%AC%E6%A8%B1-%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5-Jiko-7b66886f2d.deltamusic",
+  "status": "reviewed",
+  "sha256": "62b9c7332c1e37ddf147ec6a0880d902ce4ddad022700b3219581617d718fe53",
+  "source_sha256": "d5d83f749e0d32c8635b5e81983f3d51f96ddc4d295047dd916846c70e78c051",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/246159.html",
+    "edition": "EveryonePiano155barsFmajor154BPM;selectm22-53first2beats;secondchorus-12octave",
+    "score_sha256": "ea6964a00e1cbb137c0ba4720b0a9ff2ce962d929ada4d75a80f628245d79206"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 186,
+    "maximum_parser_boundary_error_seconds": 1.4921397450962104e-13
+  },
+  "review_note": "complete-original188note21gap-source;m22-53first2beats;not-full-song All188source attacks and21explicit articulation-gap rests are individually disposed. This is the source32-bar vocal excerpt corresponding to printedm22-53, not the whole155-bar piano score. Single selected EveryonePiano246159 edition, printedFmajor154BPM. Numeric reading is nonblind. The highest melody/chord voice is selected; left-hand accompaniment and lower chord tones are not introduced. Keep printed concert pitches throughm45beat3. From the last two pickup eighths ofm45 throughm53, uniformly lower the selected melody by12semitones, preserving the source excerpt register. This is an explicit playable octave arrangement. Adopt selected edition differences inm24/m28late phrase, m27endingC4, m32first twoBb3. These are edition choices, not a claim that all source differences are objectively erroneous against the recording. Each ofm27andm28printed firstD4quarter consolidates two source attacks. There are no omitted source notes or invented melodic attacks. Printed same-pitch ties inm38/40/42/46/48/50combine .25+.5beats as .75beats without reattack. Restore half-beat rest inm36beat1 and quarter-rest inm37beat2 by shortening the source held notes;21source0.04beat release gaps are absorbed into metrical timing and replaced with explicit10ms practice articulation. The source finalm53has G4/F4 eighths then A4/C5 incorrectly stretched to eighths; selected print has A5/C6sixteenths and D6eighth. After uniform-12 correction, finalD5lasts.5beat and excerpt ends at126beats. Do not append the absent2beat tuplet flourish or later instrumental material. No human listening, recording alignment, or real-game testing. Software selfchecks only verify consistency; independent root image reading remains required. Root第1页调速标记、第2/3页全部所用小节与第4页首小节二读，另录F调谱面音级与有理时值；188输出事件一致。 m45第二音3无低点，A4=69，保留来源音高；旧v1误读A3撤回。m27/28首D4各合并两攻击；7项音高变化为选版差异。 m45最后两八分至m53整体降八度；保留完整188源音/21间隙处置，m53仅原有五音，不追加后半华彩；未试听或实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ea6964a00e1cbb137c0ba4720b0a9ff2ce962d929ada4d75a80f628245d79206"
+  },
+  "note_count": 186,
+  "event_count": 188,
+  "duration_seconds": 49.09090909090909,
+  "limits": [
+    "Selectededition choices and secondchorus octave arrangement disclosed.",
+    "Excerpt ends before missingm53tupletflourish;notfullsong.",
+    "Nonblind numeric reading; no recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-c03da52ba0d7-senbonzakura-reference-v2.review.json",
+      "sha256": "6dc5a32f96ef8310c190be8269053447379265d119d68e091628d0fec8db70ed"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "384b3ed4a74f4cf759d0a5ba063b951eaabb415703d454b1b99831cf286ebcf8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b9d4bfb9e02d1ddeccda387ee983a26d631723f396964e5537f94cecd128be6d"
+    },
+    {
+      "name": "0001-ab72de07051b.json",
+      "sha256": "2a5effb2a4b7fee0909df31bbf96be1b7da9af367b925ffc02ec036263f30c2e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

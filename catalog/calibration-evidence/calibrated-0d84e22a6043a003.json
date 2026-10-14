@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0d84e22a6043a003",
+  "source_id": "deck-b2201c638ce4",
+  "work_id": "work-deck-b2201c638ce4",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%96%AF%E5%8D%A1%E5%B8%83%E7%BD%97%E9%9B%86%E5%B8%82-%E8%8E%8E%E6%8B%89%E5%B8%83%E8%8E%B1%E6%9B%BC-Jiko-60b221025d.deltamusic",
+  "status": "reviewed",
+  "sha256": "2e79d4dc9d84d1559f0640bc94a45a228078f4213eefab0892bb99939c086963",
+  "source_sha256": "216c02753b2b9dc5bf66d65aede8e1100368a6d697bd98f7d3413f35fd946f2f",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=dblr9Y1DOPE",
+    "edition": "Scarborough Fair / selected recording dblr9Y1DOPE, first two verses",
+    "audio_sha256": "9759adcb69bda527b66aef84ad86fdfae521b1e6f21cac9ee04f8c1459dfb247",
+    "start_seconds": 12.3,
+    "segment_start_seconds": 12.3,
+    "segment_end_seconds": 80.57
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 79,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "全部来源69音的第一、二节，非全录音 全部69个现有来源音已映射并逐音检查。Root独立检查全9张输出覆盖图（含原混音频谱）、7处原混音/人声细节及最新两处修订，涵盖第一、二节12.30–80.57秒。 废弃旧DTW跨错歌词段落的定位；第一节末音在42.08秒，第二节起句48.29秒，两节之间保留间奏休止。 保留Are/you、make/me/a和两节重复D5的独立音节起点；going处G4到A4过渡、there与word的低C4、第二节mine的F4–E4–D4回落均有原混音谐波支持。 Root新增细节显示首节true的E4稳定起音约40.80秒，原稿41.05秒过晚；修订为40.80。第二节同字E4发声约76.80秒，前F4结束76.73后保留70毫秒辅音间隙。 短促E–F–E起音装饰保留为一个E4目标，起音位置已核准；单声部半音简化不重现滑音、颤音和声学混响。 原文件1=F标签与储存的绝对音高指纹不同；本版明确使用参考录音D小调的实际MIDI音高，无隐式移调。 60 BPM为一拍一秒的时间序列化单位，不作为歌曲测得速度。末音80.57秒释放排除后续混响。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "9759adcb69bda527b66aef84ad86fdfae521b1e6f21cac9ee04f8c1459dfb247"
+  },
+  "note_count": 79,
+  "event_count": 96,
+  "duration_seconds": 68.27000000000001,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "这是单旋律简化，不重现伴奏、微分音、音色和力度。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-b2201c638ce4.review.json",
+      "sha256": "5d1a49cf421e1cc99e6c1cce41c4e434e33b5a0d54f0ffb63d0dd2b766e9c5ab"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f3f30b6e36d956cf9ce4d3eac6de12e6e57aa5765c926c6f6e3df14198462987"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3aeb7d63284a2a32fa053b2db971e53f270a1537d5acfdad1e251bf5c5e8031b"
+    },
+    {
+      "name": "0001-4c45107641df.json",
+      "sha256": "0a3ea198732c7ebe386d045e9b16d5cdeaf55fa3f5eec0990d8c973ae5cf00d7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

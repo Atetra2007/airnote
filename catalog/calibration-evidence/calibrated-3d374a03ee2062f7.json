@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3d374a03ee2062f7",
+  "source_id": "zhouzhou-021",
+  "work_id": "work-b22ed4e45f9c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e29dea961243d6e1b05cec31a0ea1d2395a4612ff5c39261ac88da75b4af9d48",
+  "source_sha256": "c15ce7d0ceca532ef94974b4e9772e42806bdee6e0e273a53af0083de516f045",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/337394.html",
+    "edition": "F#调4/4买辣椒也用券声乐版，打印80BPM",
+    "score_sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 62,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原6歌词行60音，从从前初识到闯入你的笑颜，完整30拍；没有延伸到我曾难自拔。 唯一主参考337394买辣椒也用券版完整声乐谱，打印F#调4/4、四分80BPM，两页已完整查看；所用原有范围均在第一页。336788为不同75BPM与音区/节奏的比较版，未混入本候选。 全部原source音与词行、原d/b提示及排版符号完整保留；依据主参考人工重建每一拍，而非把缺省时值当准确节奏。只处理每份已有完整范围，不因文件名完整版就补入原本不存在的第二遍主歌、末段或间奏。 337394 P1/P5看与翻的7跨小节同音延音，与前方流连的独立7分开；P2/P6高1到7到6的异音连奏保留全部三个起音，不能因弧线合成高1到6。 P3一字5同音延长合半拍；遍字3连续三段.25/.5/.25合一拍。P6及防两个高3明确同音弧合一拍；P7你字前两枚高3没有同音弧，保持.25和.5独立起音。P7笑字5 .25跨同音5 .25合半拍，随后短6 .25，再独立6半拍连四分合1.5拍。 主歌V4的1到2以及V6的1到低6是异音连奏，其后同音重复2及低6各须独立起音。副歌同音跨bar的5、2、6、高1仅按明确同音弧合并，异音弧不合并。 副歌C4笑之后话字打印2/3/2小回转，原简化或不完整时明确补齐并逐项记录。C7去的6到短高1为异音弧；随后吧的另高1才跨小节延长，两高1不能误合一音。 本候选为完整原有范围的所选声乐版修正，root已完成独立全范围二读，正式软件审计另绑定；无人工试听、音频对齐或实机验证。 全部60源音保留，P6源52/53两个高3依打印同音弧合成1拍；补P2/P6的中间7各.25及P7短6 .25，共3音，最终62音5休止。源与输出音高没有改变，保留C4至E5音区。 Root另录完整起音与休止数组，全部音高、拍值、起点一致；每个原音逐项映射校验，原始文件和提案均保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "note_count": 62,
+  "event_count": 67,
+  "duration_seconds": 22.5,
+  "limits": [
+    "Selected337394 edition at printed80BPM, not recording alignment.",
+    "Every original event accounted for; full existing source scope only.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-021-wind-complete-source.review.json",
+      "sha256": "1f00ff47d15fa1e393207527817763352229c03d54a06b1f5837a3d140dd87e8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9264838cbb965767221bffd8cfbe4c27d2ac7313a096f233a06bebebcd913627"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "365aae5691e708aea425b29c8d92543151e7d131585be6e0d8d7a47511ae82be"
+    },
+    {
+      "name": "0001-a10d5f88b4bd.json",
+      "sha256": "125c7767f65cbf92a23b2244741d964ba66069960d12cccb075a2659156f9bb3"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

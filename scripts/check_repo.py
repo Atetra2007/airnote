@@ -50,7 +50,34 @@ def validate_reference(reference):
         assert reference['segment_end_seconds'] > reference['segment_start_seconds']
 
 
+def validate_reference_type(reference):
+    if reference is None:
+        return None
+    assert isinstance(reference, dict), 'Reference metadata must be an object.'
+    reference_type = reference.get('type')
+    assert reference_type in (None, 'recording', 'published-sheet'), 'Reference type must be recording or published-sheet.'
+    return reference_type
+
+
+def validate_published_sheet_reference(reference):
+    """Validate score metadata without accepting recording-only timing fields."""
+    assert isinstance(reference, dict), 'Published sheet needs a reference object.'
+    assert reference.get('type') == 'published-sheet', 'Published sheet reference must declare type published-sheet.'
+    validate_reference(reference)
+    require_https(reference.get('url'))
+    assert isinstance(reference.get('edition'), str) and reference['edition'].strip(), 'Published sheet needs a specific edition.'
+    assert is_sha256(reference.get('score_sha256')), 'Published sheet needs a score SHA-256.'
+    if 'midi_sha256' in reference:
+        assert is_sha256(reference['midi_sha256']), 'Published sheet MIDI SHA-256 is invalid.'
+    recording_fields = {'audio_sha256', 'start_seconds', 'segment_start_seconds', 'segment_end_seconds'}
+    assert not (recording_fields & reference.keys()), 'Published sheet reference cannot contain recording hashes or timing fields.'
+
+
 def validate_external_verification(song, schema_version):
+    score_type = validate_reference_type(song.get('reference'))
+    if score_type == 'published-sheet':
+        validate_published_sheet_reference(song.get('reference'))
+
     verification = song.get('verification', {})
     assert isinstance(verification, dict), 'External import verification metadata must be an object.'
     untested = {'not-tested', 'not-reviewed'}
@@ -69,14 +96,17 @@ def validate_external_verification(song, schema_version):
 
     reference = song.get('reference')
     assert isinstance(reference, dict), 'Reviewed external import needs a concrete reference.'
-    validate_reference(reference)
-    require_https(reference.get('url'))
-    assert isinstance(reference.get('edition'), str) and reference['edition'].strip(), 'Reviewed reference needs a specific edition.'
-    assert is_sha256(reference.get('audio_sha256')), 'Reviewed reference needs an audio SHA-256.'
-    if 'score_sha256' in reference:
-        assert is_sha256(reference['score_sha256']), 'Reference score SHA-256 is invalid.'
-    start = reference.get('start_seconds')
-    assert isinstance(start, (int, float)) and not isinstance(start, bool) and math.isfinite(start) and start >= 0, 'Reviewed reference needs a valid start time.'
+    if score_type == 'published-sheet':
+        validate_published_sheet_reference(reference)
+    else:
+        validate_reference(reference)
+        require_https(reference.get('url'))
+        assert isinstance(reference.get('edition'), str) and reference['edition'].strip(), 'Reviewed reference needs a specific edition.'
+        assert is_sha256(reference.get('audio_sha256')), 'Reviewed reference needs an audio SHA-256.'
+        if 'score_sha256' in reference:
+            assert is_sha256(reference['score_sha256']), 'Reference score SHA-256 is invalid.'
+        start = reference.get('start_seconds')
+        assert isinstance(start, (int, float)) and not isinstance(start, bool) and math.isfinite(start) and start >= 0, 'Reviewed reference needs a valid start time.'
 
     for field in ('review_note', 'review_method'):
         value = song.get(field)
@@ -173,12 +203,21 @@ def validate_calibration_evidence(song, root, available_files=None):
     reference = song.get('reference')
     proof_reference = proof.get('reference')
     assert isinstance(reference, dict) and isinstance(proof_reference, dict), f'Calibration evidence reference is missing: {expected_path}'
-    for field in ('url', 'edition', 'audio_sha256', 'start_seconds'):
-        assert proof_reference.get(field) == reference.get(field), f'Calibration evidence reference.{field} does not match catalog record {song.get("id")}.'
-    if 'score_sha256' in reference:
-        assert proof_reference.get('score_sha256') == reference['score_sha256'], f'Calibration evidence reference.score_sha256 does not match catalog record {song.get("id")}.'
-    proof_start = proof_reference.get('start_seconds')
-    assert isinstance(proof_start, (int, float)) and not isinstance(proof_start, bool) and math.isfinite(proof_start) and proof_start >= 0, f'Calibration evidence start time is invalid: {expected_path}'
+    score_type = validate_reference_type(reference)
+    proof_type = validate_reference_type(proof_reference)
+    assert proof_type == score_type, f'Calibration evidence reference.type does not match catalog record {song.get("id")}.'
+    if score_type == 'published-sheet':
+        validate_published_sheet_reference(reference)
+        validate_published_sheet_reference(proof_reference)
+        for field in ('type', 'url', 'edition', 'score_sha256', 'midi_sha256'):
+            assert (field in proof_reference) == (field in reference) and proof_reference.get(field) == reference.get(field), f'Calibration evidence reference.{field} does not match catalog record {song.get("id")}.'
+    else:
+        for field in ('url', 'edition', 'audio_sha256', 'start_seconds'):
+            assert proof_reference.get(field) == reference.get(field), f'Calibration evidence reference.{field} does not match catalog record {song.get("id")}.'
+        if 'score_sha256' in reference:
+            assert proof_reference.get('score_sha256') == reference['score_sha256'], f'Calibration evidence reference.score_sha256 does not match catalog record {song.get("id")}.'
+        proof_start = proof_reference.get('start_seconds')
+        assert isinstance(proof_start, (int, float)) and not isinstance(proof_start, bool) and math.isfinite(proof_start) and proof_start >= 0, f'Calibration evidence start time is invalid: {expected_path}'
     for field in ('review_note', 'review_method'):
         assert proof.get(field) == song.get(field), f'Calibration evidence {field} does not match catalog record {song.get("id")}.'
     proof_validation = proof.get('validation')
@@ -215,7 +254,10 @@ def validate_acquisition(song, schema_version):
     acquisition = song.get('acquisition', 'direct-download')
     assert acquisition in {'direct-download', 'external-import'}
     assert schema_version == 3 or acquisition == 'direct-download'
+    score_type = validate_reference_type(song.get('reference'))
     validate_reference(song.get('reference'))
+    if score_type == 'published-sheet':
+        validate_published_sheet_reference(song.get('reference'))
     if 'verified_sha256' in song:
         assert is_sha256(song['verified_sha256'])
 
@@ -326,6 +368,7 @@ REPO_ONLY_FILES = {
     'src/Harmonica.Desktop/PasteDialog.xaml', 'src/Harmonica.Desktop/PasteDialog.xaml.cs',
     'src/Harmonica.Desktop/SettingsDialog.xaml', 'src/Harmonica.Desktop/SettingsDialog.xaml.cs',
     'src/Harmonica.Desktop/Models/LibraryItem.cs',
+    'src/Harmonica.Desktop/Models/LibrarySearch.cs', 'src/Harmonica.Desktop/MainWindow.Library.cs',
     'src/Harmonica.Desktop/Services/LibraryStore.cs',
     'src/Harmonica.Desktop/Services/ThemeService.cs',
     'tests/Harmonica.Core.Tests/Harmonica.Core.Tests.csproj',
@@ -335,10 +378,18 @@ REPO_ONLY_FILES = {
     'tests/Harmonica.Windows.Tests/Program.cs', 'tests/Harmonica.Windows.Tests/packages.lock.json',
     'tests/Harmonica.Desktop.Tests/Harmonica.Desktop.Tests.csproj',
     'tests/Harmonica.Desktop.Tests/Program.cs', 'tests/Harmonica.Desktop.Tests/packages.lock.json',
+    'tests/Harmonica.Desktop.Tests/LibrarySearchChecks.cs',
     'catalog/catalog-status.json', 'docs/CATALOG-STATUS.md', 'docs/CALIBRATION-QUEUE.md',
     'docs/RELEASE-0.4.1-NOTES.md', 'docs/RELEASE-0.4.1-STATUS.md',
+    'catalog/calibration-stage-20261014.json',
+    'docs/RELEASE-0.4.2-NOTES.md', 'docs/RELEASE-0.4.2-STATUS.md',
+    'tests/test_repo_publication.py',
     'scripts/catalog_status.py', 'tests/test_catalog_status.py',
     'scripts/Audit-SelectedScores.cs', 'scripts/prepare_listening_review.py',
+    'scripts/Audit-CatalogBatch.cs', 'scripts/Test-Audit-CatalogBatch.ps1',
+    'scripts/Normalize-InventoryTextSources.ps1', 'scripts/Repair-TurkishMarch.cs',
+    'scripts/listening_media.py', 'tests/test_listening_media.py',
+    'docs/TURKISH-MARCH-REPAIR.md',
 }
 OPTIONAL_REPO_FILES = {
     'src/Harmonica.Core/packages.lock.json',
@@ -368,6 +419,7 @@ REPO_ONLY_FILES.update({
     'tests/Harmonica.Core.Tests/ScoreTimelineTests.cs',
     'tests/Harmonica.LayoutChecks/Harmonica.LayoutChecks.csproj',
     'tests/Harmonica.LayoutChecks/NativeOverlayChecks.cs', 'tests/Harmonica.LayoutChecks/Program.cs',
+    'tests/Harmonica.LayoutChecks/SearchLayoutChecks.cs',
     'tests/Harmonica.Windows.Tests/GuideIsolation.cs',
     'tests/Harmonica.Windows.Tests/GuideRawPacketTests.cs', 'tests/Harmonica.Windows.Tests/GuideTests.cs',
 })
@@ -386,6 +438,16 @@ class LocalReferences(HTMLParser):
                 continue
             relative = unquote(parts.path)
             assert relative in PACKAGE_FILES, f'Local page reference missing from friends package: {value}'
+
+
+def validate_repository_index(names, calibration_evidence_files):
+    """Allow exact reviewed repository paths and validated metadata proofs only."""
+    names = set(names)
+    unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES - OPTIONAL_REPO_FILES - set(calibration_evidence_files)
+    assert not unexpected, f'Unreviewed files in Git index: {sorted(unexpected)}'
+    if names:
+        missing = (set(PACKAGE_FILES) | REPO_ONLY_FILES | set(calibration_evidence_files)) - names
+        assert not missing, f'Required files not staged in Git: {sorted(missing)}'
 
 
 def check_repo():
@@ -460,11 +522,7 @@ def check_repo():
     tracked = subprocess.run(['git', 'ls-files', '-z'], cwd=ROOT, capture_output=True)
     if tracked.returncode == 0:
         names = set(tracked.stdout.decode('utf-8').rstrip('\0').split('\0')) - {''}
-        unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES - OPTIONAL_REPO_FILES - calibration_evidence_files
-        assert not unexpected, f'Unreviewed files in Git index: {sorted(unexpected)}'
-        if names:
-            missing = (set(PACKAGE_FILES) | REPO_ONLY_FILES) - names
-            assert not missing, f'Required files not staged in Git: {sorted(missing)}'
+        validate_repository_index(names, calibration_evidence_files)
     # The distributable must only contain original TXT fixtures, never songs.
     assert all(not name.endswith('.txt') or name.startswith('scores/original/') for name in PACKAGE_FILES)
     assert not any(name.startswith(('src/', 'installer/', 'tests/', '.github/')) for name in PACKAGE_FILES), 'Desktop/development files must stay out of the legacy friends ZIP.'

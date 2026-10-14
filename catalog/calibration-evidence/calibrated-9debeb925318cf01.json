@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9debeb925318cf01",
+  "source_id": "zhouzhou-113",
+  "work_id": "work-cf54c85aa4cb",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "bf24de0b01afacd82856153ae1ef8d0579b40ac8e61d0e054b439b55b6ff9703",
+  "source_sha256": "7c60b3a4fa632d75985a6905c762c91e89683ff03926b08243bf04acbcca5d51",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/119619.html",
+    "edition": "王强、龙梅子；桃李醉春风记谱；1=降D、2/4；未印BPM；完整括号前奏1拍拾音+17小节；末6跨小节连音。",
+    "score_sha256": "edba54728c61c2a9ceed91d591a347a0b92c7f14f3c1281f7306b7c8fda010fe"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 54,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete54-source-note prelude, all35printed beats including final cross-bar tie; no vocal extension. 原113四行54音全部从JSON另解码，普通1=C4，按顺序精确对应所选印谱54次起音，无删音、无改音、无新增；末源A4按可见跨小节连线延长为四拍。 Root先看完整119619 GIF、两系统完整裁图和末端细节，独立录入54事件音高/时值/起点并冻结，再读取候选数值。已知提案文字，非盲；原候选保留未验收。 原候选三类错误均由原图复核修正：(1)1=降D，并非D；普通Db4向下1半音到C4。(2)第15完整小节3为一拍、5和6各四分之一拍、7半拍，并非四个半拍。(3)末两个6有跨小节同音延音弧，合为一个A4四拍，不补新起音。 拾音一拍加17个二拍小节，共35拍。参考未印BPM，120仅明确自选练习速度，17.5秒。不同音高高2至高3之间弧保留两个独立半拍，不合组。 完成全部原来源现有前奏范围，止于参考括号结尾；不扩展到后续歌词段。完成视觉音乐复核，另送正式软件检验，未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "edba54728c61c2a9ceed91d591a347a0b92c7f14f3c1281f7306b7c8fda010fe"
+  },
+  "note_count": 54,
+  "event_count": 54,
+  "duration_seconds": 17.5,
+  "limits": [
+    "120BPM is explicit practice tempo, not printed or recording verified.",
+    "Full original prelude only, not whole vocal song.",
+    "No human listening or real-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-113-prelude-complete-source.review.json",
+      "sha256": "d59bd60b9efa315415863b75161c160af65dec398c636144254be6fe8dbc0065"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "272b6a2c8d03d1ae404a253950fb3626794cceff6d559c674b4e7f244cd19d64"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "aad3fe256d15a6b3da5bdc652838c639fd93118de5cba3836685d10873f2d772"
+    },
+    {
+      "name": "0001-0f5587170736.json",
+      "sha256": "cb4f4a5de697ed739a0197efa689a23b5a0bc389d8bed4f7fbd2ca1604c9f045"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

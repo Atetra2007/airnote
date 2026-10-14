@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-afa9745d08e5c60e",
+  "source_id": "community-73a5a1d6c3c46dc5",
+  "work_id": "work-f12c14c63b4a",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C-%E5%8A%A0%E5%BF%AB%E7%89%88-%E9%BE%99%E6%A2%85%E5%AD%90-%E6%9D%A8%E6%B5%B7%E5%BD%AA-%E6%A7%91%E6%A7%91%E6%A7%91-ea169bbaa7c41e85ea952.deltamusic",
+  "status": "reviewed",
+  "sha256": "51bfaf04b995f49aa5d46f8df7b6e71b305f9a1122a667ed2842213547a5f6b0",
+  "source_sha256": "5b921cd36b773b2b9ee4e4ad00a307a0591738abe1c4a117fee7adfcf780699d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tv.sohu.com/v/dXMvNDIwODM2NjU0LzUxNTUwNTc1Ni5zaHRtbA.html",
+    "edition": "G-major public dynamic numbered score; chosen voice and full source form disclosed",
+    "score_sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 321,
+    "maximum_parser_boundary_error_seconds": 3.126388037344441e-13
+  },
+  "review_note": "complete-existing-source-content-with-explicit-phrase-voice-and-repeated-attack-decisions Full316-note source is a spliced practice arrangement. Preserve all eight source blocks:1-8;17-24;25,26,35-40;1-8;17-20;25-32;25-28,32;33-39,50. No omitted full-song section or absent final51 is appended. All316 original pitches retained except source67 B4 changed to D5 by explicit video-edition bar21 selection. The HTTP print has B4 in that position; both versions and chosen difference are disclosed. Five missing attacks restored: short A4 at m20 twice, short B4 before the final held B4 of m28 twice, and D5 at m34. Original note timing locates the retained final attacks, so this does not mis-associate a long source B4 with the new preceding short B4. Source first la-la group lasts31beats; first verse31; second partial verse15; second chorus31; next partial chorus19. Restore printed group lengths32/32/16/32/20. The other groups remain32. Full musical output is228beats, five beats longer than original223beat musical content; all source gates and gaps retained in evidence. Social initial4beat MIDI preparation rest is explicitly removed from musical body and separately accounted. Community has no equivalent initial rest. Last bar50 contains A4 halfbeat,B4 tied1.5beats,rest1beat,A4 halfbeat,G4 halfbeat; no missing final51 is invented. Original159 BPM is retained as an explicit practice tempo. It is not printed in the public dynamic score and has not been measured against a recording. Reference lower/main voice is selected at33-36; different-pitch slurs are not ties. Source has one B4 covering bar50 tie, so no original attacks are consolidated. All source notes, rests, and both original files are fully checked. V1 alignment research had two boundary off-by-one errors. No candidate used those boundaries: new complete phrase groups start134 and178 and have explicit five insertion positions; old research remains preserved. Root从另录的完整51槽参考数组重新按八块展开，全326个输出音高、时值、起点和秒数一致；完整316源音各保留一次，唯一67按视频版B4改D5，五补音逐处核对。 Social准备静默精确1919/480拍，名义4拍但少1 tick，明确移出主体。原220 community为1.96拍而social为1拍；原265两者约0.998拍，均按谱恢复成2拍，未声称原本两拍。 最后完整m50保留G4半拍末音，未加入原来源没有的m51；原源无合组或省略。159只是保留来源的练习速度，无真人试听、录音对齐或真实游戏验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5c0d374d5d87b3739fd6fef2e8672d29859b1903156e00863ec4bc468b25cbc3"
+  },
+  "note_count": 321,
+  "event_count": 326,
+  "duration_seconds": 86.0377358490566,
+  "limits": [
+    "No human listening, recording alignment or real-game test.",
+    "159 BPM is the source-preserved practice choice.",
+    "Published-edition reconstruction with fully explicit local phrase variants.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-73a5a1d6c3c46dc5-lonely-reference-v1.review.json",
+      "sha256": "7c73660318dfcbdc2f74dee80a7f9ca3706e919ba4d41ea7700ead7329488ced"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "00a77444ef7905e766453b35bf26094900a74e5752cf04bf2e2333b5c971ef11"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "24d273c3bda024b8c25b724c85c47bd021e02e962c14784f9bef4583da0a3f6e"
+    },
+    {
+      "name": "0001-9f3fdf2ffac7.json",
+      "sha256": "0697748b471cf3019795ecc6305aea255d80661b4c29a52ef816ddcb634b0549"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

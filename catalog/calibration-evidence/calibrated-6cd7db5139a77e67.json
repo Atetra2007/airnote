@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6cd7db5139a77e67",
+  "source_id": "deck-1dfd3ba9333c",
+  "work_id": "work-deck-1dfd3ba9333c",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D-1-19thill-c1539735cd.deltamusic",
+  "status": "reviewed",
+  "sha256": "53d9e11a4bc21b3c17f44719dc12ddea2c3a0f554d5011a913e2bcb4efd5358b",
+  "source_sha256": "f2a946a72010ca6e2ab5bc6a4ba46a3787324ed0f35b4d34f2fe50a2af8c288c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/220276.html",
+    "edition": "小叶歌吉他扒谱制谱，Gb4/4，无数字标速；全第1页跳接全第3页，原源不含第2页；第4图重复第3页末行",
+    "score_sha256": "cedc940dc1d1436e3d35c3380934578fbe62177c8f47dcdda9f85379a681266e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 496,
+    "maximum_parser_boundary_error_seconds": 6.821210263296962e-13
+  },
+  "review_note": "全部24源行540音50休止，第1页全页跳第3页全页，直至末高1完整10拍；未插入原源缺少的第2页。 固定inventory物理源deck-1dfd3ba9333c.raw、SHAf2a946a72010ca6e2ab5bc6a4ba46a3787324ed0f35b4d34f2fe50a2af8c288c，全24源行540音50休止590事件。完整解码原始numeric音符，不按原key=1=G字段另行隐式转调；key元数据原样记录。 明确采用小叶歌吉他扒谱制谱220276的Gb4/4主旋律。该谱无数字BPM；本编配保留原文件88BPM作为明确练习速度，非原唱录音或印谱速度。不同341330赵小臭翻唱版的打印120不应用于本长版。字面Gb4统一降6半音至C4，所有高点保留。 本原始source完整对应参考第1页全页后直接跳到第3页首，随后覆盖第3页全部至末尾。参考第2页整页缺于原源，本轮保持这次跳段，不暗中补入整页。第4图仅重复第3页最后一行，未重复演奏。 第1页末高1半拍原本连到参考第2页首，因原源跳页本次明确在第1页末截断该连线。第3页首普通5两拍原本延续第2页末5，本源直接从此进入，作为新的两拍起音。输出此处连续，无额外休止。参考完整108小节，各4拍，总432拍。 全部606谱面时值段逐小节录入，556有声段、50休止；root复核后60条同音连线延续，496独立起音。原proposal把P3r11b1第三个1的半拍误并入下一半音符，最终已拆分。 P1r1b2的附点高3与后16分高3为两个独立起音，后16分高3连下一高3半拍；末高3半拍跨r1b3首合一拍。该规则亦检查后续副歌同类附点与弧线，不因同音自动合并。 P1r3末及r4括号内间奏保持源中全部16个高3/高2/普通5半音符，两整小节休止亦保留。括号在此为间奏结构，不是可随意删去的小装饰。 唯一音高更正source note228为P1r11b2末印高3，原普通3E4改为E5一拍。其余539源音的音高保持，完整保留后半段及末尾全部来源音的可追溯去向。 四处重复起音数不同，明确选版合并，不谎称印同音弧：原46与45合并到P1r2b3最后16分高3；125与126合P1r7b1首半拍高1；249与250合P1r12b3首半拍高3；535与536合P3r12b2独立四分高1。连续同音具体歌词对位无法唯一还原，采用这里公开的相邻归并规则。 原46、125、249、535按公开的选版规则合并，其余按实际60条谱面弧线；原起音总减少61，其中4为选版重复音合并，57为原源分写的同音延续。原513号半拍高1独立，原514/515才合并成4拍。 共恢复17个所选印谱独立起音；另3个原源缺失的印谱时值段本身是同音弧延续，不另起音。source-comparison逐项记录全部17新增音、所有源事件去向、合并组与唯一音高改变。原50休止一一映射，按印谱修正时值但不吞掉原休止事件。 P3r5b2不的高2是一拍；P3r7b2末你的高2未画减时线为一拍，连下小节首高2半拍；P3r9b2见的高2是一拍。三处均按原像素判断，不套用相似乐句。 P3r7b3末高1跨r7b4首高1合一拍，P3r9b3末高1跨r9b4首高1合一拍。P3r10b3为高2一拍、第一高3半拍独立、第二高3半拍连高3二拍及下一小节首二拍，共4.5拍；不能误把第一、第二高3合并。 最后P3r12b2为高2一拍、高1一拍独立，末高1二拍连后两小节各4拍合10拍。原537/538/539全部映射这枚末10拍持音；不重复第4图最后一行，不截断最后8拍。 完整432拍、88明确练习BPM、294.545454545秒；最终496音50休止546事件，原590事件均有去向，新增17音，原音高改1、起音合并61。 root在打开提案数值数组前独立录入两页全部事件，首次仅两处连线判读不同。原像素解决：P1r3b4候选正确（首1半拍独立，后1合6.5）；P3r11b1 root正确（第三个1半拍独立，第四个1起跨小节4拍）。初次冻结与差异报告保留，最终546事件逐项相同；正式软件审计另附，未人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "cedc940dc1d1436e3d35c3380934578fbe62177c8f47dcdda9f85379a681266e"
+  },
+  "note_count": 496,
+  "event_count": 546,
+  "duration_seconds": 294.54545454545456,
+  "limits": [
+    "88BPM is an explicitly selected practice tempo retained from the source; the chosen printed score has no numeric tempo.",
+    "Source omits an entire middle score page; full existing source coverage does not mean a complete original recording.",
+    "Four adjacent repeated-note source groupings are explicit selected-edition choices; exact historical lyric alignment is unknown.",
+    "No human listening, recording alignment or real-game verification.",
+    "Production audit retains one >8beat duration advisory for the final10beat tied note. Both image readings confirm2+4+4beats; this exact hash/event advisory is individually resolved. Pitch, parse and all3gap runtime checks passed; no blanket warning waiver.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-1dfd3ba9333c-secret-base-complete-source.review.json",
+      "sha256": "681506b76dded3114a2352711938703579f012b16d411160cebf824dea70be58"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "238267379cb9a2f3ae8556f344d2fa243714c3a6ac0cbc300c2aa29ef5f009c3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8edb8923147dea5879a5edc9ecbb2f7f081cd4d1cea40176405879206c4cbce9"
+    },
+    {
+      "name": "0001-b0ed908fab95.json",
+      "sha256": "177bbc785fac63aa014ac5f64270336dab19eaf4eccf1bf203ea4f623d568af3"
+    },
+    {
+      "name": "duration-advisory-resolution.json",
+      "sha256": "8650b4d15dd237ea54e1b60879991f05e6c8da041e9c7dfd8a924e878055eeac"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b485407227535f43",
+  "source_id": "zhouzhou-104",
+  "work_id": "work-684fea9d16cf",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "37fb939cf2dfd478634695547e6bdfcebdb9752867ddcec31c99796d2c1fe966",
+  "source_sha256": "56cbf8a5348e6ce55b5c2860871c03c16991c85c40e4a20a47f1ea580b3e612e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/245799.html",
+    "edition": "EveryonePiano Gb/4/4/96 upperRH; source-formm1-2thenm5-24first3beats; explicit2sourceomissionsand1sourceconsolidation",
+    "score_sha256": "87a24579b66fffa6ac33b1cd23279d80277866edc33a24e3f9e298ef7175bf25"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 130,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Full127originalsource notes individually mapped/disposed;130outputnotes87beats throughfinalC5fourbeat tie. 处理原104全部127个音符，raw逐项另核对。原格式b=1仅表示横杠按着，不视作降号、不从其猜数值拍长。125源音映射、2处选版省略、1组同音源token合并、6处参考新增，130输出音87拍。 Root直接看完整245799页1/2及放大系统，独立录入完整130事件，先前冻结SHA5a9c0d...；与代理后续全谱读取逐事件音高/起点/时值一致。代理曾先看到root转录，非盲，不能称盲读独立证据。根代理本次再次看完整两页核对。 所选钢琴右手最高声部，打印1=Gb、4/4、四分96；普通Gb4降6半音到C4。保留源已有的一遍高音前奏m1–2，跳过原谱重复m3–4，接m5至m24前三拍；不扩展到源外下一副歌拾音。 明确纠正源索引14/27/30/43/51/72/84到参考音高；自动编辑距离仅用于初步定位，不作为音乐证据。完整源事件和输出位置在比较表中逐项保留。 m10印谱是3半拍、5半拍、高1两拍、高1半拍、7半拍。source57/58作为选版同音token合并到第一长C5，source59对应其后独立C5半拍；不删除source59，不声称两个印刷高1之间有连线。 source56普通7位于m10的5到长高1之间，参考没有该音；source66普通6位于m11末5跨小节连到m12三拍5之后/3之前，参考没有该音。两处作为明确选版省略保留原始证据，不声称所有原起音不变。 m17末高1与m18首高1没有延音弧，保留两次起音；m21末高1和m22首高1有弧合并。末m23高1一拍加m24前三拍同音弧合为C5四拍，后续副歌拾音不在本来源。 代理第一草稿只处理48源音，已被其后全源版覆盖且原bytes/SHA未保留。绑定history-note诚实说明此缺失；本包保存当前后写草稿与纠错addendum，不将它冒称原首稿或恢复稿。 完整视觉音乐校对完成后另行生产软件审计。96BPM按打印值，54.375秒；没有人工试听、原录音对齐或实机游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "87a24579b66fffa6ac33b1cd23279d80277866edc33a24e3f9e298ef7175bf25"
+  },
+  "note_count": 130,
+  "event_count": 130,
+  "duration_seconds": 54.375,
+  "limits": [
+    "Selected monophonic edition with2explicit omissions, not all original attacks unchanged.",
+    "First unaccepted draft was overwritten by worker; historical bytes unavailable.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-104-fireworks-complete-source.review.json",
+      "sha256": "34632125035114447c5ac29fac214f80bc9ea347d61e9705492378375fa7f6ff"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "30baf773c247dd35e6205411b7198210ae44f7e236fcecd422d95a56b60f0d45"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "12ce197340de6fbbf62266e257c27b97172d22a22363f4768a57160ed2b7a12d"
+    },
+    {
+      "name": "0001-d8c717750b37.json",
+      "sha256": "ab3268b35db4a281cfbb1bfec3a654eb79d9af0ec0a275f641e247c602436590"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

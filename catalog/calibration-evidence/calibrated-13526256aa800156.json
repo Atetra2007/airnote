@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-13526256aa800156",
+  "source_id": "zhouzhou-042",
+  "work_id": "work-e5c64c395b44",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "8cfde2b4a3f692a43fbf8a82a2fd44e0d0334a6510b59f6bd4c173d8815dd0ab",
+  "source_sha256": "490a5d8d74a557df046460da8f1db41eb6c48854a5c601fe6b3c31540b64b78c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.cnjpw.net/tongguan/130111.html",
+    "edition": "16.冲锋号 bugle, HE Longjin record2016.2.17; fiveflats,3/4,quarter145",
+    "score_sha256": "145201b3bd4c2c63d600f28272319a540e6da554f37663401b30db14d7d0e1c1"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 24,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原来源25音完整范围对应公开军号谱前五小节；末两音头按跨小节连线合并，共24次起音。不是完整军号谱。 原谱五降号、高音谱号、3/4、四分音符145；逐音读为Ab5/F5/Db5/Ab5/Ab5/Ab5。 来源G5/E5/C5整体升半音至公开谱音高，实际输出MIDI73–80。 前四小节各为0.75、0.25、0.5、0.5、0.5、0.5拍；来源无时值的音全部从谱面重建。 源23/24是第4末八分音符与第5附点二分音符的同音连线，合为3.5拍单次起音。 停在第5小节延音结束；第6休止和后续军号不属于这25音来源，未补成整首。 Root确认第一高音位于高音谱表A5加线上，五降号使之成为Ab5，随后F5、Db5；四次同样音型，不能把它误读为低八度。 Root确认第4小节最后Ab5八分与第5小节Ab5附点二分为同音连线，合并3.5拍；后面第6小节整小节休止及其后反复不属于来源范围。 公开目录要求HTTPS参考链接，改用可正常访问的中国曲谱网同版镜像；Root重新看完该JPEG，作者日期、五降号、145速度及全部音符时值相同。原HTTP页面和原JPEG仍作为二级证据保留，两张图的站点水印不同，不声称文件哈希相同。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "145201b3bd4c2c63d600f28272319a540e6da554f37663401b30db14d7d0e1c1"
+  },
+  "note_count": 24,
+  "event_count": 24,
+  "duration_seconds": 6.206896551724138,
+  "limits": [
+    "Public web military-bugle transcription credited to HE Longjin, not an official master.",
+    "Complete existing25-note source only, not the full printed score.",
+    "No human listening or real-game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-042-sheet.review.json",
+      "sha256": "dec8fc3b0566b67f529ef606df238c3d7b38a8e2c10a2840860a729386f22cf0"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ee40b3b323f95a0281e70260bf5a96d017801df9bde52737254ce3e4ab22b459"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3af1f4107dee0307c30a31cdc57cb45972d6ab8720064cc89bf1d5cdb2bd8f79"
+    },
+    {
+      "name": "0001-6538207e2ca1.json",
+      "sha256": "08bcfbaca3c3df62d3883e445a0ac3df00b808a3b989f4bd71aa222f7456e269"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

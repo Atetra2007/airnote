@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-cb60b5e4abf6e9e1",
+  "source_id": "zhouzhou-180",
+  "work_id": "work-2c22fab3ee99",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "66c827837739e4eb3503d2d7c56a75674a04d52b37268bd95aa0c0282dcc215a",
+  "source_sha256": "4eaaad8fe6872e751c21b0ae0574a1e708dd02561850caba56b3dc70bdd4003a",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=e6xkgTSrxNg",
+    "edition": "Release Topic: 粉刷匠, 儿歌大全; four supplied lyric lines",
+    "audio_sha256": "0fe56aece92dc32eafdc73750edfd1a09349648b6af213bad92bd8e96cdb26b2",
+    "start_seconds": 11.12,
+    "segment_start_seconds": 11.12,
+    "segment_end_seconds": 28.45
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 48,
+    "maximum_parser_boundary_error_seconds": 5.329070518200751e-15
+  },
+  "review_note": "完整来源48音及四句歌词，非全录音 Root独立视读全部3页完整原始混音/人声频谱、4处整句细节及全部3页输出覆盖图；48个来源音各映射一次。 源谱C调依据所选录音整体移高2半音至D调；source29刷字在21.42–21.62的旋律稳定于D4，修正原谱映射后错误的E4。 source24/25刷/了和26/27房/顶具有独立起音，保留同音重复攻击；微小滑入和末短上滑明确简化为稳定目标半音。 逐句识别主动发声终止与低幅混响尾，保留句间空白；末音28.45秒结束。 60 BPM为一拍一秒的序列化单位，不是录音测得速度。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "0fe56aece92dc32eafdc73750edfd1a09349648b6af213bad92bd8e96cdb26b2"
+  },
+  "note_count": 48,
+  "event_count": 93,
+  "duration_seconds": 17.330000000000002,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "滑音简化为半音目标；起音和释放为可检查的近似边界。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-180.review.json",
+      "sha256": "a837360c3d714a1e2a49d2b828285567b788d9db04271c90e4259bea1ec6aab3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c8c0e102c31afad691df57aa5cb56fa26c0db84a2adfe8a1ccd4e68ce4161764"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "25f7319f85a6d464d745a062e543a61900aec04ff027e24294e616716bbbfd16"
+    },
+    {
+      "name": "0001-53ef3bdacc01.json",
+      "sha256": "843591ffd69d00e4f4f9d4310ea57dfacb51072469ba73fa20371c8e94675d24"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

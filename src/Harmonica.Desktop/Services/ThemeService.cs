@@ -14,9 +14,9 @@ public static class ThemeService
         catch { systemDark = false; }
         Dark = choice == "Dark" || choice != "Light" && systemDark;
         var colors = Dark
-            ? new[] { "#191D20", "#22272B", "#2C3337", "#EDF1EF", "#A6B2AC", "#35403A", "#8AD8BC", "#244C3C", "#17382B", "#F1BC79", "#F0A4A4" }
-            : new[] { "#F3F5F3", "#FFFFFF", "#EBF0EB", "#24372E", "#728178", "#DFE6DF", "#2F7658", "#E2F1E7", "#D0E7D8", "#966622", "#B74C44" };
-        var names = new[] { "Canvas", "Surface", "Subtle", "Ink", "Muted", "Line", "Accent", "AccentSoft", "Selection", "Amber", "Error" };
+            ? new[] { "#1F2225", "#272B2E", "#191C1E", "#E3E8EC", "#A0AAB3", "#343B40", "#A4BED2", "#293B49", "#303D48", "#E6BC80", "#F0A4A4", "#17212A" }
+            : new[] { "#FAFBFC", "#FFFFFF", "#F1F3F5", "#293139", "#68737D", "#DCE1E6", "#47647B", "#E8EFF5", "#E2E8EE", "#906019", "#B7443D", "#FFFFFF" };
+        var names = new[] { "Canvas", "Surface", "Subtle", "Ink", "Muted", "Line", "Accent", "AccentSoft", "Selection", "Amber", "Error", "AccentInk" };
         for (int i = 0; i < names.Length; i++)
         {
             var brush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(colors[i]));
@@ -27,10 +27,14 @@ public static class ThemeService
         {
             Application.Current.Resources["CanvasBrush"] = SystemColors.WindowBrush;
             Application.Current.Resources["SurfaceBrush"] = SystemColors.WindowBrush;
+            Application.Current.Resources["SubtleBrush"] = SystemColors.WindowBrush;
+            Application.Current.Resources["LineBrush"] = SystemColors.WindowTextBrush;
             Application.Current.Resources["InkBrush"] = SystemColors.WindowTextBrush;
             Application.Current.Resources["MutedBrush"] = SystemColors.WindowTextBrush;
             Application.Current.Resources["AccentBrush"] = SystemColors.HighlightBrush;
-            Application.Current.Resources["SelectionBrush"] = SystemColors.HighlightBrush;
+            Application.Current.Resources["AccentInkBrush"] = SystemColors.HighlightTextBrush;
+            Application.Current.Resources["AccentSoftBrush"] = SystemColors.ControlBrush;
+            Application.Current.Resources["SelectionBrush"] = SystemColors.ControlBrush;
         }
     }
 }

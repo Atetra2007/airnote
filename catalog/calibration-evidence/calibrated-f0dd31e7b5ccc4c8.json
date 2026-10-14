@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f0dd31e7b5ccc4c8",
+  "source_id": "community-ae985813ffa59bd3",
+  "work_id": "work-c20f24975fc7",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E5%86%B0%E5%B9%BD-%E8%A7%A3%E5%BF%A7%E8%8D%89-%E6%A7%91%E6%A7%91%E6%A7%91-15d88e8a58003473094a4.deltamusic",
+  "status": "reviewed",
+  "sha256": "60bce4a30e06356c3bea2b5f0fa27f6bf7243c143eea0ee6eeacd56cc4cf2237",
+  "source_sha256": "1a3aec8682c363da28619f8082bb859befcbcac041d758020c1ac524b4323b20",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/156164.html",
+    "edition": "孙世彦Ab/70完整版第一主歌与第一轮双副歌；普通Ab4降8到C4，保留源0.04拍释放缝及印谱两拍例外。",
+    "score_sha256": "c6f0409b18cb5a32cc61a891a2318563641d2de1ff90e05ab19e43009488e673"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 165,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "All145source events throughfirstverse andfirst doublechorus;complete printed tailA3threebeats. Existing0.04beat releasegap retained. 本来源完整145事件、143音和2显式休止全部逐项处置，未省略原音。社区80BPM版与此前72BPM版分别解码并核对各自固定SHA；事件内容相同，保留为两个来源，不以速度版代替社区版。原始文件和时值均保留。 参考156164孙世彦三页完整简谱、打印Ab/4/4/70。从第一主歌一曲到第一轮第二副歌末花全范围；透明复用此前已由两位审阅者分别完成的完整168事件视读，主代理独立数组冻结SHA已绑定。并非再次独立读参考；本145事件来源另行手工按25小节分组映射。 参考普通Ab4降8至C4，低6F4至A3，适合本来源普通音区；与洲洲123版C5主音编配相差一八度是有意选择。来源本为C无需再全局移调。打印70BPM替换80或72旧速度，98拍84秒，不声称对原录音校速。 四处明确改音按源事件零基索引：39普通3改2（那），82普通3改1（换），107升5改自然5（中），108升2改自然3（砂）。源38的普通2半拍变四分之一拍，并补其后的3四分之一拍，随后source39改为2四分音符；不把不同音弧合为延音。 补22有定量时值的参考主音，包括重尾低7、拜尾3、秋与家前2、六处5到3回转的小3、骨/来中的1、留尾低6、误字2/1、哑/座回转2、风/花回转2/1以及末低6三拍。逐项列出所有位置；原最后C4仅1.122917拍并未覆盖完整尾句，补齐完整C4/D4/C4/A3收束。 原source20两拍零按印谱云涌后的零改为1拍，同时前source19低3由1改2拍。原source50的0.04拍释放缝显式保留在P1r6b2低6两拍内部：A3发声1.96拍加0.04静默；这是保留原演奏释放安排，并非印谱有零，整个两拍长度不变。另外首句楼后及回首后各半拍休止由谱补齐。 P1r6b2只印低6加横，共两拍，虽然总谱4/4而无临时换拍；所选版本明确保留这一限制，不暗补两拍。不展开后续器乐、第二主歌及再现，所有现有源段落和最后A3三拍均已涵盖。 当前完成来源逐项音乐处置与已双读参考对照，另送正式软件检验。没有人工试听、没有真实游戏测试；复用参考审阅不能表述为每版都重新盲读。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c6f0409b18cb5a32cc61a891a2318563641d2de1ff90e05ab19e43009488e673"
+  },
+  "note_count": 165,
+  "event_count": 169,
+  "duration_seconds": 84,
+  "limits": [
+    "Complete existing excerpt, not whole original song.",
+    "Printed isolated2beat bar retained despite overall4/4.",
+    "Same twice-read reference transparently reused; source independently decoded, not separate blind reference review.",
+    "0.04beat source releasegap retained inside one printed2beat note.",
+    "No listening/game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-ae985813ffa59bd3-jiumen-complete-source.review.json",
+      "sha256": "4b24bba1dd9f3a683b9a9e8ceb7ed2aa765d8dee7f921fc14ed17d95f9a30092"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d22e8b0c7fd3b88510f54d2ffc6a605819cd8ad271ff9495e605609fc70d82a3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c077637aac95c36c35f415e93c20457681cb8ea5743fc123179256f11de77a92"
+    },
+    {
+      "name": "0001-d423011b3d22.json",
+      "sha256": "f982a7c78e13d1e20c2816c142421ec9a1a6534eae675646b574b12621b8077a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2de48c070db02855",
+  "source_id": "zhouzhou-219",
+  "work_id": "work-67bee6acfc3c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5fff457327c9fed8384ab63aa0138d6f3fb43fb0373c4d9d673969dac457dcf8",
+  "source_sha256": "e499d49d9c4c9c6465a7a28f9797b898617e3af527ae93afff64a8f9f2faf288",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=P5zUkubgW1I",
+    "edition": "Two complete lyric groups54.804–60.060+64.564–66.107;direct splice;38 principal practice tones;source34 full-group revision;120 is seconds encoding only",
+    "audio_sha256": "21e7214f89edd1363902e3f59c2e9540c234255df055fab56a5a433cbe876d38",
+    "start_seconds": 54.804,
+    "segment_start_seconds": 54.804,
+    "segment_end_seconds": 66.107
+  },
+  "review_method": "Root complete two-group raw harmonic spectrum and waveform visual review; all40 original tokens verified; source34 explicitly superseded at complete lyric-group scope; independent38-tone reading and46-event seconds accounting; no human listening or game claim.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 38,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-16
+  },
+  "review_note": "原未命名219的两组歌词明确定位至A2O MAY的Love Got Me Ooh；现场核实A2O WORLD官方视频元数据及公开英文字幕。保留原34音头、6布局标记和全部40tokens，逐头明确整句替换，不声称原34音高或节奏逐点恢复。 选官方录音54.804–60.060与64.564–66.107秒，分别覆盖原两组歌词范围；直接拼接为6.799秒。中间60.060–64.564包含其他歌词，明确剪去，不能当作天然休止；不另加人为一秒停顿。 Root实际查看全部四张原始人声频谱/波形/独立模型细图及完整候选标注图，另录第一组27主音与第二组11主音，全部38音顺序一致。模型只帮助观察，未以模板匹配分数决定通过。 独立反审发现旧候选把54.804–54.870和55.040–55.170有高音区间当休止，新版分别纳入Bb4与Ab4；不能声称属于前句或伴唱。第二组64.564–64.630弱但稳定Ab3同样保留。 55.040–55.170的短下滑以及56.040–56.170快速上弯采用Ab4主音近似；57.120–57.590同音音节合为一个Ab4持续主音，不声称恢复所有歌词的独立起音。59.760–60.060尾Bb3中最后约60.000–60.060保留练习延长/衰减，未声称真实声门关闭时间。 第二组为Ab3 Bb3 Ab3 Bb3 Ab3 Bb3 Ab3 Bb3 Ab3 Gb3 Ab3。原文字额外night未出现在所选官方字幕该句中，保留原文并披露差异，未造出额外音符。 共38主音、8处明确选取的练习间隙、46事件；所有间隙均非全混音静默证明，原布局竖线不用于定休止。120BPM仅每秒两拍的编码约定，13.598拍=6.799秒，不推断原BPM或拍号。 这是完整所选两歌词组的主音练习重编，音高主音量化及时间边界约0.01秒观察并不具备精确逐字/多声部转写意义。由AI代理视觉复核完成，未真人试听、未实机游戏验收。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "21e7214f89edd1363902e3f59c2e9540c234255df055fab56a5a433cbe876d38"
+  },
+  "note_count": 38,
+  "event_count": 46,
+  "duration_seconds": 6.799,
+  "limits": [
+    "原34头完整保全并按各自歌词整段替换，不主张逐头还原。",
+    "主音近似、滑音简化、同音音节合并与尾门限均为披露的练习选择。",
+    "两处录音直接拼接；字幕用于句级范围，不是精确音节起止证明。",
+    "无真人听感或实机游戏验证。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-219-official-two-complete-lyric-principal-practice-v4.review.json",
+      "sha256": "2f2ac8792b37b0fc1e9af56751369fe331426079fae4b5eb578e4c9a493f662f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6f46277fe5e3ba4bed5725b663ff49756758f57afc18d204a4be61561ad27965"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "48292402e0c0c1867dee69896ac04c7f40f40f952b1286c4615cd3daceb53da1"
+    },
+    {
+      "name": "0001-2d15d8fbeb57.json",
+      "sha256": "9b3d593c38fc080b8a869311f17d01d5114eaee4bc24fb6f4a469c926ec5ef00"
+    },
+    {
+      "name": "public-review-summaries-20261013-a2omay219-v1.json",
+      "sha256": "a1578db02d5e11da677798de6de04f6090bd2d72076d626b58a93b89709f28cf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

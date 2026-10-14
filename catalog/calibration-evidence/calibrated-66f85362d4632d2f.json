@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-66f85362d4632d2f",
+  "source_id": "zhouzhou-194",
+  "work_id": "work-f1689afcfdf1",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "a353b3b089a41bef4df41076e01ac010d54461cf0a7c1b7d8ed4aaa36abb8496",
+  "source_sha256": "13f39eb347ac0d7f3854f1726978c8241529bf5033196e1f3c56aa3e01ca473f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/376614.html",
+    "edition": "高音教编配何野G调精华版4/4打印78，七句完整源范围，原跳过雪花两小节，字面G4升5至C5来源音区。",
+    "score_sha256": "706c2cd02592a91b6203fd7b4916f41eb9988bd4bab2e2ea1dead88ac3ba0c01"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 60,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "全部7源行63音，水花开始到今天的最终高1完整3.25拍；原源雪花两小节跳过，后副歌不加入。 固定194原文件SHA13f39eb347ac0d7f3854f1726978c8241529bf5033196e1f3c56aa3e01ca473f，全7源行63有声音、无原休止。原数组只提供音高，不能把默认节奏作为音乐证据；本次逐小节独立读376614。 作品身份由376614何野演唱/高音教编配制谱《天亮以前说再见》G调精华版及完整对应音序支持。选择此印谱版，非同名未确定录音或其他翻唱；页头G、4/4、速度78。本编配采用打印78BPM。 保留来源高音区：字面G4统一升5半音到C5，普通2为D5、3为E5、5为G5、6为A5、低6为A4。谱面不出现任意八度折叠；原52为普通6A4正确对应印谱低6，不能因相邻A5把它误升一组。 全部范围按原源顺序：水花只能开在雨天→烟花要绽放在黑夜→像我舍不得和说你再见→谎言并不代表欺骗→诺言也不一定兑现→誓言就都留给时间→就请把从前留在今天。第一段雪花多舍不得冬天的两小节在原源中完全没有，明确保持该跳段，不插入。原源最后结束于今天的高1；后面整首副歌不在源范围。 水花第一音前印半拍休止为源起点之前，不加入；最后今天后印1拍休止和副歌拾音位于源末之后，不加入。选中14个印谱小节，裁去首半拍及末1拍，共54.5拍；句间全部12印谱休止保留，未省去换气。 前两句及谎言的2/3十六分跨下一小节三拍按同音弧合3.25拍；5十六分连下一5八分合.75拍。诺言末5十六分到下一3三拍是异音圆滑，保持两起音；不是把不同音符粘成延音。 像我处印0八分、2/2/2十六分、3八分、2十六分、2八分、1八分、低6十六分、1八分、1十六分。source20原E5明确改D5，source21仍独立D5半拍；这里没有连接两2的弧，不能照后句误合并。 就请处相应的2十六分同音连下一2八分，合.75拍；原source57D5对应该持音。两句末低6十六分和两个独立1起音均保留，后1十六分连下一1三拍，合3.25拍。 誓言末5八分、普通6十六分、低6十六分；低6下点在原像素清楚，低6十六分同音连下一低6三拍，合3.25拍。source51A5和source52A4两个八度必须分开。 三枚源音与所选版不同，明确选版省略并记录原值：source25D5（像我结尾两C5之间）、source35E5（谎言最后持D5之后）、source61D5（最后两C5之间）。这些不是解析丢失或尾段被截掉，不称原历史版本完全同谱；所有其他60音和最终source62C5完整映射。 输出60音12休止72事件54.5拍，打印78为41.92307692307692秒；全63原事件100%处置、3显式省略、1音高改动、0新增起音，末C5完整3.25拍。已完成root另行全范围音乐复读，另送正式软件审计，未人工试听、未录音对齐、未真实游戏。 Root读完整两页及五处近裁，另录7句72事件数组后再与候选数值比对，音高、时值、起点全部一致；再独立解码全部63源音，确认3个选版省略、source20的E5→D5及source52低6 A4。读前已看提案叙述，因此不是完全盲读；原首读文件及SHA保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "706c2cd02592a91b6203fd7b4916f41eb9988bd4bab2e2ea1dead88ac3ba0c01"
+  },
+  "note_count": 60,
+  "event_count": 72,
+  "duration_seconds": 41.92307692307692,
+  "limits": [
+    "Explicit printed-edition reconstruction:3source extra notes omitted and1pitch changed; not an exact original historical edition claim.",
+    "Full existing source excerpt omits snow-flower phrase and all later chorus material; those are intentionally not added.",
+    "G4up5semitones to C5 preserves source high register and clearly printed low6 drop.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-194-before-dawn-complete-source.review.json",
+      "sha256": "efcfd17795a3ac8b6405dc756699b3a356a192cc3cdb91e9156fd5adfe93d5fd"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b2ada7dbbef41cbfdf8436e91c0433a6505db77255ee8071303699bc02635f2a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "47063dfa9ad5da73fa6827df679f1bd928ee857eee909067e7aa739e1e8f84ba"
+    },
+    {
+      "name": "0001-8f3db3187c9b.json",
+      "sha256": "bca10b3edd7561bb9dcf5b5ae01f649ae3ce9cf3db160779ec49a624f4fd3353"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

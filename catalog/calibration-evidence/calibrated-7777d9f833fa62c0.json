@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7777d9f833fa62c0",
+  "source_id": "zhouzhou-011",
+  "work_id": "work-75481b482f96",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f1b4509fce62faebc8ec4e931ff5ae7cbe8378d675e4f08f9325624907b0de85",
+  "source_sha256": "59b7bf68dedca76a77032e58799e3d0e8b5014930113f0529ee859de1b6d9c72",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/153598.html",
+    "edition": "Z.E.Z.阎维文声乐谱1=C、4/4、116BPM；听吧弱起至首遍疆场结尾",
+    "score_sha256": "f55b1fc3556a05379fd80154c04c6392870ec8f9c55015db145a80399b7ea4f9"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 67,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "原67音全部逐项核对；听吧一拍弱起加16小节主副歌65拍，67起音6休止，只到首遍结尾。 选Z.E.Z.所记阎维文版声乐谱，1=C、4/4、每分钟116拍；原67音全部与谱面C5–E5及中音5/6/7逐项吻合，不改变原音高或音数。 完整原稿为一拍听吧弱起加16小节主副歌；只取首遍疆场结束的第一结尾，不加入谱面前奏、间奏、变调反复或额外结束句。 全部时值从原图附点、减时线、延长横线逐项读取；弱起1拍，后16小节各4拍，共65拍。 恢复主歌结尾、将士们、听党指挥、不惧强敌、敢较量和首结尾后各1拍休止，共6个；其中末尾保留所选小节的完整拍长。 吹的高1到中6为异音连奏线，所有重复3/2分别起音；原稿67起音全部保留，未误合并同音。 为祖国决胜疆一小节的时值为0.5/1/0.5/0.5/0.5/1；不误读成均匀六连音。能打胜仗为1.5/0.5/1/1，与听党0.75/0.25/1/1加休止区分。 独立第二读谱人已按完整原稿及参考谱重建全部事件数组，音高、时值、范围逐项通过；本验收不依赖只比较文件或解析成功。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f55b1fc3556a05379fd80154c04c6392870ec8f9c55015db145a80399b7ea4f9"
+  },
+  "note_count": 67,
+  "event_count": 73,
+  "duration_seconds": 33.62068965517241,
+  "limits": [
+    "OnepublicZ.E.Z.vocaltranscription,notoriginalrecordingvalidation.",
+    "Completeexisting67notesource; nointro,interlude,modulationrepeatsorextraending.",
+    "Nohumanlisteningorreal-gametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-011-vocal-sheet.review.json",
+      "sha256": "78bdf437892fe893b36a72f5dc7919a822fa4b54ce04905d0c06bdfdb11e63f0"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "807c085f5f08b6a1c52216cc055e2cb45665bebd6ec8572644398c811834639e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "dd63da3be05b8b83534d8ea8654cde2918e05038bdecfad4c1564d8949db75be"
+    },
+    {
+      "name": "0001-ea28a70dcc85.json",
+      "sha256": "c2c2161af834f894e1814ac899b35c841e4e45d2b1e14f8bbb4098904ef7359c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

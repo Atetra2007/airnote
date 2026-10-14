@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4479c37a9ec5d806",
+  "source_id": "deck-aeec77d24e62",
+  "work_id": "work-deck-aeec77d24e62",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%AF%80%E5%88%AB%E4%B9%A6.deltamusic",
+  "status": "reviewed",
+  "sha256": "4c715d9e37a69beda37d58fd44018783081a7165928b25bb95070856fda5393b",
+  "source_sha256": "9dc0d885aed619e1b12419501625821b6cf554295fc7d14671aadfa2e3b74795",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/377885.html",
+    "edition": "邓垚曲/指尖旋律改编，原神风物之诗琴谱，第1页，C调4/4、印刷100BPM",
+    "score_sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 128,
+    "maximum_parser_boundary_error_seconds": 2.7000623958883807e-13
+  },
+  "review_note": "完整137源音255事件，两遍主题9–24及首录入静音，明确公开诗琴改编版与额外起音处置。 唯一选定音乐参考为377885第一页邓垚曲/指尖旋律改编的原神风物之诗琴简谱，C调4/4，初段100BPM。它是明确公开改编版本，不声称原钢琴录音原样转写。 完整137源音255事件对应第9–24小节主题连续两遍。保留原来源两遍曲式；第二遍仍采用同一选定主题，不把本提案冒称整首108小节。参考降19半音，即先降7再降八度，匹配源主体F调/D小调低音布局，C3–E4；没有整体改动来源实际主体音高。 所选每轮64拍，共128音乐拍，采用印刷100BPM。源120BPM、76.403672拍/38.201836秒是原有录入，本公开版节奏与速度明确改变为77.203646秒（含首静音），不声称保留原来源或原录音速度。 原首静音0.807292拍@120=0.403646秒保留为0.672743333333拍@100。它是来源预备静音，不来自印谱；128旋律音与此1休止共129事件。 九个额外起音全部有清晰处置：22+23、89+90两个C4极短起音/C3主体组各合成一个C4；54+55、125+126两个G3主体/极短重复组各合一；81+82的C3长音及E3伴奏填充合C3；99–103五个F3/G3填充音按第16小节合F3全音符。由137起音成为128，未遗漏来源尾段。 十六个来源音高发生选定版处置：6/72的D5改D4；23/90的C3与前短C4合C4；82的E3伴奏省去归C3，102的G3填充省去归F3；59–63及130–134尾句E/F/E/F/E改所选第23小节D/E/D/E/D，明确是采用该改编版尾句。 原第32/94/123事件三处长休止分别1.552083/1.460938/1.401042拍，均单列：按第12小节C3/第24小节D4全音符选定编配恢复持续音，取消提前断音。其余<=.04拍的短音门休止逐个映射，不与三处有量间歇混为一谈。 两轮第12、16、20、24小节终止各4拍；最终来源D4约.802083拍截短改为四拍，明确恢复终止。全部原文件保持，修订另存；源136末音及其前所有255事件均有处置。 音乐视觉复核与软件校验、真人听感和真实游戏分开。本提案待root独立音乐复核与生产软件审计；未做原錄音对齐、真人试听或实机测试。 Root完整源文件及两遍曲式逐项复核，137音/255事件全部有去向；独立印谱数组对两遍128旋律音相符。六组九次额外起音、16处音高/伴奏取舍、三个长休止及精确首静音保持均逐项确认。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "484026ea100cba689f4ecfb1855433cfff8ba362b7347993aca51bd4d15c95fe"
+  },
+  "note_count": 128,
+  "event_count": 129,
+  "duration_seconds": 77.20364599999981,
+  "limits": [
+    "Selected lyre arrangement explicitly changes source rhythm/tempo, ornaments and tail-pitch edition.",
+    "Source pre-roll is preserved in seconds but is not a printed rest.",
+    "No original recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-aeec77d24e62-farewell-book-two-pass-selected-lyre.review.json",
+      "sha256": "d971b7cc73308b890ac5869a777c3417572b7738d574075d50212c0d187dd2be"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d7acffd5aa0a95f090bda65575b082368d5a491fb3b3918d394bacad76089fd7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a6187e4330bfc526c05e3a848f65d732846506900a53d91d9bfabcc3f0e753f7"
+    },
+    {
+      "name": "0001-74c464017522.json",
+      "sha256": "c8dab2775fd1669496f809cc35f3fbef8f07bdde8c07bd0bd776d2dfe856d27c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

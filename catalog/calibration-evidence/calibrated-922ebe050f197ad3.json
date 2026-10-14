@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-922ebe050f197ad3",
+  "source_id": "zhouzhou-078",
+  "work_id": "work-a044af0e61e9",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "0beb5751f36c7837460b2d7acd95e5d1ab9d2088ef8acc23c9c52643ad2901b3",
+  "source_sha256": "f768717e1240528dddff967df2f20fea12d6cc1331e0603b6e4cc486d3412f58",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=eo4Ud95BdiI",
+    "edition": "First four measured four-beat bars at editorial180BPM;reference shift0",
+    "score_sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 22,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-16
+  },
+  "review_note": "Complete 22 source notes and 27 raw tokens; first four reference bars 完整原JSON重解22音与5分隔；文件名不代替JSON身份。保持固定work-a044af0e61e9，不因新身份线索合并基线作品。 参考co piano公开视频eo4Ud95BdiI的このサメ飼ってもいい？主题第一轮4栏。Root实际查看focus00/01/02/04/05全图，按C4/C5/C6轴与日文音名独立抄录全部22攻击、2休止。 四拍一栏与180BPM为基于视频栏距/起音时刻的明确记谱选择，非印刷速度；圆角音名标签固定高度不是音长。逐帧键面观测22攻击全部一致，短键释放空隙视作断奏而非增添名义休止。 参考统一移调0半音；只有source18按所选参考第四栏第二攻击提高2半音。原有其他音高全部保留；不将版本差异伪称唯一原作者错误。 原22音逐个对应22参考攻击，无合并、省略、拆音。 完整现有来源范围输出22音与2个四分休止，共24事件16拍180BPM=16/3秒。原竖线时值未知，仅在证据保留；休止来自选定公开卷帘栏间。没有真人试听、原录音对齐或实机游戏测试。 参考统一移调0半音；只有source18按所选参考第四栏第二攻击提高2半音。原有其他音高全部保留；不将版本差异伪称唯一原作者错误。 原22音逐个对应22参考攻击，无合并、省略、拆音。 完整现有来源范围输出22音与2个四分休止，共24事件16拍180BPM=16/3秒。原竖线时值未知，仅在证据保留；休止来自选定公开卷帘栏间。没有真人试听、原录音对齐或实机游戏测试。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "note_count": 22,
+  "event_count": 24,
+  "duration_seconds": 5.333333333333333,
+  "limits": [
+    "Explicit edition choice; no printed180BPM; no original recording alignment",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-078-flute-copiano-v1.review.json",
+      "sha256": "a4df21f3fee6d14d250e68a17cd4471d8258ffb0fab61734a03d841867068e5e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b9c35514d8c66fab0d6bade6f0391abf565c5bd81398a0aaee19ab5b00175612"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "577c73e1653cca798fc1e102faf41a2ebfc19cb4e370324bcad4d711427f8fc2"
+    },
+    {
+      "name": "0002-cd7207bd4dd2.json",
+      "sha256": "044568dc78585faff4e2e0b48e7b93907ce666e163a6e9d1d381f18cd19496bf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

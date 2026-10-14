@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-683bcc9b9959b195",
+  "source_id": "zhouzhou-205",
+  "work_id": "work-a7fc2f2304b5",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "b355b50629fd525166e0bfdc8969008d3c25120ceb8fbafdfed1afef38cfe39f",
+  "source_sha256": "433c02085ee6a2685993de8059b67f525dc457773b3ac4806832fa75ab3ca8cd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/440656.html",
+    "edition": "LiGang numbered vocal arrangement, A4/4, complete source first verse; no printed BPM",
+    "score_sha256": "dec0ea4b5184d37fb1fe7d21db4991f2667d06e383675554ed3789f5ee609c30"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 76,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-14
+  },
+  "review_note": "完整80源音，所含首段歌词从池至童年及谱尾休止；76起音9休止63拍。 The reference prints key 1=A and meter 4/4 but no BPM. Candidate @bpm=100 is an explicit arrangement preview choice, not a source fact. The opening lyric note 池 starts on beat 1 of the excerpted pickup; the preceding beat and instrumental introduction are excluded. This leaves 3 beats in the first excerpt bar; the remaining 15 measures contain 4 beats each. The complete excerpt contains 76 sounding notes, 9 rests, and 63 beats. Keep the two final 1-beat rests after the last 童年 note. All 80 source pitch indices map exactly once through the documented source groups; four same-pitch source pairs are grouped in the printed ties. Raw source duration/flag fields do not determine candidate beats. Source index42 is relative high5 (G5 in the selected C4-tonic arrangement); printed high3 becomes E5 after A-to-C transposition and register selection. The A-key original does not literally print E5. The source does not identify a performer or release edition; no recording identity claim is made. Printed A key is transposed by key class+3 to C; selected tonicC4 fixes the output register. Root complete visual reading independently equals all85 candidate events; all80 source pitches accounted for. Four tied source pairs merge, source42 alone changes pitch;100BPM is an explicit performance choice.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "dec0ea4b5184d37fb1fe7d21db4991f2667d06e383675554ed3789f5ee609c30"
+  },
+  "note_count": 76,
+  "event_count": 85,
+  "duration_seconds": 37.8,
+  "limits": [
+    "Tempo100 is an explicit arrangement choice; no printed numeric tempo.",
+    "Complete existing source excerpt; not the entire commercial recording.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-205-childhood-complete-vocal.review.json",
+      "sha256": "a6e8bcae2d19fa1d0cb90855646f4a21ff9bf985aff2ebb6c967156c91315af4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e198afec5d3444c3f69e447a1869c96081d35db1265b3b67a8846fedfec5e911"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "84f37e4ae5d7ff200308c9af8b0ac258957b064f417b206c6179f536aadbe197"
+    },
+    {
+      "name": "0001-e99cba9beece.json",
+      "sha256": "0e7d656d5f2e1a606540776baed72e69dc21b7911bbe40ffad9cb06fd7236f26"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

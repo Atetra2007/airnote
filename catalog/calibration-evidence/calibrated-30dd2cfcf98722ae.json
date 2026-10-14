@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-30dd2cfcf98722ae",
+  "source_id": "zhouzhou-152",
+  "work_id": "work-merry-christmas-mr-lawrence",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "7445e70c5f9a34e6095550a66f6fde2d2431a583a0c4620fab6b8589b61266f6",
+  "source_sha256": "ed8c5a2699d1bf4b3c359eccfb1c8abeea35173ffbd7de7aafa0f916779ee321",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/250103.html",
+    "edition": "XiaoB/EveryonePiano C#key piano arrangement, bars25–31 uppervoice downoneoctave; explicitfixed96BPM",
+    "score_sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 36,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原36音完整对应XiaoB钢琴谱第25至31小节的最高主旋律；含3个一拍休止，共28拍，非整首钢琴曲。 采用XiaoB/EOP同一五页版第25–31小节，全部36个来源音与最高旋律音的度数和八度对应，所有原稿重复起音保留。 第26、28、30小节首拍均为休止，补齐三个原稿未编码的四分休止；其余音符按八分、四分、二分值读取，每小节4拍。 第26/27/29/30/31小节和弦取最高的主旋律音，舍去较低和声；没有把纵向叠置音当连续音。 公开谱C#调音区整体降一八度以落入当前音域，原稿名义C音高整体减11半音；输出A#3–C#5（58–73）。 原印刷速度第21小节93、第27小节97；本单声部另明确选固定96BPM，保留拍长比例，不宣称复刻原钢琴渐快或弹性速度。 尾部停在31小节低6的两拍结束，原32小节和声及后续发展不纳入本36音片段。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "note_count": 36,
+  "event_count": 39,
+  "duration_seconds": 17.5,
+  "limits": [
+    "Public secondary piano arrangement, not composer manuscript or recording validation.",
+    "Single melody in sourceextent, loweredoneoctave, fixed96BPM explicitly replaces printed variabletempo.",
+    "No human listening or actual game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-152-piano-sheet.review.json",
+      "sha256": "0e4d764d03df21d95ba62fc81aad2aae11332f95552b04ba6d0f67ab519efbaa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2c7cf76b5a7d43c2231baaaa623bbe45c3863cc252ff74f03de60b531384fb2a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6c77df949e79d3e0611150b2eacf3259a96641b8fa6ec5ec76c7ec755393e2da"
+    },
+    {
+      "name": "0001-388fa00ebbb6.json",
+      "sha256": "e9e86bec3a9e299ca9cee0cbe5b56374ab46314aee97d263eef33220ae2e4690"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c27bc080edc7f6cc",
+  "source_id": "zhouzhou-095",
+  "work_id": "work-cf191e62a9ee",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "a633e9ff0681c2db016ee481ae6f7564647b5980b2eb440a15eebb3537882a27",
+  "source_sha256": "0ef5a35650d5524c085919945eb305be1574e113e692c66579b630aa47ef2db1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/250701.html",
+    "edition": "EOP Bb2/4 bars10-41, inline60 tempo, monophonic source-register adaptation",
+    "score_sha256": "fb0522cf7c47945147f1288830f556e01c7f5b3b028c2b86af99720079d1e9b7"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 79,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整73源音主题段，第10小节后半至第41小节末，63拍。 选择250701《时代を超える想い》EOP钢琴简谱，印Bb调2/4。完整来源对应第10小节后1拍至第41小节末，共63拍；前奏和后续再现不在本来源中。 页首有70，但第1小节明确写60，此后至41未见再换速；依谱内最新标记采用60BPM，时长63秒。没有宣称录音实测速度。 参考Bb升2半音到C；主歌10至26首拍再降一八度，以保持原来源音区；26后半副歌起选右手主旋律/和弦最高正常音，不奏小字倚音和伴奏。33至34首拍为同音延音，共3拍，不采用另候选436568少点疑义。 原源73音全部依序映射。源序号20（0基）第二行第二个6误升至A5，依据谱面改为A4；其余源音高保持。 原源两遍主歌各漏3个经过音：13小节后半2高/1高及14首6、21后半2高/1高及22首6，补6音，共79起音，无休止。不是以相似度自动通过，全部小节和源音已人工视读。 17→18、25→26、33→34同音连线合为3拍，连线后的同音新起音保持。原始来源及未用参考保留；修訂另存。 本次音乐视读与软件检验独立，不代表人工试听或实机验收；这两项未执行。 Independent provisional reading retained unchanged; four octave corrections and bars29/35–40 independently resolved. All79 final attacks and63beats match the full root reading. Inline60 begins at measure1.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fb0522cf7c47945147f1288830f556e01c7f5b3b028c2b86af99720079d1e9b7"
+  },
+  "note_count": 79,
+  "event_count": 79,
+  "duration_seconds": 63,
+  "limits": [
+    "Monophonic arrangement with source register changes relative to printed piano.",
+    "No human listening or actual game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-095-time-melody.review.json",
+      "sha256": "02ab189201ed6c6b8f98094eff57b37445232ea31c039843d4b5332ead486abb"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "36cb8d9b3c8c49bd942dcad7e4cac3166f64c05392ff4a7db7fdc255e8ee95e2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c91ea3db5dfbc5e65b849925c8a301b674353293a038ec0ba304ab69dca08d56"
+    },
+    {
+      "name": "0001-c49446f3be8e.json",
+      "sha256": "c03d4209277d79ce86712f1258cd7f37f211352298de8fa509d0bbb9ae375402"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

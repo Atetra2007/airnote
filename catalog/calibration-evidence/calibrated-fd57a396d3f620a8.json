@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fd57a396d3f620a8",
+  "source_id": "community-8c7c5796e90abd97",
+  "work_id": "work-deck-1dfd3ba9333c",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D-%E9%82%A3%E5%B9%B4%E5%A4%8F%E5%A4%A9-11111-9396e7aa8bf00f4c6f56b.deltamusic",
+  "status": "reviewed",
+  "sha256": "0a1c9bbd77b4b5c32620a8fa9008199ef10652d7dbd83e02adcf1bfeadc3fe43",
+  "source_sha256": "548065f80603d01fe23db4b55d34842054f919d0fe484a172d92202ce2bacd46",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/220276.html",
+    "edition": "Explicit mixed arrangement:220276小叶Gb声乐主段 P1r5b3 onward through entireP2/P3;173685川田千春G钢琴P4F最高声部11音尾声。练习120BPM非印谱或录音速度。",
+    "score_sha256": "cedc940dc1d1436e3d35c3380934578fbe62177c8f47dcdda9f85379a681266e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 668,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整604音507休止1111原事件，主段原593音对应141小节，另11音钢琴F尾声包括一次反复；最后B3补足3拍，不增加原末音以后的音符。 固定社区物理源SHA548065f80603d01fe23db4b55d34842054f919d0fe484a172d92202ce2bacd46，完整604音507休止1111事件、原446.610407拍；每一原事件在source-comparison有单独去向或明确时值替换说明。不是把转换成功当音乐验收。 明确混合编配：主段使用220276小叶歌吉他中文声乐版，字面Gb4降11半音使普通1为G3、高1为G4；尾声使用173685川田千春钢琴编配F段右手和弦最高声部，字面G调降12半音。两版来源、转调和范围分别披露，不冒称原社区的同一历史版本。 统一120BPM明确选择原文件的练习速度；220276没有数字BPM，173685首页印67且后改72，均不声称120来自印谱或录音。混合两版拍值后总587.725拍293.8625秒；不是原演奏速度复原。 主段从220276 P1r5b3首主歌开始，逐小节到P1末，然后完整P2、完整P3至高1末10拍，共141个4拍小节564拍。原源不含P1开头副歌及间奏，本次不加入；P4只是P3末行重复图，不再次演奏。原始593音主段的全部乐句、桥段、四遍末副歌和最终长音均覆盖，没有将未对上的尾段截掉。 主段795谱面时值段=738有声段+57休止；81个同音弧延续后657独立起音。P2全部12行重新独立看图；P1/P3采用本代理此前全页独立读谱，P3r11b1按root已确认的独立半拍G与末4拍G分开。 P2r10b2印高2附点八分、高3十六分、高3八分、高3八分、高3二拍；只有最后八分高3连末二拍及下一小节二拍，前十六分与第一八分不连。P2r10b3拾音印5/高2/高3，逐像素保留，不套其他重复句5/高1/高2。P2r12b6的6到7不同音弧按连奏，不能合并。 主段原593起音按所选版改为657：67个明确新增、3个额外重复B4起音合并。source125并124、397并398、486并487；均是披露的版本取舍，不假称源中这些额外攻击有印谱延音弧。无源音省略。 19个源音高选版改变逐项给出：70,119,132,147,164,176,234,267,283,296,379,380,393,406,437,482,495,526,538。主段多次原E4副歌拾音按220276改D4；379/380原B4/G4明确重配为P3r2b1末A4/B4两拾音，不省略380。 相同音连续歌词重复的历史精确对位不可唯一恢复，首段6组G重复采用原首音对应印首音的左对齐规则；其余动态对齐仅作索引导航，音高/时值/延音/小节均来自独立视读，所有新增独立起音都列出。237/238依原长间隔与印谱乐句边界手动对位；577短G对应最后4拍连音，前一独立G半拍新增。 507个原休止逐项保留审计记录。原开头0.725拍精确保留；其余按所选谱连续乐句/休止明确替换，未按小间隔阈值盲目量化。全部20个大于等于0.125拍的原间隔另有逐项音乐说明，长空白不是无声删除：大多按印谱补足被原短按截断的长音并保留印谱休止；603/613/1106无印休止时明确并入持音。 尾声11音source593..603全部由173685P4 F段最高声部核实：E4:3 D4:1 B3:3 D4:1 E4:3 D4:1 B3:3 D4:1，反复后E4:3 D4:1 B3:3。第8音后按反复记号回F首。右手和弦其他音与左手伴奏均不加入，保留本源单旋律范围。 尾声最后source603 B3原仅1.0625源拍，前两同类B3原4.607917/4.43125源拍；明确按所选印谱把末B3补满3拍。原文件结束于第二遍F第二小节第一枚B，后续D、F后段和最终琶音和弦不在原源范围，因此不增加。单声部末音完整而非整曲钢琴完整结尾。 本提案668音58休止726事件；全部604原音已记录去向，3合并、67新增、19音高改变，所有507原休止显式处置。主段末G10拍和尾声B3三拍完整；尚待root独立复读与正式软件验收。未人工试听、未录音对齐、未真实游戏测试。 root另录全56个P2小节与11音钢琴尾声，P1/P3复用此前完整独立输入的root页谱并核查跨页连音与本源起点。root最初P2r8b4出/现误录成单个一拍，原像素二次放大确认是两个独立半拍，候选正确；保留首次草读和差异，不冒称盲读。最终726事件逐音高/时值/起点完全一致。 root从原始jianpu字符串另行解码1111事件，604音507休止逐去向相符；确认3组明示相邻同音整合、67新增、19音高选版差异、20长休止说明。主段G4末10拍与尾声B3末3拍均完整；正式软件审计及10拍阈值提示另附，未人工听感或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "cedc940dc1d1436e3d35c3380934578fbe62177c8f47dcdda9f85379a681266e"
+  },
+  "note_count": 668,
+  "event_count": 726,
+  "duration_seconds": 293.8625,
+  "limits": [
+    "Explicit mixed arrangement of Chinese vocal edition and separate piano outro; no claim of exact original community historical edition or recording reconstruction.",
+    "120BPM is an explicit practice choice retained from source, not either printed score tempo.",
+    "Same-pitch lyric associations are not historically unique;67attacks added,3repeated attacks consolidated,19pitches changed explicitly.",
+    "Original performed gaps are fully disclosed and replaced with selected notation, except exact leading0.725; final source603 truncatedB is extended to3beats.",
+    "No human listening, recording alignment or real-game verification.",
+    "Production audit retains one >8beat advisory for event715 G4 held10beats; individually resolved against printed2+4+4tie. No other findings waived.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-8c7c5796e90abd97-secret-base-complete-source.review.json",
+      "sha256": "df1e1cf3a85273c388e3d9b219cdab1730932111f9ba46b111d112cd8e743afc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "20edf6584173f5910d72afef11208f8e8f2ea496f7aa3543f040667a46a22bc2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "e13549c57c3fca4501a0a4dc4f9b3c57bdc38536d40ebb4c1b49752419613526"
+    },
+    {
+      "name": "0001-d21800006006.json",
+      "sha256": "2e0ef7bfc64b535c7bed13895368c597f578dded1669d11a129d767181998e03"
+    },
+    {
+      "name": "duration-advisory-resolution.json",
+      "sha256": "1670f25b95b9f807f8ce5992838769dbe24a5125970e52255a9f5f9842113e9f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

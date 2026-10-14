@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-723f1a01dcf7a311",
+  "source_id": "deck-e4fc5ca77a30",
+  "work_id": "work-deck-e4fc5ca77a30",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%93%80%E4%B8%8E%E6%82%B2-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-c87fbf7889.deltamusic",
+  "status": "reviewed",
+  "sha256": "60453ceec7617c2fb356923b54dca6add1856763579a877cf7d912ea1d0c761e",
+  "source_sha256": "bde1f2bd7dd7cbe61caf8b60ddc0830797c50828820815ded12080bb930d715d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.cangqiang.com.cn/bofang/3783.html",
+    "edition": "okok2016published26barmelody;livepage72BPM;Cbaseddegree-normalization",
+    "score_sha256": "a531f937d6a5550424345f41c79c7b604367da67b8dfe2a18603f1c3f1e3c6a5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 82,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "All82sourceattacks and2sourcepauses;complete26barreferenceAandBforms. Complete26barselectedpublicmelodyscore, A1-A17 andB1-B9. Every82sourceattack retainedinorder; all84sourceevents and89rawtokens individuallyaccounted. Noadded/omitted/mergedsourceattacks; sameCbasedpitchsequence throughout. RepositoryCommunityScoreConverter treatskeymetadataasdescriptive anddegreesagainstC4. Theoriginal1=Glabel doesnottranspose playback. SelectedGscoredegreecontentisnormalizedtoC4to preserveoriginalplaybackregister; sitekeynote1=G3isretainedwithoutclaimingthatitsregisterconventionequalsstaffconcertpitch. Source100.25beatsto104: A9rest0.5to2.5 restores2missingquarterrests; A10/A14/B1/B5 upper1halftoonebeat adds0.5each; upper2graceatA3 keepssource0.25beat andborrows0.25fromfollowingupper1(2to1.75). Allotherdurationssame. A3smallupper2gracehasunsizedprintedrhythm; quarterbeatallocationisexplicitimplementation, notclaimedprintedexactduration. Tied3and7notesareconsolidatedasprinted; ending6fourbeatsplus6fourbeatsremainseparateattacksasprintshowsnotie. BPM72fromlivepublicpage notation {bpm:72}, overridingoriginalunverified65. Imagehasnotempoannotation; nohumanrecordingalignment. Full104beatsat72=86.6666666667seconds. Searchservicerenderedcachednotationhad5wherecurrentrawpageandpublishedimageshow6. Evidenceusesactualsavedpageandimage, notcorruptedsearchsnippet. EOP17242/EOP7695andguzhengarrangementsarecomparison-only, notmixedintotimingauthority. Staticsoftware/selfcheckonly; nohumanlistening,noaudio-render,noGPU,noreal-game-inputtest. Root完整单页26小节另录音级/有理时值，84事件逐项一致；82源音全保留，无移音增删合组，末两A4全音符无tie，独立攻击保留。 六处改时值：A9补两拍休止，A10/A14/B1/B5高1各补半拍，A3小高2保留来源1/4拍从主音扣；倚音时值为编辑选择。 采用公开页面72BPM，图本身无数字速度；印谱G度数明确归一为C4，保留原程序音区，不声称与G调录音绝对音高一致。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a531f937d6a5550424345f41c79c7b604367da67b8dfe2a18603f1c3f1e3c6a5"
+  },
+  "note_count": 82,
+  "event_count": 84,
+  "duration_seconds": 86.66666666666667,
+  "limits": [
+    "A3gracetimeisexplicitquarterbeatimplementationborrowedfromnextmainnote.",
+    "C4degreenormalizationpreservesprogramsourcepitches;notrecordingconcertpitchalignment.",
+    "Noaudioorrealgametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e4fc5ca77a30-sadness-complete-source-v1.review.json",
+      "sha256": "44d21794487c21747fe02fd67cc617f78e821b1a0ddef9c11328bf2a160b34a5"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2a05620e39b2b06e6cd35f594b602d39c33cbc7844c3826bda59998734b70707"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "03d7642d048f28fe53c33a98f7533eabad62aa8dde957c444db9e07ed56167e0"
+    },
+    {
+      "name": "0001-d10e4c0af48e.json",
+      "sha256": "13c1974d5945e543e8002d3ce8a05fdd09d65138faa72ddebdc5c111a3b5eddc"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7eeb3c31c86da4dd",
+  "source_id": "zhouzhou-139",
+  "work_id": "work-ba32a4c54d20",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5608229fbf5c595ae7cdfc762a1ca151e2b2a99635c0f92a7b8f09d7bb399ddc",
+  "source_sha256": "666d3fac68f1fa8aa74f95147f7bebe32eb80bd3f41c64fee23e4a7a8d8c8fc1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/267902.html",
+    "edition": "机智的橘子G调4/4声乐，前两次终于与首段我们至人间；统一降7半音，按打印分值直奏、80自选练习速度。",
+    "score_sha256": "46de43fb5b4cba6411e432e549b1266ded2daefb710b44e4fd8f96f8de8c5011"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 102,
+    "maximum_parser_boundary_error_seconds": 1.049998843427602e-08
+  },
+  "review_note": "全部原8歌词行103音及4分句符，首两次终于至芒草末句间。 完整原8歌词行103音和4个竖线分句符全部保留解码与逐项处置；原始文件无BPM或可核准时值。103音全部映射到本次102个主旋律起音，未删尾。 采用机智的橘子编配267902的前两次终于忘记你两小节乐句，然后P2我们被困在至人间；保留各句内休止，明确略去来源没有的纯器乐空小节、随后两次开头再现及人间之后段落。原来源只有现有片段，不补成整首原曲。 参考1=G、4/4，普通G4降7半音为C4，高低八度照谱；80BPM为练习自选。原谱标以音频为主及摇摆，本版明确按打印分值直奏，三连音精确保留为1/3拍，不宣称复现录音微时值。 原我们都被与参考我们被有一字差异；原34/35两个D4选版合为参考被一个D4三连音，此为歌词版别简化，并非打印同音连线。 六处音高选版：原32 G3→D4，46 D4→E4，93 A3→C4，98 A3→C4，100 E4→F4，101 D4→E4；其余97原音高保留。原眉间与所选参考人间歌词差异明示。 4原竖线只作为分句结构符保存，不能机械判成固定拍长休止；本谱全部11休止按所选打印谱保留，含两次终于句末各两个1拍休止。 102音11休止113事件共45拍80BPM=33.75秒，终E4一拍完整；待独立图先二读与正式软件审计，没有人工试听、录音对齐或实际游戏。 首稿输出高音误用ASCII方括号，v2仅换为软件支持的【】；113事件的音高/时值/顺序及全部音乐读数未变，原稿保留。 独立代理先从两页原图保存102音11休止的113事件45拍数值，后逐图重查8处初读差异（2个八度点、6个时值），最终均支持root与候选；未把有错初读稿称为零差异。 独立报告两句final6措辞错误由单独addendum纠正：P1-2/P1-4均是该小节第1个6的低八度点，第7个6初读已正确；原报告与数值全部保留。 root从冻结JSON另解103音及4结构符，完整逐项核对；根据独立报告8项图证修正重建二读数组，与参考/候选时间线全部113事件音高/时值逐一相同，起点秒数亦全检。 源34/35合并仍是我们都被与我们被的歌词选版，不声称同音tie。直奏打印节奏及三连音、80自选练习速度、未复制录音摇摆均明确。正式软件审计随后执行；没有人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "46de43fb5b4cba6411e432e549b1266ded2daefb710b44e4fd8f96f8de8c5011"
+  },
+  "note_count": 102,
+  "event_count": 113,
+  "duration_seconds": 33.749999989499976,
+  "limits": [
+    "Straight practice rhythm, not recorded swing.",
+    "80BPM chosen for practice.",
+    "Independent review and formal software checks pending.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-139-bath-complete-source.review.json",
+      "sha256": "11a73a23e9f3a38c5806f470a1147e561e5d0bd6bcbb019e1483fbde4a7d59fa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bf5492ad3ce5d0f769afb79efbd6595fdca9459526b9f411dbb2fb676a9b60cc"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7c0a99472893a134fd950291b78822acd9daa788f137e9dca0ad8a6b80f4c1c6"
+    },
+    {
+      "name": "0001-f05e5529cecd.json",
+      "sha256": "52da77a1cda48edcf0f9f4baded898191ae90580c1623361e0942c1832c83fe0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

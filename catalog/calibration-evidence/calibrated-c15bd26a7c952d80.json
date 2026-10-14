@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c15bd26a7c952d80",
+  "source_id": "social-037e837468fc222e",
+  "work_id": "work-8fa7c555fdf8",
+  "source_url": "https://www.bilibili.com/video/BV1ppe36dEwL/",
+  "status": "reviewed",
+  "sha256": "082a265320969d48ecbed5ac0c92e3f49d56596ec19629a4527d654677baf91e",
+  "source_sha256": "cfae2d587c15b9fd5d8a5841e02b5812c7065069bb4114c05020366657873a40",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.bilibili.com/video/BV1ppe36dEwL/",
+    "edition": "Original-post audio five complete themes0.000–60.018s;134 nominal principal tones and17 practice gaps;all126 static heads preserved and whole-theme revised;60BPM encodes seconds only",
+    "audio_sha256": "fc4ccdd8cd448786bd86cef73929d11e5bb09a6c6078fc5e6b334504f12ab057",
+    "start_seconds": 0.0,
+    "segment_start_seconds": 0.0,
+    "segment_end_seconds": 60.018
+  },
+  "review_method": "Root complete original126 glyph/group reading and all7 full-range original-audio harmonic-spectrum/PCM visual review; independent134-tone sequence; transparent same-theme practice revision, no pointwise restoration claim.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 134,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "Root重新完整查看原帖静态谱：五段17/20/38/18/33共126音头，所有高低音标记、半音点、空格及分组文字逐组独立核实。原谱未给时值，半音方向也未明示，不将键位图直接当绝对音高。 参考是同一原帖BV1ppe36dEwL的公开音轨，非另一钢琴版本。完整选择0.000–60.018秒五主题；0.000已处于F4，不宣称恢复视频剪入前攻击。录音总长约78.994秒，60.018是第五主题完整F4释放边界，随后60.158开始额外Eb4句，不能称文件结束。 Root逐张实际查看全七张原轨频谱/波形与候选覆盖图，独立另录五组17/20/41/20/36共134主音，完整顺序与候选一致。第一段F4 C5 C5 Ab4 G4三次后F4两次；原谱末3按整个第一主题改编，未伪称逐头同一。 第二主题8.530开始低C3，Bb3两次、Db4、Bb3的结构重复，再转低F3与C4/F4结构。8.53/10.73的C3和12.98/15.18的F3已检查低基频与其谐波族，旧候选最强G4/C5峰是第三泛音，不沿用该错误。 第三段包括两组G4同音短触发及F4、Eb4、C4完整延续，第四段包括Gb4及Bb4重触发，原17/20/38/18/33头逐段明确被同一原帖录音对应完整主题替换；未伪造126到134逐音对齐。 22.04的F4弱再起与56.66的Eb4再起按可见谐波/波形的局部谷值及再增长取两次练习攻击；背景游戏脚步会污染包络，不能主张精确物理攻击恢复。7.47额外F4、41.37重复Bb4及44.55重复C5均按同音能量变化选择，非照抄原音头数量。 原末五头完整保留在证据中，包括低2；输出按第五主题实际完整终止Ab4 G4 F4 G4 F4修订，末F4至60.018。原印谱键位/音区/半音与实际演奏的差异均以完整主题练习重编披露，不机械删末低2。 134主音加17练习间隙为151事件。60BPM仅一秒一拍的时长编码，60.018拍等于60.018秒，不推定原歌曲BPM、拍号或精确门限。13秒附近10ms单帧不确定释放已吸收至前Bb3练习时长；C4局部偏低约0.35半音采用名义标准音量化。 全部所选五主题已完成AI视觉音乐复核；保持原帖更多后续音乐不属于原五段的范围说明。无人类实际试听、无实机游戏验收。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "fc4ccdd8cd448786bd86cef73929d11e5bb09a6c6078fc5e6b334504f12ab057"
+  },
+  "note_count": 134,
+  "event_count": 151,
+  "duration_seconds": 60.01799999999999,
+  "limits": [
+    "五段主音练习重编，完整保全原126头，但不宣称逐音还原静态键位谱。",
+    "音高采用标准半音量化；短再起、滑变、释放均为披露的练习选择。",
+    "选取60.018秒止于第五主题，整段原录音仍有后续音乐。",
+    "无真人试听和实机游戏验收。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-037e837468fc222e-five-original-audio-themes-v3.review.json",
+      "sha256": "9a537a9dd94314a94b4d53132dc55e7ca113eb3ea601c6e57164fae21094d183"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "60bc87ce213a7a6735396e96c2a1a0974b917495fe909328171e66a3223c61ff"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "861896a9b448081733e17b02542c23d294766d19f021b105a0c446273ef93f1b"
+    },
+    {
+      "name": "0001-5657f434e3ee.json",
+      "sha256": "2adddf8e862ad4fef515e706d38bbfdfe984ff522a4bc6fc5c82bfbb68d57551"
+    },
+    {
+      "name": "public-review-summaries-20261013-glory-social126-v1.json",
+      "sha256": "a00c64744bafa8890ace1d03143227503e135cee4198ce0860c4b1e016ff15f9"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

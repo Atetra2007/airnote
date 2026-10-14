@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-59ae863dbef81f96",
+  "source_id": "zhouzhou-192",
+  "work_id": "work-c9cc53ec2c9f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6dd321534b973a871c392a79df3117b4f2580a7204e26d61690f3d55244d63e0",
+  "source_sha256": "238a8c59036b900be88a3e0ffe3a52f1cbe0c5f9e8965d8e067c36cdbd43b71a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=HGGOv9gAprQ",
+    "edition": "Complete selected first4 phrases35-head roll; declared31-source simplified attacks, relative+2,122BPM,editorial4/4",
+    "score_sha256": "277495e26046d88f669cff046f1508eac021de7ae2f88387223790a6f0092151"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 31,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "All31 original notes1:1 and complete selected four tutorial phrases35heads; reference repetitions explicitly merged 身份选择Aankhein Khuli Ho Ya Ho Band（Mohabbatein / Jatin-Lalit / Lata Mangeshkar,Udit Narayan）；公开Kpnotes首8音和第三句8音与源连续相同，公开作者Bollypiano教学视频完整首4句另行实际视读。不是先前排查的Nijamena。 原31音、4行完整重新解码，原时值/BPM均未知，全部保留1:1，不把来源行末自动当拍号；所选教程首4句35音头共32拍，给出8个4拍栏的编辑性网格。 视频约12.30–28.04秒的完整4句逐头读取字母、相对琴键音程、重复头和长度：9+8+9+9=35头，每句8拍；后续桥段pickup和剩余视频未选入，也不声称全部316秒都已读。 速度选择122BPM，由所选35头滚动长度和完整32拍帧时间共同支持；额外公开歌曲数据库122仅为线索，不是独立视觉验收，也不是试听或原发行录音对齐。 视频写Gminor，但没有数字八度标签。G4是显式坐标锚点，按源首A4保留原八度并整体相对+2至Aminor；不声称视频作者有打印G4。输出范围67–76。 简化攻击保留：source2把视频ref2+3两个A半拍合为1拍B4；source23把ref24+25两次Bb各1拍合为2拍C5；source29把ref31+32+33三个G(.5+1+1)合为2.5拍A4。只省略4个公共编配重复攻击，原31攻击没有删除、合并、拆分或新增。 第二句选择教程的8头G/A/G/C/A/F/G/A，相对+2为A/B/A/D/B/G/A/B，保留简短句法；原source9 C5选择B4、source10 B4选择A4、source12 A4选择B4，其余5音高保留。不把Kpnotes10头装饰版硬套进去。 第四句选择教程的Bb/A/G/F/A/G/G简化，相对+2为C/B/A/G/B/A/A；原source27 B4明确选择G4、source28 A4选择B4，其余5音高保留。公开Kpnotes的E/B/D/B/A/G/B/A/A是另一更完整装饰句，不冒称本源原已逐音全同。 第一句与第三句所有原音高保留；源第3句末3个C5对应教程4个Bb重复的声明合并，节奏网格仍完整8拍。 Root完整二读35可见音头、10原帧上下文，独立输入35音数值数组与候选一致；重新解码31源音并检查全部输出、五处选版差异和三组参考重复攻击合并。源时值保持未知；输出31音、32拍、122BPM；软件生产检验另附。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "277495e26046d88f669cff046f1508eac021de7ae2f88387223790a6f0092151"
+  },
+  "note_count": 31,
+  "event_count": 31,
+  "duration_seconds": 15.737704918032787,
+  "limits": [
+    "5 explicit pitch selections and3 public repetition merge groups preserve source31 attacks",
+    "122BPM and4/4 editorial grid supported by visible roll and frame intervals; not printed score tempo",
+    "Absolute reference register not numerically labeled; original source octave anchors selected output",
+    "No listening, recording alignment or game proof",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-192-aankhein31-editorial-v1.review.json",
+      "sha256": "ad28e175bda9eebf028f6534309739c0d615540de368876a54d1bb233a6f271b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "60276e806f0862ed5ff1b7ed8a068a2888b45bd9921e5463a4de8b1a5edf2c94"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f3e65909c0347e9d6a20a6b3343ae03dc6085600c009a08e4d11309d18a30831"
+    },
+    {
+      "name": "0001-46da7b6e7460.json",
+      "sha256": "1c79a0f8e975c0763d416f615f27c6782077a42a0dbedbadb50c2588c42ff5f8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

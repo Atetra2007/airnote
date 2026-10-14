@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e3e3eaa99a32dc28",
+  "source_id": "social-87d546025a80238f",
+  "work_id": "work-757791a7e1b4",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=NVKqSrBA36Pj",
+  "status": "reviewed",
+  "sha256": "e9586ba079b13fc09ba8f88be675b9d384a782d93803a744fa81a10d301b63e6",
+  "source_sha256": "c3d0191cd91a7a622a32d736a742aa08b23831e7db1ba42386c0e727326ca294",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=FZyTPwbK5zo",
+    "edition": "AuthorpublicPDF actual109lastpickupand110..157RH8va;whole−24;E156/157real4beattie",
+    "score_sha256": "f601f5418a8af800a25e81c645bd08214112df56fc408f26d21e5d6e74f62155"
+  },
+  "review_method": "Root independent full printed two-page and six-crop reading; separately entered184-event timeline; independent original169 MIDI/messages verification; explicit nominal-practice articulation choices",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 169,
+    "maximum_parser_boundary_error_seconds": 1.5205614545266144e-12
+  },
+  "review_note": "Root完整查看作者nori公开PDF第5/6页及全部六张原分辨率细节图，独立另录109末两16分弱起至110–157的全部主旋律。169个原音逐序完全对应印谱written pitch，没有以同名异曲替代；原0/1正是E4/F#4弱起，原2是110首G4，撤回此前首3音未知的猜测。 印谱为G调、2/4、quarter88，右手持续8va。练习全曲较印谱实际发声音高降24半音，即较原源降12半音，范围52–71；没有局部折叠或省略源音。 Root独立用mido从原字节重解169音及全部消息，与保存的完整SMF逐项一致。SMF480PPQ与DFHS96PPQ全部音高和起点相同，15个gate有1个480PPQ tick的舍入差，二者均原样保留。335原DFHS事件含166间隙全部留存并映射。167原起点完全对应印谱，仅140/142各晚1个96PPQ tick改回77/78整拍。 练习采用印谱名义时值和15处真正休止；全部169原gate与名义时值的差异均逐头披露，不能概括为只修了1tick。断音/连奏表情不被伪称为固定人演门限；导出短gate和1tick空隙不额外拼成谱面休止。 m123和131三连音各三音总半拍；m142含16分休止。m121末E4/F#4及m122首G4通过细节图重核，使用已纠正的v2，旧v1错误保留。 尾153–155为E5 D5 G5 A5 / B5附点四分 A5 G5各16分 / F#5 G5 F#5 D5；156/157顶E5二个二分同音tie合4拍。低A4→G#4是未选和声，不是尾音F#5，也不把该终止删除为串烧过渡。原168 E5门限3拍保存在证据；所选实际发音E6经全曲降24变E4持续4拍。 共169音+15休止、184事件、96.5拍，65.795454545秒是固定88练习时长；不声称原92BPM音频还原。仅完整现有来源范围，未含串烧其他曲目；未人工试听或实机游戏验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f601f5418a8af800a25e81c645bd08214112df56fc408f26d21e5d6e74f62155"
+  },
+  "note_count": 169,
+  "event_count": 184,
+  "duration_seconds": 65.7954545454559,
+  "limits": [
+    "仅作者串烧中ボクとワタシの完整主题与原169音范围。",
+    "固定88BPM名义印谱时值；不声称断音gate为人演录音还原。",
+    "右手8va后统一降24半音，不含其他和声声部。",
+    "未真人试听、未实机游戏验收。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-87d546025a80238f-complete169-nori-rh96_5-v1.review.json",
+      "sha256": "d9984f21fce1278e2c2994acc45513d0d8a735e7c12dc8917025fe625a6c9eff"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9bfcc8ed9aa3ee165be181843a2dd52c0cba1e10bfc272123af8d368718f4f6c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "15979c57412545053c0fe1b264a4e3ba6f67b192cb87122c379714ba541cfc19"
+    },
+    {
+      "name": "0001-3880e6a6cf72.json",
+      "sha256": "f16878dbc72d47cd4358b83686f9a331a87732c7a52ffe52a74f60c7285bb907"
+    },
+    {
+      "name": "public-review-summaries-20261013-mocai169-v1.json",
+      "sha256": "e657c913c420d82475ec008b7e81d40abdd591ee50fd2840e90d1df6aa171d15"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5bb648546fb7f578",
+  "source_id": "zhouzhou-174",
+  "work_id": "work-f5fbd17c606d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3f31be3233da8766899b2758cdddb52d9c7a8951f4b742ca63c4e5a3977b771f",
+  "source_sha256": "f942b9420a24d096b0ffb1ac7ac9bd7e16c99b9f8930ab25dae30fbebee5ba2e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18801.html",
+    "edition": "Dquarter66;m5last1-m18first3;m10=2/4;Coutputminus2;printedgracenotesnotadded",
+    "score_sha256": "52ea4bc4bd67e83a554dbb93c24df3b6f85c328d1a06ea58f4d606bc1a8e3c99"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 83,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "Complete82source-notes;50beats;1source55split;allprintedtiescompleted;followingpickupnotadded 完整原源82音90tokens、8个未知|逐token保留；原时值未知，未知边界不自动转休止。原源无b1对象，不产生假flat。 身份WanBao其实雨也没多大；EOP18801完整两页D调4/4四分66，m10明确2/4后m11回4/4。两页与全选段细图实际查看；C输出参考统一-2，原source C域大部分原pitch直接保留。 源起没有多难位于m5末3主音（1拍）与m6首普通6；完整顺序m5最后1拍→m6–9→m10完整2/4→m11–17→m18首3拍，共50拍。m18末下一轮其实拾取不在原源，明确不加。 m5末高3/高5/高1分别.25/.5/.25；m6普通6与高2各1拍，其余拾取组3/5/1各.25/.5/.25。m7普通5喊1拍，source12高3.25/13高3.5/14普通5.25/15普通6=1；明确13原G5改E5、14原B4改G4、15原C5改A4。 m8同m6；m9普通5=1，高3/高3/普通5=.25/.5/.25，普通6=2拍并与m10首同音6=1拍tie合3，对source31。m10印刷rest.5后高2/high3各.25作为其实；并非原|生成休止。 m11雨也没多大主音6/.5、high3/.5、high3/.5、6/.25、high3/.25、high2/1；其实两音已在m10，原多字含6/high3两次起音，与原源34–39全部一致。rest附点八分.75及是普通5.25；source40原C5改打印普通5G4。 m12风/在/拼三个高5各.5，命高2.25、刮高3.25与下一高3quarter1 tie合1.25；rest.75之后在高3.25。m13对/人/指/着/我/说/你/且：6/high3/6/high3/5/high2/high2/high1各.5。 m14看印刷高5十六分.25及高3八分.5两个起音，source55原高5明确拆G5.25→E5.5；后source56高3另起十六分.25跨灰高3.5 tie合.75，source57高2.5、source58高3quarter1是原有后段装饰，全部保留。rest.5后source59/60赤脚两个高3各.25。 m15的孩子长大：普通6/high3/high3各.5、普通6.25、高2.25跨下一灰高2quarter1与dash1延续，合2.25拍；source61–65全部同原pitch。m16微高5.5，笑/着两高2各.25、不高2.5、说高3.25、话高2.25与下一灰2.25 tie合.5，再高1附点.75跨灰1附点.75合1.5，最后你高3.25。 m17别/和/我分别6/high3/high3各.5，吵普通6.25、了高2.25跨灰2quarter1 tie合1.25；你普通7.5、走普通5.25、吧普通6.25，与m18首6及两dash共3拍tie合3.25。原末吧完整延音，不截成.25，不插下一其实两拾取。 印刷小倚音（如m7/m9/m11/m12/m13/m14/m15/m16/m17的前倚音和m17普通7前小6）均不在原82主音内，明确选主旋律主音，不增加未量化倚音时值；小音图形及所选主音时值全部保留图读。 83输出起音源覆盖82音，差1为source55显式印刷melisma拆分；4个打印rests总2.5拍，0新增无来源起音0删源。只有13/14/15/40与55第二拆分输出改pitch，其他保持原C音域；无自动最高音/范围筛选。66为打印练习BPM，未录音对齐；待root独立全段二读与正式软件审计。未UI/音频/GPU/实机游戏。 Root实际看完整两页EOP18801及m4–18三张细图，独立录入全部95主谱token并合8个tie，得到87事件50拍；D调四分66，m10确为2/4，统一降2至C，所有时值和音高完全一致。 Root另解原90token的82音和8未知竖线，验证全源映射。四处单音修改13/14/15/40、55拆成G5十六分+E5八分，56后续E5另起.75拍，全部明确选版，没有丢失原尾。 选段m5末1拍至m18首3拍；m9跨m10的A4为3拍、m15 D5为2.25、m16 C5为1.5、末A4跨小节3.25全保留。打印小倚音采用仅主音编配而不添加不量化装饰；四个谱面休止保留，未知原竖线不虚构休止。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "52ea4bc4bd67e83a554dbb93c24df3b6f85c328d1a06ea58f4d606bc1a8e3c99"
+  },
+  "note_count": 83,
+  "event_count": 87,
+  "duration_seconds": 45.45454545454545,
+  "limits": [
+    "Communityselectedmainvocalmelody;originalcutorder;printedgracenotesnotadded.",
+    "Source55explicitprintedmelismasplit;4originalpitchesand1splitpitchchanged.",
+    "Sourceoriginaltimingunknown;allmarkerspreserved;4printedrestsexplicit.",
+    "Printedpractice66notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-174-rain-v1.review.json",
+      "sha256": "ee3b066e7586629807759f549eff0377abc7090356a633c73d45d5d240326c11"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3a5679da77d543cfbd988e5aaff6f58c50843f8b2de3993c89357577e98b2b46"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2ec07ab00855822d85c60e9ad3313a8b96899378e9982b6237b70fd361338f95"
+    },
+    {
+      "name": "0001-55002d2b8b64.json",
+      "sha256": "f1072b0f4d3d38f47c400aa4425c9fb43b58751861c32ceaa4e1bfe3e0b900a2"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

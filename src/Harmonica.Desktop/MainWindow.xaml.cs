@@ -34,6 +34,7 @@ public partial class MainWindow : Window
     private ScoreFormatException? scoreError;
     private bool loading, selectionGuard, dirty, busy, allowClose, closing, editMode, bpmConfirmed = true;
     private bool modalOpen;
+    private bool InGameMode => PlaybackModePicker?.SelectedIndex == 1;
     private int highlighted = -1;
     private CancellationTokenSource? operationCancellation;
     private CancellationTokenSource? playbackCancellation;
@@ -47,6 +48,7 @@ public partial class MainWindow : Window
         this.store = store;
         logPath = Path.Combine(store.Root, "desktop.log");
         InitializeComponent();
+        InitializeLibrary();
         InitializeGuide();
         parseTimer.Tick += (_, _) => { parseTimer.Stop(); ParseEditor(); };
         engine.Progress += progress => Dispatcher.BeginInvoke(() => Playback_Progress(progress));
@@ -66,9 +68,10 @@ public partial class MainWindow : Window
         hwndSource?.AddHook(WindowMessage);
         RegisterHotkeys();
         RefreshLibrary();
-        var initial = store.Items.FirstOrDefault(item => item.Id == store.Settings.LastSelectedId)
-            ?? store.Items.FirstOrDefault(item => item.Example && item.Available)
-            ?? store.Items.FirstOrDefault(item => item.IsDefaultVariant);
+        var visibleItems = store.GetWorks().SelectMany(work => work.AllVariants).ToArray();
+        var initial = visibleItems.FirstOrDefault(item => item.Id == store.Settings.LastSelectedId)
+            ?? visibleItems.FirstOrDefault(item => item.Example && item.Available)
+            ?? visibleItems.FirstOrDefault(item => item.IsDefaultVariant);
         if (initial != null) await SelectItem(initial);
         foreach (var warning in store.Warnings) Log(warning);
         if (store.Warnings.Count > 0) Status(string.Join(" ", store.Warnings), true);
@@ -106,53 +109,23 @@ public partial class MainWindow : Window
         if (store.Settings.Theme == "System") ThemeService.Apply("System");
     });
 
-    private void RefreshLibrary()
-    {
-        if (SongList == null) return;
-        var query = SearchInput.Text.Trim();
-        var quality = SelectedQualityFilter();
-        var items = store.GetWorks()
-            .Select(work => work.Filter(query, quality, current?.Id))
-            .OfType<LibraryWork>();
-        if (FavoriteFilter.IsChecked == true) items = items.Where(work => work.Favorite);
-        if (RecentFilter.IsChecked == true) items = items.Where(work => work.LastPlayed != null).OrderByDescending(work => work.LastPlayed);
-        else items = items.OrderByDescending(work => work.Variants.Any(item => item.Example))
-            .ThenByDescending(work => work.Variants.Any(item => item.IsCalibrated))
-            .ThenByDescending(work => work.Variants.Any(item => item.Available));
-        var filtered = items.ToList();
-        selectionGuard = true;
-        SongList.ItemsSource = filtered;
-        SongList.SelectedItem = filtered.FirstOrDefault(work => current != null && work.Variants.Any(item => item.Id == current.Id));
-        selectionGuard = false;
-        EmptyLibrary.Visibility = filtered.Count == 0 ? Visibility.Visible : Visibility.Collapsed;
-        var works = store.GetWorks();
-        LibraryCount.Text = $"{works.Count(work => work.Variants.Any(item => item.Available))} 首本地 · {works.Count} 首作品";
-    }
-    private LibraryQualityFilter SelectedQualityFilter() => QualityFilter.SelectedIndex switch
-    {
-        1 => LibraryQualityFilter.LocalAvailable,
-        2 => LibraryQualityFilter.ReviewedFragment,
-        3 => LibraryQualityFilter.UnknownBpm,
-        _ => LibraryQualityFilter.All
-    };
-    private void Search_Changed(object sender, TextChangedEventArgs e)
-    {
-        if (!IsLoaded) return;
-        RefreshLibrary();
-        UpdateVariantPicker();
-    }
-    private void Filter_Changed(object sender, RoutedEventArgs e)
-    {
-        if (!IsLoaded) return;
-        RefreshLibrary();
-        UpdateVariantPicker();
-    }
     private async void SongList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         if (selectionGuard || SongList.SelectedItem is not LibraryWork work || work.SelectedVariant == current) return;
-        if (closing || busy || !await ConfirmUnsaved()) { RefreshLibrary(); return; }
-        await Stop();
-        await SelectItem(work.SelectedVariant, !work.HasTemporarySelection);
+        if (librarySelectionPending || closing || busy) { RefreshLibrary(); return; }
+        librarySelectionPending = true;
+        var keepListFocus = SongList.IsKeyboardFocusWithin || focusLibraryAfterSelection;
+        try
+        {
+            if (!await ConfirmUnsaved()) { RefreshLibrary(); return; }
+            await Stop();
+            await SelectItem(work.SelectedVariant, !work.HasTemporarySelection);
+        }
+        finally
+        {
+            librarySelectionPending = false;
+            if (keepListFocus) FocusLibrarySelection();
+        }
     }
     private async void VariantPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
@@ -170,6 +143,13 @@ public partial class MainWindow : Window
             var next = item.Available ? await store.ReadDocumentAsync(item) : new ScoreDocument(item.Title, item.Bpm, 20, "", NeedsBpmConfirmation: !item.BpmKnown);
             InvalidateGuideDocument();
             current = item;
+            ScoreOriginText.Text = item.Available ? "本地曲谱" : "曲库预览";
+            ScoreCreditText.Text = string.Join(" · ", new[]
+            {
+                string.IsNullOrWhiteSpace(item.SourceAuthor) ? "" : "来源：" + item.SourceAuthor,
+                item.RhythmLabel
+            }.Where(value => value.Length > 0));
+            ScoreCreditText.ToolTip = ScoreCreditText.Text;
             document = next;
             bpmConfirmed = !next.NeedsBpmConfirmation;
             loading = true;
@@ -190,7 +170,7 @@ public partial class MainWindow : Window
             SourceText.Text = string.Join("\n", new[]
             {
                 source?.Description ?? (item.Example ? "本项目原创示例，可分享。" : "个人本地曲谱，不会上传。"),
-                referenceInfo.Length > 0 ? "参考：" + referenceInfo : "",
+                referenceInfo.Length > 0 ? item.ReferenceLabel + referenceInfo : "",
                 item.RhythmLabel + "。"
             }.Where(line => line.Length > 0));
             ReferenceButton.Visibility = item.Reference?.Url != null || source?.EvidenceUrl != null ? Visibility.Visible : Visibility.Collapsed;
@@ -226,7 +206,7 @@ public partial class MainWindow : Window
         if (VariantPicker == null) return;
         selectionGuard = true;
         var matchingWork = current == null ? null : store.GetWorks().FirstOrDefault(work => work.WorkId == current.WorkId)
-            ?.Filter(SearchInput.Text.Trim(), SelectedQualityFilter(), current.Id);
+            ?.Filter(new LibrarySearchQuery(SearchInput.Text), SelectedQualityFilter(), current.Id, LocalFilter.IsChecked == true);
         LibraryItem[] variants = matchingWork?.Variants
             .OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Variant, StringComparer.OrdinalIgnoreCase).ThenBy(item => item.Id, StringComparer.Ordinal).ToArray() ?? [];
         VariantPicker.ItemsSource = variants;
@@ -257,6 +237,7 @@ public partial class MainWindow : Window
         if (sender == BpmInput) { bpmConfirmed = true; UpdateBpmLabel(); }
         dirty = true;
         DirtyText.Visibility = Visibility.Visible;
+        UpdateEditorActions();
         parseTimer.Stop(); parseTimer.Start();
     }
     private bool ParseEditor()
@@ -294,15 +275,24 @@ public partial class MainWindow : Window
     {
         NotesPanel.Children.Clear(); noteTiles.Clear(); highlighted = -1; shownGuideEvent = -1;
         if (parsed == null) return;
+        var previousEnd = 0;
         foreach (var note in parsed.Events.Take(1000))
         {
+            // Only show separators that are present in the source; do not invent a time signature.
+            if (note.Offset > previousEnd && parsed.Document.Body.AsSpan(previousEnd, note.Offset - previousEnd).Contains('|'))
+            {
+                var separator = new Border { Width = 1, Height = 42, Margin = new Thickness(4, 9, 12, 16) };
+                separator.SetResourceReference(Border.BackgroundProperty, "LineBrush");
+                NotesPanel.Children.Add(separator);
+            }
+            previousEnd = Math.Max(previousEnd, note.Offset + note.Length);
             var content = new StackPanel { VerticalAlignment = VerticalAlignment.Center };
-            var pitch = new TextBlock { Text = note.Label, FontSize = 19, FontWeight = FontWeights.Medium, HorizontalAlignment = HorizontalAlignment.Center };
+            var pitch = new TextBlock { Text = note.Label, FontSize = 24, FontWeight = FontWeights.Normal, HorizontalAlignment = HorizontalAlignment.Center };
             pitch.SetResourceReference(TextBlock.ForegroundProperty, "InkBrush");
-            var duration = new TextBlock { Text = $"{note.Beats:0.###} 拍", FontSize = 9, Margin = new Thickness(0, 5, 0, 0), HorizontalAlignment = HorizontalAlignment.Center };
+            var duration = new TextBlock { Text = $"{note.Beats:0.###} 拍", FontSize = 11, Margin = new Thickness(0, 7, 0, 0), HorizontalAlignment = HorizontalAlignment.Center };
             duration.SetResourceReference(TextBlock.ForegroundProperty, "MutedBrush");
             content.Children.Add(pitch); content.Children.Add(duration);
-            var tile = new Border { Child = content, MinWidth = 47, Height = 62, Padding = new Thickness(6, 1, 6, 1), Margin = new Thickness(0, 0, 5, 5), CornerRadius = new CornerRadius(7), Background = Brushes.Transparent, ToolTip = $"{note.Label} · {note.Beats:0.###} 拍" };
+            var tile = new Border { Child = content, MinWidth = 48, Height = 66, Padding = new Thickness(7, 1, 7, 1), Margin = new Thickness(0, 0, 7, 12), CornerRadius = new CornerRadius(3), Background = Brushes.Transparent, ToolTip = $"{note.Label} · {note.Beats:0.###} 拍" };
             var tileIndex = noteTiles.Count;
             tile.ToolTip = $"第 {tileIndex + 1} 音 · {note.Label} · {note.Beats:0.###} 拍";
             if (InGuideMode && tileIndex == selectedGuideEvent)
@@ -310,13 +300,25 @@ public partial class MainWindow : Window
             tile.MouseLeftButtonDown += (_, _) => SelectGuideTile(tileIndex);
             noteTiles.Add(tile); NotesPanel.Children.Add(tile);
         }
-        ScoreHint.Text = parsed.Events.Count > 1000 ? "预览前 1000 音；编辑器可查看完整谱面" : "高低音与时值 · 播放时跟随高亮";
+        ScoreHint.Text = parsed.Events.Count > 1000 ? "预览前 1000 音 · 编辑器可查看完整谱面" : "数字简谱 · 时值以拍为单位";
     }
     private void SetEditorVisibility()
     {
         BodyInput.Visibility = editMode ? Visibility.Visible : Visibility.Collapsed;
         ScoreView.Visibility = editMode ? Visibility.Collapsed : Visibility.Visible;
-        EditButton.Content = editMode ? "预览" : "编辑";
+        EditButton.Content = editMode ? "完成编辑" : "编辑";
+        UpdateEditorActions();
+    }
+    private void UpdateEditorActions()
+    {
+        TitleInput.IsReadOnly = !editMode;
+        SaveButton.Visibility = editMode || dirty ? Visibility.Visible : Visibility.Collapsed;
+        SaveCopyButton.Visibility = editMode ? Visibility.Visible : Visibility.Collapsed;
+    }
+    private void DetailSurface_SizeChanged(object sender, SizeChangedEventArgs e)
+    {
+        // Keep the score usable at the minimum window height; provenance remains in Details.
+        ScoreCreditText.Visibility = e.NewSize.Height < 420 ? Visibility.Collapsed : Visibility.Visible;
     }
     private void Edit_Click(object sender, RoutedEventArgs e)
     {
@@ -352,6 +354,7 @@ public partial class MainWindow : Window
             }
             document = doc; dirty = false; current?.Refresh();
             DirtyText.Visibility = Visibility.Collapsed;
+            UpdateEditorActions();
             RefreshLibrary(); Status(copy ? "已保存为独立副本，原谱保留。" : "已保存到个人曲库。", false);
             return true;
         }
@@ -440,6 +443,7 @@ public partial class MainWindow : Window
         if (!await PrepareImport()) return;
         InvalidateGuideDocument();
         current = null; document = new ScoreDocument("未命名曲谱", 120, 20, "1 2 3 0 |", NeedsBpmConfirmation: true); bpmConfirmed = false;
+        ScoreOriginText.Text = "新建曲谱"; ScoreCreditText.Text = "个人曲谱"; ScoreCreditText.ToolTip = null;
         UpdateVariantPicker();
         SourceText.Text = "个人本地曲谱，不会上传。";
         ReferenceButton.Visibility = Visibility.Collapsed;
@@ -518,7 +522,7 @@ public partial class MainWindow : Window
         if (!IsLoaded) return;
         if (InGuideMode) { EnsureGuideDocument(); overlayWanted = true; guideFocusTimer.Start(); UpdateOverlayVisibility(); }
         else { StopGuide(); guideFocusTimer.Stop(); guideOverlay?.SetEditable(false); guideOverlay?.Hide(); }
-        ModeHint.Text = InGuideMode ? (hotkeys?.OverlayRegistered == true ? "手动弹奏 · 浮窗引导与等键练习" : "浮窗热键不可用 · 可用上方浮窗按钮") : GameMode.IsChecked == true ? "切到游戏后开始 · 自动输入有封禁风险" : "C 调合成音 · 用于核对旋律";
+        ModeHint.Text = InGuideMode ? (hotkeys?.OverlayRegistered == true ? "手动弹奏 · 浮窗引导与等键练习" : "浮窗热键不可用 · 可用上方浮窗按钮") : InGameMode ? "切到游戏后开始 · 自动输入有封禁风险" : "C 调合成音 · 用于核对旋律";
         if (InGuideMode && hotkeyWarning != null) Status(hotkeyWarning, true);
         UpdateAvailability();
     }
@@ -540,7 +544,7 @@ public partial class MainWindow : Window
             return;
         }
         if (modalOpen || closing || busy || engine.IsPlaying || !ParseEditor() || parsed == null || !await ConfirmBpm()) return;
-        if (GameMode.IsChecked == true && (hotkeys?.StartRegistered != true || hotkeys.StopRegistered != true)) { Status("热键不可用。请在设置中修改后再进行游戏演奏。", true); return; }
+        if (InGameMode && (hotkeys?.StartRegistered != true || hotkeys.StopRegistered != true)) { Status("热键不可用。请在设置中修改后再进行游戏演奏。", true); return; }
         var score = parsed;
         playbackCancellation = new CancellationTokenSource();
         playbackCompletion = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
@@ -548,7 +552,7 @@ public partial class MainWindow : Window
         try
         {
             if (current != null) { current.LastPlayed = DateTimeOffset.Now; await store.SaveLibraryAsync(); }
-            var mode = GameMode.IsChecked == true ? PlaybackMode.Game : PlaybackMode.Preview;
+            var mode = InGameMode ? PlaybackMode.Game : PlaybackMode.Preview;
             playbackCancellation.Token.ThrowIfCancellationRequested();
             var playing = engine.PlayAsync(score, mode, playbackCancellation.Token, store.Settings.GameNoteGapMs);
             UpdateAvailability();
@@ -578,7 +582,7 @@ public partial class MainWindow : Window
         if (allowClose) return;
         if (progress.State == "Playing")
         {
-            Status($"正在{(GameMode.IsChecked == true ? "演奏" : "试听")}  ·  {Math.Clamp(progress.EventIndex + 1, 0, progress.EventCount)} / {progress.EventCount}");
+            Status($"正在{(InGameMode ? "演奏" : "试听")}  ·  {Math.Clamp(progress.EventIndex + 1, 0, progress.EventCount)} / {progress.EventCount}");
             if (highlighted != progress.EventIndex)
             {
                 ClearHighlight(); highlighted = progress.EventIndex;
@@ -604,7 +608,7 @@ public partial class MainWindow : Window
     {
         if (PlayButton == null) return;
         bool occupied = closing || busy || engine.IsPlaying || GuideActive;
-        PlayButton.IsEnabled = !occupied && !engine.NeedsCleanup && parsed != null && (GameMode.IsChecked != true || hotkeys?.StartRegistered == true && hotkeys.StopRegistered);
+        PlayButton.IsEnabled = !occupied && !engine.NeedsCleanup && parsed != null && (!InGameMode || hotkeys?.StartRegistered == true && hotkeys.StopRegistered);
         StopButton.IsEnabled = occupied || engine.NeedsCleanup;
         if (GameNoteCheckButton != null) GameNoteCheckButton.IsEnabled = !occupied && parsed != null;
         TitleInput.IsEnabled = !occupied && current is not { Available: false };
@@ -612,9 +616,11 @@ public partial class MainWindow : Window
         BodyInput.IsReadOnly = occupied;
         EditButton.IsEnabled = !occupied && current is not { Available: false };
         SaveButton.IsEnabled = !occupied && parsed != null;
+        SaveCopyButton.IsEnabled = !occupied && parsed != null;
+        UpdateEditorActions();
         VariantPicker.IsEnabled = !occupied;
         ImportButton.IsEnabled = !occupied;
-        PreviewMode.IsEnabled = !occupied; GameMode.IsEnabled = !occupied;
+        PlaybackModePicker.IsEnabled = !occupied;
         UpdateGuideAvailability(occupied);
     }
     private void Settings_Click(object sender, RoutedEventArgs e)
@@ -721,7 +727,7 @@ public partial class MainWindow : Window
     private void Status(string text, bool error = false)
     {
         StatusText.Text = text;
-        StatusText.SetResourceReference(TextBlock.ForegroundProperty, error ? "ErrorBrush" : "InkBrush");
+        StatusText.SetResourceReference(TextBlock.ForegroundProperty, error ? "ErrorBrush" : "MutedBrush");
     }
     private void Log(string text)
     {
@@ -757,7 +763,7 @@ public partial class MainWindow : Window
             await store.SaveLibraryAsync();
             await engine.DisposeAsync();
             hotkeys?.Dispose(); hwndSource?.RemoveHook(WindowMessage);
-            parseTimer.Stop(); SystemEvents.UserPreferenceChanged -= SystemTheme_Changed;
+            parseTimer.Stop(); searchTimer.Stop(); SystemEvents.UserPreferenceChanged -= SystemTheme_Changed;
             allowClose = true; _ = Dispatcher.BeginInvoke(Close);
         }
         catch (Exception ex) { closing = false; UpdateAvailability(); ShowError(ex); }

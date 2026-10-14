@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a4b04294c7a1e12e",
+  "source_id": "deck-7061e1e2fcec",
+  "work_id": "work-deck-7061e1e2fcec",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%AD%8C%E5%94%B1%E7%A5%96%E5%9B%BD-%E4%B8%AD%E5%9B%BD%E5%B9%BF%E6%92%AD%E8%89%BA%E6%9C%AF%E5%9B%A2%E5%90%88%E5%94%B1%E5%9B%A2%E6%BC%94%E5%94%B1-Meimei-20b83f42b7.deltamusic",
+  "status": "reviewed",
+  "sha256": "08e9f90d83b5dc37a3a7915130c99a0988d778f00be2fa5d7683fd63c15c474c",
+  "source_sha256": "b8a62916f54e331f5b8a8f00c0d442fc4c2b0a83f6a8d97fded9275e376d9af9",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/347497.html",
+    "edition": "唐浩东制谱，F调2/4单声部声乐谱；原来源缩编形式；128BPM明示编配速度",
+    "score_sha256": "6aebcc44cd4e6ac477f28cd8f658460c795d85f437c486bf0be43b2fcab9ec3a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 145,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "来源146音及8休止全部处理；缩前奏、双副歌、额外重复主歌前8小节后完整主歌，止于返回低5弱起；145起音117.5拍。 唯一依据为唐浩东声乐谱，F调2/4；原稿名义C音高显式升5半音至F4主音，输出MIDI60–77。未混用EOP钢琴版。 源18与145的5__.没有印刷附点，分别从0.375拍改0.25拍。 源65/66第二处强跨C23–24同音连线合并为3.5拍；源25与45已是3拍同音延续，保持。 主歌高/山的3、平/原的6对应不同歌词，各保留独立起音；异音连奏线不合并。8个原休止保留。 保留来源缩前奏：略去一个重复2拍小节及第一段开唱前1拍五星弱起；不自动补成长版。 保留来源的主歌前8小节直接重复，最后低5五星弱起后即止；不宣称完整多段歌词演唱版。 128BPM沿用来源作为明示编配速度，声乐图片只有文字速度要求，没有印刷数字BPM。 Root独立转录与153事件完全相等：117.5拍、145起音、8休止；源18/145六teenth的额外附点去除，源65/66强的连线单次起音3.5拍。 原始JSON明确1=F、2/4，本修订以实际F4主音实现其调号；名义C解析结果升5半音，不把名义C解析音高误称来源明确C调。 全谱附点与连线逐处审查：多/么、繁/荣等异音弧线保留起音，亮与两处强的同音跨小节弧线按延音；高/山和平/原重复音分别对应两个字。 原稿跳过前奏第2个重复小节及首次五星弱起，又立即重复主歌前8小节，均保留并明示为来源缩编；结尾止于返回的五星弱起，不能宣称全歌曲式。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6aebcc44cd4e6ac477f28cd8f658460c795d85f437c486bf0be43b2fcab9ec3a"
+  },
+  "note_count": 145,
+  "event_count": 153,
+  "duration_seconds": 55.078125,
+  "limits": [
+    "Public secondary vocal transcription, not original composer manuscript or recording verification.",
+    "128BPM is an explicit arrangement choice; local source cuts and the extra verse opening repeat are preserved and disclosed.",
+    "No human listening or actual game check performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-7061e1e2fcec-vocal-sheet.review.json",
+      "sha256": "3ee2637dbac02142c72e3e99f3e5ad03f125f42245bd936a0e66fb1a4cb65e96"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1ecd03724789793da7a37817b7b2d691cbafe30b1ffbeb4993bf08d79d69a597"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "471ca1d9ffbd5a5585620ee604062d175f9845f2b630944999f3027a455f6c45"
+    },
+    {
+      "name": "0001-1bb312dd0968.json",
+      "sha256": "dd1edceafa292c3c65854b7b02e45c17b15f55475686ce8e94627937bc82e086"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

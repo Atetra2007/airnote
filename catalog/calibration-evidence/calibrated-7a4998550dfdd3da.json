@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7a4998550dfdd3da",
+  "source_id": "zhouzhou-116",
+  "work_id": "work-1eeff7bfe4e0",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1ce7dc088919390551856f4369d044626179b16ad661e4ece1c00211b3477561",
+  "source_sha256": "fc2688e40bbf99158d61550e5ad9d421531f51d5aa5cffab3c3acff03e4c301f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://everyonepiano.cn/Music-18364.html",
+    "edition": "EOP18364 numbered piano preview upper melody bars5-29, printed A major4/4 quarter86, transpose down9 to C major.",
+    "score_sha256": "b4b83e96a26dabe0797ddd76ead89008b32e6c7d9490c53a1987169554e73222"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 108,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "All existing source notes and structural tokens accounted for; source-form edition, not a claim to cover full original recording. 原7行全部108音与分句竖线完整逐token解码；108主音音高与公开EOP18364上声部5-29小节逐音一致，没有改音、删音或补入新音。来源没有时值，按所选公开谱重新定时。 EOP18364打印1=A、4/4、四分86，统一降9半音为1=C；省略来源没有的器乐1-4小节，完整保留原现有范围5-29小节，不宣称原曲全长。 第10/18小节两个半拍2分别由同音连线合为一拍；11末1接12共4.5拍，19末1接20共4.5拍。源已省略这些续音，108源起音不因此再删。 22/24/26每组三个独立1起音分别半拍、四分之一拍、半拍，第三个音含灰色续音；27的三个5分别四分之一拍、半拍、四分之三拍，中间音含连线续音。数字底横不另计减时线。 28-29末6跨两小节保持8拍；6/14各四分之三拍休止与21开头1拍休止保留，共108音3休止111事件100拍，86BPM约69.767442秒。 待独立图先二读与正式软件审计；没有人工试听、录音对齐或实际游戏。 独立代理先读两页图片并保存完整25小节数组，未看root数字稿与原源；先前已知root文字范围及连线热点，不宣称完全无提示。其108音3休止111事件经统一-9移调与root全数组完全一致。 root从冻结inventory核定真实源路径，全部108原音和结构符另行复解，音高与108输出起音逐个相同；全部111事件时间线逐项音高/起点/时值/秒数一致。末6跨两小节8拍保留。 完整来源谱面校对通过，正式生产软件审计随后执行；没有人工试听或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "b4b83e96a26dabe0797ddd76ead89008b32e6c7d9490c53a1987169554e73222"
+  },
+  "note_count": 108,
+  "event_count": 111,
+  "duration_seconds": 69.76744186046511,
+  "limits": [
+    "Independent crossread and final production audit pending.",
+    "No human listening, recorded timing alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-116-message116-complete-source.review.json",
+      "sha256": "4afe458790b7962983b2f2255f0b4ea3a4eab5cd21e90598d8e10a84b5741f12"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e6fceb060e2091a555a22abd75e30ef081a0cc1a03148e65ba03ae58465b4e3e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "5cc00146283950f5d1e37e61a0133528c2c54c7467c0d62f5fa382d4d72c64c5"
+    },
+    {
+      "name": "0001-6ccdb814c1be.json",
+      "sha256": "53050d8e5c5078babf3d27ae9105e36c07b8fcef7cf5ff3ba0cda30798b4a031"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

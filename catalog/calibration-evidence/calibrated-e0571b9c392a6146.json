@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e0571b9c392a6146",
+  "source_id": "deck-e1542f9a86cc",
+  "work_id": "work-deck-e1542f9a86cc",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%86%8D%E8%A7%81-%E5%BC%A0%E9%9C%87%E5%B2%B3-YANG-7e54e92291.deltamusic",
+  "status": "reviewed",
+  "sha256": "1f50c9d452de42db74b26b93f16cb7fa9639b97f5a1e127af22567e5ee9bae49",
+  "source_sha256": "fdfc62acb8b35d216b5467ee43ea6859000072acd42bcc2c0ac4bb514406f83c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/320221.html",
+    "edition": "Printed Gb,4/4,quarter124BPM;explicitly transposed-6toC;fullsavedone-passvoiceextent",
+    "score_sha256": "adf0b4197f67ea76d42596b0b53758848c8162021bfe4bf59b413fb713800b54"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 127,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "complete-existing-source-content;C-register;one-pass-through-original-EOF-rests Complete one-pass saved melody from printed two-quarter pickup R1B1 through R8B2, retaining the two saved EOF rest beats as R8B3-head. The source has no D.C., D.S. repeat or final printed coda notes; none are added. Printed keyGb is explicitly transposed-6semitones to C in the original encoded source register. Source metadata1=F is not used to transpose already absolute pitches. Source-to-output global shift is0; printed-reference-to-output shift is-6. Printed quarter124BPM replaces unverified source110BPM. Entire128beat extent is preserved, with explicit source rhythm changes inside it. All printed arcs inside the selected melody are different-pitch slurs. No same-pitch tie is used. Source8,37,104 each split a heldE intoD eighth/E eighth; source24 splits heldE into two separately lyriced E eighths; source101 splits A quarter intoA eighth/G eighth. Source pairs13/14,41/42,109/110 become printedC quarter; pairs47/48,115/116 become printedA3 quarter. These are source passing/repeated-note consolidations to selected printed notes, not literal same-pitch ties. Source49 and117 C2beats become the printed dotted-half3beat hold, explicitly restoring the following1beat source rest. Every original rest remains recorded with exact interval disposition. 0source-note omissions and0unattached insertions:127-5+5=127. All137source events are accounted. No production import, formal-ledger write, playback, game/UI operation, GPU calculation or install. Root independent musical review remains required. Root完整单页选用33谱位另录音级/时值，逐事件验证131项；Gb谱明确降6半音到C，原JSON的1=F不二次移调。 5处拆分、5组合并都是明确按声乐谱选版；异音圆弧保留起音。source49/117的C各恢复1拍，十个源休止全区间记账，EOF两拍休止保留。 采用印刷124BPM，保留来源一遍，不添加D.C./D.S.与尾声；未试听/录音对齐/实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "adf0b4197f67ea76d42596b0b53758848c8162021bfe4bf59b413fb713800b54"
+  },
+  "note_count": 127,
+  "event_count": 131,
+  "duration_seconds": 61.935483870967744,
+  "limits": [
+    "Community-hosted transcription, not publisher authentication.",
+    "SelectedCtransposition preserves actual source register; the source1=Flabel is not used as absolute pitch evidence.",
+    "Fullsavedone-passsource, not all printedDC/DS/coda repetitions.",
+    "No listening, recording alignment or game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e1542f9a86cc-zaijian-reference-v1.review.json",
+      "sha256": "d7e36a5d7eaa605f01e5813cfe4cdd78838f87109d54eeb71a9c1d6b7ac503a7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1afbf010dd6c3f360882058d8073da2377e4f976ce2435a2b93f0a59028d492c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0d9ff90da0f02a84ea7b8ca93691cd54adffc1327d3cf9286b4f5608c37136ef"
+    },
+    {
+      "name": "0001-68b47c100e31.json",
+      "sha256": "bcc78a910da084efa06422fa9ac9a1ebfb616d2b134ecb28fd9a26f56c2883e0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

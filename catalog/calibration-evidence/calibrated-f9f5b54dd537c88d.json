@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f9f5b54dd537c88d",
+  "source_id": "zhouzhou-151",
+  "work_id": "work-a277439dd482",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6e3cba61bd67bfe3870178e9fce9729ac5855fc952cdeb65e8bb17d65c2761bd",
+  "source_sha256": "c31e8167ff9a221667acec2bc31cb9e2e5beffd6e8b1de7d173a35101bcee222",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Westminster_Quarters",
+    "edition": "Wikipedia published LilyPond score westminster-kja3w163",
+    "score_sha256": "0a158949f6ae4d72c46c766f191aa3dc13a3144747bbb30cb0236bf35796bcdf",
+    "midi_sha256": "e7bbc9efddbdd97efe417458ec0ba9227deb8442c94171b035007338d29b4a5c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 8,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整现有来源逐音对照；输出采用明确的公开曲调编配 全部8音对应公开 Westminster Quarters 三刻钟谱的前两个动机（编号4、5）；保留原来源C调移调，较E调谱上移8半音。 来源最后两音为 C5、E5；公开动机是 E5、C5。本标准动机副本修订末两音顺序；原文件保留。 节奏按公开5/4谱每动机1、1、1、2拍；100 BPM为明确选定的铃声编配速度，不指某所学校录音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "0a158949f6ae4d72c46c766f191aa3dc13a3144747bbb30cb0236bf35796bcdf"
+  },
+  "note_count": 8,
+  "event_count": 8,
+  "duration_seconds": 6,
+  "limits": [
+    "这是可演奏的单旋律谱例编配；人工听感、真实游戏未验证。",
+    "没有用通用曲调推断特定商业录音的速度、音色或版本。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-151.review.json",
+      "sha256": "d576e406a3af6bb7722cf71188b06f5d1da6840debef911d62d338afbb2e179b"
+    },
+    {
+      "name": "review221-zhouzhou-151.timeline.json",
+      "sha256": "1c9486f2d697cff5b10a4e4fc782ed3b2355ea058dc66aa729b085e2d9e5b788"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fdac07aee27b9a82b9ac038b5f696e0616aef6c7c78ccdf1dd50ddaf6ed59275"
+    },
+    {
+      "name": "0001-1015cf487ec9.json",
+      "sha256": "22d614bd9bceb0cdfb645e056769ac4a60627dcbf68f836a142f9bafe42712c7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0333e6037d804761",
+  "source_id": "zhouzhou-033",
+  "work_id": "work-b22ed4e45f9c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d08410248a93e6302a71007261ca7697425a10e9d2b83fbd86118147c6a730a3",
+  "source_sha256": "37db3800ca538414ea34e3be09be89d58030f41fb0591e2dd5cbcb7faa3438d9",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/337394.html",
+    "edition": "F#调4/4买辣椒也用券声乐版，打印80BPM",
+    "score_sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "正确基线绑定的原7歌词行67音，从我曾难自拔到任风吹雨打，完整38拍；不含后续括号器乐或重复主歌。 唯一主参考337394买辣椒也用券版完整声乐谱，打印F#调4/4、四分80BPM，两页已完整查看；所用原有范围均在第一页。336788为不同75BPM与音区/节奏的比较版，未混入本候选。 全部原source音与词行、原d/b提示及排版符号完整保留；依据主参考人工重建每一拍，而非把缺省时值当准确节奏。只处理每份已有完整范围，不因文件名完整版就补入原本不存在的第二遍主歌、末段或间奏。 337394 P1/P5看与翻的7跨小节同音延音，与前方流连的独立7分开；P2/P6高1到7到6的异音连奏保留全部三个起音，不能因弧线合成高1到6。 P3一字5同音延长合半拍；遍字3连续三段.25/.5/.25合一拍。P6及防两个高3明确同音弧合一拍；P7你字前两枚高3没有同音弧，保持.25和.5独立起音。P7笑字5 .25跨同音5 .25合半拍，随后短6 .25，再独立6半拍连四分合1.5拍。 主歌V4的1到2以及V6的1到低6是异音连奏，其后同音重复2及低6各须独立起音。副歌同音跨bar的5、2、6、高1仅按明确同音弧合并，异音弧不合并。 副歌C4笑之后话字打印2/3/2小回转，原简化或不完整时明确补齐并逐项记录。C7去的6到短高1为异音弧；随后吧的另高1才跨小节延长，两高1不能误合一音。 本候选为完整原有范围的所选声乐版修正，root已完成独立全范围二读，正式软件审计另绑定；无人工试听、音频对齐或实机验证。 文件身份按固定基线hash绑定034-进击的巨人.source.json，其内部t和歌词实际为起风了-节选02；2026年9月25日已修inventory映射但保留互换的物理文件名。不可误用033-起风了-节选02.source.json的进击的巨人内容。见identity-resolution.json。 保留来源普通音区A3至A4，参考F#4主音降18半音至C3，使印谱高1呈C4。全部67源音逐个映射，无音高改变、无删除或合并；补C4的2/3回转、C7短1、C9中间1与雨字1，共5音，72音1休止。 最后打字高1打印四分1拍跨下一小节二分2拍合3拍；其前雨字1 .75独立起音，不能把雨与打当一音。范围结束于打字后的长音，删除打印末两个四分休止在原片段之外的静默。 Root另录完整起音与休止数组，全部音高、拍值、起点一致；每个原音逐项映射校验，原始文件和提案均保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "note_count": 72,
+  "event_count": 73,
+  "duration_seconds": 28.5,
+  "limits": [
+    "Selected337394 edition at printed80BPM, not recording alignment.",
+    "Every original event accounted for; full existing source scope only.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-033-wind-complete-source.review.json",
+      "sha256": "70794486796b9966d90e646825c17a18b0f911852a3c0f27b769cebdd1513a3c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6db0a7464a37372291122b9fdb91fc8640c9713b3dffdda0755fadcbff7e3d9a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "365aae5691e708aea425b29c8d92543151e7d131585be6e0d8d7a47511ae82be"
+    },
+    {
+      "name": "0003-7882b55859c4.json",
+      "sha256": "17fb313ee7b1ce0f87d88c8534859d01a023c064377ff1dfd8d7029ae0ffbb82"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

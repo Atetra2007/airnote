@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-43c0c91f8c1e1cf5",
+  "source_id": "community-21b47adc9e9f2cbb",
+  "work_id": "work-c4c7faf127e7",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0-11111-252ca21ad57c25a68203c.deltamusic",
+  "status": "reviewed",
+  "sha256": "b60572aaf8f9377d51b1d120b486a3a867540acb84379ae01bf7c19dca35ba7d",
+  "source_sha256": "af0b087ea81802ead484653810b71ea73eefd6d8d24b79d580db098aacbcc609",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/383215.html",
+    "edition": "C2/4quarter68;completeexisting-source-specificrepeatandregisterroute",
+    "score_sha256": "7fb59b506abec9ee7824b27dde056f2527f5ed2f9c97bb39330b7a4041a39d71"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 429,
+    "maximum_parser_boundary_error_seconds": 8.242295734817162e-13
+  },
+  "review_note": "complete436notes;printedm5-46+repeat16-46+m47-81;source4terminalphrases Complete436notes/521events/85rests/587rawtokensfromfixedoriginaldeltamusic,allindividuallymapped. No droppedtail. Completeexistingroute:printedm5-46,repeatm16-46once,thenm47-81. Sourcefourclosingphrasesendsbeforeprintedfifth82-83;notaddedoutsideexistingextent. Actualselected3pageimagesC,2/4,quarter68BPM.216beats190.588235seconds. Source140BPM4/4andoriginalraw428unitsnotauthoritativeprinttime. Sourceuniform+2semitones;source316/341areG4under+2,butprintedm53/m61areA4,correctedbyadditional+2. Firstm5-15andm62-65printdown12preserveoriginalsourceoctave;othersprintregister. Graycontinuationheadsareactualtrue tiesandfolded;source1/25keyupgapsarearticulationmetadata,notautomaticallymusicalrests. All85sourcepausesindividuallydispositioned;longholdsandtrueprintedrestsreallocatedwhereapplicable. 10samepitchsourcegroupchoices[106,107],[188,189],[197,198],[221,222],[230,231],[238,239],[413,414],[419,420],[425,426],[431,432]areexplicitselectededitionattackconsolidations,notclaimsoriginalsourcewastrue-tied. TwoB4repeatattacksrestoredatm33inbothpasses;oneC4repeatattackrestoredatm49. Zeroomittednotes;allsourcepitchoctaveandrawtimingfieldsretained. Rootindependentcompleteimagesandproductionauditpending;noaudio/UI/GPU/gamecheck. Root完整三页中m5–46/反复16–46/47–81全部选段二读，独立108小节十六分tick展开443事件逐音高/时值一致；印谱灰头是真连续音，不能当独立音头。 436源音/521事件/587token/85pause重新解码；全部源音保留。10同音群为明确选版攻击合并，非声称原source真连；m33两遍各补B4，m49补C4；316/341移调后G4纠至印刷A4。 原源整体+2；m5–15及62–65取印谱低八度保存来源音区，其余采用印谱。原源只含四尾句，止m81，不擅加82–83第五尾句。原1/25抬键间隔按已审旋律持续处理，长pause逐项分延音/真实休止。68BPM与2/4来自印谱，216拍。未试听/录音对齐/游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7fb59b506abec9ee7824b27dde056f2527f5ed2f9c97bb39330b7a4041a39d71"
+  },
+  "note_count": 429,
+  "event_count": 443,
+  "duration_seconds": 190.58823529411765,
+  "limits": [
+    "Explicit10sourceattackconsolidationsaredisclosededitionchoices.",
+    "Printedsourceiscommunityarrangementnotpublisherauthentication.",
+    "Noaudio/alignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-21b47adc9e9f2cbb-piggy-v1.review.json",
+      "sha256": "25dc687701d372b2897de73b846dda1d79028e3deae5ddfece27039b4a180024"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1fcdc0284e546fe36eb034c53a6996805e1a02c7d79c54397522165c536a228f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "e2ffe4f08e29965a9f68bd1cb1f191bec51ba726f1fb63fd6d20863cd992d47d"
+    },
+    {
+      "name": "0001-2552356da8a1.json",
+      "sha256": "c7bc042bc82d743e0056c1f5b0dc2c430ee705bc36cd91a0901194ad613242cc"
+    },
+    {
+      "name": "work-id-corrections-20261012-v1.json",
+      "sha256": "58dac36f490e8d84560779b6121fb7b6ddb77831815b43f5dbda966c10704caa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

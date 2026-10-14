@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-68d439f1c997e6d5",
+  "source_id": "zhouzhou-201",
+  "work_id": "work-2379e44d8381",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "eec0a4851b14c2fc2cfcfdc045ff295466ecb6a4202ae9cff8bcdf224c14b47a",
+  "source_sha256": "3b85f9bf288ea66981b3e04755aef36eda05782d669baa09e3747c9899e16570",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/372787.html",
+    "edition": "孙燕姿原Eb选C Capo3吉他主唱数字谱，第2页第二段歌词至第3页第三结束；果的低7单点取451359",
+    "score_sha256": "5eb51019416af60916de79cd378c8054f8469b11cd888dbae7640429eb1f0ee6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 81,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全6行75原音，从我不难过至真正的解脱第三结尾两拍1结束。 原201六行75音，无0。范围从我不难过的我到真正的解脱最后持音；完整处置75原音，不删行、不截末尾。输出81音4休止85事件，40.75拍，64BPM为38.203125秒。 主谱372787全三页，页头原Eb、选C、Capo3、4/4。数字按选C4字面统一+12，普通1=C5；也等价按实响Eb4+9。二者是同一转置说明，不能把Capo3再叠加。普通6=A5、低6=A4、低7=B4、低5=G4、低降6=Ab4，在主谱出现时逐处保留。 第2页第2行末我2、不3、难低6三枚16分为开始.75拍；不包含之前伤痛等源外旋律。后过1一拍、这不算什四枚16分、么1一拍、只是为什四枚16分。 第2页第3行用下方第二段歌词和独立下方节奏，不能沿用让我们享受自由的第一段节奏。M2会位置补一枚1 .25，原16的2仍映射其后2 .25；原20高2按下方谱改高1。 M3说的1 .25同音弧到1一拍，合1.25拍；原25高2改1并与原26的1明确合并。随后或许这是是2、1、低7、普通6四枚16分；源27-30逐一映射，不把源连续1当作准确主谱。 M4最5 .5、好6 .5、的5 .25、结6 .5到低7 .25，果为一拍。372787果的7下确实印双低点，451359第2页同歌词果只有一个低点，故仅此音采用451359的单低7；其时值仍取372787的一拍。新增结末低7 .25，果后0 .5和5 .25，再源36现6 .25。不得把此单点选版扩展为其他八度统一。 M5在5附点四分1.5、分6 .25、手5 .25同音延至5 .75合一拍；总低6 .25、好普通6 .25、3 .25、4 .25、4 .25。原40总从高6改普通6(A4)，原41高6保持A5；过渡新增4 .25。 M5末4 .25跨M6首4 .25同音弧合.5，明确合并源43与44。M6后面3枚4 .25依次映射45/46/47，再补4 .5；原48拖改低6 .5，原49再5 .5，原50拖4附点四分1.5。所有新增或合并均有独立比较项。 M7松开你的手前0 .5，4 .5、4 .5、低降6 .25、5 .25同音延5 .25、4 .25、4 .5、1 .5、2 .5。源53高6改为主谱明确印低降6即Ab4；字面降音以兼容记谱#5输出，与音高等价。5之后首4 .25为新增，后4 .5保留源55。 M8你3 .5、左5 .25、右5 .25同音延5 .75合1拍；我低5 .25（源61高5改G4），向2 .5、前3 .25、走1 .25、这1 .25、会2 .25、3 .25、是低6 .25。原65/66/67保留为后2/3/低6，原64后首1 .25作为新增。 M8末低6 .25跨M9首低6 .5合.75；M9我1 .5同音延1一拍合1.5，0一拍，真正的1 .25、2 .25、3 .5。源68映射完整1.5拍；源69-71顺序不变。 末解脱采用第3页最下方第3结束，绝不采用第2页2/4的第一结束。0 .5、解低5 .5、脱1 .5同音延1 .25合.75、2 .25、1两拍。原72高5改低5(G4)，首脱1 .75新增，原73/74映射后2 .25与末1两拍；排除随后全休止小节和吉他伴奏。 本提案为主旋律实现：M1过/么前小6，M3要前小2、是前小5，M5分前小5，M8你前小2，M9我前小6这些印小装饰一律记为省略的参考装饰，原75音没有因此被省略。所有主音保持谱面时值，不借拍、不声称小装饰原本有固定.125拍。 主谱无数字速度。64为独立速度选择，由琴魂109233四米曲谱和107757西洲的公开预览页头均打印四分64旁证；两份预览均不完整，不能称完整旋律参考，本提案未混入它们的旋律。 451359/265736/374009为同类吉他版，278231为无限延音小煊另一编配；除已声明果的低7单点外，不混入其旋律或结尾。372787真实普通6/低6/低降6变化全部按字面保留，不能为贴近原源而统一音区。 Root另录85事件，与候选全相符；单独解码75原音，12改音、8新增、两组源音合并均逐项验证。主谱全范围至第三结尾2拍1完整，果单点校勘及主旋律装饰省略边界明确。正式软件审计另绑定，无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "5eb51019416af60916de79cd378c8054f8469b11cd888dbae7640429eb1f0ee6"
+  },
+  "note_count": 81,
+  "event_count": 85,
+  "duration_seconds": 38.203125,
+  "limits": [
+    "Selected edition literal mixed octaves retained, with one explicit guo single-low7 emendation from451359.",
+    "Seven small reference grace notes omitted; main melody durations unaltered.",
+    "No numeric tempo in main edition;64 separately chosen from two incomplete vocal preview headers.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-201-not-sad-complete-source.review.json",
+      "sha256": "1222dad377b5b1e95bd6c51b965e9f2b957bc4dbeabdb8221308d52dfe06fb0e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c3efef29269326506ae4f2d8aa45dfde04b6a4a2dd0d254d3d01161553bf3beb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "74fe6e137ba6f7a4ffd8112d6a6f4718d3d002ebb75de02880cc75dac39a5947"
+    },
+    {
+      "name": "0001-cc70dc4d54b1.json",
+      "sha256": "0e07a0ed0a13cd6d0f0bd8fca5e80318b0b6f016bf5bf92aa33f1fed4d9a7f18"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

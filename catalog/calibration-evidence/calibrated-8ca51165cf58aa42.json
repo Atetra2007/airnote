@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8ca51165cf58aa42",
+  "source_id": "alternative-score-b55316b70b8e415a",
+  "work_id": "work-b336e93f61b2",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8B%E8%B0%8A%E5%9C%B0%E4%B9%85%E5%A4%A9%E9%95%BF.txt",
+  "status": "reviewed",
+  "sha256": "9dff23ded71fdf31eb9f5f418a2bf5a585ecc2cb9dff4884ef873d8f645023a0",
+  "source_sha256": "287b1004393186b76bed427215395f1d0cdebe9e3f812671541da948fa70bed3",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Auld_Lang_Syne",
+    "edition": "Wikipedia published LilyPond score auld-lang-syne-bhvzoz2u",
+    "score_sha256": "6729fec7b979f2da6228aadb3384d20daa1c183af4ad30935af60c705ec50b1b",
+    "midi_sha256": "71f370f7cad48cf742fab198b2329613ba7094ebc6990e44e9089ba6c22356cf"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 56,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整现有来源逐音对照；输出采用明确的公开曲调编配 完整检查原来源56音及其全部时值；第一段28音与公开F调谱一致。原第二段开头8音重复了主歌开头，公开谱副歌首4音为D5、C5、A4、A4。 本独立副本采用公开完整主歌加副歌56音；第29至32音按副歌修订，其余音高对应。原版可能有重复主歌的简化意图，不将所有版本差异笼统认定为错音。 原第28、56音各4拍；公开4/4弱起谱两处各3拍，副本按谱减为3拍，总64拍。全部附点和八分时值已逐音对照。 100 BPM为本副本选定速度；没有声称对应某一中文演唱的咬字、经过音和录音处理。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "6729fec7b979f2da6228aadb3384d20daa1c183af4ad30935af60c705ec50b1b"
+  },
+  "note_count": 56,
+  "event_count": 56,
+  "duration_seconds": 38.4,
+  "limits": [
+    "这是可演奏的单旋律谱例编配；人工听感、真实游戏未验证。",
+    "没有用通用曲调推断特定商业录音的速度、音色或版本。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-b55316b70b8e415a.review.json",
+      "sha256": "ff7f6ee46fba9dedd17c9b74887388a5712f535096e23b2742d215378a80f3f1"
+    },
+    {
+      "name": "review221-alternative-score-b55316b70b8e415a.timeline.json",
+      "sha256": "e568ec10553d67018eb5b9ed6a0dda433e1cb71d37089e0d1279f3a007041c4e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fdac07aee27b9a82b9ac038b5f696e0616aef6c7c78ccdf1dd50ddaf6ed59275"
+    },
+    {
+      "name": "0003-a66b2d10a32b.json",
+      "sha256": "4a708ab257c7dcb5c4a164eecbd338ffff23cdd043da5f07881e70750bc0f36d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

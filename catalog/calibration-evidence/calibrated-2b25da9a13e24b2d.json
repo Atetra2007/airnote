@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2b25da9a13e24b2d",
+  "source_id": "social-49048dcf44c101d3",
+  "work_id": "work-2ae2808181a9",
+  "source_url": "https://www.bilibili.com/video/BV1LF411a7Xg/",
+  "status": "reviewed",
+  "sha256": "aad77aa80ee48bdba9591e4480f1b1a880de486ef2efde58bdbac62d11f721a4",
+  "source_sha256": "5b1ebba521dab9371aaebb7e1246ff915de1a2da8552317f96926a88f488374d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qupu123.com/Mobile-view-id-355533.html",
+    "edition": "All51 printed bars retained; phone selects V1–V17 plus C1–C16, D→C#87BPM",
+    "score_sha256": "7b40a5b7643353f0c7e3150555a5fec3c8fedf60db5873bb6404548a0f4b9f7a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 134,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-14
+  },
+  "review_note": "All51 printed bars retained; phone selects V1–V17 plus C1–C16, D→C#87BPM 固定social-49048dcf44c101d3，完整299字节134音+23原物理行标记均保存处置。所有括号/方括号/升号按原实音解码；原无节奏保持null，不把分行或空格编成时值。 笑姐姐完整2479×3508声乐简谱已实际看整页和12细行，全部51印刷栏手录。选择V1–V17＋C1–C16，完整原134音逐音顺序一一对应，0音高修正、0省音、0增音、0局部八度改动。 参考D主歌和C#副歌按原印调，选87BPM、4/4；与原电话谱全部134实音完全一致，无原数值速度可沿用。完整范围132拍约91.034秒。 所有真的同音连音头合一，不把没有tie的重复音合掉。V9末5跨V10首5及C1末7跨C2首7、C9末7跨C10首7均真tie。 V16印b2=D调E♭4=63，原电话末主歌#2=D#4=63完全相同，不修音。副歌C#度3为E#4=65，原#3也是E#4=65，不能误解释为E4=64。 V17原印四个quarter零共4拍，置于主歌末b2之后、副歌前；原电话没有静默时值，明确从参考补1个4拍休止。 完整原音止于C16第一结尾主音四拍；不扩成后续第二/第三结尾、D.S.或尾奏。全部原正文现有范围均处理。 按已有授权仅候选，待root独立适用范围音乐二读与正式软件检验。未试听/录音对齐/游戏测试。 Root实际查看完整声乐图及适用8行高清裁图，另手录完整V1–V17/C1–C16全部33小节，按真实同音tie合并后逐一核对135输出事件的音高、起点与有理时值，全一致。 Root另以逐字符括号栈重解原299字节电话谱，保留23原行和134音；全部134实音按原顺序一次对应输出，无增音/省音/换音/八度改动。V17明确从打印四个四分零补4拍休止，不猜原文本未知时值。 D段V16的b2为Eflat4=63，与原#2同音；Csharp段的3为Esharp4=65，与原#3同音。跨V9/V10的5、C1/C2与C9/C10的7只按真tie合并。完整尾止于C16第一结尾4拍，不继承后续反复或尾奏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7b40a5b7643353f0c7e3150555a5fec3c8fedf60db5873bb6404548a0f4b9f7a"
+  },
+  "note_count": 134,
+  "event_count": 135,
+  "duration_seconds": 91.03448275862068,
+  "limits": [
+    "Full source notes preserved, timing explicitly selected from independent printed vocal version.",
+    "No original tempo claim.",
+    "Public page certificate expired; acquisition receipt discloses per-request verification disabled for research.",
+    "No listening/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-49048dcf44c101d3-night-phone-vocal-v1.review.json",
+      "sha256": "36b5c4abbde3a14216cd05ba5d9f0be1923cfd960c1dad47259cd730e0885590"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f23d15cd752a184c8baedb6b73b260eca64de30883ce824145d5e6647856bc45"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1150ab688a554e280999cc7ef2fc4f1f1d5322b11fb25e49b3cef67418050c2d"
+    },
+    {
+      "name": "0001-d79685ad2bae.json",
+      "sha256": "6fdd81fe569a6ec59d84fa41422400b3e4afe5a685480ffc2978a3160560cfd7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

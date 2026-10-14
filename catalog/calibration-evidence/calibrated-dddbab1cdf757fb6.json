@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-dddbab1cdf757fb6",
+  "source_id": "father",
+  "work_id": "work-father",
+  "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E7%88%B6%E4%BA%B2%20bpm72.txt",
+  "status": "reviewed",
+  "sha256": "b10cbbfd72e6dd771f4e03bd62cf98afca56a12d6825511f54fd49288ef32405",
+  "source_sha256": "9edfa77d5d0aaa3fcb6ab357bc1eb3d00fe4fcdf6cd03431560051fb2964e17f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/22168.html",
+    "edition": "筷子兄弟父亲，孙世彦E4/4两页声乐谱，打印72；明确来源音区、装饰简化与曲式",
+    "score_sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 114,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "完整116源音/124事件；父亲（副歌及短尾句） 身份为王太利词曲、筷子兄弟《父亲》，来源完整旋律和歌词与22168孙世彦制谱互证；不是同名的刘和刚作品。 主参考为22168孙世彦E调4/4声乐两页，打印四分音72BPM。已完整视读两页主歌、桥段、副歌和结尾；118470声乐版仅比对身份，不拼接其细节。其他已下载钢琴/吉他版未视读，不作为本提案音符依据。 按每份来源实际范围选定曲式，不追加来源不存在的主歌、完整第二遍或器乐间奏；公开整曲与源片段不混称。全部现有源音与休止均逐项处置，修订另存副本。 同音延长弧合成持续音；异音圆弧是连奏，不合并起音。C4长字655的弧始于6，故保留6、5、5三次起音，并保留留字另一个长5；尾句3高至2高同样是连奏。 B4安字的3一拍半、2半拍是两个起音，下一B5康字2三拍再次起音。来源只有一个末2时，保留源末2为康并显式恢复其前经过2，不把同音跨字误当延音。 所有节奏以所选声乐版为明确修订依据；默认一拍/长按提示不冒称已知原节奏。源异音装饰合并只是显式选择该声乐旋律，不宣称源演奏必然错误。 本编配完成逐音视觉音乐校对和root独立二读；全部677事件精确匹配。软件审计单独绑定；尚未人工听感、录音对齐或实际游戏验证。 father原始116音/124事件只含一次完整16小节副歌及感谢一路上有你首4拍，68.5拍@72。保留该完整范围和C调原音区：副歌首A4/B4、主音C5；不追加主歌或源没有的末8拍2高延音。 原8/37/62/91四个不要/我能/双手/还在弱起前音B4按所选改A4；原14/68老/家的前句D5位置原写B4，改D5。其他原音无音高更改。 原4/5对应C1同音延长；20/21对应C3第二个C5的源拆分；75/76对应C11第三个C5延长。15/16及69/70末C5重复明确选择印谱单C5十六分音与随后半拍休止，并非把整段时值作为延音。 C4在源28的A4之后恢复G4十六分和G4八分两次起音；原29的G4留字改为2拍。末句在原114的E5后恢复D5十六分经过，原115的D5保留2拍终止。114E5改.25拍，113C5按同音延长改.75拍。 共114音12休止126事件，68.5拍，72BPM；末句停止于来源首4拍，不把公开谱三小节长尾冒称来源本有。 Root完整视读两页及全部四来源原件，独立输入每个事件，与此版本完全一致；复核音区、插入音、装饰简化、同音延长及末段截点，所有原源事件均有处置。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "note_count": 114,
+  "event_count": 126,
+  "duration_seconds": 57.083333333333336,
+  "limits": [
+    "Explicit selected-vocal-edition arrangement, not proof every original ornament is wrong.",
+    "No human listening, acoustic alignment or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-father-father-source-form.review.json",
+      "sha256": "88364d6a4addcfb1dbe2ccd513a75ee2317e3a0faf7aa9b8f3c0af714390f443"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c9a161eb8d9b19d8a62b84fcd22911aa3baf0175e9151c0bd480840e765b2786"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f047cbf0ba08e155779a742521a9070bab84dd631bd4ee571d80512713fbb09b"
+    },
+    {
+      "name": "0001-b036f470d61b.json",
+      "sha256": "53a0e49da7475f204ca32f8729a4bd45c6aa971f95a9ab0ccea1e537d8157659"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

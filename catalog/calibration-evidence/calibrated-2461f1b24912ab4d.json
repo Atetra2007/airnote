@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2461f1b24912ab4d",
+  "source_id": "community-4f7def70901bd537",
+  "work_id": "work-6a66290370bc",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%96%9C%E7%BE%8A%E7%BE%8A%E4%B8%8E%E7%81%B0%E5%A4%AA%E7%8B%BC-%E5%B7%A6%E6%89%8B%E5%8F%B3%E6%89%8B-%E5%96%9C%E7%BE%8A%E7%BE%8A-11111-45342a2125ce3521a9b33.deltamusic",
+  "status": "reviewed",
+  "sha256": "6c40c0d9656d393cf55b4d320ff1de8afc6d5768889150913b4faa2c35c62568",
+  "source_sha256": "54cf9d99d49217441440f4b94c4565fb9aa61656bb679f5a2685b66ea4f8ea52",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/251507.html",
+    "edition": "EOP MusicXiang Bb4/4 printed138 three-page piano numbered score; selected RH melody",
+    "score_sha256": "0499be4110cf130fa6ba8d00568c1634cc6716db9cebcdb025bbbf03ee6362d5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 169,
+    "maximum_parser_boundary_error_seconds": 1.2789769243681803e-13
+  },
+  "review_note": "完整241源音及所有后续副歌/尾段；选251507右手单旋律，伴奏和休止逐项处置；完整196.25拍。 唯一选定音乐依据为251507三页EOP音乐响钢琴简谱，Bb调4/4、印刷四分音138。先独立完整视读全部右手谱，再手工确定241源音的段落、小节、拍位；区间运算只记录逐音处置，不作为音乐正确性证据。 完整来源曲式保留：第1小节最后十六分弱起；2–9小节第一轮；2–7第二轮；10–44顺序演奏。来源在33后直接继续34，不执行该谱33处回跳；这是明确来源选段顺序，不声称严格执行整张钢琴谱全部反复。最末44的两拍伴奏尾声按旋律休止处理，未删掉源尾部范围。 明确选为右手单旋律修订：来源在持续旋律或休止内频繁切入伴奏最高音，例如第4的Eb4伴奏顶音、19的D4、30/41的低Bb3。每一源音均映射到保留旋律、持续音合并或有量休止，可一源事件跨两个目标段；未把这些伴奏一概冒称错误，也未用126短版覆盖本长版。 保持源主音Bb3为印谱1，高1为Bb4，不整体移调；所选最低音为第8小节低6即G3（源36为Bb3，该时刻来源选到伴奏顶1），最高为第23/26/34/37小节高3即D5。音区选择明确为适合此来源的单旋律编配。 第4末1十六分与灰色1四分合1.25拍；第15的5十六分与四分合1.25；第17高1十六分加二拍合2.25；第21–22高2合7拍；第24的5合2.25；第26高2合1.75；第28高1合2.25；第32–33高1合6拍；35/37/39/43–44同类连线分别2.25/1.75/2.25/6拍，均只有一个旋律起音。 第13照所选谱面精确读为7附点八分.75、6八分.5、5二拍、休止八分.5、5十六分.25，总4拍。没有把6的单减时线擅改为十六分。末休止/弱起合.75拍，原像素裁图保留供独立审读。 四拍差异分别为：第20漏1拍首休止；21–22少1拍高2长音；第31和42各缺1拍休止。恢复后192.25→196.25拍。第26/37的末个来源C4 .75拍横跨右手高2最后.5拍与.25拍休止，明确一源事件分配到两目标，未吞掉休止。 采用印刷138BPM替换来源100BPM，属于明确所选版本速度。最终169旋律起音、12个连续休止事件，共181事件、196.25拍、85.32608695652173秒、G3–D5。来源241音全部有处置，不宣称241音全保留为独立起音。 原稿保存不变，修订另存；本提案完成音乐视觉校对及逐项处置，等待root独立读谱及正式软件审计。未做原录音对齐、真人听感或真实游戏测试。 Root全范围另录所有小节，展开相同原来源路线后181事件与提案一致；原241音逐项记录保持，认可明确的右手单旋律取舍。13的6仅一条减时线、21–22七拍、32–33和43–44六拍延音及四拍缺口均复核。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0499be4110cf130fa6ba8d00568c1634cc6716db9cebcdb025bbbf03ee6362d5"
+  },
+  "note_count": 169,
+  "event_count": 181,
+  "duration_seconds": 85.32608695652173,
+  "limits": [
+    "Explicit monophonic RH arrangement replaces source accompaniment interjections; not an unchanged241-attack transcription.",
+    "Printed repeat at33 is not followed; source proceeds directly34.",
+    "No recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-4f7def70901bd537-left-right-full-rh.review.json",
+      "sha256": "8ae900bb06dd27f5b4e035ef2fa6eb664f47d7c271bbc99dfe53aaf12da2804d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "376a7c749501f042a11769320ce6cbe7fa36ffefaeb56f2a1ce8a3d8d6433234"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "cb904c8ae05a0ce9196bcb24e6bc059631b06862e2aa4e2aa923842912fff3d2"
+    },
+    {
+      "name": "0001-1778697e6bd5.json",
+      "sha256": "e75bbb830a0c34f5dedf2d8a3865ebe35935c3dacfe8073aacc8dc493b424390"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

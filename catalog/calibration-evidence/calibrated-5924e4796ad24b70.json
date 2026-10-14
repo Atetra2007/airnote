@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5924e4796ad24b70",
+  "source_id": "zhouzhou-082",
+  "work_id": "work-31d9743659b0",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "2df8c5c487e3bb69849864e805f06ca6d4a75f2bd42d7ae9923fab41e8b2909c",
+  "source_sha256": "1b3a26333b320709e100687609100c6f2a7d6516164c985a92208ec0f2986b82",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/",
+    "edition": "Complete162sourcehead dispositions; explicit128beat piano practice form; allwrittenpitches minus8; originalcuts unverified; full38bridge",
+    "score_sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "review_method": "Root全选小节实际谱面二读、162原头/164token鲜解及261打印组件到228输出逐项回核；明确128拍新练习曲式，原六cut仍未认证；原末11头完整桥段逐源处置，未做人耳或真实游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 212,
+    "maximum_parser_boundary_error_seconds": 3.836930773104541e-13
+  },
+  "review_note": "Root实际看完Pia原谱3页，逐栏对读全部所选1–16/14/24–35/34–35/38的物理音头、梁组和延音；另放大16/38验证两个连音均前16分、后8分。是完整非盲谱表交叉复核，不声称第二次盲录或人耳试听。 原162音和2个0共164token由root从原JSON重新逐项读回；原只含v/t/L及歌词/音头，无BPM或时值。每个原音保留并有具体新编配组处置，未知六个删句发生位置未认证，不能称旧164 nominal为真实拍长。 采用新的完整小节练习曲式：1–16完整64拍＋14新重现4拍＋24–35完整48拍＋34–35新重现8拍＋38完整4拍，共128拍。原缺的前奏2–4、5开头、11/15/16、25/28/30均补实际音符与休止，新增音头明示。 新14段起始D4重新攻击，末C4十六分在选栏边界收住，不延到未选的新15；新34–35段起始D5重新攻击，保完整C5三拍及末休止。这些是明确练习曲式边界，不冒称恢复了原作者唯一重复路线。 原尾151–161全11头和前0逐头核到完整38：B4/G4/B4/G4/C4四头/D4两头/E4，实际版为B4/G4/B4/G5/C5四头/D5真连音/E5。第154号G明确高八度跳进；159/160两D只因实际连线合并，两个源索引均保留；末E5和首半拍休止完整。 原谱Ab整段统一降8到C，未额外折八度，范围55–79；75BPM来自谱面。Root按所有261打印组件重新拼228事件，音高、时值、起点与最终文本/timeline逐个吻合。128拍102.4秒只属于新编配，非原来源时长或录音对齐。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "note_count": 212,
+  "event_count": 228,
+  "duration_seconds": 102.4,
+  "limits": [
+    "originalmusicaltimingandBPMunknown",
+    "explicitpracticeversionnotoriginalroutecertification",
+    "new14boundarytieenddisclosed",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-082-complete162-bar-practice128-v1.review.json",
+      "sha256": "b0f230c2c853a1f5c7ac3b9a6ba60192e242128ce500d46178590a688ec737fa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7d5840505eadc1821e0e4e14c6bb9ca409cb2d8345e634880aa0eb9f2bbfa5a9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "cd036ab32ef925744eefbbc418d33faa8cf2d9be37ea52c357f081f3773817a0"
+    },
+    {
+      "name": "0001-bed560786e25.json",
+      "sha256": "c5beb57946571b57f3e07f251f477c0929fbd0e722a4efff5355075319779bac"
+    },
+    {
+      "name": "public-review-summaries-20261013-haiyuni162-v1.json",
+      "sha256": "7bd55d405e4747699d47f2481a49723f3e9d46640fe041b5b88d0af1ab417b4f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

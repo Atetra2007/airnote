@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f54e831fc73a6184",
+  "source_id": "deck-69b2bf3f3634",
+  "work_id": "work-deck-69b2bf3f3634",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%88%E5%8D%8A%E5%B0%8F%E5%A4%9C%E6%9B%B2-%E6%9D%8E%E5%85%8B%E5%8B%A4-hewu-f64bfd64a6.deltamusic",
+  "status": "reviewed",
+  "sha256": "3e9c9805ca1248937d66d09d4cd850f683296c70d566e46753729ebb7d8acc98",
+  "source_sha256": "49d729b9e237962637239d2163bc6d514eeca50457648a18bb19e5e98f526773",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/353007.html",
+    "edition": "玄黄易命353007Bbmajor80BPM; global-10semitones;complete-original-source-form-with-explicit-vocal-phrase-reconstruction",
+    "score_sha256": "06e57a1382d1623bb9579a7eff5d8979a75c65e9d19d4f5f3cea85bc7ebe1280"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 217,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-original-source-form;222notes-and20rests-disposed;8vocal-phrases-explicitly-reconstructed Original intro omits printedI4-I5; the existing shortened intro jumpI3toI6 is preserved and missing entire bars are not appended. Original two vocal cycles retain all source phrase positions. At V1,V2,V15,V16 of both cycles the source uses intro-like/copied phrase pitches; these eight whole source phrases are explicitly replaced by the corresponding353007 printed vocal phrase. No claim of unique note-to-note correction is made for these phrase replacements. The original source ends after the second verse passage and does not contain the printed chorus; no absent chorus appended. High-register printed3/2 in I6/I7/V6/V7/V14 restored; pitch alterations in intro and tied rearticulations individually recorded. Selected printed80BPM used; original metadata130BPM is not treated as an original-performance measurement. I3 last5 continues across the next eighth (0.75beat total attack); I8 second6 is tied, not another attack. V7 last1 continues into V8; V8 both7values are tied. V9 last5 continues into V10. V15 last7 continues intoV16 and V16 both6values are tied. I7 final#5 has no octave dot on selected image: its output is G#4, while I6#1 has one upper dot and outputs C#5. V5 contains a brief upper1sixteenth before3sixteenth; V13 instead has only3eighth. Whole phrase replacements occur at groups8/9/22/23/24/25/38/39 (V1/V2/V15/V16 in each vocal cycle), covering46source notes and42printed output notes. All original values and output phrase event lists retained; no unique note pairing asserted. 173 other source attacks mapped in order,2missing brief C5sixteenths atV5 added,3extra rearticulations atI8/V10 explicitly omitted. Pitch and duration deltas listed individually for direct mappings. References353007 and403193 inspected as alternatives; final numeric notes/rhythm/tempo all follow353007 only. All222original notes and20original rests accounted; complete shortened intro and both vocal cycles kept. No source ending silently discarded. Use10ms practice gap. Human listening and real game not performed; visual/source/software evidence only. Root完整谱页二读并另录所选39段247事件绝对MIDI/时值，与候选全部相符；明确非盲。 完整222源音及20休止逐项核验；46源音对应8处整句选版重建，不包装成一对一错音修正；其余173音逐个映射，3处连音内再触发省略、2处V5短C5补入。 I7末升5无高点，移调后G#4=68，v1文字F#4笔误在v2已更正；八度、跨小节连音及80BPM均依353007所选版。 保留来源前奏I3跳I6和两遍主歌结构，不添加未含的两小节前奏或副歌。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "06e57a1382d1623bb9579a7eff5d8979a75c65e9d19d4f5f3cea85bc7ebe1280"
+  },
+  "note_count": 217,
+  "event_count": 247,
+  "duration_seconds": 115.5,
+  "limits": [
+    "Nonblind complete source exposure before numeric transcription.",
+    "Eight vocal phrases are editorial replacements, not verified original-source note identities.",
+    "Shortened intro source jumpI3toI6 retained; printed missingI4-I5 and absentchorus not appended.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-69b2bf3f3634-moon-reference-v2.review.json",
+      "sha256": "a9f0148ce355a299d9b0913814c6d5159a9550a2611811b786490f37bac5eb0d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "80a71be7c6cdc45dd6db1a74f645d5a2a11f50476f52ac01accda9f12a560114"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "817cba9c856a71475481285b806f281bb6a98ce90775a1a8c5bf1fedb1942615"
+    },
+    {
+      "name": "0001-ad7d1cd96cf9.json",
+      "sha256": "802b6ef85179fd9f535bbf415276d58004013445cbc46bde1868374b87e37b82"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

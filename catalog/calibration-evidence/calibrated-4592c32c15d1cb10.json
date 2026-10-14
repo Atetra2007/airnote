@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4592c32c15d1cb10",
+  "source_id": "social-e60f11d197d6236d",
+  "work_id": "work-e33b237a7e1f",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7688723263690876515",
+  "status": "reviewed",
+  "sha256": "30f819ac51c315025daf088f94423b04cb7fa96690bb299fecc1a76123d6aff7",
+  "source_sha256": "576476de143fc932e6d61df2b467a4caa552a1ee71d935ea90f8d1a2c2056d5b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/285796.html",
+    "edition": "天籁下F调4/4双歌词谱之国语爱情转移行；F4降5至C4，72为明确练习速度",
+    "score_sha256": "a88505ff960093c182f92d9d8934b2787298598a83ed8e9b9c08e7c488679ab5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 111,
+    "maximum_parser_boundary_error_seconds": 6.394884621840902e-14
+  },
+  "review_note": "Complete two source images110notes from把 through敢 first ending. 来源两张图标题爱情转移（富士山下），歌词实际国语爱情转移；逐字读完两页全部110音与对应键位，不沿用粤语038的验收。将名称明确为国语版爱情转移。 选择285796两套国语/粤语歌词共用的F调4/4声乐版，定位国语把一个人的温暖到需要多勇敢第一结尾。r6b2前面的义无返顾的交换、第二结尾你不要失望等不在本来源内，不加入。 来源多数音为上点区，红双点1=原C6；为保留全部相对八度统一降12半音，输出A3–C5。来源最后青色n=普通6 A4，降至A3；不误升八度。所选印谱F4→C4整体降5，两个转调各自明示。 源图没有时值/节拍/BPM，全部116输出事件按285796国语歌词行及同音弧读出。印谱没有数字BPM；72为明确练习选择，非测得原唱速度。18整小节及2.5拍拾音共74.5拍。 统一降12后，源3/5原B4各按印谱改C5；源52原C4按印谱回忆之回处改C5。全部其他107源音高保持，110源音逐一处置无省略。源图时值缺失不能假设一音一拍。 尾部需要多勇敢的勇对应r9b5第二个普通1，印谱为独立半拍，源图缺少此起音，补C4半拍。末敢普通1独立完整4拍，前2→1为异音连奏；不截去源尾。 恢复两次.5拍换气和中间2.5拍休止共5休止事件；所有同音延音合并。111音5休止116事件，完整两页110源音全部映射。Root已读两原图及285796全图和副歌近裁，非盲；待独立二读及正式软件审计，无人工试听/游戏。 Root完整读过原两图110音与285796国语全段；独立审查员另读原图110音，修正最后一行6/1八度草稿后与root原源读谱完全一致。原错误草稿由审查员另存重建留痕，非已冻结侧车原文件；不把后补保存说成原始冻结文件。审查员已看候选，非盲读。 285796国语副歌与已完成双重数值复读的131794富士山下共同旋律在本选段116事件音高/时值/起点完全相同。Root现再看完整国语副歌裁图确认所有小节与歌词范围，透明复用既有Fuji独立116事件读谱作共同旋律证据；不声称审查员又独立录入了285796的完整节奏数组。每版原来源映射分别验证。 原resolved报告的第4/6音名误写B3/C4，但MIDI71/72正确；addendum更正为B4→C5。第53音为C4/MIDI60→C5/MIDI72。原报告与addendum均保留；正式逐项comparison和root核对使用正确MIDI与音名。三处源零基3/5/52、唯一新增114C4半拍、尾C4四拍及原110音完整覆盖全部确认。 此前待独立二读文字仅原候选历史记录；现已完成上述音乐复核，另送正式软件审计。72BPM为练习速度，无人工试听或真实游戏验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "a88505ff960093c182f92d9d8934b2787298598a83ed8e9b9c08e7c488679ab5"
+  },
+  "note_count": 111,
+  "event_count": 116,
+  "duration_seconds": 62.083333333333336,
+  "limits": [
+    "Explicit selected Mandarin lyric edition and practice72BPM.",
+    "Source octave reduced12;3pitch changes and1added attack explicit.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-e60f11d197d6236d-love-transfer-complete-source.review.json",
+      "sha256": "2f29c1e0980cc8b69c864583c834b6e853ae5a7b34e658f1ca0f4e7b36f5277f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1875c0eed1b9eb644be4e850b09a61d6262b71f3736906d6e405c6ae0a636057"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "37592a386520a9454a88a8469d3ff7796412d6a88eecad4e43e293cdeddc4bb3"
+    },
+    {
+      "name": "0001-68b8d1d3f4e9.json",
+      "sha256": "be085491246883ba4b45e055b5ee1ce8a5d1e3f27381ee42505e0eb24b38a955"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f08f4601e532938c",
+  "source_id": "community-1c6a455a27e316f4",
+  "work_id": "work-0c6ee1db2f3f",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BF%98%E6%83%85%E7%89%9B%E8%82%89%E9%9D%A2-%E9%A9%AC%E5%BB%BA%E6%B6%9B-%E6%A7%91%E6%A7%91%E6%A7%91-5be744edd167fb49d06e6.deltamusic",
+  "status": "reviewed",
+  "sha256": "88ea9c3ce5df5e00489b33ef19369c51548fadcf0eb48f0c1ee148540a7d6835",
+  "source_sha256": "7480f3100299fcae1ba57d8e179428cd6b54407498a65c223ee4e144469e1370",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18264.html",
+    "edition": "C4/4quarter66,wholeexistingcommunitysourceverseandfourchoruscouplets",
+    "score_sha256": "686f4f269686b5c647ffa8a832caa42c75869c11d2767e8739083540486a9979"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 171,
+    "maximum_parser_boundary_error_seconds": 1.1368683772161603e-13
+  },
+  "review_note": "Completeexisting174notes;EOPm5-19+m20first3beats Fixedoriginalcommunity174notes/324events/150pauses/365rawtokensallmapped;sourceownSHA,notinheritzhou017acceptance. CompleteexistingrouteEOP18264m5-19+m20first3beats;fourchoruscouplets,notonly017firsttwo.63beats66BPM57.272727s. Source+7semitonesrecoversCprintkey. Individualremainingchoseneditionpitchcorrectionslisted;noimpliedzero-changeclaim. Fiveconsolidationgroups[40,41],[62,63],[119,120],[126,127],[171,172]allsourceattacksindividuallymapped;62/63heterogeneousD4/E4→D4explicitselectedpianoeditionconversion,nottrueoriginaltie. MissingprintedE4m9andA4m18restored. Allsamepitchgraytiesfolded;unequalpitchslursnotmerged. Sourceperformancekeyupmicrogapsnotautomaticmusicalrests;all150sourcepauseeventsindividuallydispositioned,actualprintrestsrestoredandextrasexplicitlylisted. m16grace5notseparatelytimedprimarymelody;communitycontinuesitsprintedrest/pickup. Existingfinalm20normal6endsfragmentbeforeprintednextpickup;nointerludeadded. Rootindependentfullchosen2pageimageandproductionauditpending.Noaudio/UI/GPU/gameverification. Root完整两页m5-19及m20前三拍图读；复用仅root本人的m5-16独立32分tick，新增末4小节自行读录，179事件63拍全一致。完整174音324事件365token从原文件重新解码，150pause的前后音与实际输出持续/休止关联逐项重算。 明确批准此原演奏与EOP钢琴选版之间的五攻击整合；[62,63]移+7后D4/E4合选印谱D4，属明确改编不是原同音连线；其余四组同音攻击整合也不冒充原演奏连线。无源音漏账/删段。 +7移调之外17个局部音高赋值逐项保留；补m9 E4和m18 A4。微小keyup及长停顿按照已明确选用印谱持续/休止重建，8输出休止中7为参考谱新增休止，原150 pause仍全部留映射证据。 曲段比017长到第四句副歌，独立保留完整来源，m20末普通6一拍后截止。m16小倚5不另计主音起奏。66BPM取印谱；未试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "686f4f269686b5c647ffa8a832caa42c75869c11d2767e8739083540486a9979"
+  },
+  "note_count": 171,
+  "event_count": 179,
+  "duration_seconds": 57.27272727272727,
+  "limits": [
+    "Explicit5sourceattackeditionconsolidations,includingoneheterogeneousgroup,requireindependentrootapproval.",
+    "Communitypianoarrangementnotpublisherauthentication.",
+    "Noaudio/recordingalignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-1c6a455a27e316f4-noodle-eop-v1.review.json",
+      "sha256": "f7f83e4817c1b9920e20087b2f1753cfae3ba136b0a0fdb2fef7f27bea44fb65"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "cfac289645f1062dd90d0b77523e69c4b8710f28bda1a30adc68665d0a8cbfc9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4d8926dbb4eead7fc15d0dea6f4db35df310b13d6463fcc644db0883e37189b5"
+    },
+    {
+      "name": "0001-2b636f3fef02.json",
+      "sha256": "ab52e968a0ad74437af56c78fb4dcf3548929c9b3a0ad01fb66ae765c37c6757"
+    },
+    {
+      "name": "work-id-corrections-20261012-v1.json",
+      "sha256": "58dac36f490e8d84560779b6121fb7b6ddb77831815b43f5dbda966c10704caa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

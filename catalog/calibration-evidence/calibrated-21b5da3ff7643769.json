@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-21b5da3ff7643769",
+  "source_id": "zhouzhou-199",
+  "work_id": "work-6eae4dbec1a7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e83ca574c348874415cf8cb5225d5f5ea5c1c01eb3cef4b68cb0095eb68a7926",
+  "source_sha256": "581b642cd622081b8d6c0ebe47c1d446ab994931adf619a907c21e21be34cb2e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/330376.html",
+    "edition": "孙世彦A调2/4声乐谱含完整16小节器乐前奏，印谱82BPM",
+    "score_sha256": "d4bb8ca0bc0d0b3baa35245555335397c4ee22a538614c989151c3b6dc6af3bb"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 34,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "完整5源行34原音，对应16小节器乐前奏至最后长低6。 来源5行34音对应330376孙世彦印谱前16小节器乐前奏，不是主歌或副歌。全部34源音一对一映射，无增加/省略。 印谱1=A、2/4、四分82BPM，保留A4主音参考音高不移调；实际范围E#4至E5。原始白键数据多处未带A调升号，逐处校正C→C#、F→F#、G→G#；印谱升5是E#（输出等音F），不可误读E或F#。 原第29音D5按第13小节印谱3改C#5；原最后三音C5/B4/A4按第14–16小节1/低7/低6改A4/G#4/F#4，全部来源尾段保留并明确修正。 第2/3/5/6/10/11/13/14小节同音十六分弧线合并半拍；第7小节1连第8小节首1合3拍，第15小节低6连第16小节低6合3拍。其余高低音变动均保留起音。 第8小节低6/低7/1/2各十六分；弱化的低音点不可漏读。排除前奏最后1拍休止，全部来源音符至最后低6结束，31拍约22.682927秒。 Root复核完整16小节图、34源音和代理冻结二读：44谱头的10延音合34起音，全部音高/起点/时值一致；末低6延至31拍、末1拍休止排除范围明确。正式软件检验另绑定；未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "d4bb8ca0bc0d0b3baa35245555335397c4ee22a538614c989151c3b6dc6af3bb"
+  },
+  "note_count": 34,
+  "event_count": 34,
+  "duration_seconds": 22.682926829268293,
+  "limits": [
+    "Complete source instrumental intro, not full commercial song.",
+    "Printed edition corrects source accidentals and ending pitches.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-199-rose-complete-intro.review.json",
+      "sha256": "54a0de3acd8c765819ecf234cc9db62d9298ba0c2d6327971cae7eb52dde2bd5"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "caf00764d43f17cbf7706ded5c978b05a290893bf1ebfa0ee2e229e3190b2010"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "623dc70e1c55bf5b232203ace722710daea8955a06b268ad912298689e37566f"
+    },
+    {
+      "name": "0001-1f749d88cc5b.json",
+      "sha256": "1ad5d452cc98d08ab33b56785a1181b4879e05deac23b2b8e07aeb74d959d367"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

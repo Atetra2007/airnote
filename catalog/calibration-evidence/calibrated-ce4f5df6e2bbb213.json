@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-ce4f5df6e2bbb213",
+  "source_id": "zhouzhou-086",
+  "work_id": "work-10e764db8602",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6151cd89b09d8ed08b5f7ba463c61aa5653a2d8a0495c056acb78e6288dddb83",
+  "source_sha256": "23807b075e6c62ade233b5f72124019139ad6c2b53ca383c41abed0140f2ca62",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Stave-1700-1.html",
+    "edition": "EveryonePiano original staff score1700, one-sharp Eminor,2/4,quarter96; uppervoice",
+    "score_sha256": "47779da0660c740428fa5084aed59a4fb23c8e1637d817348b22d344fa80cf24"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 39,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部38来源音对应公开简易钢琴谱上声部16小节；一遍旋律，无伴奏与歌词反复。 采用同一EOP简易钢琴谱的上声部，四分音符96、2/4；保留32拍完整一遍旋律。 采用原站五线谱一升号E小调原音区，旋律起止E4，范围B3–E5（MIDI59–76）；原稿所有38音整体升7半音。简谱图片标1=G但与五线谱相差纯五度，只留原草案不作为绝对音高依据。 来源24单个F4在此版本对应第11小节两个独立C5八分音符，明确拆为两次起音，非同音连音。 补第4、第13小节各半拍休止；附点四分/八分1.5/0.5与成组八分按原公开谱读取，原JSON无这些节奏依据。 第15小节第一与第四音皆F#4，由高音谱表F升号调号确定；中间为B3、G4。来源B3升7半音即F#4。 维基、李娜、廖昌永版本存在额外装饰或重复，本稿不混用，未验证原歌手实际唱法。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "47779da0660c740428fa5084aed59a4fb23c8e1637d817348b22d344fa80cf24"
+  },
+  "note_count": 39,
+  "event_count": 41,
+  "duration_seconds": 20,
+  "limits": [
+    "Public EOP teaching arrangement; no original singer validation.",
+    "Full existing melody only, no accompaniment or extra stanza repetitions.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-086-sheet.review.json",
+      "sha256": "56abc318737bec00c60ee53f0b73e23059c85c2234c5f7880758658520528712"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0b4967067e317f2184eeb49aeeb62d641dc92d8f2b74b06deedadf3b51c960dc"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "be6af5f9a09138bd4aa32f49a545b82c2f07ed8109701ba84ec2c029e6d4fc07"
+    },
+    {
+      "name": "0001-7363ea3d2e6b.json",
+      "sha256": "202e558991cc2dc857f211015f469a424c51a96f8cc89786234f33b291b27e20"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6a5cbb1bc70a8809",
+  "source_id": "zhouzhou-034",
+  "work_id": "work-4ac03a541c5c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e12620792e085dd0ccb1f894e414a087e9528dee055601acc673bc4125cdeb4b",
+  "source_sha256": "c43a75ab2a76f9adee41e2cff2bef13c31bafa3b97caf2d9d50e6d7974b47bf8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-19037.html",
+    "edition": "C4/4quarter70;P1m10last1-m18;P2m28last1-m36b2.5",
+    "score_sha256": "c471e535fa8cd28e9a957ad9e77773cecbe28ba59b98b64503a4b8237e2acf53"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 67,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "Complete67source-notesandallunknownmarkers;source-ordertwofragments;allprintedtiescompleted 完整原源67音及全部未知边界逐token保留；实际原源t=进击的巨人，inventory对应文件033-起风了-节选02.source.json，不能误取文件名前缀034。作品固定work-4ac03a541c5c。 经完整简谱旋律身份确定为Call of Silence，非Akuma no Ko；公开B站BV1VBY7e2EFJ简介亦有同一六行音序，但该简介不提供量化时值，正式依据EOP19037完整两页C4/4四分70张胜君简单版。13207七页混编亦全读但与此选版不同，不混用115BPM。 原自身顺序保留：m10末1拍至m18结束33拍，跳过m19-27参考间奏，接m28末1拍至m36第2.5拍31.5拍，合64.5拍；不补原不存在的间奏，不称完整录音。 选参考印刷音域：原source0-13全比同一句印谱高12，明确逐音降八度；source14-66与印谱相同全部保留。不是自动对齐决定音乐通过，不为前半句虚构统一全曲移调。 m11/m13/m15第三起音7分别为低B3/普通B4/普通B4，十六分+.1.5附点四分tie=1.75拍；m11末普通C4、m13末普通E4、m15末普通G4各.25+次小节3=3.25拍true tie。m16末G4亦与m17前三拍tie3.25。 m17末D5.5、C5.25、D5.25+m18初1.5tie=1.75；随后C5.25及A4.25+四分1+延长1=2.25，m18完整结束，未丢尾延音。 m29/m31/m33末C5八分跨下一小节前三拍tie=3.5，source37/46/56均一个起音。高5为G5保留；m31普通5为G4保留，不混八度。 m35 source59首D5一拍；source60D5/C5/D5/E5/D5五个八分；source65末D5半拍和m36首1拍tie合1.5。source66末C5为m36四分加下一个同音八分tie合1.5，选段在此完整连音后停止；后谱未在源出现的C5/B4/E4/A4不加入。 原末四个|是未知时值边界，逐个保留并不渲染为时值或休止。source66参考连音时值由所选完整谱给出，未从四个|推算等待4拍。 70为所选印谱练习速度；完整两页及全部适用行实际view_image读过，候选待root独立读谱及正式生产软件检验。未UI/音频/GPU/录音对齐/实机游戏。 Root完整两页及m9–18/m28–36细图独立实读、另录十六分tick，全部67音64.5拍一致；原84token重新解码，67音逐一对应及17未知|完整核对。 m11低7/m13普通7/m15普通7音区及m13/m15不同结尾均复核；m16末5与m17前三拍为3.25拍true tie；m18末6为2.25拍完整尾。 m28末接原第二片段；m35末D5和m36初四分D5为1.5拍tie，m36C5四分加下一个八分同音也1.5拍，完整连音后截断，不加后续无源旋律。原source0–13降八度为选谱音区改编，其余53音原高不变。 17布局|均无已知时值，保存原证据、不伪造休止；精确位置：最后四个|在source65 D5之后、最终source66 C5之前，不能描述成C5后四拍。70仅所选练习谱速度。固定source034由原SHA对应文件033内部标题进击的巨人，身份Call of Silence，不与恶魔之子混用。未试听/实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c471e535fa8cd28e9a957ad9e77773cecbe28ba59b98b64503a4b8237e2acf53"
+  },
+  "note_count": 67,
+  "event_count": 67,
+  "duration_seconds": 55.285714285714285,
+  "limits": [
+    "Communitysimplepianoselectedmelody;sourceowncutorder.",
+    "First14sourcepitchesexplicitlyloweredoctaveaccordingselectededition.",
+    "Sourceoriginaltimingunknown;allmarkerspreservednoarbitrarydurations.",
+    "Printedpractice70notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-034-silence-v1.review.json",
+      "sha256": "41ed8f31b04e65ab139f4c534c3e2f2e71d324c6736220a81d17c95e148465de"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d4b0fb4a1ed90878b99c4210ab2ccac7825f7b4e53ab464e84a3f090ee9b3c03"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "9965befa18f5cfe128057efa043487c259d01fe6602afab609d7af3ae24cb8d7"
+    },
+    {
+      "name": "0001-1df866b5dc6b.json",
+      "sha256": "fea8efcedf01470c1a9c07f229e587c72c4ec582550cf8014c57cb0400e9987f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

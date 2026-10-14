@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1cbc286aeb6465e4",
+  "source_id": "zhouzhou-098",
+  "work_id": "work-d495f371b50d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "58273a4a4ddf50d61577de7163ea963ee92dec1cadcc2629ce8a5bf37d9eebfe",
+  "source_sha256": "69bac9c8c8c04a0c296319254f4344f0a9d7512280571c0af7dabb1ced0d5c69",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/260463.html",
+    "edition": "塞边的沙柳 first-theme32bars in2/4; source extent and practice tempo disclosed.",
+    "score_sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 54,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-15
+  },
+  "review_note": "全部56原音：原有3音引子及第一主题前16个2/4小节，不追加后段。 Root已见原源后，直接从260463第一主题32小节逐小节另录音高/时值；先生成独立参考数组再构造候选和映射。原谱按2/4分组，不将源视觉竖线误当定量小节。 原源首G4/A4/C5分别取149038第1小节最后2拍的1/.5/.5，随后全体主旋律取260463前16小节并升12半音，主源普通1为C5。260463主谱没有该引子，混合选择明确。 56原音全处置、无省略无新增无改音；source24/25的G5两次起音选版合为A7附点八分.75拍；source50/51 D5同样按A15合.75拍。这是两处版别整合，不是打印同音连线。其余重复音保持独立。 共54输出音、34拍；统一140BPM来自149038打印值，用于260463简化主旋律为明确练习选择；非原录音对齐。完整尾source55 C5两拍保留。候选等待独立复读与软件审计。 独立代理在打开候选前先从260463完整前32小节和149038引子另录数组并保存，root参考100事件及本候选全部事件逐项相符；原源音高、符号与逐项处置也通过。报告及脚本按哈希绑定。 原候选@meter=4/4显示字段与主谱2/4不一致；本v2只把头部改2/4，所有非头部音乐行与原稿逐行完全相同。旧候选和旧独立报告原封保留，其旧TXT哈希仍可查。 此次音乐证据复核通过后另行进行正式解析/导入/重启与安全时序检查；无人工试听、录音对齐或实游。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7a8504b5c0dd5f91ecaf1ecf3702f569afc2840635181b343ce341f342ce28a7"
+  },
+  "note_count": 54,
+  "event_count": 54,
+  "duration_seconds": 14.571428571428571,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-098-poker-complete-source.review.json",
+      "sha256": "e5aa8a8b798b6c710d387af44d822dcaf236f1bbcb19d9cd269c8d2bf7e722fc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "45283738b0293a562ce0d671b574c7e0f3679acf7ad2d180ddcad40cb25af02d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7a1ede1a4de6162d3a6817d72517a0633ca6c03f464a5461c6b8f6d1ae8339fc"
+    },
+    {
+      "name": "0001-cb666d9a4b7e.json",
+      "sha256": "94c645788f23e265202c9d35aca02ec733d8d976e8995babb87ae93fdb9a4078"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

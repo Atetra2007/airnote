@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-32bdf52a96d65b77",
+  "source_id": "zhouzhou-065",
+  "work_id": "work-930c9ca07a5b",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "bfa5341111343a097eebf586f040a472e705f47678a36c3511e96b79aadfd9fd",
+  "source_sha256": "a41d120378e238e351fa03a6d35744d96a531c126160e140d9d121be26398346",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/377361.html",
+    "edition": "林俊杰C调吉他谱数字主唱，首副歌至线字第一结尾开头2拍6；后哦拾音不属原44音范围；明确练习90BPM",
+    "score_sha256": "49c8d93269b9dfcd011c1e06cd5650b3ad4a74596837cfab2bf416d1e7bc2aba"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 44,
+    "maximum_parser_boundary_error_seconds": 5.329070518200751e-15
+  },
+  "review_note": "全部44原音，第一副歌含所选第1结尾两拍6。 原source065完整4行44音，从传说中你为爱甘心被搁浅至我眼泪断了线，与377361第2页首副歌全部44独立主唱音相符。不是同名其他歌曲。 选用377361林俊杰C调吉他谱所列数字主唱声部，排除吉他伴奏，C4基准不移调；44原音音高全部保留，无新增/省略/合并原攻击。 原无数值BPM，参考也无数值速度；明确选择练习90BPM，不声称与录音速度对齐。 第1和3小节首半拍休止保留；第5小节末半拍休止保留。第5小节两个1起音独立，第二1与随后1同音弧合.75拍；第6小节7 .25连7 .5合.75。 第7小节首高2一拍连高2半拍共1.5，最后高1 .25连.5合.75，其后的高2半拍独立。异音弧保持各自起音，不合成延音。 完整末原6选择第1/3结尾的6两拍，停止于线字末；不加入随后休止、哦拾音、再现或器乐。其他第二/第四结尾不是本次选版；原末对象b=1是持续横线提示，不是降号。 两次完整图读与独立resolved47事件复核通过；原44音全保留、3休止、30拍。末源43对应线字2拍6；初次独立复核误将后哦拾音纳入范围，已更正，最终谱面音乐不变。正式软件审计另绑定，无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "49c8d93269b9dfcd011c1e06cd5650b3ad4a74596837cfab2bf416d1e7bc2aba"
+  },
+  "note_count": 44,
+  "event_count": 47,
+  "duration_seconds": 20,
+  "limits": [
+    "90BPM is an explicit practice tempo, not a recording or printed numeric tempo.",
+    "Monophonic vocal melody from guitar score; chosen first-ending6 is two beats.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-065-mermaid-complete-chorus.review.json",
+      "sha256": "141866e9afbc1af6d443bb41dc1c4afbfeba0979094350da011d5fabd9b26578"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "af550b8a9853f94f53682f4435f0ccd98ab1e59ba03f74e680674b5601a76c64"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "da79409e901630d6fe7476b206914ff38cb0715bf815496a51a36c7986b6f336"
+    },
+    {
+      "name": "0001-e2d2e282acf8.json",
+      "sha256": "d8cc1f2ec29da81c33459cbad7592585e745425ea63088109e381a89ccc1ee82"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

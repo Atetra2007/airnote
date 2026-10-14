@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9b70ae9e0413271a",
+  "source_id": "zhouzhou-094",
+  "work_id": "work-76f3039ebe89",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "25275cbbd981a049315d0c5f4fe711e17d01ed557a6ce8d88a2ea85094f8341a",
+  "source_sha256": "6c6834002cd0f15e5e1c37b43b8474b00725351e82d7f995b9dfacc2cc8d3e23",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/346732.html",
+    "edition": "桃李醉春风E调4/4声乐版；明确练习88BPM，非该主谱印速",
+    "score_sha256": "fed7f2689ece2de5f6c59ae9e9e7a3ab485ebf3062b2cbb30d681446a3effd0c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 173,
+    "maximum_parser_boundary_error_seconds": 2.4158453015843406e-13
+  },
+  "review_note": "完整171原音从第一主歌至末要2，加入半拍首休止、排除末3拍终端静默。 完整9行171源音，从感受至没有你根本不重要末2。全部源音顺序一对一保留，无省略/合并/音高更改；只恢复眼字低7/低6两装饰起音，173音。 唯一音符/节奏主参考346732桃李醉春风E调4/4完整单页，E4降4半音至C4，保留来源G3至A4音区。316885孙世彦版同E调打印四分88，仅佐证明示练习88选择，不混用其旋律、反复或时值。主参考未印数值BPM。 来源覆盖主歌8小节、预副歌4、副歌8、后段7整小节及第一结尾1拍，合109拍。加入开头感受前可见半拍休止，结束至最后要字2的一拍；其后3拍终端静默不在源音范围，明确排除。 主歌四处低5跨小节同音弧合1拍；V6眼字为1 .5/低7 .25/低6 .25三个独立音，缺的后两音恢复。其余高低音弧均连奏不并起音。 预副歌全十六分经过音和异音弧均保留，P1我低6与P2们低6之间没有弧，各独立.25拍，不合为一音。P3末1连至P4不同音2是连奏，末2独立2拍。P4两拍休止完整补齐。 副歌1/1/1/2等起音完整保留，遇/光3 .75与危/为5 .75为附点八分；来源对象字段b=1是来源排版延音线标记，不是降号。 后段疯狂/根本的1 .75+.25同音延音合1拍，后一个1 .5独立起音；最初1/5为两枚.25，后三枚5各.5。D4大/脑2 .25/1 .25/低6 .5全部保留。最后低7到2为异音弧，保留末2起音。 原源没有明确休止，按所选谱恢复全部可见休止，不能用延长前音取代。原节选后的第二主歌、第二结尾和桥段不在171原音范围，不追加；完整原范围最后收音已校对。 Root完整主图读谱与171源解码，独立28小节图像复核完成；freeze把普通2写低2及眼首1写双线两处已原图澄清，冻结未改，候选正确无需改音。194事件/173音/109拍，末要2一拍完整。独立未制作完整数值数组，TXT对timeline只作软件一致性证据。无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fed7f2689ece2de5f6c59ae9e9e7a3ab485ebf3062b2cbb30d681446a3effd0c"
+  },
+  "note_count": 173,
+  "event_count": 194,
+  "duration_seconds": 74.31818181818181,
+  "limits": [
+    "88BPM explicitly selected; not printed in primary346732.",
+    "Complete existing source extent, not whole recording.",
+    "No human listening or real-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-094-lightyear-complete-source.review.json",
+      "sha256": "e4584db6a4ff9064772dda88da3995e16e9639c4a2b6fc792d18e0b1b54e5f3e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c0a5cee640c9df74126e91e27b4d685eeec212f3c5e7c09627279753ff5cf18f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b808bf9ba90771cc9b26a3c0f2a0a7b38c9253e2762e717b28c1d409cc01c0da"
+    },
+    {
+      "name": "0001-4fe822389579.json",
+      "sha256": "7000dd6f221215ff2310cb67a247625a27d95a7ee89d1c12ec1b0e2b9259c398"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

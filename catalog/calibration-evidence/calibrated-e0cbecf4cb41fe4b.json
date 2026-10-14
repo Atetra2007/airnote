@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e0cbecf4cb41fe4b",
+  "source_id": "zhouzhou-051",
+  "work_id": "work-6f4c7390fc6a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "b18424d4213c4b92262441049396ecaffeff83fadc6ea867add11827228a4318",
+  "source_sha256": "1214f647f0cefbfdd4ca5ec9ef37d4ca73bdbd7e5d01e9335495cd93c968852c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/331188.html",
+    "edition": "孙世彦A4/4打印四分70BPM，主歌至退后3尾音；小3倚音明确.125拍",
+    "score_sha256": "b1de53a61c3b912d0ce0cbf62a09057eb0a965de5cb2d9e396ce57f3189a31f3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "原图全部8排68音，从把昨天都作废至末嘿；所选版末尾3明确替换原高5，其余来源范围完整。 原完整图片1214f647…共8排68音，所有音符、八度点与歌词人工逐项读取，包括末独立高5嘿；没有数值速度、减时线或拍号，不根据字距和键位提示猜测时长。 主参考331188孙世彦A调4/4、打印四分70BPM，全单页及主歌4行细节均已看。URL后缀png但真实文件JPEG2480×3508，按真实.jpg保存并记录SHA。其余446769C70吉他、363274A吉他仅列为比较线索，不混入主参考。 参考A4主音升3半音为C5，即印普通1→C5、低6→A4，适配原大多数高点数字。完整范围为把昨天都作废到原嘿结尾，采用所选版12小节主歌，跳过开头器乐和把前一拍休止，共47拍，不加入之后我说过我不闪躲副歌。 source13/14/15原我想爱1/2/1无高点，按印谱与相邻声部关系升八度为C5/D5/C5。最后source67原高5嘿G5，所选印谱退后的尾转音为3E5，因此明确替换为高3两拍；这是不同编配版本的选择，不把原高5断言为作者错误。其余64原音保持音高。 source12前字1 .25跨小节连1 1合1.25；source15爱字1 .25连1 1亦合1.25。两次相同音前的休止和独立起音均保留，不能按数字重复自动并音。 source26也字3 .25同音连3 .5合.75；source28担字3 .25跨节连3 1合1.25。认定各3 .25， source31你2 .25、32就5 .75、33是5 .5、34答低7 .25。 案字所印1 .25跨节同音连1 .5，补一枚合.75的主1；原source35高2保留为后续2 .25，source36高1保留为1 .25连1 1合1.25。外层长弧是整字连奏，内层两个同音弧分别延长，不能把案字2直接改成1并丢掉转音。 V8 source43我1 .25连下一1 .25合.5，source44极低6 .25后，source45端2 .5连2 1合1.5。V9 source50的3 .25后补短2 .25，source51直2 .5仍独立起音；source52觉3 .25跨节同音连3 1合1.25。 V10不字前印小3倚音未定时值，明确选.125拍、从source57主2 .5借时至.375。原source56人普通6 .75保留（输出A5）；不是低6。source59累1 .25跨下一节1 1合1.25。 V11撤字3 .5向2 .25的弧是异音连奏，补短2 .25；下一小节退2两拍另起，映射source66。末3两拍与2的弧也是异音连奏，映射原嘿source67的选版尾音，不能把两个2或2/3全部合为持续音。 68原音每音保留映射，无静默省略，新增4音（案字1、的字2、小倚3、撤字2）；加入11段印谱休止，输出72音11休止83事件47拍，70BPM共40.285714286秒。 Root全读原图68音与331188选版12小节，另输入68原音/83输出事件全量核对一致；包括案字转音和两处短2、末嘿版别替换。正式软件验证另绑定；未人工试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "b1de53a61c3b912d0ce0cbf62a09057eb0a965de5cb2d9e396ce57f3189a31f3"
+  },
+  "note_count": 72,
+  "event_count": 83,
+  "duration_seconds": 40.285714285714285,
+  "limits": [
+    "Original final high5嘿 replaced by selected edition3; original may represent a different arrangement.",
+    "Unmeasured grace3 assigned .125beat borrowed from principal2.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-051-pianai-complete-source.review.json",
+      "sha256": "fba73955737b8965f17c42b2b9549a5c8189eeb09ea1da2ab558bf16ee06707c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ee9b886d45ea8f967ad012d1919049ac5ebdcf5aa42a49e62dff4c82795c7137"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "798ea6bd522e3fa82fdffef010117eb6161fb9c59f2dd02c85a4e55665a9e5f0"
+    },
+    {
+      "name": "0001-bd86cf2f7ceb.json",
+      "sha256": "ada22d44ae914a2253a38208c57a72607acf5e54f3bb79cd0db84409e2c528e8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

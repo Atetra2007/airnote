@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f5f7213739f30997",
+  "source_id": "websheet-560807be971c6a83",
+  "work_id": "work-8fa7c555fdf8",
+  "source_url": "https://piastudy.com/Intermediate/wzZVQQAn",
+  "status": "reviewed",
+  "sha256": "44f728fe8cdba7575e9b4444459a7fec4909bb950b8b8c44210c35e68b564bd3",
+  "source_sha256": "560807be971c6a83899d03b99f08d7733e63778afd38efb71592ce3ce0e68306",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/wzZVQQAn",
+    "edition": "Full102bar RH practice: printed pitches plus same-page MIDI120PPQ timing;828attacks/54rests;2gatecuts;global-3/block-octaves;fixed80,not rubato restoration",
+    "score_sha256": "9091f9cfa87e036fee75af10048258a7c9bc6ad003be1b70c8d2d6c3490d49dd",
+    "midi_sha256": "560807be971c6a83899d03b99f08d7733e63778afd38efb71592ce3ce0e68306"
+  },
+  "review_method": "Root full-six-page printed pitch and voice reading plus independent original MIDI byte decoding and full828 timing/gate/gap verification; explicit dual-media practice edition",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 828,
+    "maximum_parser_boundary_error_seconds": 2.1259438653942198e-11
+  },
+  "review_note": "Root已完整查看六页102栏及所有五组音高差异裁图、66/94–100/101–102异常节奏裁图，复核四降调号、还原记号、八度线及所选同音延音。全2638来源头保持逐项处置，单旋律选择828主RH攻击；531内声、7次声部、17装饰、1255左手头明确省略，不称原钢琴全声部恢复。 最终版本使用同一公开页面的两种音乐材料：已视读印谱确定音高与主RH选择，页面直接发布的原MIDI确定120PPQ起点和门限。SVG data-dur、梁线、嵌套连音与实际时序存在冲突，早期v5纯SVG时值未获批准，最终未拿不自洽格长拉伸凑拍。此为明确选定的练习编配，非宣称所有原媒介互相一致。 Root用另一MIDI消息解析器从原文件独立解码2638音并逐项核对，同轨同音重叠按FIFO保留；828个所选源ID唯一、原起点全保、54个真实间隙保留为休止。仅source775在m36同音重攻将门限90改60ticks，source2489在m96→97主旋律交接将G4门限210改30ticks，原门限完整保存在证据。其余826个门限保持原值。 42个原MIDI与印谱半音差异全部记载，其中18个进入所选旋律，其余位于省略声部；本版本明确采用印谱四降调号和可见临时变音，不依据旧MIDI反造还原号。 全曲统一降3半音，完整29–32、43–46、61–64、77–84、88、99–102段额外降八度，范围48–84。原80→70及rit不在本固定quarter80练习版中还原；309.375拍、232.03125秒是练习时间，不是原录音时长。 仅websheet-560807be971c6a83本来源通过；同名social037未自动继承。所有本地材料及技术检验不代表真人试听或实机游戏验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9091f9cfa87e036fee75af10048258a7c9bc6ad003be1b70c8d2d6c3490d49dd"
+  },
+  "note_count": 828,
+  "event_count": 882,
+  "duration_seconds": 232.03125000002143,
+  "limits": [
+    "完整2638来源音均有明确处置；本练习版选828主旋律攻击，其余钢琴声部和装饰音省略并完整保存原证。",
+    "同页公开印谱决定音高与声部，原MIDI决定起点与门限；两媒介存在已披露差异，不声称它们完全一致。",
+    "固定80BPM，统一降3半音及指定整段降八度；不还原原MIDI末段70BPM或人演rubato。",
+    "两处主旋律交接门限裁短及18处所选印谱半音选择均已逐项披露。",
+    "仅websheet来源通过，同名social037不继承；未人工试听、未实机游戏验收。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-websheet-560807be971c6a83-dualmedia-native-RH-v6.review.json",
+      "sha256": "b96187c60af524cb7aa8787cf0fcee976fd570c7c199eb44210132d0f993c15b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "b89997be0b1840d813b75460ef38fb0b36cf683f6f50ea98240d629335b0d548"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0ab40c5ccf32a4b392726487a245795261eb896a303ebc20333cbd9d46885677"
+    },
+    {
+      "name": "0001-db9d7faa1fd4.json",
+      "sha256": "57d5b04fffb0fba5289b19e2a469689e4dc9ee9c24c397f3d4ab49adf055767a"
+    },
+    {
+      "name": "public-review-summaries-20261013-glory828-v2.json",
+      "sha256": "bff74b156233679e29a1bfa36e5380ee2c299210e4861b02348d72471b3060cb"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

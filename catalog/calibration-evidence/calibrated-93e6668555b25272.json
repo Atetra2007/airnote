@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-93e6668555b25272",
+  "source_id": "social-c3ac834ad63a205a",
+  "work_id": "work-f479cbfd52be",
+  "source_url": "https://www.bilibili.com/read/cv53069007",
+  "status": "reviewed",
+  "sha256": "254021336f598e7903c17d3d71f845e738c413fbfd1771c80f0043c3f89fc521",
+  "source_sha256": "f120fd571c63d337898df780fd05cf70a8cb1f3b873a699d073df97d706ca5c0",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/WNctWN8W",
+    "edition": "D4/4printedquarter204;m42beat2..m73beat2;reference−9;beats/2quarter102",
+    "score_sha256": "69f6094c22239dd6d63f11ecfc1ac50d5fc5fd33804cd9c431e92591476540f5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 100,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "Complete83sourceattacks;m42beat2..m73beat2;17insertions;explicitpickupandD5voices 常规HTTP恢复原cv53069007的作者完整83音16栏，response/visibletext/recovery保持原样。83音和作者原明确时值/key逐项解码，不把原显式时值变成unknown；原连续起点未知因为原文不记休止。 独立参考为Piastudy WNctWN8W Starrrrrinnnnn Sunny完整8页，全部8页实际view。选连续m42beat2至m73beat2；原全227栏Midi并不声称此次social候选已验收。 参考D2sharp4/4印刷quarter204，输出quarter102与印刷时值/2保持完全相同物理时间；参考−9，全部83源pitch保留，范围A3..F5合法。原作者BPM80是原选择，明确换成所选独立参考速度，非声称原录音已校准。 首source1F4选m42beat2左手临时treble D5二分(reference74−9=F4)，该栏右手8va C#7不选作旋律，首声部选择显式。m50/m66持D5内声二分分别保留source22/source64F；其B4/F#4内填处于所选D5下方。 m46 A5四分原source12A4前明确补C5八分；m48/m64两个D5独立四分不能合成一个攻击，因此各补F4八分。不是机械序列错位调整：之后全部原音直到83逐项一致。 m49/m65主A5四分~八分分别source21/source63输出C5三拍之四分(0.75)；后F#4四分,A4八分是低填音，明确补A3八分,C4十六分。m50/m66前B4,A4,B4,C-natural5四八分分别补D4,C4,D4,Eb4四十六，之后选D5持音而非低内声B4/F#4。每次6fill，两次12明确插音。 m57 D5二分source41输出F4一拍，后两印刷拍为所选uppervoice休止；m58前两印刷拍继续uppervoice休止，beat2 stem-up D5二分source42输出F4一拍。低ostinato标l.h.只伴奏，未误选其反复F#3/A3/D4。 跨栏真tie source20/35/38/62/77/80每个1输出拍，reference两四分相连；相邻重击不合。m56/m72末独立E5八分各补G4十六分。m73 beat0 D5二分source83末F4一拍完整止于beat2，不省略末源。 共83原音无pitchchange，加5个漏攻击及12个fill共17插音=100音，所有休止由所选独立谱位置取证，62输出拍=36.470588235294秒@102。source-durationchanges明确列表，不按作者栏余数自动补休止。 此候选仅完整83源的独奏参考编配，root独立音乐复核和正式软件审计待执行；无人耳/音频/GUI/游戏/GPU验证。 Root实际查看参考第1页速度及第2/3页全部适用32栏，并另看m38–56高清裁图，独立按音名重录m42拍2至m73拍2的124印刷拍；全部110输出事件音高/起点/精确时值吻合。 Root独立正则扫描原16栏，83音数字/键位两种写法逐项相同，原83时值逐项核对；输出全部原pitch保留且原索引恰覆盖一次。原80BPM明确换用参考204、时值减半后输出102，不声称录音对齐。 Root确认m49/m65 A5栏内真tie和6处跨栏真tie；m48/m64两个D5及m56/m72末E5都是独立起音。首D5来自左手临时高音谱号，m50/66 D5取持续声部，m58取stem-up D5；这些明确选声部使83源完整，另补17音、10休止。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "69f6094c22239dd6d63f11ecfc1ac50d5fc5fd33804cd9c431e92591476540f5"
+  },
+  "note_count": 100,
+  "event_count": 110,
+  "duration_seconds": 36.470588235294116,
+  "limits": [
+    "Source83only;full2792pianomidinotseparatelyaccepted",
+    "ExplicitvoicechoicespickupandD5at50/58/66",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-c3ac834ad63a205a-haru83-piastudy-v1.review.json",
+      "sha256": "8ad3db5f7a89fb26402c680ffaeb005f5745e3f78b34178425b7329314eba1bc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bb53f2f17c5694a38958ea3166328d9f8a9a3f8ab95d49eb0bf49d492a9a27b9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c4d2cbfab4f00930fbd963924a67acff6a4cd0a41dd18fda4bae0b3b2a29da0a"
+    },
+    {
+      "name": "0001-213e5432a2b5.json",
+      "sha256": "dd32c7e48f81846f084162978765a894ef4b2c451920f712908e771fbf3a23ee"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="../../src/Harmonica.Core/Harmonica.Core.csproj" />
     <Compile Include="../../src/Harmonica.Desktop/Models/LibraryItem.cs" Link="LibraryItem.cs" />
+    <Compile Include="../../src/Harmonica.Desktop/Models/LibrarySearch.cs" Link="LibrarySearch.cs" />
     <Compile Include="../../src/Harmonica.Desktop/Services/LibraryStore.cs" Link="LibraryStore.cs" />
   </ItemGroup>
 </Project>

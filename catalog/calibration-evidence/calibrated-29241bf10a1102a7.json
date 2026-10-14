@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-29241bf10a1102a7",
+  "source_id": "zhouzhou-153",
+  "work_id": "work-deck-1dbd2be3a810",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e879f7ec1170a3b665233126a599d4ddec52476dacbff4970820c7773af2558e",
+  "source_sha256": "fcc2c7f6eced185f9242d1a3bc3e9164fa855bf7c3fe94e16ea142ac18179421",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/338491.html",
+    "edition": "天妖辉夜完整三页，B转Ab、打印四分174；153仅首段至首副歌末，选择B3普通1升1半音至C4。",
+    "score_sha256": "35d3cdb001601635bd39342ff49bd994845cebb97fef2a2b0acd938a6d9a9e44"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 237,
+    "maximum_parser_boundary_error_seconds": 3.353761712787673e-12
+  },
+  "review_note": "原15行236音，从首句两拾音到第一轮副歌光末三拍及一拍休止；后续主副歌/桥段/尾奏不在原范围。 固定153原源SHAfcc2c7f6eced185f9242d1a3bc3e9164fa855bf7c3fe94e16ea142ac18179421，15原行236音，无休止、歌词或可靠源节奏。与同名deck602音来源范围不同，不能继承它的完整版名称或全曲验收。 采用338491天妖辉夜制谱完整三页数字谱，打印1=B后转Ab、四分174。本来源只覆盖尚未转调的B调部分，从第一页首句两个拾音经前副歌、第一轮副歌，止第二页第二行光末C5三拍和一拍休止。普通1的参考音区显式选B3再升1半音到输出C4，以保留原源音区；这是练习编配音区选择，不声称与原唱录音同八度。 保留首拾音1拍，加62完整4拍小节共249拍；开始前三拍无声不属于摘录，略去。第一段末至第二段首印谱7拍休止、前副歌最后的1拍休止、第一副歌尾1拍休止均保留，9个原缺四分休止。174BPM约85.862069秒。后续器乐、再主副歌、转Ab桥段、末副歌和尾奏不在153源范围，不添加。 四个印谱调内变化音纠正：source25/85普通4F4改#4F#4两拍，source29/89普通5G4改#5G#4三拍，均为所选谱明确打印的临时升号。其余232原音音高保持，无原音删除。 首终止P1r4b1三次高2和两次高1后，下一小节又有高1四拍，前后都没有同音弧。原source58/59只给两个高1而参考需要三个：将58放前四分、59放最后整音，中间补独立高1半拍。三同音的逐一归属存在选择性，明确是选版映射，并非可证明某一个原高1的唯一文字锚点。 P1r9b1印普通3与三次高1，各一拍；原source142-145四个高1，多出一个。source144/145明确按所选版合映末个高1一拍，这是所选版重复值整合，不声称该处有打印同音延音弧。source142/143仍各独立一拍。 第二新增是P1r11b2原source187高2二拍之后的同高2附点八分.75拍（む）；原source188高3十六分、189高2附点八分、190高1十六分继续保留。不得错位改这三个原音以掩盖缺失。 P1r2b1/r2b3/r3b4/r6b1/r7b2为印八分三连音，各1/3拍，同音前两项合2/3拍；P2r1b1/r1b4/r2b3为四分三连音，各2/3拍，同音两项合4/3拍。普通减时线不是三连音；小节精确有理数均合4拍。 所有不同音弧仍逐一发音，包括P1r1b4末5至后3、前副歌5至高3、高5到超高1。P1r8b2的两个高3之间无弧，source126一拍/source127两拍独立。P1r4b1两个高2下只有一条减时线，数字2底横不是第二条，因此各半拍。 两枚无定量时值的小倚音明确略去：P1r10b4高6之前小高5、P2r1b1高2之前小高3。它们不占主音拍值，原源没有对应音值，不伪造演奏时长。 最终237音9休止246事件，236原音逐项覆盖100%，0原音省略、4临时升号改音、1重复组整合、2主要音新增。source181超高1使用完整【【1】】表示C6，不能错降成C5。待root独立音乐二读及正式软件审计；未人工听过、未录音对齐、未真实游戏测试。 Root亲看338491完整第一页、第二页和全部13处所选行裁图，独立录入63个印谱位置（1拍拾音+62四拍小节）246事件，冻结后才读取候选数值数组；全音高、拍值、起点在1e-9拍容差内完全相同。提案说明已知，非盲读，数组非候选复制。 另行逐字解码236原音，核验全源一次覆盖，source144/145按选版合入一个高1而非虚构tie；四处#4/#5、两处新增高1半拍与高2附点八分均精确确认。P1r4b1三个高2的节奏1.5/.5/.5、两个独立高1的1/.5与下一小节高1四拍均保留；P1r8b2高3一拍与高3两拍独立。 精确有理数处理八分与四分三连音及同音延音，所有正常小节各4拍；保留内部7拍间歇、末C5三拍后1拍休止。普通B3+1至C4为明示练习音区选择，source181双高1确为C6。参考174为打印四分速度。两枚无定量小倚音省略已披露。 本项覆盖153完整236音原来源，到首副歌结束；不继承602音deck长版验收。原待root文字为历史候选叙述，当前音乐二读完成，另送软件审计；未真人试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "35d3cdb001601635bd39342ff49bd994845cebb97fef2a2b0acd938a6d9a9e44"
+  },
+  "note_count": 237,
+  "event_count": 246,
+  "duration_seconds": 85.86206896551413,
+  "limits": [
+    "Complete236note existing source excerpt only; deck602note full arrangement is separate and unreviewed by this result.",
+    "Printed meter is not explicitly shown in heading; all selected full measures read as4beats.",
+    "Ordinary1B3 octave realization is explicitly selected to retain source register, not verified against singer recording.",
+    "Two unmeasured graces omitted explicitly; no quantified grace duration is invented.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-153-lemon-complete-source.review.json",
+      "sha256": "6e682a9096fc818f8fe912f791145a424aef86b1bb614674f323b89b98b41de1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2bf16f4b9efdecac0c92546d6f2e08cad6e89e207bbbb48058a7e7d4964957e0"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4ff70d3da9ce4c8dfba35ec3b358703fd348a4cd56ff367c294a4c6019aff8aa"
+    },
+    {
+      "name": "0001-37d82d8afe58.json",
+      "sha256": "91c77c3d2bfbd45339f6387a76b501f8e94bd552bf49e1edb64a7953f96500f2"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

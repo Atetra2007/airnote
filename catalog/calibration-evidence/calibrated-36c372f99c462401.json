@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-36c372f99c462401",
+  "source_id": "zhouzhou-126",
+  "work_id": "work-6a66290370bc",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "31ae06c0661b0e69d6ee4c517043aec293cdbd012c65c04055f177c77d7a630f",
+  "source_sha256": "0eac5249f4aaa6f4a5e83984c069b1ac79d594994191212cfa0ed7fda8473f66",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/227706.html",
+    "edition": "Wangwzh C4/4 printed126; bar15 beam erratum verified against144995",
+    "score_sha256": "34173e324703a443aae99361508405cb0b73d5b2aa5c71d9e867cdb3c3ef874c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 103,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "完整98源音；首弱起最后十六分至源头高2跨线六拍，不扩入后续当你的手段落。 主参考227706为卢永强词、吴军曲、王wzh制谱的C调4/4简谱，印刷四分音126；完整来源从首弱起末十六分5开始，到第二段副歌源头的高2跨小节连线六拍结束。按弱起为0计数，选第1–26完整小节及第27前2拍。 98源音全部依次保留原音高，无移调、无源音删除；补5处独立起音：第5和13小节位置2的第三个5、第7小节位置3的2十六分、第18和20小节位置1.5的第二个6八分。所有位置以0为小节起点。 同音连线按印谱合并：第3→4的2共1拍、第4的3共3.5拍、第6高1共1.75拍、第7→8的2共3.5拍；第11→12的2共1拍、第12的3共3.5拍、第14高1共1.75拍、第15→16的5共3.25拍、第22高1共2.5拍、第26→27高2共6拍。 第18的两个6及第20的两个6各是独立起音；相邻弧线连接7→6或6→5，不能当成6与6的同音连线。第1末5→第2的3也是异音乐句弧线，不合并。 227706第15小节后两组6·5印为完整双减时线，若照字面会成为3.25拍而不满4/4。独立公开谱144995（邵关推荐、吴克强据杨沛宜记谱，Bb调）明确该处三组附点八分6+十六分5；本版据此把后两组改成.75+.25，记录为参考排版勘误，不伪称原227706本来如此。两原图及原像素放大保留。 补第8和16小节.75拍、第20小节.5拍、第25小节1拍共4个休止。首弱起前.75拍与第27后续休止/新段不在来源范围，不加入。 最终103音、4休止、106.25拍、126BPM、50.595238095238095秒，A3–D5。来源Zhouzhou无可靠音乐时值，编辑器默认拍值/空格不构成本次节奏依据。 原来源保持，修订另存。完整音乐视觉校对及算术核对不代表真人听感、原录音比对或实机验收；这些均未执行。 Root全范围独立另录107事件与提案完全一致；98源音全部保留，5个缺失起音与4休止有谱面依据；bar15采用144995所示节奏修正227706印刷错线，两个版本原图均保留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "34173e324703a443aae99361508405cb0b73d5b2aa5c71d9e867cdb3c3ef874c"
+  },
+  "note_count": 103,
+  "event_count": 107,
+  "duration_seconds": 50.595238095238095,
+  "limits": [
+    "Reference bar15 contains a documented beam-printing error; corroboration is separately preserved.",
+    "No recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-126-left-right-complete.review.json",
+      "sha256": "5cbc0b2713be46772cee215f5db52591da979b997af480278a03b7cd63e0ab75"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e3c06bcdafc0a150019d3b7bf6a0970bf8e632ae2d52d9536066d318a41a03a4"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f04e3cb73183c13b9cec04ce55243649f81381565fb4f09405c9b531fcdc6dad"
+    },
+    {
+      "name": "0001-519dffa187ee.json",
+      "sha256": "0e1c3b22a5fc10c4055cb2a37ed22eaa1a2ab273ab29b4cbb1d88b05f2649047"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

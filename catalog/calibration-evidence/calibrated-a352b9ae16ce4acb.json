@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a352b9ae16ce4acb",
+  "source_id": "social-5306fed372b5d717",
+  "work_id": "work-31d9743659b0",
+  "source_url": "https://www.bilibili.com/read/cv53035053",
+  "status": "reviewed",
+  "sha256": "31ccc15d114b6d5b343158164e6aac62922fecf2aa5ae83e3d776d49df124129",
+  "source_sha256": "b9b7833674ede428eec8a413671c1edf935cf61c6cb767c4e80e5bc49742ef34",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-19567.html",
+    "edition": "Ab75quarter;Cminus8;allsourcearticlephrases;2source-onlypassingornamentsnotexpanded;3fullchoruses",
+    "score_sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "review_method": "Root复核完整新增4页人声谱及3页EOP，复用SHA固定的完整主谱独立59栏读谱，重建218拍完整来源路线；原332音数字/键位/时值重解，377攻击逐源映射和408事件核对。正式ScoreCodec、隔离导入、重启及虚拟播放通过，未发送真实游戏输入；真人试听及实机未验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 377,
+    "maximum_parser_boundary_error_seconds": 5.400124791776761e-13
+  },
+  "review_note": "海屿你完整社交全文的公开参考编配。原第39–162栏332音、26无新起音横线全部处置，来源中不存在的第1–38栏不补造。原谱数字/键位/字面时值双录核对；原90BPM及33处超四拍栏保留证据，不把横线猜成固定休止或声称原录音对齐。选择公开原SVG、EOP与第九城市版75BPM，完整路线为开头后崩塌尾句6拍、第一副歌60拍、二遍主歌32拍、后两次副歌各60拍，共218拍174.4秒。原F音域统一减5，参考Ab减8，输出55–79。330原音保留；明确不展开源155的Bb4与158的A4两项原版经过装饰，这两音没有被认定为错音，原证据完整保留；所选两独立公开版为塌A4保持至G4。154/156与157/159各合为保持音。何/开/我等30处源音明确展开为印刷反复或润腔起音，增加43攻击；每副歌补着/默两处漏音，共6补音；最终377音31休止408事件。三副歌开/我顺序、主歌信任在/短短解释等所有音高取舍逐项保存。本地完整证据及映射由SHA绑定，root独立332音双标解码、377攻击映射和408事件有理时间线全部核对。软件解析、隔离导入及重启通过；真人试听、原录音对齐与实机游戏未验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "00f97937ec58f24ddcbb1355635355a6944ac96d7b9c0e9681c8a5feb0a4b96e"
+  },
+  "note_count": 377,
+  "event_count": 408,
+  "duration_seconds": 174.4,
+  "limits": [
+    "Selected75practiceedition;source90andbarfirstonsetunknown,sourcegaplengthnotaudioalignment.",
+    "2source-onlypassingornaments155Bb4/158A4notexpanded;notcalledincorrect;rootmustreview.",
+    "Allsourcephraseorderretained;explicit43splitincrements6printedadditions2heldmerges.",
+    "NoUI/audio/GPU/game/rebuild.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-5306fed372b5d717-haiyuni-reference-v1.review.json",
+      "sha256": "22f1095e829510cb664ce9fa348b6f99dca42fa66bfeca0927bbcce1998c4888"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "080c8f5776388943a6471d610c7ca79b17fb6d456836c96b7213984cb29b44a7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "dcd3237be2d73279d3b5e1ae9088fda5be457cd213bd0e85ab638eca1b9b3328"
+    },
+    {
+      "name": "0001-45da89b02912.json",
+      "sha256": "bcf4e940b60c352ad55aaf877b5c81c135ef9f737a070643e94773c590be59d9"
+    },
+    {
+      "name": "public-review-summaries-20261013-haiyuni-social-v1.json",
+      "sha256": "4b38289da623358c5149e12aaf0126c01b1f48037508df95f3bf2cbea5c521a6"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

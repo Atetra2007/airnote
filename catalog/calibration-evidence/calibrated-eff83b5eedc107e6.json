@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-eff83b5eedc107e6",
+  "source_id": "zhouzhou-092",
+  "work_id": "work-a13258ce0b29",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "5f2d6cfa41335783a8fbd89e5274a772f97bce73e054568bd5c1c820935899be",
+  "source_sha256": "6d4bf51dafe340e516c0202593122100170b4ea7b462a472a048edab9b58fd12",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=R2t5stJbA1I",
+    "edition": "Ebminor-sixflats;printedquarter160;whole−6Aminorpractice;bar23lastpickup+24..33",
+    "score_sha256": "4a5eb1f81ac895db68d9ca6cbb04407b04d89cbe714388a12ab871616717164d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 58,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Full56source59rawtokens3layoutmarkers;58outputattacks9printedrests67events40.5beats;twoexplicitsourcesplits;0sourceomissions Root实际查看速度调号全帧及全部11栏原图，独立手录67个事件绝对音高/时值，与候选逐个相符；此前候选已知，明确非盲复核。 完整原JSON重新解码56音59tokens；三个竖线为编辑空格。全部56音保留，28和46各显式拆为两个八分攻击，原始音符不省略，原tempo/绝对时位未知。 23末Db4八分开始，经24和25全部打印休止接B26，前8源音获得同版连续谱段依据；不把后48音片段冒充全源。 27第四第五Bb4谱头为同音真tie，合成1拍；随后的A自然音令source20修为D#4。31 source46拆D4/D#4，随后仍两次Ab4；28末Bb4/Bb4两次重起不合并。 所选11栏含40.5拍、58音9休止，统一降6半音、参考打印160BPM，保留半音与所有尾休止；本来源一次范围，不展开整曲反复。 仅谱面音乐复核和生产软件检验；未人工试听、录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "4a5eb1f81ac895db68d9ca6cbb04407b04d89cbe714388a12ab871616717164d"
+  },
+  "note_count": 58,
+  "event_count": 67,
+  "duration_seconds": 15.1875,
+  "limits": [
+    "Uniform -6 practice transposition; printed reference tempo160, original source tempo unknown.",
+    "Complete56 source selected extent, not full composition.",
+    "No human listening, recording alignment or real-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-092-moon56-full-prefix-chorus160-v1.review.json",
+      "sha256": "98d8cee984f36057da9864da0e1ad7a3b54c3d7be0a67651662aa5096a2b82ed"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e7339c4cedb3f8a723446ea28e38c804b63877c78af1fe6baf2c5716a3952c92"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "aabf1bab99da628c9e181d811c90c4d0e880ac007e1b690b587c93139f44cfd7"
+    },
+    {
+      "name": "0001-14e4e3cbf053.json",
+      "sha256": "58b52904149be875afdab76ca50abc4fbccacbb3e704d45b2fc12bfe7fc991fb"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

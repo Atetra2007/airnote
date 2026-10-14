@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9b2d56a7bcaa4958",
+  "source_id": "zhouzhou-156",
+  "work_id": "work-7d78f6e3f41f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "b3d05227e87578f68f153e15919bb1199a9c640f82424baa9e314b21b81da3df",
+  "source_sha256": "eb6945dd9e5724384378b18a41f44238696933b5a80ba9d48dd2d586a2d0b2f7",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/303236.html",
+    "edition": "Complete47barpublicCmajor4/4numberedscore; original55headgroups explicitly rebuilt from m4beat2–m14first16th, including whole fast tail; practice65 separately declared",
+    "score_sha256": "68cf8c3082cfbeb9053a378f50509f6a77f42b75bc3313d689ecd7bb632b4465"
+  },
+  "review_method": "完整选段二读与55原头/95token鲜解回核；61输出逐项重建，16尾音明确异版快句整组重编；65练习选速，无真人或游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 61,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-14
+  },
+  "review_note": "Root实际看主参考303236整页及全部所选m4第二拍位至m14首D延音结束的三行，放大核m12和m13/14真实梁组。m13首为D十六分、低G十六分、C八分；末D与m14首D各十六分构成半拍。重新录入完整所选各栏并核61输出，属于非盲谱表交叉复核。 原55音、40编辑空格共95token及5行界从源JSON鲜解逐项一致；没有原BPM/时值，空格未冒充休止。原六组主题、续句、三连音收束、主题重现及两快句均有完整明确处置，原全部音头证据保留。 新编配采用同曲公开简谱的连续m4后半栏至m14首连音终点。m4C接m5四拍不重攻；m9 E/F/E每头三分之一拍；m11低G、m12低A及低G、m13两低G是明确新增印谱填充。整个选择统一高八度，范围67–84，没有逐头折叠。 原39–54最后16音与实谱快句有版本差异，明确在完整两快句组重编，不宣称那些原音都是错音或逐音复原；保留两次1232起句、全部实谱快句与最后D。最终停止点是原D结尾对应的选择边界，不是整47栏作品结束。 主简谱未印BPM，另谱172693首张实印65只支持明确练习选速。38.25拍35.307692秒属于新选段版，不是未知原时长或录音精确对齐；未进行真人试听或游戏验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "68cf8c3082cfbeb9053a378f50509f6a77f42b75bc3313d689ecd7bb632b4465"
+  },
+  "note_count": 61,
+  "event_count": 61,
+  "duration_seconds": 35.30769230769231,
+  "limits": [
+    "Complete source-group alternative arrangement;16endingheads not literal recovery.",
+    "Selected65 is a practice edition choice, not primary numberedscore tempo or recording measurement.",
+    "Finalexcerpt stops afteractualm14Dcontinuation, preservingoriginalDending. No complete-song performance claim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou156-complete55-public-fast-tail-v1.review.json",
+      "sha256": "081360be703c01dce44542be16a353d37ca855ff6db72f04cbae66a7942a2f81"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "13151d0648564b7217d036f8b6a098c9898826c04b941c9bfb3d04ee19eee11b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3464ea13523be1f8523496b512912098f917bd073925f79c958c88896094e92e"
+    },
+    {
+      "name": "0001-e9fa75ae5ca2.json",
+      "sha256": "efe66b3944e314c3e176603ff3fb28985e6a020a006f720f57d1a24759cd3b81"
+    },
+    {
+      "name": "public-review-summaries-20261013-zhou156-v1.json",
+      "sha256": "9c0e5e9808de73e80125eb7610bbd1c4f261fedf00c23ded4b5a5f19a49d3879"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

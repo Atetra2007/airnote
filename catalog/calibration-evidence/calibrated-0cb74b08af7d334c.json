@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0cb74b08af7d334c",
+  "source_id": "zhouzhou-084",
+  "work_id": "work-deck-5ab2af376d26",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "834ae4fe360104b89362cd4cbe05309b8fa932fe0cf4a30b28d49a32f8d7e8eb",
+  "source_sha256": "6660976dc5b85c16c3747a09225eccc4520d042391339d3de861d94a28482b99",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/380217.html",
+    "edition": "EOP Cmajor4/4printed96; selected melody with explicit register shift ending beforebar24finalpickup",
+    "score_sha256": "8e5abe0dfd3649d4f8301f0e73e403701ef22491d0fd7f5cb44378ad027afcdc"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 117,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "110源音全范围，117音6休止132拍；选定EOP钢琴旋律编配。 选EveryonePiano 380217、C调4/4、印96BPM的钢琴上旋律；110源音全部处置。范围第8小节最后1拍至第40小节，接第二结尾第42小节前3拍；不展开第一结尾反复、前奏或下声部伴奏。 为保留来源基本音区，第8末弱起至第24小节前3拍的上旋律降八度；第24末C5/D5弱起开始保持印谱音区。此为单声部编配，不等同完整钢琴总谱演奏。 第15小节#4对同小节后续4继续生效，两音均F#4；原源23/24自然F4按选定版改变。第23小节#5令源55G4改G#4。 第29小节末2有上点，源76D4按谱改D5。第40小节选定版D5-D5-E5-G4-B4与来源D5-C5-D5-B4不同：源106C5改D5、107D5改E5，并新增G4。 源41在第20小节原为经过D4；选定钢琴版此处印八分休止，明确用该休止替换，不声称源所有不同版经过音错误。 八个新增独立起音：第12末E4、第14末C5、第30位置2的G4、第33末E5、第34与38位置1.5的A5、第36末D5、第40位置2的G4。其余源音按映射逐项处置；未根据近似匹配跳过任何源音。 第15至16小节弧跨不同音，是乐句连奏线；保留两小节交界B4分别起音。第21B4、第22C5、第32至33E5、第36中部D5与36至37末D5为真正同音延音，分别合1、2.5、7、1、3.5拍。 第36灰2和末2均只有单条减时线，即八分音；数字2底横不当第二条。该小节输出D5四分、C5八分、D5两八分连成一拍、G5四分、D5八分连下一小节三拍。 117音6休止132拍、96BPM、82.5秒。原稿与其字段完整保留；校对只覆盖其现有全范围，不是整部电影配乐。真人听感、录音对齐和实际游戏未执行。 Root与独立第二读者分别全范围视读；123事件的音高/时值数组完全一致。提案阶段已纠正第36字形底横误读及第15长乐句弧误判；最终保持八分、分别起音。第8弱起参考拍位明确为3与3.5，输出从0计时。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8e5abe0dfd3649d4f8301f0e73e403701ef22491d0fd7f5cb44378ad027afcdc"
+  },
+  "note_count": 117,
+  "event_count": 123,
+  "duration_seconds": 82.5,
+  "limits": [
+    "Explicit selected-edition monophonic arrangement.",
+    "No human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-084-eop-melody.review.json",
+      "sha256": "210c50cf929fff24978db3e4c25fb325015a0ab8ad8a956394c75aff819063ba"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "958b58b3cc2bf3d6504d6820f2ec1e05c7f783bcc9a9d9605fda549fa5b8a412"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "913c8b1afb7fe4eb2601ddc4b70db67088ab59355405b0c2fcaf1fb366f694a6"
+    },
+    {
+      "name": "0001-80ff28f9c7ec.json",
+      "sha256": "956766e8a0a628ee78a57b0f3f872100e2d7a2ef6de27ac5047791989954691b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

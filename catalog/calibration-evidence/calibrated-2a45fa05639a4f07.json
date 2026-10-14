@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2a45fa05639a4f07",
+  "source_id": "social-3e1404b7ec512efd",
+  "work_id": "work-2f044b6d1731",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=fOVkOjy2xO89",
+  "status": "reviewed",
+  "sha256": "823987bc586269111fdc829abf08d035a5bcbc97b455669cf154027595635e39",
+  "source_sha256": "06049ab721296a5db6402159555fee567bbb6f47338891c0ba50a1024f891b55",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://stevenlawguitar.com/wp-content/uploads/2015/08/e4b880e7949fe4bd95e6b182.pdf",
+    "edition": "Complete public29barGmajor guitar arrangement; full source-form composite selected by declared repetitions and literal instrumental-voice excerpts",
+    "score_sha256": "956257b76de3d40e34cae846082d1b607c620a30581f4057ef30478a6d68c406"
+  },
+  "review_method": "Root完整视读Steven Law公开29栏，另录全部音符节奏并独立重建原420音完整曲式；三次副歌、两段器乐及末高音结尾全覆盖，器乐整组替代和47练习BPM明确披露。正式解析、隔离导入/重启另验；非逐攻击原版复原，人工试听和实机未验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 414,
+    "maximum_parser_boundary_error_seconds": 7.389644451905042e-13
+  },
+  "review_note": "Root实际看完Steven Law作者公开全3页29栏与各系统细图，另录全部29栏主线音名/精确时值；重录13栏两拍7头吉他填充及29栏两拍4头低声部琶音，逐符比较无差异，再独立重建完整264拍曲式与442输出事件一致。 原420DFHS与420物理MIDI鲜解一致性复核，所有原头和408gate间隔完整保留。此版保留原完整曲式的三次副歌、两次器乐段、末次高半副歌及最后B5，不把短29栏直接当全原源。 68–71/235–237/381–388三个原过渡分别整组换成公开13栏完整7头填充，最后一次高八度；173–182及320–329两段10头尾琶音分别明确换成29栏完整4头低声部琶音。是公开吉他版本重编，不是证明原每攻击的意图。 141–172与289–319分别保留完整26–29栏器乐，三连音与十六分符按谱，不遗漏低E/B经过音。26/28未定时倚音明确简化，不赋猜测时值；原401–405交错低声部在最终半副歌的整组重编中明确处理。 最后半副歌采用13栏后半＋14/15＋20收束，保原A/G句尾；123额外G与419末B分别以公开29栏G半音符、2栏B半音符明确再用，419升八度，保源最后三音级而非擅改成主音。 采用书面吉他谱八度而非吉他实际低八度发声；全谱降7半音，末段另升八度，音域48–84。原94网格主句是打印四分拍的二倍格，明确用47练习BPM：264拍337.021277秒，不声称作者打印或录音原速。 414音28休止全部回读通过，旧版失败稿保留。此次为明确的完整曲式替代编配及软件检验，非原器乐每头字面复原；人工听感及真实游戏未验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "956257b76de3d40e34cae846082d1b607c620a30581f4057ef30478a6d68c406"
+  },
+  "note_count": 414,
+  "event_count": 442,
+  "duration_seconds": 337.02127659574484,
+  "limits": [
+    "Declared full-source-form alternative based on complete public29bar guitar score; not literal recovery of every original attack.",
+    "Practice47BPM, not a verified print/recording tempo.",
+    "Unsized grace notes explicitly simplified; selected published instrumental motifs and source ending reused transparently.",
+    "Human listening and real-game testing not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-3e1404b7ec512efd-complete420-StevenLaw-selected-v3.review.json",
+      "sha256": "510bf52088e6cd91686899e5b0fe499992440e80d97d87977062fcb8dd787ff6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ccfe4b9e4d6a1c347ffe168ed8fb9ee24b4cb4a1753e4464377c3f3675cfc813"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ce1d43cca5a8f49086d03a97b55a8bc2847145871f1e8fbd378aa3188e937a87"
+    },
+    {
+      "name": "0001-76ecf8cca6e7.json",
+      "sha256": "b73a0276e6718f20b8dc5457d6325675136a6b8107298464b9e5a0bf9fb34d50"
+    },
+    {
+      "name": "public-review-summaries-20261013-yisheng420-v1.json",
+      "sha256": "e59c405a654c92eec19eebe10b52f9b36cd65d6ce507eae7ff2f069251e7c377"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

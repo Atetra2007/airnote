@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a34be3975021e99f",
+  "source_id": "deck-829520737614",
+  "work_id": "work-deck-829520737614",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%9C%9F%E8%80%B3%E5%85%B6%E8%BF%9B%E8%A1%8C%E6%9B%B2-%E8%8E%AB%E6%89%8E%E7%89%B9-Jiko-0fc06d75c0.deltamusic",
+  "status": "reviewed",
+  "sha256": "21adf6300477fa2b45f155ef29be5ab5db9a43e9cbc380187468f28b77a0c071",
+  "source_sha256": "f2d37252c3a2504bfc879143895bfdc23652ef3d2c729cebc8ac083ecaf08149",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=108",
+    "edition": "BnF scan, printed pages 3-7, Rob. Forberg imprint 1903; Mutopia score/MIDI points to its IMSLP source.",
+    "score_sha256": "e321aab10744485c2a72751164216592133dc7eeccd92a2afaab16f89ca299bf",
+    "midi_sha256": "c14299cbdd34c8b2081da84dc06519ef8a52a0d589ee53c758d28b8e3d727d1c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 645,
+    "maximum_parser_boundary_error_seconds": 6.252776074688882e-13
+  },
+  "review_note": "one-pass source layout; 645 BnF-backed note attacks; 10 retained score rests; 255 beats; v6 playable timing candidate only All 646 source note attacks map uniquely by onset and pitch to the highest note at that onset in Mutopia right-hand track 1, one octave higher; source note 536 is a hidden MIDI-playing LilyPond grace helper with no BnF note and is excluded, leaving 645 score-backed notes. There are 490 single-note onsets and 156 chord onsets in the MIDI mapping. The single-note proposal selects the RH highest note and explicitly excludes 192 lower simultaneous RH chord notes and all 776 left-hand notes; this is not represented as a full piano transcription. Keep the source's absolute pitch decoder; do not apply metadata key 1=A as another transposition. The inspected BnF opening reads B4-A4-G#4-A4; source notes 0-3 read B3-A3-G#3-A3. Ten material note holds are set to the independently recorded BnF values (eight-note values of .5 beats and sixteenth values of .25 beats); following intervals are rebuilt without moving printed attacks. Source notes 104 and 463 are restored from Mutopia's half-beat releases to the BnF quarter note value of one beat; source note 535 is restored to one beat and absorbs MIDI-only source note 536 plus the .002604-beat source tail gap. Four half-beat source releases are retained at sequential measures 10, 14, 74 and 78 because the next separately attacked lower source note begins then; the BnF/MIDI piano note is a quarter note lasting 1 beat, and the monophonic arrangement difference remains explicit for root review. The source is a one-pass, unexpanded repeat-volta layout: both alternative A4 endings at beats 191 and 192 remain adjacent in the candidate, without inventing a repeat expansion or selecting only one ending. All other source note durations are retained; six-decimal onset rounding residues remain below 0.0002 MIDI ticks. No human audio listening or real-game verification is claimed. Root五页完整非盲核读并独立mido解析所有838右手/776左手参考音，原646音逐项匹配；单旋律排除192同时低声部和全部左手。 Root确认104/463为四分一拍，535延至192拍并去掉印谱不存在的隐藏排版source536；其余八处八分与两处十六分恢复，四处上声部四分按下一独立低声部起音截至半拍。 十六处谱位坐标重新逐页核准，编号包含拾音/不完整小节。所有695原事件区间完整记账。保留一遍来源结构及相邻两个结尾，不冒充展开印刷反复。 v3正式生产解析器拒绝来源逗号/撇号记法，保留失败报告；v4仅将既已root完整音乐复核的691事件导出为正式【高音】/（低音）语法。 所有音高、精确起拍、时值及原646音/49休止处置与root v3相同；仍需生产解析器再验证，不能以格式自检替代。 Playable timing v5 retains all 645 v4 score-backed note attacks and pitches in their original order; no note attack is omitted. In nine two-note ornament groups, the grace notes use 1/16 beat each. The lead main note funds the net addition, and each group's total plus following structural attack is unchanged. The v6 package adds a complete 695-row source-event to v4/v6 output map. The 49 original rests reconcile as 3 absorbed by full-score note corrections, 36 individually mapped MIDI release gaps removed/absorbed, and 10 preserved score rests. Corrected row-level decision labels: a note absorbs an ordinary MIDI micro-rest only when the immediately following v4 output event is that rest; a note after the gap is separately marked with its preserved attack. The v6 score bytes and timing allocations are identical to v5; packaging, exhaustive source mapping, and inaccurate timeline/allocation annotations are corrected. Root重建全部655事件，645个谱面音高/顺序保持，36个MIDI释放微隙不是印谱独立休止。每个微隙的精确原值为651/250000拍(0.002604)，不是严格1/384。 九组双倚音各配1/16拍，从前主音实际扣16927/250000拍；两倚音分别提前16927/250000与16927/500000拍。结构下一音起拍和组总时值不变；这是明确可演奏时值解释，不声称印谱规定此精确时值。 余18微隙吸入其前音，起拍不动。695原事件逐项新解码复核，49原休止=3既有谱值恢复吸收+36 MIDI微隙+10保留休止。255拍、100练习BPM，无真人试听/实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "e321aab10744485c2a72751164216592133dc7eeccd92a2afaab16f89ca299bf"
+  },
+  "note_count": 645,
+  "event_count": 655,
+  "duration_seconds": 153,
+  "limits": [
+    "The BnF print has no numeric Allegretto tempo; 100 BPM remains the existing source metadata choice.",
+    "Mutopia and BnF are separate references; the Mutopia page identifies IMSLP but exact editorial identity with the BnF scan is not assumed.",
+    "The source candidate is a monophonic reduction and excludes piano accompaniment as itemized in source-comparison.json.",
+    "The 255-beat source is not a repeat-expanded performance; its first and second alternative endings are adjacent as delivered by the unexpanded MIDI.",
+    "V6 shifts 18 grace-note attacks within their original groups; this is a playable interpretation, not an exact printed-score duration claim.",
+    "No-build 0/60/250 ms checks remain pending; no human listening or real-game behavior has been verified.",
+    "Full event reconciliation is in source-comparison.json: all 695 source events have retained, omitted, preserved, or explicit absorption dispositions.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-829520737614-turkish-march-playable-v6-packaged.review.json",
+      "sha256": "319dcfa309b5947fa34359fc64a13964106648383e4dcb4925dd7c0e73421f7a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a4c6e83be51a5bb2997de6b662ccbd666637d30a34f6cfce0eaebe693d7ee8c1"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "473191d29c5b6a7a590aabd142bc769da8b2703ef4caf34b449107703fd67ecb"
+    },
+    {
+      "name": "0001-2223a81664cc.json",
+      "sha256": "8365b8144e8a32f3f7b7083720ae96747318b986159a89b3dbe676afa4f9951a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

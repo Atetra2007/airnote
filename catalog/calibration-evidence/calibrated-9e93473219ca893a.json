@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9e93473219ca893a",
+  "source_id": "zhouzhou-038",
+  "work_id": "work-e33b237a7e1f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "763cf968de5349fe4f217ac0e6bcf4ee274201d0c5d5d8ea3fb44b18eabbf374",
+  "source_sha256": "f9c5c23b5410b0f51f3d6b6f4ab4dbe0ee5df3c6bd770bd92eaf9d49df913b07",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/131794.html",
+    "edition": "F调4/4声乐版，普通1=F4降5半音至C4；72为明确练习速度",
+    "score_sha256": "9147b227854aed9c39e599656ac0a67009aa66a6113226afd34220d6ed19bdf5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 111,
+    "maximum_parser_boundary_error_seconds": 6.394884621840902e-14
+  },
+  "review_note": "Complete existing110note source from 谁 through first-ending 有. 完整原038共110音，对应131794第一页最后小节谁字普通1八分音起，续第二页前六行至第一结尾普通1全音符。先前价字的1.5拍和第二结尾你还嫌均在原源范围外；不重复第一结尾。 选择打印F调4/4声乐版，明确普通1=F4，整体降5半音至C4练习音区。谱面没有数字BPM；72为显式练习速度选择，不宣称原唱速度。 所有18个完整小节各4拍，拾音2.5拍，共74.5拍、62.083333333秒。逐图合并同音延音，异音连奏保留独立起音。 源55悲字原普通1按所选印谱上点改高1，即C4到C5；其余109源音高均保留，全部源音只映射一次。 P2r6b2我便化乌有的第二普通1（乌）为独立半拍起音，原源缺失，新增此1；另恢复两处半拍与尾段2.5拍共5个谱面休止事件。 第一结尾前2到末1为异音连奏，末1独立完整4拍，绝不合并；最终111音5休止116事件，全部原尾段保留。 Root已完整视读两页并手录全部所选参考小节、映射原110音；独立审查员保留首读冻结错误，另从图输入完整116事件数组，数值与root候选音高/时值/起点全部一致。Root再查看两页与resolved报告，并独立重新解码110源音验证唯一改音55、唯一补音114及完整尾C4四拍。 独立首读漏拾音和误读m1/m9的高1，原freeze及其SHA侧车均保留；后续数值复读已看到候选，明确非盲读，但另从像素录入而非候选生成。m17新增C4的position=3.0为零起点，即第四拍起；resolved文字第3拍说法指索引而非通常一基拍号，数值.5拍与图示正确。 音乐证据审查完成，另送正式软件审计；未人工试听，未实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9147b227854aed9c39e599656ac0a67009aa66a6113226afd34220d6ed19bdf5"
+  },
+  "note_count": 111,
+  "event_count": 116,
+  "duration_seconds": 62.083333333333336,
+  "limits": [
+    "Explicit selected vocal edition and practice72BPM.",
+    "Full existing excerpt only, not whole song.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-038-fuji-complete-source.review.json",
+      "sha256": "e005e663db95fba08af429dfebaf93030fdce14e99755091d9abe0c993608ff1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d8b67502bed589bc83e0dd7d1f192295e558bda3d5ce606161a1cf675fc25f49"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d94d529fef3056a7faa6862a4e97e82778687ef2527be2ab85a1783e4f6f5f69"
+    },
+    {
+      "name": "0001-09addb884eac.json",
+      "sha256": "e8242357a720d803fa35a5b91241e8a5270852cac920802b88422b9550f1ade4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5d07004b9e1b8b37",
+  "source_id": "zhouzhou-017",
+  "work_id": "work-0c6ee1db2f3f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "fbd4fcc7b997ae057431b6a76bc329670a305b7462800978840347333ce0356a",
+  "source_sha256": "29cee1f09f5e1560bd97e62922342c006a750c943e4f8b98358a75fb99b4eebd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18264.html",
+    "edition": "C4/4quarter66,selectedwholeexistingverseandfirstchorus",
+    "score_sha256": "686f4f269686b5c647ffa8a832caa42c75869c11d2767e8739083540486a9979"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 126,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-14
+  },
+  "review_note": "Completeexisting124notes;EOPm5-15+m16first3beats Complete124notes/127rawtokensfixedzhou017source,all12bar/lyricanchors mapped. No source omissions,mergesorsplits. SelectedcommunityEOP18264complete2pagepianoedition,C4/4quarter66;wholeexistingverseandfirstchorus m5-15+m16first3beats,47beats. m6/m8printedlow6/5requireactualsourceoctavecorrections. Specificpitchchangesandtheirprintedreferencesindividuallylisted. m9addmissingE4,m13addmissingD5. Actualgraytiecontinuationsfolded;unequal-pitchslursareseparateattacks. Fourprintedrestsrestored;editorpipesnotmusicrests. m16printedpre6grace5isnotseparatelytimedprimaryvoice;sourceendsatlast6,following0/high1/high2pickupnotaddedoutsideexistingextent. PublicSun/Zhengvocalversionsdifferinsomeattacks;EOPchoseneditionconsistentthroughout,notmixed. Rootmagnificationconfirmedm10later1/2/5are.5/.25/.25;v2correctsformer.25/.25/.5,fullv1preserved. Unknownsourceeditorb1remainsvisualholdcode,nottimingoraccidental. Rootcompleteimagecrossreading/formalauditpending. Noaudio/UI/GPU/gameverification. Root完整两页适用m5至m16前三拍图读及关键m6/m10细节，独立32分tick展开130事件一致。m10 v1后组1/2/5误为.25/.25/.5，root发现并要求v2改为.5/.25/.25，已放大确认。 124原音127原token逐项重新JSON解码映射完整，无漏音/拆合；m9补E4和m13补D5、17局部音高和八度修正均与图一致。m9的32分及真连、m6低6真连均保留。 选EOP钢琴主旋律与66BPM，m16最后6前小倚5是非独立主旋律装饰不新增时值，原source也无此独立攻击。源保存47拍在m16第三拍结束；不加未保存下一句。 旧v1错误保留不验收，v2为修正版。未试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "686f4f269686b5c647ffa8a832caa42c75869c11d2767e8739083540486a9979"
+  },
+  "note_count": 126,
+  "event_count": 130,
+  "duration_seconds": 42.72727272727273,
+  "limits": [
+    "Communitypianoarrangementnotpublisherauthentication.",
+    "Selectededitionlocalpitch/octavechangesdisclosed.",
+    "Noaudio/recordingalignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-017-noodle-eop-v2.review.json",
+      "sha256": "1db6fd66d9a28d38ecb808e1124f1069b5b17b2214f70c114efb21c5a9806268"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "40a2af34d80bcebc7d730b79e941005b884879a3a0ff70ce62826533440a2307"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a316cecc7b0f917e3c92da70e5f60d8b505b4b3da0af3a8539b47142bc9beb04"
+    },
+    {
+      "name": "0001-518e04e3e012.json",
+      "sha256": "b0dfb08c8a106257ea963d44406a05ddb524ca584251d1b797cd5cc0e250d2fa"
+    },
+    {
+      "name": "work-id-corrections-20261012-v1.json",
+      "sha256": "58dac36f490e8d84560779b6121fb7b6ddb77831815b43f5dbda966c10704caa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

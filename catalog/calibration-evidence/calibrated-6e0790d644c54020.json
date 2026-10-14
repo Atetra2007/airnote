@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6e0790d644c54020",
+  "source_id": "alternative-score-19c01310063e5bac",
+  "work_id": "work-father",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%88%B6%E4%BA%B2.txt",
+  "status": "reviewed",
+  "sha256": "ff44fc94520aa6c4c63f8aae923200e1260101bf26d1cb0ca0773eb6226f5e8e",
+  "source_sha256": "a5b61ee9250c89cc90e60446b6419c514a58df5fb19b55414b3f8ed7244848b6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/22168.html",
+    "edition": "孙世彦 E调4/4声乐版，打印72；保留来源剪接并明确重编末句",
+    "score_sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 285,
+    "maximum_parser_boundary_error_seconds": 8.526512829121202e-14
+  },
+  "review_note": "全部311音及25休止原事件完整处置；尾句明确选版，不宣称原作者意图复原。 完整原件311音、25休止、336事件、229.5拍@72全部解码并逐项处置；不是以短副歌覆盖长源。原件哈希先核对，所有修订另存。 源0–55完整主歌；56–94桥段保留B3额外重复。95–156首8小节副歌，157–188为C9/C10/C11及C4式花音终止；189–200直接C15/C16；201–232再现C1–4；233–242直接C7/C8。所有跳段均按原顺序，不添加缺失C13/C14或C5/C6。 源243–296为主歌旋律复现并保留末多字弱起；只校正其现有音型，不展开随后原曲应有的完整桥段。 唯一音高/时值主参考22168孙世彦两页E4/4打印72。来源大量括号音区如G#3、C#4/D#4副歌弱起按此版恢复G#4、C#5/D#5；完整逐项音高变化列表可检。源242终止C#4按所选C8升至C#5并与前源241重复收束音合映射，明确不是原本同音延长。 C4采用6555四次起音（前三音异音连奏）；三次源6655长留/给我型段都按C4逐音校定，第二个6改5。不以短C12的65强制删除源两起音。 主歌源4/5、13/14、39/40及reprise280/281为重复拆分；桥段66/67对应单B4，90/91 F#4/G#4邻音按参考F#4半拍简化，明确两源音均处置。副歌重复高1/7/末1与源C8重复6按印谱起音选定，所有合并组独立列出。 旧稿和原件完整保留。新尾句是一项明确的孙世彦22168声乐版本编辑选择；没有新证据证明原作者尾句或其剪接意图与该版完全一致，不得声称已恢复原编配。 原297–299及300–302两组6长/休止/6/7逐项按P2 C16印谱6三拍、半拍休止、6/7各四分之一拍两次选取；全部六音从C#4/D#4统一升八度，与印谱副歌音区一致。两次剪接照原源次数，不展开中间完整副歌。 原303–310按P2最终K1整小节选取。303/304分别保留E5；305/306两个E5对应印谱同音延长合成.75拍；307/308保留G#5/F#5的两个十六分；309 D#5与310 F#4共同选印谱末F#5两拍，明确删去D#邻音攻击且修正末八度，不虚称原两音存在tie。 尾段原14音2休止18.5拍，选版后12音2休止12拍。全部原311音25休止336事件均有原值和新值；输出285音23休止308事件179拍，72BPM。 K1之后印谱还有两小节共8拍F#5同音延长，但原源短尾不展开这两小节；此编配明确止于K1两拍终音。 全源首297音沿旧研究的明确主歌/桥段/副歌剪接方案；新候选仍待独立全音乐复核及软件审计，不入账。 Root重读完整适用22168两页并独立录入31个度数/十六分tick槽，按完整原顺序展开308事件179拍全部一致；新鲜解码原311音25休止336事件，全部覆盖并独立重算25休止的邻音窗口。 第二代理另实读完整P2及C16/K1细图，确认尾段作为明确选版合理。尾六音移高八度，305/306对应谱面tie；309/310共同取末F#5为明示删改邻音/末八度，绝不宣称原两音是tie。 Root批准完整来源的显式声乐编配，不认定原尾意图已恢复。两次C16短结尾保留原两次片段数，K1后额外8拍打印延长不展开，原稿及未决研究完整保留。 285输出音23休止，179拍72BPM；正式软件审计随后绑定，无真人试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "note_count": 285,
+  "event_count": 308,
+  "duration_seconds": 149.16666666666666,
+  "limits": [
+    "Explicit editorial coda selection; original arranger coda intention unverified.",
+    "Whole-existing-source material only, with original cuts, not complete commercial recording.",
+    "No human listening, recording alignment or actual game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-19c01310063e5bac-father-selected-v1.review.json",
+      "sha256": "86f8409e1f58db659601b264e87d3fbdc15e829c730f5d686e7335e7a52dee48"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6559149d09ea98a7386f796e40681719c3ee78219ec526e5ed02357bfc513422"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1b082655710de16f6b3585a6cb099fe2c8e353827e2b4053b2e0675af9031d92"
+    },
+    {
+      "name": "0001-8ff933141f42.json",
+      "sha256": "87be400f00cc4103fe171da4af4e6d2d2245138a6fe91b49b5fe0aba80ad5f47"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

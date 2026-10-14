@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0db4a378102a71e1",
+  "source_id": "social-41f0557641712786",
+  "work_id": "work-aca7aa91d565",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=kz5fxDdz058B",
+  "status": "reviewed",
+  "sha256": "3025cd16a166e95108c7795b5ba5d3553708db00a562bf151ea23e12e57e82de",
+  "source_sha256": "643d19f3b4a069658cb36481be616250e5d4b27ee25ea923c1e2bcbd08b62cfa",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/317338.html",
+    "edition": "专业A调4/4简谱317338-1，无BPM；54与来源保留的Bb末段为显式编配选择",
+    "score_sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 428,
+    "maximum_parser_boundary_error_seconds": 1.3642420526593924e-12
+  },
+  "review_note": "完整DFHS439源音、五段声乐V/C/V/C/BbC，不把标准330音投影当全源。 完整来源是MIDI内嵌DFHS1保存状态439音、PPQ120、107BPM。标准MIDI轨道仅330音，为受导出音域限制的投影；本次逐一处理全部439音，绝未把330当全来源。新解码快照与保存时快照一致，投影330音核验成立。 来源曲式V1(0–87)/C1(88–175)/V2(176–263)/C2(264–347)/BbC(348–438)，没有两份社区谱的16拍无声间奏。本版不添加该间奏、不补前奏尾奏；五段采用317338完整主/副歌词曲范围。 317338专业A调4/4简谱为唯一音高节奏主参考。其无印BPM且末栏写B；54BPM借另版405035作明确固定速度、末副歌保留本源Bb，非称照录主谱调性。来源107BPM的双拍单位转换为54拍制时显示/2供对照，时值最终按选定印谱，不能声称无变速。 完整来源MIDI76–91，全曲显式降低12半音至MIDI64–79适配游戏选定音区；除此两个主歌原84/260高1改为谱面6，其余不同音为取消的装饰花腔。 C4不同音连奏弧不合并独立起音；三遍均恢复第二个高2与第二个高5。来源每处3/5/3、2/3/2花腔统一选为主谱3或2；缺少的C1/C2/C5/C6终止长音按主谱补足。C2第50/61音原缺6/5也补入，原空白逐项保存。 第一副歌末174/175两个A重起合为一根终止A2.5拍。末Bb副歌369–371第一花腔归C2位置1.75的高2，372–376第二花腔连同Bb/G回转选编为随后高1长音；这是主声乐编配取舍，非把异音称作同音tie。 源第87/263/347长音及后续2.5拍空白、所有2.25拍缺旋律空白和结尾截断均逐事件保留记录，按选定有量终止与休止重配；没有算法时间伸缩验收。 输出428音34休止462事件159.75拍54BPM177.5秒。源316.75拍107BPM约177.61682243秒；两版时长相近不构成自动对齐或音乐正确证明。首次.25拍起始休止按来源省略，段间其余休止照谱保留。 Root完整原源与谱面读取及独立第二复核均已通过；生产软件检验另附；未人工试听，未测试真实游戏。 独立DFHS逐字节重解码439音、39空白，与保存状态一致，标准330投影也一致但范围不足。独立读谱全部462输出事件逐项一致。18音高处置、17补音、14归组逐项说明无待定；源V2/C2/BbC早.25归一拍及末尾1.375拍差异是所选印谱重编，保留可追溯。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "note_count": 428,
+  "event_count": 462,
+  "duration_seconds": 177.5,
+  "limits": [
+    "Explicit vocal arrangement simplifies ornaments and source retriggers; source and printed edition differences remain documented.",
+    "No audio alignment, human listening or game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-41f0557641712786-blueporcelain-full-dfhs-vocal.review.json",
+      "sha256": "31fcd3c001f47b78d9aada2181b3e1eee8b83e7c3afcb5d536e4124664310544"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5e70e1ad5102bff2626b387c323bae6a93879a773ac4bc08de9a338703a9c97a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8a522bf4d871256be10633bbfa285c980a2ef38103dc69b9a7c187d353740f10"
+    },
+    {
+      "name": "0001-8f8bc0ddd882.json",
+      "sha256": "17c03dd540a5cc1dcc92386fa7d6f99931ed3b4fd2643bfac0a6d8e5a85d2a5b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0cede4b386bd0e35",
+  "source_id": "zhouzhou-197",
+  "work_id": "work-89e3e0914e15",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3bf9716086a9b141e2e39577b2e7ea48dcb01812c7411359597d6863f3fc20be",
+  "source_sha256": "e4cbe82062f2c7e3769d66dee6a2b827431cb0582c0fa7b981371e1ccfa9e7bd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.xinyuepu.com/jianpu/202111/40406.html",
+    "edition": "F4/4quarter108,complete16barmelody",
+    "score_sha256": "8d032cd35d6f94e248ba686c3418964340e31fef0327842acb64626d470cd09a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 76,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "Complete76notemelody16printbars;8untimedterminalzeromarkersexplicitlyomittedfromplaybackwithrawpreserved Completefixedsource76notes/84events/85rawtokens;all16printbarsmelodymatchesexactlyatF→C5uniform+7semitones. Zerooriginalpitchchange/addition/deletion/consolidation/split. Printed4/4quarter108BPM;64printedmelodybeats35.555556s. Sourceclosing8zerosareuntimedandlabelled教育意义;rawindividuallypreserved,rootexplicitlyapprovedomitunknownterminalpaddingfromplayback,notrestorationoforiginalresttimes. Referencefinal间奏略hasnorecordedtiming;nointerludelengthclaimorunprovidedinterlude/repeat. Rootconfirmedlast1plus2hold-dashes=3beats,finalbar4beats. Outputtotal64beats35.555556s;8untimedmarkerplaybackomissionmaterialandexplicit. Nooriginalnoteomitted. Fullv1preserved. Publiccomplete1/1Xinyue40406Fscoreprimary;Yipuku13453observedpublic1pagepianopreviewonly,notusedascompleteortempoauthority. Rootindependentcompleteimageandpaddingchoice/musicapprovalandformalproductionauditpending. Noaudio/UI/GPU/gameverification. Root完整16小节单页读谱，另看m10/m14低5与末小节延时线放大，独立十六分tick展开76事件64拍一致。76原音84事件85token从原JSON重解码，原音高全部不变，无增删音/拆分/合并。 F印谱整体升7至C5注册；108BPM取印谱。末小节1/2各半拍、末1后三拍（两个延时横线），全4拍。原source只保存这16小节一遍，不加第二遍或间奏。 根代理明确否决v1末8未知零各任定1拍；v2保留8零原始证据且全部明确从播放尾padding省略。印谱间奏略没有时长，修订版止于主旋律结尾，不声称原未知尾休止已还原或经过节奏验证。全部76旋律音保留，省略仅未定时尾部标记。 v1保留不验收；本决定为完整保存旋律的明确终止编配。未试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "8d032cd35d6f94e248ba686c3418964340e31fef0327842acb64626d470cd09a"
+  },
+  "note_count": 76,
+  "event_count": 76,
+  "duration_seconds": 35.55555555555556,
+  "limits": [
+    "8untimedterminalsourcezeromarkersrawpreservedbutexplicitlyomittedfromplayback;nointerludedurationevidence,nooriginaltailresttimereconstructionclaim.",
+    "Communityvocaltranscriptionnotpublisherauthentication.",
+    "Noaudio/recordingalignment/gameverification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-197-toilet-v2.review.json",
+      "sha256": "bafe2b6c0a6a224f0b6a935d418487aa95a87ed654950abcc018970121007792"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9971b8926ef65b70a892f65f50d8cb2178eccfbb57710a29be1dafa0eb286d1c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "06d52de70820654fb993c905e6c9529974c99abd6c66c4fe1f047f28f9a37fa2"
+    },
+    {
+      "name": "0001-b6374ec7ca6c.json",
+      "sha256": "3de6124f294ddc05fba1ecb5c2b7595638250990873dcb32c6c7a78d21e7e999"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

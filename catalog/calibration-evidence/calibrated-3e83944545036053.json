@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3e83944545036053",
+  "source_id": "alternative-score-d16dcb8c55b586b5",
+  "work_id": "work-dystopia-mashup",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6%20x%20%E6%8B%BC%E5%87%91.txt",
+  "status": "reviewed",
+  "sha256": "20a26447e17ddf9ac93d7a56092e9c9310fdbd018305b6cc06c7649062626511",
+  "source_sha256": "49e66dcd38b5f8bc56ed3990c17fae9918499525372b1d228421d318b30752a8",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.bilibili.com/video/BV1UJ5j6eEse/",
+    "edition": "Ciyo full mashup recording; complete source-written monophonic practice edition with response-only coda; 120 practice BPM, not exact vocal timing",
+    "audio_sha256": "6fc9766c4a1d84f200501466472790f0ab5a4afda805581c378be10f53ed965e",
+    "start_seconds": 0,
+    "segment_start_seconds": 0,
+    "segment_end_seconds": 113.22049886621315
+  },
+  "review_method": "Root完整查看独立作者录音的7块原混音频谱及15块全谱上下文，逐栏二读并手录全部选定音名和节奏，保留书面编配再攻击与呼应声部；重新解每个原始音和边界并核验处置。图上网格仅用于定位，不声称精确原唱时值或每个孤立人声音头均有证明。正式ScoreCodec事件逐项比较，隔离导入/重启与虚拟播放另验；人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 490,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "All490heads/all513events and59boundary/marker evidence; complete chosen58writtenbars/232quarterbeats 完整独立作者页面及LINE MUSIC曲式身份已查阅；作品拼接《反乌托邦pt2》和《拼接遗憾》，不是《拼凑的断音》。049完整现有40段就是这一拼接版的前40栏；沿用冻结队列ID计数，在标题与证据明确真实音乐身份，不修改原谱或固定基线。 Root实际看完7张无源覆盖的完整混音频谱及另制15张全58栏可见上下文。逐栏核对主音、重复组、桥段低D4、两次Bb4连接、最后呼应声部与F/G/F/E/F尾句；重新手录513事件的音名和选定拍值，重新解原文本及049全部原事件。两个文本原源字节相同，绝不算两份独立音乐证据。 本版明确保留完整原书面单线节奏，采用120练习BPM。录音可视锚点与约122BPM/-1.10秒名义网格对应，末F在约112秒落下并淡出；这是音乐定位依据，绝非精确歌手发音时间，也不为凑录音总时长删掉书面三拍前导静默或末二拍F。 完整混音具有滑音、伴奏和重叠声部；不能从峰数判定每个歌手音头。本次接受明确的书面练习编配及全范围音乐轮廓、选定节奏，保留其同音再攻击；不声称每个时值都是唯一原唱转录。个别滑音用稳定音高表达，未新增推测半音。 末50–57栏有意选择括号内呼应声部，保留源中主声部“活下去”位置的休止。频谱上的长C/G/F属于并行主声部，不能因为它更强就替掉源中G/G/G/F与A/A/A/G/F的呼应旋律。58栏F/G/F/E/F完整收束；前述worker将尾段称为全呼叫加应答的说法在本说明明确收窄。 049362原头全部处置，40空格及19行界全部记账，选前40栏356攻击与4休止/160拍。源同音组按完整对应乐句的明确编配重建，不武断挑一头删除；唯一音高改动为source154 A4→Bb4连接，其余字面音高保留。049本身止于第二段副歌末句之前，不补写剩18栏。 049 source227原对象b=1只表示按着横杠，精确原时值未知；本版的一拍F来自选定书面句法，不是保留已知原一拍。v1/v2错误声称由v3语义纠错覆盖，本root证据重新完整解源确认。 两份完整58栏来源分别保留490音/23休止共513事件、58分隔符及末延音，232拍/116秒；049为80秒，均音域62–77。所有原源保存、输出逐事件回读，试听和真实游戏不在本次证据内。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "6fc9766c4a1d84f200501466472790f0ab5a4afda805581c378be10f53ed965e"
+  },
+  "note_count": 490,
+  "event_count": 513,
+  "duration_seconds": 116,
+  "limits": [
+    "Complete current-source editorial practice edition; not a certified exact original vocal transcription.",
+    "Mixed spectrum may contain accompaniment and sliding pitches; repeated attacks/rhythms retain the explicit written version.",
+    "Coda selects the response voice and keeps source rests while the other voice sings.",
+    "Practice120 differs from nominal recording122; leading silence and final written release retained.",
+    "049 b=1 is a hold hint with unknown exact original duration.",
+    "Human listening and real-game checks not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-d16dcb8c55b586b5-complete-author-mashup-edition-v3.review.json",
+      "sha256": "9cbdf1379685f3399be944527dd2e50f095e5bfc7402298860dab39281708c7b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e96740502c30d3eb16c2c168a527447be56877004f516f1c0c83ed8b31d48a95"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2e23d06806c220ae13d0701907fe6e892e368af8cf6125ae4d41df90301e3b12"
+    },
+    {
+      "name": "0003-b60c0ad50969.json",
+      "sha256": "8cecaad714a0eb6d99d9b7afd2b94a402c9ed91d40b28d4dde3813f26317f6da"
+    },
+    {
+      "name": "public-review-summaries-20261013-mashup-three-v1.json",
+      "sha256": "11d902074198245273ea99c58954e87f384681f7e645291b3edff51d0b61c987"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

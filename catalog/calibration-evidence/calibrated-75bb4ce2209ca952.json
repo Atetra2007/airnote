@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-75bb4ce2209ca952",
+  "source_id": "zhouzhou-133",
+  "work_id": "work-734d8eab2066",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1036ba3f607d043f2a2449964791cc28f6f730a90870d1a5ab7e95844abe181c",
+  "source_sha256": "98d3614e5d4b15968646742ae8827655300517610a1cd90588864464e0215351",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/109208.html",
+    "edition": "EveryonePiano 1=F 2/4 四分音符61；前8小节旋律取声部后整体降八度",
+    "score_sha256": "6f74e59a39a9ad7999b5c7ebf5fb9aef70459b9a07c17be189e843ded0a168ca"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 21,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原21音前奏完整处理；公开钢琴谱前8小节16拍；两处同音连线合并及补两次和弦顶音起音，输出21音。 采用公开EOP 1=F、2/4、四分音符61的前8小节，非第9小节开始的声乐段。 右手八度叠奏取较低旋律音，和弦取最高5延续该音区，整条旋律再降一八度；输出C4–A4，与全部保留的来源名义音高相同。 源6/7、16/17的D跨小节同音弧线合并，各0.25+1=1.25拍；源2/12的F本身含小节内0.5+0.25连线，共0.75拍。 第4小节三个C起音为0.75、0.25、1拍，原末C对应首音；补回随后两次F和弦的最高C，其他和弦音不并入。 第2/6小节后半F/E各附点十六分0.375拍，末D为0.25拍；第7小节后半C/E各0.5拍，末F2拍。 两处合并减2起音、补2起音，21来源音全覆盖且21输出音；8小节共16拍，61BPM是图片明确标记。 Root确认八小节16拍，21个最终音符的绝对音高/时值与独立转录逐项吻合。第2/6小节后半附点十六分.375+.375再十六分.25，未误读为均分八分。 第4小节首C附点八分后，两个F大三和弦最高音也是C，但必须重新起音；源9之后明确补两次C。第3/7小节首D为前小节连线延续，不重新起音。 前奏的较低八度伙伴与和弦最高C共同构成连续旋律；整体降八度后的C4–A4恰与原稿固定音高相同。所有伴奏与更高的八度叠音均不进单旋律输出。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6f74e59a39a9ad7999b5c7ebf5fb9aef70459b9a07c17be189e843ded0a168ca"
+  },
+  "note_count": 21,
+  "event_count": 21,
+  "duration_seconds": 15.737704918032787,
+  "limits": [
+    "Public secondary piano arrangement, not the original recording timing.",
+    "Explicit monophonic reduction andoctave lowering; accompaniment andupperdouble are excluded.",
+    "Complete sourceintro only; no human listening or actual game check performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-133-piano-intro.review.json",
+      "sha256": "cceacca1604a6927b295affe64056c906615be6e2fa6aa630e8b4363e65c53f9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "61fe636d82dbd49cce0a98a3a884cb3103364c9e98b60b6ca86f696b0f8c0746"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f9481164b0db2a5ee0cc38ecbbeccb0582cd978514ed6c342ded60c196a842b3"
+    },
+    {
+      "name": "0001-d993abe7bba8.json",
+      "sha256": "edcd8a45cfbb129b2bdebda99371ec458c154eed59b09c49ade28952407bb7c8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

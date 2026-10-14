@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bcd10d1bd9e31f02",
+  "source_id": "community-426ca228fc761a02",
+  "work_id": "work-b9be4b91bd3d",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/His-Theme-UT-loigsa-cfb013bbdda3c327a7009.deltamusic",
+  "status": "reviewed",
+  "sha256": "b926545965752c3128755d39bf8f413d681ba1451d3a8e854f32e32a473797e4",
+  "source_sha256": "6caac0810b9813c0fbcf6bd8e46bb6433dc9d0dc0192b6c02eeb48884b27f643",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=8tf-gVaHdag",
+    "edition": "Toby Fox / UNDERTALE Soundtrack / His Theme",
+    "audio_sha256": "7dea316b9a5025e1a2d953f3faba6f6ae5aa8183e38cef0e849ae6c693e73d45",
+    "start_seconds": 0.0
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 260,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整现有社区谱260音、10次主题；原录音约0.00至106.65秒 260个发声音全部与原录音主题逐循环检查，整体降八度；未发现需改正的音高或拍位。 保留259处来源显式短休止和所有来源小数时值；这些短留白属于单音演奏编配。 原谱第260音无尾部休止，实际结束约106.648611秒；不虚增为录音全曲。 主旋律与低音的泛音有重叠；没有采用追踪低音的单声部F0缓存直接判错。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "7dea316b9a5025e1a2d953f3faba6f6ae5aa8183e38cef0e849ae6c693e73d45"
+  },
+  "note_count": 260,
+  "event_count": 519,
+  "duration_seconds": 106.64861133333332,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "这是单音改编，未重现和声、音色、力度及原录音混响；原录音声音尾迹可能跨越下一起音。",
+    "90 BPM 网格及旋律已逐音对照频谱/起音检查；谱中发音结束和短留白为明确的演奏编配，不是声学精确收音测量。",
+    "复核只覆盖各来源现有内容；社区版约106.65秒，不含125.33秒录音的全部尾段。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-426ca228fc761a02.review.json",
+      "sha256": "97c73ee16f504a181fa937175e46f75d9ed1809694d4e9619efcf3d0d9dd8448"
+    },
+    {
+      "name": "review221-community-426ca228fc761a02.timeline.json",
+      "sha256": "db468801504604717af8cbef0298170fd20b004ffbf9b44f7a7627dd70de34fe"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3b89729c801f0c24ed3869409a72219ae08267b9983292f68d3ca99c0ec0f1a0"
+    },
+    {
+      "name": "0004-5e53c72cd10b.json",
+      "sha256": "e75a08af88753efadcf0a941afabb8c5d41dd46eec92024642cd76e56cb05ac8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

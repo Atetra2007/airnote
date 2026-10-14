@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-af5fc1192b45553c",
+  "source_id": "zhouzhou-164",
+  "work_id": "work-d0900a7cf8b6",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3ce1acadcae919e5afd8e3dcbda980671a7ed50b8e34434f9a29bf1747b580ca",
+  "source_sha256": "b362b263be7aae75c959774e8df9e1e74b87b8174fe8ff9474626e0f4cc70e31",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=u9eqY_5gX28",
+    "edition": "HOYO-MiX / The Parade of Flying Squirrels",
+    "audio_sha256": "af6a183dfc92698c08f1c26e1abe755057b32780d99136682c3a667dac62d345",
+    "start_seconds": 1.62,
+    "segment_start_seconds": 1.62,
+    "segment_end_seconds": 18.171724137931037
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 44,
+    "maximum_parser_boundary_error_seconds": 5.172360317828861e-10
+  },
+  "review_note": "完整来源44音、8小节；对应原录音约1.62至18.17秒的主题，非整首录音 保留44个来源旋律音及相对录音降7半音的整体编配；第9音由高音F5修为F#5，第19音由C5修为C#5，对应录音明确的半音经过音。 补齐116 BPM、32拍及三连音式长短摇摆；同音连续起音保留，末句5个G音对应不同拍位。 第28、32音的F#6在基频图较弱，但原混音中对应102号MIDI泛音可辨；第35音为短G6上行装饰，不以低声部F0覆盖。 网格节拍与逐个起音对照，音头的滑入与采样音色存在提前/拖后；没有把规则网格称为逐采样时间戳。 谱内发音占据各自拍位，10毫秒重触发间隔属于单音演奏编配；未声称复现原录音全部短音包络、混响和伴奏。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "af6a183dfc92698c08f1c26e1abe755057b32780d99136682c3a667dac62d345"
+  },
+  "note_count": 44,
+  "event_count": 44,
+  "duration_seconds": 16.551724137413792,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "网格化单旋律编配，原录音音色滑入和音符尾迹未逐采样复刻。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-164.review.json",
+      "sha256": "8b8d5e8bd5b4fe2319d4e71ea5f4f9d070f7555b3011c5d61989e230d0e80e8b"
+    },
+    {
+      "name": "review221-zhouzhou-164.timeline.json",
+      "sha256": "e0c7b3327b35221e84a085a46ea727733a1ddf1f2eaa64f662ca8e01b3409c9e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "0eedc76dacb747d885b412772f59f0261b9d60c7bda32394e8e7aef3a2ae2e5f"
+    },
+    {
+      "name": "0001-a0dda3721049.json",
+      "sha256": "2d0bd604f9ddd2074205c7e72a429cfbef3e3a6e01c2756994d968f57d6c5042"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

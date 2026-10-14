@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-57f8c807c5b4e688",
+  "source_id": "zhouzhou-211",
+  "work_id": "work-c79a140093f0",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "fb6c926b9da0ed6caf0cce3dfea23126f4e1794f35ae6fcafa084c7b376d5574",
+  "source_sha256": "05a1544a86e5ce4d9a5a4f95c832371550484632245f51d630a150da90c31886",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/gangqinpu/165980.html",
+    "edition": "C major quarter100 m1beats3-4 to m9beats1-2 full opening short-source melody",
+    "score_sha256": "94dc7148bd464b379059d84e04a94663b85ed8bc3073ab449b7623ad1d9e2cee"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 80,
+    "maximum_parser_boundary_error_seconds": 6.622258297284134e-12
+  },
+  "review_note": "m1 latter two beats;all m2-m8;first two beats of m9;remaining reference outside existing short source source44-pitch: source A4 corrected to printed G4 at m5 attack8;adjacent E5 and D5 unchanged source46-extra: source C5 between final m5 D5/source45 and first m6 D5/source47 absent from selected complete melody;explicitly omit one unprinted source attack timing: All original structured-source timings and ambiguous markers remain unknown;output durations independently read from printed eighths,sixteenth-triplets,quarters,terminal halfnote selection: Source contains only this opening melody excerpt;initial two beats of m1 rest and m9 beat3 rest/following eighths excluded by source extent;left hand accompaniment excluded throughout Root完整所选m1后2拍至m9前2拍独立五线音名复录，所有80起音与精确三连1/6拍逐项一致；源结构81音/11竖线重新解码。 source44按清晰m5末G4修A4；source46在m5末D5至m6首D5间的C5确无印谱依据，明确批准省略单个错误起音。其余来源79音音高原样保留，未丢弃整段；原0拍未知不能凭边界凑时值。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "94dc7148bd464b379059d84e04a94663b85ed8bc3073ab449b7623ad1d9e2cee"
+  },
+  "note_count": 80,
+  "event_count": 80,
+  "duration_seconds": 19.200000000006582,
+  "limits": [
+    "Community score,not publisher authentication.",
+    "Structured source timing unknown,printed timing independently read.",
+    "One explicitly omitted unprinted source attack and one pitch correction.",
+    "Opening melody excerpt only;no bass accompaniment.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-211-night-reference-v1.review.json",
+      "sha256": "b2ff3e6b83d10212c3e26fb17c6f056fc8eb6829f7712f313be8c5f9b328f21a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "75cf9d71daefed00a786e60d962802be7398623bcb484b11e16dbbbbfb12d570"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8b4ab6cad8fa5ad24e18b58914bb7a8de7dc34c521368327890aef41d0335f9c"
+    },
+    {
+      "name": "0001-81a4f6d8f284.json",
+      "sha256": "6499a9d70f63582380114ea4f4213c6180680884a4f2b55cd014b6b2beb5a11b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

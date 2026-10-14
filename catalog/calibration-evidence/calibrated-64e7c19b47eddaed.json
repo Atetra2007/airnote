@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-64e7c19b47eddaed",
+  "source_id": "social-b88bcfc7e5517150",
+  "work_id": "work-eda57a887242",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=F79Rsr2rGe-3",
+  "status": "reviewed",
+  "sha256": "c72f319339c162df5e55aa298f63b988eddc0c3a54621a3ac5b7690528acda9d",
+  "source_sha256": "8a31ec93d740079eb0cd9fdca83c745f3b8cb3022cd89f7706357bf7db132a9c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1Cw41167wE/",
+    "edition": "CompleteprincipalRHselectedvoice;whole-12Ebpractice;print25b0.5..122b1.5;explicitoriginalvocal/instrumentalgroupdifferences",
+    "score_sha256": "871dee3389373bf4d35e482d8e80f2892018ce6343055c61454e03a6d114eb46"
+  },
+  "review_method": "完整98栏公开钢琴主线视读及全部257原音处置；明确改编拾音、和弦声部、装饰和器乐跑音，恢复4个真实过渡音；105BPM书面练习时值，非精确人声转录。正式解析、隔离导入、重启和虚拟播放另验，人工试听和实机未验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 258,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-13
+  },
+  "review_note": "Root实际看完前半9行、后半9行与122栏细图，分别另录完整318打印符号及拍值，逐一与合并后278输出事件比较。公开谱为2/4、Eb、105，范围25栏第0.5拍至122栏第1.5拍；采用195拍钢琴主线练习版，非精确原人声/MIDI转录。 原257个DFHS音与物理MIDI重新完整解码，248编码间隔和522原始SMF消息完整留存。所有原音有明确处置，微小gate差距不自动判成谱面休止；原源0/46的C拾音在本钢琴版明确改成印刷休止。 73/74栏为四个真实Bb四分攻击，完整恢复缺失过渡，绝不当成四拍猜测静默。原同音再攻击按印刷连线合并/拆分，44/63未定时F倚音明确简化，不编造精确时值。 69/70栏选和弦低Eb保原94/96声部，89栏选低G，90栏选低Bb/C；120/121用低F/G、122低C/Eb，112/116器乐和弦用高声部。所有声部选择明确记录，不称全程和弦最高音。98栏Gb保留，原F#不是自动纠成G。 77及90–92装饰、209起不同器乐跑音使用完整对应钢琴段明示重编，保留所有原头记录与段落范围。原尾256Eb用122栏完整Eb连音0.75拍收束，下一C不扩进原范围。 整体降八度后51–79，无隐藏折八度；258音20休止，111.428571秒。根已查看12张原录音全源上下文，但+4拍定位线只是研究定位，不能称精确录音对齐。人工试听与真实游戏未执行。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "871dee3389373bf4d35e482d8e80f2892018ce6343055c61454e03a6d114eb46"
+  },
+  "note_count": 258,
+  "event_count": 278,
+  "duration_seconds": 111.42857142857143,
+  "limits": [
+    "Declared principal-piano alternative; not literal vocal or original-instrumental performance transcription.",
+    "All original source extent accounted; note/rest/voice edits and actual four-head transition disclosed.",
+    "Human listening and real-game testing not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-b88bcfc7e5517150-full257-principal-piano195-v1.review.json",
+      "sha256": "79ea4ed415f3ebf6038741d7e810b4ecc9fb99bdf960ac3958f9a9233c478a17"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8ad788c8d641a4a4d2fa54c31ae54360477513ab280d83074e1a1451304f3965"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ce4b2fc0c1cb9bc82e82490d32a8d05b5e64f91cb5a8f891ff2ebd66addb2ea5"
+    },
+    {
+      "name": "0001-a1cf2837f57e.json",
+      "sha256": "86e628e2eb6907f77514612ec9445581c18d7fbf648f8da5a254bfa23e206003"
+    },
+    {
+      "name": "public-review-summaries-20261013-misty257-v1.json",
+      "sha256": "4ec766b6e8bf09a315f3fee6c96d40ef6cda4c3b3ab6bed60715f91c19bfd59e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

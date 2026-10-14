@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9ee0768c8de60985",
+  "source_id": "social-8194879ed541a01d",
+  "work_id": "work-2ae2808181a9",
+  "source_url": "https://www.bilibili.com/video/BV1DjhH6fEQj/",
+  "status": "reviewed",
+  "sha256": "1147abe217e54f5134ba1cbddf0cd8b2d2a5b0671f67770f9d02d2ea90509725",
+  "source_sha256": "d648bc2a645d082bb35331fec312e690f314d943305413b6805b81eea190cc32",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qupu123.com/Mobile-view-id-355533.html",
+    "edition": "Complete51 printed bars; video selects I1–I8, V1–V17, C1–C16, then explicit I1–I8 reprise",
+    "score_sha256": "7b40a5b7643353f0c7e3150555a5fec3c8fedf60db5873bb6404548a0f4b9f7a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 210,
+    "maximum_parser_boundary_error_seconds": 1.7053025658242404e-13
+  },
+  "review_note": "Complete51 printed bars; video selects I1–I8, V1–V17, C1–C16, then explicit I1–I8 reprise 固定完整恢复social-8194879ed541a01d，原视频SHA绑定，118个一秒卡图和10整组contact实际读全。原A A B C D E F G F H A A=214键位，双数字/键位标注一一完整保留。 A的i和F的i与下行上标逗号对应C6=84；普通数字7/键M=71，竖短线前缀记+表示上12，+1/+Z=72。八唯一卡数字和键位都逐项同音核对；原不含BPM/时值，保持null。 完整笑姐姐声乐谱51印刷栏实际读取。B/C/D/E对应V1–V17，F/G/F/H对应C1–C16；A两次前奏采用I1–I8，尾两次A明确复奏所选I1–I8，不扩成原印T1–T8不同的尾奏装饰。 参考87BPM4/4；D段源−10，C#副歌源−11恢复到所选实音，输出54–74；没有凭剪辑秒数推拍，也不声称该速度就是视频演奏速度。 每个A的两个独立5和两个独立1在参考真tie处合一，全四A共8合组/16原音保留→8攻击。每个A省缺I3/I7末低7，参考补.5拍，共4插入。全214源音保留，没有短命中替代全篇。 每A第7原键+Z在原C5=72，规范源−10后62，参考I2/I6是D5=74，明确+12选版；每A末+M=83规范后73，参考I4/I8末低7=C#4=61，明确−12选版。共8八度差异，不隐式折叠。 E最后原+Z=72规范后62，参考V16印b2=E-flat4=63，明确+1修为所选声乐版。该处不是从C卡猜尾音。 V17四个明示quarter零合4拍休止，完整保留在主歌后；所有其他真tie、无tie重复音按51栏原表处理。尾A印原自重复要求保留，无零时值终止补拍。 214原音完整保留至206攻击，4参考补音=210音，加1四拍休止=211事件；49展开栏196拍约135.172秒。采样视频约118秒不可拿来伪证明谱面节奏。 待root独立全八卡/适用谱面范围二读和正式软件审计；无音频/真人试听/录音对齐/UI/GPU/游戏输入。 Root实际逐张查看八张唯一谱卡，完整10张118采样图contact及原视频2秒/100秒未裁图；确认标注前奏两遍、尾奏两遍及逗号键定义，完整顺序A A B C D E F G F H A A。八卡数字/键位独立双录共214音全部同音，保留226源事件。 Root新独立读取I1–I8两行全部前奏，并复用已经独立手录且SHA固定的33栏声乐图读，重展开49栏196拍；211事件逐一音高/起点/精确时值全吻合。I4/I8的6是八分、71是十六分，55/11仅真tie合组，8组合16原音全部保留。 Root逐原音验证D段−10/Csharp段−11，四A各两处八度选择共8处与E末半音选择共1处准确枚举；四A各补一个参考低7八分。尾A复奏选定前奏，属于明确编配取舍，不能称原印刷装饰尾奏或视频录音节奏已核验。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7b40a5b7643353f0c7e3150555a5fec3c8fedf60db5873bb6404548a0f4b9f7a"
+  },
+  "note_count": 210,
+  "event_count": 211,
+  "duration_seconds": 135.17241379310346,
+  "limits": [
+    "Explicitly selected independent vocal version and intro reprise route.",
+    "Original untimed notes cannot establish exact performance timing.",
+    "Eight local octave differences plus one semitone selection; four inserted missing intro notes and eight true-tie merges fully mapped.",
+    "No audio/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-8194879ed541a01d-night-video-vocal-v1.review.json",
+      "sha256": "714ae9c79c13b0609e9e5bdca95204c2611423264a1a601ecaea4102cba4a03c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a354ba09b59ea05553f40b97d7205a62e4402264342a2967d9611ebf391dfc81"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4240d4bfe743220f5f6e02171c72ac34beb39b7a04304ea217e029f42b902926"
+    },
+    {
+      "name": "0001-337119329bdd.json",
+      "sha256": "c35e8c30c114d1248246b40135e694a8200a18fb9ddfa38a9910f742d91da7aa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

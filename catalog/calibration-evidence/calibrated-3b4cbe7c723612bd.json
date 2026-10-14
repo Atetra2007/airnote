@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3b4cbe7c723612bd",
+  "source_id": "zhouzhou-074",
+  "work_id": "work-5eabaeef19be",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3c2a64f92785ad39e3cb39d216b692da78ca6b3e26a103fe37e4dcef9638c2cd",
+  "source_sha256": "e5cf1182ac9584ee76c869bbe0804694af59385c6b37113e906ada2bdeb9c512",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qupu5.com/jianpu/61736.html",
+    "edition": "生产队Eb4/4打印四分75BPM；公开预览完整覆盖全部52原音范围",
+    "score_sha256": "62c75676b86956b4d9a8c8f4775ca286b82f246a7ca9a2c2b83c2c637f9ff4a4"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 52,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "完整5歌词行52源音，从如果可以至永远最后高5；31拍，无原音增加、省略或并音。 固定源为基线zhouzhou-074所指073-神秘光头指挥官.source.json，内部t=如果可以、SHAe5cf1182…；原文件名与目录编号错位原样保留，不修改来源、路径或标题数据。全部5歌词行52音和3个可视间隔符已单独解码。 主参考曲谱屋61736生产队制谱公开预览，实际2380×2380JPEG，打印Eb调4/4四分75BPM。预览底部虽截去后续全曲内容，但此次52源音范围从如果可以到首段永远在可见区域完整覆盖，含全部减时线、八度点、升号、连线和结尾；不是用截断预览替代缺失的来源段落。 公共页面说明一页，预览来源URL与哈希均保存；风雅颂50609的木木弹琴全曲图1200×1330无数值BPM，仅作版别对照。琴魂78307明确付费整谱，未购买或绕过限制；其预览不作为本次主参考。歌谱简谱网468578两页7t吉他伴奏无主唱音高，不用于音高验收。 参考Eb4降3半音至C4；源多数音区已吻合。source18原低5G3按所选谱止字改普通#5G#4，source19原普通5G4按那字改普通3E4，source34吻字原高5G5按所选印高#5改G#5，其余49原音保持。 C1可字7 .25连7 .25合.5，和字高2 .25连高2 .25合.5。开头完整小节逐段读为3 .5、5 .25、7 .25+ .25、高1 .75、高2 .5、高1 .25、高2 .25+ .25、高4 .75；不是只按歌词均分。 C2那字高3 .25连高3 .5合.75，遇字高2 .25连高2 1合1.25；C3止字#5 .25连后续5 .75，同小节升号持续，合G#4一拍，不能误作#5→自然5异音。 C3雨字高3 .25跨C4同音高3两拍，合2.25；C4只想拥抱四音高6/高5/高3/高2各.5，按所选版歌词显示只想拥抱对应音序，源行拥抱文字顺序保留为来源文本。 C5 source29身6 .25连6 .5合.75，source31的高3 .25连高3 .5合.75，source33据高2 .25连高2 1合1.25。C6吸高1 .25连高1 1合1.25，随后仅一处半拍休止；一眨拾音高1/7各.25。 C7眼高1 1.5、一瞬高1/7各.25、间高1 1.5、你说6/7各.25；原末行说好了与印谱你说好歌词微差保留记录，不据此更改音数。C8好就是永远高1/高2/高3/高5各.5、末高5 1；末两枚高5无延音线，保留独立起音。 结束严格止于原永远对应末高5的一拍，不加入下一不会变及器乐、第二副歌或全曲尾段。8个选中小节中最后仅前三拍属于来源，共31拍，无新增/省略/合并原音，52音1休止53事件，75BPM共24.8秒。 Root看完公开预览及四张范围细节，53输出事件另录数组全符；52原音独立解码和映射完整。原文件名错位、止字/那字/吻字3处改音以及两枚末高5各自时值明确。正式软件审计另绑定；未人工试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "62c75676b86956b4d9a8c8f4775ca286b82f246a7ca9a2c2b83c2c637f9ff4a4"
+  },
+  "note_count": 52,
+  "event_count": 53,
+  "duration_seconds": 24.8,
+  "limits": [
+    "Public preview does not show the whole later song; all existing source material is fully visible and mapped.",
+    "Source filename differs from baseline catalog identity; preserved verbatim and checked by hash/internal title.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-074-ruguokeyi-complete-source.review.json",
+      "sha256": "493cd5a6c69904d63dd2200329dbd25edc2ade6fb0b875afc9ef50fbc9fbc981"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f01fe6568dfe6a7bd25a6633b09891810391794c983dcb1550ebdbc45dba9c43"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3b5996694a11ceda0d8ff11506206b2d03d843a341bf31d67ea86479c179f001"
+    },
+    {
+      "name": "0001-9009959139e7.json",
+      "sha256": "435d952dab223a7918f43587ad05d63bc568f506ad99c605ea73cdbc30d5e2ff"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

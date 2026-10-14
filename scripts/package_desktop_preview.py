@@ -26,8 +26,19 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
             "本包包含曲库开发候选，不代表正式 0.4.0 已发行或全部歌曲已校准。\n"
             "新增来源和校正版需要在本机导入；具体缺口见 曲库与校准状态.md。\n\n"
         )
+    if version == "0.4.2":
+        docs.update({"本版更新说明.md": ROOT / "docs/RELEASE-0.4.2-NOTES.md",
+                     "发行验证记录.md": ROOT / "docs/RELEASE-0.4.2-STATUS.md",
+                     "曲库与校准状态.md": ROOT / "docs/CATALOG-STATUS.md",
+                     "现行队列.md": ROOT / "docs/CALIBRATION-QUEUE.md",
+                     "校对阶段处置.json": ROOT / "catalog/calibration-stage-20261014.json"})
+        catalog_status = (
+            "本阶段339个来源通过，形成340份修订编配；其余13个来源按用户决定移出总表。\n"
+            "本包仅含来源与复核元数据及3份原创测试谱；第三方曲谱仍需单独导入。\n"
+            "阶段结束不表示真人听辨或实机游戏验收通过。详见 本版更新说明.md。\n\n"
+        )
     readme = (
-        f"口琴小曲库 v{version} · Windows x64 本地预览\n\n"
+        f"口琴小曲库 v{version} · Windows x64\n\n"
         "完整解压 ZIP 后，打开 App 文件夹，双击 HarmonicaDesk.exe。\n"
         "无需安装 .NET，不要只复制 EXE。已有应用请先正常退出。\n"
         "沿用 %LOCALAPPDATA%\\HarmonicaDesk 的个人曲谱和设置。\n\n"
@@ -37,7 +48,7 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
         "开始或恢复时切到游戏口琴界面。优先使用窗口化或无边框。\n\n"
         "自动演奏：设置中的游戏换音留白默认 60 毫秒，快音自动限制附加留白。\n"
         "原谱 BPM 与休止保留；极短音会在开始前提示，请先核对。\n\n"
-        "此包是本地功能预览；真实游戏、物理键鼠组合和多显示器兼容性仍待验收。\n"
+        "真实游戏、物理键鼠组合和多显示器兼容性仍需分别验收。\n"
         "详细说明见同目录 使用说明.md；发行边界见 App/Licenses。\n"
     )
     readme += catalog_status
@@ -57,6 +68,14 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
                                            ("RELEASE-0.4.0-STATUS.md", "曲库与校准状态.md"),
                                            ("../catalog/release-0.4.0-inventory.json", "曲库盘点.json")):
                     text = text.replace(f"({original})", f"({packaged})")
+                if version == "0.4.2":
+                    for original, packaged in (("RELEASE-0.4.2-NOTES.md", "本版更新说明.md"),
+                                               ("RELEASE-0.4.2-STATUS.md", "发行验证记录.md"),
+                                               ("CATALOG-STATUS.md", "曲库与校准状态.md"),
+                                               ("CALIBRATION-QUEUE.md", "现行队列.md"),
+                                               ("../catalog/calibration-stage-20261014.json", "校对阶段处置.json"),
+                                               ("RELEASE-0.4.1-STATUS.md", "https://github.com/Atetra2007/delta-force-harmonica-kit/blob/v0.4.1-preview.1/docs/RELEASE-0.4.1-STATUS.md")):
+                        text = text.replace(f"({original})", f"({packaged})")
                 archive.writestr(name, text)
             archive.writestr("开始使用.txt", readme)
             archive.writestr("publish-manifest.json", manifest.read_bytes())

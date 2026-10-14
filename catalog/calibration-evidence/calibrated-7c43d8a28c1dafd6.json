@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7c43d8a28c1dafd6",
+  "source_id": "social-8aafc535be6c5a3b",
+  "work_id": "work-3eed2cf902d5",
+  "source_url": "https://www.bilibili.com/read/cv53069097",
+  "status": "reviewed",
+  "sha256": "2b8d2a30280b88e7fd9eee97bb192157da8263a07c03a24febfcc348b09d9323",
+  "source_sha256": "a8f9db4dad470f5213ca8c6163cf5b2da383fb6de8c971050873d80c000eda86",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=KEEdGm0DYNo",
+    "edition": "Db4/4quarter125;p2m25pickup-m33beat2repeatedthenm34beat1;selectedmelodyshift-8",
+    "score_sha256": "c0921d6e80fcab097999f26e6a283f07d7f73fbd057fcc7b8527915437d77c79"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 89,
+    "maximum_parser_boundary_error_seconds": 4.618527782440651e-14
+  },
+  "review_note": "Complete89sourceattacks;twoauthoredchorusiterationsandfinalm34pickup 完整恢复源为Bili cv53069097的17栏89音可见文字，整页HTML及text SHA仍绑定；各栏简谱、键位、节奏raw完整保留。网页部分节奏有乱码，来源栏号不按真4/4强补。 完整公开视频六页实际逐页看，实际谱面署名Polalice Alvireo，旧source-manifest写末永音楽堂不符，候选明确更正为实际谱面。参考公共视频非付费PDF，无音频或原录音对齐。 全89源音定位到page2副歌：第一轮m25最后1.5拍pickup→m33beat2；源作者随后重复同范围并延伸到m34首两八分。这是源选段的重复编配，非原钢琴整曲两次按序演奏；完整六页钢琴来源webvideo不能据此视为全来源验收。 所选旋律参考统一-8半音：Ab5→C5、Db6→F5、F5→A4、Bb4→D4。此选版保留88个来源音高；source84原A4改Bb4，对应m33beat2.5的印刷Gb5，不是F5；Db调号的G降音无还原号。 m28与m32的Eb5同音tie各取1拍，m28末F5→m29首F5和m32末Eb5→m33首Eb5跨栏tie各取1拍；源各只有一次攻击，不增加重复起音。异音弧没有合并。 第一轮m33后半的参考音原来源没有，不扩展；选择该处可见半拍休止作重复连接后重启m25pickup，是明确编辑拼接。第二轮完整尾7音source82..88覆盖m32→m34，不截断未决尾巴。 输出89音12休止101事件，总66.5拍@印刷quarter125，31.92秒；1.5拍pickup、12个休止、4个同音tie时值均由谱面逐项读。来源标注90BPM不当原录音BPM，以参考125选版。 子代理候选等待root独立音乐验收及正式软件审计，未作音频、GUI、真实游戏或GPU验证。 Root独立实读P1署名/速度与P2全页、pickup/副歌/m28–29/m32–34细图；按参考音高与八分ticks独立重录101事件，89原音17栏与原节奏token全量重解码一致。 P2副歌Db五降号；m33 beat2.5为Gb5 MIDI78而无还原号，统一参考-8后Bb4 MIDI70。仅原source84 A4改Bb4；v1遗漏调号不验收，另存v2保留旧证据。 m28/32的Eb5同音tie及m28–29 F5/m32–33 Eb5跨栏tie各合成1拍，没有重复攻击。m25末Ab5附点四分1.5；原89来源音不增删。 原来源第一轮于m33 beat2结束，用该处可见半拍休止明确编辑跳回m25拾取；第二轮延至m34两个八分。两轮32+34.5=66.5拍，非整六页演奏，不能据此接账多声部webvideo来源。 实际谱面署名Polalice Alvireo，125BPM取P1打印速度；来源90BPM及原节奏保留作证据而不是录音结论。未试听、录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c0921d6e80fcab097999f26e6a283f07d7f73fbd057fcc7b8527915437d77c79"
+  },
+  "note_count": 89,
+  "event_count": 101,
+  "duration_seconds": 31.92,
+  "limits": [
+    "Sourceauthoredrepeatm33tom25iseditorialsliceconnection",
+    "Pianoarrangementcommunityedition;notfullwebvideoacceptance",
+    "Source90isnotverifiedoriginalBPM;selectedprinted125",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-8aafc535be6c5a3b-amy-v2.review.json",
+      "sha256": "4de404dfff7d9b7c327afde09c064bb66e07331e9bed63fd582a406ed1cf08c7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3354e6fc14dbfc84f3876b630bf7a9495d211218c576ea1d88b1beebb876f22f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "44a3e0948799a41d8bca7e8d2a885e1a90013a36449811523c3bfe66a61e350a"
+    },
+    {
+      "name": "0001-84e4a3314924.json",
+      "sha256": "3ee095ccbb54b3959f1dfb73e9b4e653cebb00f851fbdff5ae4c34915dae4116"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

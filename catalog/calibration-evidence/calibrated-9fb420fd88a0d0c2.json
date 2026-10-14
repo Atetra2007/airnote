@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9fb420fd88a0d0c2",
+  "source_id": "zhouzhou-111",
+  "work_id": "work-0cd37fab97bc",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c1ce33cc7ddd864c142e4c06e21c15b3d8d99624ccca7c1612afb701d60cf26f",
+  "source_sha256": "2061db315df44d801f3797124ae22284cca7c6d3f25b9a747b11f7d04b377f55",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/21865.html",
+    "edition": "doa《英雄》奈克瑟斯奥特曼片头曲，徳永暁人词曲/Juan the GK记谱；Ab4/4打印96，完整现有副歌片段",
+    "score_sha256": "bebc6a5903a13fd1d47f33e11a86d899ddf43716bc67dd41e23689419e2ca980"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 68,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部4源行54音4休止，副歌前お的3起至英雄さ最后6一拍结束，源范围外尾休止和Oh桥段不加入。 固定inventory实际111-英雄-奈克赛斯主题曲.source.json，SHA2061db315df44d801f3797124ae22284cca7c6d3f25b9a747b11f7d04b377f55。原文件4行54有声音、4零休止共58事件；不能误报58个有声音。字典p6,b1中的b为视觉延长横线，不是降号，仍A4。原默认8/横线与空白不构成可靠时值证据。 作品依据21865门酱胡安/Juan the GK记谱整理，页头《英雄》日本《奈克瑟斯奥特曼》片头曲、徳永暁人词曲，页面doa演唱。印Ab、4/4、四分96。明确选择此doa原曲谱面版，非搜索候选远藤正明翻唱、其他奥特曼歌曲或周杰伦同名曲。 参考字面Ab4全体降8半音至C4，普通3为E4、5为G4、6为A4、高1为C5。原54音音高全保持，无音高更正、不增小装饰。所有节奏来自所选谱面，打印96用于本编配。 现有范围从第一副歌前お的普通3开始，保留其印16分3同音连下一个16分3合半拍；接独立3、5、5各四分之一拍，开头合1.25拍。其前印16分休止不在原源范围，不额外加入。 C1首6为一拍，后0一拍；だれかの四个高1均16分独立，原只3个高1，补第4个。随后6、5、5、5均16分，6到5弧是异音圆滑，不能合并；原只1个5，补后两起音。 C2强くなれ乐句为5半拍、6/3各16分、3半拍、5/3各16分、3半拍；异音弧均保留各起音。后0四分之一拍，は的3四分之一拍连次3四分之一拍合半拍，再を3、く5、し5各四分之一拍。 C3ばって为6半拍及独立6一拍，后0半拍；おも高1各半拍、い6半拍、きり5各四分之一拍。原单个6只映射首半拍，恢复独立第二6一拍。 D1まもりぬけ的5半拍、6/3各四分之一拍、3半拍、5/6各四分之一拍；弧为异音5到6的连奏，后一个6半拍无弧，是独立起音。root更正候选误合并：原27号6为.25拍，随后.5拍6恢复为新增起音。后0四分之一拍，ころんでも首3跨两个.25合.5，后3/5/5各.25。 D2两6分为半拍和一拍独立起音，后0半拍；两高1各半拍、6/5各半拍。D3的5半拍、6/3四分之一拍、3半拍、5/3四分之一拍、3半拍，后0半拍，ただそ的5半拍、3/3各四分之一拍，异音弧不吞音。 E1れだけ第一组2四分之一拍、3半拍、5四分之一拍连5半拍合.75，后0四分之一拍；第二组でさえあれば含两个连续2各四分之一拍、3半拍、5四分之一拍连5半拍合.75，后0半拍。原只一个第二组2，明确恢复一个独立2。 E2えいゆうさ为5一拍，6附点八分.75同音连6十六分.25合一拍，然后6一拍独立。最后一个6对应source note53并完整保留一拍；原字典b1不用于虚构更长时值。该最后6后印1拍0为原源终止之后，不加入。 原四个0中event48映射E1第一组5之后四分之一拍0，event52映射E1末半拍0；event54（5与6之间）和event56（两6之间）在所选E2谱面无休止，明确删除这两个来源休止。二者都有独立处置，不谎称四个原0全保留。 54来源音逐一只映射一次，按选版新增14个独立起音；原4休止2保留2明确删除，另恢复6休止。最终68音8休止76事件，32.25拍，打印96BPM20.15625秒。 root开候选数值数组前另录所有图像事件，仅D1的两6独立起音判读不同；原像素复看弧明确在异音5/6之间，最终76事件逐项匹配。原54音/4休止单独解码并逐去向复核。结尾6完整1拍，后续Oh桥段在范围外；正式软件审计另附，无人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "bebc6a5903a13fd1d47f33e11a86d899ddf43716bc67dd41e23689419e2ca980"
+  },
+  "note_count": 68,
+  "event_count": 76,
+  "duration_seconds": 20.15625,
+  "limits": [
+    "Full existing source chorus excerpt, not complete commercial recording.",
+    "Selected printed edition restores14independent attacks and explicitly omits2source rests; original preserved.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-111-eiyuu-complete-source.review.json",
+      "sha256": "312220bde44d17453ab02d649589b86e0b3d373f04b8c9861a1eed4d01c63347"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3501bd0889d094f6d620212c0769f780fcbb5a68ef8af696233edd2b98ace4e3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "cb5567288bd5dd69e1896536af9b4046bbe22e40c8950d0a98491036caf2bbbf"
+    },
+    {
+      "name": "0001-82a8211d1a4b.json",
+      "sha256": "3433b9a4387bc0a04d7727eb05d1c1017aba3f2c46bdf6cd990a195521146915"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

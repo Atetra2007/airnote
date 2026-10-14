@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8090a9c834876786",
+  "source_id": "zhouzhou-069",
+  "work_id": "work-318b5815a876",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "32c63a0af1c71f354da9cf967cbdd06379601bf72e447a2ca54dd1b64aa6d84f",
+  "source_sha256": "66494bad6e94ca89a6593e972621ab76748aa9ab0fe05dc09ce21967e011b4c4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1n1XHYTEz2/?p=2",
+    "edition": "Published handwritten and G-major notation with recording-assisted editorial chorus revision; full source extent; explicit practice rhythm",
+    "score_sha256": "67f92203f5ba45239330aab80eb3bd45b073e2cbef6542c9eab8d355cf1c5739"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 61,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "All62sourceheads+6lineboundaries; one explicit repeated-D merge;25beats; full selected chorus editorial revision, long049 preserved separately Root已完整视读手写副歌、公开G调notation、六张完整录音音高/起音上下文及新原混音RMS图；这里是非盲独立第二读，重新手录61个音名与拍值再逐项核对，不使用旧Whisper均分proposal。 完整重解原62头和6行界，source17/18两同D选择合并一攻击；source19/20两音各加12恢复高区，其余60原头音高保留。无原头删去，长049及拼接版本仍须各自完整验收。 公开1=G与录音完整音区支持G调及F#；整段统一+5成为C调练习版。实际范围B4..C6(71..84)，修正worker文案C5..C6的错误，不改变已有正确音符。 弱起G4三音取原源及录音支持的版本。第二句高G5/F#5/D5、第三句A4稳定后D5/A4/G4低尾、第四句F#4后B/B/A/G、第五句D5后B/B/D/G、第六句G重复后A/B均在完整证据上下文核对。 对第三句两个公开谱33/8与5拍冲突作明确编辑选择：保留原七A、D、A、G，前七A共2.5拍、尾三个八分共1.5拍。节奏是有曲式与上下文依据的四拍练习编配，不能声称两个原谱字面正确或精确复现歌手发音。 其余句从八分+两个十六分共同节奏起型展开；第二句六D主攻击和第四、五句双B尾是已声明的版本选择。61攻击、25拍、120练习BPM、12.5秒，不增加推测休止。115仅为苍强另版速度。 名义录音范围39.44至51.94秒只是定位；实际滑音、辅音和RMS峰有偏移，自动音高和起音只作辅助，未将邻近峰数量冒称逐音音乐验证。接受完整来源的编辑练习编配，不宣称原作唯一精准转录。 Root把原录音及分离人声、完整notation数据另作哈希绑定。软件检查不代表人耳试听或实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "67f92203f5ba45239330aab80eb3bd45b073e2cbef6542c9eab8d355cf1c5739"
+  },
+  "note_count": 61,
+  "event_count": 61,
+  "duration_seconds": 12.5,
+  "limits": [
+    "Explicit full-source editorial practice edition, not a certified exact original vocal transcription.",
+    "Conflicting printed third-phrase durations are preserved in evidence and separately revised.",
+    "120 BPM is practice tempo; nominal audio window is not exact synchronization.",
+    "Human listening and real-game checks not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-069-complete62-recording-revision-v1.review.json",
+      "sha256": "987fb68309554cbb1358a5ecdce7c8f0c5771f87acbdac8161ff20c422b68583"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bd873e14060fdeb67a46213f14a2a3421944bb426dbcf00d5693e5c2ed6911da"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f62fc2b38dd2a0befa6e645dcaeecb182419c1d911e7d5003b9b14b88b7dd035"
+    },
+    {
+      "name": "0001-b68d8a143e3b.json",
+      "sha256": "c1cad1d628e0962e53c3c2102955ba6eeca188693e94d6164007fb61d7c6cd9a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

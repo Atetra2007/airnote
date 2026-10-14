@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1ef8c2e031c6be21",
+  "source_id": "zhouzhou-109",
+  "work_id": "work-639b92ede19e",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "fff3ae5179a63f73643fbf8f0ddbe3a8aa5fec7319897919b583d7e1a7ee0781",
+  "source_sha256": "856a15700cf9bdf1d9bcded249dbd51935aa7f8c669ed85360c7f0e95a3f6d07",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/14844.html",
+    "edition": "Flower Dance C调钢琴版，打印82，m9-18右手最高旋律整体降12半音",
+    "score_sha256": "8a0b08e23a3193333ee10bc956635830c21425f393a30558c810a2b32ccc9dca"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 102,
+    "maximum_parser_boundary_error_seconds": 7.709388682997087e-13
+  },
+  "review_note": "Complete existing source including full ending, as specified in review decisions. 完整原109共99音，对应14844 C调钢琴版第9至18小节，最高旋律声部；起于第9小节右手E5，止于第18小节最后G5十六分音。前8小节、左手和弦其他音及第19小节以后不加入。 打印1=C、4/4、四分82。整体降12半音使参考普通1=C4变C3，参考高3E5变E4、双高3E6变E5；此段实际输出A3至E5，保持原99音的主要音区。 第9/13小节开头E5一拍连十六分E5合1.25拍，后三个十六分A4/C5/E5；第9小节随后和弦最高D5/G5各一拍。第10小节两组附点八分加十六分，#5明确升G#，后A5/E6各一拍。 第11小节A5/E6各一拍，D6八分后D6/E6/D6为三个十六分三连音，每1/6拍，后B5/G5各半拍。第12小节A5三拍、休止半拍、E5半拍。 源只有一个E4连接第12/13小节边界：明确把source21映射第13小节长E5，补第12小节末独立E5拾音。这是所选版增加一个起音，不假称唯一历史对位。 第14小节第二和弦最高为升G#5，末5有还原号故末G5自然；source28升半音、source37低7按所选谱高7改B4（升12半音）。 第15小节四组A5/E6/D6/E6十六分；第16小节四组A5/E6/C#6/E6，首次#1临时升号覆盖同一小节其余三个C6。源只写前三组及第四组前两音，补第四组后两音C#6/E6。 第17小节最高声部不能整行统一升八度：只有每组1与第二组2为双高点，其余3/7/6/5为单高点。第三组实际B5/B5/A5/B5，source78/80的3按选版改7。第18小节只有第二组第三音C6为双高点，其余均单高点，输出对应原最后15音不改。 所有99源音各映射一次，无省略无合并，3个新增音：第12末拾音及第16末两16分。选版音高变化8处：9,28,37,57,61,65,78,80；其它91原音保持。 10个完整4/4小节共40拍，102音1休止103事件，82BPM29.268292683秒；末source98 G4完整.25拍，不添加第19小节。独立二读及正式软件审计待完成，无人工听感或实机。 Root原已完整录入14844第9–18小节103事件；独立审查员另看两页原图，完整录入音高/时值/起点及连音分段，与root全103项在浮点容差1e-10内相同；现root再看两段完整裁图复核音区、三连音、临时升号和结尾。已见候选说明，非盲读。 审查员另录原99音的全部行/小节分隔，与原JSON逐字一致；root再次独立解码验证99音全部一次对应，无删音，三新增和八改音零基索引9/28/37/57/61/65/78/80。审查员报告中的10/29/38/58/62/66/79/81是一基序号，同一组变化。 最终G4十六分音完整保留，82为打印四分速度；音乐复核完成，原待二读字样保留为历史叙述，另送正式软件审计。无真人听感或游戏验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "8a0b08e23a3193333ee10bc956635830c21425f393a30558c810a2b32ccc9dca"
+  },
+  "note_count": 102,
+  "event_count": 103,
+  "duration_seconds": 29.268292682927562,
+  "limits": [
+    "Selected highest piano voice transposed down12semitones.",
+    "Explicit3insertions and8pitch changes; complete99source-note disposition.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-109-flower109-complete-source.review.json",
+      "sha256": "602dd408df1de1d320e9f49f71bfb9b05c9ac95e4079437bcbafe68f88d389aa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c99cd4873083c639fe4aee6a238829628a2e71a9b193b4925d41ba5b67f3d01a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d0ff6cfa3386dcc6d069ddcbe3a14995aa9632bfe38ae1bff21e3acd07c3c607"
+    },
+    {
+      "name": "0001-84518b3ae0fe.json",
+      "sha256": "23d58b7451e779422aac0e1b435cb4dd0407a579fbc800984a4e4cfe345feeaa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

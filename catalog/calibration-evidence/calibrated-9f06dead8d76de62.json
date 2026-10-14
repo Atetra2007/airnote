@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-9f06dead8d76de62",
+  "source_id": "starfall-sea",
+  "work_id": "work-starfall-sea",
+  "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E6%98%9F%E9%99%8D%E3%82%8B%E6%B5%B7%20bpm101.txt",
+  "status": "reviewed",
+  "sha256": "3244b5a5c3e3a1ab37dab92c5e2bf1f347fd0816cec021737b101b388b9c8a76",
+  "source_sha256": "841eef38db3f2ac8f169a41c43cb6f3e3dd2c7bf3feda5db993c69cf225956b2",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=vb4KNFMUV-8",
+    "edition": "inEb alto sax written score; constant writtenMIDI-9 concert pitch; A/B1/C/D/E/F then selected L coda with explicit cuts",
+    "score_sha256": "e5f04acfd2adae1f718c41bbf6a28c055ac717249fafea617ce59527833bbe78"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 256,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-13
+  },
+  "review_note": "explicit selected saxophone arrangement with disclosed cuts andsilence; not proofsource209beatroute identical Root完整二读14帧/53选段，原246音、43休止、354token、45栏标和20延长符完整留证。输出256音/46休止/212拍/101BPM；音高书面-9为实际输出。 明确选择公开muta萨克斯谱选段，路线A1-A8,B1; original4beatarrangementgap; C1-C8,D1-D10,E1-E8,F1-F9; cutG-K; L1-L2; omitL3instrumental; L4-L9；原209拍与所选212拍不同，不能称为已证明原完整连续路线。 A4末C5八分与A5首四分真正tie合1.5拍，源20/21共同保留。D7前三G5修正.5/.25/.75起音；第三十六分与后八分是真tie。A6→A7和F6同音无弧，保持独立攻击。 原246源音全部保留映射，来源拆音12组、真正tie合20/21及146/147及168/169三组；另补F8→F9印D5真tie3.5拍。 一处原半拍休止在所选版本明确不输出，原末半拍改印R1+R2，line41四拍改印1拍；原休止43项逐项留证。 原F8source224 C5以及L1/L2source226/227/228重新辨线后均保留原音；source225 G4→F4，source239印Csharp5拆两个普通攻击。 A4小装饰E5、L3器乐和G-K中间段明确省略；这是所命名萨克斯选段编配，未做真人试听、录音对齐或游戏实测。 Metadata v5 adds deterministic end_seconds required by catalog integration; all302eventpitch/start/duration values and scoreSHA unchanged; priorfreeze retained.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e5f04acfd2adae1f718c41bbf6a28c055ac717249fafea617ce59527833bbe78"
+  },
+  "note_count": 256,
+  "event_count": 302,
+  "duration_seconds": 125.94059405940594,
+  "limits": [
+    "Explicit selected edition withcuts; not originalrecording validation",
+    "No humanlistening or gamecheck",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-starfall-sea-sax-selected-v4.review.json",
+      "sha256": "720c9cf65757ed546a852bc841205882b84da65b142fc01f99d15437351c48e8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9cf23159a140e31748ee90ac4162193e93140d514f807327fb882e9764219bb0"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "aead2b566abe4711b519b4960b3d440b1e3d23c4dfe369ff7653b8d873782416"
+    },
+    {
+      "name": "0001-27de73ba2715.json",
+      "sha256": "1a68adbd0c3c44fc1d1a418958d8f4b19e72bffb4df0e3923cab7b65740530e3"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

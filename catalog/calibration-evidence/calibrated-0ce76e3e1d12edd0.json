@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0ce76e3e1d12edd0",
+  "source_id": "zhouzhou-220",
+  "work_id": "work-89eeba54b6a4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c6dfa628ed05895be35fc88de3cafe6756dbdf53fcfdec89d0c78d12de71592c",
+  "source_sha256": "1a380c95b456ea5c38541c1d12e5b701cfba282d74dce955ba53245d88a22527",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=X2jpOiwu7V0",
+    "edition": "Complete two lyric lines60.20–68.90;18 principal tones+2 rests;explicit source26 whole-line revision and ornaments simplified;120 only seconds conversion,not source tempo",
+    "audio_sha256": "b122924d4c1e37e23650a6bb42c407f7c7f044a4cecfa5324d3dc9edd23f1881",
+    "start_seconds": 60.2,
+    "segment_start_seconds": 60.2,
+    "segment_end_seconds": 68.9
+  },
+  "review_method": "Root independent visual reading of complete two-phrase vocal harmonic and waveform evidence; full source26/32tokens individually accounted for by explicit complete-lyric-line replacement; independently checked20timed events. No exact source-note or source-tempo restoration, no human listening or live-game claim.",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 18,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-15
+  },
+  "review_note": "原26音的两组歌词明确为“金色的凤凰曾在你身旁／那只是遥远的过往”，与霍尊公开录音的完整首副歌两句对应。歌词定位仅确定句级身份，自动转写含错字和时间偏差，未用其伪造逐字起音。原26头、六布局符号、全部32tokens和原JSON均保存。 Root完整查看旧独立人声频谱/波形与双模型图、新专辑/现场三重复对照、全部两句候选标注图，另录18个所选主音。第一句F#3 C#4 B3 E4 C#4 C#4 F#4 E4 B3 A3；第二句C#4 F#3 B3 G#3 E#3 F#3 G#3 F#3。原音之间有非统一移调可解的冲突，因此采用明确的两整句主音练习编配，不称原26精确恢复。 原0–12逐头指向完整第一句60.20–64.62秒，原13–25逐头指向完整第二句64.94–68.90秒；所有原音仍在逐项表中，明确整句替换，不杜撰26到18的一对一谱音对应。原两个带b=1的终音也保留原token，未用它们猜其余原节奏。 第一句61.77–62.03上行取稳定E4，62.03–63.03两个C#4保留声幅/辅音重起；63.33–64.02稳定E4连续主音合并，不声称每个歌词音节均独立按键。第一句结尾B3→A3全范围保留，原12 A4被所选A3结尾明确替换。 第二句66.62–67.15的稳定MIDI53按调式称E#3，与F3同音；67.15–67.62下降释放和间断选为练习休止。尾部F#3/G#3/F#3包含68.02–68.90整段终止，末上行及回落装饰简化为F#3主音，未因不匹配原末C5而删除句尾。 共18主音、两休止、20事件；120BPM只作每秒两拍的序列化约定，17.4拍即8.7秒。无移调，MIDI53–66；观察边界约0.01秒记录但不代表百分之一秒精度，主音/门限属明示近似练习选择，不还原全部滑音装饰或原谱节拍。 新现场录音在频谱结构上与已有录音相似，仅作同曲式旁证；不依据波形相关系数声称它们是完全相同或独立演奏。最终选版时序仅来自已保存专辑录音60.20–68.90秒。 复核由AI代理视觉阅读完成；模型轨迹只作诊断，软件检查不代表真人听感或实机游戏验收。旧source26自动匹配24音等结果未升级为音乐结论。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "b122924d4c1e37e23650a6bb42c407f7c7f044a4cecfa5324d3dc9edd23f1881"
+  },
+  "note_count": 18,
+  "event_count": 20,
+  "duration_seconds": 8.700000000000001,
+  "limits": [
+    "完整两句主音练习重编，原26逐头保留但不主张pointwise恢复。",
+    "时序为所选录音近似观察与练习门限，无原BPM/拍号/逐字对齐主张。",
+    "滑音与末段装饰明确简化；没有人工听感或游戏验收。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-220-official-album-two-phrase-principal-practice-v3.review.json",
+      "sha256": "16f16b43dbdffc7376f75c7950951a5868d24bcb9cc81490733e361c39ffe3e2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9ea525329a65c7ac5e48f2da9df8ef7125287871a7885ea5fd5e0a735a1f4ed7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "eff96a727403d54f0473e00b10bb6e86602ae7e009ea237b3ca03e5d263d8b94"
+    },
+    {
+      "name": "0001-b7ece3745bd2.json",
+      "sha256": "cd771e067dc7208a91622f5f1f3d5e7b7fa1deea07acde658e8520cb1c56c963"
+    },
+    {
+      "name": "public-review-summaries-20261013-phoenix220-v1.json",
+      "sha256": "2f16422d1e59261933c7e337e22727764a609fd55121b53ed28659d02bd54248"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

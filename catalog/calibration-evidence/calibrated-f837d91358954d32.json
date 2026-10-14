@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f837d91358954d32",
+  "source_id": "zhouzhou-025",
+  "work_id": "work-f7cee22a870d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c6934a7cda4a78dd77e66ff763360cf3a0c6659e564601e2b59a0608dc3a3dd9",
+  "source_sha256": "201617a3477e29c6f11677b7dcbeaf2e3eb9292e74dd454fa774f160c31dedd8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/19830.html",
+    "edition": "沈公宝制谱1=C、4/4、96BPM，第一段八小节45音",
+    "score_sha256": "5c9985dee2b1d85a55334759f2baaf61cd771333b5b81ae43e9e31933736ec2e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 45,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原来源全部40音逐项覆盖；所选公开版本八小节第一段主旋律共45起音32拍，不含前奏及其他段落。 Root视读第一段八小节：第三句首3没有低音点，是E4；第三句末为低6一拍再中3一拍，原草案误合成低6两拍。 原40音完整映射；四句各一处过渡音，加第三句末过渡3，共5个公开版本新增起音，输出45音。 源18自然4在本谱为升4，明确按沈公宝所制公开版本改为F#4，其余所有原源音高保持。 96BPM、1=C、4/4均为公开谱打印标记；取完整第一段歌词八小节，前奏、间奏及D.S.不展开。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5c9985dee2b1d85a55334759f2baaf61cd771333b5b81ae43e9e31933736ec2e"
+  },
+  "note_count": 45,
+  "event_count": 45,
+  "duration_seconds": 20,
+  "limits": [
+    "Complete existing source only; selected published edition and explicit arrangement choices, not original recording fidelity.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-025-sheet.review.json",
+      "sha256": "c18fb755d612a3f3bc7e10cc57c199a20fc9d6fe13977bf66345749a10a70e6c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "80aab42a2d20967fa76a5c9e28857f2dffe0c9d7ce6529921676ad27a1e8f7b2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d5449927d5cc7faa1377cfc1ce4b740108793670dcb99f3ed1792cd82ea0b652"
+    },
+    {
+      "name": "0001-27b0ee5c4d61.json",
+      "sha256": "d8f4fc9e96b7c9bb7a44e3b315b933d59c1170a7bed420da340395e54ea93bb1"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

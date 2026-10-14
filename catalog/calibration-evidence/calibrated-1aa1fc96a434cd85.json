@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1aa1fc96a434cd85",
+  "source_id": "zhouzhou-063",
+  "work_id": "work-merry-christmas-mr-lawrence",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "a88d5fcc10bb567f15ca85d4c1bf275742e9c5fd03dc58073bc8176ddc58d7de",
+  "source_sha256": "121122ad63d1d63a8eebcf934c7acbe8b7a5640be078dd1be0e7cc5b1f2f6748",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/250103.html",
+    "edition": "XiaoB/EveryonePiano C#piano bars25–31, two-pass sourceform transposedtoBb, explicitfixed96BPM",
+    "score_sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部70来源音逐项处置，原低/高八度两遍主题；每遍采用7小节公开主旋律，共14小节56拍；非整曲。 原稿两遍相差八度的结构保留；同一XiaoB25–31小节主旋律先低后高，各7小节，未从另一六页128BPM版混入旋律。 选择Bb编配使全部旋律G3–Bb5可容纳；来源名义C音高整体降2半音。参考原C#第二遍降3半音，第一遍再降八度；社区源1=D元数据不再作为本Bb编配调号。 每遍第26/28/30参考小节首拍恢复1拍休止，共6休止；谱面高1与末3均为一拍，其余依谱面八分及二分时值。 063低遍源5之前恢复2、高遍源45之前恢复3，原70音全保留，增加2个起音成72音。 96BPM为明确固定编配速度，既非原谱93→97的逐处再现，也非社区128BPM；原稿不覆盖的引子、连接段和后续对比段不补入。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "note_count": 72,
+  "event_count": 78,
+  "duration_seconds": 35,
+  "limits": [
+    "Singlemelody secondarypiano arrangement transposedtoBb with explicittwo-passform andfixedtempo.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-063-two-pass-sheet.review.json",
+      "sha256": "101d4a75f1090b864e368fc620d440b25babb0d7365e43b6c402cafcc7632b0d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ddb2c5e16a9d061c0887f095a3821c8bbd856545e7a4bc5fe1553e1b1910e382"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a9bbb9a8cb81c7ef432afb16f8d4b29ed3aad7cbf0a2bd3648031c2b3d77ac41"
+    },
+    {
+      "name": "0001-3bae621e2032.json",
+      "sha256": "ba95593319b47c2d2742a9a5c78236c815175753ffb50154ccdcc99f5fc4aa02"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

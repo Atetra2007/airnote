@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4d49756e0ef550da",
+  "source_id": "zhouzhou-100",
+  "work_id": "work-b2302401b6d8",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "c56ac2e8590f0e5c2263ceb2ce1698b31047466603bd70dc75fc7f995a5a4266",
+  "source_sha256": "84e0d665e860616e00b6feed8ddffa9b99845039fc9a43032ed3726fb7c81416",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/122379.html",
+    "edition": "Sojiro/WangYiWang F-major3/4 no printed BPM; explicit120 arrangement",
+    "score_sha256": "c775e1ee854c76d8ce2228a84165d56b685b69f85d2f8666f6f415fbc43e7a7f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 60,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整60源音的第一段主歌；包含印谱16至17小节跨线延音，未展开副歌或反复。 先完整视读公开谱的选定小节及每个来源原始音符，再按明确的小节映射构建；自动音高和拍数断言仅作数值一致性核验，不代替音乐视读。 Zhouzhou源格式b=1为显示延音横线，不是升降号；原始字段完整保留。源稿没有可靠时值，所有有量音符与休止取自选定公开印谱，不把编辑器默认四分音或空格当作音乐时值。 仅覆盖各来源已有的旋律范围；原稿保留，修订另存。未进行真人听感、原始录音对齐或实际游戏测试。 来源100虽题名千與千尋，经完整旋律核对确认为いつも何度でも主歌片段。保留work-b2302401b6d8工作ID，不自行合并目录分组。 选定宗次郎/望一望记谱122379，1=F、3/4；与351036第4小节版别不同，所选第4小节为低7四分、四分休止、1八分、低7八分，保留源14的经过主音。 60个源音整体降7半音后与参考完整弱起、1–16小节及17首四分延音逐音一致，无独立音符增删、无额外音高修正。 第16小节F4三拍连至第17小节首拍，合为4拍；补第4小节一拍休止和第12小节半拍休止。共60音、2休止、50拍。 122379未打印速度；120BPM是本修订明确选用的固定编配速度，不声称来自印谱或原录音。总时长25秒。 Root独立查看两种完整公开印谱，逐小节另录音高时值数组与候选完全一致；逐源确认全部音符处置、补音及选定段落，区分122379的第4小节和16至17小节延音版别。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c775e1ee854c76d8ce2228a84165d56b685b69f85d2f8666f6f415fbc43e7a7f"
+  },
+  "note_count": 60,
+  "event_count": 62,
+  "duration_seconds": 25,
+  "limits": [
+    "Complete existing source melody scope, not necessarily full original recording.",
+    "No recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-100-always-with-me.review.json",
+      "sha256": "b191e13206dc0e38ad3bbd1b804245e50217b2906f46ea329403c0f0b0720fad"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "74636e8886ffc79c240f7338847af2b36404eb54c8751527d9e68832e1520495"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6439081807f34546df5f64abb03e89aebc8f9923656655bfb316823d9327bb4e"
+    },
+    {
+      "name": "0003-703d6bce6c93.json",
+      "sha256": "f92a82556d7090f771c9915620d0b67529fd2070ef43d58c60b4545f8ba552be"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

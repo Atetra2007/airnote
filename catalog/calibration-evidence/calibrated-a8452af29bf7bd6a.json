@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a8452af29bf7bd6a",
+  "source_id": "social-5543b792184ea71b",
+  "work_id": "work-49265939f315",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7686525482061549989",
+  "status": "reviewed",
+  "sha256": "374fbf2fa86448f505b12f86f3fccb4bc174cc2112caabe5433b0391da0ca8db",
+  "source_sha256": "97784b19f9267cc2d5750142b20245f5c8593b72b14f240b3765338dd05135e3",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/340787.html",
+    "edition": "天问地李C调2/4声乐版第一主歌12小节，练习100BPM非印谱标速",
+    "score_sha256": "e6b271e50175ce2de7cfde1897511c5993bbedfba3eb61203bba50ad89bc0234"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 48,
+    "maximum_parser_boundary_error_seconds": 5.329070518200751e-15
+  },
+  "review_note": "原图全部8组48音3休止，主歌冬眠假期至看起来很模糊完整结束。 原抖音03/03图谱全部8组，48音与3个0完整覆盖，从冬眠假期至看起来很模糊，未扩充不存在的远处山坡及副歌。手机数字与端游字母两行音高互证，降箭头按低八度读取，原0/延长线/分句信息保留。 主参考340787天问地李记谱C调2/4完整声乐谱，选择最初12个声乐小节；C4主音原位，A3低6与G3低5按源保留。 原图与印谱均无数字BPM；100BPM为明确练习速度，不以图上01分28秒全曲时长反推，也不称原唱节拍。 完整8组映射到12个2/4小节共24四分拍；初4音均半拍，第2小节2/1为.25/.75、低6/5/5为.5/.25/.25。 第6小节森林叫醒春天按印谱2/1/低6/低6/低5/低6，叫为附点16分.375、醒为32分.125，春天各.25。原低5/低6/1（源23/24/25）改低6/低5/低6，不因原图简化而称这些音已正确。 第7小节空气让我得舒服的2/1/2/1/2/3为.375/.125/.25/.25/.25/.75；源30的3按得字改2。 原第2/5/8组的休止各依据印谱一拍；三处前音延长标记仍由印谱定为一拍，图中文字横线不自动等于额外一拍。第10小节低6→低5为不同音连奏，两个起音保留。 Root及独立代理完整复核48音3休止51事件24拍，4处音高改动确认，无增删原事件。代理裁图末低5漏读后用完整图补核，非盲审限制保留；bar12完成糊涂，远处在未纳入的bar13。正式软件审计另行绑定，无人工试听或实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "e6b271e50175ce2de7cfde1897511c5993bbedfba3eb61203bba50ad89bc0234"
+  },
+  "note_count": 48,
+  "event_count": 51,
+  "duration_seconds": 14.4,
+  "limits": [
+    "Full original image excerpt only, not entire recorded song.",
+    "100BPM is an explicit practice choice, not recording or printed tempo.",
+    "No human listening or real-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-5543b792184ea71b-little-confused-full-image-verse.review.json",
+      "sha256": "b375d4b6f894b591f99cf16a8072410e5490b6395caa0884df4af987218c266c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ed2f0114a607c93e85a12c80e8a1b308032b050eb4af37c69c69a08111e003ce"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "49ae6f46b205bae7a6e40fc6efdbfecc09d657f9629ea9067785381edbe10a65"
+    },
+    {
+      "name": "0001-228bf14e6659.json",
+      "sha256": "ce9958c716f1a871a73a13b2786f8a7c35545ff7ef64145978fe85561d82060a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

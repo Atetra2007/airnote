@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-15c0e812c906cb66",
+  "source_id": "deck-c31d3026ae98",
+  "work_id": "work-deck-c31d3026ae98",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%80%81%E7%94%B7%E5%AD%A9-%E7%99%AB%E5%85%AC%E7%81%AC-%E7%99%AB%E5%85%AC%E7%81%AC-ee7090e07ef1f2aeea130.deltamusic",
+  "status": "reviewed",
+  "sha256": "15f5737e7f2ad4cd7bddd7de870507c90ec13b241bec6e7319825fc810f528a4",
+  "source_sha256": "4241dcd4ed93e850e98021349e365a0715b758acb365f475d9942cbdb6f2fe97",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/15369.html",
+    "edition": "筷子兄弟词《老男孩》C4/4声乐版两页，无印刷BPM",
+    "score_sha256": "97435f5ed59bc71eda29cba92687935b800c15c326e7926f35123e5e02eecb8d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 148,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "完整149源音，主歌及首段副歌；逐项保留来源范围及明确剪接，选15369声乐版。 唯一选定音高/时值参考为15369筷子兄弟词《老男孩》C调4/4两页声乐简谱；348366为陈立同名异曲已排除，不作为本组依据。单旋律逐句人工读取，真实同音连线合并，源同名不同范围各自处理。 15369未印BPM。固定72BPM是明确编配速度（与本组deck原来源72相同），不能标为该声乐谱印刷速度或原唱测量速度。没有从另一EOP钢琴版混取音高节奏。 小节编号按本文主歌V1–V14、副歌C1–C8；C0为副歌前两个十六分高1弱起。V12（春天啊你在哪的后半句）谱面仅2拍，C8跨页高1及一条延音横线为2拍；原图没有另标换拍号，本编配明确采用这些2拍短句小节，不按名义4/4凭空补齐。 另读380542钢琴版仅作结构对照：其第17小节把V12两拍及V13高1两拍同写一个4/4小节；第18另标2/4，休止仅1.5拍。所选15369则有5.5拍主副歌间歇，多4拍属于明确保留的声乐版间歇；没有用钢琴版替换选定节奏。对照原图与裁图单独保存。 V4/V8的2上装饰记号以及V10/V12高2上装饰记号不展开，选择基础旋律；呼吸号不增加未经量化的时长。长弧只有同音且谱面续音时合并，异音弧不合并。 原始来源保存，修订另存；音乐视觉读谱/软件审计/真人听感/实际游戏分开。本编配已完成root独立音乐复核，正式技术审计另附，未做录音对齐、真人试听或实机测试。 完整主歌/过渡与第一段副歌：V1–V14及C0–C8，结束于跨页首个高1二拍，未追加第二轮歌词、后续生活像一把无情刻刀或尾声。 按所选声乐版修三音（0基源音序号）：25与53的E4改D4（V4/V8位置.75）；54的D4改C4（V8位置1.5）。这些是明确所选旋律/装饰简化，不把不同版本未经核对泛称印错。 V9/V11在B4八分后各有半拍休止；V13高1二拍后两拍休止接V14前3.5拍休止，共5.5拍间歇，之后C0两个十六分高1起副歌。V12末C5八分与V13首C5二拍没有同音连线，保持两个起音。 最终148音9休止共157事件84拍72BPM，70秒，C4–A5；副歌最后C8高1只二拍。 deck原149音155事件82拍：源54/55两起音按V8一个C4八分音合并，其余源音顺序保持；六个原休止逐个对应保留，新增V9/V11半拍及主副歌间5.5拍间歇。源V13四拍C5改为二拍及后续谱面间歇；源末C5三点五拍改二拍。上述共同得到84拍，源155事件完整处置。 Root逐项独立复核全部原来源，三份标准范围与独立小节数组完全相符；058原剪接另行重录78事件相符。058裁句节奏是明确选择的编配，不能仅凭无时值源音唯一还原原录音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "97435f5ed59bc71eda29cba92687935b800c15c326e7926f35123e5e02eecb8d"
+  },
+  "note_count": 148,
+  "event_count": 157,
+  "duration_seconds": 70,
+  "limits": [
+    "No printedBPM;72 is explicit arrangement tempo.",
+    "V12 and C8 are two-beat printed short bars despite nominal4/4;058 preserves further source cuts.",
+    "Ornaments are explicitly simplified; no recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-c31d3026ae98-oldboys-source-form-vocal.review.json",
+      "sha256": "37c664cfd0550514f2ab7edd6bfbd82f494d21d21c72a62ec00d3d2adc5ccf07"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9eaf9705844b52571ac482a1944f39e31b950030b26c014425fda9048d1708ac"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "860045757bcad8cd63922a62007230979b6087c3569a0c50ae63646aca39f4ef"
+    },
+    {
+      "name": "0004-65b6d30c71ed.json",
+      "sha256": "aa0e78838c10ab55fb152b4a0db630bd846bfb8ccb94467ed4472ad1870c85ac"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

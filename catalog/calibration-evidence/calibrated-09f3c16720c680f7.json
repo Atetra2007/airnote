@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-09f3c16720c680f7",
+  "source_id": "community-162ded5d756f044e",
+  "work_id": "work-22d66a033a22",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB-%E4%B8%BB%E9%A2%98%E6%9B%B2-Always-with-you-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-02f43d3ed74ea433fe3ff.deltamusic",
+  "status": "reviewed",
+  "sha256": "08d438ac639ceadb37b6d8d8cc1236c1550c23140e7e49f219755bf63af82de4",
+  "source_sha256": "44c354de945fec9b50513b0530dbd78068eab19d390df95b02689b4a4829c749",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/122379.html",
+    "edition": "Sojiro/WangYiWang F-major3/4 full numbered score; selected source form and explicit tempo/register arrangement",
+    "score_sha256": "c775e1ee854c76d8ce2228a84165d56b685b69f85d2f8666f6f415fbc43e7a7f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 330,
+    "maximum_parser_boundary_error_seconds": 2.4158453015843406e-13
+  },
+  "review_note": "完整324源音415事件；双轮主副歌及高音副歌/尾奏，明确选定公开谱版别、C调与八度布局。 唯一所选音乐参考为122379宗次郎/望一望记谱的F调3/4完整简谱，含43小节、反复、D.S.与尾奏。每个选定小节先人工完整视读，数值断言仅核对录入一致性。 保留各原稿现有全范围的段落选取；本修订明确采用该公开谱版别。参考整曲的原反复播放顺序与源稿摘编曲式分别记录，不声称二者原本完全相同。 全源音符及休止事件逐项处置，原稿完整保留，修订另存。细小音门间隔与长间歇分开处理；音门值的单位是拍，不是毫秒。 122379没有印刷BPM；沿用各源115或132作为明确固定编配速度，不声称来自选定谱面或原始演奏。 人工音乐视读、软件校验、真人听感、实际游戏为不同证据；本提案未做真人试听、原录音对齐或真实游戏测试。 源标题误写Always with you、署名久石让且调号元数据1=B；公开谱确认曲为木村弓的いつも何度でも。源实际首轮音列为E大调，本修订整体降4半音至C，保留后两部分升八度，避免原最高C#6超出C3–B5谱区。 保留来源曲式：弱起及1–34小节低音区一轮；相同范围高八度一轮；第17小节末弱起及18–30小节高音区副歌；第37–43小节高音区尾奏。来源没有35/36小节长间歇，因此两轮之间仅留34末一拍，不新增该长间歇。 六处新增独立起音：两轮第4小节位置2的经过主音；三次第30小节位置0的首个低6（源均把前一低7延长而省去此音）；第42小节位置2.5的末主音。后三次第30小节第二个低6保留其原对应源110/233/297，不用模糊重复音匹配错置。 采用参考的7处尾奏版别差异（0基）：源305低7改1、306的1改2、307的2改3；源319/320的2改4、321的2改3、322的1改2。第42小节新增末1并按4四分、4/3/2/1八分奏；末源323主音5拍改为所选第43小节3拍。 保留324源音全部且不删音，六个新增音使输出330音。第16–17小节主音合计4拍，第33–34小节主音合计5拍；按谱恢复所有半拍/一拍休止，末5拍改3拍后总269拍变267拍。 Root独立全范围复核通过；明确接受122379版别、完整来源段落及八度布局、逐项新增/合并、162尾奏七处变化、d904六拍编配间歇及末终止改编。未进行真人听感或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c775e1ee854c76d8ce2228a84165d56b685b69f85d2f8666f6f415fbc43e7a7f"
+  },
+  "note_count": 330,
+  "event_count": 346,
+  "duration_seconds": 139.30434782608697,
+  "limits": [
+    "Source-selected form and register are explicitly arranged, not a claim of original full recording transcription.",
+    "Selected sheet has no BPM; source BPM retained explicitly.",
+    "No original-recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-162ded5d756f044e-always-with-me-full.review.json",
+      "sha256": "d47fd2440bb09d00cd82f26f7fd78fdd98f9e5b84392fe37c11bafab71ee7088"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "afad8dcfd0817a5b5f5781ddcbd41649e8ed280e94929ef083712fdda14081b4"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "04c71ef9132eeb3b0f0ce9d08e9b6a6d47d6e4e16555b41b644c9358ae51390a"
+    },
+    {
+      "name": "0001-1e40fd45a570.json",
+      "sha256": "38be6aa90ab562f47fa8546a07ca9485099301c245693bdf86c4f0cd25142513"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-532ebe5f4b6bea29",
+  "source_id": "deck-ccd6f2f1bc63",
+  "work_id": "work-deck-ccd6f2f1bc63",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%AE%81%E6%AC%A1%E4%B9%8B%E6%AD%BB-%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85-Jiko-5142338691.deltamusic",
+  "status": "reviewed",
+  "sha256": "9b0794f1c68eb2701716b1925b6db435c7c6a6617874b3493b2bae33744f7381",
+  "source_sha256": "553f72406f57f99d3ac1d94034ffea393c59f38909e80e2311a554221988ab31",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/15640.html",
+    "edition": "C4/4quarter80,all40barsread;53playedbarssourceform;4explicitsingle-noteoctavefolds",
+    "score_sha256": "13a3e68d208e753f02c04ac598ad52a260f9b9ced5fbe13a303710aa069250a6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 206,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete192source-notes381events53barform;explicitselected-referenceendingcompletion 完整原源192音/189休止/381事件及所有raw布局token均保存，源BPM68且主键基于C4。原#7是B#=C，不误当成C#；_为明确八分代码，末A5/C6的1/8拍以raw时值保存，未当未知marker。 参考15640为完整三页C调4/4四分80《哀と愁/宁次之死》，不是哀と悲。选右手旋律，原源形式保持：1–16；17–20两遍再17–19+21；22–25，再22–24+26；27–34；35–38，再35–37+39–40。比谱面第一次repeat多一次，是明确保留原源实践重复，不冒充唯一原唱形式。 m2/m6/m7及m23/m24/m36/m37的源长延音覆盖缺失印谱起音，恢复所选高1或普通1半拍。m12源37长E4加静默槽改为E4/C4/低B3/低A3四个八分及下一小节真实1拍休止，三缺音逐个加入，非删间奏凑时长。 m15升4的八分与后四分/延续为true tie，合为2.5拍。m16及m34印谱最后双高3是E6；新增时明确单音折至E5以匹配游戏范围。source48/49原A5/B5与印谱高6/高7一致，不能错误折下或替为B4/E5。 17/18右手第二和弦旋律高3保持2拍，再恢复半拍休止，然后两个十六分；三轮完整处理。第三轮第二结尾m21末高6按印谱2拍，原4拍改短2拍；没有省略第三轮或source102。 m22完整第二页首和弦为普通6/3/1，最高6=A4；此前裁切截掉顶部6导致v1/v2误读，v3两轮source103/117保持原A4。m25低6带下点=A3，source112/113/114三次A3化简成一次低A3两拍，不是true tie；source115低B3保持，source116低G3依印谱上声部G4升八度。 m29/m30源长主音中最后半拍按印谱为rest，恢复两半拍静默。m34原transitionB4 source157明确省略；保持随后A5/B5，补末折回高3。m38恢复初0.5拍休止和中0.25拍休止，原三低A3中的中音source170省略；source169/171依印谱改A4，分别1/.25拍，后B/G也由低八度改到印谱普通八度。 m39原first低A3 source183按印谱右手和弦最高A4改八度，之后原六个八分顺序全保留。m40原最后A5/C6各.125拍完整留raw，依所选版改为.25拍并明确补末E6/A6两个十六分（实际输出折至E5/A5），再保留印谱三拍终止rest。新增尾两音及3拍并非raw已有；这是公开完整参考版结尾选择，不截掉原源未决尾、不伪造原尾时值。 输出53个4/4小节=212拍，80为印谱练习速度；原68保留在源元数据，不宣称录音对齐速度。所有6项原音高/八度改变、18补音、2删音和三攻一组均逐索引可查。候选待root完整音乐独立二读与正式生产软件审核，未试听/录音对齐/UI/GPU/实机。 Root完整三页及六细图实读，独立40小节16分tick并展开53小节：220事件/212拍一致。原192音/189休止/429token从真正raw文件完整独立重解码，并核每一来源事件处置。 Root发现v2第22小节裁图漏顶6，退回后v3恢复两轮source103/117的A4，未篡改原谱。仅六项原音高改变，完整原source尾A5/C6各1/8拍保留证据。 明确选版的18补音、2省略音、112/113/114三攻一组均逐项核对，未用原休止槽伪造原音；所有原休止与最近保留原音的输出边界重新核验。 m16/m34新增E6及m40新增E6/A6各折一八度，打印音高与输出音高分列；m40四个十六分和3拍休止完整选择。m26首选低A3为明确右手下声部选择。 第一次重复比印谱多一轮为保留原来源形式，速度印四分80；无原录音节拍/真人试听/实机验收声明。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "13a3e68d208e753f02c04ac598ad52a260f9b9ced5fbe13a303710aa069250a6"
+  },
+  "note_count": 206,
+  "event_count": 220,
+  "duration_seconds": 159,
+  "limits": [
+    "Selectedpianoedition,right-handvoiceandexplicitsource-formextra-repeat.",
+    "2sourceattacksomitted;3lowAattacksreducedto1;18printedmissingattacksadded,including2terminalnotes.",
+    "PrintedE6/A6single-notefoldsforplayability;notfullpianoharmony.",
+    "Noaudio/UI/GPU/recordingalignment/gamevalidation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-ccd6f2f1bc63-grief-v3.review.json",
+      "sha256": "6708d4440539aa454801919918f86ede0071b9c8918fa03ea549cc87a1ca61e4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1ee8c1827473a28293ea5c7e8cb8b5ca37e154fa88456500b6c09d634c5b2fcb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "686ce5619330ffc3cc6bab6a361024d7f694e57940f63d98158e5a60ab3ea769"
+    },
+    {
+      "name": "0001-734f68a3d26c.json",
+      "sha256": "cb19f9a593efe54290c12417e4615a63a62a666f4be53bd8971f1049b1b80c3a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

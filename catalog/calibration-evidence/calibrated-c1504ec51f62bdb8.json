@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c1504ec51f62bdb8",
+  "source_id": "deck-470128a836ed",
+  "work_id": "work-deck-470128a836ed",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%AE%89%E6%B2%B3%E6%A1%A5-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-c112e7b4b3.deltamusic",
+  "status": "reviewed",
+  "sha256": "f7d8250962a71eac8bf936beb33c70454ef92091844d7926f5bf0ff094c9208e",
+  "source_sha256": "6fc79dcf222516b4dc04ad82157995efc35b886706ae6dc139b2480935647db3",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/320449.html",
+    "edition": "SunShiyanGmajor65BPM;minus12;m28-m44initialG plusoriginal2.5beatend-silence;disclosedornamentchoices",
+    "score_sha256": "51f74a21381845da858c24f842ea76838c1c786462ce0051ba2b6322d1245f68"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 106,
+    "maximum_parser_boundary_error_seconds": 3.197442310920451e-14
+  },
+  "review_note": "complete-existing111notes;fullinterlude-and-onechorusexcerpt;notfullsong New complete musical location: source starts with the end of vocalphrase你呢 atprintedm28 and continues through entireinterlude plusonechorus endingm44. Previousunlocatedintro hypothesis is superseded by full111note mapping, notmetadata similarity. SelectedSunShiyan320449Gmajor65BPM score, outputuniformminus12 fromprintedconcertpitch. Full111source notes and16rests are individuallydisposed. This is a disclosedselected-editionmelody arrangement, not aclaimthat all sourceornaments are accidentalerrors. Two sourceD-E-Dturns beforelowE are replacedby printed singleD: consolidateD source4/6 and19/21; omitpassingE source5/20. Source38extraDbeforem34B-Dgraces andsource44extraGwithinm34E-E-E-D areexplicitlyomitted. Four source-note omissions total, with rawtokens and rationale preserved. Restore two printed attacks absent in source: m33graceA4 beforeG4 andm36B4 repeatedafterm35lastB4; no printedtiejoins those twoBs. Consolidate source98/99D4into m42printedDtie. Threeconsolidations total. Six pitch corrections toselectedprint: source31 B4toA4,32 A4toB4,46 B4toD5,65/96 F4toFsharp4,75 G3toG4. Allotherretainedpitchesmatchthe octave-loweredprintededition. Ordinarytiming fromprint. Seven unmeasuredgracepitches eachreceive1/4beat takenfromattachedmainnote, explicitlyeditorial. SourcefirstGsound+rest becomes printedtwo-beatG sustain at excerptentry; no absentprecedingm27 materialprepended. Endafterm44initialtiedG and retainoriginal2.5beatterminalsilence (1+1+.5) asdisclosedpracticeexcerptexit; do notadd printedpickupnotes belonging tothenextabsentrefrain. This tail is sourcepreserved, notclaimedasprintedrestmeasure. 106outputnotes,68.5beats,65BPM,63.230769230769seconds. No humanlistening,recordingalignment orrealgame test; independentrootmusicalreview andformaltechnicalaudit required. Root复读完整第2页所选m28至m44开头，复用自身28–36读谱并另录37–44；G主音55，119事件音高和精确时值全部一致。 源5/20过渡E及38/44额外装饰音按所选印谱明确省略；4/6与19/21按印谱单D合组，98/99为真tie。两补音m33 A4、m36 B4已视读确认。 旧说明部分D5/E5是对印刷层级的命名，实际输出D4/E4；以绝对MIDI、统一降12和源逐事件表为准。七倚音各1/4拍为编辑实现；尾2.5拍为原片段静音，不伪称全出自印谱。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "51f74a21381845da858c24f842ea76838c1c786462ce0051ba2b6322d1245f68"
+  },
+  "note_count": 106,
+  "event_count": 119,
+  "duration_seconds": 63.23076923076923,
+  "limits": [
+    "Nonblind reference reading.",
+    "Four sourceornament omissions are selected-edition decisions.",
+    "Grace timing editorial; terminal2.5beat silence preservedfromsource.",
+    "No humanlistening,recordingalignment orrealgame test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-470128a836ed-anheqiao-reference-v1.review.json",
+      "sha256": "e0770359084e42a5e00311665419565221e92ab64657304d17153da8c307777c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "91719d0b9f2f67bf6e6642896e141ddd5c75f9c14eeec9b6d4f01b604d3497a2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "316032a6f8a06cc8bfe31365f10f385f5eac04c3059a0cf59b3ca384487758ce"
+    },
+    {
+      "name": "0001-b7bad219d1ae.json",
+      "sha256": "0555e827de33bc9fcbba8e870c1781351ab74707fedd60fd79e40df3586e34f8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

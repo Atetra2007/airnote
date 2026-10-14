@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-190f30f9b7d32b69",
+  "source_id": "zhouzhou-123",
+  "work_id": "work-c20f24975fc7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "8b666b2c30daced9c0ec2cc5898e1688f1ccfe8d8eab5598c97ec32a5ef0112d",
+  "source_sha256": "75a3fb7257dd0f21f70960438dc3213b3d3fda4de902c73e740d7a6b0ea43899",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/156164.html",
+    "edition": "孙世彦完整三页简谱，Ab打印四分70；第一主歌与第一轮两个副歌，保留首的两拍例外。",
+    "score_sha256": "c6f0409b18cb5a32cc61a891a2318563641d2de1ff90e05ab19e43009488e673"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 165,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "全16源歌词行146音，第一主歌一曲至第一轮双副歌末花A4三拍；不含前后器乐与第二主歌。 固定123原源SHA75a3fb7257dd0f21f70960438dc3213b3d3fda4de902c73e740d7a6b0ea43899，16歌词行146音、无原零休止。全部有声音值逐项映射；原b/时值字段及歌词原样保存在source-decoding，不能以源默认时值取代曲调核对。 选156164孙世彦《辞九门回忆》完整三页简谱，打印Ab、4/4、四分70。采用从第一主歌一曲定重楼至第一轮第二副歌末花的25个印谱小节位置；不添加此前前奏、之后器乐、第二主歌与后轮副歌。普通1Ab4升4半音到C5，印低6F4到A4，保留原源高音区。 选段24个四拍小节及一个明确的两拍小节，共98拍，打印70BPM为84秒。P1r6b2再聚首的首，谱确实只印低6-后接小节线，共两拍，虽总谱标4/4而未印临时换拍；本选版原样保留这两拍，既不暗补两拍休止，也不假称全部小节均完整4拍。这是所选出版参考的明确记谱限制。 源4原D5，对应P1r2b4重字高2后同一细分组的低7，明示改B4十六分；源5楼仍独立B4四分。两个B4之间没有同音弧。该处高2到低7为异音圆滑，各自起音。 源9/10原两个G4对照P1r3b1生的一个低5四分，明确按所选版合为一拍；源27/28原两个D5对照P1r4b2回的一个普通2八分，合半拍。这两组是选版整合重复原值，不谎称图上有同音连线。其余原源音逐一独立保持。 21枚所选参考缺失主音均逐项列出：拜的D5经过音，秋/家重复D5主起音，6处5h到3h回转后应再独立起音的3h，骨/怜的C5经过音，误字D5/C5与哑/座的D5回转，留末A4三拍，以及风/花各D5/C5回转与花末A4三拍。全部是有定量减时线的主音，不是随意给小倚音定时。 所有弧包括3到2、5到3、低6到1、1到低6及1-2-1回转均是不同音的圆滑，保留各起音；回转末3与后续3、回转末2与后续2没有跨同音弧，必须重起。该选段没有真正应合并的同音延音弧。 补三个印谱原缺休止：首句楼后半拍、云涌后1拍、回首后半拍。完整留住来源所有歌词段落和终止：原末source145C5不是最后收束音，印花还需D5十六分、C5十六分和A4三拍，全部补到尾端；后面括号器乐不纳入。 正文原歌词有筹/回首/残陋等字词与印谱筹/回首/残陋或页面题名演唱者的异文，不作为音高证据替代。376143原唱G指法夹1数字声乐谱为相关对照；451643与375626是同一第七城市六线伴奏无可用声乐数字线，未把它们算独立音乐二读。248375林伟钢琴简版D/100为不同编配，未借其速度覆盖主参考70。 最终165音3休止168事件，146原音覆盖100%，0原音省略、1改音、2同音组选版整合、21新增。提案仍待root独立全曲视读及正式软件审计，未人工听过、未录音对齐、未真实游戏测试。 Root已阅156164完整三页与13处原分辨率行裁图，另行录入全25小节168事件音高/时值/起点；冻结独立读谱JSON之后才对候选数值，逐项完全相同。原16行146音另逐字解码核对所有处置，source4改B4、两组选版合并和21新增全部明确。已知提案叙述，非盲读，数组不是候选复制。 亲见P1r6b2首只有低6加一横，即A4两拍；谱未标临时换拍，故接受这一选版记谱限制并显式保留。所有异音弧保留独立起音，同音回转尾与后续同音之间没有弧，不能合并。source9/10、27/28只是原来源相邻重复值按参考单音整合，不假称原谱tie。 完整收尾P2r5b1为C5半拍、D5四分之一拍、C5四分之一拍、A4三拍；同上一小节风末C5独立重起。此前98拍范围、70打印BPM、3处静默均与图一致。以上原提案待root叙述为历史说明，当前音乐复核完成；另送正式软件审计。未人工试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c6f0409b18cb5a32cc61a891a2318563641d2de1ff90e05ab19e43009488e673"
+  },
+  "note_count": 165,
+  "event_count": 168,
+  "duration_seconds": 84,
+  "limits": [
+    "Complete existing first-verse/two-chorus excerpt only; not whole song.",
+    "P1r6b2 contains only two printed beats despite global4/4; retained literally with no inferred rest or meter-completeness claim.",
+    "Original same-note groups9/10and27/28are consolidated by selected-edition choice, not by invented printed tie marks.",
+    "Different published adaptations differ in tempo and ornamentation;70BPM belongs to this selected edition.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-123-jiumen-complete-source.review.json",
+      "sha256": "cee76be6a48d891c0f0bd69405c48442d9a01080daf5b8dffd6fe1787af20dec"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "76af26f0a028ddc051be67467ade753fd7b815289392a33d62a8d0753484d622"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3ac8df6cdd6770b23c4e396645b2cc5cd16f1b6f65d159bfd012b3e15805e289"
+    },
+    {
+      "name": "0001-c4340980c7aa.json",
+      "sha256": "4f194e7442f8fef5d7818c27879a82894a6ea1a5a830c275807ae87015f6cc77"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

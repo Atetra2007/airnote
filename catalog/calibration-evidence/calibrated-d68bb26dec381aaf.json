@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d68bb26dec381aaf",
+  "source_id": "deck-e027c923ea04",
+  "work_id": "work-deck-e027c923ea04",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85.deltamusic",
+  "status": "reviewed",
+  "sha256": "22b4ef2ff9cc16bac68b2acce347562fee7ab65e636e0c40b07ed5f7b37ea686",
+  "source_sha256": "727e6f3685d44c7f4f50bc8a90c5081f6401feb035f90b834588d2c5dba08aec",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=Zj6actM6snc",
+    "edition": "HUEN D major4/4 quarter76,8-bar instrumental intro",
+    "score_sha256": "53edc96282772c2c3be98611d0b607e66f6a7abe259c9b6249634f820651c853"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 52,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "原来源45音完整范围，公开谱8小节器乐前奏；补回7个装饰音，共52音和1休止。不是整曲。 来源是器乐前奏，不能用已验收083人声段直接覆盖。 以HUEN公开D调4/4、四分音符76谱为唯一重建依据，整体降八度至MIDI52–73。 来源第22音两拍7改为谱面的8个十六分音符，新增其中7音；所有来源音仍各映射一次。 第6小节6/7各半拍、后一个6一拍，再四分之一拍休止及3/2/1；第7小节首2为一点五拍、6为半拍。 JoeLi Eb前奏有不同装饰音、后半八度及末音，明确列异文，不混合。 Root按8个完整4拍小节核对，共52音及1个十六分休止。第4小节后半7/3/4/3/7/高2/高3/高2为8个十六分音符，来源只保留第一个7的两拍，补齐其余7音。 Root确认第6小节上方高音3/6/6/7各半拍，后高音6一拍，再0/高3/高2/高1各四分之一拍；第7小节首高2一点五拍，低于该高音组的6半拍。 原JSON标1=F，原解析按名义C音高；本修订明确重新采用HUEN的D调并整体降八度，以D3为1，实际输出E3–C#5即MIDI52–73。不是声称原F调已与D谱绝对同高。 这是器乐前奏全部现有范围，不能继承083人声片段的验收，也不覆盖同名216音长版的其余内容。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "53edc96282772c2c3be98611d0b607e66f6a7abe259c9b6249634f820651c853"
+  },
+  "note_count": 52,
+  "event_count": 53,
+  "duration_seconds": 25.263157894736842,
+  "limits": [
+    "One secondary public HUEN arrangement controls pitch/rhythm; not original studio transcription.",
+    "The complete8-bar existing-source instrumental introduction is covered, not the full song.",
+    "No human listening or real-game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e027c923ea04-intro.review.json",
+      "sha256": "11dae91a46b85ce18176988efbaf0bbfcd1730d29f56ef3e5f16b9d563d26df7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5ff42b99a6b4015c0845ca786a6c4dfd2231b35143d0357a966c4b6b40cbb03b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1aa29a7251592f3cfdd59b64779b1d6452afd94b3bcb0d3e94668054f6754155"
+    },
+    {
+      "name": "0001-d578ab808c9e.json",
+      "sha256": "815daffdef3e1e17804f8167ce1d6917cc06e9eca4b5c6c0c824a39dfb4fe6e7"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

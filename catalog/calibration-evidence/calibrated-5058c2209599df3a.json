@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5058c2209599df3a",
+  "source_id": "social-59215194f5509ddd",
+  "work_id": "work-382acca0e213",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=8LbPYk_sDVVu",
+  "status": "reviewed",
+  "sha256": "dc6bab65685931793da878334df96128e8e06f04cb29879c969fe719769d6dee",
+  "source_sha256": "66defe82a075fd2816b01521966b78e01410ccb88b0793c95b332735d8e30d84",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/288307.html",
+    "edition": "宫愚译配G调含Bb调中段声乐谱，统一降7半音；练习108BPM非印谱标速；第13小节低7明确取348022五线+简谱F自然音",
+    "score_sha256": "b8c96ce552bf1138e67ca414e680e673013d689733fa2a4c9d67a92c0859178a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 105,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "完整105源音、全部源静默、第一遍声乐及完整结束句。 完整DFHS105源音和全部源空白逐项处置，标准MIDI105音投影逐起止在1tick内一致；不以标准MIDI丢弃内嵌音。 主参考288307完整单页宫愚译配声乐版，原G调及中段Bb调统一降7半音至C4/Eb4。108BPM为明确沿用来源的演奏速度，印谱仅称进行速度，没有数值BPM。 保留3拍源准备静默；印谱开头三个低5弱起共1.5拍替代原单个1拍低5，明确恢复两独立起音。第2小节恢复第二个1，第10小节恢复第二个低5。 完整第一遍28小节音乐范围均保留；不额外重复其它歌词。中段严格按印谱转调，不能把Bb调简谱数字直接当G调，具体全部音高差异逐音列出。 第14小节末转调低7；第18小节最后低5回G调。两个公字短起音按参考选一个低5，源75/76与83/84分别合并且降八度。第19/21小节首两个5有明确同音延音线，各合2.75拍；不同音之间的线不合并。 第16小节低7选3拍，吸收源中1拍休止；第17小节6低到1印谱附点八分/十六分，明确替代源均分；各选版休止与时值变化均有完整事件映射。 第27小节5两拍、休止.75、3十六分、4附点八分、2十六分；438346比较版此处多印一条增时线合5拍，未选作主依据。 末1按288307同音延音2+.5=2.5拍，排除随后.5拍谱末休止，替代来源3.989583拍；没有截去任何来源尾部音符。 Root全源105音/全部源空白、115输出事件和代理29小节复读相符；初读少3头已补正，旧稿保留。第13小节变音选择按另列说明；正式软件检验另绑定，未人工试听或实机测试。 288307第13小节符号为♮7；数字谱还原号通常撤销变音回本调第7，不能简单套五线谱字母F自然音。因此旧代理报告“♮7必然F4”推导不作为依据。root另查348022同段五线谱在F位置明确还原号，下面简谱明确b7，两种记法都支持F4。此处显式选348022的F4，整体降7半音输出Bb3/MIDI58；其他时值/段落仍选288307。保留候选音高，但不把主谱该符号无歧义地解释为Bb3，也不隐藏版别取舍。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "b8c96ce552bf1138e67ca414e680e673013d689733fa2a4c9d67a92c0859178a"
+  },
+  "note_count": 105,
+  "event_count": 115,
+  "duration_seconds": 63.888888888888886,
+  "limits": [
+    "Explicit selected vocal edition, with modulation, added attacks, merged retriggers and altered durations documented.",
+    "Source108 is editorial tempo, not a published metronome claim.",
+    "No human listening or actual game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-59215194f5509ddd-marseillaise-full-vocal.review.json",
+      "sha256": "af2272b3e3f29d95bb4fac55fa606006ee15cc3fb57b22152f6d056c12035720"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c2ed2ad6d0d796402d301235411d42efc2aba1057f7466b3066e8cc9c1267b2f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1d1d6fdc07a5827a32851ae7632ada5edab0188d7dac9ab23fc541bc2d76ff6d"
+    },
+    {
+      "name": "0001-2806521931ab.json",
+      "sha256": "63d33c97d6c6f15a9bd7e49073cbf3b781c0247369c8c60286d22c404b7cf461"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

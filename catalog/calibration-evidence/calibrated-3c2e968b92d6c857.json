@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3c2e968b92d6c857",
+  "source_id": "zhouzhou-158",
+  "work_id": "work-35fe95fb3fdd",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "e8928a76d0693a9efb355bc96b2dea03f4ebee21244efc57034db91eb8e4e776",
+  "source_sha256": "cff4c1358dbdda83ca4d820eaaec93d2313172a4253a292043f2e72deb0af291",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/373454.html",
+    "edition": "郭一凡有我呢吉他声乐谱，1=A/G指法夹2，4/4打印61；你想去很多地方到首结尾呢，实音A4降9到C4。",
+    "score_sha256": "276a17bea7f31c9660a770f6420d0c4ab9bb63d5d13b4f74f6d1fb713628f009"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 107,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-14
+  },
+  "review_note": "全部8源行93音，从你想去很多地方的普通5十六分到第一结尾呢高1两拍，保留双副歌来源全范围。 固定158原文件SHAcff4c1358dbdda83ca4d820eaaec93d2313172a4253a292043f2e72deb0af291，全8源行93有声音、无原休止。原音高数组无可信节奏，不能以默认拍值完成音乐检验。 参考373454郭一凡《有我呢》两页吉他弹唱谱，只取数字声乐行，忽略六线伴奏。打印四分音符61、4/4、1=A、选G调变调夹2品。音乐实音按A，明示普通1A4降9半音为来源普通1C4，高1A5到C5；吉他G指法和夹2不再额外移一次。 原源从P1末行第2小节你想去很多地方的你（普通5十六分）开始，完整经过第一与第二副歌，到P2第4行第2小节第一结尾呢的高1两拍结束。开始之前高2延音、末音之后1拍休止及返回时而拾音不在源中，不加；更后第二结尾长尾声也不加入。 共17个所选小节位置，首小节只取末2.25拍、末小节只取首2拍，中间15小节各4拍；总64.25拍，打印61BPM为63.19672131147541秒。最后source92C5完整两拍。 谱面同音弧仅合真正同音：P2r1b1末3h与下一首3h、r1b2末3h与下一首3h、r2b1末2h与下一1+.75两段、r3b1末3h与下一首3h、r3b2末3h与下一首3h。各行内1h十六分连1h四分为1.25拍，r1b4两6h合1拍，r3b4两7h合1拍。 3h到2h、5h到3h、1h到2h以及r3b4后7h到5h的弧均为异音圆滑，保留独立起音。紧挨着的两个2h或3h若无同音弧也必须分开；不能因原源省写重复音而自动合并。 12枚主旋律起音由参考补齐：P1r5b3第二2h(.75)，P2r1b1第二2h(.75)，r1b4第二3h(.5)与末回旋首2h(.25)，r2b1步前1h(.25)及第二2h(.5)，r2b3第二2h(1)，r3b1第二2h(1)，r3b4第二3h(.5)与末回旋首2h(.25)，r4b1的前1h(.25)及第二2h(.5)。全部给出原前后源索引与小节位置。 另保留两枚打印小高2倚音：P2r1b2我们都会与r3b2我们都怕，在source29/74E5之前各加D5。印谱小音不规定演奏时值，本编配明确量化为1/8拍，从后续3h半拍借时，3h在该小节剩3/8拍再连下一小节半拍，总.875拍；两小节各仍4拍。不是把1/8拍宣称印谱精确时值。 source30与75原普通5G4，对应P2r1b3/P2r3b3第2音印普通6；均明示改为A4。前一相似节source24/69本来是A4，保持。两处印谱普通6到高1上行，不能误按原G4保留。 四个原缺印谱休止完整补齐：P2r1b3一拍、r2b1半拍、r3b3附点八分.75拍、r4b1半拍。r1b1手一的2h附点八分+1h十六分，与r3b1惯的2h四分不同；r2b3感也是2h四分，不照前句误添5低音。 93原音全部一对一处置，0省略、0合并、14新增（12主音+2显式编配倚音）、2改音，输出107音4休止111事件。已完成root独立音乐视读，另送正式软件审计，未人工试听、未录音对齐、未真实游戏。 Root视读373454完整两页及全部所选5行近裁，单独冻结111事件音高/时值/起点数组，之后与候选全项一致。原93音再次独立解码，对应两处6而非5，以及12主音/2借时倚音新增均明确；每个源音一次映射，无省略。两处2倚音的1/8拍是显式编配，不冒充印刷时值。首你至首结尾呢范围完整，后休止/返回拾音为源外。读前已看提案叙述，因此不是完全盲读。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "276a17bea7f31c9660a770f6420d0c4ab9bb63d5d13b4f74f6d1fb713628f009"
+  },
+  "note_count": 107,
+  "event_count": 111,
+  "duration_seconds": 63.19672131147541,
+  "limits": [
+    "Complete existing double-chorus excerpt only; initial verse, prior held note, final return pickup and second-ending outro are outside source.",
+    "Two small printed grace notes receive explicit1/8beat borrowed-time arrangement; image does not print measured grace durations.",
+    "ConcertA4down9toC4 retains original high register; G-fingering/capo2 is not an additional transposition.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-158-have-me-complete-source.review.json",
+      "sha256": "247e89b75c916740d6d12c229f06da9185cd5b6a58997893db1ce8742cef5ab9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "cde770af75009e744501c055d83910fd12500648f385d776c409dad4b6645bd3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "707c51360d5a8913996df827cf4be0ca19ce7aa18720cc8d9fcb753641cbfa1b"
+    },
+    {
+      "name": "0001-2ef07df031c9.json",
+      "sha256": "66c34f0d7392ce4fab515eaa5bb1ed6b6e34b0fe8edf4e4c5b939d736aa08f23"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

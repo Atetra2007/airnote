@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1e164e320deff431",
+  "source_id": "social-5d3185d521f3a053",
+  "work_id": "work-e88fe6e8c085",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=Qy3GEr_hQ_oK",
+  "status": "reviewed",
+  "sha256": "82c5f283868aa3d4d32010feb17721f5a1cbc7840b8ae4f35f3f210001aa46c8",
+  "source_sha256": "1434576c7309f21d163a4c109961eceb3783562f87492332b6aa12c3d19868ae",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://pianobin.com/media/p3r/Color_Your_Night_PB.pdf",
+    "edition": "Dbmajor5flats quarter95;printedunquantifiedSwing explicitlystraightpractice;whole88barsand2beatpickup",
+    "score_sha256": "a1942f84cfdc7ede0ef090297ffda1d063119455669a069425988a11fc98229f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 785,
+    "maximum_parser_boundary_error_seconds": 3.097966327914037e-12
+  },
+  "review_note": "Full782MIDI/790snapshot/1572SMF accounted;full88bar+2beatpickup reference785notes138rests;756MIDIretained26omitted;764snapshotretained26omitted 完整原MIDI782音/1572SMF事件，snapshot790音全部逐项保留且SHA绑定；两轨ppqn480，0配对issue/0同键重叠。原95.0001425量化tempo与snapshot95、4/8弱起->4/4、全部velocity/program/text/endmarker逐项原样保存为证据。 PIANOBIN免费完整8页PDF全实际view，43RH系统全部实际逐音头/音名/符尾/附点/休止/连线核对，89栏含2拍弱起和88完整4/4栏，354quarterbeats。物理glyph/序列助手不代替音乐验收；逐栏人工核对记录与所有图SHA均提供。 明确所选是PIANOBIN RH上声部参考版直分练习编配，quarter95。原谱Swing无比例，主动选择straight16ths而不杜撰数字；三连音m24/56仍保留实际印刷3，三个16分各1/6quarterbeat。不是爵士原Swing表现版。 977印刷事件含真实tie continuation，合54次保留真tie得785音+138休止=923事件；51tie groups逐组实际图核。相邻同音重击保留；除明确m7首原49下声部新攻击保留并截短m6末Eb4上tie之外，其他内声部真实攻击在上声部持音期间明确省略，不造成上声部误重启或截短。 完整来源790中764保留/实际tie合并/明确版本修正，22实际内或下声部音省略，4无所选印刷新攻击音省略。MIDI782中756保留、26明确省略。全部省略有源note/head/bar/tie context，不把它们冒称不存在。17源pitchclass差异明确列参考版改音，不声称原来源自动等同参考。 八个snapshotF6 indices257/280/301/323/513/539/563/585虽投影MIDI时丢失，确为m25/27/29/31/57/59/61/63位置.5主和弦顶F5；全部明确恢复到完整上声部。六MIDI1tick indices17/49/62/79/116/138逐项：m3Db4真实dotted8th3/4恢复；m7Db4实际下声部新音独立1/2拍保留；m6末Eb4明确截到1/4拍，原上声部跨入m7的1/2拍tie延音不再保留；m9Bb3八分.5、m10Ab3/m13Bb3/m14Ab3十六分.25全部恢复，绝不统一盲删。 七实际小倚音m21Db5/m34Eb5/m35Db5/m39Db5/m41Eb4+E-natural4/m53Db5各明确1/8quarterbeat，从后主音借时。m35/39源小Db于1.5移动到印刷2；原m40最后Eb4/E4两个普通时位音移动到实际m41两小倚音。m41主是单一F4/C4/Db4四分和弦（第二位置Db头不是另击奏），主体借时后3/4，后quarterrest+halfrest完整总4。 输出句八度0..32shift0、33..40−12、41..48+12、49..64shift0、65..80−12、81..88shift0；m66最后完整三音Db4-Bb3-C4pickup position>=13/4整体shift0保留轮廓防Bb2越界。m80末Eb4与m81首Eb4是真1beat tie，合并攻击按m80继承−12整段输出Eb3；81后续独立攻击恢复shift0。输出48..84，无暗折单音。 m46..48原来源interlude和所选PIANOBIN填奏存在明确版本差异：全列改音/内声省略/三无攻击音省略；使用完整印刷低填奏再整体+12。m57印刷eighthrest从1至1.5，source514于1.25早击奏明确省去，其后五音级差异逐项改成所选完整印刷上声部。其他所有差异均逐项列，不只保留好匹配前半段。 staccato/dynamics/pedal不编码；保留名义印刷时值，不自造staccato比例。原尾353.9729167拍因clip不足完整354，输出完整m88结尾Db4八分且全部原尾音已处置。 worker完整音乐候选，待root独立全部8页43系统音乐复核和正式三gap软件审计。未做音频、人耳、UI、实际游戏输入、GPU或重构建验证。 Root has completed full43system/89bar non-blind visual second read; final v2 full source disposal, fresh binary decode, all923 serialized events and critical corrections checked. Not a separately hand-entered923event array. Erratum to worker prose: actual final output range is MIDI48..82, not48..84. Original prose and candidate remain preserved. m41 enlarged image resolved initial root small-image misread: main chord TOP is F4, notDb4. Final output transposed+12 F5 with two1/8beat graces and3/4beat main. Musical decisions frozen; software audit follows. Metadata-only v3: add canonical score_image_path/sha256/media_type for integration; prior frozen review, score, timeline and successful software audit unchanged.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a1942f84cfdc7ede0ef090297ffda1d063119455669a069425988a11fc98229f"
+  },
+  "note_count": 785,
+  "event_count": 923,
+  "duration_seconds": 223.57894736842232,
+  "limits": [
+    "ExplicitstraightpracticearrangementnotoriginalSwing",
+    "17sourcepitchclasschangesand26sourceomissionsareversion/voicechoices",
+    "Allsourcecontentpreservedasrawcomparison;referenceversioninterludeselected",
+    "Noaudioorreal-gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-5d3185d521f3a053-color782-pianobin88-straight-v2.review.json",
+      "sha256": "ee17178e635bd9003ae516c394d13bce8ed9428a9a3f17b8aa25db72c1dcb805"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8be4eaad30e91712476d50f53094dccce1e72ffdb5b9522b18b16afded728c13"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fda51b9b46031d79d914f1c0076986202202a45d1c967bbd4bbaeb7d01051a47"
+    },
+    {
+      "name": "0001-91f9334f38af.json",
+      "sha256": "6ecd80827c6ec787af8cf1981d990c758c1ed677533c2a956306080a7ef381dd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

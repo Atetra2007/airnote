@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-8ca25963bcab05d8",
+  "source_id": "zhouzhou-099",
+  "work_id": "work-c4c7faf127e7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "32989d2d8c15d98c90e9553e4d24502e08bcc11b513dcfe725f6d3a99b7c5fad",
+  "source_sha256": "7374ce0cff64590ec49ed7706a68338316dd4fd61d5889f8bb91f3539fe3b197",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/332182.html",
+    "edition": "《猪猪侠》主题曲陈洁丽演唱版；1=♭B、2/4、四分音符=70",
+    "score_sha256": "b42ad9a6a2b183880a2c4ae6af9e780ef4165a87e43b5e167ee2bb0a8791ca9f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 62,
+    "maximum_parser_boundary_error_seconds": 1.0658141036401503e-14
+  },
+  "review_note": "62个来源音，四个印谱片段；句间休止与跨小节同音连线延续按主参考恢复。 完整核对冻结来源62音，覆盖332182连续主唱范围聪明勇敢至生命的真谛；末高1的跨小节延音.25+1=1.25拍完整，后续0/5/6/7超出来源未纳入。 主谱印1=降B、2/4、四分音符70；数字谱仅给相对八度点，不唯一指定绝对八度。最终明确选普通1=C4的C调练习编配，高1=C5；相对提案Bb4约定整体降低10半音，与原62音音高全一致。 按原图逐小节核对减时线、连线及休止；全部完整小节2拍，末范围1拍，总31拍。第一段A3的中间2连至随后.25拍，第三段C3的三个2独立起音，不照搬相似句节奏。 62个原音逐项映射，无省略或新增旋律音；三处印谱1拍休止保留，65事件，70BPM，总26.5714285714秒。 原提案及其Bb4音高文件保持不变，仅root-reviewed修订版生效；root原像素复读及原62音独立解码通过。 未进行人工试听、录音对齐或真实游戏测试；正式解析与隔离库检验另附。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "b42ad9a6a2b183880a2c4ae6af9e780ef4165a87e43b5e167ee2bb0a8791ca9f"
+  },
+  "note_count": 62,
+  "event_count": 65,
+  "duration_seconds": 26.571428571428573,
+  "limits": [
+    "Complete frozen62-note source extent, not the full published song.",
+    "C4 central tonic is an explicit practice arrangement choice; printedBb does not anchor a unique MIDI octave.",
+    "No human listening, recording alignment, or real-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-099-piggy-fragments.review.json",
+      "sha256": "98432184b3027d1f71e56bed2143fcf2062b0d4085bfc727f85f8defa40e379f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "bdf11363b5ebca38ff3cd8bc72edeb85da6d42f0124f55140846163138bd1519"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3511d81be5390a3b71a8778ed022a3c64332453de402e8aefadd5d55a105be30"
+    },
+    {
+      "name": "0001-92bec0d63eec.json",
+      "sha256": "9a38760682408569325c8d183a938acd02c451722fa4f3fada06c1a6580ff230"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

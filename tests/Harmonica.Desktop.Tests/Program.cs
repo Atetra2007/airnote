@@ -16,7 +16,11 @@ var scenarios = new (string Name, Func<Task> Run)[]
     ("曲谱、收藏和设置重启持久化", Persistence),
     ("旧曲库迁移保留未知字段", LibrarySchemaMigration),
     ("作品分组、多版本选择与同名独立", WorkGroupingAndSelection),
+    ("移除来源后隐藏旧占位，保留个人文件、收藏与缺文件记录", RetiredCatalogPreviews),
+    ("出版谱参考字段、SHA与界面标签校验", PublishedSheetReferenceMetadata),
     ("质量筛选只显示匹配版本并保留已保存选择", LibraryQualityFiltering),
+    ("多词搜索、相关度、规范化、作品视图与版本隔离", LibrarySearchChecks.Run),
+    ("曲库宽度与排序持久化，兼容旧设置并校验异常值", LibraryPreferences),
     ("版本说明显示参考片段定位与谱面时长", CatalogVersionDescription),
     ("外部来源未知速度导入实际 BPM 并在重启后保留", UnknownCatalogBpmImport),
     ("schema 2 与直接下载来源仍要求合法 BPM", StrictCatalogBpmValidation),
@@ -51,6 +55,23 @@ return failures == 0 ? 0 : 1;
 
 static ScoreDocument Doc(string body = "1 0 2_ 3_ |", string title = "原创个人谱") => new(title, 100, 25, body);
 static string Text(string body = "1 0 2_ 3_ |", string title = "原创个人谱") => ScoreCodec.Write(Doc(body, title));
+
+static async Task LibraryPreferences()
+{
+    using var fixture = new Fixture();
+    var store = await fixture.CreateStore();
+    Check(store.Settings.LibrarySidebarWidth == 330 && store.Settings.LibrarySort == LibrarySortOrder.Smart, "旧设置提供曲库默认值。");
+    store.Settings.LibrarySidebarWidth = 390;
+    store.Settings.LibrarySort = LibrarySortOrder.Title;
+    await store.SaveSettingsAsync();
+    var reopened = await fixture.CreateStore();
+    Check(reopened.Settings.LibrarySidebarWidth == 390 && reopened.Settings.LibrarySort == LibrarySortOrder.Title, "宽度和排序重启保留。");
+    reopened.Settings.LibrarySidebarWidth = 9999;
+    reopened.Settings.LibrarySort = (LibrarySortOrder)999;
+    await reopened.SaveSettingsAsync();
+    var normalized = await fixture.CreateStore();
+    Check(normalized.Settings.LibrarySidebarWidth == 420 && normalized.Settings.LibrarySort == LibrarySortOrder.Smart, "无效偏好不能破坏布局。");
+}
 
 static async Task Initialization()
 {
@@ -182,6 +203,130 @@ static async Task WorkGroupingAndSelection()
     var external = reopened.Items.Single(item => item.SourceId == "work-a-default");
     Check(!external.Available && external.Subtitle.Contains("需导入"), "没有直链的外部版本应可载入并明确提示导入。");
     await Throws<InvalidDataException>(() => reopened.DownloadAsync(external, CancellationToken.None));
+}
+
+static async Task RetiredCatalogPreviews()
+{
+    using var fixture = new Fixture();
+    var records = Enumerable.Range(0, 13).Select(index =>
+        SourceRecord($"retired-{index}", $"retired-work-{index}", $"retired-variant-{index}", null)).ToArray();
+    await WriteSourceCatalog(fixture, records);
+    var store = await fixture.CreateStore();
+    var retired = store.Items.Where(item => item.SourceId?.StartsWith("retired-", StringComparison.Ordinal) == true).ToArray();
+    var played = DateTimeOffset.Parse("2026-10-10T12:00:00Z");
+    foreach (var item in retired)
+    {
+        item.Favorite = true;
+        item.LastPlayed = played;
+        store.Settings.SelectedVariants[item.WorkId] = item.Id;
+    }
+    store.Settings.LastSelectedId = retired[0].Id;
+    var local = await store.SaveCopyAsync(Doc(title: "保留的个人曲谱"));
+    local.SourceId = "retired-0";
+    local.Favorite = true;
+    local.LastPlayed = played;
+    var localPath = store.ScorePath(local);
+    var localHash = LibraryStore.Hash(await File.ReadAllBytesAsync(localPath));
+    var missing = new LibraryItem { Id = "source-retired-missing", SourceId = "retired-missing", WorkId = "missing-work",
+        FileName = "missing-import.txt", Hash = new string('a', 64), Title = "缺文件的旧导入", Favorite = true, LastPlayed = played };
+    var personal = new LibraryItem { Id = "personal-missing", WorkId = "personal-missing", Title = "缺文件的私人记录" };
+    var linked = new LibraryItem { Id = "personal-linked", SourceId = "retired-linked", WorkId = "personal-linked", Title = "私人来源记录" };
+    store.Items.AddRange([missing, personal, linked]);
+    await store.SaveLibraryAsync();
+    await store.SaveSettingsAsync();
+
+    await WriteSourceCatalog(fixture);
+    var reopened = await fixture.CreateStore();
+    var indexPath = Path.Combine(reopened.Root, "library.json");
+    var indexBeforeQuery = await File.ReadAllBytesAsync(indexPath);
+    var visibleIds = reopened.GetWorks().SelectMany(work => work.AllVariants).Select(item => item.Id).ToHashSet(StringComparer.Ordinal);
+    Check(retired.All(item => !visibleIds.Contains(item.Id)), "13 个移除的目录占位不能继续出现在软件曲库。");
+    Check(new[] { local.Id, missing.Id, personal.Id, linked.Id }.All(visibleIds.Contains), "真实本地曲谱、缺文件的导入和私人记录仍应显示。");
+    Check(localHash == LibraryStore.Hash(await File.ReadAllBytesAsync(localPath)), "来源撤下不能改动个人曲谱字节。");
+    var indexAfterQuery = await File.ReadAllBytesAsync(indexPath);
+    Check(indexBeforeQuery.SequenceEqual(indexAfterQuery), "过滤可见曲库不能写改索引。");
+    Check(retired.All(item => reopened.Items.Any(saved => saved.Id == item.Id && saved.Favorite && saved.LastPlayed == played)),
+        "旧占位及其收藏、使用记录必须完整保留在索引中。");
+    Check(reopened.Settings.LastSelectedId == retired[0].Id && retired.All(item => reopened.Settings.SelectedVariants[item.WorkId] == item.Id),
+        "来源撤下不能丢失保存的版本和上次选择。");
+
+    await WriteSourceCatalog(fixture, records);
+    var restored = await fixture.CreateStore();
+    Check(retired.All(item => restored.GetWorks().SelectMany(work => work.AllVariants).Any(saved => saved.Id == item.Id && saved.Favorite)),
+        "来源恢复后应重新显示保留的占位与收藏。");
+}
+
+static async Task PublishedSheetReferenceMetadata()
+{
+    using var fixture = new Fixture();
+    var published = SourceRecord("published-sheet", "published-work", "published-variant", new string('a', 64));
+    published["source_sha256"] = new string('b', 64);
+    published["verification"] = new { rhythm = "reviewed", app_import = "not-tested", log_playback = "not-tested", game = "not-tested" };
+    published["review_note"] = "已逐项核对发布谱中的音符。";
+    published["review_method"] = "谱面核对和生产解析器验证。";
+    published["evidence"] = new[] { new { file = "catalog/calibration-evidence/published-variant.json", sha256 = new string('d', 64) } };
+    published["validation"] = new { production_parser = "passed", reviewed_note_count = 25, maximum_parser_boundary_error_seconds = 0.000001 };
+    published["reference"] = new Dictionary<string, object?>
+    {
+        ["type"] = "published-sheet",
+        ["url"] = "https://example.com/published-score",
+        ["edition"] = "Official score, 2024 edition",
+        ["score_sha256"] = new string('c', 64),
+        ["midi_sha256"] = new string('e', 64)
+    };
+    var explicitRecording = SourceRecord("typed-recording", "recording-work", "recording-variant", null);
+    explicitRecording["reference"] = new { type = "recording", url = "https://example.com/performance", edition = "2024 performance",
+        segment_start_seconds = 12.0, segment_end_seconds = 24.0 };
+    var untypedRecording = SourceRecord("untyped-recording", "legacy-recording-work", "legacy-recording-variant", null);
+    untypedRecording["reference"] = new { url = "https://example.com/legacy-performance", edition = "Legacy performance" };
+    await WriteSourceCatalog(fixture, published, explicitRecording, untypedRecording);
+
+    var store = await fixture.CreateStore();
+    var publishedItem = store.Items.Single(item => item.SourceId == "published-sheet");
+    Check(publishedItem.Reference?.Type == "published-sheet" && publishedItem.Reference.ScoreSha256 == new string('c', 64) &&
+        publishedItem.Reference.MidiSha256 == new string('e', 64), "出版谱类型、必需谱面SHA和可选MIDI SHA必须从参考元数据读取。");
+    Check(publishedItem.ReferenceLabel == "参考乐谱：", "出版谱来源应在曲谱信息中显示‘参考乐谱’标签。");
+    Check(new LibraryItem { Reference = store.Catalog["typed-recording"].Reference }.ReferenceLabel == "参考录音：" &&
+        new LibraryItem { Reference = store.Catalog["untyped-recording"].Reference }.ReferenceLabel == "参考：",
+        "显式录音和历史无类型参考应保留各自标签兼容。 ");
+
+    var withoutMidi = SourceRecord("published-no-midi", "published-no-midi-work", "published-no-midi-variant", null);
+    withoutMidi["reference"] = new Dictionary<string, object?>
+    {
+        ["type"] = "published-sheet", ["url"] = "https://example.com/published-score",
+        ["edition"] = "Official score, 2024 edition", ["score_sha256"] = new string('c', 64)
+    };
+    using (var optionalMidiFixture = new Fixture())
+    {
+        await WriteSourceCatalog(optionalMidiFixture, withoutMidi);
+        var optionalMidiStore = await optionalMidiFixture.CreateStore();
+        Check(optionalMidiStore.Catalog["published-no-midi"].Reference?.MidiSha256 == null,
+            "MIDI SHA 是可选字段，缺失时出版谱仍可载入。");
+    }
+
+    var invalidReferences = new List<Dictionary<string, object?>>();
+    Dictionary<string, object?> ValidPublishedReference() => new()
+    {
+        ["type"] = "published-sheet", ["url"] = "https://example.com/published-score",
+        ["edition"] = "Official score, 2024 edition", ["score_sha256"] = new string('c', 64)
+    };
+    var missingScoreHash = ValidPublishedReference(); missingScoreHash.Remove("score_sha256"); invalidReferences.Add(missingScoreHash);
+    var invalidScoreHash = ValidPublishedReference(); invalidScoreHash["score_sha256"] = "invalid"; invalidReferences.Add(invalidScoreHash);
+    var invalidMidiHash = ValidPublishedReference(); invalidMidiHash["midi_sha256"] = "invalid"; invalidReferences.Add(invalidMidiHash);
+    var audioHash = ValidPublishedReference(); audioHash["audio_sha256"] = new string('f', 64); invalidReferences.Add(audioHash);
+    var startTime = ValidPublishedReference(); startTime["start_seconds"] = 12.0; invalidReferences.Add(startTime);
+    var segmentTime = ValidPublishedReference(); segmentTime["segment_start_seconds"] = 12.0; invalidReferences.Add(segmentTime);
+    var aliasType = ValidPublishedReference(); aliasType["type"] = "audio"; invalidReferences.Add(aliasType);
+    var insecureUrl = ValidPublishedReference(); insecureUrl["url"] = "http://example.com/published-score"; invalidReferences.Add(insecureUrl);
+
+    foreach (var invalidReference in invalidReferences)
+    {
+        using var invalidFixture = new Fixture();
+        var invalidRecord = SourceRecord("invalid-published", "invalid-published-work", "invalid-published-variant", null);
+        invalidRecord["reference"] = invalidReference;
+        await WriteSourceCatalog(invalidFixture, invalidRecord);
+        await Throws<InvalidDataException>(() => invalidFixture.CreateStore());
+    }
 }
 
 static async Task LibraryQualityFiltering()

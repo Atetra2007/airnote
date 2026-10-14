@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-863008609185f194",
+  "source_id": "social-20dd813bbfc2f8a2",
+  "work_id": "work-10e764db8602",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=a0Syq1Uvp2DA",
+  "status": "reviewed",
+  "sha256": "e27af9565808f1ac2331cc03c339204c25a6428bea520aa58a91b0a85cc68aa2",
+  "source_sha256": "3d3f632d20c46ed2df7a2566a240f8dcb771f64c81f3855ca18d9229ed198209",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Stave-1700-1.html",
+    "edition": "EveryonePiano原站1700五线谱，E小调2/4四分音符96；以源四调A+B+B曲式编配",
+    "score_sha256": "47779da0660c740428fa5084aed59a4fb23c8e1637d817348b22d344fa80cf24"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 236,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整236音原MIDI及嵌入快照逐音覆盖；A/E/G/D小调四段，每段A+B+B共48拍，全谱192拍；236起音12休止。 独立采用EOP原站五线谱E小调、2/4、四分音符96，未用调号冲突的二手简谱，也未继承086来源验收。 源四段分别A/E/G/D小调，每段主歌A加两遍副歌B，59音48拍；相对E小调参考升5、0、升3、降2半音，全236个源音高和起始拍一致。 源9/68/127/186低属音从1拍改0.5拍，源29/88/226从1.5拍改1拍，让出印刷八分休止；其他5个副歌前休止原MIDI已以空隙存在。输出明确12个休止。 原MIDI音门时值普遍提前1个96PPQ tick释放，报告保留精确ticks；音乐时值取印刷谱，不把每个短释放当错音或缺休止。 连奏长弧线不合并相邻同音；所有236起音保留，不增加或遗漏音符。 原MIDI120BPM/4/4元数据改用所选谱96BPM/2/4，四段共192拍120秒；这是完整来源编配校对，未测原录音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "47779da0660c740428fa5084aed59a4fb23c8e1637d817348b22d344fa80cf24"
+  },
+  "note_count": 236,
+  "event_count": 248,
+  "duration_seconds": 120,
+  "limits": [
+    "One published staff arrangement, with explicitly preserved source keychanges and repeated sections.",
+    "96BPM is printed intheselected reference, not the originalMIDI120BPM speed or a measured recording.",
+    "No human listening or actual game check performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-20dd813bbfc2f8a2-staff.review.json",
+      "sha256": "512b25aad01727f4aefcecd78dad13b62c05bdf328576ffa93bef6dcf38b8a01"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "265055699c6ed0268f4c73a513d6f7395ecac4534e9a4657d1438c6486f46dc4"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "81f7d942b7906b5daef2dd780467e0cf5180d16498347641c15a70b48a74d52e"
+    },
+    {
+      "name": "0001-7e77e656a431.json",
+      "sha256": "0f5be2f2052b8d4b6e238ced6574cb89af98e0c9796d547ac034d9a46565fe78"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

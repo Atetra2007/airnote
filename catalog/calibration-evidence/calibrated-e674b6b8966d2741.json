@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e674b6b8966d2741",
+  "source_id": "zhouzhou-200",
+  "work_id": "work-99141cfa4b6f",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3d35731c88adbeafee56635a34c7007dd1c1563bcc004341d9a7516db502704e",
+  "source_sha256": "c27b5203ae77dcbaf20b41d58e0a7dbc37774f8b195181acf8ed99f761f02e41",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.tanqin123.com/shengyue/jianpu/95002.html",
+    "edition": "D,4/4,quarter64; R2B1a2 through R3B2 plus Segno R5B4 through R6B3a6",
+    "score_sha256": "6ecae4fd949fec8f67304037cf09c9d11def3e65c452a7e07b194bfd2361b75a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 60,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "D,4/4,quarter64; R2B1a2 through R3B2 plus Segno R5B4 through R6B3a6 冻结source200和work-99141cfa4b6f保留；完整60原音全部对应，没有删尾、源合组、拆分或新增音。 采用兰语神韵完整单页声乐简谱，D调4/4，印四分64BPM；D实音统一升10半音至C5布局。原source音高不全局转调，只有四处明确纠正。 原0-27从R2B1第二个1开始连续四小节，末音连到R3B1第一音；前三句4拍，末句4.5拍。末1仅真tie合并，下小节第二个1仍独立攻击。 保留R3B1三个0及R3B2四个0共7拍参考静默。原source无零标记，此静默是明示参考补入；随后明确编辑跳过未选择重复段接R5B4 Segno，不声称原全曲连续时间。 原28-59映射R5B4、R6B1/B2全小节及R6B3前五攻击。各桥段第5攻击是.25+1真tie，不把不同攻击合并。 四处原音纠正：37 A4→C5(+3)，50 B5→B4(-12)，55 C5→A4(-3)，59 A5→A4(-12)。均有原token及具体谱位绑定。 原59是R6B3延音低6的最后选音，后四个十六分音不在原source，停止在第3拍。此为完整原来源片段，不声称全曲。 总38.5拍/36.09375秒，60音及1参考静默事件。根代理独立音乐二读及生产审计待办；未试听、UI、音频或实机游戏验收。 Root实际全图及R2/R5/R6细图独立视读，以十六分tick重录60音与7拍休止，61事件38.5拍逐项吻合。完整60原token重解码、原音高及四项修正逐项核验。 R2B1从第二个1切入；四个跨栏同音tie分别合并1/1/1/1.5拍，下栏第二个1独立攻击。R3B1后三休止与B2四休止共7拍为明确参考补入，随后明确编辑跳接R5B4。 桥段四个第5攻击均为十六分加四分真tie=1.25拍；R6B3只取前五攻击，到第3拍结束，不附加来源外末四小音。全部原音1:1，没有隐藏删尾。 全图D调四分64，印谱实音+10至输出C5；原来源没有全局转调，仅source37/50/55/59四项明确修正。未真人试听或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6ecae4fd949fec8f67304037cf09c9d11def3e65c452a7e07b194bfd2361b75a"
+  },
+  "note_count": 60,
+  "event_count": 61,
+  "duration_seconds": 36.09375,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "Complete original 60-note fragment only, explicit editorial jump.",
+    "Seven rest beats inserted from printed reference, not original timing.",
+    "No audio/UI/GPU/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-200-paradise-v1.review.json",
+      "sha256": "4fc52a2a91cf7e61b2177bc5bf06d92921c5ba34b20881328d75f752c1922011"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6371ca22459688290bdf03ef4bdd31d0860d1a909666c7208575586fdf2e888f"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "920b66ed9c74ecd4fa46fd1af828c8543e118c954d5e8866bd281147f79dfb05"
+    },
+    {
+      "name": "0001-6372b2903708.json",
+      "sha256": "a83d696719902da1f6c90b4eaa95d0558e41a8e29c02ff664dc468f88c67270e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

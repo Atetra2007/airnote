@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c8034861d512cc98",
+  "source_id": "zhouzhou-087",
+  "work_id": "work-deck-470128a836ed",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "038602be2a976eb141c8a94d40df496ac071c07eee453b322e552a205a3ec2b6",
+  "source_sha256": "2790fc251cb65e103b7b31e568d4c310f9e5405ca3958ac7d13bf8c9ab1aa223",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/320449.html",
+    "edition": "SunShiyan Gmajor65BPM;transposedCmajor;m5beat0.5-m36beat3;disclosedgrace-realization",
+    "score_sha256": "18e250c593eca2b17869ff190d0e148cc685e741c61f53871959f923e343b653"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 191,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "complete-existing192note-source;m5beat0.5-m36beat3;laterrefrainsabsent SelectedSunShiyan320449two-pagevocal-and-interlude score: Gmajor4/4 quarter65. Cmajor output is a disclosed-7semitone transposition preserving the Zhou editor C-based pitch register, notoriginal-recording concertpitch. Complete original192pitchednotes and7rests=199events plusonevisualseparator=200rawtokens are individually accounted. Oldresearch incorrectly calledall199events notes. All16lyric/interlude rows match selectedprint incontinuous order. Onlypitchcorrection: source note1 lowerE3 becomes lowerA3, the printedlow6under lyric我 inopeningphrase. Allother191source pitches agree with C-transposedprint. Source190/191 repeatedA4 at theend are consolidated because m36 eighthA ties intohalfA: one2.5beatsustain. No source noteomissions or addedpitchednotes. Source covers m5beat0.5 throughm36beat3: firsttwo verses, firstchorus,andcompletefourinterludelines. No absent introduction orlaterrefrains are appended. Printedphrase rests betweenrows are restored, including fullquarterrest m19beat2. Allordinary notevalues,ties,dots andrests read directly fromprint. Grace pairs m30/32/34 andsinglegracem33 are unmeasured; allocateeachgrace1/4beat atbarstart and subtract fromattachedmainnote. These seven exactgracetimevalues are editorial realization, not claimedas printed orrecording timing. Source8/16/bfields remainverbatim. Controlledexports confirmb1visualhold and8editoreighthsetting;16notindependentlyconfirmed. Editor defaults never establishactualsongrhythm. 191outputnotes,126.5beats,65BPM. Nonblindimage reading andinternalchecks only; independentrootreview/formalaudit required. No humanlistening,recordingalignment orrealgame test. Root两页完整所选32小节另录音级及有理时值，全221事件一致。首句我为低6，source1修至A3，其余源音高保留。 七个小倚音按明确编辑四分之一拍从主音扣除；不宣称其精确时长出自印谱。异音圆弧保留攻击；末190/191同A按真tie合为2.5拍。 192源音/7源休止/1分隔逐项核实，补23个印谱休止；范围止于完整四行间奏结尾，不追加后续副歌；无试听/实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "18e250c593eca2b17869ff190d0e148cc685e741c61f53871959f923e343b653"
+  },
+  "note_count": 191,
+  "event_count": 221,
+  "duration_seconds": 116.76923076923077,
+  "limits": [
+    "Nonblind reference reading.",
+    "Grace timing editorial, not engraved orrecording-derived.",
+    "Cmajor transposition.",
+    "No humanlistening,recordingalignment orrealgame test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-087-anheqiao-reference-v1.review.json",
+      "sha256": "00cfc465dfc28043b4db1e2fdcd92817cdc615f3c31b2bca207d114392d745b6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "123b6702d48b6c49a4ee72f83efbed694dc9037ce8430c6361983883ab564dc3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "79c633f4a6dadfa3dba7e9aea868b8ef352af80b4ab809bad14ccd53d82b7f46"
+    },
+    {
+      "name": "0001-05f706afb60d.json",
+      "sha256": "f989c6df862d8d485e5bd09216459e4f6ea2ce7612f7f0b40298f6e0aa097c45"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

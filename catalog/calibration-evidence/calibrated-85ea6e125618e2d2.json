@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-85ea6e125618e2d2",
+  "source_id": "zhouzhou-080",
+  "work_id": "work-8de79891e039",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "056a9384f16e36002eb9a9548c50e17d40f767644789f1eea7c813e31ad03724",
+  "source_sha256": "e7714948f67e3899ab82af9764e338f08756d400128dbeb56bfb26052cfdea90",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=BXsFnVQverk",
+    "edition": "selected recording BXsFnVQverk, first four lyric lines",
+    "audio_sha256": "d8c9124209fe452de54394264ec9a3d2a104ed91a0ee73cc879fda0fea0b321d",
+    "start_seconds": 46.37,
+    "segment_start_seconds": 46.37,
+    "segment_end_seconds": 85.53
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 54,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "全部来源58音及四句歌词，非全录音 Root已核查全部5张输出叠图及4处原混音/人声频谱和波形细节，覆盖来源四句歌词的完整46.37–85.53秒。58个来源音各映射一次，输出54音。 这是按来源歌词范围重建的单旋律编配。原谱高低旋律错配至歌词位置，不能用DTW跳过不匹配句段后称校对完成；按全部八个分句重建并保存原稿。 衣裳末B2及妻子在熬粥五音B2-C#3-B2-C#3-D3有原混音谐波及独立音节起音支持；来源12/13、18–21多音合并保留映射。 喝几瓶啤酒的低音旋律由原混音与人声频谱共同支持，63.76–64.01秒C#3升至D3应保留。 如此生活三十年末年F#3与云层深处的黑暗啊末啊D3补入，直到大厦崩塌的来源40–42合并为持续F#3。 最后的字持续B2至83.68秒，无重复稳定起音，来源54/55合并。景A2后观B2发声至85.53秒，排除后续混响。 A3大幅滑入按发声起点及最终稳定目标音简化，宽滑音过程不被当成逐时刻精确音高；此编配选择明确保留。 参考MIDI45–57统一升八度至57–69以适配应用音域；60 BPM是一拍一秒的序列化单位，不是歌曲测得速度。 原谱两处零值为歌词句间停顿提示，无可验证时值。本版全部句间休止由参考录音重新定时。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "d8c9124209fe452de54394264ec9a3d2a104ed91a0ee73cc879fda0fea0b321d"
+  },
+  "note_count": 54,
+  "event_count": 90,
+  "duration_seconds": 39.16,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "按歌词重新构建的简化旋律，无法重现伴奏、滑音、微分音和力度。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-080.review.json",
+      "sha256": "675a54c83a385dd3985ad2c2a24377004931ac0bd2b306c05363a2a9c7f44642"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "54822caf1cc56ce8cae2168f003bc4c57d003719178327faf859f30730d4c978"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "29b5a5afb7b253b2bb973eba3f001abdc9e589758f1f5c9be8c83b86c217f6ee"
+    },
+    {
+      "name": "0002-3d73a6fba1dd.json",
+      "sha256": "64676295a3312758625910e2b9f6647ecaab0b5a12f2c6901cd47b7f5af499d9"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-53ef9378dbac250d",
+  "source_id": "community-a1ec3185c6dea837",
+  "work_id": "work-deck-e027c923ea04",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E9%A1%BE%E5%98%89%E8%BE%89-MRBIG-mrbig-a1c1f9e5184cc05c4a1b9.deltamusic",
+  "status": "reviewed",
+  "sha256": "dc90ecfd2181e3bee6b0cf9ae1f92d9c80d9c76e435a42ce6ade281d26bb4fc2",
+  "source_sha256": "9555a42c3fbac8ddda6aa431d497f8ba3c69c6d3091ecf42d1cecaa8c29d8e93",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=vtec90dflEg",
+    "edition": "JoeLi visible mingren888/sin80 Eb4/4 score; selected sung form; explicit76BPM arrangement",
+    "score_sha256": "706de8b5d34d947c5355e83ed1835d17d26aa480aefcb4fbed8ad91a32ec7e94"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 136,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-13
+  },
+  "review_note": "原来源136音及7休止完整覆盖；跳过谱面反复主歌的缩编顺序，136音/4休止/120拍。不是完整原曲。 JoeLi Eb公开谱为唯一音高与节奏依据；76BPM作为明示编配速度，取HUEN打印速度，不复制任何录音起止。 保留原来源缩编顺序，声声后跳至第二结尾，省略反复主歌；来源此跳接意图未知，待root审核，不声称连续完整原曲。 源文件声明1=E；本版明确改编为JoeLi谱的Eb调，使用Eb4基准。名义C度数解析音高升3半音，实际输出MIDI59–75，不能把该+3误称为E调实音升3半音。 暖与过均按连线修为2拍；末130/131两个6分别半拍、保留两次起音。放大原谱后确认弧线连接第二6与#5，撤回早先错误合并；最后6连两全音符为8拍。 源中4个连续四分休止合并为一个4拍休止，源全部143事件各对应一次。 Root明确接受来源的缩编结构：第8输出小节声声拾音之后，在第32拍直接跳至谱面第二结尾于青天；跳过反复主歌主体。此为保留现有来源顺序的器乐缩编，不推断作者原意或声称连续演唱版本。 Root逐小节核对两次副歌：温馨再涌现/已通电采用JoeLi的7/6/5/7/3而非HUEN的7/6/5/6/3；现、电、肩的末同音连线正确合并时值。 Root确认第三页又是肩并肩及当年情对应输出26/27小节；放大复查修正旧稿误读：再度添上的130/131两个6各半拍，弧线从第二6到异音#5，不能合并；末鲜两小节全音符连线合成8拍。证据截图已修正到第三页。 源JSON标1=E，本编配明确改用JoeLi的Eb调，Eb4作1使音区B3–Eb5可用；不是沿用E调实音。76 BPM为明示编配速度。 Root追加放大复核：现/电3十六分连二分为2.25拍，肩6十六分连二分为2.25拍，鲜低6八分连附点二分为3.5拍，三处确为同音连线；本次错误限定在130/131误合并处并已纠正。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "706de8b5d34d947c5355e83ed1835d17d26aa480aefcb4fbed8ad91a32ec7e94"
+  },
+  "note_count": 136,
+  "event_count": 140,
+  "duration_seconds": 94.73684210526316,
+  "limits": [
+    "Secondary published arrangement; not original studio or publisher-master certification.",
+    "Complete136-note/7-rest existing source is covered in its shortened form; the32-beat jump omits the published verse repeat body.",
+    "Human listening and real-game testing were not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-a1ec3185c6dea837-vocal.review.json",
+      "sha256": "0e8270cf8276a2ea12c066065e300e87e391909759cfda5243e11b9284fce869"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a642301f471c8a407c1bfd7f8053c43ff7767e33e02d1e1f9e51182a692fa05a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3ce26853edd358ece3232347ff100cae3f99e94f7f6971084097a10ebfd9a2d6"
+    },
+    {
+      "name": "0001-0db175f5d2d0.json",
+      "sha256": "4a8af7a3de7f1c81771175b2e14b409f932680443bd14cd9caed7d513332370a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

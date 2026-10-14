@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-ddcab8ae33cfc625",
+  "source_id": "zhouzhou-060",
+  "work_id": "work-deck-c03da52ba0d7",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "afc5d9a4852303c656e498d28a71314a52c0ef5037669a75965a5cdb033560f2",
+  "source_sha256": "4032e5c33871ffccf80e8739be3579756803e91a9738318d4e637615fd07a774",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/148597.html",
+    "edition": "EveryonePianoEasyVersionFmajor150BPM;m1-41first.75;uniform-12andm13-20additional-12",
+    "score_sha256": "bf4dc9767173eb2e623e68c28f60f93ea41d3a16481046e29452ad3b833c2979"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 316,
+    "maximum_parser_boundary_error_seconds": 1.1368683772161603e-13
+  },
+  "review_note": "complete-original313notes;m1-41first.75;notfullsong Newcomplete148597EasyVersionevidence replaces the unaccepted246159Marasy-basedv1/v2proposals. Full313source-note mapping was separately recorded before this candidate. Reference editions are not blended. Single selected148597EveryonePianoEasyVersionFmajor150BPM: printedm1-40complete plusm41first dotted-eighthG. All313source attacks and334rawtokens are individually accounted; no source notes omitted or merged. Whole missinglatersections are not appended. Uniform-12octave from printed concert register throughout, with another-12throughoutm13-20high repeatedintro. This disclosed playable arrangement givesMIDI55-77 and preserves the source basic register; left-handaccompaniment and lower chord tones are omitted. Onlytwo nonoctavepitch corrections: source18F4becomesA4(m4beat1), source305A4becomesBb4(m40beat0). Other79pitchchanges are exactly-12, from sourceoctaveerrors and the disclosedsecond-introregisterchoice. Restoreonly3missing metrical attacks: m23secondD4atbeat1; m28tripletA4/G4atbeats4/3and5/3. Printedm8/m16have no32nd-tripletprefaces, m12has aDquarterinstead of an extraC, andm20lastD is printedhalf-note. Noeditorialflourishhold or ornaments borrowed from246159remain. Printedm30/m34C-C-Dorder, m31A-Copening andm35D eighth/quarter/eighth all agreewithsource. m36Ehold is2.75beats followed bya.25beatrest andtwoeighthpickupnotes. m24/m28turns are trueeighth-triplets, not straight eighth/sixteenth figures. Zhou b1isvisualhold, notflat;thirdarray8is editoreighthsetting andpipeis visualspace, as supported by savedcontrolledexports. All originalfieldsarepreserved; defaulteditorquarters andholdflagsare not proof ofsongrhythm. Publishedscoreestablishestiming. 316outputnotes and1rest=317events,160.75beats,150BPM,64.3seconds. FinalG4lasts.75beat and ends the sourceexcerpt partwaythroughchorus; no missinglaterchorusmaterial is added. Nonblind image reading. No humanlistening, original-recordingalignment or realgame test. Root independent musical review and formal technical audit remain required. Root完整148597第1/2页与第3页m40/41首音二读，独立F调谱面音级/有理时值重建317事件一致。 仅补m23第二D4及m28三连音A4/G4；source18改A4、source305改Bb4，其余79变化均降八度。所有313源音及334原始token逐项对应，无删音合组。 只采用简单版150BPM及其节奏，m20末D为印谱二分音符，不沿用旧候选复杂版花奏编辑。m36保留2.75拍E后0.25拍休止，末m41首G4仅0.75拍；无试听/实机验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "bf4dc9767173eb2e623e68c28f60f93ea41d3a16481046e29452ad3b833c2979"
+  },
+  "note_count": 316,
+  "event_count": 317,
+  "duration_seconds": 64.29999999999997,
+  "limits": [
+    "Nonblind reading.",
+    "Published150BPM and octavearrangement; not recordingverified.",
+    "Sourceexcerpt ends partwaythroughchorus.",
+    "No humanlistening orrealgame test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-060-senbonzakura-reference-v3.review.json",
+      "sha256": "0b781a429a69027656ca0a0aedbb8729e8f24a400e50b0e751512bc11b00b877"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "df1b5401c1f791b5dbdddceb70b4146f8c29a4603f2895d18e6f16690c12c3f4"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "258665b3ec64a85b4df5d4f4cf2cd43c7ed5bcbe6624b7f8a181708a820b4966"
+    },
+    {
+      "name": "0001-16d3e1fca440.json",
+      "sha256": "41caee08a99e72e4f7e808f6db3c30d0ddfe3fc09b8bb2ae11f245317bdc916b"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

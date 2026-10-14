@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f2d62820ea1f99d1",
+  "source_id": "community-b363da60338e1918",
+  "work_id": "work-deck-e027c923ea04",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E5%BC%A0%E5%9B%BD%E8%8D%A3-czw12138-01bc8cffb48e6993b7124.deltamusic",
+  "status": "reviewed",
+  "sha256": "8358d70f7ec84f22095108071d27b137f548634d2a8e8c85c1d55288fd09bccb",
+  "source_sha256": "fac497b54b06a6b4a4076823e352a6d3b4e0de9c2136c03e066458259d348d54",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=Zj6actM6snc",
+    "edition": "HUEN D4/4 quarter76; transposed to C;43-bar source-form excerpt",
+    "score_sha256": "53edc96282772c2c3be98611d0b607e66f6a7abe259c9b6249634f820651c853"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 222,
+    "maximum_parser_boundary_error_seconds": 1.9895196601282805e-13
+  },
+  "review_note": "来源216音完整逐项处理；器乐前奏、两段主歌、两段副歌，保留源174前删节，止于下一间奏5/4拾音。43小节172拍。 HUEN单一公开D调4/4、76谱控制全部音高节奏；整体降2半音到C调，输出MIDI56–83。源header1=F不等于本编配调性。 源216音全部各映射一次；63/105改为谱面休止，114–116重复句删除并对应111–113，77/122多出的3归入6连音。 136/156/177/196所在句补公开谱重复高1；源156普通1升八度；140/181按HUEN6纠正源7。 源174前保留删节：裁去低6连音后续2拍和2拍间奏，上一小节低6为3.5拍。此处为明确编配接缝。 末段205/206合并4，恢复第二个6，209/210归入#5、211/212归入高1；最后6按连音6拍后休止1拍再5/4，仍以拾音结束。 Root逐项认可来源63/105多写的2改休止；77/122多写的3并入6长音；114/115/116重复抄写的一组3/3/2删除并对应到111/112/113；所有原始索引都有保留或修正处置记录。 Root逐节核对HUEN主歌乐/面为3附点八分加十六分休止；副歌3十六分后4十六分接附点四分，共1.75拍4；同音3的连线2.25拍与肩的6二拍均按该版处理。 Root明确接受源174前的4拍缩编：截去低6连音后续2拍及2拍器乐连接，上一小节低6保留3.5拍；本输出不声称连续未删节原曲。 Root查看125/155秒原帧的最近邻放大，HUEN再度添上弧线仅从第二6连到#5，第一6无连接，两个6各半拍均起音；JoeLi这一位置同样两次起音，真正版本差异在后续高1对高1/7。 源213末6连线全音符加二分共6拍，随后1拍休止和半拍5/4拾音；保留来源以拾音终止的片段边界。 本版采用整份HUEN谱整体降2半音到C调，G#3–B5（MIDI56–83）；源header1=F被明示编配取代。该长版与另外三份当年情输出各有独立证据。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "53edc96282772c2c3be98611d0b607e66f6a7abe259c9b6249634f820651c853"
+  },
+  "note_count": 222,
+  "event_count": 229,
+  "duration_seconds": 135.78947368421052,
+  "limits": [
+    "Public secondary HUEN score, not composer master or studio-performance transcription.",
+    "All216original source indices are adjudicated, including deletions and two notes corrected to rests; output222notes is not a claim that every original note remains sounded.",
+    "The4-beat cut before source174 and the final5/4pickup endpoint define an explicitly shortened excerpt.",
+    "Human listening and real-game testing were not performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-b363da60338e1918-shortened.review.json",
+      "sha256": "7bde4ab211a1bfcd35fbb688a49ae1968285e150fe8e6e428538bf7f1af3ff6a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8d180c3b6e202b94c7599b8ecddd55c452470d405e823494da603b685ebb77e6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "76a0dc52e4014b35acd018515a930a7d1c95a20b38a9e573b17dde9e46fb5f24"
+    },
+    {
+      "name": "0001-7169a8652a32.json",
+      "sha256": "24bcb0d37def1f5670d1244ff2279a4804bcf9b2fa2153afaf3a656ecd1141bd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

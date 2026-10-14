@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c6b5e66b7139445c",
+  "source_id": "community-eba4b54c08521094",
+  "work_id": "work-merry-christmas-mr-lawrence",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90%E5%8A%B3%E4%BC%A6%E6%96%AF%E5%85%88%E7%94%9F-%E9%AB%98%E6%BD%AE%E9%83%A8%E5%88%86-%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80-%E5%A4%9C%E6%B3%8A%E7%A7%A6%E6%B7%AE%E8%BF%91%E9%85%92%E5%AE%B6-e5ff3190293974da74aeb.deltamusic",
+  "status": "reviewed",
+  "sha256": "4d0b24968f9620c4b0ec602a1b180fb1115178138c8811e91e82c3c1b9c87911",
+  "source_sha256": "8206f853e7c5da33d12a80075dceb184294382a4eb12ecb083882e7c2e4cfc7a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/250103.html",
+    "edition": "XiaoB/EveryonePiano C#piano bars25–31, two-pass sourceform transposedtoBb, explicitfixed96BPM",
+    "score_sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部71来源音逐项处置，原低/高八度两遍主题；每遍采用7小节公开主旋律，共14小节56拍；非整曲。 原稿两遍相差八度的结构保留；同一XiaoB25–31小节主旋律先低后高，各7小节，未从另一六页128BPM版混入旋律。 选择Bb编配使全部旋律G3–Bb5可容纳；来源名义C音高整体降2半音。参考原C#第二遍降3半音，第一遍再降八度；社区源1=D元数据不再作为本Bb编配调号。 每遍第26/28/30参考小节首拍恢复1拍休止，共6休止；谱面高1与末3均为一拍，其余依谱面八分及二分时值。 社区第一遍源33之前恢复2，第二遍源51高1提高八度，与公开谱的八度跳进一致；原71音全处置，增加1音成72音。 96BPM为明确固定编配速度，既非原谱93→97的逐处再现，也非社区128BPM；原稿不覆盖的引子、连接段和后续对比段不补入。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "note_count": 72,
+  "event_count": 78,
+  "duration_seconds": 35,
+  "limits": [
+    "Singlemelody secondarypiano arrangement transposedtoBb with explicittwo-passform andfixedtempo.",
+    "No human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-eba4b54c08521094-two-pass-sheet.review.json",
+      "sha256": "964092f373b83bda94a8bd90042e88b98762fc87b476298241648c677d7ebe95"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c89f4923aefa249d44cecd109927b4acac6bf08486df346fe8898175c4ed1d0a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "801ecf6cb30c9c3a1fbf2033245d07f77dfeacfc17eab738896637602007f9d2"
+    },
+    {
+      "name": "0001-1dc8a5734b1f.json",
+      "sha256": "1f7cf28f200ea685a0aa37abab65656254ed19dd9d8654b466080649f5adc076"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

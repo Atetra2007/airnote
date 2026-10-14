@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7f80fc8d0a27579e",
+  "source_id": "deck-4bd8fe67be88",
+  "work_id": "work-deck-4bd8fe67be88",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-a164108cd0.deltamusic",
+  "status": "reviewed",
+  "sha256": "87cbd10279b6ff1044bcbd032c5684b1aa0bff0773d37c952f426a431237d006",
+  "source_sha256": "0d11212619613e554182c57dcdbaf984e6c4abad7fa9946f343a6156dbf48668",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/232242.html",
+    "edition": "C-sharp,2/4,quarter65.5;complete saved-source route explicitly selected and transposed to C;timing doubled withBPM131",
+    "score_sha256": "30ecafceb62a872de462afd4aafda55a9a76971643b9842474958f07b5e9b787"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 226,
+    "maximum_parser_boundary_error_seconds": 2.2737367544323206e-13
+  },
+  "review_note": "complete223note308event-source;two-verses,two-complete-four-phrase-choruses,two-complete-four-phrase-chorus-endings,two-saved-terminal-phrases Complete original 223-note/308-event content preserved in order, including both full chorus cycles and both saved terminal phrases. No original section removed. Select Lan Yu Shen Yun vocal edition, C-sharp transposed down one semitone to C; printed2/4 quarter65.5 represented as4/4 quarter131 with every printed duration doubled. This is identical absolute timing, not110BPM from original. Source first verse6/7 C-to-D ornamental/duplicate onset folded into printed D; source20 A sustain split to printed lowB then lowA; source29 D split into printed C thenD. These are explicit edition differences, not a claim that source contained every printed attack. Same-pitch source94/95 highC tie and source143/144 folded into one printed G tie. Source103/155/167/186 split to printed repeated G/C attacks; no split is described as a preserved source attack. Second source chorus124-206 uses selected printed normal register. The source unexplained extra octave is replaced explicitly, including mixed-octave D/E; no silent clipping or software-out-of-range notes. Printed instrumental intro, instrumental interlude after first ending, later additional second-ending vocal extensions, and last complete outro are outside this saved-source scope; source preserves a different route. Both saved ending cycles use the complete selected first ending rather than inventing missing source sections. Final two source8-note phrases use the full printed P2R2B7-R2B8-R3B1 tied phrase twice, including source4th lowF corrected to printedF and finalA tie4.5 doubledbeats. Last original1beat rest preserved. V2 corrects complete bar-level underline reading: P1R2B5 quarter low6;R2B6 quarter low5 plus two sixteenths;R3B5/6 low6/innerC/crossbarB/lowG;both chorus highDtie1 and followingE1;both endings E crossbar1.5,G1,B1/twoG1,and highC true ties. V1 retained as superseded failed musical evidence. All 85 source rest events retained in comparison evidence. Gaps recomputed by adjacent source-note assignments; output rests derive from selected print, and original terminal rest separately preserved. Root完整两页及减时线/弧线放大复核，另以印刷四分拍重录全部选中唱段后乘2，与290事件逐项一致；223源音/85休止重新解析，29休止组按前后源音窗口重算。 V1多处减时线和真连线误读已拒绝；V2两主歌、两完整副歌和第一结尾、两尾句的350倍增拍全部复核。R5B1/R6B2高2真连共1倍增拍、高3单线1拍；R7两个5为分别重拍，R6/R7高1真连不拆重拍。 明确保存来源编配路线：两次均选第一结尾，末两句采用同一P2R2末尾三小节；不擅自扩展到完整出版歌曲。C#降一半音至C，65.5与时值同步乘2为131，不改变绝对演奏时间。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "30ecafceb62a872de462afd4aafda55a9a76971643b9842474958f07b5e9b787"
+  },
+  "note_count": 226,
+  "event_count": 290,
+  "duration_seconds": 160.3053435114504,
+  "limits": [
+    "Public community vocal edition, not publisher authentication.",
+    "Source-specific saved structure differs from full printed repeat route; explicit edition choice recorded.",
+    "Printed normal register selected for entire second chorus instead of original inconsistent extra octave.",
+    "No audio, recording alignment, UI, GPU, or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-4bd8fe67be88-vocal-v2.review.json",
+      "sha256": "62cfb4213980712ccd2fe97aa6795761fd9ed8c071774eb6d2f03289bdafb87d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "21ad29001708dcba42449fc64ba2c378115fccdfb345b541971b8ff1a7a10c62"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "63b612e8c678541d4da5b7887fe9a566ef701499b62ded2281f82bcf66b16fab"
+    },
+    {
+      "name": "0001-84ae6c68cccf.json",
+      "sha256": "a9526536791cbae689b4db387ea361572a83873890437962ed8856867ec598ee"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

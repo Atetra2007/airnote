@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fb4793e0b7a608a6",
+  "source_id": "zhouzhou-081",
+  "work_id": "work-deck-4bd8fe67be88",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "ca1116813054208e4f3689cb1f3edecb2ff24e4ea4681232178b2d864ed4660b",
+  "source_sha256": "9d402fb21655b6b4b6c55cd684803c84598de029ec7b81d690add5fbc1f85bb8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/406628.html",
+    "edition": "晓涛三页声乐C调练习重建，28句完整，明确压缩纯器乐全休止过门；72为选定练习速度。补充368561简单吉他P2第三副歌词。",
+    "score_sha256": "df3c671927c5994a19660c728ff15ed58ae520509afa49e1c31dfd3413b02a16"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 276,
+    "maximum_parser_boundary_error_seconds": 2.4158453015843406e-13
+  },
+  "review_note": "全部28原歌词句重建含开头、两预副歌、三副歌、末四句；231原音全部逐项撤销替换，0原音宣称逐音相符；276新音均来自所选公开谱声乐行。 本件为大量选版重建，不是原231音一致的校准。固定081原文件SHA9d402fb21655b6b4b6c55cd684803c84598de029ec7b81d690add5fbc1f85bb8，全28歌词行231音无休止；原值、行列、歌词及每一原音的处理原因全部保留。 原文件不同歌词行反复套相同5/6/6/4/1/7/1/6/5/3，第一句和你有关与印谱3/3/2/3根本不同；末几句原只给6/6低音，其余普通音也与印谱高1及真正尾句不同。不能靠统一移调、拍值修正或高匹配分掩盖。本重建把231原音逐项显式撤销替换；0原音宣称经过一对一佐证。 每一原音有独立source_note_index/source_row/source_column/raw/MIDI记录、逐音替换状态及完整参考乐句/新输出事件范围。范围关联靠歌词及曲式，不是假造一对一音符位置。所有276新起音单独绑定参考小节/音级/时值，全部28歌词句均保留，没有整句或尾段省去。 主参考为406628晓涛编配三页数字声乐行，C4/4；原调Db与Capo1是原唱/吉他背景。本练习编配明确按谱面C音级、普通1=C4执行，保留印谱低/高音点，不再加半音或折回原文件扁平音区。373619只是同一晓涛谱另一副本，不声称独立第二证据。 第三副歌词：406628把第一句第三行仍写我听见了你的声音；补充368561简单吉他版P2r3明确听不到我的声音下仍为同样6/高6/高5/高3/高2/高1/高5/高3旋律。该版第一字写我，来源写你，明示仅歌词代词选择按来源保留，不假称两个文本完全相同。其他怕脱口而出、像确定、就像曾经的第三行在参考完整出现。 源行0..3为开头四句；4..7第一段预副歌；8..11第一副歌；12..15第二预副歌；16..19第二副歌；20..23第三副歌；24..27四句结尾。反复展开顺序由完整来源歌词与印谱多行词确认，不把第三副歌或末四句截掉。 这是声乐练习紧凑编配，不声称全录音时轴：开始之前P1r1的纯伴奏休止及最后和你前半拍不加入；第一副歌后保留P3r1b1句末延音/两拍呼吸和P3r3b1三拍四分之一休止后我以为拾音，中间P3r1b2..4和r2b1..3六个全休止小节24拍明确省去；第二/第三副歌间及进入尾声不加入P3r3b2/b3纯全休止过门。对应器乐音符不在原单声部歌词源中，也不导入。 所有唱词内的印休止、预副歌空白小节、普通句末两拍呼吸均保留，共154休止事件；只首句和你两枚十六分作为半拍起点，最后完整A4尾音后印两拍休止为源终点外而不加入。输出226.5拍。 页头无音乐速度，本件选择72BPM练习速度，绝不称打印速度或原唱测量。226.5拍为188.75秒。其他找来的伴奏-only谱打印66或123不借来冒充该声乐版本标速。 第一句普通3/3各十六分、2/3各八分；无感最后为低7八分。若是真最后普通1十六分连下一1十六分合半拍；低6附点八分、低5附点八分及低3均按原像素。若美丽的故事最后低7八分、低6十六分，全部低音点保留。 副歌A/C末高3十六分连下一高3两拍为2.25拍；副歌B末普通7十六分到下一普通6两拍是异音圆滑，保留两个起音，不合为同音延音。副歌D及每句尾声最后6十六分连下一6两拍为2.25拍；末音为A4而非原source230C4。 四句尾声每句8个有声起音，各打印休止、普通6/6、4或3、两高1、普通7及末6完整；第二句过字为高3而第一/第三句为普通7，不能把三个标题句机械复制。原source200..230全部逐项列明撤销替换与四句输出范围。 Root完整查看406628三页及13处声乐近裁，另行输入全部430事件的音高/时值/起点并冻结后，才与候选数值比较，430项全部相同。原231音也另从原JSON逐行解码，原值/行列/歌词及28组完整乐句替换记录全部逐项一致。未声称任何原音一对一被参考证明。 Root同时完整查看368561三页，确认第三副歌词为我听不到我的声音，源首字为你这一代词差异已明确保留；同样声乐序列支持第三副歌的完整唱词范围。其余声音按主406628，不混用伴奏或该版过门。 阅读候选叙述早于独立数值录入，所以不是完全盲读；独立录入未从候选时间线或代理脚本生成。28句全覆盖、三段副歌、四句尾声和最终A4的2.25拍已核对。声乐紧凑练习版的全部器乐休止省略保持明确披露。 已完成root完整音乐复读，另送正式软件检验。没有人工试听、没有录音对齐、没有真实游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "df3c671927c5994a19660c728ff15ed58ae520509afa49e1c31dfd3413b02a16"
+  },
+  "note_count": 276,
+  "event_count": 430,
+  "duration_seconds": 188.75,
+  "limits": [
+    "Substantial selected-edition reconstruction: all231original pitches explicitly superseded, not231musically matched. Complete28lyric-phrase scope retained.",
+    "PrintedC practice key and explicit72BPM; not originalDb/capo1 concert playback or recording-aligned timing.",
+    "Pure instrumental all-rest bars compacted explicitly; all singing phrases and their internal timing/tails preserved.",
+    "Related368561 third-chorus text has我 where source has你; listening/not-hearing lyric phrase is otherwise explicit and selected musical setting is disclosed.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-081-28phrases-selected-edition-reconstruction.review.json",
+      "sha256": "63fd737ea6093072145dc5d1c39ff31106644783bacdaaaf6bac1e02c773fd6e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "506aa4eb26f95fde784ab492f878d72e634eac38b274ca0d2d82c90bd19fe6f3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "72dfa442860773b2539ea558d63c70cf88ea0c91e918559745d4c33cfa084294"
+    },
+    {
+      "name": "0001-7cc2f7092926.json",
+      "sha256": "bf08b3000f8b08a26eee8e083d0c62ae147528ba47bbbcb7078f5c9cf20439cd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

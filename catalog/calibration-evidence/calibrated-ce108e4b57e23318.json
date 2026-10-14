@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-ce108e4b57e23318",
+  "source_id": "social-d966b7ba3d8c1d8f",
+  "work_id": "work-2cb4484e6c06",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=vwaDMTXpcysj",
+  "status": "reviewed",
+  "sha256": "06778f49fba1348090c13f5e707798cdf29684e41db46cfc9b95cb499dc7acfe",
+  "source_sha256": "57036e868b671d961245d129fcde3ea7c08b99cee8573bb20f74341de886cb90",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-16336.html",
+    "edition": "C major/A minor quarter140 two-page simplified piano melody; source repetitions and transpositions retained explicitly",
+    "score_sha256": "f6b41db220bef443ca59de6deb789c77c464e273dea2c39991c288368e609b76"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 445,
+    "maximum_parser_boundary_error_seconds": 7.673861546209082e-13
+  },
+  "review_note": "All445 original DFHS heads and445 exported heads;65source bars and444inferred gate gaps individually disposed 固定social-d966b7ba3d8c1d8f完整标准MIDI445音和嵌入DFHS445音均独立字节解码；导出-7半音逐头吻合，标准导出起点/长度最大1tick误差保留，不据此丢音。 唯一音乐谱据EOP16336燃烧的音符版本，1=C/4-4/quarter140，两页完整右手旋律。原142BPM替换为印140BPM；不混入复杂九页EOP1883钢琴变体的时值。 完整65个来源四拍栏的选版路线：源1–32→印3–34；源33–48再次印19–34；源49额外印34作为转调连接；源50–57→印19–26；源58–65→印35–42。保留原来源复奏路线，不冒称这是印谱整页顺序。 音区按每头reference_to_output_shift记录：默认参考-13即原DFHS-7，保留源40末两音开始高八度；源32末两高印刷pickup明确降八度，源48末两用印34原高头；源49末两pickup开始全段升半音，源57末两再进入高八度。源原始移调元数据-7只应用一次。 只改两项音高：source326原DFHS87经导出-7为80，按印34E6选择输出75；source327原89经-7为82，按印34G6选择输出78。源末A/B动机选版为印E/G，绝对MIDI差异完整列明，不声称原来源本已一致。 原444个攻击间空隙均是门控释放间隔，逐个保留为证据；选定印刷旋律此处无休止，按所选半拍/一拍恢复。source341原210tick比其余216tick短6tick，选印八分半拍。 最后source444原门控432tick=.9拍、名义1拍，明确选择印42的完整二拍结尾；整段从原实际258.9拍选版为260拍，没有新增或省略攻击。 445原音逐头1:1保留，零补音、零删音、零合组、零拆音、零休止。音域54–84，140BPM约111.428571秒。尚待另一个审读者独立图谱重录和正式软件审计。无试听或实机声明。 Root complete EOP16336 two-page visual reading and worker B separately entered all40bars/270heads without reading root proposal; both arrays exactly match. Worker B fresh mido SMF and raw-deflate DFHS decode, every445head/rhythm/register mapping,444gate intervals and122 small MIDI projection differences independently verified. Explicit selected source form65bars; only source326/327 pitch changes and written final2beat restoration. All six repeated/moved sections and modulation are source-specific editorial choices, not a claim of unchanged printed order.",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f6b41db220bef443ca59de6deb789c77c464e273dea2c39991c288368e609b76"
+  },
+  "note_count": 445,
+  "event_count": 445,
+  "duration_seconds": 111.42857142857143,
+  "limits": [
+    "Explicit revoicing/repeat/modulation choices preserving source form;2 pitch selections;final written note2beats instead of original nominal1",
+    "No human listening, recording alignment, or live-game testing",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-d966b7ba3d8c1d8f-badapple-editorial-v1.review.json",
+      "sha256": "b877d3727ed5f0e7c1687a7fb6e70df3aebea2e8384ef900f487c5f46f1cd6fe"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "fd210ade2dfc41a7631525b2e588cb14bd1b2fbd66d5627396c3f5d7a533e691"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4df35582289f2768c475abca26389dc279e8e06f57a9b120095c8b940938f994"
+    },
+    {
+      "name": "0001-df2178883212.json",
+      "sha256": "4dcc7a6174bc14537b2f771cc9d98506db3f73520e035ef9ce0e5260ae02700e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

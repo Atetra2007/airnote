@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-60591a057bae6457",
+  "source_id": "social-b55fbdf78e84d8a8",
+  "work_id": "work-dd89ce3e6004",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=DJ3cKT5q9sMQ",
+  "status": "reviewed",
+  "sha256": "fbb8a20323e9391b23b10dd3d4d3da7917b75c769147283acd3a9c826a3cc44a",
+  "source_sha256": "99f618a27c8af3c322f6561f120ce3469b09058cbd2a68ef6f6ddb3e06449a8d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Music-14878.html",
+    "edition": "EOP Bb2flats→B5sharps;printedquarter135;full137barconstantCpractice;explicitvoice/register",
+    "score_sha256": "1b1421d090c149ef25c5117a93b85aca1998486009e2fbeab39bdd2a021f0752"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 807,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-12
+  },
+  "review_note": "Full808MIDI/snapshot/1624SMF/807gaps;137bars548beats;all808retained-index-accounting;1correctedtwoattackmerge;explicitvoice/route/register/practice 完整源MIDI808音/1624SMF事件/807原gap及snapshot808音，原文件SHA绑定，snapshotPPQ96到MIDI480逐项投影±1tick；所有原index完整处置，0原源音省略，1原源两音组音乐纠正合并，807输出攻击。 完整EOP14878七五线页、34RH系统全部实际view逐事件手录102栏，m67和68均2/4、m69回4/4，总404拍；主要Bb两降号，68起B五升号，printedquarter135。历史早期406估计已明确撤回，v2应用Eb调号校正。 正常匿名获取BV1ni4y117Cn公开完整137栏乐队总谱video-only，printed135。实际乐队帧/单栏crop补源37..42六栏pianoRH、56..58三栏vocal/electricguitar、118B调pianoRH。仅已读具体声部用于补证，不声称整个乐队所有声部均验收。 完整137栏548拍原源路线保留：1..35→EOP1..35；36→EOP65；37..42→Band37..42；43..55→EOP1..13；56..58→Band56..58；59..72→EOP23..36；73..102→EOP37..66（102末Bb5取Band真tie）；103→Band103；104..117→EOP69..82；118→Band118；119..137→EOP84..102。没有截掉原137栏后半。 常C练习版明确Bb→C+2，B→C+1，绝非原调演奏；intro1..14及重复intro43..55整体−10；Band37..42及56..58整句−10；102前七EOP音与末BandBb5均−10；103tie-in−10、新F5/Bb5高riff+2、vocalD6half−10；118B调riff−11；119后5/2三音echo−11，120..121整句−11。其余前Bb段+2、后B段+1。所有register取舍明确而非隐藏单音折叠。 22原note121D4取EOP22 LH D3在RH半休止2拍的bass fill，整体归一+2及整低声部短句抬12→E4；完整保留该源音并改音，继后RH D5。56末source323E4及324D4明确correct/merge到Band vocal单个D5八分，归一后E4持续1/2拍，两index都有输出对应。 87保留原source唯一C5对应EOP51 Bb4half2，原源无EOP六RH triplets，因此明确选择后2拍练习休止而不添加原源没有的伴奏run。102末/103首Band Bb5打印真tie总1拍，source原确实无首攻击；103后两新高riff及vocalhalf完整保留。117最后C#4原输出D4并明确截掉通往EOP83的tie，因为下一源118是不同piano riff声部。 118B调全riff：B5 eighth、G#6/F#6/D#6/C#6/D#6各16分含实际16分及8分休止、末G#5八分；整体−11。源clip不能当打印时值；所有807原gap保留编码并分别映射实际持音/实际休止。所有实际同音重击单列，只有真实打印tie及明确56末音乐合并不重攻。 Root完整二读7张EOP原页及Band5帧上下文/12细图，独立录入102栏与所有补段，137栏972事件重算一致；鲜解码808SMF/808DFHS、1624事件及807原间隙完整处置。58首0.75拍为选声部后的编辑静默：vocal半休止期间只取原源实际.75处C5与1.5处D5吉他16分，首B4还原16分及其余吉他音不插入，beat2起回到vocalD6half；不把该0.75拍全说成吉他印刷休止。 11个独立保留攻击改音加source324并入323时改音，共12个原index存在音高差异；合并只该一组。完整548拍含保留选版结尾休止，原源546余拍的短门控不当终止范围。正式软件检验另附；无试听或游戏实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1b1421d090c149ef25c5117a93b85aca1998486009e2fbeab39bdd2a021f0752"
+  },
+  "note_count": 807,
+  "event_count": 972,
+  "duration_seconds": 243.55555555555554,
+  "limits": [
+    "constantCpracticeedition-notoriginalconcertkeys",
+    "source87omitsprintedabsentsixtripletaccompanimentfigureexplicitly",
+    "two-source-notesmergedtooneprintedvocaleighth56",
+    "bassfill22andvoice/registerchoicesexplicit",
+    "source58opening0.75beatsareexplicitselected-voice-silence",
+    "software-checks-do-not-establish-listening-or-game-behaviour",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-b55fbdf78e84d8a8-gunjo137-constantC-practice135-v1.review.json",
+      "sha256": "125cb309dd540f16a91f83d0426365218324e5b476e3a2f7b53ed5ddc89b05a1"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4577d63ac8f262a90bfdef08753a4f31aa66c0b8b493b11f85480f975af2db00"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "51ba832d585cf2e845b01903b2594234d18a084662c92ca9b1bed6be2251a455"
+    },
+    {
+      "name": "0001-50b38fdbda2f.json",
+      "sha256": "e32b5bf765df96e4b84556b921787dfe58c99bfe38a94a923a0557feb4581b3a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

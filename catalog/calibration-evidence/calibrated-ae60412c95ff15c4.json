@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-ae60412c95ff15c4",
+  "source_id": "zhouzhou-210",
+  "work_id": "work-fcfd075cbe36",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "cf4364f200cd833ed9d2daf8e5f232a0e6d79c9ff2b6374a9dd94d65351ee1b0",
+  "source_sha256": "5e54bf72c232f0dd698d7a311108bada54baf1fcfe5d2562043cc15ce57c1851",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/187399.html",
+    "edition": "Jianpujia page 187399, three-page fingerstyle guitar arrangement; mapped excerpt is opening four 4/4 bars; printed quarter note = 145.",
+    "score_sha256": "474980d36b693a912a3d96c035ed25c5125fa70ed9461ce1e46cfce3812cf590"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 22,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原始来源两行22音完整片段；映射范围限于公开指弹吉他谱开头四小节，不延伸至后续曲段。 原始zhouzhou-210来源文件SHA-256为5e54bf72c232f0dd698d7a311108bada54baf1fcfe5d2562043cc15ce57c1851，共2行22个音符及6个|分隔符；原始[1,1]和[6,-1]数组及六个分隔符均逐项保留。源文件不提供音符时值、起始拍或数值BPM。 来源22音逐音映射到简谱之家187399号指弹吉他谱第1页开头四个4/4小节。依据标准调弦假设下的弦位/品格计算基音，顺序及音高与来源逐项对应，22/22覆盖；没有增音、漏音、移调或合并来源攻击。 重要音高边界：第1页开头标有P.H.与菱形泛音音符头；谱面没有注明调弦。本提案的MIDI/音名只是标准调弦E2-A2-D3-G3-B3-E4假设下由弦位和品格算出的基音，不代表吉他实际发出的泛音音高，也不构成对来源录音实际听感音高的确认。 节奏逐项读自谱面印刷符号，拍号4/4，四分音符=145；四小节共16拍，约6.620690秒。第2和第4小节末各有一组同音连线，按一个持续两拍的来源事件处理，续线不新增攻击。 原始六个|分隔符与谱面的四条小节线不对齐；只作为来源分隔符保留，不赋予拍值或小节语义。第2、3页哈希完整登记用于确认三页参考版本；22音映射仅涉及第1页开头四小节。 来源与参考均已查看后再做映射，属于非盲候选；逐音读谱及来源对照已记录，等待Root独立逐音记录和正式审计。未进行人工试听、录音对齐或真实游戏测试。 Root直接从187399第1页开头四小节另录完整22事件，先保存root-image-reading后才打开候选数值；此前已知原源和提案概要，非盲。22/22音高、时值、起点一致，原22token另行解码也逐项一致，每源音恰好一次。 第2/4小节末同音弧按一持续两拍处理；末A3两拍完整保留。原六个分隔符不当定量小节。 本校订明确采用标准调弦下品位基音的口琴单音练习编配。吉他原图P.H.和菱形音头的实际泛音音高/音色未重现，不将品位基音匹配说成原吉他录音的实声一致。 音乐证据复核后另送正式软件检验。无人耳试听、录音对齐或实机演奏验证。 媒体声明勘误：三页旧.jpg文件的实际内容均为PNG；本版复制完全相同字节为.png并声明image/png，哈希逐页相同。原曲谱、候选、音乐审查和失败材料run35保持不变。音乐内容、时值、来源处置未改变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "474980d36b693a912a3d96c035ed25c5125fa70ed9461ce1e46cfce3812cf590"
+  },
+  "note_count": 22,
+  "event_count": 22,
+  "duration_seconds": 6.620689655172414,
+  "limits": [
+    "P.H. and diamond harmonic notation are printed over the matched opening phrase; listed MIDI values are calculated fretted-note fundamentals, not verified audible harmonic pitches.",
+    "The tablature does not print a tuning; standard E2-A2-D3-G3-B3-E4 tuning is an explicit assumption.",
+    "The 145 BPM value is printed on the reference score; the source file has no numeric BPM and the source recording was not measured.",
+    "No human listening, source-recording alignment, or real-game test was performed.",
+    "Independent Root note-by-note review and formal audit remain pending.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-210-butterfly-complete-source.review.json",
+      "sha256": "24d1a169aa427eb67ffd2a989ef14b64855f91a9f07503bf3781ea136dea143f"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ace4362d2fad56540cf720115a2bb61ec18793b643ef1f5bcc0e4cc571d2f722"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "feb1d239884b87c085bbde907143901e070f76ab488895c91d408c261d9b06a6"
+    },
+    {
+      "name": "0001-0748bcd49094.json",
+      "sha256": "15834b99bd8e056c3c859be4595bbd81fdcaf12427f69831b6bee611cc9fbb0e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4af9cce1c9300088",
+  "source_id": "deck-48bac368d80b",
+  "work_id": "work-deck-48bac368d80b",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A5%B3%E5%84%BF%E6%83%85-%E5%90%B4%E9%9D%99-YANG-1c83d5abb4.deltamusic",
+  "status": "reviewed",
+  "sha256": "aa9644c769d0180db2b21be9dbc1bb4930250cf763a68a10b82cd75f545c171e",
+  "source_sha256": "8401954097313a87c2e8cdcd9cb82528efbb0260f38fad0b26e330f997d21ec1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/384158.html",
+    "edition": "焦响记谱吴静声乐版，Eb4/4，打印四分66BPM；低6倚音明示选.5拍",
+    "score_sha256": "49c929f870a165af261575084cea5882064619ba58ad249a8ff45b01a828f821"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 102,
+    "maximum_parser_boundary_error_seconds": 8.526512829121202e-14
+  },
+  "review_note": "全部103源音2原休止，从鸳鸯拾音到最后已有随字，完整93拍；最后一拍持音补足。 唯一主参考384158焦响记谱吴静声乐版，完整单页Eb调4/4、打印四分66BPM。全页及首句/结尾原像素放大图已看。435808是李玲玉F调2/4版，383238为D调65BPM版，382901为Db调2/4版，仅作完整不同版本对照，不混用节奏。 原deltamusic共103音2半拍休止105事件完整处置。来源从鸳鸯两枚低5/低6拾音开始，至末额外随字止，没有开头啊声/器乐，不能把整页的全部反复、配乐和慢常相随当原稿范围。 参考Eb4主音降3半音至C4；字面原key=C不额外移调。全部103源音音高保持，输出范围G3至C5。原#7按正式语义为B#=C5，正是印谱高1，不能误改为C#5。 完整曲式：1拍鸳鸯拾音、A八小节32拍、B四小节16拍、A旋律再八小节32拍、来源追加结束句3小节12拍，共93拍。第二A以天长地久至今生常相随歌词对应同旋律；保留来源额外重复随之后愿今生常相随的3小节，不伪称整份与录音重复数完全相同。 首小节双1 1.5、栖2 .5、蝶3 .5接低7 .5、双低6 .25/低7 .25/低5 .5；原source4的3 .75与source5的低7 .25分别改.5/.5。异音弧均是连奏，不把3→低7或低6/低7/低5合成一音。第二遍这组原已.5/.5，保持。 印谱每个美/随之前小低6是不定时值倚音。采用来源已存在低6 .5拍，并从后续主1借.5拍，明确是编配时值，不称印谱给出数值：完整美/随小节低6 .5+1 3.5；含愿3末拍的小节低6 .5+1 2.5+3 1。 A8原source37/38两次C4（1.5与2拍）按所选谱一枚主1合成3.5拍，不删来源映射；source36低6 .5保留。其余所有原音逐个保留起音；无新增音，无音高改变或来源省略。 说什么/怕什么前两处0 .5保留，B两段高1 .5、7 1、6/5各.25，贵字6完整4拍；规字3三拍后低5/低6各.5，不因短版删掉接下来的第二A。括号配乐不加入该独唱单声部。 最后source101低6 .5保持，source102的主1由原2.5延至3.5，使最后随字小节完整4拍；范围至这一持音结束，原稿不存在的印谱慢常相随后续不添加。原92拍修为93拍。 输出102音2休止104事件，93拍，打印66BPM共84.545454545秒。原90BPM与原谱92拍保留在原source evidence，输出遵循选定公开声乐版数值速度。 Root完整读全页及首句/结束句放大图，另录104事件全部音高/起点/拍值一致；独立解码105原事件，103原音与2休止完整映射，末随3.5拍确认。正式软件检验另绑定；未人工试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "49c929f870a165af261575084cea5882064619ba58ad249a8ff45b01a828f821"
+  },
+  "note_count": 102,
+  "event_count": 104,
+  "duration_seconds": 84.54545454545455,
+  "limits": [
+    "Unmeasured low6 graces deliberately assigned .5beat borrowed from principal1; not printed numerical duration.",
+    "Full existing source form only; repeated coda scope retained.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-48bac368d80b-daughter-complete-source.review.json",
+      "sha256": "245bef7395d366f272e30159441897e59e0cf28bd120760f787e6c4ebb7c57c6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d23ff11e55b2d30bb41231b7e3a60787747d90d13754ffde6d3885f7c6076ff8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "00b68cc05a6b05ce8a1460cd0c1aa535753555c0a734e0c2a32472eb798e05c0"
+    },
+    {
+      "name": "0001-aa675fdacd45.json",
+      "sha256": "bec83266eb0cb2e9000dd993386a5bac73663d9d6024a6a1591b635fcd134bd0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

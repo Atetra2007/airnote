@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b17bad2d823f9d07",
+  "source_id": "deck-ed35667a3774",
+  "work_id": "work-deck-ed35667a3774",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/City-of-Stars-%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E%E4%B8%BB%E9%A2%98%E6%9B%B2-%E9%9B%B7%E7%B1%B3%E5%85%8B%E6%96%AF-Meilichios-73624cf131.deltamusic",
+  "status": "reviewed",
+  "sha256": "033f91591c0c8b6bad80bb76edc0f8a1f1ef208787b19bdc289854e305164700",
+  "source_sha256": "d539daf195b01083d197774e1202b9a0f9f11fc6bddf19eaffd64555faccee2b",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/gangqinpu/41156.html",
+    "edition": "EOP41156; one-flat key signature, D-minor LH highest attack at every onset, uniformly+12; printed-quarter105, dotted3:1 durations.",
+    "score_sha256": "acc120fa4632691f951d1382806faa524c1cf3125dc7743ae333adf44deca79f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 302,
+    "maximum_parser_boundary_error_seconds": 2.4726887204451486e-12
+  },
+  "review_note": "complete302note356event-source60bars-left-hand-top;printedterminal1beat-rest-restored 完整302原音356原事件全处置，参考41156全60小节左手每攻击最高音流，整体升12半音（G小调印谱，输出仍G小调）。右手主旋律和左手和弦下音明确不进入本单声部编配，原源本身以左手内容为主，不宣称声乐主旋律。 印谱附点八分/十六分按3:1直奏精确3/4与1/4拍；原源近似2/3与1/3的2:1摆动改为本印谱所选直奏，这是重要节奏选版变化，未声称原唱/演奏录音对齐。 全部低音分解、长和弦、中段52四分攻击和结尾均保留，没有省略/合组源攻击。m1–14等十六分至附点八分同音真连线合为1拍；m21/22/23等跨时值同音连线按印谱合为5/4，m30/52合9/4，m27合7/4。 m25第二攻击是Bb（输出Bb3），原C4需修正；m53末为C（输出C5）原D5需修正；m55第二攻击为Bb（输出Bb3），原A3需修正。逐音输出变化均记录。 m47最后组为三连八分：F4、休止、G4各1/3拍，输出高八度；原最后F5 .626666拍与 .04微休止改为各1/3。G5三连1/3与m48全音4拍是真同音连线，共13/3一次起音。 中段m35–46及m47前三次四分音完整1拍；原51个微休止归前四分延音。m47第52微休止改1/3打印休止。m32两拍静默保留，m56末/m57全/m58前三拍共8拍全声部左手休止保留。 m60最后D5为十六分与二分真连线共9/4拍，末印谱另1拍四分休止原源缺失，补恢复。输出全240拍，原238.999999拍（十进制摆动误差另保留），105BPM137.142857秒。 候选等待root完整音乐二读和正式软件审计；无音频、UI、GPU、真人试听、录音对齐或游戏测试。 V2仅改正@arrangement-key=D-minor；V1 G-minor标注是把首Gm和弦当全曲调性。全部302音/306事件/时值/BPM保持已root完整重录结果。 Root已完整3页及独立60小节绝对音高重录；V2仅修订错误调性文字，数值事件不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "acc120fa4632691f951d1382806faa524c1cf3125dc7743ae333adf44deca79f"
+  },
+  "note_count": 302,
+  "event_count": 306,
+  "duration_seconds": 137.14285714285487,
+  "limits": [
+    "Community transcription,not publisher authentication.",
+    "Complete left-hand highestnote stream+12;treblemelody andchordlowernotes absent by explicit singlevoice selection.",
+    "Printed3:1 timing replaces sources2:1 approximation.",
+    "Original8beat left-hand silence retained;printed1beat terminalrest added.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-ed35667a3774-city-reference-v2.review.json",
+      "sha256": "6caf99b42e3c26d5be439b63c476dd2aa87d782e85ce49c0483da0da3b545ea7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3356d43640a487515d197b3817939abaacaa4becd0f6e08deb6f3f86847ad078"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b54147ce0f840030326ec46c42a64ca93e416bb6f50735667da9da44d3b80035"
+    },
+    {
+      "name": "0001-a6cac2eb2fb3.json",
+      "sha256": "9ef0ecdb96e9e7716a3f72abe436a452e65f152703d4948f9bfc398c2f830aea"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

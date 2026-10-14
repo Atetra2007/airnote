@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-11e76e478b1f69e8",
+  "source_id": "websheet-5e4458d9c3135267",
+  "work_id": "work-f479cbfd52be",
+  "source_url": "https://piastudy.com/Intermediate/WNctWN8W",
+  "status": "reviewed",
+  "sha256": "9939b06cc6e5f0b28a53a6101ce692c584295985d1d0644b113c2a8ba66f7985",
+  "source_sha256": "5e4458d9c31352673ac02b49e11eb2795866dae9d2b44269ca9394de069e2528",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/WNctWN8W",
+    "edition": "D4/4full227bars204→194;reference−12;3complete8vaphrases−24;2low-Bties0;5explicitquarterbeatgraces",
+    "score_sha256": "7bf645c7e60440e7905834596cb6f938da3bc001c8501eb4da2af947969c63a2"
+  },
+  "review_method": "Root完整8页227栏独立音高时值重录、823事件全对照和独立MIDI2792音/5612事件重解；706保留及2086省略完整映射。页7 12拍真tie独立解决长音提示；正式软件检查通过，其原始issues-found报告保留，无真人试听或游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 706,
+    "maximum_parser_boundary_error_seconds": 2.859223968698643e-11
+  },
+  "review_note": "放晴完整227栏8页钢琴来源的单旋律编配。原SMF2792配对音与5612事件全部保存、逐项处置；保留706主旋律攻击，明确省去2086伴奏/内声及l.h.低音反复。跨staff三处D5、持音下声部和五个小倚音逐谱核对，非机械选最高音。原参考整体降12半音，三整段8va再降12；两低B3真tie整体抬12，输出49–74。五倚音各采用1/4拍、向前借时，最短借时余音1/12拍，明确为编配选择。三连音、附点三连音及1/6拍音值保留；m150两个F-natural独立起音，m155 D5为实值三连音。原908拍、204BPM，m213起194按102/97拍倍率编码；未标数值rit/fermata保持原MIDI末段194和最后4拍，不编造渐慢。共823事件、706音117休止，88376/97拍，267.9684657368102秒。root逐页实际读全部227栏，独立手录重建全部823事件，并独立重解2792音/5612SMF事件。软件解析、隔离导入、重启、0/60/250三档间隔虚拟播放通过；唯一12拍长音提示由页7 m175–178真tie逐项确认并保留原提示报告。真人试听、原录音对齐、实机游戏未验证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7bf645c7e60440e7905834596cb6f938da3bc001c8501eb4da2af947969c63a2"
+  },
+  "note_count": 706,
+  "event_count": 823,
+  "duration_seconds": 267.9684657367829,
+  "limits": [
+    "Explicitmonophonereduction2086accompanimentnotesomittedwithfulldispositions",
+    "5gracesand3full8vaphrasesexplicitlyarranged",
+    "UnquantifiedritandfermatafollowfullMIDIfixedending194fourbeats",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-websheet-5e4458d9c3135267-haru-full2792-v1.review.json",
+      "sha256": "423c365f84844067648b51b0bb2c234bd6ef9703e0fed34c59a00159ceee6333"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8baff3e76f309654ebdab774c195c4e5f715329207e08465aa6f7fbb6d230e83"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "98baffa2620b7af44b52fc8144e20b76462c47c66321e16c9080dda97cd64712"
+    },
+    {
+      "name": "0001-ff0f736cba23.json",
+      "sha256": "9a18b2d3554c05016ceaaa3d381c629abda8043941a77e129a565f6173ba7b30"
+    },
+    {
+      "name": "public-review-summaries-20261013-haru-full-v1.json",
+      "sha256": "197505a64e511d48bf409b4f4c4a02a8d925e3df537cc0ef7b78bbfc4394fdd0"
+    },
+    {
+      "name": "root-haru-full-long-hold-resolution-v1.json",
+      "sha256": "50c3c466123b57b67d4b65ea8649fbfab9b4a8835221865d4b93d4bf5dad1bad"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

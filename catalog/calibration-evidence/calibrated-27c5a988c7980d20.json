@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-27c5a988c7980d20",
+  "source_id": "social-514bcd2abff677ee",
+  "work_id": "work-a8c4eda707f6",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=qmHtQRtm1O_M",
+  "status": "reviewed",
+  "sha256": "2d4203f82bd0b3da1fdb7a1cf6470a2cc0b9e4ebcb9cc09b587e86fdacaaffe6",
+  "source_sha256": "a717cb33b22030c02b3a2f16b40e0b29a3f992e874902f24fa8f9f24a7584605",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.vgleadsheets.com/assets/sheets/C/Outer%20Wilds%20-%20Travelers.pdf",
+    "edition": "VGLeadSheets Concert C instrument edition; printed G key, quarter=92, 4/4, eight measures, Loop to top",
+    "score_sha256": "6e219244b8d1be3691c8f1d8766062772dc0e745dec0652561c687d1790c061f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 127,
+    "maximum_parser_boundary_error_seconds": 6.394884621840902e-14
+  },
+  "review_note": "Complete133 original notes accounted; two eight-bar cycles, third m1–6 and m7 first note only; four-beat terminal arrangement hold. 固定social-514bcd2abff677ee/work-a8c4eda707f6，逐音覆盖内嵌DFHS133音和物理MIDI128音，不能用两轮主题匹配代替全源。 独立读Concert C版G调4/4谱全部8小节：46攻击32拍；Eb转调乐器谱不是音乐会实音谱，不拿其E调音符当实音。C指乐器版本，谱面实际一升号G调。 来源实际路线为两轮m1–8，第三轮m1–6，末D对应m7首音；不补齐缺失m7其余与m8，不声称完整曲目。 五装饰DFHS92/93/105/118/119明确选版省略；116/117两高D6头合为第三轮m4打印D5一个半拍攻击；两头原时值51/384与192/384完整保留。 逐项选打印C4–D5音区：以源+12作比较基准，所有偏离列pitch_changes；第三轮高音折叠与不同低音是选版，非原曲必错。 DFHS PPQ384独立于物理480；导出全局+1和5缺音经完整差分验证，不能把物理少5音当133音已覆盖。物理省118/119两turn，增加内嵌116/117支持的一D5，得127输出。 选印quarter92BPM与逐印时值取代源120BPM、约4/3时间拉伸及浮动ticks；不称原速度测量。源首976ticks起始延迟保留证据，输出从0拍开始。 末DFHS132 D5 duration2050/384=1025/192约5.33854拍；物理末2562/480=427/80约5.3375拍。选择打印m7首D4并延为4拍收尾：印首音为1拍，此4拍是明示编配收尾，既非印4拍也非原tick4拍。 最终127实音、0休止、92拍，92BPM为60秒；尚待root独立全源/读谱验收与正式软件检验，无真人试听、音频、GPU、UI或游戏输入。 Root实际读Concert C完整8小节图：一升号G调quarter92，独立录绝对音高及每个时值46攻击32拍，展开两遍、第三遍前6栏和第7栏首D；127输出全对。C是乐器版标签，非C大调。 Root以独立mido取meta并自行解DFHS变长整数133音，另配128物理音，PPQ384/480和导出+1、5缺音全部核对；133源项和128导出项均有一一处置。五装饰省略和116/117合为D5是明确参考选版，不称原错。 Root逐项核37处相对source+12的音高或八度选择，含两轮m5低音D3/Eb3选打印E4及高音变奏折回C4–D5。末源1025/192拍、物理427/80拍、印首D4一拍与所选4拍分开记录。选92BPM全92拍60秒，不保原120节奏或首延迟，不补不存在的第三遍余段。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "6e219244b8d1be3691c8f1d8766062772dc0e745dec0652561c687d1790c061f"
+  },
+  "note_count": 127,
+  "event_count": 127,
+  "duration_seconds": 60,
+  "limits": [
+    "Source content complete, full song not claimed.",
+    "Five original ornament heads omitted explicitly; two high-D6 heads merged to one printedD5.",
+    "Octave folds and printed alternate bass notes are disclosed edition choices.",
+    "Terminal4beats is an arrangement extension of printed1beat and shortening of original1025/192beats.",
+    "No audio/game acceptance.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-514bcd2abff677ee-travelers-concert-c-v1.review.json",
+      "sha256": "0a28876273f27342efc575d95852a37b7642f567dd55ca61a0b48ec71651d38e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "893afcdda14b7afe01d9e97a68d98728d0d4ea4738e153c0ccca0bc52fb94419"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7b3cf3d56e8ba8834fe4d1923d3d3464bedfb5beee3d000446f035dfba733d9f"
+    },
+    {
+      "name": "0001-d1ee47757a37.json",
+      "sha256": "9dd0584cc90fb63f1e791b1cdc1174aff52fb4b4cdd445ed23b765fc2bebc140"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

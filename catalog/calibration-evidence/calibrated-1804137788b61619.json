@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1804137788b61619",
+  "source_id": "zhouzhou-186",
+  "work_id": "work-18075e784f67",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "72e3a9b083d947b542aadbb3dda88c949125417211f72b70464c8026dbba5245",
+  "source_sha256": "2e97235656d3efd3b5e71d02ca1a1a1d7390410742271bb82d40b4f4859dea9c",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.yuepudaquan.com/p/c52682b2d26e",
+    "edition": "D4/4quarter70;Capo2Cchords;completeP2m20last1.5-P3m27first3.5;Coutputminus2",
+    "score_sha256": "a192a6c2e0975732f5ccaeaf2770091f6b30e85ff7789c6744b6d631a34bc552"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 93,
+    "maximum_parser_boundary_error_seconds": 2.1316282072803006e-14
+  },
+  "review_note": "Complete93source-notes;29beats;all10printedtiescompleted;followingunlyricE4notadded 完整原源93音96tokens、3个未知|及4个b1按住横杠全保留；b1不是降半音，绝不按flat解。原source时值未知，原横杠精确时值未证，未知边界不插休止。 身份为TOP BARRY一半一半；采用六弦琴完整六页吉他/人声数字谱，首页D4/4四分70、Capo2，旋律行明确1=D，原吉他C指法伴奏不能当人声1=C。全部6页实际查看并查看m20–27全段细图；C输出统一参考-2。 完整原内容位于P2m20最后1.5拍的但是我不想要，随后P2m21–24、P3m25–26、P3m27前三拍半到遗不遗憾结束；共29拍。m27最后无歌词普通3八分属于原尾之后装饰音，不在源93音内，明确不新增。 source0–5对应m20最后6个十六分普通1/1/1/2/1/2，确有三个普通1，不漏但/是/我。m20前3→2弧线为不同pitch连奏，所选片段不包含；不能当同音tie。 m21source6–18：普通3/5/3/5→灰5延续.25+.5=.75，然后3/5/3/5(.5)、1/1/2/2/1。m22source19–31：同样3/5/3/5(.75)、3/5/3/5(.5)，接街上的路灯5/4/3/2/1全十六分。 m23source32–45：普通1/3/2/3→灰3延续.25+.5=.75，1/3/1/3/1/低7/1/3/2/1；source32/36/38/42原2选印刷1，source41原高7B5选印刷低7B3（D参考C#4转C输出B3），明确-24。 m24source46–59：1/5/3/5(.75)/1/6/6/5，再可是我不想要1/1/1/5/5/1。source46/50原3改印刷1，source52原3改印刷6；source51原高6对应印刷普通6，保留其A音pitchclass。 m25source60–71：1/5/3/5(.75)/3/5/3/5(.75)及我深陷在4/3/2/1；source62/64/66原1选印刷3。m26source72–83：1/5/3/5(.25+.25=.5)/5(.5)/高1(.25)/7(.25)/5(.25+.5=.75)，然后他们问我5/4/3/2全.25；source77原C6明确选印刷C5，不误降到C4。 m27source84–92：2/1/2/3(.25+.25=.5)/2/1/2/1/2(.25+1=1.25)，源尾憾的tie完整延续。最后印刷3(.5)在原范围之外，不添加、不截短憾的tie。 采用打印人声音域，93项源pitch变化全部逐原索引明示，其中82项只降12、source41降24、10项选版pitchclass不同；没有自动音域筛选、最高音选择或隐藏移调。93源音→93输出起音，打印103tokens含10tie延续；0新增0删源0source起音拆合。 70是参考练习BPM，不宣称录音对齐。格式受控导出只佐证b1hold及8编辑器设置，歌曲pitch/time仍独立读谱；待root全段独立二读及正式软件审计。未UI/音频/GPU/录音对齐/实机游戏。 Root实际复读P1调号速度及P2/P3完整适用段，逐张放大m20–27，另用简谱数字和十六分单位手录93个起音，全部音高/起点/时值与候选一致；m23低7和m26高1均由原页确认。 Root重解原JSON全部96token：93音3未知竖线；对象b1为可视按住提示，无降号作用。10处pitchclass修改、source41降24及其余同音级降12均显式验证，无漏掉原尾。 完整现有来源选m20最后六个十六分至m27憾延音结束，共29拍；m26两个连续5是独立起音，首.5拍、次.5拍；末憾1.25拍，无歌词后续3不扩充。70为印刷练习速度，原作者未知时值未声称恢复。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a192a6c2e0975732f5ccaeaf2770091f6b30e85ff7789c6744b6d631a34bc552"
+  },
+  "note_count": 93,
+  "event_count": 93,
+  "duration_seconds": 24.857142857142858,
+  "limits": [
+    "Communityselectedvocalmelody;sourceowncutorder.",
+    "All93sourcepitchesexplicitlycorrectedselectedprintregister;10pitchclassesdiffer.",
+    "b1visualholdNOTflat;sourceoriginaltimingunknown;allmarkerspreserved.",
+    "Printedpractice70notrecordingalignment;NoUI/audio/GPU/game.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-186-half-v1.review.json",
+      "sha256": "aad12c9aa12f0b3f8129b1f20418b30e70b94ca3749970d9d3778f2ed07fdf5b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5a6b4ee7088b644f58b2f8285d9ada3ec2200e60722e736fcd58a6b29b62615e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8ee7e3389a9246263f7abaa10b2c4419aed40d259262025aa46863c96af75c4b"
+    },
+    {
+      "name": "0001-957aa0447ea4.json",
+      "sha256": "8e66a951ad08d07f7b1179a3be312966ae7775fe21f10ef3ae97d8d6be5af792"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

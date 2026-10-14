@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-3c8825349f49d4e8",
+  "source_id": "zhouzhou-141",
+  "work_id": "work-22d66a033a22",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "aaff4b8c0b118d0d36fc169f6f913fc821f789b46a310641b3118e9b9925608d",
+  "source_sha256": "2b4a9673f83cae955b20de03149e2b1d7dddf5941621bf83230e679e2acebabe",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/351036.html",
+    "edition": "SunShiyan F-major3/4 printed120",
+    "score_sha256": "0d12ef9dfd835aeb435fa33af5ecc285cf989b9093d9dd9a82028ef22ccc3874"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 124,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整122源音，所选主歌与副歌124起音103拍；不含源稿未提供的伴奏前奏。 先完整视读公开谱的选定小节及每个来源原始音符，再按明确的小节映射构建；自动音高和拍数断言仅作数值一致性核验，不代替音乐视读。 Zhouzhou源格式b=1为显示延音横线，不是升降号；原始字段完整保留。源稿没有可靠时值，所有有量音符与休止取自选定公开印谱，不把编辑器默认四分音或空格当作音乐时值。 仅覆盖各来源已有的旋律范围；原稿保留，修订另存。未进行真人听感、原始录音对齐或实际游戏测试。 选定孙世彦制谱Always with me（351036），1=F、3/4、四分音=120。范围为弱起1拍和随后34小节主歌及副歌，最终两个整小节F4以同音连线合为6拍。 122个源音全部按原序映射；补入第15小节位置1.5的A4八分音、及第30小节位置1的第二个独立D4八分音，共124音。 10处明确音高修正（0基源序号）：23/24由A4改Bb4；53/54由G4改Bb4；59/67/73/91/99/104由A4改Bb4。其余源音不改音高。 补第12小节半拍休止，以及第17小节两次四分休止；共124音、3休止、103拍、120BPM、51.5秒。 Root独立查看两种完整公开印谱，逐小节另录音高时值数组与候选完全一致；逐源确认全部音符处置、补音及选定段落，区分122379的第4小节和16至17小节延音版别。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0d12ef9dfd835aeb435fa33af5ecc285cf989b9093d9dd9a82028ef22ccc3874"
+  },
+  "note_count": 124,
+  "event_count": 127,
+  "duration_seconds": 51.5,
+  "limits": [
+    "Complete existing source melody scope, not necessarily full original recording.",
+    "No recording alignment, human listening, or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-141-always-with-me.review.json",
+      "sha256": "b98e7d46cd9331989294a911be58797ec2d32beb3e7cc90321f03a1435ac7a1b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0f1e4a0acdb25bbd44061dc9082e74454b49a6916a5e151504c4e4aae429115a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6439081807f34546df5f64abb03e89aebc8f9923656655bfb316823d9327bb4e"
+    },
+    {
+      "name": "0001-4c7bd9627824.json",
+      "sha256": "3fce5f4d5b0f76ef88cf8cc2b772c9a97a271a63e6d782cfb2cea033a827e4b0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

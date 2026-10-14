@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-fa29cc5c6b6e6386",
+  "source_id": "social-62512aaffb6c87de",
+  "work_id": "work-8f94ff8e4060",
+  "source_url": "https://www.douyin.com/search/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88%20%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%A3%E7%90%B4?modal_id=7684089365730982811&type=general",
+  "status": "reviewed",
+  "sha256": "959ab5aecb5890756417db1543dfb1d7cb75f38d983f2e7cf72822e0a254957d",
+  "source_sha256": "049720d2b1d1e438369bd98ea69704f77bd772940a867d2b1c3033c87d21f677",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/366147.html",
+    "edition": "西二吉他完整三页C调声乐数字谱；保留原源紧凑双主副歌及终章，选定固定练习72BPM并非打印速度。",
+    "score_sha256": "fb73149508a1b6041efcb97ee95df6848c2125f55e01f6336d9546231ae3861f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 71,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "Complete72source-cell chorus including explicit finalC-D-Ccadence reduction toprintedCfourbeats. 一张冻结社交图8行72音全部逐格读取。空心圆=右键高音、无圈=普通音，原图底图例明确；无量化时值、无BPM、无歌词。最后一行末三个圈1圈2圈1全纳入源处置，不丢尾段。 透明复用已双重逐项音乐复核的366147西二声乐C调三页参考，本来源完整副歌范围从剑的G4半拍拾音到逍遥的C5四拍，不引入主歌或终章。普通C4，高音C5，不移调。参考无打印BPM，72为明确自选练习速度。 已验收195采用的同参考副歌在此复用，并再次核对全副歌图面；不是新的盲读参考数组。选段开头3.5拍纯休止在第一原音之前，省略；所有内部5个半拍休止保留。总60.5拍、71音5休止76事件约50.416667秒。 源source40普通6/A4对应P2r4b4的高1/C5（我却只为你折腰句的只），依所选参考改C5，其余主体原音保留。源source30E5是命字末半拍，敲字E5起音不在原图：在其后补独立E5半拍连整4拍，共4.5拍，不与前命字E5合并。 完整原图收尾source69/70/71为C5-D5-C5。所选366147在此仅印逍遥末C5四拍；明确把此三音末尾装饰化简为单个C5四拍，source70的D5不发音。三源格共同归属该选版终止事件，这不是同音tie、不是原曲唯一历史版本，也不谎称原72音全按原序发声；该局部差异全部保留在source-comparison。 所选版有1个补充主音、1处主体改音和末三音→单音终止选择，全72源格处置覆盖；无凭匹配分数自动验收。候选待独立原图二读与root音乐决策及生产审计，未人工听过或实机。 Root再次直接检查完整原图与底部图例，审查员在打开root数字稿前录入的72个数字/圈记与root读数完全一致。其原报告和JSON误把无圈解释为低音左键，现用单独addendum明确更正：无圈为普通音不按左右键，实心圈才为低音。57空心圈/15无圈/0实心圈；原数组音高未受影响。 完整76事件透明复用已验收195的366147修正读数，按印谱位置查取，并检查音高、拍长、同音弧及起点加59.5拍全部吻合。另一个来源的参考复用不代替本72格原源的独立读取。 源40A4改C5，补独立E5四点五拍；终source69–71的C5-D5-C5明确缩为单个C5四拍，原中间D5攻击不保留。72保留计数只表示可追溯处置，不代表72原起音全部原样保留；不是同音弧，源70的音高差异也单独计入root proof。 音乐核对完成，原待复核文字保留历史；另行生产软件审计。72为练习速度，未人工试听、未实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fb73149508a1b6041efcb97ee95df6848c2125f55e01f6336d9546231ae3861f"
+  },
+  "note_count": 71,
+  "event_count": 76,
+  "duration_seconds": 50.416666666666664,
+  "limits": [
+    "Explicitly selected-reference cadence simplifies original final3noteC-D-CtooneC5.",
+    "72BPM is selected practice tempo,not printed or recording-verified.",
+    "Source72cellsall accounted for; actual output71notes with1insertion and2attacks reduced.",
+    "No human listening or real-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-62512aaffb6c87de-red-inn-complete-source.review.json",
+      "sha256": "4bb940c3e343cb2568b9066567ddb63d8bb8e39d26dfb01ad33a99c55312820c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "87ce5bed1321de9d049c9384313d9f0c3ce3ce44e28c0e1cfa993a086b5473ef"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ceaab0025626100c2ae3d62d5f5d9472cef00eb8c129ea70e8837defa50228f8"
+    },
+    {
+      "name": "0001-bb02bf060e88.json",
+      "sha256": "88174102988bc8cf028187dbd3221bed7ca8fce81cb578fa5f02bee9552aa264"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

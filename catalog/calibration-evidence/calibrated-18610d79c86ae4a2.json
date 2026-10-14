@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-18610d79c86ae4a2",
+  "source_id": "deck-1dbd2be3a810",
+  "work_id": "work-deck-1dbd2be3a810",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/Lemon-%E5%AE%8C%E6%95%B4%E7%89%88-%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB-Jiko-623a5950c3.deltamusic",
+  "status": "reviewed",
+  "sha256": "ef3eeb9a797bec912a3925c1f6b1ea84fc76065034707ab50420aff78b68d2b0",
+  "source_sha256": "d9949176126ffd8b5f0f966c15b7ceb72184cefd8f0f93825e7554ba735e39c6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/115826.html",
+    "edition": "EOP115826six-page primary with explicitly selected338491three-page vocal choruses/link/full extended ending; compact source interludes preserved; mixed practice edition87BPM.",
+    "score_sha256": "fd3c1249069bdc6037c59ac2d6adce8a8e89b586b751aa5f200624d536c6b9db"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 599,
+    "maximum_parser_boundary_error_seconds": 1.3358203432289883e-12
+  },
+  "review_note": "完整602源音、601源休止；所有主副歌、器乐连接、Ab桥、末副歌与580-601延长尾句。源没有的完整器乐尾奏不追加。 原始deck SHA d9949176126ffd8b5f0f966c15b7ceb72184cefd8f0f93825e7554ba735e39c6，共602音、601休止、1203事件。全量逐音/逐休止覆盖，0源音省略。所有原源段落、三次副歌、Ab桥段和source580-601延长尾句均保留；不因较短钢琴谱而截短原源。 这是明确的混合单旋律练习选版，不宣称复刻某一原版录音或完整钢琴编配。主参考115826《Lemon完美演奏版》六页EOP，辅助参考338491天妖辉夜三页单旋律谱。EOP用于首两个主歌段与前副歌、第二主歌和前副歌、完整Ab桥；338491用于副歌单旋律、器乐连接、第二主歌差异终止、最终延长尾句。每个输出片段注明实际参考页/行/小节。 源元数据写1=C#，但实际音符是带升号的C基准绝对音名，例如7=B4、#1高=C#5，故不得重复套用C#调偏移。选择B段普通1=B3、Ab桥普通1=Ab3，整体移调0。EOP前两轮桥段m60-64的高八度钢琴旋律显式下降12半音；m65起印谱已回到所选音区，不继续降低。 EOP页首打印四分86，同时m1打印四分96，存在同页速度矛盾；辅助谱打印四分174。采用原源明确87BPM作为匀速练习值；338491节拍值精确除2换算到87网格。这是练习速度选择，不声称87是EOP打印速度，不做录音速度吻合承诺。最终352.5拍、243.103448秒。 EOP全部六页及辅助谱全部三页已查阅，旋律/配器差异明确处置：首副歌EOP额外重复小节及钢琴终止不覆盖源较短首副歌；源末尾扩展句也不换成EOP85小节的较短结束。副歌采用有歌词的单旋律谱，避免把复杂钢琴和弦顶音自动当作原旋律。 首主歌EOP m5源25/26同F4合并一拍，明确是所选版本的重复值整合，并非打印同音弧；source30 G#4改G4（B调#5的等音），一拍后补印谱半拍休止。m14、m41同样取印谱#5一拍后半拍休止。EOP m18把source116/117改为.75/.25；二次前副歌source323/324、339/340按所选印谱纠正长短。 首、第二副歌分别补入P1r11b1、P2r11b1末高2半拍（87网格.25拍），源后面的同高2长音仍独立保留，不能把缺音掩盖为延长。三轮副歌[177,178]、[379,380]、[527,528]各两次高5按印谱同音延音弧合成所选时值。source531原高4改为高5，符合P3r8b3打印。 器乐链接完全保留237-264。P2r3b1改source237高2为高3并补独立高1；P2r4b2临时#2高与后高1分别对应259/260；P2r4b3将261/262明确合映高2附点时值，随后263/264按打印八分三连音（高1前两项同音弧）读为1/3、1/6拍。该器乐连接不与EOP不同的伴奏型混同。 Ab桥EOP m60-63第一结尾、再m60-62与m64第二结尾、m65-72全部展开。m61两轮和m66末端下声部钢琴填音不作为主旋律发音，主高3延至两拍，这是明确的单旋律声部删伴奏/持音编配，不称打印同音弧；338491长高3辅助支持。m64的source465调整1.5拍，466/467为6/7十六分；source468额外同高1拾音合入469主音。这是选版整合，非原源删除。 Ab桥source496-499依EOP m72逐个Bb4、B4、Bb4、Ab4各一拍。第三音有还原号，不能继承前音升号。338491的#6超高音来自不同钢琴和弦顶音选择，本版不采用。 601个源休止全部明列：event121的3.502083拍改所选印谱3.5拍；event875的4.002083改4拍，保留替代第二副歌后器乐的静默；event999的7.002083改7拍，保留原紧凑间奏再接1拍主旋律拾音。末间奏源选版共8拍，EOP m73-75钢琴间奏12拍，明确少4拍；不声称静默7拍是EOP原样打印。其余598个.002083/.04微小发音间隙均逐项处置为记谱格点与@gap=10ms，或合并组内部消除；不是被漏掉的音乐休止。 最终延长句依338491 P3r10b5到r12b1逐项校对。source580/581普通3改普通4并按印谱三连音同音弧合并，582普通6改普通3；583高1改高4。P3r11b1在source584高1后新增独立高1附点音，原585高5继续保留。P3r11b4最后5/5/3无高点，source595为普通5两项同音弧共2/3拍，596改普通3（D#4）1/3拍，不能随原高1误升八度。最后601高1只读印谱主音一拍，随后一拍原器乐空间用休止表示；不加入原源没有的完整器乐尾奏。 副歌中三连音按精确分数计时，所有不同音弧仍逐个发音。同音弧方可持续合成；其余重复整合另有明确选版说明。无定量时值的小倚音不编造时长：338491 P1r10b4、P2r1b1、P2r7b3、P2r10b4、P2r12b1、P3r8b3、P3r9b3等明确略去。 最终599音8休止607事件，完整602源音与601源休止100%处置；7组源音整合、4主要音新增。未人工试听、未录音对齐、未真实游戏测试；仍是待root独立音乐二读和正式软件审计的提案，不先行标记已验收。 Root亲看全部六页115826与三页338491，并查看适用系统/末段裁图，另录入完整128片段607事件。首八个EOP候选数值及提案文字曾可见，非盲；首副歌透明复用root已验收153独立参考读数并按87网格折半，其余逐页读取，不能把同图复用称为新盲读。 Root初稿仅P3r9b3首6遗漏高点，与候选相差12半音；查看真实放大行确认高6，另存resolved数组G#5。初稿脚本与数组保留。修正后全部607事件音高/拍长/起点逐个与候选相等；不是仅核对开头或总时长。 再次从原raw完整解析1203token，602音与601休止的原字符串、音高与原拍长全部与比较表对应。602源音恰好各处置一次，7合组4新增12改音明确；三长休止3.502083/4.002083/7.002083分别规范为3.5/4/7拍，其余598微间隔不宣称印谱休止。 EOP46–48使用338491对应声乐旋律音区来选择钢琴八度/和弦声部，不能概括为机械取最高声部。Ab桥m60–64上层双高点降八度，m65以后不继续降；m72第三2明确还原Bb4。完整末source580–601延长句与尾B4一拍加休止一拍单独核对。 这是混合练习版87BPM，打印86/96矛盾与174折半转换均保留说明；没有原唱节奏拟合、人工试听或游戏测试。本包完成音乐核对，随后独立生产软件审计，旧待复核状态仅为历史。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fd3c1249069bdc6037c59ac2d6adce8a8e89b586b751aa5f200624d536c6b9db"
+  },
+  "note_count": 599,
+  "event_count": 607,
+  "duration_seconds": 243.10344827586206,
+  "limits": [
+    "Mixed practice arrangement, not a facsimile of either full piano score or source recording.",
+    "87BPM is a disclosed practice choice: EOP prints86and96; vocal reference prints174.",
+    "EOP first bridge piano melody lowered12semitones explicitly; selected vocal register not singer recording alignment.",
+    "Principal melody held over three lower piano fills; unmeasured graces omitted.",
+    "Source compact final interlude is4beats shorter than EOP full piano interlude; entire original source range retained.",
+    "All source articulation gaps disposed explicitly; no literal reproduction of original MIDI-style gate lengths.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-1dbd2be3a810-lemon-complete-source.review.json",
+      "sha256": "df24c5fa96563fffa0ae1f542f3c16fd5a71cb2b02a0e69154b59b257f695d6e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c03add34fbebecdb5fc951a669536dbb6cef78ae18ff72dd092f88803e0d03a5"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2d85345b338e87674b2a1641877a182c89638d91bae1d631d84d2b4010de359c"
+    },
+    {
+      "name": "0001-5bafa9daae61.json",
+      "sha256": "e748a848afb478084420ba9a6719b9bde046910dc9f6cec3dda8190fefc44710"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

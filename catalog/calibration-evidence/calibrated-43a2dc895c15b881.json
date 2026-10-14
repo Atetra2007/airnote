@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-43a2dc895c15b881",
+  "source_id": "community-d4fc4fef4a76371d",
+  "work_id": "work-632087eed621",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A5%87%E8%BF%B9%E5%86%8D%E7%8E%B0-ryanixer-ryanixer-c483db43ceedf6f2b0a9f.deltamusic",
+  "status": "reviewed",
+  "sha256": "1b056f072f53bd0841b41259794dda9946fb4c04f6dedc6d3a5678ede86652d7",
+  "source_sha256": "776240e90f29e7b6c77324f5974cdd26e9eaaddbe45a3b953fc7561f67585010",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/346459.html",
+    "edition": "被遗忘者的哀伤声乐与器乐版，A主歌转E副歌，明确练习160BPM；原128.958333拍空白完整保留",
+    "score_sha256": "07f039e4de99530ea6670290c0b6a239f2d69caf3194e929469288100f3eb593"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 430,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "全部422源音95原间隔，包括两器乐段、两主歌、四副歌与精确保留128.958333拍长空白，最后低7完整4.5拍。 完整422源音、95原間隔、517原事件按顺序处置，原deltamusic字面音高与时值完整保留。metadata1=C#不作为再移调指令，原音实际器乐/主歌为Bb主音、副歌为F主音。 唯一主参考346459被遗忘者的哀伤声乐/器乐简谱，完整单页已查看；打印主歌A调，在副歌入口明确转E调。器乐和主歌参考A4主音降11半音至Bb3；副歌E4主音升1半音至F4，完整保留原G3至A4音区。 主谱未打印数值BPM，明确选用原社区来源160BPM练习速度，不声称原录音或印谱标速。 曲式完整保留：第一器乐40原音、第一主歌50、第一副歌60、第二器乐42、第二主歌50、第二副歌60、128.958333拍长空白、第三副歌60、第四副歌60。没有用043短副歌覆盖完整长版。 第一与第二器乐各按打印8小节32拍；来源从反复线后的低6起，不新增印谱反复线前两次低6拾音。I4最后低6 .5跨I5 .5合1；I8为3 .5、4 .5连.5合1、6 .5连.5合1、独立6 .5、最后6 1拍。两个来源都缺倒数第二个6 .5，分别补齐，完整结尾没有截断。 第二器乐I6原source177/178的3/4各.25为额外回转，所选印谱只有4后3 .5连3 .5；明确省略这两原装饰，保留后source179主3。原音保留在对照，不声称原花腔已被证明错误。两器乐各输出41音4休止。 主歌两遍全部50音均保留映射，每遍63拍（16小节中的末3拍接副歌1拍拾音）。V1/V3/V5/V9/V11/V13每个前后1拍休止恢复，不能以末音拉长遮盖。V2低7 .5+.5延音、V4第二2 .5+.5、V6第二1 .5+.5均按打印同音弧合并。 主歌12音高变化：每遍穿梭轮回及期盼着明三音原2/2/3改1/1/2，即source61/62/63、86/87/88、213/214/215、238/239/240；两枚C4各改Bb3，D4改C4，其余全部源音高保留。 来源主歌没有印谱括号内伴奏填充。为保留该单声部范围，V8保持4拍静默，V15低7唱1拍后3拍、V16前3拍保持静默；已人工记录这些括号旋律但明确不加入输出，不把它们或下方“间奏略”当已验证solo。 四遍副歌完整16小节和各自1拍低6/7拾音。每半段第7小节低7→1为异音连奏，再后1为独立身/出；每遍恢复这两个缺失的短1 .5，共8音，四遍各62输出音。相邻3/3和2/2若无同音弧均保留独立起音。 第一、第二、第四副歌末低7 .5连最后4拍，完整4.5拍；第三副歌选页面底部第一结尾，末低7 .5连3拍共3.5后立即接第四遍1拍低6/7拾音。原source149后的2拍与source361后的1.020833拍静默按对应持音/反复结尾明确吸收，不悄悄漏掉间隔。最后source421低7原2.5拍延至完整4.5拍。 source301之后长空白128.958333拍原精确值完整保留为32个4拍和1个.958333拍休止。此处采用原来源排列，不将其冒称印谱15拍“间奏略”占位，也不填入未经核对的solo。160BPM下该空白48.359374875秒，清楚标明长静默是有意保留。 输出430音87休止、517事件、577.958333拍，共216.734374875秒。输出事件数恰与原517相同只是巧合：每一原音/間隔的去向均由逐项映射证明，不用总数相同代替校验。 原420音保留、2装饰明确省略、10印谱起音恢复、12音高变化。所有95原间隔独立对应输出门控、实际休止、精确保留长空白或明确选版持音吸收；无未知尾部被移出范围。 Root完整复核前奏、主歌、副歌和两种结尾，另录517事件全部一致；逐字面独立解码517原事件，422原音及95间隔全部处置，最后4.5拍与长空白完整。正式软件检验另绑定，未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "07f039e4de99530ea6670290c0b6a239f2d69caf3194e929469288100f3eb593"
+  },
+  "note_count": 430,
+  "event_count": 517,
+  "duration_seconds": 216.73437487500001,
+  "limits": [
+    "160BPM is explicit practice tempo, not printed or recording speed.",
+    "Long128.958333beat gap follows source; printed omitted-solo passage is not a verification source for it.",
+    "Parenthesized backing fills absent from source are explicitly left silent.",
+    "Complete original source extent only; no human listening or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-d4fc4fef4a76371d-miracle-complete-source.review.json",
+      "sha256": "eca1160555f505b0fd897fcf6b53f52b15811bf9ed4a01be8ea10c2577a818a0"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1233f2304e580e98a09922ceb4f3dfa4655fadab448a0abb750874bc71b642fb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a36707a5cca02294297b2467e3bc0ac5532dcf487ab79400e4fb84aacccfc539"
+    },
+    {
+      "name": "0001-8d7f5723f06e.json",
+      "sha256": "d85bc4a127caefd20da4392edde01f6a7b4326fc400223bcb851f46d4acadbaf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

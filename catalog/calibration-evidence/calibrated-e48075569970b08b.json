@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e48075569970b08b",
+  "source_id": "zhouzhou-056",
+  "work_id": "work-deck-d5d838c55ac3",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "75a747ef6a9e6a22dd218e2f9299b6351089907339344f09752ab77d1ea57fbb",
+  "source_sha256": "05df523712f74b893f6de7c2782241365daa0dbcb9341054105b2d7d43aa4f2c",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=ZkjTWMneTLw",
+    "edition": "蜜雪冰城 - Topic: 蜜雪冰城主题曲 (官方版), final complete refrain cycle",
+    "audio_sha256": "5d4358521d1e97db3412e81c85fab1c47d7202d9109926151f282bffc2744fca",
+    "start_seconds": 124.99,
+    "segment_start_seconds": 124.99,
+    "segment_end_seconds": 143.64
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 49,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "完整来源50音及四段旋律，非全录音 Root核对全部原件、完整3页频谱与3页输出覆盖，4段细节、3处扩展边界图及音乐代理两处独立细节。三版原件逐音建立映射；并非因指纹相似而继承复核。 Root再次核对verse2及bridge细图：130.08–130.09与136.02–136.03没有可靠的10毫秒独立静音依据，分别是连续上行过渡。将前音释放接到原下一音起点130.09/136.03，消除低于50–100毫秒边界判断精度的伪精细休止；其他明确间隙保留。 所选官方录音末轮124.99–143.64秒为D调，段落起点约124.99/129.79/134.59/139.39，每8拍4.80秒，约100BPM；deck标104不适用于此录音。输出采用绝对秒60BPM。 蜜字高次共振峰/独立起音支持D4重复，尤其127.09；不因同音基频连续合并。第二段细节将原草案131.85修为131.92，随后E4从132.08进入。 127.46–127.55及132.23–132.36的F#和141.82–141.90的F#短转折有原频谱支持。末段B4仅140.40–140.45短顶，保留这个现有来源转折；非额外音节。 137.60–138.00为爱字A4目标及向G4短滑落；独立root与音乐代理都未见原谱F#4稳定目标。将原source33/34合为A4，末下滑简化；138.09的你另起E4。 滑入/下滑及句末宽颤音按可演奏目标半音简化，声学轨迹不恒等于目标；主动发声结束后混响不延长为按键。 三份原件各50音全部核对，包含三段主句和中间桥段；保留原件，各输出49音。并非整首录音复核。 056每段开头写5/3/3，与032、deck及所选录音3/5/5不符；修正三个开头及桥末错误的1为2。 最后143.64之后出现的模型F#选音只在原主动元音高次谐波消失后的低幅尾声，未添加为旋律音；首句尾主动发声约129.17终止。 第二段蜜字起音经扩展细图将初稿131.85更正为131.92；雪目标E4由132.08起。修改后重新检查对应完整输出覆盖图。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "5d4358521d1e97db3412e81c85fab1c47d7202d9109926151f282bffc2744fca"
+  },
+  "note_count": 49,
+  "event_count": 73,
+  "duration_seconds": 18.65,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "宽颤音/滑音简化为目标半音；边界约有50–100毫秒判断不确定性，极短转音相对不确定性更高。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-056.review.json",
+      "sha256": "e45b77e54ecdfa8f1e9e9be7a150c82e3acf519c694ccd8ec6498812258578c4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "83e088aa453c7bef66a6ff813316a18bd07745166721f03b9cf52075a2194ae6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "738f520ce6ffaebc70034085cd72d88ab4dd2daf2139eb82fa9ade84ba710df0"
+    },
+    {
+      "name": "0002-b1b5fd224ad0.json",
+      "sha256": "047696312026c92610a699cb12f30ca082b0de5f77f38b9a2b3b69a1b5688509"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

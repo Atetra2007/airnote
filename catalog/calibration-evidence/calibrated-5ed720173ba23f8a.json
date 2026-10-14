@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-5ed720173ba23f8a",
+  "source_id": "zhouzhou-103",
+  "work_id": "work-76aaed08ab8d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "435714736096e8276de97810d9a83579ef69155441c37fd4a9bb5ac74eeda0e3",
+  "source_sha256": "34191c520709828a959985d58bdef923ac4209e443252221cd544f3012355b11",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/318349.html",
+    "edition": "孙世彦银临&Aki阿杰F4/4打印四分86BPM，来源曲式跳过眼角珠泪演离一小节",
+    "score_sha256": "2ed55fe9b55b01d4eeecd980bfa790d1ad1475ccef23ea09baa8c924ac59527d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 148,
+    "maximum_parser_boundary_error_seconds": 1.7053025658242404e-13
+  },
+  "review_note": "全部9行147源音从首主歌至首副歌年岁，保留来源省掉眼角珠泪演离的跳段；补似水中间低6。 原洲洲103全部9行147音无歌词，原数组和所有间隔符完整留存；选318349孙世彦制谱银临&Aki阿杰F调4/4，打印四分86BPM。整张2000×2829页及所有用到的主歌/连接/副歌/结束句原像素放大均已看。 参考F4降5半音至C4，与来源全147音逐个吻合，不更改任何源音音高。最低低3E3、最高普通6A4。10958桃李另版只作比较线索，不混用；不用原普通数字默认四分时值当歌曲节奏。 来源范围从嘲笑谁恃美扬威，到第二段没了你才算原罪，再接是你吻开笔墨染我、合相遇悲喜为谁、他们迂回误会我却只由你支配、完整首副歌至最好的年岁。不含前奏、括号器乐或后续大反复。 原第5行source69～83由是你至染我直接接合相遇悲喜为谁，印谱中间一整小节眼角珠泪演离在源中完全不存在。明确保留4拍段落跳转，不把其后吻合的2/3/低6/2/3/5/3错误硬配眼角段，也不默补整小节或宣称录音曲式完全相同。 A2与B2低5 .75、低6 .25连低6 1合1.25，接两枚四分休止；A4/B4相配2 .75、3 .25连3 1合1.25，休止1后3/5各.5。A8对字低6 2后两拍休止。B8媚字低6 3后是你低6/1各.5，是低6独立起音，不能因同音就合并。 A5声清脆为2 1.5、3 .5、2 1；B5楼我彩绘为2 1、3 .5、5 .25、2 .25连2 1合1.25，分别遵循第一遍与第二遍印谱，不误套括号内第三遍歌词的变奏。 A6/B6/P6段尾低6 .25跨节连低6 1，共1.25；随后2 .5、3 .25、低6 .25连低6 1合1.25、低5 1。行灯火/行过山与/只由你支等3 .25连3 1合1.25，保留所有前后不同音起音。 P1/P3/P5短3 .25同音连3 .5合.75，分别处理开、相、喜、回字；谁3两拍后休止1再低6/1拾音。完美低6两拍后0 .5、兰花指3/5/3各.5进入副歌。 似水选版1 .5→低6 .5跨小节连低6 .5→3 1.5；原source111为1、source112为3，明确补中间低6的一拍持音。外层1→低6弧是异音连奏，内层低6跨小节弧才是同音延音，不并成1或把水字3压成.75。 歌吹普通6 .5跨节连6 .5合1，后3 1.5；普通6没有低点，不误配成低6。久悲不成悲十分类列6/5/3/5各.5、2一拍、3/2各.5。灰低6一拍、愿低6 .5仍分开起音。 结尾年字低5 .5跨第一结束小节低5 .5合1拍；岁低6 .5连低6 2合2.5。第一结束小节最后括号低3/低3器乐拾音原稿没有，停止在岁持音结束处，该末小节范围3拍，不补器乐凑整。 全曲式A八小节32拍+B八小节32拍+来源保留的7个连接小节28拍+副歌七整小节28拍及首结束句3拍，共123拍；全部147原音逐一保留，补低6一音和12个印谱休止，输出148音12休止160事件，86BPM共85.813953488秒。 Root完整视读318349全来源段落，另录160输出事件全部音高/起点/拍值相符；147原音独立解码与逐项映射完整，0原音音高改变。原跳段、似水补低6和末年岁连线均确认；正式软件审计另绑定，未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "2ed55fe9b55b01d4eeecd980bfa790d1ad1475ccef23ea09baa8c924ac59527d"
+  },
+  "note_count": 148,
+  "event_count": 160,
+  "duration_seconds": 85.81395348837209,
+  "limits": [
+    "Source jumps one printed4beat bar; preserved and explicitly disclosed.",
+    "Added one printed low6 ornament/held tone inside existing 似水 phrase; no other printed sections added.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-103-qiansixi-complete-source.review.json",
+      "sha256": "dac7f66130878d13452325bd7b6b5130fc8181ac1becc18bb9859cbd109fa582"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c3029c91d827b037f74bd14075a6cea02d4cc81a1ba1166d13a077cf1655240c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3386bd689b0317796c93739709051b39ac86995fde376c22cec5a97487592594"
+    },
+    {
+      "name": "0001-a503d081228b.json",
+      "sha256": "0cf296eac2c8556a3b9776c514c6f9673d62f8a5922179b03fa3602b9eee3b31"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

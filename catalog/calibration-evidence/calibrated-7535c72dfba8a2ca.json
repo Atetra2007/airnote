@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-7535c72dfba8a2ca",
+  "source_id": "community-7ed3986df7b2bc43",
+  "work_id": "work-b22ed4e45f9c",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%B5%B7%E9%A3%8E%E4%BA%86-%E4%B9%B0%E8%BE%A3%E6%A4%92%E4%B9%9F%E7%94%A8%E5%88%B8-%E6%A7%91%E6%A7%91%E6%A7%91-5a742bcca665ae60f93f7.deltamusic",
+  "status": "reviewed",
+  "sha256": "e1ceacd0405cd131b04ff2b95c69d236b185ddd616b5afbc6f2fd55e9764c37e",
+  "source_sha256": "16356ff9fb7929ef107f5d9e9ec4e0bbd12a419b7179825890da0317fd3d6953",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/337394.html",
+    "edition": "F#调4/4声乐与器乐前奏，打印80BPM；来源曲式及器乐高八度保留",
+    "score_sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 587,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部602源音1203原事件；两遍主歌与过渡、四遍副歌范围、30音间奏与49音器乐尾奏全部逐项处置。 完整community原602音、601间隔，共1203事件全部按原顺序处置；不以转换TXT替代原deltamusic核验。原hash16356ff9...、完整jianpu及每事件拍值均保留。 来源曲式为V/P主歌及过渡128音—第一完整副歌73音—前奏动机三小节及2/#1尾句30音—另一V/P128音—副歌前半61音—再副歌前半62音—最后完整副歌71音—前奏动机五小节49音。保留全部这些段落和重复，不截到声乐副歌或丢器乐尾奏。 唯一主参考337394声乐谱（含打印器乐前奏），F#调4/4、80BPM。主歌/过渡/副歌使用参考F#4主音降13半音至F3；器乐动机保留来源高八度音区，参考主音降1半音至F4；间奏末2/#1又按源降至F3音区。原metadata的1=C并非可靠移调指令，按字面音高解码，不能再额外按C移一次。 全部选版后587音43休止630事件，296.5拍，80BPM共222.375秒，范围C3至D5。原约307.991667拍以来源抄写时值保存，但选版印谱重建不要求同总时长。 两遍主歌/过渡各60拍；首副歌完整第一结尾40拍；间奏16拍；两次中间副歌各30拍另保留原1拍音乐静默；最后完整第一结尾40拍；五小节器乐动机末尾印谱静默不在末音范围内，保留18.5拍。总60+40+16+60+31+31+40+18.5=296.5拍。 15个来源音明确省略：两遍V1/V3/V5末3之后额外2共6个；两遍V7休止处低5共2个；前3遍C2/C3边界额外高2共3个；4遍C4的高4邻音共4个。它们是选337394的编配差异，不能虚称原装饰已被证实错误。 6组来源同音合并：两遍P3遍字两个3各一组；两遍P6及防高3各一组；首副歌C9风字两次高2合并；第三遍副歌C5第二长高5拆成.25/.5的一组。全部原音仍有输出映射，不抹去原起音记录。 6个印谱起音恢复：每遍副歌C7去字短6共4个；首尾完整副歌C9雨前短6各1个。打印6到高1异音弧必须保留短6、高1独立音，后续打字另高1不与雨字合并。 14处明确音高修正：4遍C5最后的高3改高2（源171/402/464/524）；最终逆字与行走后连音的两枚高6降八度至6（源542/546）；器乐I1的源低5改打印低3共5处，I2的源低5改打印低2共3处。音高变化完整保留原值。 器乐I1打印低7/1/2/3各.25、低3 .5、高5 .25、3 .25连3 .5；原低5并非该低3。I2打印低2 .5，不是源低5。按清晰八度下点读谱，不能由音名顺序猜音区。最后五小节按I1/I2/I1/I2/I1来源次序，末I1在最后3声音结束，未加尾部1.5拍休止。 601来源间隔各单独记录：.008333拍为原按键放开间隙，不是601个乐谱休止；较长间隔的真实静默部分分别映射到所选版休止或明确由印谱连续时序替代。两处反复副歌之间的一拍原音乐静默保留，并标注来自来源曲式而非声称印谱如此反复。 Root完整独立复核所有630输出事件、602原音与601原间隔，全部音高/拍值/起点一致，正式软件审计另绑定；未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "9946185fc90c3392cf7316988b51b81ac64ff27315ee675a84272bda410e25b6"
+  },
+  "note_count": 587,
+  "event_count": 630,
+  "duration_seconds": 222.375,
+  "limits": [
+    "Selected-edition timing and ornament differences fully explicit; source original remains unchanged.",
+    "Every original note and gap dispositioned; no scope truncation.",
+    "Two one-beat repeated-chorus joins follow original source form, not a printed form claim.",
+    "No human listening or actual-game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-7ed3986df7b2bc43-wind-complete-source.review.json",
+      "sha256": "2d4e646014c35d7013eab0c3d8bc19aa7615034d81d2d87fe8f48e0fc0e0af18"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "34f3706807106478f9cf18dac740a8f692647ed5988e17f02610f18f7e87cf2d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1cf62c3c41622ebd6e8c700e259062042b0220285b5b09b80ea7a7c6fee64ca0"
+    },
+    {
+      "name": "0001-7e7e1e4e128e.json",
+      "sha256": "64dab97463e30edca92094f878a1d3410c3cacf83d0425a277b5c3ddd47fc636"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-689da808d1081e89",
+  "source_id": "deck-0708f4607bc2",
+  "work_id": "work-deck-0708f4607bc2",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%9B%BD%E9%99%85%E6%AD%8C-%E4%BD%9A%E5%90%8D-Jiko-f0814657db.deltamusic",
+  "status": "reviewed",
+  "sha256": "d16860c80b2c1f6db86d9b6533ca7ee34dce113307a7868ed75b33462770471a",
+  "source_sha256": "e35a1cc96da661d289c7a4627d98ce7e8cc4e1521299e62789a63eb3cc6be6cd",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/311162.html",
+    "edition": "词曲网降B声乐简谱4/4；转C并保留来源末副歌升八度；98BPM明确编配选择",
+    "score_sha256": "d6f3cac990a45f339b6200beed39487db6a4e2c01c6d0d344e53d3718be98130"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 238,
+    "maximum_parser_boundary_error_seconds": 2.2737367544323206e-13
+  },
+  "review_note": "全部254源音495事件，两遍完整声乐结构；装饰/经过/重复/八度差异按所选公开声乐版明确重配。 完整254源音495事件为两遍127音相同音序，逐项处置；每遍按公开声乐谱弱起1拍、31个4拍小节及末3拍，共128拍，两遍256拍。 选择词曲网公开降B声乐谱311162，转为C调；前段再降八度，保留原来源在每遍末次副歌拾音（参考24小节末一拍）升八度的结构。范围E3–G5。 速度98BPM沿用原编配，为本次明确选择；参考只标中板庄严雄伟，无数字BPM。 选版差异逐条公开，不把钢琴化原谱全部差异判为作者错误：每遍源9经过音改参考休止，源27的4改6；源34/36并为同音延长并将源35上方3放在休止后；源38/39同音合并。 每遍源53/54/55的7及下方两个经过音改为所选声乐版7延长与休止；源59、61高八度的5/#4降八度，源63/64跨八度重复3选上方3二分。 每遍源88/89及114/115的重复3、5分别改为印谱二分音；源120缩至一拍并恢复其后八分休止，保留源121独立4；源123的1、源125的7分别采用印谱3、2。 印谱8、12、16、20、24小节同音弧线为延音；不同音弧线作连奏，不能合并。印谱28的两个3无延音线，保留两个独立起音。 所有源短门限休止随其前音完整处置，公开谱中9个八分休止每遍按读谱补回；最终238音18休止256事件。每遍末主音按印谱3拍，第二遍源截短2.847917拍已明确补足。 此为完整原来源范围对应的公开声乐版重配，原编配保持不动；含明确版本选择，不声称与原钢琴/MIDI作者所有装饰音相同。 独立第二读者重新打开原始完整谱页及原像素裁图，按小节复核音高、时值、休止与延音，数值与root候选全序列一致。所有来源现有内容均处置，编配选择仍明确保留；未进行真人试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "d6f3cac990a45f339b6200beed39487db6a4e2c01c6d0d344e53d3718be98130"
+  },
+  "note_count": 238,
+  "event_count": 256,
+  "duration_seconds": 156.73469387755102,
+  "limits": [
+    "Explicit vocal edition rearrangement, not proof source piano ornaments were erroneous.",
+    "98BPM and octave projection are arrangement decisions, not printed in reference.",
+    "No human listening or real game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-0708f4607bc2-vocal-rearranged.review.json",
+      "sha256": "fcc5ba8359daae305dc2571a53eabe91f26c1172a1431d71225af8acbc9a540a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "1cc7921ec490b64720ed59ea45318eabca92c8d0adcda9e5f33c2103e0223430"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b69ea8adfeb788823dd46173ec04cb1abd0fd769e7339fce9c1c03c4caba2493"
+    },
+    {
+      "name": "0001-609dcdb24057.json",
+      "sha256": "141fd401d3f3dcd6c6678e66e0413022eb126f793332742251442622ba46906f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-829dab11bb1ab6b0",
+  "source_id": "deck-298bb92d5131",
+  "work_id": "work-deck-298bb92d5131",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%BC%A0%E9%BC%A0%E7%9A%84%E5%B0%8F%E6%9B%B2GHUB-11116-leifeng-ffb7708050.deltamusic",
+  "status": "reviewed",
+  "sha256": "4dd518e3dd9d27ae1837d85baf57713d2238e6ff81f32f72416b0618be74ea4e",
+  "source_sha256": "0cb5b1cf596c681de5ca59b6de07a3f89faed641e1cd502e80fe3ffd8be1fd37",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=eo4Ud95BdiI",
+    "edition": "Selectedvideo1..4 complete22attacktheme, repeat1, reference shift-7, editorial4/4 and measured180BPM",
+    "score_sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 22,
+    "maximum_parser_boundary_error_seconds": 8.881784197001252e-16
+  },
+  "review_note": "Selectedvideo1..4 complete22attacktheme, repeat1, reference shift-7, editorial4/4 and measured180BPM 完整原源按新鲜字节解码并保存原对象，每音原literal、音高、原精确时值或null均保留，未仅按同名来源复制。 参考co piano公开视频eo4Ud95BdiI的bar1..4白键完整22攻击主题；实际view键轴和所有四栏。编辑选择4/4和视频已测180，非声称独立打印速度。 完整原1轮主题均以明确选择的第一四栏主题编配；后视频bar7拆C5、bar9上C6变奏、bar12连C5均已实际查看且不选入本候选。deck只取第一四栏，不扩原一轮来源。 每轮source4单E类攻击显式拆成参考E5八分+四分两个攻击；source17原D类改选参考E类，逐音明确版本差异，其余原音保持。reference shift=-7，仅1个音高变化，不全曲误移八度。 每轮恢复bar2/4末各quarter1休止，unknown原时值不作为打印节奏证据，源300BPM/1-2与28拍仅作为原元数据保存；输出180/4-4来自明确参考选版。 固定原work_id不合并；仅候选待root独立音乐二读和正式审计接账。无音频、GUI、GPU、游戏输入、构建、提交、发布。 Root已实际看focus00/01/02/04/05四栏完整参考与C4/C5/C6键轴，复用独立手录/另一键面逐帧观测的首22攻击旁证，24事件音高/时值逐项核验。 本来源另从原始字节解码21音和全部26raw tokens，原300BPM/28拍或无时值字段均保留，不把旧同名来源视为本源验收。 明确接受第一四栏主题重复1次的选版；每原21音单元source4拆两起音、source17升2半音，全部原音无省略。014第三轮不声称等于视频第三轮。 180BPM为四拍栏视频测量的明确记谱选择，非印刷速度；无人声试听、原录音对齐或实机游戏。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "note_count": 22,
+  "event_count": 24,
+  "duration_seconds": 5.333333333333333,
+  "limits": [
+    "Repeated selected4bar motif, not later video variations",
+    "No listening/game evidence",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-298bb92d5131-shark-theme-v1.review.json",
+      "sha256": "169bdc06839d8ff2e3b3e71def75c8fd9d2171fdf63c0a5651d1fb61d8c55344"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "07931f50de96695a33858361ae6430e9479e5df8503bca1017fab4e36f5baea9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4b8c9ce53b1b821f0916f0ef8dfe0b6c4aa86f207f44a818cc5843f1ff307eee"
+    },
+    {
+      "name": "0001-3ee602e331ff.json",
+      "sha256": "7504f2c3a6fdbcbc8854fca30f7ddd8ff58ede8d51af63aa069c2f5edb391ffd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

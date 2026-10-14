@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-6573bfa88ee5467d",
+  "source_id": "zhouzhou-108",
+  "work_id": "work-dcf76f1cfcdf",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d1c8a6f4e000bf9c7115f9ea133a94e669b8a3bae1808280e074ba371ec4d3de",
+  "source_sha256": "138c78e5bfeccf02bf66997f0c28f72b5bb5740e74c847a223048773390cdb43",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/387910.html",
+    "edition": "格格生日祝福歌，桃李醉春风记谱2023-01(9548)，E转C，主副歌印120BPM；首副歌原稿全段",
+    "score_sha256": "406b8cbaab3c4a05ff8befb60747dfe097b9cedbe894991d2c42ac7988968dac"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 37,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "35源音全部逐项匹配，首段副歌到精彩；恢复两个重复6和7个八分休止，37音31.5拍。 核实原35音是格格生日祝福歌首段副歌，从对所有的烦恼说bye bye至每一天都精彩，并非生日快乐传统童谣；采用桃李醉春风记谱387910。 谱面1=E，开头童谣96BPM，主歌/副歌在明确120BPM段。本版取120BPM、4/4，明确移至C调，全部35源音原音高保留。 所选完整原稿为半拍对弱起、7个完整4拍小节及末精彩高2三拍，共31.5拍、15.75秒；结束不加入下一句弱起5或间奏。 在快乐的乐及生日快乐的乐各补一个独立6四分起音；印谱高1与6的八分音为不同音连奏线，后续同音6四分没有延音线，不能吞掉。输出37音。 恢复bye bye、hi hi及生日两字之间共7个八分休止。亲爱的等附点八分加十六分均读为.75/.25；来源没有可靠时值，本次从原谱逐项读取。 原标题和原来源保留；片段复核不代表整首格格录音或其他翻唱的听感与真实游戏验证。 独立第二读者重新打开原始完整谱页及原像素裁图，按小节复核音高、时值、休止与延音，数值与root候选全序列一致。所有来源现有内容均处置，编配选择仍明确保留；未进行真人试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "406b8cbaab3c4a05ff8befb60747dfe097b9cedbe894991d2c42ac7988968dac"
+  },
+  "note_count": 37,
+  "event_count": 44,
+  "duration_seconds": 15.75,
+  "limits": [
+    "Complete existing firstchorusexcerpt only; not entire song.",
+    "Printed Emajor transposedC; original recording not aligned.",
+    "No human listening or real game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-108-vocal-sheet.review.json",
+      "sha256": "f050e88aa0229e36ffcc3a411ea7824673d183a5145010e860711a481026dc33"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c54a4f25325b9acd6358db863c1e232d8cac6cc7233931ad170f96918c7639f6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b69ea8adfeb788823dd46173ec04cb1abd0fd769e7339fce9c1c03c4caba2493"
+    },
+    {
+      "name": "0002-1bf73495d46d.json",
+      "sha256": "da48dd051593a65b281df12efb982a02697348bf79d626eb78a4c187a7544aa6"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

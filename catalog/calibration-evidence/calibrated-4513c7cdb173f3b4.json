@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4513c7cdb173f3b4",
+  "source_id": "social-2b56385b58f4a75f",
+  "work_id": "work-f0c5b459b81a",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=vNnxO8VlD6Jo",
+  "status": "reviewed",
+  "sha256": "9c4a9554cd6b09edf54ba0d02868c43349621e37bd4c72012931ca4e4bff4575",
+  "source_sha256": "fe91f2f26ea0d722ed6db7f295be4ac4e37fa455ef826a8f1bd1cfaf2dd57c22",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/396459.html",
+    "edition": "粤语大众版本 Emajor72BPM;two verses and five choruses per original source;global-4semitones",
+    "score_sha256": "f071dc40a781eec8e7eceabe151be4860d5241358b4eb4e7113c35ec0abc1b14"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 410,
+    "maximum_parser_boundary_error_seconds": 2.5579538487363607e-13
+  },
+  "review_note": "complete-original-source-form;all387notes774on-off-events36silence-intervals-disposed Entire original MIDI retained in source order: two12bar verses, five8bar choruses; all387note attacks,774note-on/off messages,36silence intervals are individually disposed. Complete396459 image read numerically before source pitches/timing were decoded. Printed Emajor transposed globally-4semitones to original extracted MIDI Cmajor. Printed72BPM used, replacing original75BPM metadata; no original-recording tempo measurement claimed. Preserve source silent bars0-8,29-31,52-62,71-73,82-84. Leading37beats of silence and all long instrumental gaps remain audible silence; absent instrumental/intro melody is not invented. Printed C8 has two final rest beats; they are retained between existing sections. Final source ends at bar92beat2, so no trailing2beat silence is appended. All source starts and section bar positions stay at the same beat coordinates. Restore printed verse notes, including two missingF4sixteenths per verse, C4half atV3 and the last shortG4triplet note atV10. PrintedV4/V8 tied ornament first3 has no new attack. At each chorus restore omittedB4/A4short notes inC2/C6, D4short triplet inC4, and separately attackedG4inC7. Merge the C2finalA4/C3initialA4 source rearticulation into the printed tie. Explicitly omit only two surplus source attacks per chorus: C5lastC5where printedE5continues, C6lastA4where printedB4continues. The following C6C5 and C7A4 attacks remain. Verse pitch corrections and each C1finalC5-to-D5 change are individually listed. One-to-one pitch mappings are not substituted for source-event accounting. No human listening or original-audio alignment, no real-game test. 10ms practice release gap; exact triplets remain rational in reference/timeline and decimal in text export. Root复读完整396459粤语大众版，另录20个所用人声小节绝对MIDI/时值，展开两遍主歌和五遍副歌493事件全部吻合，明确非盲。 原MIDI387音、774开关事件、36静默段重新解码核验，38补音、10省略、5同音连音合并、23音高调整均逐项有据。 V4/V8三连音第一3延续前音，C2末6跨入C3，C7两5重新发音；所有印谱三连音按有理数处理。 保留37拍开头静默及全部长段间静默；末音368拍起持续2拍，未补原来源没有的器乐段。印谱E调72BPM整体-4至C。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f071dc40a781eec8e7eceabe151be4860d5241358b4eb4e7113c35ec0abc1b14"
+  },
+  "note_count": 410,
+  "event_count": 493,
+  "duration_seconds": 308.3333333333334,
+  "limits": [
+    "Original long leading/inter-section silence preserved; this version remains the complete existing vocal-only source.",
+    "Printed introductory/instrumental material absent from original MIDI is not appended. Small first-ending instrumental cue is excluded because source has silence there.",
+    "No original-recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-2b56385b58f4a75f-glory-reference-v1.review.json",
+      "sha256": "9fb1193186a19432be95c0cb4ef93f9df89f67f8f63cc2b456cbb75ea602e13d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0757e04fc6e6dff73cf11052f2e9fde5a169ac8a2b390bb431ec5bf54adf17b8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "97dafe0d78d28a74a5894529fa2132c2f5bb3490e3babad43eefce96cf8f7659"
+    },
+    {
+      "name": "0001-fdbf63125615.json",
+      "sha256": "f3330f2b7466c273058254d2075f9e6345846ec042282ded20f6c84de865901a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

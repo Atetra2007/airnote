@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-48943d9ae6bd10c5",
+  "source_id": "piano-360d9bd6d53b08bf",
+  "work_id": "work-8f94ff8e4060",
+  "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2.eop",
+  "status": "reviewed",
+  "sha256": "0283732ab51d6d041479c4a38bff7460b706ace6773362bc57c8c3585a9d76bb",
+  "source_sha256": "82b426cf6db81ebce0c63d8932d43ca19368a2ab2679c83e8bcfeaffc63749a8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-1487.html",
+    "edition": "EveryonePiano1487 44bars100BPM; explicit monophonic reduction",
+    "score_sha256": "7f920b2ff8d000c9c917a9bb7dd40d8e21915b8389ae9b64cef54941b4b8fca8"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 209,
+    "maximum_parser_boundary_error_seconds": 1.9895196601282805e-13
+  },
+  "review_note": "complete-44-bar-piano-source;all-original-attacks-and-on-off-events-explicitly-disposed Complete 44-bar selected piano edition: intro, verses, choruses, instrumental transitions and outro retained. No vocal-only template or source truncation. Printed 100 BPM is authority for this edition; MIDI91/EOP88 metadata is not treated as original-performance evidence. Every one of 731 source notes and 1462 raw on/off events is individually disposed, including accompaniment, inner chords and ornaments; every all-voice silent interval is listed. Every output note selects an actual source pitch before explicit register adaptation. No added attacks, pitch-class repairs or merged separate source attacks. Printed ties extend one selected attack across all reference segments. Full score opening 3.5beat rest retained; only explicit EOP file offset removed: 43/30 beats under original header tempo. Source MIDI has no extra offset. Source short note gates and performance/arpeggiation timing are replaced by the selected written voice rhythm. All onset and duration deltas are recorded individually. Printed top melodic voice for bars1-41, with m8 descending lower-register instrumental fill; m42-44 sole active left-hand outro. Select one chord tone only; these are intentional arrangement reductions. After source alignment, magnified original page3 row2 again: two upper octave dots in m39 and m41 were missed by first full-page view. m40 beat0.75 highest printed E6, not C6 inner chord tone. Corrected from original image; source corroborates these notes. v1 retained. All other 44-bar reading values retained. m10/m18 final three small regular-size written triplet notes have three duration beams: each 1/12 beat. These are not small grace notes and are retained at the printed rhythm; source EOP/MIDI placements differ. m16 small G5 grace omitted while regular A5 principal note retained. Lower chord tones and left-hand accompaniment omitted whenever selected right-hand melody/printed right-hand rest is active. m35 internal lower-chord voice sixteenth rests do not interrupt top-voice ties. No rhythmic simplification of printed m10/m18 triplets; source timing is corrected to the actual printed triplet grid. Use10ms practice release gap; human_listening not-performed; real_game not-tested. 1487 m10/m18: three actual duration beams under regular notes, hence each triplet is1/12 quarter beat; source numbers do not establish printed duration. 1487 m39/41 two upper dots and m40 second chord upperE6 confirmed from enlarged page3. m35 inner-voice interruptions do not break upper tie. 1487 entire m42-44 left-hand outro selected; lowest printedG#2 raised toG#3. Last D4 tie lasts6.5 beats and becomesD5. 14714 m42 triplet group has two beams, each1/6 beat; m80 two D5 attacks remain distinct. m95 first half beat continues priorC5, then a newC5 3.5beats. 14714 m102 last left-hand octave topC3 sustained4beats, not clipped with right-hand rests. Earlier candidate performance/arpeggiation language is treated only as numeric source onset/gate variation; no human performance or recording alignment established. Root逐页核对完整八页、146小节，明确非盲复核；直接绝对音高重点数组另外保存。全部原始音、on/off、全声部静音区间及所有输出事件重新验算。 两份早期版完整44小节采用印刷100BPM与分段八度适配；完整版102小节采用印刷88BPM、无需移调。所有伴奏/下方和弦音/小倚音省略逐项透明保存，不称原谱错误。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7f920b2ff8d000c9c917a9bb7dd40d8e21915b8389ae9b64cef54941b4b8fca8"
+  },
+  "note_count": 209,
+  "event_count": 225,
+  "duration_seconds": 105.6,
+  "limits": [
+    "Nonblind source exposure disclosed; early v2 corrected three visual octave/chord-selection errors after alignment.",
+    "Monophonic arrangement deliberately removes accompaniment/inner chords/small graces.",
+    "No human listening, original recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-piano-360d9bd6d53b08bf-red-reference-v1.review.json",
+      "sha256": "c9f25107f7aa43df3bb003dd56129184ce8fad829f0698d0ae5e4014ec0e1727"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "9f836a3660dafeb2f7ddb4124521d40db4382003e83c53e5a29aa7eed3e46967"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "69e925a936644aee0f845df699512d5b25e7b55428fae15242b68c07a53ba5af"
+    },
+    {
+      "name": "0002-66093b55edd7.json",
+      "sha256": "f7226a5da1d6bf23578e8489a2d956e41d07be4cf0f92a9c85c90e072faca7ee"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

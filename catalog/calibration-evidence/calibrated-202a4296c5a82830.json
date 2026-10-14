@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-202a4296c5a82830",
+  "source_id": "piano-63c7ac471906a5cb",
+  "work_id": "work-8dbd5b30d5e7",
+  "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F/%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F%20-%20%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F.eop",
+  "status": "reviewed",
+  "sha256": "ae53153f5aec91bc8a291fa288b27c198fbb22b42f0cd534171a41836cfe9af0",
+  "source_sha256": "39a7e2d2500d1a38f4a17f166b758beda4ee15eaa453a8a3edd125cc94207ab4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/gangqinpu/41378.html",
+    "edition": "EveryonePiano C-major 26-bar piano melody, complete two repetitions",
+    "score_sha256": "00f4f2c292f6f660f20099997df3a0e2e091e2c7bd65a35d5a818ea4a0759af5"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 330,
+    "maximum_parser_boundary_error_seconds": 6.252776074688882e-13
+  },
+  "review_note": "complete-existing-52-bar-EOP-melody;all-accompaniment-and-loader-silence-explicitly-accounted All 652 EOP note pairs and all 1304 note-on/off events plus 370 union-of-voices silent intervals are independently decoded and accounted. All 26 printed melody bars are played twice, exactly matching the EOP repeat extent and end-repeat sign. No phrase or ending is truncated. Every output melody pitch and onset has exactly one original EOP match; other original pairs are individually listed as omitted piano accompaniment, including low out-of-game-range bass and chord tones. Original two-second loader lead-in is explicitly removed. Original source timestamp and gate duration remain in the comparison. Musical repeat structure starts at first note. Staccato dots are articulation, not augmentation. Restore nominal quarter/eighth/sixteenth lengths and real rests, using 10 ms note release gap as deliberate harmonica practice articulation; no claim to reproduce piano staccato gate envelopes. Full 52 bars, including every repeat and final C5 quarter note, remain. m8 C6 MIDI84 stays at printed pitch. Root逐图复读两页并另录26小节绝对MIDI/时值，完整双遍354事件全部与候选相同；root已见代理脚本，诚实标为非盲二读。 原EOP以已审查格式解码器重新解码652音/1304on-off/370静默，并按原位音高起点另逐项查全部330输出音；322伴奏音完整列省略。此处复用了既有二进制解析器，不冒称另一套独立解析器。 m8 C6不折叠，m10的E5到E4、m14的C4半音符均从五线谱核对；双遍52小节208拍、末C5一拍保留。 采用印刷110BPM和名义谱值，顿音点只作演奏法，标准10ms释放为明确练习选择。源头2秒准备空白明确移出音乐主体，未假称源里不存在。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "00f4f2c292f6f660f20099997df3a0e2e091e2c7bd65a35d5a818ea4a0759af5"
+  },
+  "note_count": 330,
+  "event_count": 354,
+  "duration_seconds": 113.45454545454545,
+  "limits": [
+    "No human listening, original-recording alignment or real-game test.",
+    "Nominal written-note duration with 10 ms output release gap is an explicit practice articulation choice.",
+    "Original source content was seen before numeric reference transcription; no blind-review claim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-piano-63c7ac471906a5cb-xiaotiaowa-reference-v1.review.json",
+      "sha256": "75d41bc44cbf00a6ce10b88d9a4148d4bb2c2c0067f1cf8e3e3fe3309dcd7949"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c67f95b1bf1f2a7fcc8d67772640019d83708999c6014f25733578ae8162acc8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "9e53b8393dc5acb08de96314466bdab436f7f935d3dd322efabc329442c66da6"
+    },
+    {
+      "name": "0001-63d69f301d69.json",
+      "sha256": "fb71f5ed83d906675ebb3dfe8784f30bc7468ce5887e598bf67595d5958b436e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

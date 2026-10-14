@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-1d8298e90c3d2185",
+  "source_id": "zhouzhou-142",
+  "work_id": "work-8d5c4035d576",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3f30d0cb4f073b4d148713dc1dcc1a5e93b76f4c6e08aae5f17d96daee57ac94",
+  "source_sha256": "53cbf2e81fa5e658a0d80b98a86fac857e5889e860e5f40c299b0a22cecbafed",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/377322.html",
+    "edition": "377322四页G4/4下方主唱简谱；133BPM为另两份公开谱头数字选择，原跳过四0明确各1拍",
+    "score_sha256": "c35ab8fb66d9d6c7fb3006257ca4b9c028a800977b7d10b727c31d136bb44173"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 159,
+    "maximum_parser_boundary_error_seconds": 6.394884621840902e-14
+  },
+  "review_note": "全部18行160原音8原0，从上一秒至第二我亲爱的你呀；原跳过四0明示4拍过门。 原142全部18歌词行160音8个0共168事件逐项解码；8/16/d/b字段和原歌词原样保留，不把横杠b误作降号或把第三项8误作八度。 主旋律选377322四页吉他谱中独立的下方主唱简谱，四页均已看；本来源范围完全在第1/2页。450809/277210均为不全预览，不作全范围主证据。吉他扫弦谱不作为声部音高。 377322打印1=G4/4、未印数值速度。133BPM独立取自公开qinhun102120乐厨堂团谱和72617初级鼓谱，两张预览头部都明确四分133，作为选定演奏速度；不伪称主377322本身印有133，不声称与录音逐秒对齐。 按主参考G4数字字面整体降14半音（印普通1→F3），得到原稿的主体音区：印高2/高3/普通7→G4/A4/E4，副歌印高5/高#4/高2→C5/B4/G4。全局一致，不用吉他和弦名再给数字谱重复移调。 原source31、35、69、73四处世界/另一个首音普通3E4，所选谱相应数字6均映射普通2D4；改此四音，其余156源音音高保持。源歌词世界上的与另一个我均完整保留，不因重复删段。 V1台北、V5我、V9柏林、V11曼谷、V13我等末普通7 .5连7 1合1.5；看烟火、mjt、落大雨、天气晴等高3 .5同音连高3 .5合1。感受/感觉第二高2 .5连高2 .5合1。 唯一并原起音：source16/17海/喝两枚E4在所选377322对应同音7 .5接7 1并有弧，按该印谱输出一枚1.5拍持音，两条源映射都保留；原海/喝两个字下分起音可能是另一编配选择，不把源作者判为错误。独立复核重点可看377322-v2-v5.png。 四处原0位于世界上的/另一个我持音后的换气，按主谱各.5拍映射。其他主歌半拍休止按谱补齐；我字二拍，不把对象b=1当整句定时依据。 人生到处是假正经完整保留：人生到三个八分、处1.5、是.5连2=2.5、假#4 1.5、正7 .5连1=1.5、0 .5、经5 .5。source82低7B3正是参考#4整体移调结果。 原下一行明确写。跳过。并含四个0。保留这四个事件，明确各安排1拍形成4拍自选过门，随后直接接印谱谁高3 .5、倾高2 1、听7 1，共2.5拍；不添加其间变幻莫测至天高海阔的原稿缺失乐句，不声称这4拍等于原录音缺省段长。 两轮副歌均完整：岁月…留下、我的世界…时差、啦啦啦啦、我亲爱的你呀，再岁月…孵化、我的心事…解码及同尾句。岁月/我的…前小节六个八分加末四分；次小节高#4四分、5/6/7/6四个八分、末5四分，数值不按原数组默认时值拼凑。 啦段高7两拍、高7 .5、高5 .5连高5 1合1.5；下一小节高6 1.5、高6 .5、高6 1、高#4 .5、高2 .5，各独立词起音仍保留。你呀普通7 .5、高5 .5；第一轮呀后所选谱三拍休止及下一空小节4拍共7拍保留。第二轮末呀.5结束，不加原范围之外的尾随休止或大反复。 137拍：1.5拍初拾音+主歌16小节64拍+人生句8拍+明确跳过4拍+谁倾听2.5拍+首副歌32拍（含7拍内部静音）+第二副歌25拍。160源音全保留映射，1个选版起音并组，输出159音22休止181事件，133BPM共61.804511278秒。 Root完整视读四页中本来源的全部主唱范围，另录181事件全部音高、起点、拍值相符；独立解码160音8休止逐项映射通过。明确选版并音、跳过四拍及另谱133速度；正式软件检验单独绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c35ab8fb66d9d6c7fb3006257ca4b9c028a800977b7d10b727c31d136bb44173"
+  },
+  "note_count": 159,
+  "event_count": 181,
+  "duration_seconds": 61.80451127819549,
+  "limits": [
+    "Main melody edition has no numeric tempo;133 is selected from separately published headers.",
+    "Original skip placeholders explicitly assigned4beat transition; omitted lyric section not restored.",
+    "Source16/17 repeated attacks consolidated according to selected printed same-pitch arc; original lyrical articulation may differ.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-142-world-complete-source.review.json",
+      "sha256": "85c2b5a8f4c77bec7b4585cb5a6af67ff949481668aa2714e2e5a35e4505e5cd"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "585c8ffe21d5aa855b98900076813ab341fc376abe1a3f3ef86856d2785f1780"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3e2984916e709e012dcf3c97f393bcb0bd785d58bc517a3bd1e9056e578b8ad2"
+    },
+    {
+      "name": "0001-30a92d57f338.json",
+      "sha256": "f3275ffdd4014f0b40aea947e6a47996739f091cf5334f09812a5099bdb49d1f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

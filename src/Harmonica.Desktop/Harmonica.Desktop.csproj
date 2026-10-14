@@ -8,8 +8,8 @@
     <AssemblyName>HarmonicaDesk</AssemblyName>
     <Product>口琴小曲库</Product>
     <RootNamespace>Harmonica.Desktop</RootNamespace>
-    <Version>0.4.1-preview.1</Version>
-    <FileVersion>0.4.1.0</FileVersion>
+    <Version>0.4.2</Version>
+    <FileVersion>0.4.2.0</FileVersion>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\App.ico</ApplicationIcon>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>

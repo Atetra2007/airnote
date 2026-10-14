@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-ef19a8380d5e7d2b",
+  "source_id": "community-f52e62d0a295c38e",
+  "work_id": "work-ebae18240f14",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-Klaus-Badelt-mouse1-a372b76f25059c60ee512.deltamusic",
+  "status": "reviewed",
+  "sha256": "71904f771794d610be21caaf19e61d5a9b48671464c3dbb49eedf9be3e8b355b",
+  "source_sha256": "f01468bdd19a7d8cd0a524a6f8b233dfa9d5df0dd34488fd9c0d500bcf893e63",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/368163.html",
+    "edition": "Lee Dongyeol, complete 86-bar guitar/tab arrangement, quarter=200, 6/8",
+    "score_sha256": "7b261bee793af24c22da08b36398de587202b46d4504ae11ec0ca89f329b956d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 273,
+    "maximum_parser_boundary_error_seconds": 2.2737367544323206e-13
+  },
+  "review_note": "complete-existing-source-arrangement;explicit-crop-and-form-decisions-in-comparison Selected entire 86-bar Lee Dongyeol public guitar arrangement as the musical reference; all pages read before writing numeric reference. Original material was seen earlier and the review is disclosed as nonblind. Standard guitar tab sounding pitches used. Source register changes are retained as explicit +12 semitone adaptations; guitar bass accompaniment is excluded. Straight 6/8 with quarter-note BPM 200 selected from printed score. The original dotted .75/.25 versions and mixed .7-unit section are replaced with consistent written subdivisions. Only actual melody ties merge attacks; m46/m48/m50/m72 keep three quarter-note attacks and m80 keeps two A attacks. Accompaniment-only spans become real rests. Every original note and rest has a disposition; omissions and inserted melody notes are explicitly listed. Reference m19 F-F-F-G restores one missing F and places G on final eighth. Reference m35 is F-F-G in three quarter notes and adds no F. Reference m37 final C-natural replaces source C-sharp. M77 initial D is one beat followed by half-beat melody rest. Reference m86 final chord melody is 3 quarter beats, not 3.75. Reference m22 final natural and m43 Bb3 confirmed by separate detail crops in v2. Reference v3 corrects seven prior worker reading errors after independent root image review and worker detail-image reinspection; old v1/v2 evidence and old candidate v1 remain preserved. Root全86小节逐图复读并另录数值，发现7个小节旧候选误读；代理逐图确认后另存v3参考/v2候选，旧材料保留。Root自身m45多录主音也由清晰裁图纠正为休止，完整resolved数组与v3逐项一致。 m35 F-F-G各一拍；m46/48/50/72保留首中末三次独立四分起音；m77首D一拍加半拍声部休止；m80两次A各一拍，连线只在下方伴奏。 Root另从三份原始delta-music JSON逐token解码，以及社交MIDI逐消息重解，全部来源事件与处置表一致；独立按原段落裁剪、八度选版重建输出期望，每个输出音高/时值/起点/秒数完全一致。 所有标为rest的位置是此版单旋律选择中的伴奏独奏段，不声称吉他原谱整件乐器无声；片段、删节、八度移位和全部省略补入有明确处置。 音乐谱面复核通过；正式软件审计随后执行，没有人工试听或实际游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "7b261bee793af24c22da08b36398de587202b46d4504ae11ec0ca89f329b956d"
+  },
+  "note_count": 273,
+  "event_count": 309,
+  "duration_seconds": 77.4,
+  "limits": [
+    "Published monophonic reduction with explicit source-register and form choices.",
+    "No human listening, recording alignment or real-game test.",
+    "Originals were seen before reference transcription; no blind-review claim.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-f52e62d0a295c38e-pirate-reference-v2.review.json",
+      "sha256": "8067af89a552d75781255e5ae6bc6ef428c2c6db06fd22f6ab385e7e283041a2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6a3019dd83683040cb0cb672c09a15e823c3128bb8f86425ede4af134438c5db"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "65305862190bfb52c2ee8e5489a9b2a7d45a4e4a872ecf67378adad44463a328"
+    },
+    {
+      "name": "0002-109474eb5769.json",
+      "sha256": "eded3cce8bd89b989952f2681dd16810362b065da0682a3e78f4897ee5ca8dcd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

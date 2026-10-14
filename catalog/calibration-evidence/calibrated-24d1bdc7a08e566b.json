@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-24d1bdc7a08e566b",
+  "source_id": "community-d59e54bd9175f1d1",
+  "work_id": "work-e5c64c395b44",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%86%B2%E9%94%8B%E5%8F%B7-%E5%86%B2%E9%94%8B%E5%8F%B7-ZhGr-e9ea74134d.deltamusic",
+  "status": "reviewed",
+  "sha256": "22ca971eba7f1203001cc22bad9ab5256a8af73f58eb37bcae806132003bad32",
+  "source_sha256": "da68d975a6d7a01276fa4aad2ee5d5b6f7a6a38fa911214fa7d3f061a6181282",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.cnjpw.net/tongguan/130111.html",
+    "edition": "HE Longjin16.冲锋号 fiveflats/3/4/quarter145;firstfivebars",
+    "score_sha256": "145201b3bd4c2c63d600f28272319a540e6da554f37663401b30db14d7d0e1c1"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 24,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整24音社区来源；公开军号谱前五小节，24起音15拍，末音跨小节延音。 独立读取该社区源全部24音，原谱四个5/3/1/5/5/5循环完整覆盖；没有用042的25音验收自动覆盖它。 HE Longjin五降号3/4军号谱前五小节，视读实际Ab5/F5/Db5；选择该谱原音区及Db调，来源1=bB元数据与无八度标记的名义C音不保留作本编配绝对音高。 前23音时值与谱面吻合；末5原4.5拍改为3.5拍，等于第4小节末八分加第5小节附点二分的同音连线，不新增起音。 完整范围15拍145BPM=6.206897秒；145来自所选谱，取代原来源130BPM。后续整小节休止及军号段落不属于来源，未补入。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "145201b3bd4c2c63d600f28272319a540e6da554f37663401b30db14d7d0e1c1"
+  },
+  "note_count": 24,
+  "event_count": 24,
+  "duration_seconds": 6.206896551724138,
+  "limits": [
+    "Public HE Longjin webtranscription, not official military master.",
+    "Complete existingsource only, not thewholeprintedbuglepiece.",
+    "Publishedregisterandtempoarechosen; no originalrecording fidelity claim.",
+    "No human listening orreal-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-d59e54bd9175f1d1-sheet.review.json",
+      "sha256": "7288000d1494690fe4f65e75da344b130c541395b93a2fcef42b2130c4a53ce3"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7c4fe7e7e88a7ff1a743a9b9026a1676b664f20b2684b2117c222d6eb12db1f1"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a96d5452fdc9b646fe394192f390e0c106160870ae10848848c65670120d29f8"
+    },
+    {
+      "name": "0001-2a0cf8dab8a6.json",
+      "sha256": "c2b720806e7c3dffba7b46d80f41af04c5cf99283bd58fe43c794bada67bedbe"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

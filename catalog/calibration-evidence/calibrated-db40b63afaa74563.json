@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-db40b63afaa74563",
+  "source_id": "zhouzhou-083",
+  "work_id": "work-deck-e027c923ea04",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "f8e5f74795080daa7e2a4e2751300585a679c0c3413d9cf39c6716e42397fe9d",
+  "source_sha256": "c7611412190d49a62664ca87b5c46ca1f0a2d8a96bff74c49199b229aa56aff0",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=vtec90dflEg",
+    "edition": "Public published score image: joe-frame-30; exact edition bound by its SHA-256.",
+    "score_sha256": "706de8b5d34d947c5355e83ed1835d17d26aa480aefcb4fbed8ad91a32ec7e94"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 41,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "全部41个来源音，对应公开谱首段八小节中的30拍；只到晴天，不含下一段声声。 主谱使用JoeLi视频展示的mingren888.com Eb调4/4简谱；HUEN D调谱整体升半音后用作相对旋律交叉对照。两谱可能同源，不声称两个独立原版总谱。 保留源11/13/14/16的第四级Ab；原录音已/我含不同唱法，本版明确为公开谱例编配。 源31–40按公开谱2,1,2,2,1,2,3,2,1,5重建，修正源31/32/33/35/36；所有41个来源音各映射一次。 暖与过各合并谱面连音为2拍单次起音；明的2→3保留两个音，不沿用旧音频稿合并。 第3小节乐采用Eb主谱的一拍，D辅谱为0.75拍加0.25拍休止，差异明示。 76 BPM取HUEN公开谱的明确速度作为本编配选择，不声称等于官方录音BPM。 Root逐小节核对主谱第三行四小节和第四行至晴天：暖/过为0.5+1.5拍同音连线；终与明为异音连奏不可合成单音；天为2拍，后休止和声声不属于来源范围。 输出选择Eb3为中音1，使该段处于F3–D4可用音区；相对原C调来源是下移9半音，等价于升3半音后降八度。这是明确音区选择，并非声称纸谱指定演唱基频。 本次以公开记谱校对音高/节奏，保留未完成的录音草案供追溯，不把该谱认证成官方演唱逐瞬间转写。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "706de8b5d34d947c5355e83ed1835d17d26aa480aefcb4fbed8ad91a32ec7e94"
+  },
+  "note_count": 41,
+  "event_count": 41,
+  "duration_seconds": 23.68421052631579,
+  "limits": [
+    "Published web arrangements are secondary sources, not composer or publisher masters.",
+    "Tempo76 and lower register are explicit arrangement choices. The41-note existing-source excerpt is fully covered, not the full song.",
+    "No human listening or actual game test performed.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-083-sheet.review.json",
+      "sha256": "248d0728b1a44bc17dd2229c634186b68bee72418e06e60a2e63a4bc2f6f2ffa"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8a5b3e852be1517db0270dfb248e05a2019a30c81f9485f64cfbb128e94f2347"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "16fb58251e647bb12b3eaf09c55019d3b61eafa1d6b28d30375bad70eae5e1b0"
+    },
+    {
+      "name": "0001-acb3a732b348.json",
+      "sha256": "abb87b2bdfd0e481ecf2d01583f505952e4bd6ac8fe4bee22a410a223d79e946"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

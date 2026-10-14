@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e0bb9ae4b34331da",
+  "source_id": "deck-43d728d4fa7a",
+  "work_id": "work-deck-43d728d4fa7a",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA-Beyond-hewu-f95ac5ea2b.deltamusic",
+  "status": "reviewed",
+  "sha256": "fde5b13fb902b76a9dc6aaceb2afae518cb9f44aa7337effdc91c60f17b90c91",
+  "source_sha256": "55b7c94275e62fcd2df4578b766340e9957e39f21fd1a3d1da478182a41828ad",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/15556.html",
+    "edition": "C,4/4,printed96BPM;source-specific structure and disclosed4beat terminal adaptation",
+    "score_sha256": "5707d2533b6e1147c13f11e80cd477c912b5adec63b2133c428e2efdcb58fd3c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 209,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete205note207event-source-two-verses-two-choruses-two-bridges;original1.5beat-preparation;disclosed-terminal-C5-whole-note-adaptation Select complete four-page C piano-numbered arrangement15556. Read only the monophonic highest/top melody staff, not accompaniment. Numeric tempo96 is printed. Partial F vocal77 preview fromjita22032 is explicitly NOT combined with this reference. Source starts after the song initial today-me pickup and tonic hold: retain the original two leading rest events(.5+1beat) as preparation, then select m2 lastD4/E4 sixteenths. Do not add preceding melodic notes absent from the original extent. Preserve source structure: m2partial,m3-through-m29,m30-through-m37,m26-through-m28-again,then-terminalC5. The second bridge repeats the same printed m26-28 because the complete saved source repeats it. Do not insert other printed outro phrases. The last source204 C5 is retained for4beats as an explicitly disclosed endpoint adaptation, using the printed whole-note terminalC5 at m41 as pitch/duration precedent. It is not claimed to be the literal printed next bar after m28; printed m29 instead hasC5 threebeats plus a rest/pickup. m21 andm33 each contain D5 sixteenth thenC5 quarter following the tiedE5. Both pairs are missing from original source and are inserted:fourreference-onlynotes. Each is identified separately, never silently counted as retained source. Grey melody notes in the reference are true-tie continuations. Cross-bar continuations at4/5,7/8,12/13,15/16,20/21,24/25,26/27,27/28 andcorrespondingrepeats are joined into one output attack while retaining all reference segments. No distinct original source attack is erased for these ties. Original chorus lowD4/E4/C4 notes are individually corrected to the printed upper octave. In each chorus the original fourthC5 of the next phrase becomesD5, and the secondG4 pickup becomesA4, exactly as m22/m34. Only two original rest events exist and both remain unchanged as preparation. Every later rest is a new printed rest, listed individually with its previous/next original-note context; no claim is made that the original source already had these rests. Final printed fermata is qualitative;no invented pause multiplier or tempo curve. No audio, GUI, GPU, or real-game validation. Root完整四页另录全部所选小节音级/有理时值及跨小节tie，226事件一致；完整205源音/207事件独立重解码一致。 34处八度修复、4处同音区改音、m21/m33各补D5十六分/C5四分，共四补音，原音全部独立保留。两原准备休止保持，另15印谱休止明列。 所选路线从m2末两音至m37再m26–28，末C5四拍为明确终止编配，引用m41终止音先例但不冒称m28印刷下一小节；96为印谱速度。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5707d2533b6e1147c13f11e80cd477c912b5adec63b2133c428e2efdcb58fd3c"
+  },
+  "note_count": 209,
+  "event_count": 226,
+  "duration_seconds": 98.75,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "Printed96BPM selected;original110 replaced.",
+    "Four D5/C5 reference insertions after m21/m33 E5 holds.",
+    "Original two bridges preserved by repeating printed m26-28.",
+    "Final sourceC5 fourbeats is a disclosed ending adaptation with printed m41 whole-note precedent, not literal next bar after m28.",
+    "Only two preparation rests come from source;15 later printed rests are new.",
+    "No audio, UI, GPU, recording alignment, or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-43d728d4fa7a-hai-reference-v1.review.json",
+      "sha256": "9f8379143547611eacc5aca445fe911f07b16fd149b69753683b39385fae25d4"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e4eb3dd6d0ac2e78da4e2f2775909561643c8c0b9ef68eb64bd1cf39625614ad"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "15056277dcef4c616e7dabee5cbf51c552a9674736acda73db21d458bf03a019"
+    },
+    {
+      "name": "0001-4312e7e0ee3c.json",
+      "sha256": "26ff0ece62d527340f3a003884d0f69aa3fd39e4fdc7c1dd87c9cb700a40fc99"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

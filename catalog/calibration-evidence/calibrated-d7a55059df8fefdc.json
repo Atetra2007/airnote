@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d7a55059df8fefdc",
+  "source_id": "voyaging-star",
+  "work_id": "work-voyaging-star",
+  "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E8%BF%9C%E8%88%AA%E6%98%9F%E7%9A%84%E5%91%8A%E5%88%AB%20bpm84.txt",
+  "status": "reviewed",
+  "sha256": "35ad18b8066ae8b3146ec8cda143a01076e9824edbd20d34a2b5fc2a418db4dd",
+  "source_sha256": "b4dad49b850f2baa842950966ba6770954dd4bf3b43cdb4ae71a21d72b084d5c",
+  "reference": {
+    "type": "recording",
+    "url": "https://www.youtube.com/watch?v=0HrdRGuF2Y8",
+    "edition": "远航星的告别 / selected original recording 0HrdRGuF2Y8",
+    "audio_sha256": "7758c610ba12445b0f37b8d4e342cdc0ee02339934b0c2cc5be177a0d0d081bb",
+    "start_seconds": 23.5,
+    "segment_start_seconds": 23.5,
+    "segment_end_seconds": 115.04
+  },
+  "review_method": "Root完整范围逐音检查原始混音/人声频谱、音高与起音/释放证据，明确记录单旋律简化与移调；模型仅作辅助。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 164,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "全部现有来源内容；对应录音区间见 reference，未声称覆盖整首录音 Root 已检查全部 12 张输出覆盖图、原始混音/人声频谱及对应细节，覆盖所有现有来源音符；F0 模型只作辅助。 42.16–43.04 秒与 50.50–50.98 秒按连续同一音节合并；66.80 与 67.10 秒保留两个独立起音；79.15–79.98 秒为连续 B4，没有人为增加二次起音。 采用完整复核后的短经过音；补回 75.25–75.41 秒 B4 和 77.73–77.95 秒 Ab4。54.60–57.95 秒密集乐句按原混音谐波及起音校正。 原唱滑音、颤音与微分音简化为可演奏半音音阶；音符释放和呼吸间隔根据可见能量边界选择，属于明确的单声部编配。 60 BPM 仅用于一拍等于一秒的绝对时值序列化，不作为歌曲测得的拍速。 第 141 索引音的发声始于约 103.56 秒，排除先前气声；末音释放 115.04 秒，由延长至 117 秒的频谱尾部确认。",
+  "reference_media": {
+    "kind": "recording",
+    "media_type": "audio/wav",
+    "sha256": "7758c610ba12445b0f37b8d4e342cdc0ee02339934b0c2cc5be177a0d0d081bb"
+  },
+  "note_count": 164,
+  "event_count": 200,
+  "duration_seconds": 91.54000000000003,
+  "limits": [
+    "人工听感未验证；真实游戏未测试。",
+    "单旋律简化不重现原唱音色、和声、力度、滑音和混响。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-voyaging-star.review.json",
+      "sha256": "04481e573ef317e20a7edaeba9fbeb115d06eb000a6cb7400cde4eace8f5507e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "2a613388a54b3f7fee13a9179b11b6c942e808cea67dbaab3cd9e5272e04a291"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "7ea55c0892f96757bfe4f3c3ea9ef1edacfa655b542a184017231c4407e238c1"
+    },
+    {
+      "name": "0001-3f2d769463d9.json",
+      "sha256": "6d3444fd8ea3bcf277d627d96e0f1cf932e9b2bd59b9ed778d674fdde65a5925"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-86185e27b1ff15a0",
+  "source_id": "social-bbdb2d22609a3ea0",
+  "work_id": "work-d495f371b50d",
+  "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E6%9B%B2%E8%B0%B1?modal_id=7685318024852753705",
+  "status": "reviewed",
+  "sha256": "13e324089c0f2b6c29bcbd351b1a6bdb1892d551456cc74dcfee6c5d3ee142e1",
+  "source_sha256": "33f4a180a98c9d5297dfe42d33e6d2d8c2140148fab960c3673d36edd232d4c4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/gangqinpu/26998.html",
+    "edition": "潇湘箫啸 欢乐斗地主2 fingeredstaff, m1-5 thenm7; sourceomitsm6, selectedtopvoice.",
+    "score_sha256": "662a9d65966d79f0b25d77e0ee75ba69ae8435598dfb5a59c7bfdc64fec8f988"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 64,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "原双页六段65格全部，参考26998第1–5小节及第7小节；原没有第6小节不追加。 Root直接读过原双页后，从26998完整七小节另录音高/时值参考，再建立65原格逐一映射；此过程非盲，参考数组先于候选。原65格字形和键色逐格保存，黑色常规、粉色高音；头顶点为长按，不当八度。长按无精确拍值，量化时值依据参考。 来源前五段对应m1–5；最后收尾直接取m7。原没有m6，完整保留源跳段而不补全整首钢琴版。所有65原音已处置，0省略0新增。 参考m1末G4：source10 G5降八度；m2两个G5：source16/19 G4升八度；m3高C6：source29 C5升八度；m4低G4把source37/38两个G5合为G4半拍，是版别合并并降八度，不是打印延音。 m5 C6对应source50升八度；m7两个C6对应source62/64升八度。m7首D5附点十六分接同音三十二分为真实连线合半拍，随后D5十六分为新起音；G5-A5与C6-A5是异音连奏，不合并。终和弦明确取最高C6四分音，不将原C5硬称原和弦顶音。 共64音24拍，120BPM是明确选择的练习速度；26998未印数字速度。各不同音区据五线谱修订，不把低分辨率260463中第三主题不完整拍值作为时值依据。候选待另一次独立复读及正式软件审计；未试听或实游。 第二读谱者在读取root数组/候选前先独立保存26998七小节74事件和双页65格键色，全部逐项一致，选m1–5+m7后64事件和TXT也一致。65原格恰好一次处置，9格八度调整和37/38合并全部明确。 文字勘误：root-reference-c-reading.json的旧说明误列末和弦含C5。原图实际三个音E5、G5、C6；root重看原尺寸裁图确认。选最高C6一拍在所有参考/候选数组中一直正确，不涉及音乐文件改动，旧说明原封保留并由本条澄清。 完整末C6一拍保留；120是明示练习速度，未宣称谱面标定速度。音乐证据检验后另做正式软件审计；未人工试听或真实游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "662a9d65966d79f0b25d77e0ee75ba69ae8435598dfb5a59c7bfdc64fec8f988"
+  },
+  "note_count": 64,
+  "event_count": 64,
+  "duration_seconds": 12,
+  "limits": [
+    "Selected published practice edition with disclosed register and tempo choices.",
+    "All existing source content accounted; different source variants and omitted full-song sections are not silently added.",
+    "No human listening, recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-bbdb2d22609a3ea0-poker-complete-source.review.json",
+      "sha256": "f43f9e156997f2197c4ba8874f2adf709deda84374d26193dae557b715b54467"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "687691a60af734b4267d2c0e1a8e4848ea6b1d7009f31716b6e007751ac8abac"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "214d7844403f759fe532660d30cc66bc752719dbdb7c87a18ca27f04287d966d"
+    },
+    {
+      "name": "0001-83f0321c1c69.json",
+      "sha256": "af901d69a613392b095547869fc29f0bddcabc2f7e8bb0e882dbe0399f4a6cb5"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

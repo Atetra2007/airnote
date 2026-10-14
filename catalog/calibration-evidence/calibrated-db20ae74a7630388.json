@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-db20ae74a7630388",
+  "source_id": "social-4f272638669a4262",
+  "work_id": "work-c26930029810",
+  "source_url": "https://www.bilibili.com/video/BV15Eec6UEDx/",
+  "status": "reviewed",
+  "sha256": "19761fb37b276e14bd2b4bb1da35992443f9de611927a7036f72fd72740ad97e",
+  "source_sha256": "3ad6c4c4c786ca48953f361d97a6135cc2981e3943a3851ab8da6745ae5396cb",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1Gr7K6nEGH/",
+    "edition": "C4/4quarter80 vocal and first chorus printed version; explicit omission of small grace attacks for practice",
+    "score_sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 55,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Complete original source content covered by explicit selected route V1,V2,V3,V4,V5,V6,V7,V8 固定social-4f272638669a4262/work-c26930029810，完整49原音、53原事件独立逐项处置；无原音省略，不用同名或其他来源验收代替本源。 曲目是郑浩/冰洁《琵琶曲（人间琴悠扬）》，不能采用蔡幸娟/刘南安另一同名曲393923；tan8封面不是谱。 完整读公开木木弹琴C/4-4/quarter80的所选16主歌栏与前8副歌栏；前奏与其他间奏不从本源之外追加。 所选路线：V1,V2,V3,V4,V5,V6,V7,V8。173保留来源跳过中间主歌的路线，未强加V5–V12。social4原全49音静态卡只覆盖V1–V8，未把18秒视频长度当拍数。 明确练习版省V5两个小grace1、V11/V12两个小grace4；所有常规打印passing/turn保留或补齐。异音弧线均按slur不合组；C8末两个同音1真tie合为5/4拍一攻击。 全部0音高/八度差异按源统一+0半音基准逐项披露；借独立印刷版本选旋律，非声称作者原音必错。 补入6个明确可见参考头，所有原音均单独保留；没有未知来源段落的笼统省略。 MIDI内DFHS PPQ96、transpose+12、148音、tempo130和物理148音独立保存；输出选印80BPM与可见拍值，所有浮动原字段保留。周周/视频原无定量BPM/时值，不凭视频秒数推算。 输出55音、5休止、32拍，范围55–81以内。只称完整原来源选段，不称整首发行录音。 候选尚待root独立全源数字/键位/内嵌以及完整适用谱面读审和生产软件审计；无真人试听/音频/UI/GPU/游戏输入。 Root实际看完整适用24栏及细图，绝对音高/有理时值独立重录；C8末C5真tie共5/4，V3两个5仅首低点、V4首5低点、V5第三1自然、V11两5自然均核。 Root独立原JSON/SMF与DFHS/全卡49音颜色键位重解，逐原音直序映射，全部来源音保留；补入常规passing与四个练习版grace省略均明确。 Root全49原音处置与全部60输出事件核对通过；0处参考版音高选择逐项记录，6常规参考补音；路线V1,V2,V3,V4,V5,V6,V7,V8。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "897bce8f668802e1d36d498fe6887c7dd6df431f86a0113e0b2ed70caa7baf7d"
+  },
+  "note_count": 55,
+  "event_count": 60,
+  "duration_seconds": 24,
+  "limits": [
+    "Selected practice main voice omits four small printed grace attacks.",
+    "All original notes retained; explicit printed edition pitches and missing passing heads selected.",
+    "Complete source excerpt, not whole recording.",
+    "No audio/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-4f272638669a4262-pipa-vocal-v3.review.json",
+      "sha256": "607042a1a77630e225346ad19e3331e1d4b3f493f836d6cf41c86a612479564b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "65b7acb2acd5364018d1c9f4cf4223e24b09bae057e451427cf81293b4c3404e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "8ef2cb305b0fc544270a6a149148f1cf647d23ece4714a9168cacd6c69171ed9"
+    },
+    {
+      "name": "0004-a6dd19061407.json",
+      "sha256": "81bef78a1543498474123e1cb3934e991f5885146a6814970b4dac1628a91bb2"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

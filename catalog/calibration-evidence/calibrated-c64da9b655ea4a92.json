@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c64da9b655ea4a92",
+  "source_id": "deck-864ec94781bc",
+  "work_id": "work-deck-864ec94781bc",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D-%E9%99%88%E7%99%BE%E5%BC%BA-Jiko-47538fbf90.deltamusic",
+  "status": "reviewed",
+  "sha256": "a68c0d6d71e641efd4da2d54153f263eb67eefc411aeed94cbff3908a73b563c",
+  "source_sha256": "6feddd8a7bca0b1eed113ea713a86f771c26254e785822884d579d41bd600b42",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/155048.html",
+    "edition": "孙世彦Fmajor118BPM;whole-source pickup+page1bars1-34,global-1semitone",
+    "score_sha256": "47450ddd20bdf89e6539a344c6bb9398a86eac0780279f52859f600b9af16603"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 103,
+    "maximum_parser_boundary_error_seconds": 8.526512829121202e-14
+  },
+  "review_note": "complete-original-source-form;all101notes-and31rests-disposed Complete original source form: pickup then selected edition page1 bars1-34. Source ends before printed instrumental/rest continuation and page2 repeated song; no missing source section discarded and no absent repeat appended. Selected SunShiyan155048 printed F-major score transposed globally down1semitone to source Emajor. All100 retained original pitches remain unchanged. Printed118BPM used as edition tempo;125originalmetadata is replaced. No claim of measuring the original recording tempo. Insert the missing lowB3eighth in each of bars3/11/29, after shortened C#4eighth and before the next repeated B3; three added attacks each explicitly identified. Omit only source53 repeated E5eighth at printedbar18C#5 onset; move source54C#5 from72.5 to72 and restore its quarter duration. This is an edition-dependent attack omission, not a tie merge. Restore printed whole notes in bars16/21/25/34 and written rests after16/21/25. The original final E4seven-beat hold becomes printed4beats; final musical note is preserved. 31 source rests include30 short release gaps and one explicit3beat rest. All are individually accounted; printed bar17R4 and bar18R1 together give5restbeats after the corrected E4whole. No human listening, original-recording alignment or real-game test. 10ms practice release gap. Root完整看两页，另录所选1拍起拍及34小节绝对MIDI/时值数组，共107事件，全部与候选及印谱一致；此复读明确非盲。 完整101原音和31休止重新解码，100保留音高不变；3个低B3八分补音和source53重复E5省略逐一核对，省略不是同音连结。全部休止及最终E4四拍保留。 印刷F调118BPM，整体移调-1至E，按源现有完整范围止于第1页bar34，不附加原来源没有的第2页重唱。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "47450ddd20bdf89e6539a344c6bb9398a86eac0780279f52859f600b9af16603"
+  },
+  "note_count": 103,
+  "event_count": 107,
+  "duration_seconds": 69.66101694915254,
+  "limits": [
+    "Complete source exposed before numeric reading; disclosed in reference.",
+    "Selected edition and source differ at three omitted low5notes and one repeated upper1.",
+    "No human listening, original-recording alignment or real-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-864ec94781bc-tonight-reference-v1.review.json",
+      "sha256": "9b3a11820962cbfdd41a822bdf3439e9dd45cd888a32d5ce115d159706adf4f6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "f291a07e725bc0b59cb0065d09f0d1b47f0453095fd38b691a3b5f852a172adb"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3e2ac896c75b164889d858a851f24d338f0b3f5b96067f31fc2f00b630bcd043"
+    },
+    {
+      "name": "0001-15a5a7d0c371.json",
+      "sha256": "7a50b1973d0ea388637d6903835432b12ccdd2cb17498e13c002e514cef07ae8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

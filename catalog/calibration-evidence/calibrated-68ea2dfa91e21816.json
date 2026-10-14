@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-68ea2dfa91e21816",
+  "source_id": "deck-6a40e3118ed6",
+  "work_id": "work-deck-6a40e3118ed6",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%80%E4%BD%B3%E6%8D%9F%E5%8F%8B-%E7%AE%80%E7%9F%AD%E7%89%88-%E9%99%88%E5%A5%95%E8%BF%85-QvQemmm-aa0562e1b5.deltamusic",
+  "status": "reviewed",
+  "sha256": "335b044bed9827d3d3a8116f30a1b462b85cad8c324c3c90c0ba4691b1d1e31d",
+  "source_sha256": "b92e362ead413418e1975715290728ada78193cae1e42a620ac42a5bfc1d2d4e",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/13359.html",
+    "edition": "Printed E shifted down4semitones into C;4/4 selected short route;80 retained practice speed, no printed numeric BPM",
+    "score_sha256": "7291fe7ff071526c6ec8eb4504910256642cfa4ed7283244c88c8ee0158f5421"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 202,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete202note221event-source-short-arrangement;R3B5-through-R8B3-then-second-ending-R9B3-through-R10B3-D5-tied-ending Selected TaoliZuichunfeng E vocal score; transpose the printed melody down4semitones into C to preserve original saved MIDI register. Original descriptive1=E label is not reapplied to source pitches. Full original short arrangement starts R3B5(friend/frombefore), follows R4B1 throughR8B3 once, skips first-ending/instrumental repeat R9B1/B2, then uses R9B3 second ending throughR10B3 final tiedD5. This is the original short-version route, not the complete published song. R5B1 third sixteenth group shows D4,D4,D4,E4. Original source42,43 cover firsttwoD4 and source44 isE4: insert oneD4 sixteenth immediately before source44. The lowG3 at source40 is retained. R6B3 first two groups are G4 eighth,E4 sixteenth,G4 sixteenth; G4 eighth,G4 sixteenth,E4 sixteenth. No arc connects the two middle G4 attacks. Split original source89G4 .75 into .25+.5 rearticulated G4 attacks. Contrast R8B2, where the printed arc DOES tie the corresponding pair, retaining source135G4 .75. R8B3 C5 sixteenth tiedC5 sixteenth merges source147/148. R10B3 D5 dotted eighth tiedD5 quarter merges source200/201 into1.75beat final hold. No later instrumental/coda is appended. R9B3 C5-A4 is a different-pitch slur: preserve source158C5 .25 and source159A4 .25; source160A4 .5 remains distinct. All remaining printed ties are read as durations in the saved melody. R4B1 initial rest is an eighth(.5beat), replacing original1beat. One insertedD4 adds.25beat: whole original84.25beat short version becomes84beats. All19originalrest events are individually retained in evidence and represented by18consecutive-rest groups. Alternative parenthesized lower lyric melodies in R4B2/R5B1 and the small instrumental notes after selected EOF are not mixed into the saved first-verse short arrangement. 80BPM is retained practice speed only, not a claimed reference recording tempo. No audio, GUI, GPU, or real-game validation. Root完整所选图读并另录21小节，221事件全一致。重新解码202原音/19休止，18休止组按前后音重算一致，未误称组时值逐事件保留。 R6B3相邻G之间无tie，source89拆.25/.5；R8B2对应G有tie，保留.75。R5B1补缺D4十六分、source147/148与200/201按真tie合并，其余源音音高不变。 印E调降4至C；80仅来源练习速度。末D5保留所选R10B3内1.75拍，后续R11二分延续超出源EOF，不追加；所选短版路线和截断tie边界已披露。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7291fe7ff071526c6ec8eb4504910256642cfa4ed7283244c88c8ee0158f5421"
+  },
+  "note_count": 202,
+  "event_count": 221,
+  "duration_seconds": 63,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "80BPM explicitly retained practice speed; no numeric tempo in reference.",
+    "One D4 sixteenth reference insertion;one same-pitch rearticulation split;two true-tie merges.",
+    "Printed E concert pitches transposed down4semitones into C arrangement.",
+    "No audio, UI, GPU, recording alignment, or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-6a40e3118ed6-best-reference-v1.review.json",
+      "sha256": "8176c2f4db82750df529442b9cdc347c173fbbf32efbbe2bf5cbf7bcc7707847"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d2dc8906f57fb690bd2854a1ecc275d9bf7a4eecfc0a4e0b21fb95b9e7f081a7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "dbac184d401dcd106c56609c333beb869d46ab9b6a9540bb87c159c405e88860"
+    },
+    {
+      "name": "0001-a21f714ade24.json",
+      "sha256": "83ea3a6f000c9227ec07eb52114f80dc36443dafc654dce7cd37ee69a5385c46"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

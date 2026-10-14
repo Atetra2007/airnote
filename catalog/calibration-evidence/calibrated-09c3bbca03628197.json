@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-09c3bbca03628197",
+  "source_id": "deck-42b90c6d3570",
+  "work_id": "work-deck-42b90c6d3570",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%AA%E9%98%B3%E7%85%A7%E5%B8%B8%E5%8D%87%E8%B5%B7-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-297b50d297.deltamusic",
+  "status": "reviewed",
+  "sha256": "9f3665ede4db22bd38afa1f634d9040b3f2b91c37d4247abe9b11d74a7a69382",
+  "source_sha256": "14148e856adf917fb5ca127f785132c81e69a74fbdf4c7d73aab4f79aee1dfd4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/252861.html",
+    "edition": "EveryonePiano F调112旋律，普通1=F4；原长源再现顺序单独披露",
+    "score_sha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 85,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "All85source notes and7rests, first17bars plus original reprise and full ending. 完整原deck85音7休止92事件；按原结构演奏EOP252861第1–17小节，保留原1拍段间休止，再从第9小节第二拍至17小节重奏。所选谱只印一遍，再现顺序明确来自原稿。 参考1=F、4/4、四分112；以普通1=F4读图。原deltamusic数字已是实际音高C语法（例如开头2=D4）；不再按metadata的F重复转调。全部85原音音高保留，无原音省略。 原32/33与61/62对应图第10小节6的同音连线，合并为2.75拍，取消两次错误重触发。两遍第16末低7应.75、普通1应.25，源54/83的低7一拍改.75并各补F4四分之一拍。 六个0.04拍休止是短切断，分别归回前音以复原打印连线/延音；原source55的3.99375拍终止音补齐4拍。段间原完整1拍休止保留，未当作切断噪声删除。 共85输出音+1休止=86事件104拍，112BPM55.714285714秒；末D4完整4拍，未截断最后一遍。原128BPM替换为明确所选印谱112，属于选版速度校正。 root按全部原92事件逐项处置，并按公开谱全17小节复读；独立二读已完成，另送正式软件审计，无人工试听或真实游戏测试。 Root再从原始JSON简谱另行解码全部92源事件，包含原128速度和已为实际F调音高的C语法；逐项确认全部85原音、7原休止和第二遍范围。完整17小节印谱再次视读，使用已有独立冻结读谱交叉核对；m11误读连线已在resolved纠正，长源候选音乐未改。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0"
+  },
+  "note_count": 85,
+  "event_count": 86,
+  "duration_seconds": 55.714285714285715,
+  "limits": [
+    "Explicit selected EOP edition at112BPM, original repeat order retained.",
+    "No human listening or game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-42b90c6d3570-sun-complete-source.review.json",
+      "sha256": "7f5283b42ad127f50e3d5121be1f2207c4a18d449d7b7f83397246ed89a2ef3d"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "daf4a8c2b743c3b5410d281c35037cfb33b71c01737d84f406c7777bf540a539"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "495064fb6e0295971e5c16a79cf828f6b85b0829909b2fd6c8261a893132d96d"
+    },
+    {
+      "name": "0001-9bae73447300.json",
+      "sha256": "2b8e043659d1dc97424355ff28fb8ff11adb267bf62fcaed8ac2e0515a5b0c56"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

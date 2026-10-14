@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-94f64ba2edd916da",
+  "source_id": "zhouzhou-047",
+  "work_id": "work-deck-c31d3026ae98",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3f7335be978c1b893aba23d71eafdd7a8aaa26a1d115328a1ffacbe6572fd87d",
+  "source_sha256": "07e3fe0fb8bc37a727047abda86311eeb751b432565f577041f3e7e60d208511",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/15369.html",
+    "edition": "筷子兄弟词《老男孩》C4/4声乐版两页，无印刷BPM",
+    "score_sha256": "97435f5ed59bc71eda29cba92687935b800c15c326e7926f35123e5e02eecb8d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 148,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "完整148源音，主歌及首段副歌；逐项保留来源范围及明确剪接，选15369声乐版。 唯一选定音高/时值参考为15369筷子兄弟词《老男孩》C调4/4两页声乐简谱；348366为陈立同名异曲已排除，不作为本组依据。单旋律逐句人工读取，真实同音连线合并，源同名不同范围各自处理。 15369未印BPM。固定72BPM是明确编配速度（与本组deck原来源72相同），不能标为该声乐谱印刷速度或原唱测量速度。没有从另一EOP钢琴版混取音高节奏。 小节编号按本文主歌V1–V14、副歌C1–C8；C0为副歌前两个十六分高1弱起。V12（春天啊你在哪的后半句）谱面仅2拍，C8跨页高1及一条延音横线为2拍；原图没有另标换拍号，本编配明确采用这些2拍短句小节，不按名义4/4凭空补齐。 另读380542钢琴版仅作结构对照：其第17小节把V12两拍及V13高1两拍同写一个4/4小节；第18另标2/4，休止仅1.5拍。所选15369则有5.5拍主副歌间歇，多4拍属于明确保留的声乐版间歇；没有用钢琴版替换选定节奏。对照原图与裁图单独保存。 V4/V8的2上装饰记号以及V10/V12高2上装饰记号不展开，选择基础旋律；呼吸号不增加未经量化的时长。长弧只有同音且谱面续音时合并，异音弧不合并。 原始来源保存，修订另存；音乐视觉读谱/软件审计/真人听感/实际游戏分开。本编配已完成root独立音乐复核，正式技术审计另附，未做录音对齐、真人试听或实机测试。 完整主歌/过渡与第一段副歌：V1–V14及C0–C8，结束于跨页首个高1二拍，未追加第二轮歌词、后续生活像一把无情刻刀或尾声。 按所选声乐版修三音（0基源音序号）：25与53的E4改D4（V4/V8位置.75）；54的D4改C4（V8位置1.5）。这些是明确所选旋律/装饰简化，不把不同版本未经核对泛称印错。 V9/V11在B4八分后各有半拍休止；V13高1二拍后两拍休止接V14前3.5拍休止，共5.5拍间歇，之后C0两个十六分高1起副歌。V12末C5八分与V13首C5二拍没有同音连线，保持两个起音。 最终148音9休止共157事件84拍72BPM，70秒，C4–A5；副歌最后C8高1只二拍。 Root逐项独立复核全部原来源，三份标准范围与独立小节数组完全相符；058原剪接另行重录78事件相符。058裁句节奏是明确选择的编配，不能仅凭无时值源音唯一还原原录音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "97435f5ed59bc71eda29cba92687935b800c15c326e7926f35123e5e02eecb8d"
+  },
+  "note_count": 148,
+  "event_count": 157,
+  "duration_seconds": 70,
+  "limits": [
+    "No printedBPM;72 is explicit arrangement tempo.",
+    "V12 and C8 are two-beat printed short bars despite nominal4/4;058 preserves further source cuts.",
+    "Ornaments are explicitly simplified; no recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-047-oldboys-source-form-vocal.review.json",
+      "sha256": "8b628d21ce1ede536fa11ec2c326ecf5563dc23015e6f64e99f372a00a80e0a7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7e6a5d6ca5d3b4fbc66e33cbd7c7e6d468a04e71c5d90b06b795acfefec3c87d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "860045757bcad8cd63922a62007230979b6087c3569a0c50ae63646aca39f4ef"
+    },
+    {
+      "name": "0002-b94384af926d.json",
+      "sha256": "6b491326947153171c5d8a64e2f8c6b4de7ca762958dd5c9ec125c2a8f31a0a8"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

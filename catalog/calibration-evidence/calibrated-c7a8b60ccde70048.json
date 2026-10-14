@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c7a8b60ccde70048",
+  "source_id": "zhouzhou-155",
+  "work_id": "work-0a617fac3992",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "9d7aa3a4a40546706583e4237e25bd09f8a136238f6997e04be9f761601328ad",
+  "source_sha256": "494083eb068a166a329db849c6dfa409cb4ff0a7c7ac26b0ec5fc8a34bdc80cb",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Ode_to_Joy",
+    "edition": "Public published score: ode-to-joy; exact edition bound by its SHA-256.",
+    "score_sha256": "14c11de73ba893305de7bf6a6eb9b72ebae78205684661e8dcc3faa668b5b1d1",
+    "midi_sha256": "dd7b76966b495281194d133b998907fc7e8bad4eab5174568c076d8fcfe75556"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 62,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 完整62个来源音高对应公开谱16小节旋律；补齐第10、11小节的八分音符、第12至13小节跨小节连音以及句尾附点节奏。 保留跨小节同音连线为一个2拍事件；未误增一次起音。此范围是公开16小节旋律，不是第九交响曲完整乐章。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "14c11de73ba893305de7bf6a6eb9b72ebae78205684661e8dcc3faa668b5b1d1"
+  },
+  "note_count": 62,
+  "event_count": 62,
+  "duration_seconds": 38.4,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "100 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-155.review.json",
+      "sha256": "467dc31fa2968a989df0ca806393096780a49ac34ef7ff5b7cc0e770b9076cbd"
+    },
+    {
+      "name": "review221-zhouzhou-155.timeline.json",
+      "sha256": "6a8f4d2f7121e5280c857a7076e52701a0ccd3bf158b15861c94a3209adeb65a"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0005-574223587a31.json",
+      "sha256": "489b4da4cd828cb65cb6ed33f24073f54a6db7f9e356add4088d7ddcd0283254"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

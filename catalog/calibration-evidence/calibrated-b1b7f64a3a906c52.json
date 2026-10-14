@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b1b7f64a3a906c52",
+  "source_id": "deck-f9bed8df32ff",
+  "work_id": "work-deck-f9bed8df32ff",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8c538e936a.deltamusic",
+  "status": "reviewed",
+  "sha256": "ff76749c86a15abfb69ce514849827f9dd3d2b926949c819e080d28cf9687ebf",
+  "source_sha256": "12f80d4ef12080fae6a7febaefd21923296a7401bef03fac4881cb02d33a2c77",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/401046.html",
+    "edition": "周杰伦原唱/曲大卫改编钢琴伴唱正谱; Eb; continuous vocal line selected from complete existing source extent",
+    "score_sha256": "e729779b8e2c5942f1e2dc3a708db433767252fd8ad90f96184674024180a7b0"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 398,
+    "maximum_parser_boundary_error_seconds": 1.0800249583553523e-12
+  },
+  "review_note": "complete-existing405-note-source-content;selected-continuous-vocal-edition Explicit selected-edition editorial arrangement using only the401046 Eb vocal staves. This is not an assertion that the raw source125 BPM or source1=C metadata is a performance transcription. Use the continuous printed vocal line from the final eighth pickup of P2R1B3 through the final whole-note bar P10R1B3; no piano intro or postlude is appended. All405 notes and all567 source events are individually accounted for. No hard passage or interlude is skipped. Source20/21 repeated F4 attacks consolidate to the single P2R3B1 eighth; source32/33/34 repeated D5 attacks consolidate to the single P2R3B3 eighth. Source74/75 and278/279 repeated F4 attacks consolidate into the printed dotted-eighth plus eighth same-pitch tie (1.25 beats), P3R2B3 andP8R1B1. Source110/111(Eb5),124/125(G5),215/216(Eb5) consolidate actual tied sixteenth pairs at P4R1B3,P4R2B2,P6R3B3. Other visually similar repeated pairs without ties remain separate. Source319 is split: P8R3B1 final D5 sixteenth is followed by a distinct Eb5 quarter inP8R3B2. Their different-pitch arc is a slur, not a tie; source318 remains Eb5. Eleven source-note pitch changes are individually listed with exact reference positions, including source19Bb4->C5,46C5->D5,100/114/304/365Eb5->D5,203Bb4->G4,319firstpartEb5->D5 and372/373/374D5/C5/Bb4->G5/F5/Eb5. The late high melodic variation P9R3B1 is kept in its continuous printed form. The long candidate does not use the short candidate nonadjacent P4R2B1 splice. Its P9R2B3-to-P9R3B1 Eb5 tie is contiguous. Retain the complete31.5-beat instrumental-bridge silence after source202 and before203: P5R3B2 last quarter, P5R3B3, six whole bars onP6, andP6R3B1 initial2.5beats. Do not remove it for convenience. Final source404 uses printed Eb5 sixteenth plus whole note,4.25beats. Practice tempo is75 BPM, giving288.5beats and230.8seconds. No printed tempo or recording measurement supports an original-tempo claim. Nonblind source-aware visual reading and deterministic checks only. No human listening, recording alignment, audio playback, GPU work, real-game test, or final acceptance is claimed. Root完整第2–10页声乐线二读，另录绝对MIDI/有理时值并按73谱位展开，461输出事件全部相符。 405音及162休止全部交代；7合组减少8攻击，source319按异音slur拆D5十六分+Eb5四分，不能合并。 P6R3B1为G4；P8R2B2整为D5；晚段P9R3B1保留G5/F5/Eb5变奏，不复用短版非相邻剪接；31.5拍间奏静默完整保留。 75为明示练习速度，印谱无BPM；不声称试听、录音对齐或实机已验收。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e729779b8e2c5942f1e2dc3a708db433767252fd8ad90f96184674024180a7b0"
+  },
+  "note_count": 398,
+  "event_count": 461,
+  "duration_seconds": 230.8,
+  "limits": [
+    "Proposed editorial edition; root musical acceptance pending.",
+    "Source-aware nonblind reading; provisional v1 was superseded by v2 after tie/slur checks.",
+    "Source319 is a one-to-many mapping and seven attack groups are many-to-one mappings; simple note-count equality is inapplicable.",
+    "Source tempo is not validated by recording;75 BPM is an explicit practice choice.",
+    "No human listening, audio alignment, or game testing.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-f9bed8df32ff-seven-long-reference-v1.review.json",
+      "sha256": "e1dd014ec41630807ff075f765779dede26e31315023abaaa379b449bf33542e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e485236a8c66791a0096ebd7b9bc39770a17bb64a02e2cab60794d750024dc6d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "d6b22acf8469b09deb4905c4e1c6a94fa785decc6ef3702befc516d9751d2110"
+    },
+    {
+      "name": "0001-87623aafaea5.json",
+      "sha256": "ba47a603151a9ba3561540ee2bbf9663c6a4cfba4fd777edbc557e6a68386a6e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

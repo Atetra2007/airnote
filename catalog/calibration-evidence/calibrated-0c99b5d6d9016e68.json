@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0c99b5d6d9016e68",
+  "source_id": "zhouzhou-176",
+  "work_id": "work-fe3ace8deaa2",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "68d3212e256a4f65b20baec65697bcfe4017544ee9ab242719f1b58087cf9968",
+  "source_sha256": "d2d0492ba5a4d4ea095fa20341621bf9befeff230d547d9db24696815c4aebb4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/386568.html",
+    "edition": "兰语神韵记谱葛东琪悬溺，C4/4四分72，首主歌和第一轮Ya前四小节",
+    "score_sha256": "db1b48fa22d3b009e571530d45d29f2591062e50ed49662bcb34d21c292c0d1f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 85,
+    "maximum_parser_boundary_error_seconds": 3.360867140145274e-12
+  },
+  "review_note": "全部9原行83音，首我起音至首轮Ya第四小节末i i；补3独立起音，合1同音延音组。 固定176原文件SHAd2d0492ba5a4d4ea095fa20341621bf9befeff230d547d9db24696815c4aebb4，9原行83音，无原休止。原列表时值字段保持原值，不用于替代印谱节奏读取。 采用386568兰语神韵记谱葛东琪《悬溺》一整页的数字声乐行，打印1=C、4/4、四分音符72。普通1=C4，高1=C5，不移调。不是取吉他伴奏或仅凭名称选曲。 范围为P1r3b2我开始，经首主歌、So funny，至P1r6b3首段第四个Ya小节的末i i；完整对应9原行83音。首音前1.25拍休止、末i后1拍休止以及后续Ya小节、间奏、第二主歌和结尾器乐都不属于原范围，不增加。 总范围45.75拍=首2.75拍+中间十个完整4拍小节+末3拍；打印72BPM为38.125秒。末句原source82仅写一次高1，印谱无连音弧而是两个独立高1（.25/.5）；保留source82为前者并补后一.5拍，不以一个延音冒充两次i起音。 所有83源音逐项映射，无音高改变、无选版省略。原source17/18两个A4对应r4b1同音弧.25+.5，合一.75拍；source16此前A4独立.5拍。r4b1最后E4.25跨节同E4一拍合1.25；第一句E4跨节.25+.25合.5；门D5同音跨节合1.25。 r5b1临走呢之后还印有独立高2四分音符，原31与32之间缺失，补D5一拍。高1至高2弧为不同音圆滑，不合并。关了灯的7/6/6是带3括号的八分三连音，各1/3拍，第三A4又跨下一节同音一拍，总4/3拍；不同音三连音括号不是同音连线。 Ya各小节中普通6十六分同音连下一普通6十六分，合.5拍；其后高6没有同音弧，照常独立起音。源两处i i各仅写一高1，分别在source61和82后补第二高1半拍，共2枚；它们与D5四分一共3新增。 18个所选谱面休止逐一保留，含主歌句后整拍静默、拾音前十六分休止、首i i后下一句前一拍；不是忽略零或把歌词换行当定长静默。 输出85音18休止103事件，1组原同音合并、3参考新增，0改音0省略。待root完整独立视读及正式软件审计；未人工听过，未录音对齐，未真实游戏测试。 以上原提案的待root审查文字保留为历史说明，当前已完成：Root从386568完整页面及九处高清裁图另行录入全部103事件音高/时值/起点，冻结后才与候选比较，全部完全一致。原83音也单独解码逐项核对，0改音、17/18一组同音延音合并、3新增全部确认。 三连音用精确1/3拍读取，末A4加跨节1拍共4/3拍；门D5跨节1.25拍、争E4跨节1.25拍、两个Ya尾各有.25和.5两个独立C5起音，末音完整.5拍。来源分组符不冒充固定时长，18参考休止全部保留。读前看过候选叙述，故非盲读，但数值独立输入未由候选脚本复制。未人工试听、未实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "db1b48fa22d3b009e571530d45d29f2591062e50ed49662bcb34d21c292c0d1f"
+  },
+  "note_count": 85,
+  "event_count": 103,
+  "duration_seconds": 38.124999999996675,
+  "limits": [
+    "Complete existing first-verse and partial-Ya excerpt; no whole-song claim.",
+    "Source has no lyrics; correspondence uses complete83note sequence and the explicitly listed source-to-reference map.",
+    "Printed triplet thirds are decimalized to12significant digits in TXT; exact fractions remain in reference segments.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-176-sinking-complete-source.review.json",
+      "sha256": "c30fb10f05c3304f7461a6efc40415ef9cd15a50224c2a497bff4f949811225e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d2079f6ebf1d1cf31961a622e920bce9859113ecee1d28e672a4294066afa693"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "531ab342b017e5d467ff2b6da33f33a6a84638654f0fea14c56678e91a9ee9c5"
+    },
+    {
+      "name": "0001-76d840982416.json",
+      "sha256": "ba5baf31102d8a5e5a467048333050b13e5b67e86c5e11b0f70d122cff512bd4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0b0f10f54d64a1c1",
+  "source_id": "websheet-a167af59d7e6e109",
+  "work_id": "work-8d295e045a97",
+  "source_url": "https://piastudy.com/Intermediate/WJrjlx1d",
+  "status": "reviewed",
+  "sha256": "bd69321e1a43ff6462a31d96a5d00c056ec2454fc8e64566377c6f137a79fa25",
+  "source_sha256": "a167af59d7e6e10927c37687de3b25b216df61125da0f60fcd4e5bd059f5fb8a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://piastudy.com/Intermediate/WJrjlx1d",
+    "edition": "All61 printed bars, upper notehead of each upper-staff chord, MIDI2-pass route73 bars",
+    "score_sha256": "fc08535a0847014af323318ec98de92f535c4e1225562646e732339f3b6fb40b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 424,
+    "maximum_parser_boundary_error_seconds": 4.831690603168681e-13
+  },
+  "review_note": "All61 printed bars, upper notehead of each upper-staff chord, MIDI2-pass route73 bars 固定source websheet-a167af59d7e6e109和baseline work身份；完整原1765音逐音保留或明确省略，未截尾。 完整五页61印刷小节上方谱人工读全；每个单音或和弦攻击选择上音，中间和弦与下方低音完整省略。不是全track自动最高音验收。 原track1的425音保留至424输出攻击，290个和弦下音明确省略；track2全部827及track3全部223伴奏音明确省略，合计1340省略。 m21首印刷双D#4同音头，原source438/439两个同时同长音合为一次攻击；两音均映射，没有任意重叠裁切。 选中实音统一下降12半音，原范围61–90→49–78；0残余音高改动，没有局部八度折叠。所有真实tie按谱合并，反复同音无tie仍分别起音。 原MIDI路径1；2–3两遍；4–7两遍；8–23；24–27两遍；28–59；60–61两遍，完整73展开小节292拍。开头2–3和尾60–61印有x4/4x，明确选择原MIDI两遍路径，不声称按印谱四遍。 m1 fermata保留文字证据，采用原MIDI明确4拍，不擅自延长。全57顶谱休止保留，其他track的全部最大静默区间逐项明确处置。 原350877微秒quarter在tick0生效；采用印171BPM、4/4，292拍约102.456140350877秒。所有MIDI原消息、tempo、key、meter、EOT均完整处置。 v4误把m29a5底线E#4当F#4，root独立指出后v5纠正为65，与MIDI一致；不纠正原音。m30前三个相同A#4无前tie，保留三个攻击，只有第四攻击与后音真tie。 候选481事件=424音+57休止；root独立音乐二读和生产审计待办。无UI、音频、GPU、真人试听、录音对齐、实机游戏验收。 Root完整五页61印刷小节及17行上方谱实际视读，独立手录MIDI与四分之一拍ticks并复读和弦下音临时升号；481事件的全部音高、时值、休止、反复路线与候选逐项一致。 Root确认m29第5攻击底线E#4=65而非F#4，撤销草稿拟改音；m47末A4保持69，不能因下音E#4升号改成A#4。m5 B#5=84、m6 B5=83及m7 A#5=82的半音下行完整保留。 Root直接从原MIDI重新配对1765音与3547消息，核对281轨内静默及17标记；选中425原音合为424攻击，290顶谱和弦下音、827中谱、223低谱伴奏逐项明确省略。source438/439同时同长D#4双音头合一次攻击，无全曲自动最高音替代视读。 选择完整原MIDI两遍路径：印谱首尾x4注记保留但不扩成四遍；首全音符延长记号按原4拍编辑。全73展开小节292拍171BPM，统一降12且无剩余改音；此验收不含人工听感、录音对齐或真实游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fc08535a0847014af323318ec98de92f535c4e1225562646e732339f3b6fb40b"
+  },
+  "note_count": 424,
+  "event_count": 481,
+  "duration_seconds": 102.45614035087719,
+  "limits": [
+    "Independent public piano transcription; not original recording alignment.",
+    "Only upper line selected;1340 accompaniment/chord-lower notes explicitly omitted.",
+    "MIDI two-pass repetition selected despite printed x4 annotations.",
+    "m1 fermata not expanded beyond source four beats.",
+    "No audio/UI/GPU/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-websheet-a167af59d7e6e109-worldsend-top-v1.review.json",
+      "sha256": "627227e1ad77a067a7e70a5b4721109319a647cfd798337caa597ff7f9dd5e08"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d58674944f0340d63251a70aeb44eba0c7dd9994dace1f77f8c459c6486eceb2"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6f3ead496d70cb6e052b3a739de48e976f643a538f15d9d439d9f4ead61c3887"
+    },
+    {
+      "name": "0001-9a3306a3f736.json",
+      "sha256": "c591562624ede0b73d0de00e2d5da24b4fe4c96a774c19beb5a257981c2d8004"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

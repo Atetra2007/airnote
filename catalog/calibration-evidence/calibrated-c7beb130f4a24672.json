@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c7beb130f4a24672",
+  "source_id": "zhouzhou-148",
+  "work_id": "work-b929b9443e6d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "89dc0f18963d56078e788b29d790b37654092e5f24e748fddda9824a3a52ae74",
+  "source_sha256": "d263570110d665b4168716b412c542c41e6f48931e9024f57485f1df761d558f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/360440.html",
+    "edition": "两万五编谱回春丹鲜花完整长图；E4/4打印100Capo4；m56末至m75副歌片段，保留源末句低八度编配。",
+    "score_sha256": "1183346a8ddd2992000823bd5b6eb4ef51300dd1d26ab0ffa2a55543365dccde"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 82,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "全部11原行124事件，m56可是我三音拾音至m75鲜花后两个休止；含啊按住整段和两组原八零的明确选版处置。 固定148原文件SHAd263570110d665b4168716b412c542c41e6f48931e9024f57485f1df761d558f，11原行、102有声音值与22零休止，共124事件，全部逐项处置。原l歌词和n原值保留；|仅格式分隔，不擅自当休止。 已亲阅schema-controlled-20260925/REVIEW.md、04-eighth-dash.json/UI图和05-quarter-dash.json：b=1是横杠按着，不是降号；d=8及列表末8对应八分设置，默认四分。横杠精确延長算法没有受控定论，不能从b推拍值。本提案节奏由公开谱另读，原raw字段完整保留。 采用360440两万五编谱《鲜花》1788x11342完整长图的声乐数字行，打印1=E、4/4、四分100、Capo4。网页img含多个src导致常规DOM只见占位图，另按网页实际出现的原URL取得全图；没有猜测图片地址。所有7个连续裁片均已查看。360323只取得首页，后3原链接404，仅为研究材料不支撑本选段。 范围从印m56最后三个半拍可是我，经m57可是我可怜我、把车卖了、我的心、种好的鲜花、治愈你的白发、别害怕、有我在的地方、啊，至m73-75永远开满了鲜花及原末两个休止。首1.5拍+19整小节76拍=77.5拍，100BPM为46.5秒；未展开后续白发复唱、尾奏及反复。 保留原源分段音区：m56-72实音普通1E4升8半音至C5（印低1到C4），m73末句起实音E4降4至C4。这是明确的练习编配音区选择，等价于最后一句整体降八度，不能称全曲单一移调或原调实音。Capo4不再重复应用。所有102原有声音值经此对照都不需改音。 仅取印谱主音，13枚无定量时值的小倚音明确略去：m59的前1、m60的前1、m61两处前2、m62三处前2、m65前3与前1、m68前1、m71前低6、m73前3与前2。它们不是原来源音值，因此不是省略原音；不伪造其精确演奏时长。 14组同音/保持值整合，共25个冗余源音值合入持续音；每组在source-comparison给出全部源索引与印谱段。source35/36两A4按m63一个附点四分合1.5拍；source38C5是m63十六分同音连二拍再跨m64一拍，总3.25拍。不要把同高1弧误读成两次独立起音。 歌词啊（按，不弹）的source76-83八个高1全部明确合入m71一个C5四拍，保留按住语义；没有删掉这一整段或重奏八次。m72首低6是A4半拍，原缺失，补齐后再保留3.5拍静默。 五个原缺主音：m69第二次别害怕补C5十六分、D5十六分、B4半拍、B4半拍连m70首半拍总1拍；m72末啊滑落A4半拍补齐。不是将印谱不同音圆滑线合并；m69原source67/68两B4合1拍，source69映射m70有字B4半拍。 22零休止全部有处置。source events3/30/65分别按参考改为半拍，末122/123各保留一拍；原41-48八零成组替换为m64三个一拍零，96-103八零成组替换为m72半拍+三个一拍，共3.5拍。组映射明确不能证实逐零一对一关系，不能把原八零直接丢弃或暗称原时长一致。 原event74在发延音之后、别拾音之前无印谱休止，明确省略这个零并保留原值和理由；不同时删除任何原有声音值。由102音+22零转为82音+12零，94事件。末E4为m74半拍同音连m75二拍，共2.5拍，之后两完整四分休止保留。 提案待root完整独立音乐视读与正式软件审计；未人工听过、未录音对齐、未真实游戏测试。 Root已从完整长图连续七片及十处细图另录全部94事件、冻结读谱数组后才对候选数值；全部音高、时值、起点完全一致。读前已知提案叙述，故不称盲读。另解码原11行全部124事件（102音、22零），与逐项处置表一一核验。原b仅横杠按住语义，时值来自所选谱而非猜测原字段。 明确接受主音编配：13枚未定量倚音省略；14组合并25个原同音延音值，5处参考主音新增；两组八零分别整体替换为3拍和3.5拍，零74省略理由明确，其余5零一一保留为三个半拍和末两个一拍。没有将分组处置当逐零时值证明。 m63末C5连3.25拍、m71八个按住高1合C5四拍、m73起末句整体降八度、末E4持续2.5拍和两拍静默均完整保留。叙述中的source数字有音符索引与事件索引，正式source-comparison两者分别列出。reference_segments历史字段direct_source_rest_event_indices兼含音符事件，根级source_event_indices及处置表为权威，不表示有声事件是休止。 以上原提案待root文字仅历史说明；当前音乐复核已完成，另送正式软件审计。未人工试听、未实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "1183346a8ddd2992000823bd5b6eb4ef51300dd1d26ab0ffa2a55543365dccde"
+  },
+  "note_count": 82,
+  "event_count": 94,
+  "duration_seconds": 46.5,
+  "limits": [
+    "Complete existing prechorus/chorus excerpt only; no full-song claim.",
+    "Main melody practice edition deliberately omits13unmeasured reference graces; all original102note values still accounted for.",
+    "The final phrase is intentionally an octave lower than preceding sections, preserving the source arrangement; not a constant-transposition original-key rendition.",
+    "Two8zero source runs receive explicit group replacement by3and3.5beat printed pauses; no exact source-timing-agreement claim.",
+    "Source event74zero explicitly omitted; b precise timing remains unresolved even though hold semantics are proven.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-148-flowers-complete-source.review.json",
+      "sha256": "9648664a6d83a5cc7def1131299bfdea1d8ec13283611a906b5f88594f572061"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "ae33faa53a77120ad94263bb97fa70d222bec28d65b47ef6f6090e9144353cf3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "890a1f9ec736ee1030308c7dac2b9f86e55893130e222e8c7d15bcf242c7b7c3"
+    },
+    {
+      "name": "0001-6f3ede9faf93.json",
+      "sha256": "d66243fe096119f147cb164231f0ccae1fdb0e1d723ae270d3ae6da14445603c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

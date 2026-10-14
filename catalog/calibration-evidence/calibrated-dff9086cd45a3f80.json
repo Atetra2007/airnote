@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-dff9086cd45a3f80",
+  "source_id": "deck-e0b61dc3bb3c",
+  "work_id": "work-deck-e0b61dc3bb3c",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8B%89%E4%B8%BA%E5%85%B6%E9%9A%BE-%E7%8E%8B%E5%86%95-zmccc-7bcd80bdc2.deltamusic",
+  "status": "reviewed",
+  "sha256": "f4bae691a58f512489fd5560a1bacbf2187410e511db7332d281d811f914c809",
+  "source_sha256": "7f310e89d2708cc788571eb71c206ef26a0619efd880f1e0f730b7fded16d284",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.xinyuepu.com/qupu/201810/17556.html",
+    "edition": "C,4/4 selected chorus;68 retained practice speed, no printed numeric BPM",
+    "score_sha256": "8d53d0427802de2fd894e723ffb1a67661105c3cac6d240f8dce6fc04a7a8f7f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 87,
+    "maximum_parser_boundary_error_seconds": 5.3290705182007514e-14
+  },
+  "review_note": "complete83note93event-source-single-chorus;R6B2-last2beats-through-R10B1-C5-half-note Selected TaoliZuichunfeng vocal transcription, C. The saved source is the complete single chorus from R6B2 last two beats through R10B1 first two beats. Preceding two beats and following accompaniment/repeat are outside the source extent. R6 pickup E5-D5 and R6B3 E5-D5 are different-pitch slurs, each .25+.25. Original E5 holds at source2 and11 are split into the two printed pitches. R9B3 E5-D5 slur similarly splits source77; source78 remains distinct C5. R8B2 last pickup explicitly shows rest sixteenth, E5 eighth, G5 sixteenth. The source lacks E5: insert this one printed attack before source53 G5. No other reference-only notes are added. All six printed same-pitch sixteenth-to-quarter ties are single1.25beat attacks; no slurs across different pitches are treated as ties. Source61 G5 is restored to1.25beats. Source tail from source68 uses .375/.75/1.875 lengths. Selected chorus has no rit. marking at this occurrence, so normal .25/.5/1.25 values are used. The separate final coda rit. is not imported. Final source82 C5 is the first-ending C5 half note,2beats. The following two printed quarter rests and instrumental material lie beyond the saved endpoint and are not appended. All83originalnotes and10rest events receive explicit dispositions. Original休止 indices and exact values remain in evidence; altered timelines use neighbor-based group gaps, never absolute-time overlap. 68BPM is retained practice speed only, not a claimed reference recording tempo. No audio, GUI, GPU, or real-game validation. Root完整图与R8/R9放大复读，另录10位置音级/有理时值，97事件一致；源93事件重新解码、10休止组按前后音重算。 source2/11/77三个E-D异音slur拆为独立十六分；R8B2最后E5八分在源缺失，补后接G5十六分。六处同音tie为1.25拍，含source61。 选择第一结尾，尾C5两拍，未引入最后rit结尾或EOF后休止；68为原来源练习速度。全部83源音处置，无删音或多源合组。 2026-10-13参考图片封装纠正：实际PNG/JPEG格式经完整解码核验，原始字节与SHA不变；另存正确扩展名副本并纠正MIME。音符、时值、谱文件及音乐决定不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "8d53d0427802de2fd894e723ffb1a67661105c3cac6d240f8dce6fc04a7a8f7f"
+  },
+  "note_count": 87,
+  "event_count": 97,
+  "duration_seconds": 31.764705882352942,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "68BPM explicitly retained practice speed; no numeric tempo in reference.",
+    "One E5 eighth reference insertion and three slur splits.",
+    "No invented ritardando imported from the separate final coda.",
+    "No audio, UI, GPU, recording alignment, or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-e0b61dc3bb3c-mian-reference-v1.review.json",
+      "sha256": "ba4c1b59e234b9ef1aad0bb78b8b01adae89b49398ad459c8edadb75952725b8"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "73cd757f9ff6f9a5d06d9ba61e78c089730e78878e42bea01327b62e93b26ef9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c00c7b7db487c875014b43cd931443201153c81a0d92e670f8a7b858f62a87a"
+    },
+    {
+      "name": "0005-14ef31004536.json",
+      "sha256": "8ed23a44d8ab9ee5482673b3542c61cfdcc82b7e2b35038bab154c6d94b9b839"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

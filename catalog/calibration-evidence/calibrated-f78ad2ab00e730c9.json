@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f78ad2ab00e730c9",
+  "source_id": "deck-cab097d18315",
+  "work_id": "work-deck-cab097d18315",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%B7%AF%E5%B0%8F%E9%9B%A8-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-6a9540c156.deltamusic",
+  "status": "reviewed",
+  "sha256": "5034773b965e642258ca2d0b24f833239092a9397b8dca1077552bc11183d558",
+  "source_sha256": "9e6f48a06cc8c169b2a2c4dca4b8f36e84070d71e86ffc1b004f13b80915bcd8",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/150553.html",
+    "edition": "EveryonePiano C4/4 quarter88;source-specific bass-middle composite +12;source-finalbar repeatsprintedm4 and omitsabsentm29",
+    "score_sha256": "610118dfa61a49035895cedd8e85968020c2c9f198747d850b7fbc9cddb07075"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 380,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-13
+  },
+  "review_note": "complete381note383event-source;28bars bass-middle composite;disclosedm28-repeatedm4-tail;originalno-m29-finalcadence 完整381源音383事件（2微休止）逐项映射；来源112拍，选印谱88BPM，候选112拍。无整段或困难音型删除。 明确保留来源分解/低音结构的钢琴声部编配：m1–16与m25–28，每半小节前两个十六分取左手、后六个取钢琴中间声部，整体比印谱该两个声部高12半音；m17–24改选左手低音八分声部，同样+12。单声部省略独立最上方Voice旋律以及同时和弦上方音，不宣称原声主题旋律全谱。 m13中间声部末四音5-低7-1-5，纠正原5-1-低7-5；m14低音是升2/升4，中间升4本小节沿用、低6为自然6。m15/m16中间和弦明确选下方4/6，不叠奏额外和弦音。 原第32排最后C4是接m17低音首拍的提前起音，映射到m17正常起点64拍；补回m16末钢琴中间声部6（A5）十六分0.25拍。其余原源前255攻击均保留，对应256输出攻击（1补音）。 m20/m24左手为低低4八分、低4八分、升低5四分、低低5八分、低5八分、2四分；原对应第三/第四两八分攻击合为升低5四分，两处合组显式记账。原5:.96后的0:.04微休止归入印谱完整末四分音，不机械豁免。 原第40排最后C4映射m25起点96拍；全段相邻源音重新计算，不能沿用原视觉分隔符当真实小节。m25–27与印谱分解声部一致，m28依据完整原末分解音型重复印谱m4的混合声部，是明确尾段编配，不宣称印谱m28原结束句或m29全音终止。原末E5 .5缩为本编配最终十六分.25，未添加原源不存在m29。 所有出处及裁图哈希保留，公开材料限ignored local。候选等待root独立音乐复核和正式软件审计；无真人试听、录音对齐、UI/音频/GPU或实机测试。 v2纠正m16第二半小节第6十六分（总第14攻击）的下声部2为普通D4，印在上方的高2是和弦上音；按既定+12选下声部得到D5，不选D6。首次v1候选保留不接受。 Root完整2页简谱和4页五线谱复核，独立重录28小节380事件一致，原381音/383事件和两微休止重新解析/邻接时间窗重算一致。 m4/8/12的升5（五线谱降A）本小节沿用；m14升2/升4与m19/23升4均按五线谱核准。m16第14音选择和弦下D4后统一+12=D5，不误取上D5；末补A5十六分。 保留源左右手组合编配：半小节前两音左手、后六音中声部，m17–24左手全音流。m28复用印谱m4为明确尾段编配，未冒充印谱m28或追加m29。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "610118dfa61a49035895cedd8e85968020c2c9f198747d850b7fbc9cddb07075"
+  },
+  "note_count": 380,
+  "event_count": 380,
+  "duration_seconds": 76.36363636363636,
+  "limits": [
+    "Community edition, not authenticated publisher source.",
+    "Piano bass and middle voice +12 selection;independent topVoice melody and chord upper notes not included.",
+    "Two merges and one insertedm16terminal-sixteenth disclosed;all381original attacks accounted.",
+    "Finalsourcebar uses printedm4 repeat adaptation, not literalm28;printedm29 absent from source and not added.",
+    "Printed88BPM replaces original77.",
+    "No audio/UI/GPU/recording alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-cab097d18315-rain-reference-v2.review.json",
+      "sha256": "6e592f23b724294e20f2fd3e6d81e71ae3e06e89a7d320ab559b4412dca44259"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "53be63fcc21ae458c98d0ac4d4f9b2df0305976b644f8ff41ec855a9b0b64d14"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4dcf8c3d7c568190f71d1544a6cf5fad7382e2d59c308c76b00612d9d63ba962"
+    },
+    {
+      "name": "0001-6ba2e0e08d4f.json",
+      "sha256": "3ce099fcd47b626d23e878cb7ec71cf7d09563d8561f615f7a7f7250d2161338"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

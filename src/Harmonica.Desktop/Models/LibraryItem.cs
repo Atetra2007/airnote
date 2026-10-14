@@ -35,6 +35,12 @@ public sealed class LibraryItem : INotifyPropertyChanged
     [JsonIgnore] public string SourceAuthor { get; set; } = "";
     [JsonIgnore] public bool IsCalibrated => Available && !CalibrationRevoked && IsSha256(Hash) && IsSha256(VerifiedSha256) &&
         string.Equals(Hash, VerifiedSha256, StringComparison.OrdinalIgnoreCase) && string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase);
+    [JsonIgnore] public string ReferenceLabel => Reference?.Type switch
+    {
+        "published-sheet" => "参考乐谱：",
+        "recording" => "参考录音：",
+        _ => "参考："
+    };
     [JsonIgnore] public string RhythmLabel => Example ? "原创示例" : IsCalibrated ? "已复核片段"
         : string.Equals(RhythmStatus, "reviewed", StringComparison.OrdinalIgnoreCase) ? (Available ? "校准未匹配" : "已复核片段 · 待导入")
         : string.Equals(RhythmStatus, "deferred", StringComparison.OrdinalIgnoreCase) ? "暂缓校对" : "参考谱 · 未校准";
@@ -43,7 +49,7 @@ public sealed class LibraryItem : INotifyPropertyChanged
     [JsonIgnore] public string Subtitle => $"{(Example ? "原创示例" : Available ? "本地曲谱" : Acquisition == "external-import" ? "需导入" : "可下载")}  ·  {(BpmKnown ? Bpm + " BPM" : "速度待确认")}";
     [JsonIgnore] public string EditionLabel => string.Join(" · ", new[] { Variant, DurationSeconds is > 0 ? FormatDuration(DurationSeconds.Value) : "" }.Where(s => s.Length > 0));
     [JsonIgnore] public string AvailabilityGlyph => Available ? "" : "↓";
-    public bool Matches(string query) => string.Join(" ", new[] { Title, BpmKnown ? Bpm.ToString() : "速度待确认", SourceAuthor }.Concat(Aliases)).Contains(query, StringComparison.OrdinalIgnoreCase);
+    public bool Matches(string query) => new LibrarySearchQuery(query).Match(this) != null;
     public bool MatchesQualityFilter(LibraryQualityFilter filter) => filter switch
     {
         LibraryQualityFilter.LocalAvailable => Available,
@@ -77,9 +83,16 @@ public sealed class LibraryWork
         : $"{SelectedVariant.Subtitle} · {SelectedVariant.RhythmLabel}";
     public string EditionLabel => Variants.Count > 1 ? SelectedVariant.VariantDisplay : SelectedVariant.EditionLabel;
     public DateTimeOffset? LastPlayed => AllVariants.Where(item => item.LastPlayed != null).Select(item => item.LastPlayed).Max();
+    public int SearchScore { get; }
+    public string MatchHint { get; }
+    public bool HasMatchHint => MatchHint.Length > 0;
+    public string VersionBadge => IsFiltered ? $"{Variants.Count}/{AllVariants.Count} 版" : $"{Variants.Count} 版";
+    public string ListDetail => $"{(SelectedVariant.Available ? "本地" : SelectedVariant.Acquisition == "direct-download" ? "可下载" : "待导入")} · {(SelectedVariant.BpmKnown ? SelectedVariant.Bpm + " BPM" : "速度待确认")} · {SelectedVariant.RhythmLabel}";
+    public string ListTooltip => string.Join("\n", new[] { Title, ListDetail, SelectedVariant.VariantDisplay, MatchHint }.Where(value => value.Length > 0));
 
     public LibraryWork(string workId, IEnumerable<LibraryItem> variants, string? preferredItemId = null,
-        IEnumerable<LibraryItem>? allVariants = null, bool isFiltered = false, string? savedPreferredItemId = null)
+        IEnumerable<LibraryItem>? allVariants = null, bool isFiltered = false, string? savedPreferredItemId = null,
+        int searchScore = 0, string matchHint = "")
     {
         WorkId = workId;
         var ordered = variants.OrderByDescending(item => item.IsDefaultVariant).ThenBy(item => item.Title, StringComparer.OrdinalIgnoreCase).ToArray();
@@ -88,22 +101,37 @@ public sealed class LibraryWork
         AllVariants = (allVariants ?? ordered).ToArray();
         var savedPreference = savedPreferredItemId ?? preferredItemId;
         PreferredVariantId = AllVariants.FirstOrDefault(item => item.Id == savedPreference)?.Id
-            ?? AllVariants.FirstOrDefault(item => item.IsDefaultVariant)?.Id
-            ?? AllVariants[0].Id;
+            ?? BestAvailable(AllVariants).Id;
         IsFiltered = isFiltered || ordered.Length < AllVariants.Count;
+        SearchScore = searchScore;
+        MatchHint = matchHint;
         SelectedVariant = ordered.FirstOrDefault(item => item.Id == preferredItemId)
-            ?? ordered.FirstOrDefault(item => item.IsDefaultVariant)
-            ?? ordered[0];
+            ?? ordered.FirstOrDefault(item => item.Id == PreferredVariantId)
+            ?? BestAvailable(ordered);
     }
+
+    private static LibraryItem BestAvailable(IEnumerable<LibraryItem> items) => items
+        .OrderByDescending(item => item.IsCalibrated).ThenByDescending(item => item.Available)
+        .ThenByDescending(item => item.IsDefaultVariant).First();
 
     public bool Matches(string query) => Variants.Any(item => item.Matches(query));
 
     public LibraryWork? Filter(string query, LibraryQualityFilter quality, string? transientPreferredItemId = null)
+        => Filter(new LibrarySearchQuery(query), quality, transientPreferredItemId);
+
+    public LibraryWork? Filter(LibrarySearchQuery query, LibraryQualityFilter quality, string? transientPreferredItemId = null, bool localOnly = false)
     {
-        var matching = Variants.Where(item => item.Matches(query) && item.MatchesQualityFilter(quality)).ToArray();
+        // A work's alternative name applies to every edition; author, tempo and edition stay version-specific.
+        var workAliases = AllVariants.SelectMany(item => item.Aliases).Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+        var matches = Variants.Where(item => (!localOnly || item.Available) && item.MatchesQualityFilter(quality))
+            .Select(item => (Item: item, Match: query.Match(item, workAliases))).Where(result => result.Match != null)
+            .OrderByDescending(result => result.Match!.Value.Score).ToArray();
+        var matching = matches.Select(result => result.Item).ToArray();
         if (matching.Length == 0) return null;
-        var preferred = matching.FirstOrDefault(item => item.Id == transientPreferredItemId)?.Id ?? SelectedVariant.Id;
-        return new LibraryWork(WorkId, matching, preferred, AllVariants, matching.Length < AllVariants.Count, PreferredVariantId);
+        var preferred = matching.FirstOrDefault(item => item.Id == transientPreferredItemId)?.Id
+            ?? matching.FirstOrDefault(item => item.Id == SelectedVariant.Id)?.Id ?? matching[0].Id;
+        return new LibraryWork(WorkId, matching, preferred, AllVariants, matching.Length < AllVariants.Count, PreferredVariantId,
+            matches[0].Match!.Value.Score, matches.First(result => result.Item.Id == preferred).Match!.Value.Hint);
     }
 }
 
@@ -162,6 +190,8 @@ public sealed record CatalogSong(string Id, string Title, string FileName, int B
 
 public sealed class ReferenceMetadata
 {
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
     [JsonPropertyName("url")]
     public string? Url { get; set; }
     [JsonPropertyName("artist")]
@@ -172,6 +202,8 @@ public sealed class ReferenceMetadata
     public string? AudioSha256 { get; set; }
     [JsonPropertyName("score_sha256")]
     public string? ScoreSha256 { get; set; }
+    [JsonPropertyName("midi_sha256")]
+    public string? MidiSha256 { get; set; }
     [JsonPropertyName("start_seconds")]
     public double? StartSeconds { get; set; }
     [JsonPropertyName("segment_start_seconds")]
@@ -192,6 +224,8 @@ public sealed class UserSettings
     public int GameNoteGapMs { get; set; } = 60;
     public string? LastSelectedId { get; set; }
     public Dictionary<string, string> SelectedVariants { get; set; } = new(StringComparer.Ordinal);
+    public double LibrarySidebarWidth { get; set; } = 330;
+    public LibrarySortOrder LibrarySort { get; set; } = LibrarySortOrder.Smart;
     [JsonExtensionData] public Dictionary<string, System.Text.Json.JsonElement>? ExtraData { get; set; }
 }
 

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4236f6cc3fa0d2c0",
+  "source_id": "zhouzhou-125",
+  "work_id": "work-bf9496f067b9",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "ea4ddb14bbc19fd58a2048dce48c532b5dc9ccbf20d69b7c22a23954c4d4e6e4",
+  "source_sha256": "538630406ab5ed29ed2bd68c4a948add1b5a53580176af611e72e2828755fcd1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/309083.html",
+    "edition": "薛之谦C#调4/4声乐简谱，打印四分73BPM",
+    "score_sha256": "a42ebdebf5cbcaf8fd351ccd7642f4b2520f0c9e7905b53dfe612dd6c107d78d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 71,
+    "maximum_parser_boundary_error_seconds": 1.0658141036401503e-14
+  },
+  "review_note": "全部7行69源音，从起句弱起至第一结尾不我先说话，共32.75拍。 主参考309083薛之谦词曲声乐简谱，打印C#调4/4、四分73BPM。完整单页已查看；352658与334643虽同名但不同作者与旋律，明确排除。 两份原稿各69音7无歌词行均完整映射，对应最初弱起至第一结尾不我先说话；不扩充第二段主歌、副歌及第二结尾。原文件名不含完整版标识，交付称完整现有节选。 参考C#4主音移至C4，统一降1半音，以保留来源C4常规音区；原1=C式字面音高不额外按参考调号二次移调。 去掉印谱开头3个四分休止及1个十六分休止，从第一枚实际1开始；打印弱起1/1/2均十六分，来源仅1/2，显式补第二个1。两个1无同音弧，不能合并。原文无歌词，因此首1的词定位仅为选版映射，不声称辨认了原演奏。 原第3行结束于5，第4行起3/2/3/5/3/低6。选版将第4行首3即源33映射前小节把字，并明确补下小节挽字独立3（输出第36事件）；不是把两个相邻同音误合，也不遗漏任何来源音。 完整保留m1/m3快速16分与8分节奏；5及7的相邻同音只按打印弧合并。瓦字低6为.25连1.5合1.75拍；下字低6为.25连1合1.25拍。 镜子里高1/高1/7均.25；的字6为.5，人高3 .25与说高3 .25不同起音，说的后续高3 .5同音延长，共.75。违心的样四音各.25。 子5 .5， 你高2 .25，决高2 .25连.5合.75；定高1与了7各.25，吗高1 1连.75合1.75。原4按所选版修5，两个7中前一个修高1；不把后面的高1无减时线误读成8分。 第一结尾装3 .25进入聋4 .5，或3 .25，者4 .25连.5合.75，作6 .5，哑2 1连.75合1.75，要3 .25；不4 .5、我3 .25、先4 .25连.5合.75、说6 .5、话7 2拍完整收束。源哑为5，所选版改2；125末6改7，138原末7保留。 所有69来源音均恰一次映射，无遗漏、无来源合并；2个新参考起音及1个四分之一拍参考休止明确列出。节奏源无数字，依据打印完整重建；未以默认等时节奏验收。 Root独立先读全图另录72事件，比较后以m6大图纠正自己一处减时线误读；最终所有音高/拍值/起点一致，完整69原音逐项解码验证。正式软件审计另绑定；未人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a42ebdebf5cbcaf8fd351ccd7642f4b2520f0c9e7905b53dfe612dd6c107d78d"
+  },
+  "note_count": 71,
+  "event_count": 72,
+  "duration_seconds": 26.91780821917808,
+  "limits": [
+    "Selected public vocal edition at printed73BPM, not source recording alignment.",
+    "Existing source full scope only; no claim of entire recording.",
+    "No human listening or actual-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-125-gangganghao-complete-source.review.json",
+      "sha256": "1d768ef8befb93989b47e1727e218935c616c8f6292a4582edd8406952246f3c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d131f7654ead738d976a66c13f9ae373a9f8c7c42809ec3aae27821574d7c6d6"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "da01743cdf574997207f5392b2ed540b99bfffc63892190838c4882165c3a5ea"
+    },
+    {
+      "name": "0001-5b6a6a4a5be1.json",
+      "sha256": "c2102d9b0f90fe9970e310c0f6298ee3f735f408bbd6aeda2b53a5885f5fc159"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-482ac1cd000d6be9",
+  "source_id": "community-26fe292fc36120f3",
+  "work_id": "work-father",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%88%B6%E4%BA%B2-%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F-%E6%A7%91%E6%A7%91%E6%A7%91-1849f84c4d968d35ba165.deltamusic",
+  "status": "reviewed",
+  "sha256": "7b49aa457a596529a46edc020307bcf21361e58eceacb23b317ba6b9f88e73b7",
+  "source_sha256": "5ddce6bd4b3f1c262c77b26e85c247b0562bf45c564d0544c5b9b18c46ebb3bb",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/22168.html",
+    "edition": "筷子兄弟父亲，孙世彦E4/4两页声乐谱，打印72；明确来源音区、装饰简化与曲式",
+    "score_sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 187,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "完整193源音/200事件；父亲（主歌桥段及完整副歌） 身份为王太利词曲、筷子兄弟《父亲》，来源完整旋律和歌词与22168孙世彦制谱互证；不是同名的刘和刚作品。 主参考为22168孙世彦E调4/4声乐两页，打印四分音72BPM。已完整视读两页主歌、桥段、副歌和结尾；118470声乐版仅比对身份，不拼接其细节。其他已下载钢琴/吉他版未视读，不作为本提案音符依据。 按每份来源实际范围选定曲式，不追加来源不存在的主歌、完整第二遍或器乐间奏；公开整曲与源片段不混称。全部现有源音与休止均逐项处置，修订另存副本。 同音延长弧合成持续音；异音圆弧是连奏，不合并起音。C4长字655的弧始于6，故保留6、5、5三次起音，并保留留字另一个长5；尾句3高至2高同样是连奏。 B4安字的3一拍半、2半拍是两个起音，下一B5康字2三拍再次起音。来源只有一个末2时，保留源末2为康并显式恢复其前经过2，不把同音跨字误当延音。 所有节奏以所选声乐版为明确修订依据；默认一拍/长按提示不冒称已知原节奏。源异音装饰合并只是显式选择该声乐旋律，不宣称源演奏必然错误。 本编配完成逐音视觉音乐校对和root独立二读；全部677事件精确匹配。软件审计单独绑定；尚未人工听感、录音对齐或实际游戏验证。 community26fe完整193音200事件，原116.25拍@74；保留 literal E-key 绝对音高，不因元数据1=C而再次移调。主歌、桥段、16小节副歌全保留，按所选打印72替换源74。 原21/22 F#4/G#4 approach合成印谱V4得字G#4半拍；原47/48重复E4显式改为V7转字E4十六分及其前.75拍休止。并非同音延长证明，两个源起音均记录处置。 副歌原87/88、117/118、143/144、172/173 D#5/E5 approach各选印谱E5半拍；95/96、151/152 F#5/G#5 approach各选G#5半拍。源98/99重复E5选单E5十六分与半拍休止。所有装饰简化明示。 源4个.04拍短门隙和3个1.75拍长休止分别核对。V4末音2.21+.04改为印谱2.25拍；其他门隙按所在C6/C8/C14印谱休止和前音分配。B5/C4/C12的1.75拍改为印谱.5拍。所有7源休止均独立处置。 B4末补F#4八分经过；C4恢复B4十六分及B4八分两起音。最终187音16休止203事件、115拍72BPM；末C16止于C#5三拍，未追加第一次原曲的10拍间奏延长。 Root完整视读两页及全部四来源原件，独立输入每个事件，与此版本完全一致；复核音区、插入音、装饰简化、同音延长及末段截点，所有原源事件均有处置。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "c16d84b9f81e29d105d762def572762a2652d5bcbd5dd354053f864acc78252f"
+  },
+  "note_count": 187,
+  "event_count": 203,
+  "duration_seconds": 95.83333333333333,
+  "limits": [
+    "Explicit selected-vocal-edition arrangement, not proof every original ornament is wrong.",
+    "No human listening, acoustic alignment or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-26fe292fc36120f3-father-source-form.review.json",
+      "sha256": "71c190149a0d76c38c981ed2e4073076aae7d4060f5213fc415de3693019fe7e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d15a502a1573930ec975131d424466e9702e19a554a788ff5011a1200ab75e9c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "f047cbf0ba08e155779a742521a9070bab84dd631bd4ee571d80512713fbb09b"
+    },
+    {
+      "name": "0004-bb2ebf1ecddd.json",
+      "sha256": "0fb322341d7473464c552875fc6a0d7e8ab4bb2bc515289f791d553615928639"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

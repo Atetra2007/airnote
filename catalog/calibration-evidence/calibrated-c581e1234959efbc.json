@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c581e1234959efbc",
+  "source_id": "zhouzhou-005",
+  "work_id": "work-deck-a52fdaa99ded",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "acfff2f6b358e00a56405e6625ad8b49d6277a627a3382502d5db593345f12a1",
+  "source_sha256": "b9f5779d59fc4561726766c4e033ed60aff5d92298379576377d105a2de24f42",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.qinpu123.com/qiyue/kouqin/33492.html",
+    "edition": "望一望 小西貴雄版M-7，C调3/4四分66；倚音近主音区与1/8拍量化明确编配",
+    "score_sha256": "c0d170ade00abb9a7d7546529833a2ff1eba955239ecf394d95495752834a5a3"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 39,
+    "maximum_parser_boundary_error_seconds": 2.7272761826679925e-09
+  },
+  "review_note": "All38originalnotes, pickup plus first7printedbars; includes full final1.75beat tonic. 完整原005的38音，从首3至第一主题末高1。采用望一望所制C调3/4四分66版，完整覆盖拾音小节及标号1至7；不把它等同于775事件长deck。 主谱普通C4移至C5（+12），低音区移至原来源的普通音区。17号6改5，18号5改#4，27号装饰4改#4，30号装饰5改#5，其他34原音音高不变；38音逐一映射无省略、无合并原攻击。 主谱小号倚音有些未标低点。明确编配为靠近主音的低音区4、3、#4、#5，整体+12后为F4、E4、F#4、G#4；不是宣称原图每个小号音都印低点。另版39484/50386的普通大小经过音提供同段音区旁证，不用于替换主谱3/4时值。 四个小号倚音明确量化为1/8拍，各从后接主音借时；第3小节新增原源没有的自然4倚音。其余三个倚音对应已有原音，不删除。 开头两组三连音：首R/低3/1各1/3，后1/低7/1各1/3；两相同1有连线合2/3。第一小节低3的1+.5合1.5，后低3为独立半拍。 第3末#4与第4首附点#4合并，借倚音后持续1.125拍；第4低2没有减时线，为1拍，低6双线为.25。第5低5两半拍合1拍。第6低7 .5+.25合.75；第7低7三连1/3+.25合7/12，末1 .75+1合1.75。 全部8个3/4小节合24拍，恢复5个休止事件；39音5休止44事件，66BPM为主谱打印值，时长21.818181818秒。最后高1完整1.75拍后停止，不添加后续高八度再现或吉他solo。 其他公开4/4八十BPM版本存在可见小节总时值疑点，保留为研究资料，不默默修平它们；最终明确选择3/4六十六BPM版。需独立音乐复核与正式软件审计；未人工试听或实机。 独立审核员从原图冻结首轮主音/小节，后复图补记四个小倚音并另写resolved报告；原freeze不改。root重新逐字解码38原音、复看完整首8小节与独立报告，确认音高/三连音/连线/五休止/末1.75拍，原提案音乐保持。小倚音邻近音区及1/8拍借时仍是明示编配选择，不假称谱面有精确时值。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c0d170ade00abb9a7d7546529833a2ff1eba955239ecf394d95495752834a5a3"
+  },
+  "note_count": 39,
+  "event_count": 44,
+  "duration_seconds": 21.818181815454544,
+  "limits": [
+    "Explicit selected3/4edition and close-position grace arrangement, not a claimed note-for-note transcription of every small octave marking.",
+    "All existing short-source extent; long deck remains separate.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-005-orb-complete-source.review.json",
+      "sha256": "75228d3442542dd66eaab3ca18c5e574a87930815b8dd5395f45611ce0e694fc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d8a87f0d0a513917aa7b2107941a13ae50ee02c19d968ffd83397aeb7fc10818"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "866a450386951e9f2e26e2d5cc6dfd18a382e32b3c9400aae72f217d9d6667b6"
+    },
+    {
+      "name": "0001-d424c93ba507.json",
+      "sha256": "6df550f4f79c6953ed961eb04e89751f935180aae4227e8639945a5c7288fc1f"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

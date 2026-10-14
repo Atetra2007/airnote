@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-33dfa1feba6f46b6",
+  "source_id": "social-d851dfcf70bcb6b3",
+  "work_id": "work-52b4874e4c42",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=On0Teeg9uYzA",
+  "status": "reviewed",
+  "sha256": "4844580f53bc6e241319fde254bc8b703c484ac44945d7d1d32b632e0b6512c3",
+  "source_sha256": "c267f8452e9b29794750123766efa36ea4ee493fd18a248ab5374f1af561e103",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://lupipi.com/s/48f7c3",
+    "edition": "G major singlepage,uniform-2 to F;16bar verse repeated then8bar chorus,explicit terminal+4beat editorial hold",
+    "score_sha256": "f7e5bace6e8a724e2000ec9e6b54bbce8e89de626d2555a530041e476f31a5f6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 153,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete152noteMIDI;16bar verse twice and8bar chorus;explicit finaltonic+4beats source56-116-unprinted: Each source G5 attack at verse15 beat4 replaces printed eighth rest0;explicitly omit source56 and116 and restore0.5beat silence source135-pitch: Source A5 corrected to G5,chorus03 last 2-prime eighth source149-split: Source sixbeat G5 simplified chorus07 2-prime/2-prime/1-prime/2-prime tied into chorus08. Restore4 distinct attacks G5/G5/F5/G5 and actual tie3.5beats;restore chorus08 beat2 quarter rest source150-151-timing: Printed terminal6 dottedquarter1.5 and1-prime eighth0.5 replace source approximate2beats and late finalattack terminal-editorial: Preserve source final tonic termination by editorial additional4beat F5 sustain beyond printed0.5;explicit source-specific ending,not a printed tie or full-song continuation scope: Source entire152note content:16bar vocal section twice,chorus8bars;initial instrumental intro,between-section fourrestbar and subsequent full-song sections excluded by this source excerpt verse11-timing-v2: Root crossread and worker reinspection:verse11 has three un-underlined quarters1/1/6,then eighthrest0,then two sixteenths1/6;v1 mistaken1/.5/.5/1/.5/.5 rejected;both repeated occurrences corrected Root完整单页与四幅细节复读，独立24位置/40小节十六分tick重录163事件一致。发现并拒绝v1的verse11减时线误读，v2两遍均改为三个四分+八分休止+两个十六分；低端自动一致性无法代替图读。 Root原MIDI311消息/152音精确重解码及111静音窗口重算通过；56/116两源G5明确错误起音替代了印谱0，删并恢复休止；135改G5，149拆四音中第三F5，末G5跨小节真连。 明确批准末F5在印谱0.5拍外保留原源终止意图追加4拍，作为来源独立收尾编配，不称印谱延音。范围16小节两遍+8小节副歌；96BPM从原MIDI取，印谱未标速度。未试听/原唱对齐/游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "f7e5bace6e8a724e2000ec9e6b54bbce8e89de626d2555a530041e476f31a5f6"
+  },
+  "note_count": 153,
+  "event_count": 163,
+  "duration_seconds": 102.5,
+  "limits": [
+    "Community score,not publisherauthentication.",
+    "Two explicit wrong pitchedattacks inprinted rests omitted.",
+    "Source149 sustain split tofour printedattacks;crossbar equalpitch isactualtie.",
+    "Editorial additional4beat terminaltonic hold,not printedcontinuation.",
+    "Originalsource96BPM retained;publicprintedscore hasnotempo.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-d851dfcf70bcb6b3-maple-reference-v2.review.json",
+      "sha256": "62b56e9df4db4f76318aa5c551064f124373e60798e704df956a23ce315ac153"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "a40789d9b43f5ec56f22147f9d218bbfa5d689e1c134bff280b1ad3e1b685782"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4a23895eb69b24014bb109caced647afff072981d5726adfa819446f2ee4ada1"
+    },
+    {
+      "name": "0001-53d1c9823618.json",
+      "sha256": "fb43c8af28b2667c357154d49a99aa9cea0239f29be8e48de7317b1f02bd340e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

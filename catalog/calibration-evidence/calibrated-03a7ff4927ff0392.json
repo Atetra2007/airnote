@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-03a7ff4927ff0392",
+  "source_id": "zhouzhou-208",
+  "work_id": "work-d58d520e8a83",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "adc49d3faa5716c3f6507dd9ed6f25e24f22a66944a69e753ad5b57cabe7e350",
+  "source_sha256": "55f324c627827999c2d1f44125e46a283d2ba56dec889bd0403e4674bd375dcf",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/251385.html",
+    "edition": "EveryonePiano/Tie C调4/4印85BPM钢琴谱；第1小节2.5拍起至第15小节前2拍，上声部降八度",
+    "score_sha256": "5994d0e1abf9bcd804b3e3fe9717c3c24c7a0b576d993ccdae8114a788de92ac"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 72,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "72源音全部逐项处理，公开钢琴谱第1小节末1.5拍至第15小节首2拍；72起音6休止55.5拍。 采用EveryonePiano/Tie署名温柔的倾诉251385，印1=C、4/4、85BPM；取上声部整体降一个八度，音域G#3–C5。 原72音完整对应第1小节后1.5拍至第15小节首E长音的2拍，范围55.5拍；不加入开头2.5拍空白、原稿以外后段或钢琴左手伴奏。 原72起音全部保留，66个音高与所选谱完全相同。六处变化已逐项列明：第4/12小节末按所选版#2；第5/6小节末#5、第8小节末低#5和第9小节末#5。不把其他编配的变音差异直接宣称为作者错误。 第6小节7和第12小节2有同音延音线，二分音加八分音为2.5拍，再接其他独立音符；原稿这两处本来只有一个起音，保持不重触发。 第7小节末低6、中1、中5以及第9小节首低6的音区按印谱点位保留；第8末#5没有上点，上声部降八度后为G#3，不能误升八度。 恢复第3/5/7/9/11/13小节各半拍休止，共6个。除明确二分、四分与延音外，所选短音均为八分半拍，无附点变体。 保留来源现有片段范围，不等同完整影视配乐；真人听感、录音对齐和真实游戏测试未执行。 独立第二读者重新打开原始完整谱页及原像素裁图，按小节复核音高、时值、休止与延音，数值与root候选全序列一致。所有来源现有内容均处置，编配选择仍明确保留；未进行真人试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5994d0e1abf9bcd804b3e3fe9717c3c24c7a0b576d993ccdae8114a788de92ac"
+  },
+  "note_count": 72,
+  "event_count": 78,
+  "duration_seconds": 39.1764705882353,
+  "limits": [
+    "Complete existingexcerpt only, not entirefilm theme.",
+    "Piano uppervoice selected; loweraccompaniment omitted.",
+    "Six chromatic choices follow selectededition; original source preserved.",
+    "No humanlistening or realgametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-208-piano-sheet.review.json",
+      "sha256": "a5963e1afdced0c57abbc195992f35b998938ba264f4509d27beddd02a243407"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7eb52520a2e73a2aaac89482d6d901ae6a19eaf3e5a1a35f9f6d433982afc3e9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b69ea8adfeb788823dd46173ec04cb1abd0fd769e7339fce9c1c03c4caba2493"
+    },
+    {
+      "name": "0003-3cc5b11cebf9.json",
+      "sha256": "2d0d75d5f739669634951b74d17a0cf3cb00e9d692db7eec176c02f8508123aa"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

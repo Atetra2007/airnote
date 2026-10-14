@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a750e0dd64576ac0",
+  "source_id": "zhouzhou-110",
+  "work_id": "work-997374e41790",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1b133ff9c25e0e37f0c261ea1dc4e89ee694ec93c0ade638d8046d6e2f4c23b9",
+  "source_sha256": "74e3a6c9d56ecbc81db2f42e9c1193ef32505aacb67c7b748797f0915aa43af6",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/119663.html",
+    "edition": "桃李醉春风蒋雪儿G4/4声乐完整单页；80为另版谱头支持的明确练习速度",
+    "score_sha256": "42d341bf96c8208441e07970768ba556cb0cb44abb58c9efc3fd83528bacc40b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 163,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全8行148原音，从隐隐坠下至第一次眼泪的持音结束，排除括号间奏拾音。 原110全部8行148音（无歌词文字、无0）逐项解码，完整范围对应首隐隐坠下至首次让风吹干受伤的眼泪。没有按乐句重复推测删去原音，148音全部一对一映射。 唯一音符/节奏主参考119663桃李醉春风记谱、谱头标蒋雪儿的完整单页G4/4声乐版。17425为君羊按孙露视频记谱的另一版，音符、装饰和反复明显不同，不混读；仅其页头四分80作明示练习80BPM旁证。119663没有数值BPM，不声称与其演唱录音按80逐秒对齐。 参考G4数字整体降7半音至来源C4，八度点逐一保留。仅首source0普通6A4修正为印低6A3；第二主歌source36本来就是低6，不再改，其他147源音音高保持。 主歌两次隐隐坠下/思念已经，每次补印第二隐或念的5 .5→6 .5中的5及坠/已5 .5→3 .5中的3，全部异音弧保留两个起音。季节/化成等每四个八分接低6两拍；阵阵/一滴等八个八分均完整。 好凄凉/我的心的末5两拍后两个一拍0保持；V6远方印5 .5→6附点四分1.5，补转入方前5 .5。没有节奏源值的原稿按主参考逐小节赋拍，不当作默认匀速。 孤单：V7末5 .5跨行异音弧只到V8第一3 .5；随后3附点四分1.5没有同音延音弧，必须独立起音。补前一枚3 .5，原source35映射后单3 1.5，不能误合成一枚2拍3；尾两个0各一拍保留。 预副歌梦的翅膀、已经受伤、我飞不到有你的地方全部对应source54-71；方首5 .5补入，6 .5同音弧连6两拍合2.5，V16末一拍0保持。 两次天空/爱情的末空或情，先补高2 .5再原高3 .5连高3两拍合2.5，后0一拍；外层高2→高3弧是异音连贯，内层高3→高3才合持音。 我的记忆里C5六音为6 .5、6 .5、6 .5、高1 .5、高1 .5、高2 1.5；原忆高1后补第二高1 .5，该高1→高2是异音弧，不能并音。爱得太累C13同样补高1 .5，首爱6为一拍，两个小节节奏不能强行复制。 有你的痕迹C6末6 .5同音连6 .5合1，然后印6一拍无弧独立起音；世界里C7末高2 .5、高1 .25、6 .25，最后6与C8里6两拍无延音弧，均独立起音，source110映射里6两拍。 心已憔悴C14为7一拍、3 .5、7 .5、6 .5、6附点四分1.5；3→7弧异音不并，末两个6间没有弧，补前6 .5，source138映射后6 1.5。 最终让风吹干受伤的眼泪全部原source139-147；泪字先补5 .5，再原6 .5连6两拍合2.5。仅取第一结尾头三拍，排除其后括号内0 .5/3 .5的间奏拾音以及后面的反复和第二结尾。 148源音无省略、无源起音并组，补15个参考明确起音；输出163音13休止176事件，主歌16整小节64拍+副歌15整小节60拍+第一结尾3拍共127拍，80BPM95.25秒。 Root独立176事件转录发现原候选C7世界三音下划线分组看反；原像素第二减时线从高1下开始延至6，高2仅一线。修订高2 .25→.5、高1起点91.25→91.5、末6 .5→.25且起点91.5→91.75；source108/109及补音全部保留，C8里6两拍另起。作者另看原像素确认相同，冻结候选保留。 全部176修订事件与root独立读谱音高/起点/拍值一致；148原音逐项处置，所选80BPM是另一演唱版旁证的明示练习值。正式软件检验单独绑定，无人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "42d341bf96c8208441e07970768ba556cb0cb44abb58c9efc3fd83528bacc40b"
+  },
+  "note_count": 163,
+  "event_count": 176,
+  "duration_seconds": 95.25,
+  "limits": [
+    "Primary vocal edition119663 has no numeric BPM;80 explicitly selected using different-performer17425 heading.",
+    "Printed same-pitch notes without ties remain separate even when original has one note.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-110-dream-complete-source.review.json",
+      "sha256": "7d66fe0f4dd54cad314fafc2e4a3805816c57a7e72a6586f08cde27f4ec07fd2"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "29ebb0cc9107894723beabbc25b55c566bd2f707ee03f100418c0fe2c2bbbbf4"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "84b315569f071c9e6b7a5e7ca006a8403e408faa8aea10d098c717c6162d2656"
+    },
+    {
+      "name": "0001-089bdd95bbf2.json",
+      "sha256": "c42fdf91fdd577a39fab4bcd6bcd32be132efd4ddeb6ccf92452143339689743"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

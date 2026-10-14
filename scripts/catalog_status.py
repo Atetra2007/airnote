@@ -16,13 +16,14 @@ DEFAULT_OUTPUTS = {
     ROOT / "docs/CALIBRATION-QUEUE.md": "queue",
 }
 REFERENCE_RHYTHM_STATES = {"not-reviewed", "source-timing-verified"}
+STAGE_FILENAME = "calibration-stage-20261014.json"
 
 
 def sha256_bytes(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def summarize_catalog(catalog, source_sha256):
+def summarize_catalog(catalog, source_sha256, stage=None):
     """Summarize catalog metadata without copying score/source contents."""
     if not isinstance(catalog, dict) or catalog.get("schema_version") != 3:
         raise ValueError("catalog must be a schema_version 3 object")
@@ -111,7 +112,7 @@ def summarize_catalog(catalog, source_sha256):
     if known_bpm + missing_bpm + null_bpm != version_count:
         raise ValueError("BPM counts do not match the catalog version count")
 
-    return {
+    summary = {
         "schema_version": 1,
         "source": {
             "path": "catalog/songs.json",
@@ -141,6 +142,76 @@ def summarize_catalog(catalog, source_sha256):
             "items": queue,
         },
     }
+    if stage is not None:
+        summary["calibration_stage"] = validate_stage(stage, songs, seen_variant_ids)
+    return summary
+
+
+def validate_stage(stage, songs, variant_ids):
+    """Keep an explicit user exclusion separate from musical acceptance."""
+    if not isinstance(stage, dict) or stage.get("schema_version") != 1:
+        raise ValueError("calibration stage must be a schema_version 1 object")
+    if stage.get("status") != "completed-with-user-exclusions":
+        raise ValueError("calibration stage has an unsupported status")
+    count_keys = (
+        "original_scope_works", "original_scope_source_versions", "accepted_source_versions",
+        "accepted_arrangements", "excluded_source_versions", "remaining_source_versions",
+    )
+    for key in count_keys:
+        value = stage.get(key)
+        if isinstance(value, bool) or not isinstance(value, int) or value < 0:
+            raise ValueError(f"calibration stage has an invalid count: {key}")
+    if stage["remaining_source_versions"] != 0:
+        raise ValueError("completed calibration stage cannot contain remaining sources")
+    if (stage["accepted_source_versions"] + stage["excluded_source_versions"]
+            != stage["original_scope_source_versions"]):
+        raise ValueError("calibration stage source counts do not match its original scope")
+    if stage.get("all_original_sources_musically_accepted") is not False:
+        raise ValueError("user exclusions must not claim all original sources musically accepted")
+    excluded = stage.get("excluded")
+    if not isinstance(excluded, list) or len(excluded) != stage["excluded_source_versions"]:
+        raise ValueError("calibration stage exclusion count does not match its list")
+    seen = set()
+    for item in excluded:
+        if not isinstance(item, dict) or set(item) != {"source_variant_id", "work_id", "title", "reason"}:
+            raise ValueError("calibration stage exclusions must contain only metadata")
+        for key in ("source_variant_id", "work_id", "title"):
+            if not isinstance(item[key], str) or not item[key]:
+                raise ValueError(f"calibration stage exclusion has invalid {key}")
+        source_id = item["source_variant_id"]
+        if source_id in seen:
+            raise ValueError(f"duplicate calibration stage exclusion: {source_id}")
+        seen.add(source_id)
+        if source_id in variant_ids:
+            raise ValueError(f"excluded source is still in current catalog: {source_id}")
+        if item["reason"] != "user-excluded":
+            raise ValueError("calibration stage exclusions must have reason user-excluded")
+    catalog_version = stage.get("accepted_catalog_version")
+    if not isinstance(catalog_version, str) or not catalog_version:
+        raise ValueError("calibration stage must identify its accepted catalog version")
+    arrangements = [song for song in songs if song.get("version") == catalog_version]
+    if len(arrangements) != stage["accepted_arrangements"]:
+        raise ValueError("calibration stage accepted arrangement count differs from current catalog")
+    accepted_sources = set()
+    for song in arrangements:
+        source_id = song.get("source_record_id")
+        if not isinstance(source_id, str) or not source_id:
+            raise ValueError("calibration stage arrangement must identify its source")
+        if source_id in seen:
+            raise ValueError(f"excluded source cannot have an accepted stage arrangement: {source_id}")
+        if song.get("verification", {}).get("rhythm") != "reviewed":
+            raise ValueError("calibration stage accepted arrangement must remain reviewed")
+        accepted_sources.add(source_id)
+    if len(accepted_sources) != stage["accepted_source_versions"]:
+        raise ValueError("calibration stage accepted source count differs from current catalog")
+    return {
+        "path": f"catalog/{STAGE_FILENAME}",
+        "status": stage["status"],
+        **{key: stage[key] for key in count_keys},
+        "accepted_catalog_version": catalog_version,
+        "all_original_sources_musically_accepted": False,
+        "excluded": excluded,
+    }
 
 
 def render_json(summary):
@@ -149,6 +220,25 @@ def render_json(summary):
 
 def _markdown_cell(value):
     return str(value).replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+
+
+def render_stage_markdown(summary, include_exclusions=False):
+    stage = summary.get("calibration_stage")
+    if stage is None:
+        return ""
+    text = f"""## 当前校准阶段处置
+
+2026-10-14 的当前阶段已完成处置：原固定范围为 **{stage['original_scope_works']} 个作品组 / {stage['original_scope_source_versions']} 个来源**；其中 **{stage['accepted_source_versions']} 个来源对应 {stage['accepted_arrangements']} 个已通过编配**，剩余 **{stage['excluded_source_versions']} 个来源由用户主动移出当前总表**，本阶段待处理来源为 **{stage['remaining_source_versions']}**。
+
+阶段结束不等于原范围全部来源音乐通过。主动移出的来源记为 `user-excluded`，没有升级为已通过；同作品的已通过编配继续保留。原材料、历史冻结队列和音乐证据保留在本地，历史台账仍描述当时的音乐验收范围，不能当作当前待办队列。精确处置清单见 [calibration-stage-20261014.json](../catalog/{STAGE_FILENAME})。人工实际试听未进行，真实游戏验收未进行。
+
+"""
+    if include_exclusions:
+        text += "| 已移出的来源 ID | 作品 | 处置原因 |\n| --- | --- | --- |\n"
+        for item in stage["excluded"]:
+            text += f"| `{item['source_variant_id']}` | {_markdown_cell(item['title'])} | `user-excluded` |\n"
+        text += "\n"
+    return text
 
 
 def render_status_markdown(summary):
@@ -173,7 +263,7 @@ def render_status_markdown(summary):
 | 暂缓校对 | {counts['deferred_versions']} |
 | 没有已复核片段的作品组 | {counts['works_without_reviewed_excerpt']} |
 
-## 未知 BPM
+{render_stage_markdown(summary)}## 未知 BPM
 
 共 **{bpm['unknown_versions']}** 个版本没有已知 BPM：目录中 `bpm` 字段缺失 {bpm['unknown_field_missing']} 个，字段存在但值为 `null` 的有 {bpm['unknown_explicit_null']} 个。已知 BPM 为 {bpm['known_versions']} 个。统计把字段缺失与显式 `null` 都视为未知，不会补默认速度。
 
@@ -186,7 +276,7 @@ def render_status_markdown(summary):
 
 ## 历史运行报告
 
-旧的本地运行报告 `runtime-audit-011` 记录了 262 个未知 BPM，但报告中的目录 SHA-256 为 `5814d66871f37a7e2315e67cd9565602731dda0961ae1cc76a99c805d6d34307`，与本页的当前目录哈希不一致。因此它只能说明另一份目录快照，不能作为当前目录的运行验证。当前候选的运行时验证见[0.4.1 状态记录](RELEASE-0.4.1-STATUS.md)；只有报告所记目录哈希与目标目录相同，才可称为验证了该目录快照。
+旧的本地运行报告 `runtime-audit-011` 记录了 262 个未知 BPM，但报告中的目录 SHA-256 为 `5814d66871f37a7e2315e67cd9565602731dda0961ae1cc76a99c805d6d34307`，与本页的当前目录哈希不一致。因此它只能说明另一份目录快照，不能作为当前目录的运行验证。本阶段验证见[0.4.2 状态记录](RELEASE-0.4.2-STATUS.md)；只有报告所记目录哈希与目标目录相同，才可称为验证了该目录快照。
 
 运行 `python scripts/catalog_status.py --check` 可检查本页及 JSON 是否与当前目录快照一致。
 """.encode("utf-8")
@@ -196,6 +286,8 @@ def render_queue_markdown(summary):
     items = summary["calibration_queue"]["items"]
     lines = [
         "# 未复核作品队列",
+        "",
+        render_stage_markdown(summary, include_exclusions=True).rstrip(),
         "",
         f"当前目录有 **{len(items)} 个作品组**没有已复核片段。队列按作品组列出，并附上可在 `catalog/songs.json` 中定位的版本 ID；同组归并可能仍是暂定判断。此表是整理队列，不意味着条目已校准或可用于演奏。",
         "",
@@ -224,14 +316,23 @@ def render_queue_markdown(summary):
     return "\n".join(lines).encode("utf-8")
 
 
-def build_outputs(catalog_path, output_paths=None):
+def build_outputs(catalog_path, output_paths=None, stage_path=None):
     catalog_path = Path(catalog_path)
     raw = catalog_path.read_bytes()
     try:
         catalog = json.loads(raw.decode("utf-8-sig"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ValueError(f"cannot read UTF-8 catalog JSON at {catalog_path}: {error}") from error
-    summary = summarize_catalog(catalog, sha256_bytes(raw))
+    companion = Path(stage_path) if stage_path is not None else catalog_path.parent / STAGE_FILENAME
+    stage = None
+    if companion.exists():
+        try:
+            stage = json.loads(companion.read_text(encoding="utf-8-sig"))
+        except (UnicodeDecodeError, json.JSONDecodeError) as error:
+            raise ValueError(f"cannot read calibration stage JSON at {companion}: {error}") from error
+    elif stage_path is not None:
+        raise ValueError(f"calibration stage file does not exist: {companion}")
+    summary = summarize_catalog(catalog, sha256_bytes(raw), stage)
     paths = output_paths or DEFAULT_OUTPUTS
     content = {
         "json": render_json(summary),

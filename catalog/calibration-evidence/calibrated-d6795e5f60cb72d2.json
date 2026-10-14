@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-d6795e5f60cb72d2",
+  "source_id": "zhouzhou-030",
+  "work_id": "work-fb2dd2c9afa1",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "4828948f6a9aa0897b0cae6fb78ab5eb2cb6df4d941168f8475d0547f0cd80f2",
+  "source_sha256": "b7b9ebc8bd928051eb881932b4316a451b208d43bbb1a2942cb9cbe71a4364bc",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/445698.html",
+    "edition": "光良童话Gb4/4声乐简谱，打印四分音78；显式C调源音区与剪接",
+    "score_sha256": "7261e9824a0f42e2a35f47d1e11c234ee4264c3e9710c6ed95b193d931d24826"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 48,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-15
+  },
+  "review_note": "完整48源音；副歌一次至首终止句。 唯一音高/节奏主参考为445698光良《童话》Gb调4/4声乐简谱，打印四分音78BPM。完整视读首副歌、后续副歌变体与末行；436573两页钢琴版已查看，但不混入其不同速度或右手改编音型。 源图片未标可量化时值；长按点/横线只表示延长提示，不是明确拍数。按公开谱重建节奏，不冒称保留来源原节奏。首次从我字起音，省去其前半拍休止。 采用首副歌：C0后三个八分弱起；C1–C7各4拍。C1里、C3翅/C4你、C5我、C6里/幸、C7乐是相邻同音延长均逐一合并；异音线不合并。C2张之前和C4你之前各有半拍休止。 C7源乐/是两次1合为所选1拍；恢复是字后半低7八分，原结字低7一拍继续独立。此为明确选择所选声乐谱旋律细节，不把源简化版泛称乱谱。所有源音与新增音分别记录。 原图、键位及音区保持可追溯，修订另存。音乐视觉校对、正式软件审计、人工听感、游戏验收分开；本编配已完成root独立音乐复核，未试听、未录音对齐、未游戏验证。 030完整六行48音：图上点明确为高音，选择C5主体、首G4、低于主体的6/7为A4/B4。原图不印调号，这一C调音区为显式游戏编配；公开Gb调移至C调，源绝对音高解释保留。 仅首副歌我愿变到结局：C0三音弱起、C1–C7、首结尾C8的1二拍。没有擅补主歌或后续多遍；所有48源音均有处置，无源音高改动，源44/45同1合并并补低7起音。 最终48音2休止50事件、31.5拍、78BPM、24.2307692308秒，音域G4–A5。 Root完整视读030与social双图及参考全部所用主旋律、末句。独立数组完全匹配；全部来源音与键位/音区核对，源100/101合并、结后半补高1、最终独立1四拍均核对。延长号未加无量化额外停留。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "7261e9824a0f42e2a35f47d1e11c234ee4264c3e9710c6ed95b193d931d24826"
+  },
+  "note_count": 48,
+  "event_count": 50,
+  "duration_seconds": 24.23076923076923,
+  "limits": [
+    "Sources have no quantified timing; selected vocal78 and explicit source-register/form arrangement.",
+    "Social two pages encode the same104 positions; no MIDI or DFHS source exists in baseline.",
+    "No recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-030-fairytale-source-form.review.json",
+      "sha256": "64a68deef7a52a3476bf6e54a992bdb7f49c7943f9408d9a3a156cc975009987"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4d367028317a4942e189f04691e1bfc0ba2d07f5da209a64f23101d58a8ac079"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c6675711df9947ec1ba1c8551e680e6f6c6a52efb084c7d976336dff97de09d"
+    },
+    {
+      "name": "0001-a61e017b88f4.json",
+      "sha256": "3b1b8dc9f4410db8b6ba58409e19421a10b7bb7741c5be5c0d9b57b412db8c7a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

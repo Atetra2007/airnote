@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-e19563b5acc3171a",
+  "source_id": "community-4519cfc30f7a8962",
+  "work_id": "work-885a604c2096",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/See-You-Again-%E8%80%81%E5%A4%A7-11111-8e45566e0368197f6cd2e.deltamusic",
+  "status": "reviewed",
+  "sha256": "ece3e4d6bd885a241aac9f06ac2bd7610364a5e53b1036e437b7d93af738a010",
+  "source_sha256": "55d93a030ace5fc7dcbf287af47f2f78c4da7ae8d29edb71323f943324e5b8e2",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/380185.html",
+    "edition": "Complete260-source-selected-piano137beat-practice;intro-minus12;literal-other-selected-chordmembers;fullrap96-136;twofullresponses",
+    "score_sha256": "e6f2cb824fb135aa55e408bb3220fbf6fa2e4d59b095c4cc33767de8db410ac8"
+  },
+  "review_method": "Root实际全谱交叉复核、25栏节奏原像素纠错、260原头/283事件完整处置及279输出事件逐项回读；137拍钢琴选版完整重编，非逐原头恢复；未做人耳试听或真实游戏检验。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 250,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Root实际看完380185四整页，选用第1–13栏、第22–38栏，逐符对读所有六完整段，并核原像素21–28、33–40细图；这是完整非盲交叉复核，不声称第二次盲录或人耳试听。 Root发现第25栏首3到第4个符为同一组四个16分音，第5个1为8分音；原候选错误放长首3，现按.25/.25/.25/.25/.5纠正，后续起点及总137拍不变。旧v1/v2保留且未验收。 前奏14.5拍整段降八度；其余用实际打印和弦成员。第35栏两个独立Bb4/Bb5及第37栏D5/C5/F5保留；36栏下层和弦成员和末四个单音分别确认，无逐头凑音域折叠。6/27栏230末0没有下划线，确为1拍。 完整260原音、23休止及283事件由root重新鲜解并逐项回核；原96低A3与其后40个rap头全部明确归入完整说唱版本替代组，原A3保存在源证据中，未虚称输出仍有A3。两次尾响应各30个原头全部处置并保完整曲式。 选完整钢琴短句重编：前奏14.5、第一歌段37.5、说唱14.5、第二歌段36.5、两次响应各17，共137拍。原133.5拍的差额3.5明确来自第一段尾+1、说唱+1.5、第二响应+1。完整末Bb4为2拍，未裁尾。 Root按原像素重新写入全部288打印符的核对表，合并实际连音得到279事件，与最终文本及timeline逐事件音高、时值、起点全相同。为完整所选钢琴版改编，非原来源逐头错误纠正；96BPM来自打印谱，软件验收与真实游戏、人耳试听分开。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "e6f2cb824fb135aa55e408bb3220fbf6fa2e4d59b095c4cc33767de8db410ac8"
+  },
+  "note_count": 250,
+  "event_count": 279,
+  "duration_seconds": 85.625,
+  "limits": [
+    "explicitpianoedition-notliteralcommunitysourcecertification",
+    "+3.5printedbeats-differencefullydeclared",
+    "softwareauditnotlivegame",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-4519cfc30f7a8962-full260-selected-piano137-v3.review.json",
+      "sha256": "f90c88d6b29547806587f2bc445c6a4a7aef9e688825fdd68e7cc6b11b80b39b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "733ce6e8c3e41ea9c398211b4b2e60e750243f5f2ec84790fab080f759717b55"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "b619afdd84616ba0a123c3edbeb79dbbbf7e027f0c713a216e42e35bdd3ebef3"
+    },
+    {
+      "name": "0001-3219353e36a4.json",
+      "sha256": "b71d6aea62e44710f041dc02bf08ace09be665506037664fccb37905a8cb38e0"
+    },
+    {
+      "name": "public-review-summaries-20261013-see260-v1.json",
+      "sha256": "a68e0126a8b36b78d3b7a3352575b05c95089f68ab7cb33394a5e58bf588978c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

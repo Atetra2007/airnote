@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c2f9bb8cf52b8f2c",
+  "source_id": "social-5779915370535d2e",
+  "work_id": "work-1b5a288e9c96",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=oEuqaxJytL1l",
+  "status": "reviewed",
+  "sha256": "439f308383a1ac5853f3901bd1ae0d04b00429bfda21c8b36f4f69134256d88e",
+  "source_sha256": "17dcf028ae6bd9da605e798f34478b1f300af2569de0b7b3d8633c6a267ca8eb",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/312974.html",
+    "edition": "312974 full numbered-and-staff G-major 66-BPM score; 331314 vocal 60-BPM score for source-form intro and one tie",
+    "score_sha256": "460c69bf9e8b927ff183b4d04ce53a457193c197f22b19e04e617ec66522d666"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 180,
+    "maximum_parser_boundary_error_seconds": 1.5631940186722204e-13
+  },
+  "review_note": "complete-existing-source-arrangement-with-explicit-intro-outro-and-grace-note-decisions All 45 printed bars of 312974 manually inspected and recorded, including underfilled m32 and trailing whole rests. Candidate uses full existing source arrangement, with instrumental intro/outro repetitions and the verse/chorus scope explicitly mapped, not silent truncation. 312974 G-major reference is transposed +1 semitone into existing source Ab register. Community key metadata is label-only; no second transpose is applied to already-absolute source pitches. Initial original B3 eighth is replaced by the published initial eighth-rest in 331314. Three descending intro motifs are retained as printed in 331314, using equivalent explicit 312974 note rhythms. Source skips most instrumental m4-5 fill; those unused reference notes are not appended. Main m6-28 beat2.5 are selected. Only true same-pitch ties merge. m11 outgoing tie is selected from 331314; 312974 has no tie there. m19 outgoing tie and m12-13 tie are explicit. Different-pitch slurs never merge. Chorus grace/fill attacks not present as full notes in selected 312974 edition are explicitly omitted. Every original attack and silence receives a disposition; true musical rests are reconstructed rather than retaining short MIDI/key-release gaps. Existing instrumental outro starts after reference m28 beat2.5 and repeats the intro 3-flat3-2 motif three times. It intentionally selects that reprise instead of the vocal flat3-flat3-2 ending at m28. Final source E4/Eb4 become the published intro/outro low5 Eb4 and low3 C4. Last three-beat source slot is C4 two beats plus one beat rest. Original 66-BPM variants use printed 312974 tempo; tempo derivative keeps 60 BPM supported by printed 331314. Source structure, both intro and outro, and every original event are fully accounted. Reference m32 is underfilled in 312974 and unused; the candidate invents no missing beat. Full vocal DS1/DS2 repetitions and reference trailing silent bars are not in existing source and are not appended. Root重新查看全部四张参考图并另录完整45小节绝对MIDI/时值/连线数组，与代理数值全部相同；root已见代理脚本和争议提示，因此是非盲复读，未冒称盲审。 m8/16末低5继承升号并跨线延音；m9/17还原低5共2.5拍。m10/18前三个2升、末2还原；m11/19第四2还原。m11跨线tie仅331314有，选版明确。 从root图读数另展开全部201事件，音高/时值/起点/秒数全检；三份原始来源分别复解，含tempo派生TXT全部214事件真实解码，不拿基础JSON替代。 191源音全部有处置：11改音、初拾音及10明确倚音/填充省略；180输出音、21休止，124.5拍。完整三遍前奏和三遍尾奏保留，最后C4两拍加1拍休止。 打印66/60速度分别有谱图支持；全源谱面复核通过，正式软件审计随后执行，没有人工听感、录音对齐或实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "460c69bf9e8b927ff183b4d04ce53a457193c197f22b19e04e617ec66522d666"
+  },
+  "note_count": 180,
+  "event_count": 201,
+  "duration_seconds": 113.18181818181819,
+  "limits": [
+    "No human listening, original recording alignment or real-game test.",
+    "Original material was seen before numeric reference reading.",
+    "Published practice arrangement with explicit form and simplification choices; not a literal transcription of an original recording.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-5779915370535d2e-jieyan-reference-v1.review.json",
+      "sha256": "c6ed3d3199ba0b9364419016f2ae73ff205cca314c490fac354beab49471be7b"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d87eeca23e8fd7bb30aea12f3680a598047aff774b8908667d6d4356569bfbd3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "bba32b08478a6b24a2d3416faf1ff257736762f71408c427f741c842e87259ae"
+    },
+    {
+      "name": "0003-fbd693380d1f.json",
+      "sha256": "1f9ede7bb6e10db6f87ab423f3ff33d3e104c102d5eac8550fa1ea929816182d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

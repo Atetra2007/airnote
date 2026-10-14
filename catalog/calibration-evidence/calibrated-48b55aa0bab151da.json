@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-48b55aa0bab151da",
+  "source_id": "zhouzhou-187",
+  "work_id": "work-c432bc405b35",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "0b5ba46a323baec131b84b16d5b89c604772d8f0725788148bd33b8f9e6e3676",
+  "source_sha256": "76c03236e8a5cbeb8d31907ff096005679ca8824a0ce5f5c7e088a1a8e9a65c9",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tw.everyonepiano.com/Number-18463.html",
+    "edition": "Printed D quarter75, output C, source-order selectedchorus fragments with explicitcuts",
+    "score_sha256": "c20f9f16e18a6ffe35e86b893e13bfe956b0009c9bd1eea15d41245b8c0537d6"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 66,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "Source-order fragments: m18 whole through m23 first tied-sixth .5; jump to m23 beat3 through m24 first tied-sixth .5; repeat m20 after initial tied-sixth .5 through m22 first tied-sixth .5. source-order-and-cuts: Retain all66 source notes in original A,A,B,A,short-A-tail,B sequence. Source44 begins m23 beat3, omitting printed m23 first3,5,5,5 that are absent from source; source49 jumps back to m20 melody. These are explicit original-source fragment boundaries, not whole-song continuity. pitch: Uniform original-source +12 to A4..A5 and printed-reference -2. Only source42 raw7 B4 becomes output C5 instead of expected B5, matching printed high1 in m22. All65 other source notes retain relative pitch. ties: Printed black2-sixteenth plus gray2-sixteenth is one eighth attack. Source8,17,34,43,48,65 low6 attacks tie .25 across bar to gray6 .5, duration .75. Source26 and57 high5 tie .25+.25=.5 across m20→21. High6 source30 and61 tie .25+.25 within m21. Gray continuation adds no attack. rests-end: m18 initial eighth rest added from printed reference before firstsource3. End exactly after the source65 low6 tie continuation in m22 beat1 first half; no appended absent next3 and no invented tonic cadence. tempo-source-unknown: Original66 notes and9 ambiguous | preserve all rawtokens/indices and unknown timing. All candidate rhythm is image-read quarter75 in4/4; | never assumed barline or silence. Root完整两页所选m18-23范围及三处整行放大图读，独立十六分tick重录原序A/A/B/A/短A尾/B，67事件31拍全一致。66源音75事件9未知边界全部重新解码与邻音关系核验。 明确批准来源本身选段跳接：m23首灰6后跳到该小节第三拍5/3/2/1/6，再按原source回放m20-21；不把缺少的3/5/5/5补入，不称连续原歌曲。末6只保留其下一条灰6半拍后截止。 全源+12适配所选主旋律八度；仅source42原B4改C5（相对全局本应B5），对应m22高1，不称纯全局移调。无增删原音/拆分/合并原攻击；图中2/5/6同音灰持续均按真连合时值。 印谱初0.5休止新增，75BPM来自主谱，D谱至C输出-2；未试听/录音对齐/实机游戏。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c20f9f16e18a6ffe35e86b893e13bfe956b0009c9bd1eea15d41245b8c0537d6"
+  },
+  "note_count": 66,
+  "event_count": 67,
+  "duration_seconds": 24.8,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "Source-order cuts retained; not fullsong.",
+    "Raw source timing unknown.",
+    "No audio/UI/GPU/listening/alignment/game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-187-love-reference-v1.review.json",
+      "sha256": "7391517856b0f29b67f5c35d243bab05a778ca600e91a46393e51345cbb27828"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "4b07a2af6a1cf987f2d2e8ced0f8f1e9cde111bb90bdd1abf61d466572a74c7e"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "11639671fe55d9fdaf734b70cbe4942bc01a46341d52c333e9d0763e0330d86c"
+    },
+    {
+      "name": "0001-e48581f6821f.json",
+      "sha256": "64065a6f78d066bd969de4519cfbb7de52a9dd0c2677eec922fd961b576835d5"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

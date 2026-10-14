@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0f5b5b27835f7304",
+  "source_id": "zhouzhou-055",
+  "work_id": "work-f26be8690e94",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "d74c1ee213f0e4928c63bb5cde7328349507ee33762b38816e1e886b90d000ff",
+  "source_sha256": "643a41a0a80dc1769d7cef923422b7da87b8426ef5b54801215bae3d2d9d2684",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star",
+    "edition": "Public published score: twinkle; exact edition bound by its SHA-256.",
+    "score_sha256": "61b9cbc7e407c66f2c19aa66e4404a67df4f32fc098a09fea4aa1b98cc341d78",
+    "midi_sha256": "44d32c631215cd846acc2296bf7ea5eaa8e1cd419de246c72e295739ec745242"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 42,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整来源现有内容；具体乐句范围见决策 42个来源音高全部与公开C调谱逐音吻合；六句完整覆盖，补齐每句末尾二拍与其余一拍时值。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/svg+xml",
+    "sha256": "61b9cbc7e407c66f2c19aa66e4404a67df4f32fc098a09fea4aa1b98cc341d78"
+  },
+  "note_count": 42,
+  "event_count": 42,
+  "duration_seconds": 32,
+  "limits": [
+    "人工听辨未执行，真实游戏未测试。",
+    "依据为公开谱例的单旋律；没有声称与某一商业录音的演奏速度、音色或乐句处理完全一致。",
+    "90 BPM是本版明确选定的演奏速度；标准曲调没有唯一录音BPM。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-055.review.json",
+      "sha256": "716bceaad7c7a899dc64f33ab2221848bf77c41a0ba92c8955644e3d43a903ec"
+    },
+    {
+      "name": "review221-zhouzhou-055.timeline.json",
+      "sha256": "225d4dc5d360cf71dd5e3491d28d36e12e28de173c34483967209ee03a1e58ea"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "685d178176568f5e856d32f9334f2ac6ea99ebf136bbce0272d3283ae1bd74f9"
+    },
+    {
+      "name": "0002-25a8ce4a40af.json",
+      "sha256": "b8fe5cb587b1c58d57585108e6bf8a77020d200e6b543d66ae13d26e0817f551"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

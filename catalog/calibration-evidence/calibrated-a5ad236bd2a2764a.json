@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-a5ad236bd2a2764a",
+  "source_id": "zhouzhou-070",
+  "work_id": "work-2e95d0e38d8d",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1c5689c104d1592d1594558a6f79030de5adaca2f22367f4555afc4396f1edf6",
+  "source_sha256": "2f18bffaf24f0eac8ad284edada39026e81744cc4d2f55bd864b4083255c3e10",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.yuepugc.com/235228.html",
+    "edition": "Ab4/4quarter117;visiblep1m1..8;reference+4;explicitinner-voiceending",
+    "score_sha256": "2e7cea50ff740f1bc96a87b1d90606504018548df160ef38f54b1a0a8f3900cb"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 46,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "Complete45sourceattacks;p1m1..8;7explicitpitchchanges1insertioninner-chordending 冻结zhouzhou070的实际源路径是071-把回忆拼好给你-节选1.source.json，但JSON内部t=unhappy、原45音；不是另一个57音拼回忆源，未使用batch040误读结果。完整45原音/45rawtoken逐项解码SHA绑定，原时值全部未知。 参考为乐谱工厂yuepugc235228化身无/s0rrow unhappy公开合法第一页预览，Ab调4/4，印刷quarter117，网页写Capo fret1及歌曲Ab。谱全部两页后页付费未获取；当前所选m1..8和全部原45内容均在公开第一页清楚可见，不声称拥有第二页或全曲验收。 公开整预览页+首/末两行+单栏m4/m8均实际view；只读可见五线谱音头和时值，未猜解隐藏付费谱。m1/3/5/7 C5四分、Ab4四分、Eb5/Db5/C5/Db5四个八分；参考+4变E5/C5/G5/F5/E5/F5。 m2/m6 C5四分Ab4四分G4/Ab4/Bb4/C5八分，输出E5/C5/B4/C5/D5/E5。源10/32 E5→D5(-2)，源11/33 F5→E5(-1)，明确按选参考版变化，不称原音都正确。 m4 C5四分Ab4四分Ab4八分C4八分C5四分。source20 A5→C5(-9)按第三Ab4+4；第四独立低C4八分插入E4后回末C5→E5 source21。没有把插入当原音，未删除source20高A。 m8 C5四分Ab4四分F4两个八分，末F4/Ab4/C5和弦四分。本独奏尾明确选和弦内F4(+4=A4)保留source44；不是声称最高声部为F4。源42 B4→A4(-2)，源43 C5→A4(-3)，两F4独立攻击无tie。 完整原45对应连续m1..8，输出46音0休止46事件32拍@117=16.410256410256秒；七处pitchchange一个明确印刷插音，38源pitch保留，原末B-C-A三个音全部处置，没有截尾或凑拍休止。 本候选是公开参考版明确选编，原作者未知节奏及不同旋律记写不当原作者证据；未音频/GUI/游戏/GPU验证，待root独立音乐复核及正式软件审计。 Root实际查看合法公开预览整页及m4/m8细图，按四降号的绝对音名另录m1–8所有46攻击和时值，逐事件与候选完全一致；印刷四分117、4/4、32拍，统一按写谱音高+4。 Root另解原JSON45音，确认文件名虽为071把回忆拼好给你但内部题为unhappy，对应冻结070来源；7个音高差异全部显式处置，0原音省略，1个m4低C4八分按参考补入后为E4。 m8两F4八分为独立起音，末和弦可见F4/Ab4/C5。本版最后选择F4以衔接来源末A4；其余相邻乐段选上声部，此处明确选择和弦中的较低音，不把它谎称为最高声部。 完整验收范围仅原45音所在8小节，已在公开第一页完整可见。第2页付费内容未取得，不声称全曲或原作者未知节奏得到恢复；这是保留原源并另存的参考版选编。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "2e7cea50ff740f1bc96a87b1d90606504018548df160ef38f54b1a0a8f3900cb"
+  },
+  "note_count": 46,
+  "event_count": 46,
+  "duration_seconds": 16.41025641025641,
+  "limits": [
+    "Page2paidnotacquired;page1coversfull45existingsource",
+    "7selectededitionpitchchanges1insertioninner-chordending",
+    "Noaudio/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-070-unhappy-preview-v1.review.json",
+      "sha256": "6dd7f9a2406eced0f0676166b4a45fc1e11fa00c0cc61a1ebd34c19011653433"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "61ee748331cfc26208a44d5d4266c4be3f5c2fd7809371ac8c2d16b0861998c8"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "fc42b541c0992bbf4bdea25e35e6c715a86912d52475033fb86e33871780767f"
+    },
+    {
+      "name": "0001-7c989c5502c9.json",
+      "sha256": "17e18de31dac0248278eb9a44362faef02420c7609b5dc1f0a5cbb441c9ef01a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

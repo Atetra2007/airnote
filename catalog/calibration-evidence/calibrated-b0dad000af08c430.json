@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b0dad000af08c430",
+  "source_id": "zhouzhou-112",
+  "work_id": "work-6ba177ab19c4",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "ee4c3c38ad5c025949f19b7baf92155e8f802d993d301a4155a956d44b53a68c",
+  "source_sha256": "79a723f2a7094e0be56994f522643c2d843bcbbd4208fbf1ac2ca62e95a04200",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://lupipi.com/s/ea5966",
+    "edition": "G4/4,P1m13lastbeat→m21complete;practice80notrecordingtempo",
+    "score_sha256": "7a13462cc9978057253218d862392ff000d6e42c2139a46955295c177c9e0278"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 55,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "Completefixed57notes;allsourcecontentmappedselectedP1m13lastbeat→m21end 固定SHA完整57音/58raw tokens（1个排版分句竖线）全部解码；来源没有每音时值、休止、速度，竖线不当作小节。所有57音均有唯一选谱输出处置，无原源截尾。 选择公开琼的琴房Suki刘舒妤《失眠》G调4/4两页数字谱，完整适用范围P1 m13末1拍至m21末，输出33拍。P1/P2全页实际读图，音乐校对仅声明所选m13-21完整范围。未纳入m13之前或m22之后的原曲。 选谱中音1放置C4（参考G3转C4+5半音的明确演奏音区）；来源前26音整体比该音区高八度，按选谱降12半音。后段具体音高变化另见pitch_changes，不强行用一个全源移调掩盖错误。 m14/m16第4与第5个5同音连接合为1拍，源两次起音均被处置；m14/m16最后2与次小节第一2连接共3/4拍；m18第二个2连接下一2为3/4拍；m19最后1同音连接共1.5拍；m21第二个2连接下一2为3/4拍。异音弧线不合音。 m15的半拍0和1拍0合为1.5拍静默；m17半拍0+1拍0+半拍0合为2拍静默；m21末半拍0保留。来源无休止，三组均明确由所选完整印谱恢复，未从行距推算。 所选谱无数值BPM，80仅为公开标注的练习速度，不能宣称原录音速度。输出33拍24.75秒。 完整读谱、源事件帐、独立self-check完成；root独立音乐复核及生产审计待做，无试听、录音对齐、实机游戏。 v1误读m18末3的八度点，root与worker再次看原始GIF/放大行确认无点，v2保留source34普通3(E4)，其余时值不变；共27源音改音。v1保存且不接受。 v2时值误读m19后7及高1为各1拍。root实图确认7/首高1共享八分线、末高1无减时线，v3改source40普通7=.5拍、source41高1=.5+1=1.5拍，总33拍不变；v1/v2不验收。 Root完整适用P1及全P2上下文、3行放大图二读，独立十六分tick重录58事件33拍一致。57原音/58token/1分隔从原JSON逐项重解码。 Root发现v1/v2两处错误后退回：m18末3无高八度点（source34应普通E4）；m19的7与高1共享单减时线，故7半拍、高1半拍连一拍共1.5拍。v3均按无插值原图改正，旧版全部保留不验收。 27音高调整为首26源音和source40各降八度，完整保留来源所有音符处置；两组5真tie合组，三组参考休止1.5/2/.5拍完整恢复，未知来源分隔不量化。 中音1明确选C4，80为编辑练习速度，无印谱速度或原录音速度声明。正式软件审计随后，无试听/录音对齐/实机。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "7a13462cc9978057253218d862392ff000d6e42c2139a46955295c177c9e0278"
+  },
+  "note_count": 55,
+  "event_count": 58,
+  "duration_seconds": 24.75,
+  "limits": [
+    "Communitytranscriptionedition;selectedregisterandpracticeBPMexplicit",
+    "Noaudio/recordingalignment/gameverification",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-112-insomnia-v3.review.json",
+      "sha256": "b97276659b9e91218bd5344171d272b4bcc7f2697f40e7618b01886eecd0e2cc"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5be4a4a02a2bd867213a2868438e06a69f852670f5019c519fa22d6edb39d8cf"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "81fa232f2b6e62f01e865856bca99007f9e4045ea393fd56c0951b462a16f3e4"
+    },
+    {
+      "name": "0001-5988de011003.json",
+      "sha256": "ff4c984cf04c46246e1c2f823689c21c997802a604afef3db4f6f83b75f9479c"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

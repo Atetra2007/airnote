@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-c77bbee5abe51665",
+  "source_id": "zhouzhou-140",
+  "work_id": "work-farewell",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "75cdc1383b580786370a652dd5d86039b5c6e0cf0908d3b63361375902b3dd58",
+  "source_sha256": "141e5eefb76835b40856cd698efb2ba211f992b28c3b63253092d61f9b4ff3c0",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-18513.html",
+    "edition": "F,2/4,printed120BPM;selectedm1-17RH;uniform+7toC5",
+    "score_sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 56,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-existing56note-shortsource;selectedEOP18513m1-17only Full56 original musical-note events independently decoded; every original raw note/pipe field retained. No originalpipe turned into timedrest; editor durations/defaults are not treated as reliable musical rhythm. ChosenEOP18513 m1-17 top piano melody (communitytranscription of Shannon/GUMI Shibetsu); fixed source is the existing17baropeningfragment, not the entire132barsong. PrintedF-major2/4 quarter120BPM; uniform+7semitones toC5tonic retains original highCsource register. No chromaticaccidentals are added from tuplethird8/b1. Every note maps1to1; source42 C5 becomes printed low6 A4 at m13 secondattack. Lastsourceb1 is preserved as editor visualhold; chosen printed m17 halfnote2beats. No source omissions, insertions, splitting, consolidation or source rests. Root full selected-range imagecrossreading and formal software audit pending; no audio/UI/GPU/game test. Root完整看图复读EOP18513第1页m1-17，独立重录音级/时值，56事件逐项一致；1=F、2/4、120BPM，整体升7半音至高C保留原来源音区。 原结构JSON全部音/字段/编辑竖线逐一重新解码，无增删拆合、无将竖线推断为休止；031两处2改1、140第42音高1改普通6均由所选谱直接支持。原源仅17小节开头，不宣称全曲；末b1不是增加拍长依据。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "a8dd57c96c429ab43b34e79d207650a5e812531bb2494c98a8312418eb6b194d"
+  },
+  "note_count": 56,
+  "event_count": 56,
+  "duration_seconds": 17,
+  "limits": [
+    "Communitytranscription,notpublisherscoreauthentication.",
+    "Completeexistingsourcefragmentonly;no132barfullsongclaim.",
+    "No original editorpipe timing inferred.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-140-death-eop-v1.review.json",
+      "sha256": "4a502dbb82a526c5d3c786ba2fd11db59a7a75b287464f907a2ae1e0d766aea7"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "17f2340aa7d58b8993db6c91e6ce9db2c4d2f127ddcbca3f98472b6b19121d1b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c75269392d2df0b2220cb641dbd4b02aed3c300f04621e19b76e44e8efdd44b9"
+    },
+    {
+      "name": "0002-e7142efda0a1.json",
+      "sha256": "09224ea08ae62d6262f21504de154c762c438df664825a8bbd26cef6772bf19a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

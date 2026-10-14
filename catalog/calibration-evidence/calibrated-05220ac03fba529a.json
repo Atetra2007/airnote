@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-05220ac03fba529a",
+  "source_id": "zhouzhou-121",
+  "work_id": "work-71b9c5e7ea8c",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "1e2ba05a25b9becf2ce5beb2f482e744e7947576107d3d1ab2323e45553046f7",
+  "source_sha256": "f8ef854b7a364765095829107803465188518fecf8f2f320179a3f9128445c71",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/video/BV1DjFDzCEzc/",
+    "edition": "Dbmajor4/4quarter98 printed two-page piano version; selected lower written melody in doubled high chorus chords",
+    "score_sha256": "f2aa163b617579b1070f418239e580d6d9aee54cd8d868a53f1d6856c72ca4f9"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 35,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "All4originallyricrows35heads,m20lastbeatthroughm28first2beats 固定zhouzhou-121/work-71b9c5e7ea8c；原4行35音逐项完整解码，原b=1保留为延长提示，不当flat或拍数。 原4句高潮完整对应独立SaintChuck两页Db/4-4quarter98：m20末两弱起+21–27完整栏+m28前两拍；不导入前奏或后续副歌/尾奏。 原行0音0–7对应m20–m22前两音；行1音8–16对应m22后两至m24F5；行2音17–25对应m24后两、m25六头和m26F5；行3音26–34对应m26末二、m27六头和m28Bb5。 在m25/m27实际双音谱选择下方写出的旋律头，保留上方和声头为参考图证但不混入单声部。Db谱整体-1为C编配，35原音音区保持MIDI72–84。 6项版本度数选择源8/9/12/13/17/18；前五个原高1选择高2，源13原7选择高2，逐项列source-comparison，未把原来源称为必错。其余29原音同pitch。 3真打印tie是m23末Ab5→m24首、m25末Eb5→m26首、m27末C6→m28首，分别属于单个原source15/24/33。原没有两个头被强行合并，所有35原攻击均保留。 m25/m27两组节奏均3/4,3/4,1/2；第3头无附点。m26真实八分休止1/2拍加入。停在m28第二Bb5附点四分音1.5拍，不加后面的四分休止及下一句弱起。 35音+1休止=36事件31拍；98BPM是公开印谱速度，约18.9795918秒，无原源节奏/速度恢复主张，无音频/UI/GPU/游戏检验。 Root实际查看完整两页frame001/012及谱头、高潮、m25/m27放大图，独立用四分之一拍tick重录全部36事件；与候选逐音高/起点/时值一致。 完整原JSON35音重新解码并逐项1:1核对，6选版改音和3真实跨栏tie核实；源13原B4变D5清楚披露。 两处第三八分无附点，m26八分休止保留；m28在附点Bb5结束，参考下移1半音到A5，未附加后续休止或下一句。谱头98BPM；无真人试听、原录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "f2aa163b617579b1070f418239e580d6d9aee54cd8d868a53f1d6856c72ca4f9"
+  },
+  "note_count": 35,
+  "event_count": 36,
+  "duration_seconds": 18.979591836734695,
+  "limits": [
+    "Explicit selected printed edition rhythms; source timing unknown.",
+    "Six original pitch choices disclosed; do not inherit same-title acceptance.",
+    "No audio/game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-121-star-chorus-v1.review.json",
+      "sha256": "e66baab7a9629cef69957efe0aa13c9f2e597a389ed8db2929e840302a37f997"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "5768933db08b8bf33b661e53844e40249d998786952fa042a659e233c6ad4bc9"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "620449d409eb92fc4e6b183e297837d1616eb373fb99613080ecab66a3892e8c"
+    },
+    {
+      "name": "0001-64ed3e69c455.json",
+      "sha256": "ce48423df9f54ad71d5f4825150e359e065f84f0669d96fc72442c942a844697"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

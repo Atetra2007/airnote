@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-bede282d77e29b6d",
+  "source_id": "deck-f46e4ca78e61",
+  "work_id": "work-deck-f46e4ca78e61",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/YMCA-Village-People-Jiko-ac8f24d385.deltamusic",
+  "status": "reviewed",
+  "sha256": "5ea76a2ec507fbae7f0e133f9cb15d02cae9ec6fd9d79b55ff59022403d8c9cf",
+  "source_sha256": "cdb466e5fe6241961a0df0488d6d1ae5c75d12f0e21426d927215abad693e167",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://tw.everyonepiano.com/Number-4802.html",
+    "edition": "Complete3-page G136 upper melody explicitly arranged through full existing source route; output F#304beats",
+    "score_sha256": "dfbf0ecf278be9aae5a0331aa844b9fa3d08171afb55df847afc035a56e9582a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 357,
+    "maximum_parser_boundary_error_seconds": 6.679101716144942e-13
+  },
+  "review_note": "Complete3-page G136 upper melody explicitly arranged through full existing source route; output F#304beats 完整原355音、110休止、465事件均保存逐项处置；固定canonical作品身份，不用同名来源替代。 完整三页34小节最上旋律线均人工读录；原无六小节引子，保存参考m1–6但不扩写。统一参考G调−1半音至原F#实音，136BPM明确选择印谱速度替换原127。 完整路线76小节304拍：m7–14两遍+m15+m16–32；再同路线；尾m25–28+m33–34两遍。此为原完整结构下的参考选版，非声称参考D.S./repeat只允许该路线。 保留所有不同起音，仅同音灰头真实tie合并。m29及m31上行双头选择最高头，另音明确作为和声省去。 主歌原长保持改为印谱半拍3/4等加两个quarter休止；第二主歌source170的额外B4按参考省去。 副歌source87/247各拆为m18末2和1；91+92、133+134、251+252、294+295为源经过装饰合参考跨栏1。 source141/302各拆成m29第四高1半拍与6一拍；m31缺两个6八分起音每遍补齐。第二副歌m30末高1/6补齐；source279+280合成m24末高1一拍。 副歌结尾156+157、315+316两个短经过音合m32的5一拍，158/317按参考改6半拍并恢复末两个quarter休止。 尾source331长音拆为m27末高1跨m28首灰高1、m28的6及最后高1/6；同时恢复m28两休止。尾source341拆为m34的6真tie一拍与5一拍。 两个m33均明确读三连音2/3拍，原332–334/342–344各保留三次起音。source337/347额外6pickup省略；source352/353尾快速经过装饰省略。全部版别差异附原音与参考位置，不掩盖。 候选等待root独立完整音乐二读及正式生产软件审计。未试听、未录音对齐、未游戏测试。 Root实际看完整3页全部34栏及29–34高清图，另手录上行数字、八度、时值和灰色真tie。独立展开原源对应76栏并重建387事件，全部pitch/start/beat逐项一致。m29/31双头选择高头，m31末两6必须分起音，末6仅跨32灰6延音。 Root从原JSON重新独立解析全部465token/355音/110休止，含#4_.、#2'-与默认时值；原127BPM保留，公开版G136降半音至F#，不冒充原录音时间。独立重录357攻击的源组映射，71处版别改音、6拆组、7合组、6补音、5省略逐项核对。 原source331的4.495416拍长音明确展开成所选m27末到m28四起音和中间休止；末两个Coda全部保留，三高1采用2/3拍三连音，source337/347多余pickup与352/353两经过音选择不演奏，原证据保留。这是完整原来源结构上的公开参考编配，不称所有原版不同音均是错音。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "dfbf0ecf278be9aae5a0331aa844b9fa3d08171afb55df847afc035a56e9582a"
+  },
+  "note_count": 357,
+  "event_count": 387,
+  "duration_seconds": 134.1176470588245,
+  "limits": [
+    "Full existing source route is explicitly arranged to printed EOP upper melody; edition differences are numerous and fully listed.",
+    "No claim of exact original performance restoration.",
+    "No listening/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-f46e4ca78e61-ymca-upper-v1.review.json",
+      "sha256": "0415c08f688f4879629877b0aa40d7435cfa39c1b234894872031ad4fdd09369"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "321c44dcae63809cf7ecb7c64b330385f704fbe2837613882ffeaf694e893955"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "3e7ed4aa20bcff6e11da91451aaff8ad25caec32b43b0b0e9dc5b7a8101da9c5"
+    },
+    {
+      "name": "0001-2a59338ced9c.json",
+      "sha256": "c9e90773f84b161e5e80e7645eefc813878404c32699ee7890468857dfaa09e0"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

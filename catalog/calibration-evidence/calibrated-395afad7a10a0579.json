@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-395afad7a10a0579",
+  "source_id": "zhouzhou-043",
+  "work_id": "work-632087eed621",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "93b5fa4e5d3b2b7620186829611134e04ac92c8d8ad45ac5fd061e357a60a963",
+  "source_sha256": "91d3d044578ac10151a10cbede96b4722574da792b0229a2bfe53750e8d748e1",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/346459.html",
+    "edition": "被遗忘者的哀伤声乐版，副歌E调转C5；练习160BPM非印谱标速",
+    "score_sha256": "07f039e4de99530ea6670290c0b6a239f2d69caf3194e929469288100f3eb593"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 62,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "全部60源音，副歌完整16小节及1拍拾音，最后低7完整4.5拍。 完整60源音，新的风暴至奇迹一定会出现；保留全部源音顺序与G4至E5音区。 主参考346459被遗忘者的哀伤记谱，副歌处明确转1=E；以E4升8半音至C5。124781为同一排版复核对照，未混入其他编曲。 主谱未打印数值速度；160BPM为明确练习编配速度（同作品社区来源标160），不称原录音或印谱标速。 源21尽与源50定的A4依印谱低7改B4，其他58源音高保持。源最后对象b=1为原横线提示，非降号；最终时长按公开谱重建。 每半段第7小节低7到1异音弧保留两个起音；其后另1是独立起音。恢复你与会字内短高1各.5拍，源身/出字各对应随后独立高1。 跨小节同音3、2、低6、低5、低7仅有同音弧时合并；最后低7 .5+4共4.5拍，完整尾音不截断。两个0各一拍的空隙每半段完整保留，首低6/7拾音共1拍。 Root完整谱面初读与再次视读，代理后续非盲全谱小节数组生成66事件逐字段相符。代理源索引组引用原候选，故root另独立解码全部60原音并逐项检验映射；原候选复制的报告单独标unaccepted，不作为独立音乐证据。没有人工试听或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "07f039e4de99530ea6670290c0b6a239f2d69caf3194e929469288100f3eb593"
+  },
+  "note_count": 62,
+  "event_count": 66,
+  "duration_seconds": 24.375,
+  "limits": [
+    "160BPM is an explicit practice tempo, not a printed or recording tempo claim.",
+    "Source60-note existing chorus extent only.",
+    "No human listening or actual-game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-043-miracle-complete-chorus.review.json",
+      "sha256": "27086b296cc950d1fcb3c5b0a956655c516e47c1fcf38be949d28c837587605e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "05250b3bd2ef285c5edb863ca9161c5c4403e4b8c5d3814bdd3e24249ef8076d"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2caf7937277f0c07790ff9287023b6416d463701aec2ecccdbc38a137d7a45a5"
+    },
+    {
+      "name": "0001-4aa98aeb645b.json",
+      "sha256": "8dd9bef7a9a57111f4291c1c0d8524b5edc2ae5fcf08d211a97ef2d3c4663248"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

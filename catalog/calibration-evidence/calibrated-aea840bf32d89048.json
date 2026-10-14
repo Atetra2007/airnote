@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-aea840bf32d89048",
+  "source_id": "zhouzhou-206",
+  "work_id": "work-d6aec2e359dc",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "745ca681df6d92cfb952b34fb18f7b6c4041b6c215b858881bd5774d8d1b9e17",
+  "source_sha256": "84233078ab13683f25899f0feaca5d3cedf2fd9099dbef961e599a79ef15209d",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.guitarworld.com.cn/pu/q79522",
+    "edition": "Public preview9 complete visible measures; all existing source selectsm1–8 plusfirst5attacksofm9,C88",
+    "score_sha256": "cf0e63b8ec8c260a836f07771c7b8835ae4ca4e67b5f8fee8bd0ac3d6e099d7b"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 66,
+    "maximum_parser_boundary_error_seconds": 1.7763568394002505e-14
+  },
+  "review_note": "Public preview9 complete visible measures; all existing source selectsm1–8 plusfirst5attacksofm9,C88 完整zhouzhou206原66音+8未知边界共74事件均逐项保留，所有原数组/整数原字段与null节奏保存。固定作品身份以冻结baseline读取。 独立参考选择乐星人q79522公开C调88BPM简谱预览，整图和三行细图实际view；全9个完整可見小节人工读录，切断的下一行不推测。 适用原66音为m1–8全范围+m9前5攻击；末source65 C5为m9位置2的八分半拍，明确止在第9栏位置2.5拍，不扩写后续6攻击。 63源音保持；m5第三/第四起音source28 B4→C5、source29 C5→B4，按印C5/B4修正互换；source61 D5依m9变奏首3改E5。三处为明确参考选版，不声称原匿名来源意图必然错。 m3/m7第三个E5四分跨下一E5十六分真tie共1.25拍；紧随另一个E5十六分是独立起音。相邻同音无arc时不合并；m5/m9两个C5半拍均保留重起。 源无tempo/time不擅从八度或第三数组字段导拍。选择谱印quarter88，恢复m1的三个quarter准备休止，合一3拍。输出66音+1休止67事件，34.5拍约23.522727秒，71–79。 EOP8850 B85完整三页也取得并实际全看，但该版开头音列与此66源不吻合，故作为未采用研究材料保存；绝不用同名EOP局部段硬替音。 公开preview完全覆盖本来源适用9栏范围。后续完整作品需购买，未取得/推断付费页；本候选不宣称完整作品，而是完整现有来源片段。 候选待root独立完整适用范围音乐二读和生产软件审计。无UI、音频、试听、录音对齐、GPU、游戏、构建、提交、发布或公共账本改动。 Root实际查看完整公开预览及三行高清旋律，独立重录适用67事件与v2完全一致；m3/7真tie1.25及后续同音重起、m5相邻C重起全部逐音核对。 Root独立重解原JSON全部66音8边界，逐源直序映射无省音无补音；三处音高选择28 B4→C5、29 C5→B4、61 D5→E5已明确记录。 全源覆盖至m9第5攻击结束，34.5拍88BPM；三个准备休止合计3拍。公开预览覆盖所有适用范围，不将片段宣称为完整作品。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "cf0e63b8ec8c260a836f07771c7b8835ae4ca4e67b5f8fee8bd0ac3d6e099d7b"
+  },
+  "note_count": 66,
+  "event_count": 67,
+  "duration_seconds": 23.522727272727273,
+  "limits": [
+    "Complete existing66-note excerpt, not full composition.",
+    "Public first preview fully covers all9 applicable measures; remaining paid pages not acquired or inferred.",
+    "Original null timing is explicitly replaced by selected printed reference timing.",
+    "No listening/game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-206-time-to-love-v2.review.json",
+      "sha256": "e33f00f80c05393077b8b0b21ed5e65c5e82b53fbb3bf55dd159977bec564de9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "6ab5ddaa45b3ac377235bddd6fbb90ca1df87ba9df1f383a6f0b21d8dac4058c"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "78a2bfa38ef499d7fd5e32352aeb11379ae11821c3c975c06bc2c55d3f474fc5"
+    },
+    {
+      "name": "0001-f3f297a63682.json",
+      "sha256": "e70617f78ae0513c04c5b808547a3ab73ef8f871c68cd8f3d09537e125125f40"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

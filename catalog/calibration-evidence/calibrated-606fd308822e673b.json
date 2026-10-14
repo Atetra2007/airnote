@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-606fd308822e673b",
+  "source_id": "deck-3d586d57a68c",
+  "work_id": "work-deck-3d586d57a68c",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%80%E7%94%9F%E6%89%80%E7%88%B1-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-06623ea111.deltamusic",
+  "status": "reviewed",
+  "sha256": "508fac6700276677e777ce03b9214f06506bb9e8c47f26908bc7ebb8485fd642",
+  "source_sha256": "6b03088b702c03c21bb173c20d74c71ec4861439fc7f66ecedac76332d114753",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/342793.html",
+    "edition": "Printed G/Em,4/4,quarter60BPM;explicitly transposed-7toC/Am;complete first verse and first chorus",
+    "score_sha256": "ed500ad5d7d71804f48b2891e694c22a1a72063a9a107910317f410518898131"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 74,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-existing-source-content;C-Am-register;continuous-first-verse-and-first-chorus Complete saved first verse plus first chorus: continuousP1R4B1..P1R9B1,16bars64beats. Printed instrumental intro/interlude, second verse and repeat choruses lie outside the source and are not appended. PrintedG/Em edition is explicitly transposed-7semitones to C/Am, preserving actual source register with no global source shift. Source author field is an uploader name; work identity is supported by printed composer/singer and full vocal line. Selected two-page342793 prints quarter60BPM. Savedsource65BPM is replaced with this explicit edition tempo. A separately saved one-page337484 by the same credited transcriber prints102BPM and has notation differences; it is not mixed into this candidate. No measured original-recording tempo is claimed. Source3 and13 B3 become printedC4; source56 A4 participates in the selectedG4 sixteenth with source57. Source33 D4 eighth splits D4/B3 sixteenths; source69 D4 eighth splits D4/C4 sixteenths. Groups36/37 and56/57 consolidate source subdivisions to the selected printedG3 andG4.36/37 becomes oneG3 half-beat formed by a real same-pitch cross-bar tie;56/57 becomes oneG4 sixteenth selected from an A/G source pair. The latter is not called a literal source tie. Important true ties: P1R4B3G->R5B1G; R5B1C->R5B2C; R6B1G3->R6B2G3; R7B1G4->R7B2G4; R7B2D4->R7B3D4. Continuous same-pitch arcs within bars are merged. Different-pitch arcs retain independent attacks. P1R8B3 has D4 sixteenth/C4 sixteenth slur, then a separateC4 quarter: source69 is split, source70 remains the independentCquarter. FinalA3 is the literal half-beat plus3beat tie,3.5beats. All5source rests retain their own durations but move with the corrected phrases. Every source rest is mapped by its flanking source notes to the corresponding selected rest. Original65.75beats becomes64beats; no event is dropped. 74-2consolidations+2splits=74notes;5rests;79events.0omittedsource notes and0unattachedinsertions. Root independent musical review still required. No audio/UI/game operations, GPU, installs, production catalog or formal-ledger writes. Root完整核读P1R4B1至R9B1共16小节，另录音级及有理时值，全79事件一致；印刷G降7半音至C，60BPM。 两拆分及两合组全源有据；36/37为真同音跨小节tie，56/57为A/G选版合成G，并非声称源真tie。source70的C四分保持独立。 五休止按前后源音核实，原时值均保留，只随节奏移动；末A3为3.5拍。未追加器乐/第二主歌，未试听/实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "ed500ad5d7d71804f48b2891e694c22a1a72063a9a107910317f410518898131"
+  },
+  "note_count": 74,
+  "event_count": 79,
+  "duration_seconds": 64,
+  "limits": [
+    "Community-hosted transcription, not publisher authentication.",
+    "PrintedG/Em transposed-7toC/Am; source register unchanged.",
+    "Complete saved first verse/chorus only; second verse, later choruses and instrumental passages are outside source extent.",
+    "Selected two-page edition prints60BPM; separate one-page alternative prints102BPM and is not mixed into this candidate.",
+    "No listening, recording alignment or game test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-3d586d57a68c-yisheng-reference-v1.review.json",
+      "sha256": "d9b39a8ec927fece2f8f7ad1c844fb6dca20f610afd656e687c01c6f7efc599a"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "157d74b3e0e8aa93c38957abb3a585d6d8df337a8b10c1a4c430a8757f502f51"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "11e17d42674a8c4e7a884c83b68b632c1c3edbce1f0d4992f9f39831e6a6d0a5"
+    },
+    {
+      "name": "0001-78985561805b.json",
+      "sha256": "3e75a59bca24b1211ca31eb72d4886e4d974f90e40cb1f55ffab52ed368e8b78"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

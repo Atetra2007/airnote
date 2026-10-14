@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-13a326c245354044",
+  "source_id": "community-39ed47f37b63f90b",
+  "work_id": "work-spring-shadow",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%98%A5%E6%97%A5%E5%BD%B1-%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90-Wind-02-3966a98631.deltamusic",
+  "status": "reviewed",
+  "sha256": "bd5461e206a002099e5bd1cd22e624a6a41f004c32272bd9bb9e05bea71c3d56",
+  "source_sha256": "c9055fa03a31649caf26999f72103b487a00000da7d5b0d7777298b56f28f03f",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.bilibili.com/opus/1025244505008242694",
+    "edition": "B,6/8,quarter97;normalizeC;source-specific135bar route with main second-verse ending and repeated printed first-chorus cadence",
+    "score_sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 642,
+    "maximum_parser_boundary_error_seconds": 8.810729923425242e-13
+  },
+  "review_note": "complete655note680eventcommunitysource;135barprinted source-specificselectededition Actual full2page manualCRYCHICimage read,printedB6/8quarter97 normalizedtoC;135bars405beats. Full655source notes680events25rests retained,642outputnotes667events;no source omissions or reference insertions. This community saved edition chooses MAIN P1R8B3 on secondverse too: source350-357 exact8attacks F/F/F/E/D/D/C/B and .5/.25/.25/.25/.25/.5/.5/.5,all retained. Does not force baseline four-note alternate footer onto this source. Last repeated chorus routeP2R14B3/B4 uses printed firstchorusP2R2B3/B4 cadence variation:5/1 sixteenths ratherthan final1-only/1-1. This exactprinted edition preserves source608G609C and614G615C;no alien-note deletion or wrong-pitch consolidation. Only11 same-pitchtrue-tie groups (13extraattacks) merged:202203,295296,415416,417418,422423,428429,465466,519520521522,546547,644645,653654.417/418bothC4correctedto printedC5. Printed ordinary5 fixes source73/128/341lowG3toG4. Printed ordinary6sixteenth fixes244/588A5toA4. Natural3 after b3 atP2R5B3corrects425Eb5toE5. Ordinary1/2atP2R6B3fixes440-445C5D5run downoctave. Three exactrhythm corrections:source31D5dot1.5 to1 inP1R2B4toleave0.5beatvoicepickup;source527E5 .75to1 and529E5 .5to.25 inP2R10B3,double-underlined4/3figure.405.5originalbeats becomes405 withoutsectionomission. All25rawrestsretained withsourcefieldsandoutputneighborwindows. Two adjacentprintedbridge rests inP2R7B3stilltwo1.5beatrestevents,not silentlycoalesced. Communitysource-specificprintededition,not claimofpublishercertification. No listening,recordingalignment,UIorrealgame tests;rootindependentreviewpending. Root完整两页复读和本人135小节读谱再展开，明确批准第二遍P1R8B3主结尾及末副歌再次采用已印P2R2B3/B4尾句的来源路线；667事件音高/时值全相符，不冒充终段谱面字面。 655源音/680事件重新原始解码，无删补拆分；14八度/还原号修正及11真连线合并逐图核实。三项节奏31/527/529总差仅-0.5拍；25休止与相邻原音的输出窗口逐组重算。 未试听、未原唱对齐、未实际游戏；社区谱身份不等于出版社认证。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "ac5ee3b0b3c3a041a5c58c63488d61053b734850ba473fe4f2886a16d102306e"
+  },
+  "note_count": 642,
+  "event_count": 667,
+  "duration_seconds": 250.51546391752578,
+  "limits": [
+    "Communitytranscription,notpublisherauthenticated.",
+    "Two repeatedcadencevariants selectedfrom sameprintedscore.",
+    "No listeningorrealgame test.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-39ed47f37b63f90b-vocal-v1.review.json",
+      "sha256": "6ce831cfc194aafc694541704e51080bc2c888187d99272792afcc1d39d38e9e"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "392715c3eae1b6c2ee5df6e227725746ae1c837fe4ef189f95d10fcdd3a2dd71"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4f2e8210bf3afcff19a08bf45ee2745d093a2b34929eb93c4e65426300a81ca1"
+    },
+    {
+      "name": "0001-3c64a4c019a2.json",
+      "sha256": "dca9909786d0ecfd28f0bc49569341a4bbd123ba4f0914186d40d9c52081d45a"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

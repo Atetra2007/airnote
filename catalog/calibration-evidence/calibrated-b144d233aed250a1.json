@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b144d233aed250a1",
+  "source_id": "community-829db327ff6d3321",
+  "work_id": "work-aca7aa91d565",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9D%92%E8%8A%B1%E7%93%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E6%A7%91%E6%A7%91%E6%A7%91-0eff17735794f18b01970.deltamusic",
+  "status": "reviewed",
+  "sha256": "5cfcd7cacc1537aa0b1fe26d3f347d7a8e6602f85cbc4fed3feba0eed0706d01",
+  "source_sha256": "74279212d33fdd984b01554c8c2dd30d842c47d5bddb7a8ca604e96e4ec0e459",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/317338.html",
+    "edition": "专业A调4/4简谱317338-1，无BPM；54与来源保留的Bb末段为显式编配选择",
+    "score_sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 428,
+    "maximum_parser_boundary_error_seconds": 1.3926637620897964e-12
+  },
+  "review_note": "完整430源音；V/C两轮、来源16拍无声间奏、末Bb副歌，未追加前后器乐。 音高与有量节奏唯一主参考为317338-1专业版A调4/4简谱，主歌V0–V8和副歌C0–C8分别完整人工视读；V0/C0是前一小节末一拍弱起，V8/C8是三拍终止，下一段弱起填满第四拍。V与C连同弱起各32拍。 317338-1没有印BPM，且末段文字印转1=B。本提案54BPM是明确编配速度，借用另一405035五线谱所印Largo四分音54；不能称主参考自带54，也没有把该五线谱的局部音型暗混为主参考。 C4跨异音弧为连奏线：位置.75/1的两个高2、1.75/2的两个高5保持各自起音；V4两个高3是真正同音延续合并.5拍；V7末高1跨V8合并3.25拍；C7末高2跨C8合并.75拍，C8最后高1合并2.5拍。 谱面每处十六分休止保留，未把前音和休止凑成一根长音；弱起开头的首次.25休止按原来源直接起音省略。所有原始资料保留，修订另存，不声称原唱录音对齐、真人听过或游戏验证。 完整来源曲式保留V1/C1、16拍无声间奏、V2/C2、末段Bb副歌。未增补来源没有的前奏/间奏乐器旋律或尾奏；源末174.5拍等效54速度改为175.75拍，主要恢复末终止高2续音和高1 2.5拍。 源key文字1=C与实际音符不一致：按字面音高读取，前四段A调、末副歌Bb调；不再次套用该元数据转调。编号1显式置A2、上点1为A3；末段整体高半音。 末段Bb明确保留来源选择；主参考底栏转1=B与之不同，不声称照录其转调。405035第二页另有Bb副歌，是独立版别对照，但本提案仍统一采用317338的同一副歌音型和节奏。 原长休止分别重分配至句尾延音和次段.25拍弱起休止；第一副歌后的静默间奏固定16拍。末V1、C1、V2、C2各次原休止有独立事件处置，绝不把1.25/1.5/18等拍数一概当成.04门限。 归一54BPM后关键实际起音：首副歌E4在32拍、第二主歌B3在80拍、第二副歌E4在112拍、末Bb副歌F4在144拍。前后紧邻休止独立列出，输出428音35休止463事件，总175.75拍195.2777777778秒。 829原54BPM、430音483事件174.5拍。三段C4各恢复高2独立起音，源130/304高3C#4改高5E4、源387高3D4改高5F4。 第二主歌源205/206合为E4半拍、259/260/261合为A3 3.25拍；末Bb副歌399/400合为C4一拍、411/412合为Bb3一拍，413仍保留高1弱起，不把相邻高1全并为一个音。 正式软件run01仅提示16拍单个休止超过8拍。Root在最终文件写成四个连续4拍小节休止，逐个有声音起点和总间奏不变；完整原提案与run01保留。 Root独立录入主副歌完整谱面，三份完整输出逐事件与独立数组一致；完整源事件映射、额外起音归并、缺失起音恢复、长休止分配及末段Bb选择均复核。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "note_count": 428,
+  "event_count": 466,
+  "duration_seconds": 195.27777777777777,
+  "limits": [
+    "Primary edition has no BPM and says final B; tempo54 and source Bb are explicit arrangement choices.",
+    "Fixed monophonic source scope and octave selection; no recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-community-829db327ff6d3321-blueporcelain-source-form.review.json",
+      "sha256": "f09b89e15f6b9543a237ee0e8710bbb328259cd36429bdf6a3686a72f984a371"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3aca2a0d9cf85d1152e7a0484f03dec374521b477ae03acc8eb24faaa80385af"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "12913119974fb1eef20be3d2ca9bfca06b3a9608ccf2ca1a4a9f63f755217b79"
+    },
+    {
+      "name": "0002-1021903191e2.json",
+      "sha256": "fc3c2de3435b1b6b5a855cfb030c375daf297fba8c26db512c9c74dbbaf0ef5d"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

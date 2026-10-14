@@ -31,13 +31,14 @@ def reviewed_external_record(base=None):
         'verified_sha256': 'a' * 64,
         'source_sha256': 'b' * 64,
         'reference': {
-            'url': 'https://example.com/official-recording',
-            'edition': 'Official conducted recording',
-            'audio_sha256': 'c' * 64,
-            'start_seconds': 7.5,
+            'type': 'published-sheet',
+            'url': 'https://example.com/published-score',
+            'edition': 'Official published score, 2024 edition',
+            'score_sha256': 'c' * 64,
+            'midi_sha256': 'e' * 64,
         },
-        'review_note': 'All 84 written notes were checked against the referenced recording.',
-        'review_method': 'Pitch, onset and production-parser comparison.',
+        'review_note': 'All 84 written notes were checked against the published score.',
+        'review_method': 'Pitch, notation and production-parser comparison.',
         'validation': {
             'production_parser': 'passed',
             'reviewed_note_count': 84,
@@ -59,7 +60,8 @@ def write_calibration_proof(root, song, changes=None):
         'status': 'reviewed',
         'sha256': song['verified_sha256'],
         'source_sha256': song['source_sha256'],
-        'reference': {key: song['reference'][key] for key in ('url', 'edition', 'audio_sha256', 'start_seconds')},
+        'reference': {key: value for key, value in song['reference'].items()
+                      if key in {'type', 'url', 'edition', 'audio_sha256', 'start_seconds', 'score_sha256', 'midi_sha256'}},
         'review_note': song['review_note'],
         'review_method': song['review_method'],
         'validation': dict(song['validation']),
@@ -157,8 +159,58 @@ class CatalogAcquisitionTests(unittest.TestCase):
             'verified_sha256': 'a' * 64,
             'source_fingerprint_sha256': 'b' * 64,
             'reference': {
+                'type': 'published-sheet',
+                'url': 'https://example.com/published-score',
+                'edition': 'Official published score, 2024 edition',
+                'score_sha256': 'c' * 64,
+                'midi_sha256': 'e' * 64,
+            },
+            'review_note': 'All 84 written notes were checked against the published score.',
+            'review_method': 'Pitch, notation and production-parser comparison.',
+            'evidence': [{'file': 'catalog/calibration-evidence/calibrated-0123456789abcdef.json', 'sha256': 'd' * 64}],
+            'validation': {
+                'production_parser': 'passed',
+                'reviewed_note_count': 84,
+                'maximum_parser_boundary_error_seconds': 0.0001,
+            },
+            'verification': {'rhythm': 'reviewed', 'app_import': 'not-tested', 'log_playback': 'not-tested', 'game': 'not-tested'},
+        }
+        self.assertEqual(check_repo.validate_acquisition(reviewed, 3), 'external-import')
+        without_midi = json.loads(json.dumps(reviewed))
+        without_midi['reference'].pop('midi_sha256')
+        self.assertEqual(check_repo.validate_acquisition(without_midi, 3), 'external-import')
+
+        invalid = []
+        row = json.loads(json.dumps(reviewed)); row.pop('verified_sha256'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row.pop('source_fingerprint_sha256'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference'].pop('score_sha256'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['score_sha256'] = 'invalid'; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['midi_sha256'] = 'invalid'; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['audio_sha256'] = 'c' * 64; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['start_seconds'] = 7.5; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['segment_start_seconds'] = 7.5; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['reference']['type'] = 'audio'; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row.pop('review_note'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row.pop('review_method'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['evidence'][0]['file'] = 'local/private-review.json'; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['evidence'][0]['sha256'] = 'invalid'; invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['validation'].pop('reviewed_note_count'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['validation'].pop('maximum_parser_boundary_error_seconds'); invalid.append(row)
+        row = json.loads(json.dumps(reviewed)); row['verification']['game'] = 'passed'; invalid.append(row)
+        for row in invalid:
+            with self.subTest(row=row), self.assertRaises(AssertionError):
+                check_repo.validate_acquisition(row, 3)
+
+    def test_legacy_recording_reference_contract_remains_supported(self):
+        reviewed = {
+            **self.external,
+            'variant_id': 'calibrated-0123456789abcdef',
+            'verified_sha256': 'a' * 64,
+            'source_fingerprint_sha256': 'b' * 64,
+            'reference': {
+                'type': 'recording',
                 'url': 'https://example.com/official-recording',
-                'edition': 'Official conducted recording',
+                'edition': 'Official performance, 2024',
                 'audio_sha256': 'c' * 64,
                 'start_seconds': 7.5,
             },
@@ -173,22 +225,9 @@ class CatalogAcquisitionTests(unittest.TestCase):
             'verification': {'rhythm': 'reviewed', 'app_import': 'not-tested', 'log_playback': 'not-tested', 'game': 'not-tested'},
         }
         self.assertEqual(check_repo.validate_acquisition(reviewed, 3), 'external-import')
-
-        invalid = []
-        row = json.loads(json.dumps(reviewed)); row.pop('verified_sha256'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row.pop('source_fingerprint_sha256'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['reference'].pop('audio_sha256'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['reference']['score_sha256'] = 'not-required-but-invalid'; invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row.pop('review_note'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row.pop('review_method'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['evidence'][0]['file'] = 'local/private-review.json'; invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['evidence'][0]['sha256'] = 'invalid'; invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['validation'].pop('reviewed_note_count'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['validation'].pop('maximum_parser_boundary_error_seconds'); invalid.append(row)
-        row = json.loads(json.dumps(reviewed)); row['verification']['game'] = 'passed'; invalid.append(row)
-        for row in invalid:
-            with self.subTest(row=row), self.assertRaises(AssertionError):
-                check_repo.validate_acquisition(row, 3)
+        legacy_without_type = json.loads(json.dumps(reviewed))
+        legacy_without_type['reference'].pop('type')
+        self.assertEqual(check_repo.validate_acquisition(legacy_without_type, 3), 'external-import')
 
     def test_desktop_package_check_accepts_external_catalog_metadata_without_score_bytes(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -212,6 +251,15 @@ class CatalogAcquisitionTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 check_desktop.validate_public_catalog(root)
 
+    def test_published_sheet_calibration_proof_accepts_optional_midi_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            reviewed = reviewed_external_record()
+            reviewed['reference'].pop('midi_sha256')
+            write_calibration_proof(root, reviewed)
+            write_public_catalog(root, [reviewed])
+            check_desktop.validate_public_catalog(root)
+
     def test_desktop_publish_entry_rejects_missing_changed_and_mismatched_proofs(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -232,6 +280,13 @@ class CatalogAcquisitionTests(unittest.TestCase):
                 check_desktop.validate_payload(publish, root)
 
             proof_path = write_calibration_proof(root, reviewed, {'variant_id': 'calibrated-fedcba9876543210'})
+            write_public_catalog(root, [reviewed])
+            with self.assertRaisesRegex(ValueError, 'calibration evidence'):
+                check_desktop.validate_payload(publish, root)
+
+            proof_path = write_calibration_proof(root, reviewed, {
+                'reference': {**reviewed['reference'], 'score_sha256': 'f' * 64},
+            })
             write_public_catalog(root, [reviewed])
             with self.assertRaisesRegex(ValueError, 'calibration evidence'):
                 check_desktop.validate_payload(publish, root)

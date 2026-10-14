@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "status": "completed-with-user-exclusions",
+  "original_scope_works": 221,
+  "original_scope_source_versions": 352,
+  "accepted_source_versions": 339,
+  "accepted_arrangements": 340,
+  "excluded_source_versions": 13,
+  "remaining_source_versions": 0,
+  "accepted_catalog_version": "calibration-221-2026-09-30",
+  "all_original_sources_musically_accepted": false,
+  "human_listening": "not-performed",
+  "real_game": "not-tested",
+  "historical_evidence_preserved": true,
+  "note": "用户授权将剩余13个未解决来源移出当前总表。阶段完成表示339来源通过、13来源主动移除的处置完成，不表示352来源全部音乐通过；已通过同曲版本、原材料和历史证据保留。",
+  "excluded": [
+    {
+      "source_variant_id": "zhouzhou-096",
+      "work_id": "work-e90d862b7dd7",
+      "title": "I Really Want to Stay at Your House",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "social-570a13a7905273f2",
+      "work_id": "work-4d2e0be6c222",
+      "title": "中国人能飞",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "zhouzhou-163",
+      "work_id": "work-4d2e0be6c222",
+      "title": "中国人能飞",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "social-b1fca0af57b20c70",
+      "work_id": "work-5b84acfe8295",
+      "title": "做梦的人偶",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "zhouzhou-175",
+      "work_id": "work-13a3a3a53413",
+      "title": "呆呆兽主题曲",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "alternative-score-4872a0a3ea2efef0",
+      "work_id": "work-9453aeb47efc",
+      "title": "念张师",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "zhouzhou-145",
+      "work_id": "work-a88314f62cab",
+      "title": "怪咖",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "zhouzhou-085",
+      "work_id": "work-e9c2ad53a8e7",
+      "title": "海海海",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "social-29fa2a6a85a3c996",
+      "work_id": "work-ad1fae5b9861",
+      "title": "盖亚的力量(ガイアノチカラ)",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "social-909b4b7e44ee481a",
+      "work_id": "work-4763fad8dae8",
+      "title": "目标是神奇宝贝大师!",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "social-33b25f8dc6422b65",
+      "work_id": "work-8f94ff8e4060",
+      "title": "红尘客栈",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "zhouzhou-181",
+      "work_id": "work-80ba0612940d",
+      "title": "葬花",
+      "reason": "user-excluded"
+    },
+    {
+      "source_variant_id": "deck-14a637705cb0",
+      "work_id": "work-deck-14a637705cb0",
+      "title": "送别",
+      "reason": "user-excluded"
+    }
+  ]
+}

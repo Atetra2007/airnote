@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-12c0d1c966c4e0f3",
+  "source_id": "deck-4f8ae99fc7e5",
+  "work_id": "work-deck-4f8ae99fc7e5",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%BE%99%E5%8D%B7%E9%A3%8E-%E5%91%A8%E6%9D%B0%E4%BC%A6-Jiko-f73b7c0527.deltamusic",
+  "status": "reviewed",
+  "sha256": "b541deb2e8dd9bcb6de1142b8e26fdd17154b11cb6c6cdd4d88d72487fa19344",
+  "source_sha256": "51fed9a68f14d139a84445fa3c8259e2b3f6cd2658596cdf83601d05c9b62ad9",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/361593.html",
+    "edition": "玩易/卢家兴A调4/4完整声乐简谱行，主谱未打印BPM，明确练习72BPM",
+    "score_sha256": "b163e3bad350614c5b616ad99a427e383db46de1243c194bd4dc2271454152ba"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 312,
+    "maximum_parser_boundary_error_seconds": 2.0832942482229555e-08
+  },
+  "review_note": "原312音310间隔共622事件；V8小节-P4-C8-I4-P4-C8-32拍间隔-终端3音全部处置，共177拍。 完整主参考361593玩易/卢家兴A调吉他弹唱谱三页，只读独立声乐简谱行，不把吉他和弦或指法当旋律。全部页已查看。V4与V8确有低降6，因此社区字面F4不是应被改成E4的错误；原1=A标签不再额外移调。 主参考361593没有打印数值速度，明确选择四分72BPM。来源deck打印72，另385301完整三页C调键盘简谱打印72；这两者仅支持选用练习速度，不能宣称主声乐谱打印72或与录音节拍对齐。 来源范围与原顺序全部保留。副歌前三组5/4/3等每音均1/3拍三连音，保留3与3、5与5相邻的独立起音；不能把三连音上括号当延音弧。 V4何字打印1 .75下降至低5 .25。V8走字1 .5后5 .25到静6 .25是异音连奏，完整保留5与6；P1首另一个6 .5是新的起音，不与V8静合并。 P3小弧端点在两个1上，低6在弧外：1 .25连1 .25合.5，不新增起音。P3末4 .25跨小节4 .25合.5；P4的2 .75连1拍合1.75。旧候选误读保留，root与原代理原像素重读一致纠正。 C4的源3/2/3/4/3/4六音在社区写成等长三连音，本选版按印谱.5/.25/.25/.5/.25/.25重建；是公开声明的节奏选版。C4、C8最初两组1/2前各补半拍休止，并把相应2还原.25，不能靠把2拉长掩盖休止。 所有人工读谱以Fraction精确保存三连拍值，TXT写9位有效十进制。原谱完整字面事件和原时值另存，程序仅检查映射覆盖，不把序列相似或默认等拍当音乐依据。 Root逐页复核完整参考、独立输入全部事件、逐字面解码全部原源；所有最终音高/起点/拍值一致，P3误增起音已纠正。正式软件检验另绑定，未人工试听或实机测试。 按字面音符保留A调音高E4至A5，主参考A4主音不移调。原key=1=A只作为元数据，不将已为A调的3/7/#1等字面音高再升9半音。 原312音310间隔共622事件逐项处置；311源音映射、1音明示选版省略、只恢复V8一个5，312音20休止。原source65/218均保持一个1的.5拍延音。完整原曲式177拍保留。 2处音高变化：source21原F4改V4末打印低5 E4；source195原4 D5改间奏第4小节末打印2 B4。source196原5 E5为原2/3/4/5上行跑句末音，所选版2/3/2只保留修正的source195，明确省略196；不是证明原上行花腔错误。 只恢复source43之前V8的5 E5 .25；原source65/218的1各.5包含同音延音，不拆起音。原候选误增两次1已由root与代理原像素复查纠正。 四小节中段取361593第一结尾全部四小节1/低5/3/1/4/3/1/2/3/2；首次入口打印不定时值的高1倚音不加入，明确选择无倚音的主旋律版本，来源亦无该额外倚音。 source308后31.966667拍空白明确量化为32拍、分8个4拍休止并完整保留。主谱第2结尾对应7小节全休止加末小节3拍休止及3/4两半拍pickup；本来源无该pickup，选版明确不补，保留32拍完整静默，再奏终端3音，不宣称印谱本来8小节全部静默或器乐solo已核验。 静默后source309/310/311对应D.S.回副歌5/4/3三连音，3音全部保留；末source311原.079167拍截断补至印谱1/3拍，与前两音完整成1拍。现有源到此结束，不补余下副歌，因此明确称完整来源含终端3音，不称整首录音完整结尾。 310来源间隔中307个.04/.025/.033333拍门控间隙由输出播放器@gap=10处理；两处1.15拍长间隔对应P4的1拍休止，终端31.966667对应32拍静默，分别完整记录。新增的P3与副歌休止依印谱恢复，不伪称原稿已有。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "b163e3bad350614c5b616ad99a427e383db46de1243c194bd4dc2271454152ba"
+  },
+  "note_count": 312,
+  "event_count": 332,
+  "duration_seconds": 147.49999997916683,
+  "limits": [
+    "Selected72BPM is explicit practice tempo, not printed361593 speed or recording alignment.",
+    "Complete original source extent, not whole-recording claim.",
+    "All arrangement omissions, register shifts, rhythm changes and terminal3note scope explicitly recorded.",
+    "No human listening or actual-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-4f8ae99fc7e5-tornado-complete-source.review.json",
+      "sha256": "3835f2aa229051036cda275d68377a371140762d188cb7732c7675ea501f5510"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "25d1764fb441b22496a458978e0f6f27360b140a11a8df5a52f55f1a43f973c3"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "ead20b226f85c7a7bedf4d99c3c6d6bdcf7fce28202783d4a1f835e82d7a5312"
+    },
+    {
+      "name": "0002-5b9bc605515a.json",
+      "sha256": "db0cafdc952d8b05ba95c3a5b01bdd0761eb1db85b9cd06612c5e276fdab794e"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

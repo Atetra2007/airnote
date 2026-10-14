@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-55c8cd80a30aab57",
+  "source_id": "zhouzhou-016",
+  "work_id": "work-aca7aa91d565",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "0633b1b58c20feabf8055d38218962dd325f94f1de5472c636fea75bf335801c",
+  "source_sha256": "6d853bd7a8fe152eeab015efc20decd13f981aa1fa534ebead017f6b9a2f5b01",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/317338.html",
+    "edition": "专业A调4/4简谱317338-1，无BPM；54与来源保留的Bb末段为显式编配选择",
+    "score_sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 84,
+    "maximum_parser_boundary_error_seconds": 4.263256414560601e-14
+  },
+  "review_note": "完整82源音；副歌片段C0–C8。 音高与有量节奏唯一主参考为317338-1专业版A调4/4简谱，主歌V0–V8和副歌C0–C8分别完整人工视读；V0/C0是前一小节末一拍弱起，V8/C8是三拍终止，下一段弱起填满第四拍。V与C连同弱起各32拍。 317338-1没有印BPM，且末段文字印转1=B。本提案54BPM是明确编配速度，借用另一405035五线谱所印Largo四分音54；不能称主参考自带54，也没有把该五线谱的局部音型暗混为主参考。 C4跨异音弧为连奏线：位置.75/1的两个高2、1.75/2的两个高5保持各自起音；V4两个高3是真正同音延续合并.5拍；V7末高1跨V8合并3.25拍；C7末高2跨C8合并.75拍，C8最后高1合并2.5拍。 谱面每处十六分休止保留，未把前音和休止凑成一根长音；弱起开头的首次.25休止按原来源直接起音省略。所有原始资料保留，修订另存，不声称原唱录音对齐、真人听过或游戏验证。 016来源是82个无时值图示音，完整八行逐点人工读取。数字上点优先保留，图中无调号或BPM；显式选择1=C4、上点1=C5的C调游戏用音区。由A调主参考移为C调，调性移调+3半音，绝对八度属于本编配选择。 仅一个完整副歌片段C0弱起至C8终止；C4补位置1高2及位置2高5两次独立起音；源77末行首高5改为所选普通5（G5到G4），其余81源音高保持。 最终84音、6休止、90事件、31.75拍、54BPM、35.2777777778秒；图片不提供原时值，未冒称保留图片的原节奏。 Root独立录入主副歌完整谱面，三份完整输出逐事件与独立数组一致；完整源事件映射、额外起音归并、缺失起音恢复、长休止分配及末段Bb选择均复核。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "0fc93de500aecc5127f7db9212eba7114ef75e9d076996de05da8f7e1e53bd18"
+  },
+  "note_count": 84,
+  "event_count": 90,
+  "duration_seconds": 35.27777777777778,
+  "limits": [
+    "Primary edition has no BPM and says final B; tempo54 and source Bb are explicit arrangement choices.",
+    "Fixed monophonic source scope and octave selection; no recording alignment, human listening or actual-game validation.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-016-blueporcelain-source-form.review.json",
+      "sha256": "3e20285716ed7575c088671f63f14f69f8d755251ecbdfa85c9f28a762e92c1c"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e2e298acb98034eb63149e6e1c60b7860bfc677acda4ebfcec88dd6b51c68503"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "12913119974fb1eef20be3d2ca9bfca06b3a9608ccf2ca1a4a9f63f755217b79"
+    },
+    {
+      "name": "0001-770b76da6d7a.json",
+      "sha256": "9ba51e66a35def251d9c013213fe4c2a394afaa591b47771a5017a48a64d9600"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

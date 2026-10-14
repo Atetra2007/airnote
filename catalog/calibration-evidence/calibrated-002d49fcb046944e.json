@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-002d49fcb046944e",
+  "source_id": "deck-4d005e4c407e",
+  "work_id": "work-deck-4d005e4c407e",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD-Yann-Tiersen-Jiko-d2eeee4897.deltamusic",
+  "status": "reviewed",
+  "sha256": "58a0b3350bc9393f711e2f92c52b966b9e23cb333dae80a8e810ba4a1a07cc25",
+  "source_sha256": "6b33ebc6906f9569bc25c06444f0f728d455ed125adc828e6f099d92b6cb3a23",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/148425.html",
+    "edition": "Printed G96 complete selectedm5-53 right-hand top;actual reference pitches down12 semitones to game-compatible G",
+    "score_sha256": "c7ee5227125488056b6e93de80ca06803dcf047f0b91dd522ab1483feec7ca9a"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 372,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete372note393event-source49bars;selectedprintedm5-53;explicitly-no-absent-accompaniment-intro 原372音393事件全量处置；完整来源对应印谱m5–53（49小节），原源不含m1–4伴奏前奏，范围明确披露。保留全部快速分解音段，无困难段删除。 选148425三页G调钢琴最上方右手音流，降7半音到C标号，保留第二大段按谱升高八度。伴奏及m17–20/m41–44和弦下方声部不进入单声部输出，原源本来亦单声部。 m5–12/m29–36，短动机的低7低6与插入休止按谱读出，原长音改成短音并恢复后续休止；不把休止恢复称为保留原源全部静音。 m13–20/m37–44第二音是八分与四分真同音连线共1.5拍，末另1拍休止；原第二音2.5拍按此版缩短。首音1.5拍；m13–16首音普通音区，第二轮m37–40升八度。 m21–27/m45–51全部十六分音符分别起音，m23/m27的7有低点，m47/m51在第二轮相应为普通7。第二轮所有快速音流提升一八度。 m28末高2为八分0.5拍；原最后普通2与0.25拍休止替换为高2延续，原休止显式记为此延音消耗。m52末双高2八分0.5拍，原末1/5两次攻击合为一音，逐源映射披露。 m53印谱双高1四分后高6/3/1和弦延续三拍，取和弦最高高6。原唯一高6四拍拆为双高1一拍及高6三拍；不是无根据加音，和弦下音不演奏。 印谱96BPM取代原93，196拍总时长122.5秒。无真人试听、原声对齐、音频/UI/GPU或实机测试，候选等待root独立音乐复核。 正式解析run01不支持双高2/3。v2对v1全452事件的非休止音统一下降5半音，时值起点结构及源映射完全不变；即印谱G调低一八度，参考至输出移调-12，音域52–83，@arrangement-key=G。所有改音重新计算，无逐音折八度或改引擎。 Root独立逐项验证相对已全谱核读v1全部372发声音统一下降5半音，452事件时值/起点/源音分配不变；即印谱G调低一八度，52–83全范围适配。 373次原音到输出音高赋值重新验证，包含原371拆为两音。原v1解析失败保留，最终只采v2；不逐音折八度、不改变旋律音程。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "c7ee5227125488056b6e93de80ca06803dcf047f0b91dd522ab1483feec7ca9a"
+  },
+  "note_count": 372,
+  "event_count": 452,
+  "duration_seconds": 122.5,
+  "limits": [
+    "Community transcription, not publisher authentication.",
+    "Complete existing source extent omits original published accompaniment intro m1-4.",
+    "Monophonic top right-hand selection omits simultaneous chord lower voices and left-hand accompaniment.",
+    "One two-to-one ending consolidation and one final-note two-event split disclosed.",
+    "Printed96BPM replaces source93.",
+    "No audio/UI/GPU/recording alignment/game tests.",
+    "正式解析run01不支持双高2/3。v2对v1全452事件的非休止音统一下降5半音，时值起点结构及源映射完全不变；即印谱G调低一八度，参考至输出移调-12，音域52–83，@arrangement-key=G。所有改音重新计算，无逐音折八度或改引擎。",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-4d005e4c407e-amelie-reference-v2.review.json",
+      "sha256": "d0c3e8fb776f57522a263c3530c3d4344af9f9b04ef25d037e5390f912bd3661"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "7f854aa25e73b408e4b2b1b2d543f473df8b8235931aa6b0e340e46c36a3d587"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "6ff53e838294291d8529ece30b272b95f64d9075b42e14d0171d02f4e9316127"
+    },
+    {
+      "name": "0001-6a499485daa3.json",
+      "sha256": "854ac99fc96c78958482875c3936e6385b5d110bcb8f8eeb3f003302fd4f24cb"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-dbead014ccf36ab9",
+  "source_id": "zhouzhou-195",
+  "work_id": "work-8f94ff8e4060",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "6dbfec9df7facc8b1106cb7b15b950deac965690c1718176db18439e51fed297",
+  "source_sha256": "02a3d8e9649cb12cd79759a1bfda42d453c4dfb2f2984471defdae54fd37f603",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/366147.html",
+    "edition": "西二吉他完整三页C调声乐数字谱；保留原源紧凑双主副歌及终章，选定固定练习72BPM并非打印速度。",
+    "score_sha256": "fb73149508a1b6041efcb97ee95df6848c2125f55e01f6336d9546231ae3861f"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 320,
+    "maximum_parser_boundary_error_seconds": 7.105427357601002e-13
+  },
+  "review_note": "原9行317音全覆盖，两轮主副歌及终章；原首轮缺8拍歌词段、28拍纯伴奏间奏和尾伴奏未展开，非整首录音还原。 固定195原源SHA02a3d8e9649cb12cd79759a1bfda42d453c4dfb2f2984471defdae54fd37f603，9原行317有声音值，无原零休止、无歌词。全部原音逐项处置且无原音删除，不能用同名短版代替。 采用366147西二吉他完整三页谱的声乐数字行，打印原调/选调均C、4/4，没有打印BPM。72BPM是本次明确选择的固定练习速度，既不是印谱速度，也不声称匹配周杰伦录音。普通1按C4、高1按C5，不另作移调。 源完整结构为第一主歌14小节+含剑拾音的第一副歌16小节，第二主歌16小节+含剑拾音的第二副歌16小节，最终8小节变体副歌/终章，共70个四拍位置280拍。第一主歌明显没有我只求与你共华发整整两小节；保留原源缺句编排并明示，不冒充整首原版完整歌曲。 公开谱首尾器乐、首结尾7小节纯伴奏间奏28拍均无来源音值，练习版明确不展开；源source134逍遥C5四拍后直接接source135第二主歌。结尾source316了C5三拍半后停，不加谱尾纯伴奏四拍。上述省略仅涉及参考范围外内容，不省略任何原源有声音值。 第一/第二主歌A中故事/席地对应G4有同音连线，各一拍；B中跟利/禅不两个G4则没有同音弧，source47/48以及184/185都独立半拍，不能凭相邻同音合并。源177/178晚霞C4按半拍接两拍真实同音延音整为2.5拍，唯一原同音组合并。 P1r4b4我说两个十六分G4只在第二歌词行出现：第一轮原无拾音，保留最后一拍休止；第二轮source179G4四分之一拍并补另一独立G4四分之一拍，前置半拍休止。原b横杠不是降号，精确b时值未证，所有时值以所选谱重新读取。 7处音高选择逐项列入comparison：source136G5改G4（窗下）；source208D5/209C5改D4/C4（水画）；source241D4改D5（任）；source292G5改C5（折）；source305D5/306E5改A4/C5（招旗）。其余310个原音音高保持。两个主副歌古的source118/263以及末带source302均为高3E5，不能降成普通E4。 4处补起音：第二主歌我说补G4十六分；两轮敲各补独立E5半拍连后整四拍共4.5拍，不能把命字末E5半拍与敲合并；最终怨后下小节首独立C5半拍。它们都是主要印谱音，非无时值小倚音。 终止精准保留：source310D5为半拍连四分1.5拍；source314恩D5附点四分1.5拍；source315怨C5半拍与下一小节首补C5半拍没有跨小节弧，均独立；source316了在第二个C5半拍开始，同音连第三个C5三拍，总3.5拍。末三个高1只有第二第三相连。 公开参考355657/117629是另一编配，部分主歌细节不同；131763为旧谱局部转载，不作为独立二读。367969曹佳明谱可作相关线索但缺完整终章。所有本提案实际音高/时值统一取366147；不把多版本节奏静默拼接。 最终320音33休止353事件，317原音覆盖100%，0原音省略、7改音、1同音组整合、4新增主音。280拍以选定72BPM约233.333333秒。提案待root独立全范围音乐二读与正式软件审计，未人工听过、未录音对齐、未真实游戏测试。 Root完整复读366147三页及各段细节，并在读取候选数值前独立录入70小节、355个初读事件，冻结原始数组。逐项比对只发现两遍P2r1b4的高2连音遗漏；原行裁图裁掉顶部弧线，root另作保留上方空间的原像素图，直接确认连线后合并，保留初读错误与修正两份证据。最终353事件全部音高/时值/起点一致，非盲读，未伪称最初完全一致。 另从冻结原195 JSON完整解码317音逐项比对源处置，七处音高差异、source177/178合组、四个新增主音与完整收尾均明确。首轮省略的两小节歌词、两轮之间28拍伴奏不擅自补入；保留原来源结构并明示。 末尾高1依次为前小节末半拍、下一小节首独立半拍、第二个半拍连后三拍总3.5拍；首两个相邻高1没有连线，不合并。72为自选练习速度，无打印BPM或录音速度声称。原提案的待root文字为保留历史，当前音乐复核完成，另送生产软件审计；未真人试听或游戏测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "fb73149508a1b6041efcb97ee95df6848c2125f55e01f6336d9546231ae3861f"
+  },
+  "note_count": 320,
+  "event_count": 353,
+  "duration_seconds": 233.33333333333334,
+  "limits": [
+    "Complete original317note source coverage, not entire commercial song reproduction.",
+    "First verse omits printed8beat WoZhiQiu phrase, preserved as explicit original arrangement choice.",
+    "Seven instrumental transition bars28beats plus intro/outro accompaniment are explicitly outside selected source practice form.",
+    "72BPM is an explicitly selected practice tempo; no printed or recording-verified tempo is claimed.",
+    "No human listening, recording alignment or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-195-red-dust-inn-complete-source.review.json",
+      "sha256": "00e68ee575f50e32604e07293fedcab7094143a93e0b04564f87f57e09604a69"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c3a11ff7260f77a672cfb4102fe9e6f5d3018c6d6604693092e8af712d665ddc"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "bde2bef580c7f2d7a76845fbac5c5f3804dc12e3c7edb5b396035f67e986e8d9"
+    },
+    {
+      "name": "0001-04523bb98909.json",
+      "sha256": "5f4ca290c7e0f746cc6fe3d4ade9182c2abf961f61871db227f47f52aa94d208"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

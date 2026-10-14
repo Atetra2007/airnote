@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-0908cf042c51cee5",
+  "source_id": "social-9c11145430dfb7d1",
+  "work_id": "work-29f5d4e3ad59",
+  "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=IdL1hVH2eppO",
+  "status": "reviewed",
+  "sha256": "d20f9b3ee35c24c08e148a63f05bbcc3f11c4e311566438667c616f1b6fa0bcb",
+  "source_sha256": "1f9ad71d29b0f767b6421f96ba5da7a79d0fa83d951ab4f8aaa2b822655a653a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jitapu/180926.html",
+    "edition": "Explicit 87-bar source-form practice selection from 180926 guitar and 172702 piano; per-bar attribution retained",
+    "score_sha256": "4663c6a908597904a2fa5db77970200bc8b677391d54a995d1728f7d233c03a1"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 512,
+    "maximum_parser_boundary_error_seconds": 6.721734280290548e-11
+  },
+  "review_note": "complete-87-bar-existing-source-form;per-note-edition-reconciliation Complete 87-bar source form retained with all repeats, bridge and ending. All 526 source notes and 524 source rests have explicit dispositions; 36 previously uncovered source bars now derive from fully numeric selected reference measures. Disclosed combined published practice edition: each bar names exact piano172702 or guitar180926 measure. Guitar fills, piano alternatives and excluded accompaniment are chosen explicitly; this is not a unique-recording transcription claim. Transpose D-major reference to G-major pitch classes (+5) with explicit octave reductions/additions per section to retain practical source register. First ending held D is kept one octave below the following pickup, as in the source. Retain source practice BPM140, not the guitar printed BPM120. Durations are quarter-beat exact fractions from selected references. Main-theme piano m12 final three quarter-note-triplet durations are each 2/3; m16 one quarter C# replaces repeated attacks; m20 dotted-quarter A plus eighth rest chosen. These choices also apply to repeated source bars. Prior nine pitch-sequence disagreements resolved by actual edition choices: source31 piano m31,32 guitar m32,33 piano m33,52 piano held ending,54/56 guitar bridge voices,59 guitar E5 pickup,64 piano main phrase,85 piano ending without guitar additional C#. Guitar bridge35/37 and later bridge pairs use literal straight eighths; source dotted .75/.25 or staccato swing timing is replaced by the chosen printed values. Source59 wrong corresponding G4 changes to A4 under the selected E5 reference/register. Piano m32 scan appears rhythmically underfilled; complete guitar m32 selected instead. No invented repair of that printed bar. Ending m47 piano tie is terminated at source-form boundary before separately selected guitar final chord. Piano m28 final triplet corrected to actual D5/C#5/D5 staff register, transposed +5 to G5/F#5/G5. Source lower octave is explicitly corrected; all three notes are within supported MIDI48-84. Old diagnostic proposal retained as failed/incomplete-reference evidence. New proposal changes actual musical content, does not merely remove MIDI microgates. Independent root musical review remains required. root已完整查看六页公开原图，按所选声部逐一重录48参考槽，属于已知候选的非盲二读；m28末三连音从原图第四线/第三间确认D5 C#5 D5，代理另存v4参考/v3候选后全48槽完全一致。 m28实际修正为G5 F#5 G5，保留参考的八度跳进，没有把原源低八度伪称印刷读数；其他各段+5/-7/-19的明示练习移调照原来源音区选取。 root从原MIDI消息重新解526音/1050事件，所有源事件逐项核对并覆盖；按独立48槽、87小节形式和明确移调规则重建659输出期望，全部音高/时值/起点/秒数一致。 公开钢琴及吉他所选各小节明确署源；伴奏排除处为单旋律休止，非整件乐器无声。87小节348拍完整保留，140为原练习速度，非吉他打印120。 正式生产软件审计随后执行；没有真人试听、录音对齐或实机测试。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "4663c6a908597904a2fa5db77970200bc8b677391d54a995d1728f7d233c03a1"
+  },
+  "note_count": 512,
+  "event_count": 659,
+  "duration_seconds": 149.14285714279035,
+  "limits": [
+    "Disclosed combined published practice edition, with source tempo/register/form choices.",
+    "No human listening, recording alignment, or real-game test.",
+    "Prior diagnostic/source inspected before this complete follow-up reading; not blind.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-social-9c11145430dfb7d1-doraemon-chosen-reference-v3.review.json",
+      "sha256": "efd9421db6a724474a3e26fc630dc14327c23fd6c24d1e151bcdc589fe086db6"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "8aee8be7e7f6b09eed46c3dd175ffba52b14aa1447505209d4eda156924f6de1"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "53b9b6623f46b95d137c6327486a19dd813e58ff795b2103386ad78a7075f30d"
+    },
+    {
+      "name": "0001-1873f0699c19.json",
+      "sha256": "8f24727332992e4d70a3c2bd74a99513a763b07081b1e8825d55f3824a3caebf"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

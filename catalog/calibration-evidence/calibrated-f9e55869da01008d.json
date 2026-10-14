@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-f9e55869da01008d",
+  "source_id": "merry-christmas-mr-lawrence",
+  "work_id": "work-merry-christmas-mr-lawrence",
+  "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90%E5%8A%B3%E4%BC%A6%E6%96%AF%E5%85%88%E7%94%9F%20bpm86.txt",
+  "status": "reviewed",
+  "sha256": "d53a90ad33e6969fd467f60618268881655eef8cfbf95399d673dec993430736",
+  "source_sha256": "96b3ba579bf163d9cd5f543b9923ca8394c0257bec7fcfb9d7dd9573328404d2",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/250103.html",
+    "edition": "XiaoB/EveryonePiano 5-page C# piano score; selected complete-source form, upper melody in Bb, fixed96 and explicit4beatcadenceextension",
+    "score_sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 165,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "完整处置原161音/13休止/132拍，保留三次主题、连接、对比和收尾缩编；不是完整电影钢琴原曲。 同一XiaoB五页版作唯一谱面依据；完整原稿段落保留：25–31/32/25–31/40/41–48/25–30/63–64，最后另有明确4拍编配延长。 原谱名义C全部降2半音到Bb；首主题比参考再低八度；源53及135高1升八度以对应谱面双高1。范围G3–Bb5。 连接32：原36号3的4拍改为3的2拍，恢复独立3与1各1拍；连接40：原72号6由3改2拍、另恢复起始6，原1拍休止改为下一低八度6，低7/1都保留。 对比41–48逐个同音连音按总时值合并；源87/112休止删除并把对应5延成印刷1拍；源100休止移到44小节2.5拍处；源114/115两个3调整为各1拍。 最后采用63–64的高2高3高2高1、6附点/高1、6附点5/5/3/2，源159的3由1改.5拍；源160的2提前半拍并持续4.5拍，其中4拍为明确收尾编配延长，未伪称原谱印有此延音。 最终165音10休止/132拍/96BPM/82.5秒，所有161来源音逐项映射，174来源事件含2个已说明删除休止完整处置。96是固定编配速度，未再现打印变速或原文件86。 Root独立重列全部175事件并逐项一致；桥32的两个3是分别起音，40主旋律为6/低6/低7/1各一拍，未误取左手低音。 Root确认41/45同音5连线、各小节尾6跨小节连线，以及44第2.5拍的八分休止；这些位置与原稿缺口的处置已逐事件绑定。 最终2的4.5拍只含谱上0.5拍，另外4拍明确保留原稿终止延长；不是把印刷半拍伪报为4.5拍，且不补原钢琴谱后续段落。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "ccbd6aab61b325fc5aa7510ff976bb4473b58cbfa9698ff7336ad4bce5824685"
+  },
+  "note_count": 165,
+  "event_count": 175,
+  "duration_seconds": 82.5,
+  "limits": [
+    "Selected-section piano reduction with explicit register/tempo/cadence decisions; not a complete transcription of the whole composition.",
+    "No human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-merry-christmas-mr-lawrence-full-sheet.review.json",
+      "sha256": "c9bfc9e14e192075e5befc335d994933477c5cc07fef3bf70badfd8d6dbc63ab"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "60b14c382211e103048a1cb7971a7fd017e0a2b6c104cc504c3d7df82929c192"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "1dd55d2915385090c84902ed120df96c12ae88ca3d9c49458312e3f78b20186f"
+    },
+    {
+      "name": "0001-fae2b811706a.json",
+      "sha256": "99d2c2c8dd874396684ec804050871491bf7b0a69044e28fd74f58ee8bcdbeed"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

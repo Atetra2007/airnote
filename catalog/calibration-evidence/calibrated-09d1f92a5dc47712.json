@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-09d1f92a5dc47712",
+  "source_id": "zhouzhou-165",
+  "work_id": "work-d438bf1cd96a",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "002ddc4c63815aa0d3f626c8eb8a12a2defc29eb745ec991ec0ed10e800bfb51",
+  "source_sha256": "0e40fcd871416016429436ccfc79c2abc5d968d7746412838dd85e68de6f928a",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/418839.html",
+    "edition": "君羊按邓紫棋演唱视频记谱，A4/4打印四分90，完整单页",
+    "score_sha256": "7ccc20108e2bf5680d9fcc74877a32628634c3e94c458fd3f9dc00360a830636"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 130,
+    "maximum_parser_boundary_error_seconds": 2.842170943040401e-14
+  },
+  "review_note": "全12行107原音，两轮主歌至末你共我持音结束；第一结束两音内部过门明确新增。 原165内部题名《喜欢你》邓紫棋，12行107音无歌词文字无0。完整保留两轮主歌后进入一次副歌的原顺序，不因标题同名误用Beyond原唱版；所有107原音音高不变且逐一映射。 唯一主参考418839完整单页君羊记谱，页脚明确根据视频喜欢你-邓紫棋演唱版记谱，A4/4、打印四分90。按数字字面A4整体升3半音，普通1→C5，低5/低6/低7→G4/A4/B4，低3→E4，与原音区全匹配。 两轮主歌完整处理。V1/V3的末1 .5和下一小节首1 .5没有跨小节延音弧，每轮恢复两次首1起音；原source7/18/43/54映射各前半拍，后半拍新增。低7一拍，低6 .25→低3 .25后的低3附点四分1.5独立起音。 仰望/脸上处主谱1 .25→低7 .25有异音弧，每轮在两枚源低7之间补该1 .25；低6一拍后下一低6 .5没有同音弧，源两个低6分别保留。灯/知的2 .5同音连2 .5合一拍；每轮是那/是我低6 .5、1 .5至伤感/衷心完整。 第一轮结尾明确走主谱括号第一结束：低7三拍+低5一拍，作为两枚新增内部过门音恢复，然后从主歌首细雨对应位置进入第二轮。原无这两音，新增在比较表明列，不改装为原音。第二轮走2/3结尾，两个一拍0后才唱喜欢。 喜欢你过门为3一拍、3 .25、2 .25、1 .5；源72/73映射第一3及2，补第二3 .25和末1 .5。后你1两拍是独立起音，印弧只在同小节的3→2→1，不跨至你，不能把两枚1合起来。 那双眼动人、笑声更迷人、那可爱面容、挽手说梦话每个源音按谱保留；人/话低6两拍；愿/像低7为一拍，再/昨1 .75后2 .25，一小节四拍。 可与天的前小2装饰分别显式实现为.125拍，从紧随的附点3 .75内借拍，主3变.625，二者合.75，小节仍严格四拍。这是量化编配选择，不说谱面印.125。 可轻抚乐句实为装饰2、3 .75、2 .25、3一拍、3一拍、3 .25、2 .25、1 .5（主3经借拍变.625）。保留源88高3和源89后高2，其他中间经过/再起音均明列新增；源90是下一你1两拍，不挪到前小节末1。 像昨天最后天处，原无谱面高3主音群，仅留下前2及后你共我。完整恢复印装饰2+3 .75+2 .25+3一拍+2 .5，再源104你1 .5、source105共低7 .5、source106我1 .5；所有额外音列为新增而不是无说明改写源音。 末我1 .5跨第一结束1三拍再同音弧至1 .5，合四拍，原最后source106映射此完整持音；排除随后括号3/5两枚16分以及间奏、DS1后第三主歌等原107音范围外材料。 107源音零改音、零省略、零源起音合并；新增23音，输出130音4休止134事件，总91.5拍/90BPM/61秒。四个额外1由root纠正错误同音合并后恢复。 Root原像素确认V1末1→V2首1、V3末1→V4首1没有跨小节延音弧；印弧分别从新小节首1连到该节低7。两轮共4组应为.5/.5独立起音。source7/18/43/54各映射前.5，后.5各作明确新增。作者独立回看原图确认；旧候选保持。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "7ccc20108e2bf5680d9fcc74877a32628634c3e94c458fd3f9dc00360a830636"
+  },
+  "note_count": 130,
+  "event_count": 134,
+  "duration_seconds": 61,
+  "limits": [
+    "First-ending internal instrumental two notes explicitly added between source verse rounds.",
+    "Two grace notes explicitly assigned.125beat borrowed from following dotted eighth; this realization is a disclosed choice.",
+    "No recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-165-like-complete-source.review.json",
+      "sha256": "a63d4851316f52584951bdfaa62baf6983afd500cae4504305224bbb0025bb40"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "e3e482eb44a77b12c0d335391cc33df0ff01f9896c52dfe8c81a0b13ecfb15af"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "a0f216ea9d4eeaac3271a38e53b9fa10af8cf710833cf38ea6560bce12ccba5b"
+    },
+    {
+      "name": "0001-61741199b09b.json",
+      "sha256": "30e489391aff4498416b0ead5aae528013159c64c3f81e2eed5dd57c7239d472"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

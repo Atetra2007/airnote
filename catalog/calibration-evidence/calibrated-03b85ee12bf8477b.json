@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-03b85ee12bf8477b",
+  "source_id": "deck-69e22c872c84",
+  "work_id": "work-deck-69e22c872c84",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8D%97%E5%B1%B1%E5%8D%97-%E7%99%AB%E5%85%AC%E7%81%AC-%E7%99%AB%E5%85%AC%E7%81%AC-13ca7faa29ee95c7cd0ad.deltamusic",
+  "status": "reviewed",
+  "sha256": "d951f8820a58fb290ddd011edcb826b13f11b897b18381b276de6024355ec2f0",
+  "source_sha256": "387abd4b37870ed610b57496b256c219f250bdc2c05ef8a0b254ddc69aca5ed4",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/156792.html",
+    "edition": "C,4/4,printedquarter60BPM;complete saved opening-to-WanAn then low/high coda and final tag",
+    "score_sha256": "720350258344e1e2573071033a73782d996290a20e3514e5f0c6ebe4bb1ce361"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 213,
+    "maximum_parser_boundary_error_seconds": 0
+  },
+  "review_note": "complete-existing-source-content;all219notes-and45rests;opening-through-first-WanAn-and-saved-low-high-coda-final-tag Select SunShiyan C vocal edition156792, printedquarter60BPM and4/4. The source4/2 header is not retained as a second timing scale. Saved source consists of opening through the first WanAn, then the low-register and high-register coda plus final tag. It does not contain the intervening verse/chorus material; none is appended. Use P1R1 through P2R7B1 (24bars), then P4R4B3 through P4R9B2. The2beat instrumental pickup after first WanAn is represented by silence at the section join because its pitches are absent from source; this completes the printed4/4 bar before the saved coda. The final two printed rests after the last C5 lie beyond the saved sounding EOF; end at the printed C5 half note instead of appending those rests. Source intervals differ from the selected vocal timing. Every original rest is mapped using its flanking original notes and the corresponding output gap, not naive absolute-time intersection. Original and selected durations are both reported; complete accounting does not claim original silence durations are retained. Coda BeiQiuBei and BeiHaiBei contain A-to-C returns. These are different-pitch slurs and remain separate attacks. Source held A is split to A eighth and C dotted quarter. Coda GuDui contains E eighth followed by F eighth tied to F half, hence E0.5/F2.5. These figures are not G/E repeated attacks. The original source groups are explicitly corrected under this selected edition. P1R7B1 final E4 sixteenth ties into next-bar E4 dotted half, totaling3.25beats. Same-pitch internal ties are enumerated; all other lyric attacks remain separate. Tiny unmeasured D-to-E grace at P1R6B1 is optional and not separately realized. Source supplies no separate grace event. The four-page ZhangLei guitar edition416608 is stored for comparison only; its rhythms and phrasing are not mixed into this candidate. Worker manual nonblind reading and software checks are not independent musical acceptance. No audio, UI, GPU or game test. Root完整所选P1/P2/P4图读并另录42位置音级/有理时值，237事件全部一致；P1R7跨小节E真tie已看原尺寸裁图确认3.25拍。 源219音/45休止重新解码；27休止组以原音前后定位重算一致，8组保长/8组改长/11组恢复发声。全54项改音、8拆分、13合组均为明确声乐选版，不伪称原样或真tie。 P2R7连接为C两拍、印刷休止一拍及省略器乐弱起一拍，共两拍静音；旧英文two-beat instrumental pickup措辞不准，以此分解为准。末C5两拍不追加原EOF以外休止，96拍接完整高低尾声。 2026-10-13参考图片封装纠正：实际PNG/JPEG格式经完整解码核验，原始字节与SHA不变；另存正确扩展名副本并纠正MIME。音符、时值、谱文件及音乐决定不变。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/jpeg",
+    "sha256": "720350258344e1e2573071033a73782d996290a20e3514e5f0c6ebe4bb1ce361"
+  },
+  "note_count": 213,
+  "event_count": 237,
+  "duration_seconds": 166,
+  "limits": [
+    "Community vocal transcription, not publisher authentication.",
+    "Source uploader name does not authenticate singer/version; candidate explicitly adopts the MaDi/SunShiyan vocal edition.",
+    "Substantial coda pitch and sustain corrections are itemized; full coverage does not mean unchanged source melody.",
+    "Rest durations are explicitly revised by flanking-note correspondence; no global absolute-time overlap or duration-preservation claim.",
+    "The2beat section-join silence is disclosed; the later absent verse/chorus material and final EOF rests are not appended.",
+    "No audio,UI,GPU,recording alignment or game tests.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-69e22c872c84-nanshan-reference-v1.review.json",
+      "sha256": "540a44922bed6cdb0d6ca3f47c3e809c6fa078eb670843dd48a91d28084f56ad"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "c7c6bbea4b205a7c45f573640edebc295f37a1c5afe3e25857ce5e2e56d34251"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "2c00c7b7db487c875014b43cd931443201153c81a0d92e670f8a7b858f62a87a"
+    },
+    {
+      "name": "0006-c564244c8412.json",
+      "sha256": "36bbe92f91b877a8c852df280e74e6fe9f5e58648d140701c4cdb38e2710d1f6"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

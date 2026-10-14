@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-516669c30faf0cd7",
+  "source_id": "deck-0085fe7f5060",
+  "work_id": "work-deck-0085fe7f5060",
+  "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9D%92%E9%B8%9F-%E7%94%9F%E7%89%A9%E8%82%A1%E9%95%BF-Jiko-60df2692f2.deltamusic",
+  "status": "reviewed",
+  "sha256": "18f9ee16af600f36b5d574e1005d7883e328d038a92492446689efc09b504627",
+  "source_sha256": "d2dd7412b0778dc66febf6cdae0b45e84146eca5239f77609a460d71e68b5470",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.everyonepiano.cn/Number-1440.html",
+    "edition": "Complete55bar numeric piano RH-highest monophonic reduction; explicit75BPM half-speed practice from printed150; no note or beat omission",
+    "score_sha256": "61c7ea5ff599a0990c101e939711a5208ff5bbb8b1d08936abca5bd7461d39e0"
+  },
+  "review_method": "全5页55栏谱表交叉复核及原像素纠错；223原头完整分组处置、330事件全部保留。原谱150BPM快速装饰软件检查受阻，明确全曲半速75BPM练习版重新检验，未进行人耳试听或真实游戏验证。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 293,
+    "maximum_parser_boundary_error_seconds": 8.242295734817162e-13
+  },
+  "review_note": "Root实际看完EOP1440完整5页55栏，并逐栏对读全部人工表；另看快速装饰、和弦、八度与末尾原像素细图。此次是非盲全谱交叉复核，没有声称第二次盲录或人耳试听。 Root发现9/49栏末低2前漏降号，改为b2；11/51器乐黑4/3应取上八度而第3拍孤立低4须保留，另由独立代理交叉确认。12首和弦取最高1、后3无低点，13末6/高2/高3，28前3/5/#6的低点均已原像素再核。旧v1/v2未验收，纠错冻结v3。 9栏20个64分音、49栏16音加2休止格全部保留；每格1/16拍。9栏前4头作为一个梁组整体降八度保轮廓，其余全谱降7半音，最终49–83。撤销13栏原B2升八度说法：那是候选读谱误低，修正后原谱无需适配。 完整原223头及212休止共435事件由root重新逐token解码、逐项比对处置。保持原完整前副歌、第一器乐、主歌桥段、九头减和弦上行、后副歌与末器乐六段。117–125九头已被28/29栏低C#/E/G到高Bb的完整印谱序列独立证实。 明确选每次右手攻击最高打印音的钢琴单线练习版，省去左手及其余和弦头；包含右手伴奏性攻击，不称原纯人声恢复。其余原段按完整独立版本重编，不能把435原事件与330输出假说成逐头等价。 完整恢复两次器乐和54栏8个十六分上行＋55栏整拍4尾音；原209.250001拍改为公开完整220拍/150BPM/88秒。293攻击37实际休止，41灰色同音延续合并。 64分音在150BPM时值25毫秒，软件虚拟播放与解析另验，实际游戏未验证。数字谱为唯一音头/时值主证；同站五线谱只帮助29栏变音辨认，不把两版局部和弦差异暗中合并。 原谱标150BPM的64分装饰仅25毫秒，正式检查在20处换音上阻止输出。另存全曲75BPM半速练习版，所有330事件的音高、顺序和220拍比例完全保留，时长176秒；原150BPM版本及失败报告保留，未通过目录验收。最短音改为50毫秒，再独立执行正式软件检验；并不声称真实游戏通过。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "61c7ea5ff599a0990c101e939711a5208ff5bbb8b1d08936abca5bd7461d39e0"
+  },
+  "note_count": 293,
+  "event_count": 330,
+  "duration_seconds": 176,
+  "limits": [
+    "Complete alternative piano RH-highest-at-attack edition, not literal source vocal arrangement recovery.",
+    "All original sections preserved in declared whole-section recomposition; extra complete reference ending disclosed.",
+    "Four high ornament heads lowered an octave; no other hidden octave folding.",
+    "Human listening and real-game checks not performed.",
+    "Practice tempo75 is half the printed150; original-speed software check failed and remains frozen.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-deck-0085fe7f5060-eop1440-complete55-practice75-v1.review.json",
+      "sha256": "df3fe3fe916ebdda46bc2873ac4725e99fe6416fcc0b3e3c0912b70a5d932160"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "199c48741a7ed96a0d647fb01db1e4f18deb59257dc57386cf1386474fb5d345"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "5f60a64e324be8876534c0da71c23555523a45281bbd790a2ae91e33eb8717eb"
+    },
+    {
+      "name": "0001-53fbd4b7a59e.json",
+      "sha256": "c0476013ee4c56c541e105e3fd4bf5e71ec65eece06053c4724115af2b197888"
+    },
+    {
+      "name": "public-review-summaries-20261013-bluebird223-practice75-v1.json",
+      "sha256": "e2f0c5ac26fc4d8dc9d7a96501a363174f9803d6af7c9ec0ea76c1903ded5b59"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

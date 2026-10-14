@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-2135c56f8d51aa3c",
+  "source_id": "alternative-score-8e1574920694d5ef",
+  "work_id": "work-934bc5deb368",
+  "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0.txt",
+  "status": "reviewed",
+  "sha256": "81529a0875c766534049f07df4bc92fc4c0bed2c8940b57ecd1c611fa7d85f68",
+  "source_sha256": "73c31c95e8ee7f2e0c5b7cc94dca71d6ddfa157009d5bb5d24e72ee4f0b0bf86",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/418682.html",
+    "edition": "小叶歌吉他Cmajor;complete existing51phrase source form;instrumental octave-12, vocal printed register;120BPM practice tempo",
+    "score_sha256": "e603c422ebed5a68476eb3663cdb6ac241e5c235fe37fa8c8986f042202de599"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 416,
+    "maximum_parser_boundary_error_seconds": 5.684341886080802e-14
+  },
+  "review_note": "complete-original-source-form;all421notes19rests-individually-disposed;explicit-instrumental-octave-arrangement Complete original421note/19rest source retained as51explicit source phrases. It is a shortened instrumental/vocal arrangement, not the full printed song form. Single selected418682edition; nonblind source-note exposure disclosed. Read every selected main metrical note and complete image. Alternative444724was inspected but not blended. PrintedCmajor vocal register retained. Every instrumental phrase is uniformly one octave lower; mixedI8first4notes and C8/O0last3notes use the instrumental octave. Output55..79MIDI is an explicit playable arrangement; original mixed-octave source notation was not reliable. Source120BPM retained only as practice tempo. The chosen printed edition gives noBPM, and this work makes no claim of original-recording tempo calibration. Source form after first chorus uses T1,I2,I3,I4 then jumps toS1. I4is the same printed opening instrumental phrase used by the source copy; retain this instrumental phrase and its shortened join, rather than inserting the absent repeatverse pickup or entireS0. Source has S1-S7 then directlyP1/P2/P3; printedS8is absent. Source then jumps toO0/O1/O2/O3/O4/O6/O7/O8/O9: absent finalreturnchorus and O5are not appended. Restore seven missing metrical attacks: two inside eachI4occurrence, twoI5finalsixteenths, oneV5quarter2. Small unmetered printed grace ornaments absent from source are not added. Omit exactly source96/source132 extra2 inV3/V7 and source195extra5 inC5. Every other source attack is retained or tied; nine source rearticulations merge into selected same-pitch ties. Restore printed quarter/sixteenth note rhythm at false source introtriplets, printed actualtriplets atS2/O6,32ndnotes atS3/S7, and both2/4P2bars. Source261beats becomes200beats100seconds at120BPM. No human listening, original-recording alignment, or real-game test. 10ms practice release gap; exact rational timing is retained in reference/timeline. Root完整418682图及五块细图二读，另录绝对MIDI/有理时值并按51来源小节展开435事件，全部一致，非盲。 421音+19休止全部重新解析核验；省略3多余攻击、补7印谱漏音、9同音连结逐项明示，来源删节结构不扩充。 器乐主旋律整体比印谱低八度、声乐原调；混合过渡I8和C8按声部切换，所有100次-12/12次-24来源音区修正及1次-2均显式列出。 C4首音为C4，不能误复用P3的D4；两个2/4小节、S2/O6三连音、S3/S7三十二分节奏均核查。120只为源练习BPM，不冒充原录音速度。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/gif",
+    "sha256": "e603c422ebed5a68476eb3663cdb6ac241e5c235fe37fa8c8986f042202de599"
+  },
+  "note_count": 416,
+  "event_count": 435,
+  "duration_seconds": 100.00000000000006,
+  "limits": [
+    "Selectededition has noBPM;120BPM is source practice choice only.",
+    "Original source is shortened; absent entire reference sections and unmetered grace ornaments are not newly composed into it.",
+    "Instrumental lines are deliberately shifted down one octave to a playable register; vocal lines remainCmajor printed register.",
+    "Nonblind numeric reading; no original-recording alignment, human listening or real-game verification.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-alternative-score-8e1574920694d5ef-love-reference-v2.review.json",
+      "sha256": "697a6062b47db4e496181de6af6230dfc39f4905e78b299761394ab9fbc6bba9"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "0cb636ee35b23d295460e6611b11e74d6e454bd6ed8e94234e2d3c6eefdc71b7"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "426403b23e28670fc2e1b4a796cabfb7052235d24c8f3560a0134d29c31db019"
+    },
+    {
+      "name": "0001-959f39e68577.json",
+      "sha256": "aa498787b59d03f874e5af5152c25f4d8da50407c37aa0e38b89f78c922385e4"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

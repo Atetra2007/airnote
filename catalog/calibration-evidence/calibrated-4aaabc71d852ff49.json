@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-4aaabc71d852ff49",
+  "source_id": "zhouzhou-003",
+  "work_id": "work-e72c810d5667",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "3b924ff487f8746e90034333085ade5d8bf6c9e0a90ce607df7970bcb5b8b88f",
+  "source_sha256": "157f378964a734765cd6c778c3149edbcbe5f034d0fef38ac4a35bc14c346548",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.youtube.com/watch?v=eo4Ud95BdiI",
+    "edition": "co piano public piano-roll; selected 4-beat bars at measured 180 BPM; reference -7 semitones; bars 1-8",
+    "score_sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "review_method": "Root逐音核对公开动态钢琴卷帘视频中可见音符；edition与SHA-256明确绑定原始视频，不把视频当作录音或静态总谱。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 45,
+    "maximum_parser_boundary_error_seconds": 3.552713678800501e-15
+  },
+  "review_note": "Complete42sourceattacks;3explicitattacksplits;video8bars 原42音及全部raw tokens完整解码/SHA绑定，两轮原作者21音主题全部处置，无未决尾巴删除。作品身份为せなすけこのサメ飼ってもいい？鼠鼠改梗，不按中文标题找错误作品。 参考是co piano公开白键改调单旋律piano-roll视频eo4Ud95BdiI，非印刷五线谱；无音轨video-only SHA绑定，全部12分段帧及适用0..15秒补充帧已实际view。C4/C5/C6轴、C Major、日文ドレミ符号与所选bar1..8均清楚。 完整视频约47.96fps，连续bar编号间距约225px；9个bar首位置全采帧view，时间1.460/2.794/4.129/5.463/6.797/8.132/9.466/10.800/12.135秒，约每1.334秒一栏；两组四栏差256帧≈5.3378秒。该版本编辑记谱选4/4并按四拍一栏测得180BPM，不冒称独立印刷180或官方原录音速度。 实际可见完整22音主题：G5:1 G5:.5 G5:.5 G5:.5 E5:.5 E5:1 / D5:.5 E5:.5 D5:.5 C5:.5 A4:1 0:1 / C5:1 A4:.5 A4:.5 C5:1 A4:.5 A4:.5 / D5:.5 E5:.5 E5:.5 D5:.5 D5:1 0:1，第二轮第7栏C5四分改为两八分再次攻击，source34另拆2；两轮在公开视频bar1..8连续，逐次实际确认；video后续变化不扩展为原来源。 统一reference-7半音，源前4C5每轮保留，后17音原过高一八度需降12；原source17及38为G5而参考m4/m8第二攻击E5，选版输出A4，delta-10，单列该两处版本差异。全42source有34改音：32降12、2降10。 每轮source4/source25单A5对应参考两个E5攻击(.5+1拍)，各明确拆为两输出A4攻击，source单行映射两个事件；另source34 F5对应第二轮bar7 C5两八分显式拆2；共3拆音，45输出攻击，4个四分休止，49事件32拍@180=10.666667秒。 逐攻击on/off颜色观测仅提供实际帧旁证，不把解析分数当音乐验收；同音再起色阈会延迟约2帧、尾部字形有辉光。量化名义起音全部误差≤.06秒，半拍时间.166667秒；短同音gate间.04秒是显示/演奏断奏间隙，不编成名义休止。名义音长来自半/整拍槽，非把残色当延音tie。 仅003候选，135四未知0仍保留未决原源，不改为普通1、不用该候选冒充135。root独立全段键轴/速度/编辑记谱与source-split审核待做，无音频播放、GPU或实机游戏。 Root实际看完整适用九栏首帧及focus00，独立手录8栏的MIDI与半拍ticks；再用不同的y690键面扫描逐帧解码，45次攻击全部音高一致。四拍一栏的明确编辑速度为180，最大起音偏差0.051秒内、键释放偏差0.017秒内。 固定高度圆角ドレミ标签不是音长；手录节奏依据栏距和实际键开关。重复键之间短暂变白属于显示/断奏间隙，不补成乐谱休止；第二轮第7栏两个C5再攻击已逐一确认。 参考统一降7半音，逐一重解原raw tokens/源音并验证拆音、版本改音、未知分隔符与全源映射，无未处置尾部；这是所选co piano公开卷帘编配，不是印刷五线谱，也未声称原录音或人工听感检验。 Root独立确认003全部42源音、52raw tokens；source4/25各拆两个E5参考攻击，source34拆第二轮第7栏双C5，共45音4休止32拍。最终生成入口及早期失败模板另有可复现修订链，不重跑覆盖。",
+  "reference_media": {
+    "kind": "published-piano-roll-video",
+    "media_type": "video/mp4",
+    "sha256": "ab38e089648d26648dcde08f62591f2f07776865d2f6ae36248c4e08d89a64f9"
+  },
+  "note_count": 45,
+  "event_count": 49,
+  "duration_seconds": 10.666666666666666,
+  "limits": [
+    "4/4and180ismeasuredvideoselectededition;noindependentprintedcoBPM",
+    "Keyanimationquantizationonseterrorupto.06s;nominalvsvisualgateexplicit",
+    "Originalsourceuntimed;source4and25and34split;34pitchchanges",
+    "135fourunknown0unresolved",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-003-shark-copiano-v1.review.json",
+      "sha256": "682e2bf43482be8bfa8e892aa6383e473d951c77a7e23b7669dacb834ec819ba"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "3bb3998e7f424fe4804e88c154a671023249d35dd72d02bc706144e98dca6b1b"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "4a1eebcc3ddaf4efc18b94ba462047515950269412a609cc4d17e809f9546128"
+    },
+    {
+      "name": "0001-14cdf32cce1c.json",
+      "sha256": "640eef42482714e77a9ab062171e8a74b3a41fcb164315daf8fecc1e7a732ada"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "variant_id": "calibrated-b8883bea86b09937",
+  "source_id": "zhouzhou-189",
+  "work_id": "work-3cf8072a4435",
+  "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+  "status": "reviewed",
+  "sha256": "eba17b891e3c587b613847d59058a196bbcde2fcf06663ad94e3f75682d27921",
+  "source_sha256": "dab819f2e3014619ba2ee1da899f2df1729f0e46634f3a3321dfd4d353d38e48",
+  "reference": {
+    "type": "published-sheet",
+    "url": "https://www.jianpujia.com/jianpu/305564.html",
+    "edition": "李海鹰中国军魂男声合唱最高声部，1=F转C，4/4印114BPM；就让起至第一结尾反复首音",
+    "score_sha256": "5a248ba67a16563a4a061321b7e20a7f4aea27d1fe0a5a65d9cf18ac67344c9c"
+  },
+  "review_method": "Root逐音视读完整适用公开乐谱，逐项对照现有来源及编配时值。 所有正式ScoreCodec事件均与已审时间线比较；隔离导入和重启校验通过，软件虚拟播放未发送真实输入。人工听感未验证，真实游戏未测试。",
+  "validation": {
+    "production_parser": "passed",
+    "reviewed_note_count": 57,
+    "maximum_parser_boundary_error_seconds": 1.4210854715202004e-14
+  },
+  "review_note": "全部57源音59源事件和分隔符；就让一拍弱起至第一结尾反复首高1，57起音1个2拍休止52拍。 采用词曲网李海鹰男声合唱谱305564的最高声部，原印1=F、4/4、114BPM；本版明确移至C调以保留原谱音区C4–D5。 完整源稿57音、2休止及1条分隔符；从就让一拍弱起进入鲜血染红，走完12小节与第一结尾，最后只到反复红旗飘飘首高1三拍，不补写后续。总52拍。 保留全部57起音；原源事件15、50的自然5按最高声部印谱改为#5，分别在我的胸膛和首结尾进字；不沿用下方合唱声部的其他音高。 第4局部小节上字7与第8小节闪字6分别有同音延音线，读作2.75拍；不同音弧线为连奏，不合并。第5/6小节高1均三拍。 源事件47的休止对应前进后两个相邻四分休止，合写2拍休止；源事件51位于第一结尾#5后，所选版本没有该休止，本编配明确省去，保留原始源文件。 所有附点八分/十六分读作.75/.25，附点四分/八分读作1.5/.5；不得把源数组8或b字段直接当作正确时长。本例以原图拍值重建全部音符。 只是原有片段完整范围的校对，不称完成整部合唱或影视原录音；真人听感与真实游戏未执行。 独立二读重新从两页原图转录58事件并与root完整音高/时值相符；两处#5、两处2.75拍、源休止47保留2拍、源休止51按第一结尾省略，以及52拍完整范围再次确认。",
+  "reference_media": {
+    "kind": "published-static-score-image",
+    "media_type": "image/png",
+    "sha256": "5a248ba67a16563a4a061321b7e20a7f4aea27d1fe0a5a65d9cf18ac67344c9c"
+  },
+  "note_count": 57,
+  "event_count": 58,
+  "duration_seconds": 27.36842105263158,
+  "limits": [
+    "Complete existingexcerpt, not entirechoralwork or original recording.",
+    "Reference vocaltopline transposedFtoC; sourceextraendingrest explicitlyomitted.",
+    "No humanlistening or realgametest.",
+    "复核只覆盖来源现有内容；片段不代表整首录音。",
+    "软件检验不代表人工听感或真实游戏效果。"
+  ],
+  "local_evidence_fingerprints": [
+    {
+      "name": "review221-zhouzhou-189-vocal-sheet.review.json",
+      "sha256": "b363815dc45fa31e8f968999243a767acfbda764669bb985ad5f289fcd3236cb"
+    },
+    {
+      "name": "accepted_timeline.json",
+      "sha256": "d4d8ac7c037e556f1ea77ecea7018701005073fbc203e4ea08d767c304ea5659"
+    },
+    {
+      "name": "audit.json",
+      "sha256": "c45c5c28fef2a1bed72b0e13b73e76420e4f85fbb2c4b55ef6869b6de62812ac"
+    },
+    {
+      "name": "0001-8faff59c1a97.json",
+      "sha256": "bdcfcbee32a21286094d03776b0a14819d304577027cef48086503d1b977a0cd"
+    }
+  ],
+  "availability": "Full source scores, corrected files, recordings and visual evidence remain local-only."
+}

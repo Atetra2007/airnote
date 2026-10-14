@@ -38,6 +38,8 @@ public sealed class LibraryStore
         if (Settings.GameNoteGapMs is < 0 or > 250) Settings.GameNoteGapMs = 60;
         Settings.Guide ??= new();
         Settings.SelectedVariants ??= new(StringComparer.Ordinal);
+        Settings.LibrarySidebarWidth = double.IsFinite(Settings.LibrarySidebarWidth) ? Math.Clamp(Settings.LibrarySidebarWidth, 280, 420) : 330;
+        if (!Enum.IsDefined(Settings.LibrarySort)) Settings.LibrarySort = LibrarySortOrder.Smart;
         Settings.Guide.Normalize();
         if (string.IsNullOrWhiteSpace(Settings.OverlayHotkey)) Settings.OverlayHotkey = "F7";
         Items = ReadJsonOrPreserve<List<LibraryItem>>("library.json") ?? [];
@@ -205,6 +207,7 @@ public sealed class LibraryStore
         string? sourceUrl = OptionalString("source_url");
         var reference = entry.TryGetProperty("reference", out var referenceElement) && referenceElement.ValueKind == JsonValueKind.Object
             ? JsonSerializer.Deserialize<ReferenceMetadata>(referenceElement.GetRawText(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) : null;
+        if (reference is not null) ValidateReferenceMetadata(referenceElement, reference);
         var song = new CatalogSong(id, RequiredString("title"), OptionalString("filename") ?? id + ".txt", bpm, OptionalLong("size"), OptionalString("sha256"), downloadUrl, sourceUrl)
         {
             BpmKnown = bpmKnown,
@@ -259,6 +262,22 @@ public sealed class LibraryStore
         return song;
     }
 
+    private static void ValidateReferenceMetadata(JsonElement referenceElement, ReferenceMetadata reference)
+    {
+        if (reference.Type is not null && reference.Type is not ("recording" or "published-sheet"))
+            throw new InvalidDataException("参考来源类型必须是 recording 或 published-sheet。");
+        if (reference.Type != "published-sheet") return;
+
+        var hasMidiHash = referenceElement.TryGetProperty("midi_sha256", out var midiHash);
+        var hasAudioFields = referenceElement.TryGetProperty("audio_sha256", out _) ||
+            referenceElement.TryGetProperty("start_seconds", out _) ||
+            referenceElement.TryGetProperty("segment_start_seconds", out _) ||
+            referenceElement.TryGetProperty("segment_end_seconds", out _);
+        if (!IsHttps(reference.Url) || string.IsNullOrWhiteSpace(reference.Edition) || reference.Edition.Length > 200 ||
+            !IsSha256(reference.ScoreSha256) || hasMidiHash && (midiHash.ValueKind != JsonValueKind.String || !IsSha256(midiHash.GetString())) || hasAudioFields)
+            throw new InvalidDataException("出版谱参考必须注明 HTTPS 链接、版本和乐谱 SHA-256；可选 MIDI SHA-256，不能包含录音定位字段。");
+    }
+
     private static void ValidateExternalVerification(JsonElement entry, CatalogSong song, int schemaVersion)
     {
         JsonElement verification = default;
@@ -301,11 +320,18 @@ public sealed class LibraryStore
         if (!hasSourceHash) throw new InvalidDataException("已校准的外部来源必须绑定原始来源 SHA-256 或指纹。");
 
         if (!entry.TryGetProperty("reference", out var referenceElement) || referenceElement.ValueKind != JsonValueKind.Object ||
-            song.Reference is not { } reference || !IsHttps(reference.Url) || string.IsNullOrWhiteSpace(reference.Edition) ||
-            reference.Edition.Length > 200 || !IsSha256(reference.AudioSha256) ||
-            !referenceElement.TryGetProperty("start_seconds", out var startElement) || startElement.ValueKind != JsonValueKind.Number ||
-            !startElement.TryGetDouble(out var startSeconds) || !double.IsFinite(startSeconds) || startSeconds < 0)
-            throw new InvalidDataException("已校准的外部来源必须注明具体参考录音、版本、音频 SHA-256 和起始位置。");
+            song.Reference is not { } reference || !IsHttps(reference.Url) || string.IsNullOrWhiteSpace(reference.Edition) || reference.Edition.Length > 200)
+            throw new InvalidDataException("已校准的外部来源必须注明具体参考来源和版本。");
+        if (reference.Type == "published-sheet")
+        {
+            ValidateReferenceMetadata(referenceElement, reference);
+        }
+        else if (!IsSha256(reference.AudioSha256) ||
+                 !referenceElement.TryGetProperty("start_seconds", out var startElement) || startElement.ValueKind != JsonValueKind.Number ||
+                 !startElement.TryGetDouble(out var startSeconds) || !double.IsFinite(startSeconds) || startSeconds < 0)
+        {
+            throw new InvalidDataException("已校准的录音参考必须注明音频 SHA-256 和起始位置。");
+        }
         if (referenceElement.TryGetProperty("score_sha256", out var scoreHash) &&
             (scoreHash.ValueKind != JsonValueKind.String || !IsSha256(scoreHash.GetString())))
             throw new InvalidDataException("参考乐谱 SHA-256 无效。");
@@ -348,6 +374,10 @@ public sealed class LibraryStore
     private static bool IsSha256(string? value) => value?.Length == 64 && value.All(Uri.IsHexDigit);
 
     public IReadOnlyList<LibraryWork> GetWorks() => Items
+        // Retired catalog previews stay in the index with their user fields, but are no longer offered.
+        // A saved file name/hash or a personal item ID denotes user data, including missing local files.
+        .Where(item => item.Available || item.FileName is not null || item.Hash is not null ||
+            item.SourceId is null || item.Id != "source-" + item.SourceId || Catalog.ContainsKey(item.SourceId))
         .GroupBy(item => string.IsNullOrWhiteSpace(item.WorkId) ? item.Id : item.WorkId, StringComparer.Ordinal)
         .Select(group => new LibraryWork(group.Key, group, Settings.SelectedVariants.TryGetValue(group.Key, out var selectedId) ? selectedId : null))
         .ToArray();
