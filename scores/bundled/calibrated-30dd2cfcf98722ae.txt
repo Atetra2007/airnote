@@ -1,0 +1,13 @@
+@format=HarmonicaPlayer/1
+@title=圣诞快乐劳伦斯先生（公开钢琴谱七小节单旋律校对）
+@bpm=96
+@gap=10
+@source-id=zhouzhou-152
+@review-scope=complete-existing-source-content
+@arrangement=XiaoB-EOP-bars25-31-fixed96BPM-upper-voice-down-octave
+
+#2:0.5 4:0.5 #2:0.5 （#6）:0.5 #2:2 0:1 #2:0.5 4:0.5
+#2:0.5 4:0.5 #5:0.5 4:0.5 #2:0.5 4:0.5 #2:0.5 （#6）:0.5
+#1:2 0:1 【#1】:1 【1】:0.5 #5:0.5 4:1 #2:0.5 4:0.5
+#2:0.5 （#6）:0.5 #2:2 0:1 #2:0.5 4:0.5 #2:0.5 4:0.5
+#5:0.5 4:0.5 #2:0.5 4:0.5 #2:0.5 #1:0.5 （#6）:2

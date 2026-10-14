@@ -10,8 +10,8 @@ namespace Harmonica.Desktop;
 public sealed class GuideNoteView : FrameworkElement
 {
     private static SolidColorBrush Brush(string color) { var b = new SolidColorBrush((Color)ColorConverter.ConvertFromString(color)); b.Freeze(); return b; }
-    private static readonly Brush Ink = Brush("#F0F5F3"), Muted = Brush("#A9B6B1"), Line = Brush("#254F6058");
-    private static readonly Brush Middle = Brush("#8AD8BC"), Low = Brush("#80B9F3"), High = Brush("#F1BC79"), Sharp = Brush("#E6A5DA");
+    private static readonly Brush Ink = Brush("#EEEEEF"), Muted = Brush("#A4A5AE"), Line = Brush("#4038393F");
+    private static readonly Brush Middle = Brush("#C9CAD2"), Low = Brush("#9CAFD0"), High = Brush("#D6B78B"), Sharp = Brush("#BBA7CF");
     private readonly Dictionary<(string, double, Brush, double), FormattedText> textCache = [];
     public ScoreTimeline? Timeline { get; set; }
     public GuideProgress? Progress { get; set; }
@@ -61,7 +61,7 @@ public sealed class GuideNoteView : FrameworkElement
                 var x = keyIndex * lane + 5;
                 var rect = new Rect(x, top, Math.Max(4, lane - 10), Math.Max(3, bottom - top - 2));
                 dc.PushOpacity(i == current ? .97 : .76);
-                dc.DrawRoundedRectangle(color, note.Sharp ? new Pen(Sharp, 2) : null, rect, 5, 5);
+                dc.DrawRoundedRectangle(color, note.Sharp ? new Pen(Sharp, 2) : null, rect, 3, 3);
                 dc.Pop();
                 var available = Math.Min(bottom, lineY) - Math.Max(top, 0);
                 if (available > 18)
@@ -84,7 +84,7 @@ public sealed class GuideNoteView : FrameworkElement
         {
             var active = PhysicalNoteTracker.NoteKeys[i] == activeKey;
             var rect = new Rect(i * lane + 4, lineY + 7, lane - 8, 26);
-            dc.DrawRoundedRectangle(active ? BrushCache.ActiveKey : BrushCache.Key, active ? new Pen(Middle, 1) : null, rect, 5, 5);
+            dc.DrawRoundedRectangle(active ? BrushCache.ActiveKey : BrushCache.Key, active ? new Pen(Middle, 1) : null, rect, 3, 3);
             Text(dc, i == 7 ? "," : "ZXCVBNM"[i].ToString(), 13, active ? Middle : Ink, rect.X + rect.Width / 2, lineY + 10);
         }
     }
@@ -112,7 +112,7 @@ public sealed class GuideNoteView : FrameworkElement
     }
     private static class BrushCache
     {
-        public static readonly Brush Dark = Brush("#17252A"), ActiveKey = Brush("#344C43"), Key = Brush("#292F34");
+        public static readonly Brush Dark = Brush("#222326"), ActiveKey = Brush("#35363D"), Key = Brush("#2C2D32");
     }
 }
 

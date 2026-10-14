@@ -15,10 +15,10 @@ public partial class MainWindow
 
     private void InitializeLibrary()
     {
-        // Two star columns shrink together; a restored wide sidebar cannot push the editor offscreen.
-        // Keep the saved total navigation width, including the new 60 px rail.
-        LibraryColumn.Width = new GridLength(Math.Clamp(store.Settings.LibrarySidebarWidth - 60, 220, 360), GridUnitType.Star);
-        DetailColumn.Width = new GridLength(Math.Max(560, Width - 21 - store.Settings.LibrarySidebarWidth), GridUnitType.Star);
+        // The library is now the main workspace. Keep the old sidebar preference
+        // on disk for compatibility, without applying its narrow-list geometry.
+        LibraryColumn.Width = new GridLength(1, GridUnitType.Star);
+        DetailColumn.Width = new GridLength(320);
         SortPicker.SelectedIndex = (int)store.Settings.LibrarySort;
         searchTimer.Tick += (_, _) => ApplyLibraryFilters();
     }
@@ -134,6 +134,7 @@ public partial class MainWindow
 
     private void Find_Executed(object sender, ExecutedRoutedEventArgs e)
     {
+        ShowScoreWorkspace(false);
         SearchInput.Focus();
         SearchInput.SelectAll();
         e.Handled = true;
@@ -150,7 +151,7 @@ public partial class MainWindow
         else if (e.Key is Key.Down or Key.Enter && Keyboard.Modifiers == ModifierKeys.None)
         {
             ApplyLibraryFilters();
-            if (SongList.Items.Count > 0 && !librarySelectionPending && !busy)
+            if (SongList.Items.Count > 0 && !librarySelectionPending && (!busy || playbackCompletion != null))
             {
                 focusLibraryAfterSelection = e.Key == Key.Down;
                 SongList.SelectedIndex = 0;
@@ -178,9 +179,6 @@ public partial class MainWindow
         SongList.UpdateLayout();
         (SongList.ItemContainerGenerator.ContainerFromItem(selected) as ListBoxItem)?.Focus();
     }
-
-    private void LibrarySplitter_DragCompleted(object sender, DragCompletedEventArgs e)
-        => store.Settings.LibrarySidebarWidth = Math.Clamp(LibraryColumn.ActualWidth + 60, 280, 420);
 
     private static T? FindLibraryChild<T>(DependencyObject parent) where T : DependencyObject
     {

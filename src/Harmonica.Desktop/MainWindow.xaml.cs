@@ -112,13 +112,13 @@ public partial class MainWindow : Window
     private async void SongList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         if (selectionGuard || SongList.SelectedItem is not LibraryWork work || work.SelectedVariant == current) return;
-        if (librarySelectionPending || closing || busy) { RefreshLibrary(); return; }
+        if (librarySelectionPending || closing || busy && playbackCompletion == null) { RefreshLibrary(); return; }
         librarySelectionPending = true;
         var keepListFocus = SongList.IsKeyboardFocusWithin || focusLibraryAfterSelection;
         try
         {
-            if (!await ConfirmUnsaved()) { RefreshLibrary(); return; }
             await Stop();
+            if (!await ConfirmUnsaved()) { RefreshLibrary(); return; }
             await SelectItem(work.SelectedVariant, !work.HasTemporarySelection);
         }
         finally
@@ -143,6 +143,7 @@ public partial class MainWindow : Window
             var next = item.Available ? await store.ReadDocumentAsync(item) : new ScoreDocument(item.Title, item.Bpm, 20, "", NeedsBpmConfirmation: !item.BpmKnown);
             InvalidateGuideDocument();
             current = item;
+            notePageStart = 0;
             ScoreOriginText.Text = item.Available ? "本地曲谱" : "曲库预览";
             ScoreCreditText.Text = string.Join(" · ", new[]
             {
@@ -187,7 +188,7 @@ public partial class MainWindow : Window
                 ? "点击“导入 TXT”选择本机已有曲谱，或查看来源。"
                 : "点击“下载曲谱”从作者来源获取，或导入已有 TXT。");
             else if (!bpmConfirmed) Status("文件未注明 BPM。请修改速度，或开始时确认当前速度。", true);
-            else Status("本地试听使用合成音；来源与校对记录可在下方展开查看。");
+            else Status("已载入曲谱，可以开始试听或选择演奏方式。");
         }
         catch (Exception ex) { loading = false; ShowError(ex); RefreshLibrary(); }
         finally { busy = wasBusy; UpdateAvailability(); }
@@ -213,6 +214,7 @@ public partial class MainWindow : Window
         VariantPicker.SelectedItem = variants.FirstOrDefault(item => item.Id == current?.Id);
         VariantPicker.Visibility = variants.Length > 1 || variants.Any(item => item.Id != current?.Id) ? Visibility.Visible : Visibility.Collapsed;
         selectionGuard = false;
+        UpdateWorkspacePresentation();
     }
 
     private void ConfigureUnavailable(LibraryItem item, CatalogSong? source)
@@ -250,7 +252,7 @@ public partial class MainWindow : Window
             var candidate = ReadEditor();
             parsed = ScoreCodec.Parse(candidate);
             MetadataText.Text = $"{(bpmConfirmed ? "" : "速度待确认  ·  ")}{parsed.Events.Count} 个音 / 休止  ·  {parsed.TotalBeats:0.###} 拍  ·  {FormatTime(parsed.DurationSeconds)}";
-            TimeText.Text = "00:00 / " + FormatTime(parsed.DurationSeconds);
+            TimeText.Text = "00:00 / " + FormatTime(parsed.DurationSeconds / PlaybackSpeed);
             if (!engine.IsPlaying) ProgressBar.Value = 0;
             RenderNotes();
             EnsureGuideDocument();
@@ -275,8 +277,9 @@ public partial class MainWindow : Window
     {
         NotesPanel.Children.Clear(); noteTiles.Clear(); highlighted = -1; shownGuideEvent = -1;
         if (parsed == null) return;
-        var previousEnd = 0;
-        foreach (var note in parsed.Events.Take(1000))
+        notePageStart = Math.Clamp(notePageStart / NotesPerPage, 0, Math.Max(0, (parsed.Events.Count - 1) / NotesPerPage)) * NotesPerPage;
+        var previousEnd = notePageStart == 0 ? 0 : parsed.Events[notePageStart - 1].Offset + parsed.Events[notePageStart - 1].Length;
+        foreach (var note in parsed.Events.Skip(notePageStart).Take(NotesPerPage))
         {
             // Only show separators that are present in the source; do not invent a time signature.
             if (note.Offset > previousEnd && parsed.Document.Body.AsSpan(previousEnd, note.Offset - previousEnd).Contains('|'))
@@ -293,42 +296,44 @@ public partial class MainWindow : Window
             duration.SetResourceReference(TextBlock.ForegroundProperty, "MutedBrush");
             content.Children.Add(pitch); content.Children.Add(duration);
             var tile = new Border { Child = content, MinWidth = 48, Height = 66, Padding = new Thickness(7, 1, 7, 1), Margin = new Thickness(0, 0, 7, 12), CornerRadius = new CornerRadius(3), Background = Brushes.Transparent, ToolTip = $"{note.Label} · {note.Beats:0.###} 拍" };
-            var tileIndex = noteTiles.Count;
+            var tileIndex = notePageStart + noteTiles.Count;
             tile.ToolTip = $"第 {tileIndex + 1} 音 · {note.Label} · {note.Beats:0.###} 拍";
             if (InGuideMode && tileIndex == selectedGuideEvent)
             { tile.SetResourceReference(Border.BorderBrushProperty, "AccentBrush"); tile.BorderThickness = new Thickness(1); }
             tile.MouseLeftButtonDown += (_, _) => SelectGuideTile(tileIndex);
             noteTiles.Add(tile); NotesPanel.Children.Add(tile);
         }
-        ScoreHint.Text = parsed.Events.Count > 1000 ? "预览前 1000 音 · 编辑器可查看完整谱面" : "数字简谱 · 时值以拍为单位";
+        ScoreHint.Text = InGuideMode ? "点击音符选择练习位置 · 时值以拍为单位" : "数字简谱 · 时值以拍为单位";
+        NotePageLabel.Text = $"{notePageStart / NotesPerPage + 1} / {Math.Max(1, (parsed.Events.Count + NotesPerPage - 1) / NotesPerPage)} 页 · 共 {parsed.Events.Count} 音";
+        PreviousNotesButton.IsEnabled = notePageStart > 0;
+        NextNotesButton.IsEnabled = notePageStart + NotesPerPage < parsed.Events.Count;
     }
     private void SetEditorVisibility()
     {
         BodyInput.Visibility = editMode ? Visibility.Visible : Visibility.Collapsed;
-        ScoreView.Visibility = editMode ? Visibility.Collapsed : Visibility.Visible;
+        ScoreView.Visibility = editMode || current is { Available: false } ? Visibility.Collapsed : Visibility.Visible;
         EditButton.Content = editMode ? "完成编辑" : "编辑";
         UpdateEditorActions();
     }
     private void UpdateEditorActions()
     {
         TitleInput.IsReadOnly = !editMode;
+        BpmInput.IsReadOnly = !editMode;
+        OriginalTempoControls.Visibility = editMode ? Visibility.Visible : Visibility.Collapsed;
         SaveButton.Visibility = editMode || dirty ? Visibility.Visible : Visibility.Collapsed;
         SaveCopyButton.Visibility = editMode ? Visibility.Visible : Visibility.Collapsed;
-    }
-    private void DetailSurface_SizeChanged(object sender, SizeChangedEventArgs e)
-    {
-        // Keep the score usable at the minimum window height; provenance remains in Details.
-        ScoreCreditText.Visibility = e.NewSize.Height < 420 ? Visibility.Collapsed : Visibility.Visible;
     }
     private void Edit_Click(object sender, RoutedEventArgs e)
     {
         if (busy || engine.IsPlaying || GuideActive || current is { Available: false }) return;
+        ShowScoreWorkspace(true);
         editMode = !editMode; SetEditorVisibility();
         if (editMode) BodyInput.Focus(); else ParseEditor();
     }
     private void LocateError_Click(object sender, RoutedEventArgs e)
     {
         if (scoreError == null) return;
+        ShowScoreWorkspace(true);
         editMode = true; SetEditorVisibility();
         BodyInput.Focus(); BodyInput.Select(Math.Clamp(scoreError.Offset, 0, BodyInput.Text.Length), scoreError.Offset < BodyInput.Text.Length ? 1 : 0);
         BodyInput.ScrollToLine(Math.Max(0, BodyInput.GetLineIndexFromCharacterIndex(Math.Clamp(scoreError.Offset, 0, BodyInput.Text.Length))));
@@ -387,7 +392,7 @@ public partial class MainWindow : Window
     private void UpdateBpmLabel()
     {
         if (BpmLabel == null || BpmInput == null) return;
-        BpmLabel.Text = bpmConfirmed ? "速度 BPM" : "速度待确认";
+        BpmLabel.Text = bpmConfirmed ? "原谱 BPM" : "速度待确认";
         AutomationProperties.SetName(BpmInput, BpmLabel.Text);
     }
 
@@ -449,7 +454,7 @@ public partial class MainWindow : Window
         ReferenceButton.Visibility = Visibility.Collapsed;
         loading = true; TitleInput.Text = document.Title; BpmInput.Text = "120"; BodyInput.Text = document.Body; loading = false;
         UpdateBpmLabel();
-        dirty = true; editMode = true; DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
+        dirty = true; editMode = true; ShowScoreWorkspace(true); DownloadPanel.Visibility = Visibility.Collapsed; SetEditorVisibility(); ParseEditor(); RefreshLibrary(); BodyInput.Focus();
         Status("输入你的谱面并保存。请核对速度后再试听。");
     }
     private void More_Click(object sender, RoutedEventArgs e)
@@ -520,6 +525,7 @@ public partial class MainWindow : Window
     private void Mode_Changed(object sender, RoutedEventArgs e)
     {
         if (!IsLoaded) return;
+        RenderNotes();
         if (InGuideMode) { EnsureGuideDocument(); overlayWanted = true; guideFocusTimer.Start(); UpdateOverlayVisibility(); }
         else { StopGuide(); guideFocusTimer.Stop(); guideOverlay?.SetEditable(false); guideOverlay?.Hide(); }
         ModeHint.Text = InGuideMode ? (hotkeys?.OverlayRegistered == true ? "手动弹奏 · 浮窗引导与等键练习" : "浮窗热键不可用 · 可用上方浮窗按钮") : InGameMode ? "切到游戏后开始 · 自动输入有封禁风险" : "C 调合成音 · 用于核对旋律";
@@ -533,7 +539,11 @@ public partial class MainWindow : Window
         store.Settings.Volume = engine.Volume;
         try { await store.SaveSettingsAsync(); } catch (Exception ex) { ShowError(ex); }
     }
-    private void Play_Click(object sender, RoutedEventArgs e) => Play();
+    private void Play_Click(object sender, RoutedEventArgs e)
+    {
+        if (current is { Available: false }) Download_Click(sender, e);
+        else Play();
+    }
     private async void Play()
     {
         if (InGuideMode)
@@ -554,7 +564,7 @@ public partial class MainWindow : Window
             if (current != null) { current.LastPlayed = DateTimeOffset.Now; await store.SaveLibraryAsync(); }
             var mode = InGameMode ? PlaybackMode.Game : PlaybackMode.Preview;
             playbackCancellation.Token.ThrowIfCancellationRequested();
-            var playing = engine.PlayAsync(score, mode, playbackCancellation.Token, store.Settings.GameNoteGapMs);
+            var playing = engine.PlayAsync(score, mode, playbackCancellation.Token, store.Settings.GameNoteGapMs, PlaybackSpeed);
             UpdateAvailability();
             await playing;
         }
@@ -562,9 +572,10 @@ public partial class MainWindow : Window
         catch (Exception ex) { ShowError(ex); }
         finally
         {
-            busy = false; ClearHighlight(); UpdateAvailability(); RefreshLibrary();
+            busy = false; ClearHighlight(); RefreshLibrary();
             playbackCancellation.Dispose(); playbackCancellation = null;
             playbackCompletion.TrySetResult(); playbackCompletion = null;
+            UpdateAvailability();
         }
     }
     private async Task Stop()
@@ -585,12 +596,7 @@ public partial class MainWindow : Window
             Status($"正在{(InGameMode ? "演奏" : "试听")}  ·  {Math.Clamp(progress.EventIndex + 1, 0, progress.EventCount)} / {progress.EventCount}");
             if (highlighted != progress.EventIndex)
             {
-                ClearHighlight(); highlighted = progress.EventIndex;
-                if (highlighted >= 0 && highlighted < noteTiles.Count)
-                {
-                    noteTiles[highlighted].SetResourceReference(Border.BackgroundProperty, "AccentSoftBrush");
-                    noteTiles[highlighted].BringIntoView();
-                }
+                HighlightNote(progress.EventIndex);
             }
         }
         else if (progress.State == "Countdown") Status("即将开始游戏演奏，请切到口琴界面。按停止键可取消倒计时。");
@@ -601,7 +607,8 @@ public partial class MainWindow : Window
     }
     private void ClearHighlight()
     {
-        if (highlighted >= 0 && highlighted < noteTiles.Count) noteTiles[highlighted].Background = Brushes.Transparent;
+        var visibleIndex = highlighted - notePageStart;
+        if (visibleIndex >= 0 && visibleIndex < noteTiles.Count) noteTiles[visibleIndex].Background = Brushes.Transparent;
         highlighted = -1;
     }
     private void UpdateAvailability()
@@ -622,6 +629,7 @@ public partial class MainWindow : Window
         ImportButton.IsEnabled = !occupied;
         PlaybackModePicker.IsEnabled = !occupied;
         UpdateGuideAvailability(occupied);
+        UpdateWorkspacePresentation();
     }
     private void Settings_Click(object sender, RoutedEventArgs e)
     {
@@ -661,10 +669,10 @@ public partial class MainWindow : Window
         try
         {
             var gameGapMs = store.Settings.GameNoteGapMs;
-            var issues = PlaybackEngine.InspectGameNotes(score, gameGapMs);
+            var issues = PlaybackEngine.InspectGameNotes(score, gameGapMs, PlaybackSpeed);
             var speedNote = score.Document.NeedsBpmConfirmation
-                ? $"速度尚未确认；仅按当前输入的 {score.Document.Bpm} BPM 计算，本次不会确认或保存速度。"
-                : $"按当前速度 {score.Document.Bpm} BPM 与设置的游戏留白 {gameGapMs} ms 检查。";
+                ? $"速度尚未确认；仅按当前输入的 {score.Document.Bpm} BPM × {PlaybackSpeed:0.##} 倍速计算，本次不会确认或保存速度。"
+                : $"按原谱 {score.Document.Bpm} BPM × {PlaybackSpeed:0.##} 倍速与设置的游戏留白 {gameGapMs} ms 检查。";
             var report = issues.Count == 0
                 ? "未发现短音时序问题。\n\n这只是时序预检，不代表游戏内实测。"
                 : $"发现 {issues.Count} 项短音时序问题：\n\n" + string.Join("\n\n", issues.Select(issue =>
@@ -715,8 +723,7 @@ public partial class MainWindow : Window
             MinHeight = 300,
             WindowStartupLocation = WindowStartupLocation.CenterOwner,
             ResizeMode = ResizeMode.CanResize,
-            Background = SystemColors.WindowBrush,
-            Foreground = SystemColors.WindowTextBrush,
+
             Content = content
         };
         close.Click += (_, _) => window.Close();

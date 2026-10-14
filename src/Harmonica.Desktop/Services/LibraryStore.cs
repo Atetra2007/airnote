@@ -121,6 +121,7 @@ public sealed class LibraryStore
             }
         }
         Catalog = records;
+        await InstallBundledScoresAsync();
         foreach (var file in Directory.EnumerateFiles(Path.Combine(assets, "Examples"), "*.txt").Order())
         {
             var exampleId = "example-" + Path.GetFileNameWithoutExtension(file);
@@ -178,6 +179,141 @@ public sealed class LibraryStore
             }
         }
         await SaveLibraryAsync();
+    }
+
+    private sealed record BundledScore(CatalogSong Source, byte[] Bytes, ScoreDocument Document, double DurationSeconds);
+
+    private async Task InstallBundledScoresAsync()
+    {
+        var directory = Path.Combine(assets, "BundledScores");
+        var manifestPath = Path.Combine(directory, "manifest.json");
+        // Older installations and callers may not carry a bundled library.
+        if (!Directory.Exists(directory)) return;
+        if (!File.Exists(manifestPath))
+        {
+            Warnings.Add("内置曲库未加载，缺少 manifest.json。个人曲谱已保留，请重新安装完整版本。");
+            return;
+        }
+        var scores = new List<BundledScore>();
+        try
+        {
+            if ((File.GetAttributes(directory) & FileAttributes.ReparsePoint) != 0 ||
+                (File.GetAttributes(manifestPath) & FileAttributes.ReparsePoint) != 0 ||
+                new FileInfo(manifestPath).Length > MaxBytes)
+                throw new InvalidDataException("清单路径或大小无效。");
+            using var manifest = JsonDocument.Parse(await File.ReadAllBytesAsync(manifestPath));
+            var root = manifest.RootElement;
+            if (root.ValueKind != JsonValueKind.Object ||
+                !root.TryGetProperty("schema_version", out var schema) || !schema.TryGetInt32(out var version) || version != 1 ||
+                !root.TryGetProperty("songs", out var songs) || songs.ValueKind != JsonValueKind.Array || songs.GetArrayLength() > 5000)
+                throw new InvalidDataException("清单格式不受支持。");
+            var ids = new HashSet<string>(StringComparer.Ordinal);
+            var files = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            foreach (var entry in songs.EnumerateArray())
+            {
+                string ReadString(string name) => entry.ValueKind == JsonValueKind.Object &&
+                    entry.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String
+                        ? value.GetString()! : throw new InvalidDataException($"清单缺少 {name}。");
+                var id = ReadString("catalog_id");
+                var fileName = ReadString("file");
+                var expectedHash = ReadString("sha256");
+                if (!ids.Add(id) || !files.Add(fileName)) throw new InvalidDataException($"清单包含重复曲谱：{id}。");
+                if (!ValidFileName(fileName) || fileName.Contains('/') || fileName.Contains('\\') ||
+                    !string.Equals(Path.GetExtension(fileName), ".txt", StringComparison.OrdinalIgnoreCase))
+                    throw new InvalidDataException($"曲谱路径无效：{id}。");
+                if (!Catalog.TryGetValue(id, out var source) || source.RhythmStatus != "reviewed" ||
+                    !IsSha256(expectedHash) || !string.Equals(expectedHash, source.VerifiedSha256, StringComparison.OrdinalIgnoreCase))
+                    throw new InvalidDataException($"曲谱与已复核目录不匹配：{id}。");
+                var path = Path.Combine(directory, fileName);
+                if ((File.GetAttributes(path) & FileAttributes.ReparsePoint) != 0 || new FileInfo(path).Length > MaxBytes)
+                    throw new InvalidDataException($"曲谱路径或大小无效：{id}。");
+                var bytes = await File.ReadAllBytesAsync(path);
+                if (bytes.LongLength > MaxBytes || !string.Equals(Hash(bytes), expectedHash, StringComparison.OrdinalIgnoreCase))
+                    throw new InvalidDataException($"曲谱 SHA-256 校验失败：{id}。");
+                var text = new UTF8Encoding(false, true).GetString(bytes).TrimStart('\uFEFF');
+                var document = ScoreCodec.Read(text, source.FileName);
+                var parsed = ScoreCodec.Parse(document);
+                if (source.BpmKnown && !document.NeedsBpmConfirmation && source.Bpm != document.Bpm ||
+                    source.DurationSeconds is double duration && Math.Abs(parsed.DurationSeconds - duration) > .01)
+                    throw new InvalidDataException($"曲谱速度或时长与目录不匹配：{id}。");
+                scores.Add(new(source, bytes, document, parsed.DurationSeconds));
+            }
+            if (!ids.SetEquals(Catalog.Values.Where(source => source.RhythmStatus == "reviewed").Select(source => source.Id)))
+                throw new InvalidDataException("清单未包含目录中的全部已复核曲谱。");
+            void ValidateTotal(string field, long actual)
+            {
+                if (root.TryGetProperty(field, out var value) &&
+                    (value.ValueKind != JsonValueKind.Number || !value.TryGetInt64(out var expected) || expected != actual))
+                    throw new InvalidDataException($"清单统计值 {field} 与实际曲库不一致。");
+            }
+            ValidateTotal("total_scores", scores.Count);
+            ValidateTotal("total_works", scores.Select(score => score.Source.WorkId).Distinct(StringComparer.Ordinal).Count());
+            ValidateTotal("total_bytes", scores.Sum(score => score.Bytes.LongLength));
+        }
+        catch (Exception ex) when (ex is IOException or InvalidDataException or UnauthorizedAccessException or JsonException or FormatException or DecoderFallbackException or InvalidOperationException)
+        {
+            // Validate the whole bundle before changing any personal score. Never fall back to a download.
+            Warnings.Add($"内置曲库未加载，个人曲谱已保留。请重新安装完整版本：{ex.Message}");
+            return;
+        }
+
+        foreach (var score in scores)
+        {
+            var source = score.Source;
+            var matching = Items.FirstOrDefault(item => item.SourceId == source.Id && item.Available &&
+                string.Equals(item.Hash, source.VerifiedSha256, StringComparison.OrdinalIgnoreCase));
+            if (matching != null)
+            {
+                SetCalibrationForActualHash(matching, source, matching.Hash!);
+                continue;
+            }
+            try
+            {
+                var item = Items.FirstOrDefault(candidate => candidate.SourceId == source.Id && !candidate.Available &&
+                    (candidate.FileName is null || !File.Exists(ScorePath(candidate))));
+                var isNewItem = item is null;
+                if (item is null)
+                {
+                    item = NewCatalogItem(source);
+                    item.Id = "bundled-" + source.Id + "-" + source.VerifiedSha256![..12];
+                    while (Items.Any(candidate => candidate.Id == item.Id)) item.Id += "-copy";
+                    item.IsDefaultVariant = false;
+                    item.VariantLabelOverride = source.Variant + "（内置原版）";
+                }
+                // A content-addressed filename recovers an interrupted import without overwriting orphaned edits.
+                var stem = "bundled-" + Hash(Encoding.UTF8.GetBytes(source.Id))[..16] + "-" + source.VerifiedSha256![..16];
+                string fileName;
+                for (var suffix = 0; ; suffix++)
+                {
+                    fileName = stem + (suffix == 0 ? "" : "-" + suffix) + ".txt";
+                    var path = Path.Combine(ScoresDirectory, fileName);
+                    if (File.Exists(path))
+                    {
+                        // Never share a file with a different indexed item; either item can later be edited.
+                        if (Items.Any(candidate => candidate.FileName != null &&
+                            string.Equals(candidate.FileName, fileName, StringComparison.OrdinalIgnoreCase))) continue;
+                        if (new FileInfo(path).Length <= MaxBytes &&
+                            string.Equals(Hash(await File.ReadAllBytesAsync(path)), source.VerifiedSha256, StringComparison.OrdinalIgnoreCase)) break;
+                        continue;
+                    }
+                    await AtomicBytesAsync(path, score.Bytes, overwrite: false);
+                    break;
+                }
+                item.FileName = fileName;
+                item.Hash = source.VerifiedSha256;
+                item.Available = true;
+                item.DurationSeconds = score.DurationSeconds;
+                ApplyImportedBpm(item, source, score.Document);
+                ApplyCatalogMetadata(item, source);
+                SetCalibrationForActualHash(item, source, item.Hash!);
+                if (isNewItem) Items.Add(item);
+            }
+            catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+            {
+                Warnings.Add($"内置曲谱 {source.Title} 未能加入个人曲库，已有文件已保留：{ex.Message}");
+            }
+        }
+        // InitializeAsync persists this batch once, alongside normal catalog and example migration.
     }
 
     private static CatalogSong ParseCatalogSong(JsonElement entry, int schemaVersion)

@@ -1,0 +1,11 @@
+@format=HarmonicaPlayer/1
+@title=爱的故事上集（公开钢琴谱八小节前奏校对）
+@bpm=61
+@gap=10
+@source-id=zhouzhou-133
+@arrangement=EOP-eight-bar-intro-melody-lowered-one-octave
+@review-scope=complete-existing-source-content
+
+6:1 5:1 4:0.75 3:0.25 4:0.375 3:0.375 2:1.25 1:1
+1:0.75 1:0.25 1:1 6:1 5:1 4:0.75 3:0.25 4:0.375
+3:0.375 2:1.25 1:0.5 3:0.5 4:2

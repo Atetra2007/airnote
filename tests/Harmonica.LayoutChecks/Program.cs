@@ -14,6 +14,22 @@ using Harmonica.Windows;
 
 internal static class Program
 {
+    internal static Application CreateOffscreenApplication()
+    {
+        // Use the same resource markup without constructing App: its queued OnStartup
+        // would acquire the real singleton, activate another instance or show a window.
+        var markup = System.Xml.Linq.XDocument.Load(Path.Combine(AppContext.BaseDirectory, "AppResources.xaml"));
+        System.Xml.Linq.XNamespace presentation = "http://schemas.microsoft.com/winfx/2006/xaml/presentation";
+        var resources = new System.Xml.Linq.XElement(presentation + "ResourceDictionary",
+            new System.Xml.Linq.XAttribute(System.Xml.Linq.XNamespace.Xmlns + "x", "http://schemas.microsoft.com/winfx/2006/xaml"),
+            markup.Root!.Element(presentation + "Application.Resources")!.Elements());
+        return new Application
+        {
+            ShutdownMode = ShutdownMode.OnExplicitShutdown,
+            Resources = (ResourceDictionary)System.Windows.Markup.XamlReader.Parse(resources.ToString())
+        };
+    }
+
     [STAThread]
     private static int Main(string[] args)
     {
@@ -23,17 +39,15 @@ internal static class Program
         // Component layout/render checks only: never Show, register input, or automate desktop windows.
         var output = Path.GetFullPath(args.FirstOrDefault() ?? "artifacts/guide-validation/components");
         Directory.CreateDirectory(output);
-        var app = new App(); app.InitializeComponent();
+        var app = CreateOffscreenApplication();
+        // Match App.OnStartup: resolve the theme before selecting an available score.
+        ThemeService.Apply("Dark");
         SearchLayoutChecks.Run(output);
         var main = new MainWindow(new LibraryStore(Path.Combine(output, "unused-data"), AppContext.BaseDirectory));
         ((TextBox)main.FindName("TitleInput")).Text = "跟谱测试 · 长音、休止与鼠标组合";
         ((TextBox)main.FindName("BodyInput")).Text = "（#3）:4 0 【2】 #1 | 【【1】】 5_ 6_ 7";
         Invoke(main, "ParseEditor");
         CheckStudioBehavior(main);
-        ((ComboBox)main.FindName("PlaybackModePicker")).SelectedIndex = 2;
-        ((FrameworkElement)main.FindName("GuideControls")).Visibility = Visibility.Visible;
-        ((TextBlock)main.FindName("GuideRangeLabel")).Text = "A 10000 → B 10000";
-        var mainNames = new[] { "PlaybackModePicker", "PlayButton", "StopButton", "BpmInput", "VolumeSlider", "GuideKind", "GuideSpeed", "AdjustGuideButton", "GuideOpacity", "GuideEventNumber", "SeekGuideButton", "SetGuideAButton", "SetGuideBButton", "GuideLoop", "ClearGuideRangeButton", "GuideRangeLabel", "ScoreScroll", "QualityFilter", "GameNoteCheckButton", "AllFilter", "LocalFilter", "FavoriteFilter", "RecentFilter", "SortPicker", "SearchInput", "SongList", "ImportButton", "ResultCount", "SettingsButton" };
         var checks = new List<object>();
         var settings = new UserSettings { StartHotkey = "F7", StopHotkey = "F8" };
         var dialog = new SettingsDialog(settings, 20, output);
@@ -52,16 +66,24 @@ internal static class Program
                 Save(root, size, dpi, Path.Combine(output, $"settings-{theme}-{dpi:0.0}.png"));
                 checks.Add(new { surface = "settings", theme, dpi, passed = true });
             }
-            foreach (var size in new[] { new Size(924, 561), new Size(1144, 721) })
+            foreach (var size in new[] { new Size(924, 561), new Size(1224, 781) })
             foreach (var dpi in new[] { 1d, 1.5, 2 })
+            foreach (var mode in new[] { 0, 1, 2 })
             {
+                ((ComboBox)main.FindName("PlaybackModePicker")).SelectedIndex = mode;
+                Invoke(main, "UpdateAvailability");
+                Invoke(main, "ShowScoreWorkspace", true);
                 var root = (FrameworkElement)main.Content;
-                Layout(root, size, dpi); CheckRects(main, root, mainNames, size);
-                Save(root, size, dpi, Path.Combine(output, $"main-{theme}-{size.Width}-{dpi:0.0}.png"));
-                checks.Add(new { surface = "main", theme, size.Width, size.Height, dpi, passed = true });
+                Layout(root, size, dpi);
+                CheckRects(main, root, ["LibraryTab", "ScoreTab", "SettingsButton", "PlayButton", "StopButton", "TimeText", "EditButton", "TitleInput", "ScoreScroll"], size);
+                if (mode == 2)
+                    CheckRects(main, root, ["GuideEventNumber", "SeekGuideButton", "SetGuideAButton", "SetGuideBButton", "GuideLoop", "ClearGuideRangeButton", "GuideRangeLabel"], size);
+                Save(root, size, dpi, Path.Combine(output, $"score-{theme}-{size.Width}-{dpi:0.0}-mode{mode}.png"));
+                checks.Add(new { surface = "score", theme, size.Width, size.Height, dpi, mode, passed = true });
             }
         }
         CheckExpandedEditorLayouts(main, output);
+        CheckLongScorePages(main, output);
         var clock = new ManualClock();
         var score = ScoreCodec.Parse(new("跟谱测试 · 长音与鼠标组合", 100, 20, "（#3）:4 0 【2】 #1 【【1】】 5_ 6_ 7"));
         var engine = new GuideEngine(score, GuideMode.WaitForKey, clock: clock);
@@ -113,6 +135,9 @@ internal static class Program
     {
         var mode = (ComboBox)window.FindName("PlaybackModePicker");
         if (mode.Items.Count != 3 || mode.SelectedIndex != 0) throw new Exception("Studio must start in local preview and retain all three modes");
+        if (((FrameworkElement)window.FindName("LibraryWorkspace")).Visibility != Visibility.Visible || ((FrameworkElement)window.FindName("ScoreWorkspace")).Visibility != Visibility.Collapsed)
+            throw new Exception("The default workspace must be the library, with the complete score closed");
+        if (((RadioButton)window.FindName("LocalFilter")).IsChecked != true) throw new Exception("The library must start with local songs");
         var volume = (Slider)window.FindName("VolumeSlider");
         volume.ApplyTemplate();
         var oldVolume = volume.Value;
@@ -126,14 +151,51 @@ internal static class Program
             mode.SelectedIndex = i;
             Invoke(window, "UpdateAvailability");
             if (GetMode("InGameMode") != (i == 1) || GetMode("InGuideMode") != (i == 2)) throw new Exception("Playback picker routes to the wrong mode");
-            if ((((FrameworkElement)window.FindName("GuideControls")).Visibility == Visibility.Visible) != (i == 2)) throw new Exception("Guide controls do not follow the selected mode");
+            foreach (var (name, index) in new[] { ("PreviewControls", 0), ("GameControls", 1), ("GuideControls", 2) })
+                if ((((FrameworkElement)window.FindName(name)).Visibility == Visibility.Visible) != (i == index)) throw new Exception("Mode-specific controls do not follow the selected mode: " + name);
+            foreach (var (name, index) in new[] { ("PreviewModeButton", 0), ("GameModeButton", 1), ("GuideModeButton", 2) })
+                if (((RadioButton)window.FindName(name)).IsChecked != (i == index)) throw new Exception("Visible mode choice is not synchronized: " + name);
+            var bpm = ((TextBox)window.FindName("BpmInput")).Text;
+            var body = ((TextBox)window.FindName("BodyInput")).Text;
+            var original = (ScoreDocument)typeof(MainWindow).GetField("document", flags)!.GetValue(window)!;
+            var sourceScore = (ParsedScore)typeof(MainWindow).GetField("parsed", flags)!.GetValue(window)!;
+            var speed = (ComboBox)window.FindName("GuideSpeed");
+            foreach (var speedIndex in new[] { 0, 4, 2 })
+            {
+                speed.SelectedIndex = speedIndex;
+                Invoke(window, "PlaybackSpeed_Changed", speed, new SelectionChangedEventArgs(ComboBox.SelectionChangedEvent, Array.Empty<object>(), Array.Empty<object>()));
+                if ((bool)typeof(MainWindow).GetField("dirty", flags)!.GetValue(window)! || ((TextBox)window.FindName("BpmInput")).Text != bpm || ((TextBox)window.FindName("BodyInput")).Text != body || !Equals(typeof(MainWindow).GetField("document", flags)!.GetValue(window), original))
+                    throw new Exception("Temporary playback speed modified the score or marked it unsaved");
+                if (!ReferenceEquals(typeof(MainWindow).GetField("parsed", flags)!.GetValue(window), sourceScore))
+                    throw new Exception("Temporary speed replaced the parsed source score");
+                if (i != 2)
+                {
+                    var multiplier = new[] { .5, .75, 1, 1.25, 1.5 }[speedIndex];
+                    var seconds = (int)(sourceScore.DurationSeconds / multiplier);
+                    if (((TextBlock)window.FindName("TimeText")).Text != $"00:00 / {seconds / 60:00}:{seconds % 60:00}")
+                        throw new Exception("The transport duration did not reflect the temporary playback speed");
+                }
+            }
         }
+        typeof(MainWindow).GetField("bpmConfirmed", flags)!.SetValue(window, false);
+        var pendingSpeed = (ComboBox)window.FindName("GuideSpeed");
+        pendingSpeed.SelectedIndex = 0;
+        Invoke(window, "PlaybackSpeed_Changed", pendingSpeed, new SelectionChangedEventArgs(ComboBox.SelectionChangedEvent, Array.Empty<object>(), Array.Empty<object>()));
+        if ((bool)typeof(MainWindow).GetField("bpmConfirmed", flags)!.GetValue(window)!)
+            throw new Exception("Choosing a playback multiplier incorrectly confirmed an unknown original BPM");
+        typeof(MainWindow).GetField("bpmConfirmed", flags)!.SetValue(window, true);
+        pendingSpeed.SelectedIndex = 2;
+        Invoke(window, "PlaybackSpeed_Changed", pendingSpeed, new SelectionChangedEventArgs(ComboBox.SelectionChangedEvent, Array.Empty<object>(), Array.Empty<object>()));
         mode.SelectedIndex = 0;
         typeof(MainWindow).GetField("busy", flags)!.SetValue(window, true);
         Invoke(window, "UpdateAvailability");
-        if (mode.IsEnabled || ((Button)window.FindName("SaveCopyButton")).IsEnabled) throw new Exception("Busy playback must lock mode switching and saving");
+        if (mode.IsEnabled || ((Button)window.FindName("SaveCopyButton")).IsEnabled || ((ComboBox)window.FindName("GuideSpeed")).IsEnabled || !((Button)window.FindName("StopButton")).IsEnabled)
+            throw new Exception("Busy playback must lock editing and speed changes while leaving Stop available");
+        foreach (var name in new[] { "PreviewModeButton", "GameModeButton", "GuideModeButton" })
+            if (((RadioButton)window.FindName(name)).IsEnabled) throw new Exception("Busy playback left a visible mode choice enabled");
         typeof(MainWindow).GetField("busy", flags)!.SetValue(window, false);
         Invoke(window, "UpdateAvailability");
+        Invoke(window, "ShowScoreWorkspace", true);
         foreach (var editing in new[] { false, true, false })
         {
             typeof(MainWindow).GetField("editMode", flags)!.SetValue(window, editing);
@@ -142,7 +204,7 @@ internal static class Program
             foreach (var name in new[] { "SaveButton", "SaveCopyButton", "BodyInput" })
                 if ((((FrameworkElement)window.FindName(name)).Visibility == Visibility.Visible) != editing) throw new Exception("Editor action visibility is incorrect: " + name);
         }
-        // A tempo change outside edit mode must still expose Save, without exposing the text editor.
+        // Retain the ability to save an explicitly edited BPM after returning to reading mode.
         typeof(MainWindow).GetField("dirty", flags)!.SetValue(window, true);
         Invoke(window, "UpdateEditorActions");
         if (((Button)window.FindName("SaveButton")).Visibility != Visibility.Visible || ((TextBox)window.FindName("BodyInput")).Visibility != Visibility.Collapsed) throw new Exception("Tempo edits cannot be saved from reading mode");
@@ -157,7 +219,7 @@ internal static class Program
         if (tiles[4].Background != Application.Current.Resources["AccentSoftBrush"]) throw new Exception("Playback highlight lost event indexing after separators");
         Invoke(window, "ClearHighlight");
         if (window.IsLoaded || window.IsVisible) throw new Exception("Studio behavior check showed a window");
-        Console.WriteLine("PASS studio mode routing, busy locks, editor visibility, pitch identity and highlight indexing.");
+        Console.WriteLine("PASS library-first workspace, mode routing, temporary speed, busy locks, editor visibility, pitch identity and highlight indexing.");
     }
     private static void CheckPrimaryContrast()
     {
@@ -178,18 +240,19 @@ internal static class Program
         ((TextBox)window.FindName("LogBox")).Text = "布局检查日志。";
         var checks = new List<object>();
         foreach (var theme in new[] { "Light", "Dark" })
-        foreach (var size in new[] { new Size(924, 561), new Size(1144, 721) })
+        foreach (var size in new[] { new Size(924, 561), new Size(1224, 781) })
         foreach (var mode in new[] { 0, 2 })
         foreach (var editing in new[] { false, true })
         {
             ThemeService.Apply(theme);
             ((ComboBox)window.FindName("PlaybackModePicker")).SelectedIndex = mode;
             Invoke(window, "UpdateAvailability");
+            Invoke(window, "ShowScoreWorkspace", true);
             typeof(MainWindow).GetField("editMode", BindingFlags.Instance | BindingFlags.NonPublic)!.SetValue(window, editing);
             Invoke(window, "SetEditorVisibility");
             details.IsExpanded = true;
             Layout(root, size, 1);
-            CheckRects(window, root, ["DetailsExpander", "EditButton", "PlaybackModePicker", "PlayButton", "StopButton", editing ? "BodyInput" : "ScoreScroll"], size);
+            CheckRects(window, root, ["DetailsExpander", "EditButton", "PlayButton", "StopButton", editing ? "BodyInput" : "ScoreScroll"], size);
             if (editing) CheckRects(window, root, ["SaveButton", "SaveCopyButton", "TitleInput", "BodyInput"], size);
             CheckRects(window, root, ["DetailsScroll"], size);
             checks.Add(new { theme, size.Width, size.Height, mode, editing, passed = true });
@@ -198,7 +261,42 @@ internal static class Program
         File.WriteAllText(Path.Combine(output, "studio-layout-results.json"), JsonSerializer.Serialize(checks));
         Console.WriteLine($"PASS {checks.Count} studio editor/details layout cases.");
     }
-    private static void Invoke(object value, string name) => value.GetType().GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance)!.Invoke(value, null);
+    private static void CheckLongScorePages(MainWindow window, string output)
+    {
+        const int eventCount = 1050;
+        ((ComboBox)window.FindName("PlaybackModePicker")).SelectedIndex = 2;
+        typeof(MainWindow).GetField("editMode", BindingFlags.Instance | BindingFlags.NonPublic)!.SetValue(window, false);
+        ((TextBox)window.FindName("BodyInput")).Text = string.Join(" ", Enumerable.Range(0, eventCount).Select(index => (index % 7 + 1).ToString()));
+        Invoke(window, "SetEditorVisibility");
+        Invoke(window, "ParseEditor");
+        Invoke(window, "ShowScoreWorkspace", true);
+        var flags = BindingFlags.Instance | BindingFlags.NonPublic;
+        var tiles = (List<Border>)typeof(MainWindow).GetField("noteTiles", flags)!.GetValue(window)!;
+        var parsed = (ParsedScore)typeof(MainWindow).GetField("parsed", flags)!.GetValue(window)!;
+        if (parsed.Events.Count != eventCount || tiles.Count != 240) throw new Exception("Long scores must start with one bounded page of notes");
+        if (((Button)window.FindName("PreviousNotesButton")).IsEnabled || !((Button)window.FindName("NextNotesButton")).IsEnabled)
+            throw new Exception("First score page has incorrect navigation bounds");
+        Invoke(window, "ShowNotePage", 1001);
+        var start = (int)typeof(MainWindow).GetField("notePageStart", flags)!.GetValue(window)!;
+        if (start != 960 || tiles.Count != 90) throw new Exception("Score navigation cannot reach notes after the old 1000-note preview limit");
+        if (!((Button)window.FindName("PreviousNotesButton")).IsEnabled || ((Button)window.FindName("NextNotesButton")).IsEnabled)
+            throw new Exception("Last score page has incorrect navigation bounds");
+        for (var index = 0; index < tiles.Count; index++)
+            if (((TextBlock)((StackPanel)tiles[index].Child).Children[0]).Text != parsed.Events[start + index].Label)
+                throw new Exception("Pagination changed a note's identity");
+        Invoke(window, "Playback_Progress", new PlaybackProgress("Playing", 1001, eventCount, 10, 60));
+        if (tiles[1001 - start].Background != Application.Current.Resources["AccentSoftBrush"]) throw new Exception("Playback highlight used page-relative score indices");
+        Invoke(window, "ClearHighlight");
+        Invoke(window, "SelectGuideTile", 1001);
+        if (((TextBox)window.FindName("GuideEventNumber")).Text != "1002") throw new Exception("Selecting a note after page one lost its full-score number");
+        var root = (FrameworkElement)window.Content;
+        var size = new Size(1224, 781);
+        Layout(root, size, 1);
+        CheckRects(window, root, ["NotePageLabel", "PreviousNotesButton", "NextNotesButton", "ScoreScroll"], size);
+        Save(root, size, 1, Path.Combine(output, "score-last-page.png"));
+        Console.WriteLine("PASS 1050-note score pagination, final-page navigation, full-score selection and playback highlight.");
+    }
+    private static void Invoke(object value, string name, params object[] arguments) => value.GetType().GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance)!.Invoke(value, arguments);
     private static void Layout(FrameworkElement root, Size size, double dpi)
     {
         VisualTreeHelper.SetRootDpi(root, new DpiScale(dpi, dpi));

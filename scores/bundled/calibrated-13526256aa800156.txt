@@ -1,0 +1,12 @@
+@format=HarmonicaPlayer/1
+@title=冲锋号（公开军号谱前五小节校对）
+@bpm=145
+@gap=10
+@source-id=zhouzhou-042
+@arrangement=published-bugle-score-excerpt
+@review-scope=complete-existing-source-content
+
+【#5】:0.75 【4】:0.25 【#1】:0.5 【#5】:0.5 【#5】:0.5 【#5】:0.5
+【#5】:0.75 【4】:0.25 【#1】:0.5 【#5】:0.5 【#5】:0.5 【#5】:0.5
+【#5】:0.75 【4】:0.25 【#1】:0.5 【#5】:0.5 【#5】:0.5 【#5】:0.5
+【#5】:0.75 【4】:0.25 【#1】:0.5 【#5】:0.5 【#5】:0.5 【#5】:3.5

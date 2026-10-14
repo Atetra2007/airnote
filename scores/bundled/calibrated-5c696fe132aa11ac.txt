@@ -1,0 +1,11 @@
+@format=HarmonicaPlayer/1
+@title=上课铃声 · Westminster两组钟声及四次报时选版
+@bpm=60
+@gap=10
+@meter=5/4
+@arrangement-key=C
+@source-id=zhouzhou-127
+@review-scope=complete-existing-source-content
+
+【3】:1 【1】:1 【2】:1 5:2 5:1 【2】:1 【3】:1 【1】:2
+0:5 1:4 1:4 1:4 1:4

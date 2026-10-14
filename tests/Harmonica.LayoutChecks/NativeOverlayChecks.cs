@@ -8,7 +8,7 @@ internal static class NativeOverlayChecks
     public static int Run()
     {
         // Construct only our own hidden HWNDs. No UI automation, game, focus change or input injection.
-        var app = new App(); app.InitializeComponent();
+        var app = Program.CreateOffscreenApplication();
         for (var i = 0; i < 30; i++)
         {
             var window = new GuideOverlayWindow(new GuidePreferences { Left = -100_000, Top = -100_000 });

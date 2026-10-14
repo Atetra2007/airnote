@@ -37,6 +37,16 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
             "本包仅含来源与复核元数据及3份原创测试谱；第三方曲谱仍需单独导入。\n"
             "阶段结束不表示真人听辨或实机游戏验收通过。详见 本版更新说明.md。\n\n"
         )
+    if version == "0.4.3":
+        docs.update({"本版更新说明.md": ROOT / "docs/RELEASE-0.4.3-NOTES.md",
+                     "发行验证记录.md": ROOT / "docs/RELEASE-0.4.3-STATUS.md",
+                     "曲库与校准状态.md": ROOT / "docs/CATALOG-STATUS.md"})
+        catalog_status = (
+            "本包内置374份曲谱，覆盖244首作品，另含3份原创测试谱。\n"
+            "首次启动自动加入曲库，可离线选曲，无需逐首下载或导入。\n"
+            "曲谱包含不同版本和片段，复核范围及来源见版本说明。\n"
+            "不覆盖已有个人曲谱、收藏、最近使用和版本偏好。\n\n"
+        )
     readme = (
         f"口琴小曲库 v{version} · Windows x64\n\n"
         "完整解压 ZIP 后，打开 App 文件夹，双击 HarmonicaDesk.exe。\n"
@@ -68,9 +78,9 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
                                            ("RELEASE-0.4.0-STATUS.md", "曲库与校准状态.md"),
                                            ("../catalog/release-0.4.0-inventory.json", "曲库盘点.json")):
                     text = text.replace(f"({original})", f"({packaged})")
-                if version == "0.4.2":
-                    for original, packaged in (("RELEASE-0.4.2-NOTES.md", "本版更新说明.md"),
-                                               ("RELEASE-0.4.2-STATUS.md", "发行验证记录.md"),
+                if version in ("0.4.2", "0.4.3"):
+                    for original, packaged in ((f"RELEASE-{version}-NOTES.md", "本版更新说明.md"),
+                                               (f"RELEASE-{version}-STATUS.md", "发行验证记录.md"),
                                                ("CATALOG-STATUS.md", "曲库与校准状态.md"),
                                                ("CALIBRATION-QUEUE.md", "现行队列.md"),
                                                ("../catalog/calibration-stage-20261014.json", "校对阶段处置.json"),

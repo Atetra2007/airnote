@@ -50,7 +50,7 @@ public partial class MainWindow
     }
     private void EnsureGuideDocument()
     {
-        if (!InGuideMode || parsed == null || closing) return;
+        if (!InGuideMode || parsed == null || closing || !IsLoaded) return;
         var previous = guide?.Timeline.Score.Document;
         if (previous != null && guideDocumentId == current?.Id && previous.Body == parsed.Document.Body && previous.Bpm == parsed.Document.Bpm &&
             previous.Title == parsed.Document.Title && previous.GapMs == parsed.Document.GapMs) return;
@@ -237,13 +237,8 @@ public partial class MainWindow
         lastGuideUi = DateTime.UtcNow;
         if (p.EventIndex != shownGuideEvent)
         {
-            ClearHighlight();
-            highlighted = p.Phase == GuidePhase.Completed ? -1 : p.EventIndex;
-            if (highlighted >= 0 && highlighted < noteTiles.Count)
-            {
-                noteTiles[highlighted].SetResourceReference(Border.BackgroundProperty, "AccentSoftBrush");
-                noteTiles[highlighted].BringIntoView();
-            }
+            if (p.Phase == GuidePhase.Completed) ClearHighlight();
+            else HighlightNote(p.EventIndex);
             shownGuideEvent = p.EventIndex;
         }
         ProgressBar.Value = Math.Clamp(p.PositionBeats / p.TotalBeats, 0, 1);
@@ -337,13 +332,16 @@ public partial class MainWindow
     private void GuideEventNumber_Changed(object sender, TextChangedEventArgs e)
     {
         if (!IsLoaded || guideControlsLoading || GuideActive) return;
-        if (selectedGuideEvent >= 0 && selectedGuideEvent < noteTiles.Count)
-            noteTiles[selectedGuideEvent].BorderThickness = new Thickness(0);
+        var oldVisibleIndex = selectedGuideEvent - notePageStart;
+        if (oldVisibleIndex >= 0 && oldVisibleIndex < noteTiles.Count)
+            noteTiles[oldVisibleIndex].BorderThickness = new Thickness(0);
         selectedGuideEvent = int.TryParse(GuideEventNumber.Text, out var n) ? n - 1 : -1;
-        if (selectedGuideEvent >= 0 && selectedGuideEvent < noteTiles.Count)
+        if (selectedGuideEvent >= 0) ShowNotePage(selectedGuideEvent);
+        var visibleIndex = selectedGuideEvent - notePageStart;
+        if (visibleIndex >= 0 && visibleIndex < noteTiles.Count)
         {
-            noteTiles[selectedGuideEvent].SetResourceReference(Border.BorderBrushProperty, "AccentBrush");
-            noteTiles[selectedGuideEvent].BorderThickness = new Thickness(1);
+            noteTiles[visibleIndex].SetResourceReference(Border.BorderBrushProperty, "AccentBrush");
+            noteTiles[visibleIndex].BorderThickness = new Thickness(1);
         }
     }
     private void UpdateGuideAvailability(bool occupied)
@@ -365,7 +363,7 @@ public partial class MainWindow
         }
         else { PlayButton.Content = "▶  开始"; PlayButton.ToolTip = "开始快捷键：" + store.Settings.StartHotkey; }
         bool canAdjust = !occupied && guide != null;
-        GuideKind.IsEnabled = GuideSpeed.IsEnabled = GuideEventNumber.IsEnabled = SeekGuideButton.IsEnabled =
+        GuideKind.IsEnabled = GuideEventNumber.IsEnabled = SeekGuideButton.IsEnabled =
             SetGuideAButton.IsEnabled = SetGuideBButton.IsEnabled = GuideLoop.IsEnabled = ClearGuideRangeButton.IsEnabled = canAdjust;
         AdjustGuideButton.IsEnabled = guide != null && !closing && !busy;
     }

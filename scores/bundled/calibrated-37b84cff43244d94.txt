@@ -1,0 +1,9 @@
+@format=HarmonicaPlayer/1
+@title=小星星（社区42音复核）
+@bpm=90
+@gap=10
+@source-id=alternative-score-eb14a96294b6782e
+@arrangement=published-score-single-melody
+@review-scope=complete-existing-source-content
+
+1:1 1:1 5:1 5:1 6:1 6:1 5:2 4:1 4:1 3:1 3:1 2:1 2:1 1:2 5:1 5:1 4:1 4:1 3:1 3:1 2:2 5:1 5:1 4:1 4:1 3:1 3:1 2:2 1:1 1:1 5:1 5:1 6:1 6:1 5:2 4:1 4:1 3:1 3:1 2:1 2:1 1:2

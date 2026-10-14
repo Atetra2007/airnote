@@ -1,0 +1,3374 @@
+{
+  "schema_version": 1,
+  "total_scores": 374,
+  "total_works": 244,
+  "total_bytes": 737201,
+  "songs": [
+    {
+      "catalog_id": "calibrated-002d49fcb046944e",
+      "file": "calibrated-002d49fcb046944e.txt",
+      "sha256": "58a0b3350bc9393f711e2f92c52b966b9e23cb333dae80a8e810ba4a1a07cc25",
+      "title": "天使爱美丽",
+      "work_id": "work-deck-4d005e4c407e",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD-Yann-Tiersen-Jiko-d2eeee4897.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0060bdbc1b4e4174",
+      "file": "calibrated-0060bdbc1b4e4174.txt",
+      "sha256": "5248cb976a122446f8c1b4fda4f5b6af8be5a7b31f6290f5343a514bab998a4c",
+      "title": "神秘光头指挥官",
+      "work_id": "work-6fadd005df7c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-00649bb873b77d94",
+      "file": "calibrated-00649bb873b77d94.txt",
+      "sha256": "335fb0f755debe297fdccf769edad64baa1dd5728adba972a515e29c328bf62a",
+      "title": "His Theme",
+      "work_id": "work-b9be4b91bd3d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-00c53a32c0eb1b9f",
+      "file": "calibrated-00c53a32c0eb1b9f.txt",
+      "sha256": "d5f559e57063a27c51d38bb2ee6f77f11638c98d992487ccdefbd526f795fb7f",
+      "title": "东南苦行山",
+      "work_id": "work-29145bc9acba",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-00f343c989d3bdf7",
+      "file": "calibrated-00f343c989d3bdf7.txt",
+      "sha256": "c1fd7607fda4086cbfb60e14af90110553feded2b147fe093df7762345706cd0",
+      "title": "嘘月",
+      "work_id": "work-b9ba3d457459",
+      "source_url": "https://piastudy.com/Intermediate/1iGCT5KJMl0",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-019fb78f4aff1872",
+      "file": "calibrated-019fb78f4aff1872.txt",
+      "sha256": "acefac1b6e13f4fd57109f62cb2aa64779ea8b118935bbe13d07cf0e80c019c5",
+      "title": "周旋副歌",
+      "work_id": "work-782663b3790e",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-01ff736e7de56047",
+      "file": "calibrated-01ff736e7de56047.txt",
+      "sha256": "b697c1f324a720bb264a0ff2fa1f4cc947bfb30da214febecc324203ff56952e",
+      "title": "天空之城",
+      "work_id": "work-deck-5ab2af376d26",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-3d39404450.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0333e6037d804761",
+      "file": "calibrated-0333e6037d804761.txt",
+      "sha256": "d08410248a93e6302a71007261ca7697425a10e9d2b83fbd86118147c6a730a3",
+      "title": "起风了",
+      "work_id": "work-b22ed4e45f9c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-03a7ff4927ff0392",
+      "file": "calibrated-03a7ff4927ff0392.txt",
+      "sha256": "adc49d3faa5716c3f6507dd9ed6f25e24f22a66944a69e753ad5b57cabe7e350",
+      "title": "温柔的倾诉(教父)",
+      "work_id": "work-d58d520e8a83",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-03b85ee12bf8477b",
+      "file": "calibrated-03b85ee12bf8477b.txt",
+      "sha256": "d951f8820a58fb290ddd011edcb826b13f11b897b18381b276de6024355ec2f0",
+      "title": "南山南",
+      "work_id": "work-deck-69e22c872c84",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8D%97%E5%B1%B1%E5%8D%97-%E7%99%AB%E5%85%AC%E7%81%AC-%E7%99%AB%E5%85%AC%E7%81%AC-13ca7faa29ee95c7cd0ad.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-03ce69aed59ab5fe",
+      "file": "calibrated-03ce69aed59ab5fe.txt",
+      "sha256": "db26f7921e89d3dd9dac962eea088e9e470d77fd7347783ec4937956f041070a",
+      "title": "寂寞的人伤心的歌",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=u72RCmw4crJP",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-04342d9abcef66da",
+      "file": "calibrated-04342d9abcef66da.txt",
+      "sha256": "3560a79da0495f4328b029a5ef665d4b7f53db9479b3dcacc388ccd29184f589",
+      "title": "千本樱",
+      "work_id": "work-deck-c03da52ba0d7",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E6%9C%AC%E6%A8%B1-%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5-%E6%A7%91%E6%A7%91%E6%A7%91-217034cfd504e38343ca8.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-047690e72e62d8c5",
+      "file": "calibrated-047690e72e62d8c5.txt",
+      "sha256": "dfe9dd36dd1789b628288f0ee54b42698a31d2a6c3389e217e88c0b20876ec38",
+      "title": "约会(你的名字)",
+      "work_id": "work-317bf81954cf",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=Xr1swzcO4VYa",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-05220ac03fba529a",
+      "file": "calibrated-05220ac03fba529a.txt",
+      "sha256": "1e2ba05a25b9becf2ce5beb2f482e744e7947576107d3d1ab2323e45553046f7",
+      "title": "星河追梦",
+      "work_id": "work-71b9c5e7ea8c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-07ac0314e381eec3",
+      "file": "calibrated-07ac0314e381eec3.txt",
+      "sha256": "84ded61b588ae6015de90d77e11cc26ffad88a42a33cd07f6948dfd71f408db9",
+      "title": "方圆几里",
+      "work_id": "work-96ed62ff7ee6",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-082ed376ce92484d",
+      "file": "calibrated-082ed376ce92484d.txt",
+      "sha256": "b4983e8fc8ecec19b3db5017111e45b3f654ce6d74c0dc13f656467635d8e304",
+      "title": "鸟之诗",
+      "work_id": "work-bird-poem",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0908cf042c51cee5",
+      "file": "calibrated-0908cf042c51cee5.txt",
+      "sha256": "d20f9b3ee35c24c08e148a63f05bbcc3f11c4e311566438667c616f1b6fa0bcb",
+      "title": "哆啦A梦",
+      "work_id": "work-29f5d4e3ad59",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=IdL1hVH2eppO",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-09b13e392909b24a",
+      "file": "calibrated-09b13e392909b24a.txt",
+      "sha256": "bf1fe86a81c6b6f4a6791f8f2e3fca58df680f59a04594eeb211d7c342ace58d",
+      "title": "东南苦行山",
+      "work_id": "work-29145bc9acba",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-09c3bbca03628197",
+      "file": "calibrated-09c3bbca03628197.txt",
+      "sha256": "9f3665ede4db22bd38afa1f634d9040b3f2b91c37d4247abe9b11d74a7a69382",
+      "title": "太阳照常升起",
+      "work_id": "work-deck-42b90c6d3570",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%AA%E9%98%B3%E7%85%A7%E5%B8%B8%E5%8D%87%E8%B5%B7-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-297b50d297.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-09d1f92a5dc47712",
+      "file": "calibrated-09d1f92a5dc47712.txt",
+      "sha256": "002ddc4c63815aa0d3f626c8eb8a12a2defc29eb745ec991ec0ed10e800bfb51",
+      "title": "喜欢你邓紫棋",
+      "work_id": "work-d438bf1cd96a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-09f3c16720c680f7",
+      "file": "calibrated-09f3c16720c680f7.txt",
+      "sha256": "08d438ac639ceadb37b6d8d8cc1236c1550c23140e7e49f219755bf63af82de4",
+      "title": "いつも何度でも Always with you",
+      "work_id": "work-22d66a033a22",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB-%E4%B8%BB%E9%A2%98%E6%9B%B2-Always-with-you-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-02f43d3ed74ea433fe3ff.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0a0ab33c8aed5568",
+      "file": "calibrated-0a0ab33c8aed5568.txt",
+      "sha256": "2c89dbba2d3561ab8284162d571318ebc58a824aaf9071addab643388734e376",
+      "title": "恋人",
+      "work_id": "work-cfefb9391ec4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0a1235e83f4b0112",
+      "file": "calibrated-0a1235e83f4b0112.txt",
+      "sha256": "a64b1c59183582634aa6cf156d104ddd2c47bcb2b97d22b28c6c6a5cd50fb603",
+      "title": "欢乐颂",
+      "work_id": "work-0a617fac3992",
+      "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%AC%A2%E4%B9%90%E9%A2%82.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0afe11991ae8e222",
+      "file": "calibrated-0afe11991ae8e222.txt",
+      "sha256": "cc8e9dd1d72418e19270280b77a3f0cd10ef1072fe8d0e82ec9472340a4e8981",
+      "title": "草原啊草原",
+      "work_id": "work-e6526ebc37b9",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0b0f10f54d64a1c1",
+      "file": "calibrated-0b0f10f54d64a1c1.txt",
+      "sha256": "bd69321e1a43ff6462a31d96a5d00c056ec2454fc8e64566377c6f137a79fa25",
+      "title": "世末舞厅",
+      "work_id": "work-8d295e045a97",
+      "source_url": "https://piastudy.com/Intermediate/WJrjlx1d",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0bf062326a6ae27a",
+      "file": "calibrated-0bf062326a6ae27a.txt",
+      "sha256": "f2c3ae04a1bb4a2e4f9033a28cb107c286a0942749a3ab38fe86da05ee76a1e5",
+      "title": "不染",
+      "work_id": "work-36dfb0a43e68",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0c5782fef1bfe737",
+      "file": "calibrated-0c5782fef1bfe737.txt",
+      "sha256": "7b77b8deba2237f1577f1bb1300c1f45548ac2293c2b22ab7072a2129dcb364e",
+      "title": "你的名字",
+      "work_id": "work-bf144f7d9f12",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0c99b5d6d9016e68",
+      "file": "calibrated-0c99b5d6d9016e68.txt",
+      "sha256": "68d3212e256a4f65b20baec65697bcfe4017544ee9ab242719f1b58087cf9968",
+      "title": "悬溺",
+      "work_id": "work-fe3ace8deaa2",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0cb74b08af7d334c",
+      "file": "calibrated-0cb74b08af7d334c.txt",
+      "sha256": "834ae4fe360104b89362cd4cbe05309b8fa932fe0cf4a30b28d49a32f8d7e8eb",
+      "title": "天空之城",
+      "work_id": "work-deck-5ab2af376d26",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0cc6bc10826a380a",
+      "file": "calibrated-0cc6bc10826a380a.txt",
+      "sha256": "eea16a5b62b353c6e9dbf40e7ec79a455f072e772d3f868ba3d79aa024924545",
+      "title": "稻香",
+      "work_id": "work-27a4aca7d608",
+      "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/daoxiang/%E7%A8%BB%E9%A6%99%E2%80%94%E5%91%A8%E6%9D%B0%E4%BC%A6%EF%BC%88%E9%80%82%E5%90%88%E9%AC%BC%E7%95%9C%E8%B0%83%E6%95%99%EF%BC%89.mid",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0ce1a5a6cf06dd8f",
+      "file": "calibrated-0ce1a5a6cf06dd8f.txt",
+      "sha256": "f7798ee6e1346126df6c9f6789db83999f38afffc1956a6d360a8901376798ce",
+      "title": "起风了",
+      "work_id": "work-b22ed4e45f9c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0ce76e3e1d12edd0",
+      "file": "calibrated-0ce76e3e1d12edd0.txt",
+      "sha256": "c6dfa628ed05895be35fc88de3cafe6756dbdf53fcfdec89d0c78d12de71592c",
+      "title": "不死鸟-霍尊",
+      "work_id": "work-89eeba54b6a4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0cede4b386bd0e35",
+      "file": "calibrated-0cede4b386bd0e35.txt",
+      "sha256": "3bf9716086a9b141e2e39577b2e7ea48dcb01812c7411359597d6863f3fc20be",
+      "title": "今天开始我要自己上厕所",
+      "work_id": "work-89e3e0914e15",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0d84e22a6043a003",
+      "file": "calibrated-0d84e22a6043a003.txt",
+      "sha256": "2e79d4dc9d84d1559f0640bc94a45a228078f4213eefab0892bb99939c086963",
+      "title": "斯卡布罗集市",
+      "work_id": "work-deck-b2201c638ce4",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%96%AF%E5%8D%A1%E5%B8%83%E7%BD%97%E9%9B%86%E5%B8%82-%E8%8E%8E%E6%8B%89%E5%B8%83%E8%8E%B1%E6%9B%BC-Jiko-60b221025d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0db4a378102a71e1",
+      "file": "calibrated-0db4a378102a71e1.txt",
+      "sha256": "3025cd16a166e95108c7795b5ba5d3553708db00a562bf151ea23e12e57e82de",
+      "title": "青花瓷",
+      "work_id": "work-aca7aa91d565",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=kz5fxDdz058B",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0eee5fde0abe3bbf",
+      "file": "calibrated-0eee5fde0abe3bbf.txt",
+      "sha256": "ae708a9f95032162fd80a9fe1868d957c8d9ad3a633234582a33853bc9f87e0b",
+      "title": "我要你",
+      "work_id": "work-6b1797c84172",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0f5b5b27835f7304",
+      "file": "calibrated-0f5b5b27835f7304.txt",
+      "sha256": "d74c1ee213f0e4928c63bb5cde7328349507ee33762b38816e1e886b90d000ff",
+      "title": "小星星",
+      "work_id": "work-f26be8690e94",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-0fa58dc0e44713ff",
+      "file": "calibrated-0fa58dc0e44713ff.txt",
+      "sha256": "4989362ee4a715b00c63fad6329e6d5945e586288195667aaac89794ba26cb54",
+      "title": "弱水三千",
+      "work_id": "work-4210bc8bc7ed",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-11e76e478b1f69e8",
+      "file": "calibrated-11e76e478b1f69e8.txt",
+      "sha256": "9939b06cc6e5f0b28a53a6101ce692c584295985d1d0644b113c2a8ba66f7985",
+      "title": "放晴（晴る）",
+      "work_id": "work-f479cbfd52be",
+      "source_url": "https://piastudy.com/Intermediate/WNctWN8W",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-126b6af4e39fc027",
+      "file": "calibrated-126b6af4e39fc027.txt",
+      "sha256": "cbb9413bd0b2f9297ec0e6543c5624d44724f2ad5b4c4799c4b50934f5694e62",
+      "title": "死别",
+      "work_id": "work-farewell",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E6%AD%BB%E5%88%AB%20bpm100.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1275a6aaa75d7c59",
+      "file": "calibrated-1275a6aaa75d7c59.txt",
+      "sha256": "e61440d1eee28dd8cc73f3c7af1a9095e6fe06e7cf64a0a7e43c960fb1b9164f",
+      "title": "甲乙丙丁",
+      "work_id": "work-c89664987661",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7685761790654860544",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-12c0d1c966c4e0f3",
+      "file": "calibrated-12c0d1c966c4e0f3.txt",
+      "sha256": "b541deb2e8dd9bcb6de1142b8e26fdd17154b11cb6c6cdd4d88d72487fa19344",
+      "title": "龙卷风",
+      "work_id": "work-deck-4f8ae99fc7e5",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%BE%99%E5%8D%B7%E9%A3%8E-%E5%91%A8%E6%9D%B0%E4%BC%A6-Jiko-f73b7c0527.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-13526256aa800156",
+      "file": "calibrated-13526256aa800156.txt",
+      "sha256": "8cfde2b4a3f692a43fbf8a82a2fd44e0d0334a6510b59f6bd4c173d8815dd0ab",
+      "title": "冲锋号",
+      "work_id": "work-e5c64c395b44",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-13a326c245354044",
+      "file": "calibrated-13a326c245354044.txt",
+      "sha256": "bd5461e206a002099e5bd1cd22e624a6a41f004c32272bd9bb9e05bea71c3d56",
+      "title": "春日影~",
+      "work_id": "work-spring-shadow",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%98%A5%E6%97%A5%E5%BD%B1-%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90-Wind-02-3966a98631.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-13bbcafc411bc080",
+      "file": "calibrated-13bbcafc411bc080.txt",
+      "sha256": "83f892cdad4a1d9ef755d2d60e6dbdd79ae99ec3db276376b49a6b138299c592",
+      "title": "刚刚好",
+      "work_id": "work-bf9496f067b9",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-15c0e812c906cb66",
+      "file": "calibrated-15c0e812c906cb66.txt",
+      "sha256": "15f5737e7f2ad4cd7bddd7de870507c90ec13b241bec6e7319825fc810f528a4",
+      "title": "老男孩",
+      "work_id": "work-deck-c31d3026ae98",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%80%81%E7%94%B7%E5%AD%A9-%E7%99%AB%E5%85%AC%E7%81%AC-%E7%99%AB%E5%85%AC%E7%81%AC-ee7090e07ef1f2aeea130.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-16a1c3f68b515748",
+      "file": "calibrated-16a1c3f68b515748.txt",
+      "sha256": "6648510755b82c06229f9781613ccffbd3e0c86039b29038f75c8b81b1e154bd",
+      "title": "贝加尔湖畔",
+      "work_id": "work-deck-c3003322bbda",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-17110dd8c3394795",
+      "file": "calibrated-17110dd8c3394795.txt",
+      "sha256": "d492bd2731a52d470148ead22ada0934c499741d25c57f84eefc824461f33dc5",
+      "title": "不可思议的病例",
+      "work_id": "work-4f70cbc87333",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-176af5a4d53c08fa",
+      "file": "calibrated-176af5a4d53c08fa.txt",
+      "sha256": "8f611e80f7bf0d3cebc365eb75893c27442d6fcfd2af245252733507aae9966c",
+      "title": "don't forget",
+      "work_id": "work-078e56bffcd4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1804137788b61619",
+      "file": "calibrated-1804137788b61619.txt",
+      "sha256": "72e3a9b083d947b542aadbb3dda88c949125417211f72b70464c8026dbba5245",
+      "title": "一半一半",
+      "work_id": "work-18075e784f67",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1817a3938838fd40",
+      "file": "calibrated-1817a3938838fd40.txt",
+      "sha256": "01f6f1f3de25d92e5869580773d4f7276cef234b2fb192ad8cafe18e6410f38e",
+      "title": "贝加尔湖畔",
+      "work_id": "work-deck-c3003322bbda",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94-%E6%9D%8E%E5%81%A5-Jiko-0a301a67a5.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-18610d79c86ae4a2",
+      "file": "calibrated-18610d79c86ae4a2.txt",
+      "sha256": "ef3eeb9a797bec912a3925c1f6b1ea84fc76065034707ab50420aff78b68d2b0",
+      "title": "Lemon",
+      "work_id": "work-deck-1dbd2be3a810",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/Lemon-%E5%AE%8C%E6%95%B4%E7%89%88-%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB-Jiko-623a5950c3.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-189dcd24be0bcebd",
+      "file": "calibrated-189dcd24be0bcebd.txt",
+      "sha256": "997303f41578ff649ec44e21b4ccb2e9eaddafd91483f3ee6b96d971f3466aa0",
+      "title": "两只老虎",
+      "work_id": "work-a00de0855301",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-190f30f9b7d32b69",
+      "file": "calibrated-190f30f9b7d32b69.txt",
+      "sha256": "8b666b2c30daced9c0ec2cc5898e1688f1ccfe8d8eab5598c97ec32a5ef0112d",
+      "title": "辞九门回忆",
+      "work_id": "work-c20f24975fc7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1aa1fc96a434cd85",
+      "file": "calibrated-1aa1fc96a434cd85.txt",
+      "sha256": "a88d5fcc10bb567f15ca85d4c1bf275742e9c5fd03dc58073bc8176ddc58d7de",
+      "title": "圣诞快乐劳伦斯先生",
+      "work_id": "work-merry-christmas-mr-lawrence",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1cbc286aeb6465e4",
+      "file": "calibrated-1cbc286aeb6465e4.txt",
+      "sha256": "58273a4a4ddf50d61577de7163ea963ee92dec1cadcc2629ce8a5bf37d9eebfe",
+      "title": "欢乐斗地主",
+      "work_id": "work-d495f371b50d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1d8298e90c3d2185",
+      "file": "calibrated-1d8298e90c3d2185.txt",
+      "sha256": "3f30d0cb4f073b4d148713dc1dcc1a5e93b76f4c6e08aae5f17d96daee57ac94",
+      "title": "世界上的另一个我",
+      "work_id": "work-8d5c4035d576",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1e164e320deff431",
+      "file": "calibrated-1e164e320deff431.txt",
+      "sha256": "82c5f283868aa3d4d32010feb17721f5a1cbc7840b8ae4f35f3f210001aa46c8",
+      "title": "Color Your Night",
+      "work_id": "work-e88fe6e8c085",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=Qy3GEr_hQ_oK",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1ef8c2e031c6be21",
+      "file": "calibrated-1ef8c2e031c6be21.txt",
+      "sha256": "fff3ae5179a63f73643fbf8f0ddbe3a8aa5fec7319897919b583d7e1a7ee0781",
+      "title": "花之舞",
+      "work_id": "work-639b92ede19e",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1f1638d93b95fb8b",
+      "file": "calibrated-1f1638d93b95fb8b.txt",
+      "sha256": "63c282681acff1a77f1d374f41fae85680eecbeb25f5073457f07cbf5cabc2a5",
+      "title": "寂寞的人伤心的歌",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1fbae04bdddaa4af",
+      "file": "calibrated-1fbae04bdddaa4af.txt",
+      "sha256": "c2c66bcbab66803fdabbfceda062ef8e643e2f8cbe8f18260e5405a12361a9e8",
+      "title": "SAIKAI",
+      "work_id": "work-e5f2bb467bb4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-1ffed196774db214",
+      "file": "calibrated-1ffed196774db214.txt",
+      "sha256": "f85d2cff6d917e6bbabac6cf1d61a0794fe46337b1c3d1c3761ec2f049e8d119",
+      "title": "His Theme",
+      "work_id": "work-b9be4b91bd3d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-202a4296c5a82830",
+      "file": "calibrated-202a4296c5a82830.txt",
+      "sha256": "ae53153f5aec91bc8a291fa288b27c198fbb22b42f0cd534171a41836cfe9af0",
+      "title": "小跳蛙",
+      "work_id": "work-8dbd5b30d5e7",
+      "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F/%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F%20-%20%E5%B0%8F%E8%B7%B3%E8%9B%99-%E9%9D%92%E8%9B%99%E4%B9%90%E9%98%9F.eop",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-20d1be2e3b45fd7c",
+      "file": "calibrated-20d1be2e3b45fd7c.txt",
+      "sha256": "86a1f1f57e735306298cf5c710b4d171ca44c2ddb317d9db2b32ecd0538c9c10",
+      "title": "太阳照常升起",
+      "work_id": "work-deck-42b90c6d3570",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2135c56f8d51aa3c",
+      "file": "calibrated-2135c56f8d51aa3c.txt",
+      "sha256": "81529a0875c766534049f07df4bc92fc4c0bed2c8940b57ecd1c611fa7d85f68",
+      "title": "真的爱你",
+      "work_id": "work-934bc5deb368",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-21b5da3ff7643769",
+      "file": "calibrated-21b5da3ff7643769.txt",
+      "sha256": "e83ca574c348874415cf8cb5225d5f5ea5c1c01eb3cef4b68cb0095eb68a7926",
+      "title": "玫瑰花的葬礼",
+      "work_id": "work-6eae4dbec1a7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2461f1b24912ab4d",
+      "file": "calibrated-2461f1b24912ab4d.txt",
+      "sha256": "6c40c0d9656d393cf55b4d320ff1de8afc6d5768889150913b4faa2c35c62568",
+      "title": "喜羊羊与灰太狼-左手右手",
+      "work_id": "work-6a66290370bc",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%96%9C%E7%BE%8A%E7%BE%8A%E4%B8%8E%E7%81%B0%E5%A4%AA%E7%8B%BC-%E5%B7%A6%E6%89%8B%E5%8F%B3%E6%89%8B-%E5%96%9C%E7%BE%8A%E7%BE%8A-11111-45342a2125ce3521a9b33.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2468ffbf588362f0",
+      "file": "calibrated-2468ffbf588362f0.txt",
+      "sha256": "532d7a7f42c9433b3f9b524a92b772b23c9ac7b8a73eceaad0c4745dc56829df",
+      "title": "天外来物",
+      "work_id": "work-deck-e8a2cb61a006",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9-%E5%89%AF%E6%AD%8C-%E8%96%9B%E4%B9%8B%E8%B0%A6-ZhGr-5374cfda3e.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-24d1bdc7a08e566b",
+      "file": "calibrated-24d1bdc7a08e566b.txt",
+      "sha256": "22ca971eba7f1203001cc22bad9ab5256a8af73f58eb37bcae806132003bad32",
+      "title": "冲锋号",
+      "work_id": "work-e5c64c395b44",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%86%B2%E9%94%8B%E5%8F%B7-%E5%86%B2%E9%94%8B%E5%8F%B7-ZhGr-e9ea74134d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-27c5a988c7980d20",
+      "file": "calibrated-27c5a988c7980d20.txt",
+      "sha256": "2d4203f82bd0b3da1fdb7a1cf6470a2cc0b9e4ebcb9cc09b587e86fdacaaffe6",
+      "title": "Travelers' Encore(眼之回响)",
+      "work_id": "work-a8c4eda707f6",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=qmHtQRtm1O_M",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-28b66eeccff6abd1",
+      "file": "calibrated-28b66eeccff6abd1.txt",
+      "sha256": "deeb35d404ae0e1584d723dd70286e58f0799142922a80c776452137066bfa10",
+      "title": "小跳蛙",
+      "work_id": "work-8dbd5b30d5e7",
+      "source_url": "https://www.bilibili.com/video/BV1DaaF6AEBs/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-29241bf10a1102a7",
+      "file": "calibrated-29241bf10a1102a7.txt",
+      "sha256": "e879f7ec1170a3b665233126a599d4ddec52476dacbff4970820c7773af2558e",
+      "title": "Lemon",
+      "work_id": "work-deck-1dbd2be3a810",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2a45fa05639a4f07",
+      "file": "calibrated-2a45fa05639a4f07.txt",
+      "sha256": "823987bc586269111fdc829abf08d035a5bcbc97b455669cf154027595635e39",
+      "title": "一生何求",
+      "work_id": "work-2f044b6d1731",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=fOVkOjy2xO89",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2b25da9a13e24b2d",
+      "file": "calibrated-2b25da9a13e24b2d.txt",
+      "sha256": "aad77aa80ee48bdba9591e4480f1b1a880de486ef2efde58bdbac62d11f721a4",
+      "title": "夜航星",
+      "work_id": "work-2ae2808181a9",
+      "source_url": "https://www.bilibili.com/video/BV1LF411a7Xg/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2de48c070db02855",
+      "file": "calibrated-2de48c070db02855.txt",
+      "sha256": "5fff457327c9fed8384ab63aa0138d6f3fb43fb0373c4d9d673969dac457dcf8",
+      "title": "未命名",
+      "work_id": "work-67bee6acfc3c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-2f24c298f936e0b6",
+      "file": "calibrated-2f24c298f936e0b6.txt",
+      "sha256": "5208b962ffbb694298551cfb7866cf7da4ab06d3410f5a36d90a202d56b77b4f",
+      "title": "花海",
+      "work_id": "work-deck-030917928649",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%8A%B1%E6%B5%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8006ad600d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-30dd2cfcf98722ae",
+      "file": "calibrated-30dd2cfcf98722ae.txt",
+      "sha256": "7445e70c5f9a34e6095550a66f6fde2d2431a583a0c4620fab6b8589b61266f6",
+      "title": "圣诞快乐劳伦斯先生",
+      "work_id": "work-merry-christmas-mr-lawrence",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3101f5bb398a0fb2",
+      "file": "calibrated-3101f5bb398a0fb2.txt",
+      "sha256": "85cba58acf7c02c854c59d396e6f09029f24755f438159c292456b0201a63422",
+      "title": "His Theme",
+      "work_id": "work-b9be4b91bd3d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-32b70c287b5d760d",
+      "file": "calibrated-32b70c287b5d760d.txt",
+      "sha256": "e5cf11d40639c31500e4088747d14a23a88d821408b7f7c9cbbfa068927ef05c",
+      "title": "菊次郎的夏天",
+      "work_id": "work-3a4718b15c1f",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=ICCZqRDm5GaN",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-32bdf52a96d65b77",
+      "file": "calibrated-32bdf52a96d65b77.txt",
+      "sha256": "bfa5341111343a097eebf586f040a472e705f47678a36c3511e96b79aadfd9fd",
+      "title": "美人鱼",
+      "work_id": "work-930c9ca07a5b",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-339d1302b66ff9c4",
+      "file": "calibrated-339d1302b66ff9c4.txt",
+      "sha256": "aa5377bc68b09eb672954364a90edee58c261791aa94d0b2fc9fa0b0330c500f",
+      "title": "乌兰巴托的夜",
+      "work_id": "work-deck-11ab3540b048",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B9%8C%E5%85%B0%E5%B7%B4%E6%89%98%E7%9A%84%E5%A4%9C-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-3976eef92c.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-33dfa1feba6f46b6",
+      "file": "calibrated-33dfa1feba6f46b6.txt",
+      "sha256": "4844580f53bc6e241319fde254bc8b703c484ac44945d7d1d32b632e0b6512c3",
+      "title": "片片枫叶情",
+      "work_id": "work-52b4874e4c42",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=On0Teeg9uYzA",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-34241cf5c4a15f5d",
+      "file": "calibrated-34241cf5c4a15f5d.txt",
+      "sha256": "e5fadb91656c7699caac03d063f014a6361bdccceceda5d3630a35ba2609ea3d",
+      "title": "歌唱祖国",
+      "work_id": "work-deck-7061e1e2fcec",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-34a17408765fc5c7",
+      "file": "calibrated-34a17408765fc5c7.txt",
+      "sha256": "7ccae0eef2a8e9f620345864a662d3f96c62a7bcedaf50090032aa87c384b3c5",
+      "title": "九万字",
+      "work_id": "work-5c70df55da75",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3515da625dcc68ca",
+      "file": "calibrated-3515da625dcc68ca.txt",
+      "sha256": "8ff9b73eeb73fcb9e008255c61112c08df9224473730d6dd93f330f7a7f6fd55",
+      "title": "我怀念的",
+      "work_id": "work-7bf9fe625d34",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-36c372f99c462401",
+      "file": "calibrated-36c372f99c462401.txt",
+      "sha256": "31ae06c0661b0e69d6ee4c517043aec293cdbd012c65c04055f177c77d7a630f",
+      "title": "左手右手",
+      "work_id": "work-6a66290370bc",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-374c0c546dfde2d3",
+      "file": "calibrated-374c0c546dfde2d3.txt",
+      "sha256": "d3353ef5fa81dafd3eb60aa1f7f3b163987f8011af060126eb352a7a935a024e",
+      "title": "七里香副歌1",
+      "work_id": "work-deck-f9bed8df32ff",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99%E5%89%AF%E6%AD%8C1-111-%E4%BA%8B%E5%AE%9E%E4%B8%8A-506b82dd294a5360ecef7.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-37b84cff43244d94",
+      "file": "calibrated-37b84cff43244d94.txt",
+      "sha256": "39917cb3e2a28c59519337e6c7ed1497548afeb8a492d7ede95d34b6d6b15b25",
+      "title": "小星星",
+      "work_id": "work-f26be8690e94",
+      "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E5%B0%8F%E6%98%9F%E6%98%9F.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3954769862eb6204",
+      "file": "calibrated-3954769862eb6204.txt",
+      "sha256": "eaf50f3e98f490633c1afb6b434718f376e6928a6df20f7b73781400a8b96802",
+      "title": "十面埋伏",
+      "work_id": "work-3e7e88b5306c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-395aa6e9176e0b11",
+      "file": "calibrated-395aa6e9176e0b11.txt",
+      "sha256": "79c2a0d034862e256d15a70375744f86f1485e77bbf5a7add9b12d0417a3c807",
+      "title": "情歌",
+      "work_id": "work-7060882420c7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-395afad7a10a0579",
+      "file": "calibrated-395afad7a10a0579.txt",
+      "sha256": "93b5fa4e5d3b2b7620186829611134e04ac92c8d8ad45ac5fd061e357a60a963",
+      "title": "奇迹再现",
+      "work_id": "work-632087eed621",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3981ebaddccab826",
+      "file": "calibrated-3981ebaddccab826.txt",
+      "sha256": "5556330b60eddf6dc5d2593ff55e8e06e4f6b30fb2716193687a6a8ff585fa81",
+      "title": "死别",
+      "work_id": "work-farewell",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%AD%BB%E5%88%AB.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3a85dda457ea9c26",
+      "file": "calibrated-3a85dda457ea9c26.txt",
+      "sha256": "e34f4ce5db11f53cb2d2e3500f44de14630eba0c37210f15f3167a0ca0d646d1",
+      "title": "诀别书",
+      "work_id": "work-deck-aeec77d24e62",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3b4cbe7c723612bd",
+      "file": "calibrated-3b4cbe7c723612bd.txt",
+      "sha256": "3c2a64f92785ad39e3cb39d216b692da78ca6b3e26a103fe37e4dcef9638c2cd",
+      "title": "如果可以",
+      "work_id": "work-5eabaeef19be",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3c2e968b92d6c857",
+      "file": "calibrated-3c2e968b92d6c857.txt",
+      "sha256": "e8928a76d0693a9efb355bc96b2dea03f4ebee21244efc57034db91eb8e4e776",
+      "title": "有我呢",
+      "work_id": "work-35fe95fb3fdd",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3c8825349f49d4e8",
+      "file": "calibrated-3c8825349f49d4e8.txt",
+      "sha256": "aaff4b8c0b118d0d36fc169f6f913fc821f789b46a310641b3118e9b9925608d",
+      "title": "いつも何度でも",
+      "work_id": "work-22d66a033a22",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3cc60084ae50bdb9",
+      "file": "calibrated-3cc60084ae50bdb9.txt",
+      "sha256": "be8953827c0da92a7ca220e92e0330f58852c54e5a5ad6641fb05356a17c1b39",
+      "title": "生生世世爱",
+      "work_id": "work-deck-c3b8796f4b50",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E7%94%9F%E7%94%9F%E4%B8%96%E4%B8%96%E7%88%B1-1-19thill-9e6fa6fcf8.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3d374a03ee2062f7",
+      "file": "calibrated-3d374a03ee2062f7.txt",
+      "sha256": "e29dea961243d6e1b05cec31a0ea1d2395a4612ff5c39261ac88da75b4af9d48",
+      "title": "起风了",
+      "work_id": "work-b22ed4e45f9c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-3e83944545036053",
+      "file": "calibrated-3e83944545036053.txt",
+      "sha256": "20a26447e17ddf9ac93d7a56092e9c9310fdbd018305b6cc06c7649062626511",
+      "title": "反乌托邦 x 拼凑",
+      "work_id": "work-dystopia-mashup",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6%20x%20%E6%8B%BC%E5%87%91.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-401272011542aa03",
+      "file": "calibrated-401272011542aa03.txt",
+      "sha256": "8e4a265f6238bab5c03c3dd613327340e91e310b94ea86da4cfc467c917a5180",
+      "title": "From the start",
+      "work_id": "work-b7da82d51026",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4236f6cc3fa0d2c0",
+      "file": "calibrated-4236f6cc3fa0d2c0.txt",
+      "sha256": "ea4ddb14bbc19fd58a2048dce48c532b5dc9ccbf20d69b7c22a23954c4d4e6e4",
+      "title": "刚刚好",
+      "work_id": "work-bf9496f067b9",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-427fb19fbba52160",
+      "file": "calibrated-427fb19fbba52160.txt",
+      "sha256": "eb490cf3ea475f27b24f01c278ea5b07590b698681b52474598d889cdf880bfa",
+      "title": "指纹",
+      "work_id": "work-0d6a14a9ab25",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-436e0ce995156681",
+      "file": "calibrated-436e0ce995156681.txt",
+      "sha256": "9a2feb13d3f2cf710d165eb959b7ba40db36d55c499c4ec30567cf8c4e00bd78",
+      "title": "琵琶曲",
+      "work_id": "work-c26930029810",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-436e5b654d0de955",
+      "file": "calibrated-436e5b654d0de955.txt",
+      "sha256": "b091aec1a0cc038e0447ba403e9ba4ae544bfd573847a9f22f11c45d823ffed2",
+      "title": "关键词",
+      "work_id": "work-1f7f0db90f93",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-43a2dc895c15b881",
+      "file": "calibrated-43a2dc895c15b881.txt",
+      "sha256": "1b056f072f53bd0841b41259794dda9946fb4c04f6dedc6d3a5678ede86652d7",
+      "title": "奇迹再现",
+      "work_id": "work-632087eed621",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A5%87%E8%BF%B9%E5%86%8D%E7%8E%B0-ryanixer-ryanixer-c483db43ceedf6f2b0a9f.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-43c0c91f8c1e1cf5",
+      "file": "calibrated-43c0c91f8c1e1cf5.txt",
+      "sha256": "b60572aaf8f9377d51b1d120b486a3a867540acb84379ae01bf7c19dca35ba7d",
+      "title": "猪猪侠",
+      "work_id": "work-c4c7faf127e7",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0-11111-252ca21ad57c25a68203c.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4479c37a9ec5d806",
+      "file": "calibrated-4479c37a9ec5d806.txt",
+      "sha256": "4c715d9e37a69beda37d58fd44018783081a7165928b25bb95070856fda5393b",
+      "title": "诀别书",
+      "work_id": "work-deck-aeec77d24e62",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%AF%80%E5%88%AB%E4%B9%A6.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4513c7cdb173f3b4",
+      "file": "calibrated-4513c7cdb173f3b4.txt",
+      "sha256": "9c4a9554cd6b09edf54ba0d02868c43349621e37bd4c72012931ca4e4bff4575",
+      "title": "光辉岁月",
+      "work_id": "work-f0c5b459b81a",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=vNnxO8VlD6Jo",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4592c32c15d1cb10",
+      "file": "calibrated-4592c32c15d1cb10.txt",
+      "sha256": "30f819ac51c315025daf088f94423b04cb7fa96690bb299fecc1a76123d6aff7",
+      "title": "富士山下",
+      "work_id": "work-e33b237a7e1f",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7688723263690876515",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-45cf93c9da1c48ef",
+      "file": "calibrated-45cf93c9da1c48ef.txt",
+      "sha256": "6c07555f0b0eed8a091db83e1a4d9594a7f7224a5119ee6336ef8e643156a8a5",
+      "title": "いつも何度でも",
+      "work_id": "work-22d66a033a22",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4770ab52809637f7",
+      "file": "calibrated-4770ab52809637f7.txt",
+      "sha256": "f16a9578fde682ad592435837a59599203a583d9b7327b418c641fca9c061c07",
+      "title": "皇后大道东",
+      "work_id": "work-deck-9b1ef64c9ac3",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E7%9A%87%E5%90%8E%E5%A4%A7%E9%81%93%E4%B8%9C-%E7%BD%97%E5%A4%A7%E4%BD%91-Jiko-f8af55ca1d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-47970cfe17668a3f",
+      "file": "calibrated-47970cfe17668a3f.txt",
+      "sha256": "f74e30fadcc2f1d2c882a3e0c2da514d9226bf5a293dab7a9f131298ec8ea19f",
+      "title": "上海滩",
+      "work_id": "work-deck-8f3a74d58753",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%8A%E6%B5%B7%E6%BB%A9-%E5%8F%B6%E4%B8%BD%E4%BB%AA-Jiko-9f506c4d34.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-482ac1cd000d6be9",
+      "file": "calibrated-482ac1cd000d6be9.txt",
+      "sha256": "7b49aa457a596529a46edc020307bcf21361e58eceacb23b317ba6b9f88e73b7",
+      "title": "父亲",
+      "work_id": "work-father",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E7%88%B6%E4%BA%B2-%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F-%E6%A7%91%E6%A7%91%E6%A7%91-1849f84c4d968d35ba165.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-48943d9ae6bd10c5",
+      "file": "calibrated-48943d9ae6bd10c5.txt",
+      "sha256": "0283732ab51d6d041479c4a38bff7460b706ace6773362bc57c8c3585a9d76bb",
+      "title": "红尘客栈",
+      "work_id": "work-8f94ff8e4060",
+      "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%91%A8%E6%9D%B0%E4%BC%A6%E5%8D%81%E4%BA%8C%E6%96%B0%E4%BD%9C%E9%A6%96%E6%92%AD%E4%B8%BB%E6%89%93%E6%AD%8C%E6%9B%B2.eop",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-48b55aa0bab151da",
+      "file": "calibrated-48b55aa0bab151da.txt",
+      "sha256": "0b5ba46a323baec131b84b16d5b89c604772d8f0725788148bd33b8f9e6e3676",
+      "title": "爱情讯息",
+      "work_id": "work-c432bc405b35",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-495afcfdc3363b9b",
+      "file": "calibrated-495afcfdc3363b9b.txt",
+      "sha256": "06e60afddbd56b5ed10d5da5627dfa67a159312c12d7bf7a103fb4ce63fe0de4",
+      "title": "我怀念的",
+      "work_id": "work-7bf9fe625d34",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687095573152910627",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4aaabc71d852ff49",
+      "file": "calibrated-4aaabc71d852ff49.txt",
+      "sha256": "3b924ff487f8746e90034333085ade5d8bf6c9e0a90ce607df7970bcb5b8b88f",
+      "title": "想要养只鼠鼠",
+      "work_id": "work-e72c810d5667",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4ad779d9c7534ab3",
+      "file": "calibrated-4ad779d9c7534ab3.txt",
+      "sha256": "71c456c1d1c28d3b2106199a2f3a7cec7976771e79fb4586b2c4c5ef57db7074",
+      "title": "人鱼的眼泪",
+      "work_id": "work-4cb58ad1138d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4af9cce1c9300088",
+      "file": "calibrated-4af9cce1c9300088.txt",
+      "sha256": "aa9644c769d0180db2b21be9dbc1bb4930250cf763a68a10b82cd75f545c171e",
+      "title": "女儿情",
+      "work_id": "work-deck-48bac368d80b",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%A5%B3%E5%84%BF%E6%83%85-%E5%90%B4%E9%9D%99-YANG-1c83d5abb4.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4b054270a08b5729",
+      "file": "calibrated-4b054270a08b5729.txt",
+      "sha256": "7b82731a4dfe9a2c2f11e50f53de0affb29f077220be6529dd21c46498f98da1",
+      "title": "蝶吹笛子",
+      "work_id": "work-a044af0e61e9",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4bca6c92d5f81065",
+      "file": "calibrated-4bca6c92d5f81065.txt",
+      "sha256": "7ae0b424af0e40a472ef5cb290a538803fbfb9c875e5d1728f7fc6ed57b1ca59",
+      "title": "戒烟",
+      "work_id": "work-1b5a288e9c96",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%88%92%E7%83%9F-%E6%9D%8E%E8%8D%A3%E6%B5%A9-11111-209a1b0854eb5e02d40f0.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4bcb0e821450bd5a",
+      "file": "calibrated-4bcb0e821450bd5a.txt",
+      "sha256": "523d6470b07089a4a5335151ea5f852212b627113d623a8722bd52c9d1f31f23",
+      "title": "恋人",
+      "work_id": "work-cfefb9391ec4",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%81%8B%E4%BA%BA-%E6%9D%8E%E8%8D%A3%E6%B5%A9-%E5%A4%B1%E8%AF%AD%E5%B7%B7-230320b3bb920870edc3a.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4cb4bff9270407f1",
+      "file": "calibrated-4cb4bff9270407f1.txt",
+      "sha256": "cff7301a8cb543ceb0f98d4dd6849d21603470806da53f17ae60d80d5c8dea72",
+      "title": "反乌托邦",
+      "work_id": "work-318b5815a876",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4d49756e0ef550da",
+      "file": "calibrated-4d49756e0ef550da.txt",
+      "sha256": "c56ac2e8590f0e5c2263ceb2ce1698b31047466603bd70dc75fc7f995a5a4266",
+      "title": "千與千尋",
+      "work_id": "work-b2302401b6d8",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4e639987ac469d3a",
+      "file": "calibrated-4e639987ac469d3a.txt",
+      "sha256": "cc6edc836342a423718ecbb207aaa996d7d434538602ad9e2ac77733dfd74153",
+      "title": "最后一页",
+      "work_id": "work-378bb0eec39f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4e9b02a20dc4b64a",
+      "file": "calibrated-4e9b02a20dc4b64a.txt",
+      "sha256": "a77481351b02212607b923902e17e1fdc69b91c5dc5377ed6ea720b3aa1474fa",
+      "title": "虫儿飞",
+      "work_id": "work-f52d7ab9b17d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-4fcc3523e6a86483",
+      "file": "calibrated-4fcc3523e6a86483.txt",
+      "sha256": "fdb66cf263193b4d6819bb6fba21773e7c0caff39a09373977034d30a66cfd85",
+      "title": "琵琶曲",
+      "work_id": "work-c26930029810",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5058c2209599df3a",
+      "file": "calibrated-5058c2209599df3a.txt",
+      "sha256": "dc6bab65685931793da878334df96128e8e06f04cb29879c969fe719769d6dee",
+      "title": "马赛曲",
+      "work_id": "work-382acca0e213",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=8LbPYk_sDVVu",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-507246417c71e7be",
+      "file": "calibrated-507246417c71e7be.txt",
+      "sha256": "1f1f20340a24a736f94a906579e7189c7414f063cae144d4389d5e05d001c081",
+      "title": "千与千寻",
+      "work_id": "work-22d66a033a22",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB-%E5%AE%AB%E5%B4%8E%E9%AA%8F-11111-9a98419b3345b32923fd0.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-516669c30faf0cd7",
+      "file": "calibrated-516669c30faf0cd7.txt",
+      "sha256": "18f9ee16af600f36b5d574e1005d7883e328d038a92492446689efc09b504627",
+      "title": "青鸟",
+      "work_id": "work-deck-0085fe7f5060",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9D%92%E9%B8%9F-%E7%94%9F%E7%89%A9%E8%82%A1%E9%95%BF-Jiko-60df2692f2.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-522674bbd39fc6fb",
+      "file": "calibrated-522674bbd39fc6fb.txt",
+      "sha256": "cd17cac1ad5a849e3ee5e557f8d698858fa107b0d5c1bfd471d093ddb4c53cde",
+      "title": "春日影",
+      "work_id": "work-spring-shadow",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-532ebe5f4b6bea29",
+      "file": "calibrated-532ebe5f4b6bea29.txt",
+      "sha256": "9b0794f1c68eb2701716b1925b6db435c7c6a6617874b3493b2bae33744f7381",
+      "title": "宁次之死",
+      "work_id": "work-deck-ccd6f2f1bc63",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%AE%81%E6%AC%A1%E4%B9%8B%E6%AD%BB-%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85-Jiko-5142338691.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5394c0f032abed00",
+      "file": "calibrated-5394c0f032abed00.txt",
+      "sha256": "e5ffc84226e2c9453b873ac610b0b05317a3fe47fb70fc38b05f6fa32278cc08",
+      "title": "大东北我的家乡",
+      "work_id": "work-d9e292cf78e6",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A7%E4%B8%9C%E5%8C%97%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1-%E4%BD%95%E7%8E%89-kili-017b3330233b0e37cc762.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-53ef9378dbac250d",
+      "file": "calibrated-53ef9378dbac250d.txt",
+      "sha256": "dc90ecfd2181e3bee6b0cf9ae1f92d9c80d9c76e435a42ce6ade281d26bb4fc2",
+      "title": "当年情",
+      "work_id": "work-deck-e027c923ea04",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E9%A1%BE%E5%98%89%E8%BE%89-MRBIG-mrbig-a1c1f9e5184cc05c4a1b9.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-54c43a4cc4511b01",
+      "file": "calibrated-54c43a4cc4511b01.txt",
+      "sha256": "df28615f78af3d636d5ef4845736cb971e5a07c33c95be86080d3b0b0fd0b681",
+      "title": "菊次郎的夏天",
+      "work_id": "work-3a4718b15c1f",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%8F%8A%E6%AC%A1%E9%83%8E%E7%9A%84%E5%A4%8F%E5%A4%A9-%E4%B9%85%E7%9F%B3%E8%AE%A9-%E6%A7%91%E6%A7%91%E6%A7%91-bc1ee4a5b2223df9fa752.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5575a8a9accd5a07",
+      "file": "calibrated-5575a8a9accd5a07.txt",
+      "sha256": "d2f159086da0256e64e8962d2bef74f704fa14654bb10f91198cb091bbaa29d6",
+      "title": "未闻花名",
+      "work_id": "work-deck-1dfd3ba9333c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-55c8cd80a30aab57",
+      "file": "calibrated-55c8cd80a30aab57.txt",
+      "sha256": "0633b1b58c20feabf8055d38218962dd325f94f1de5472c636fea75bf335801c",
+      "title": "青花瓷",
+      "work_id": "work-aca7aa91d565",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-570e4218d2ce3b69",
+      "file": "calibrated-570e4218d2ce3b69.txt",
+      "sha256": "9b49a02f870ab909ec7c1216221ea3d1f25e64e4746489b7577bf5710c8003a4",
+      "title": "燕无歇",
+      "work_id": "work-44329b9372eb",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5784bbae8e8c62e1",
+      "file": "calibrated-5784bbae8e8c62e1.txt",
+      "sha256": "2d73405271286288cd80802d1aa9e60392e6396970231a76513639c473065c63",
+      "title": "苹果香",
+      "work_id": "work-e2a88d534525",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-57a6665e54263354",
+      "file": "calibrated-57a6665e54263354.txt",
+      "sha256": "6316d8bbdfaa6452200afbcb7275015c537ccd50178300beaaabc6f733730e58",
+      "title": "青花瓷",
+      "work_id": "work-aca7aa91d565",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9D%92%E8%8A%B1%E7%93%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-Rainink-c9e3050882a7cc1aa17a6.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-57dac230240fe8a3",
+      "file": "calibrated-57dac230240fe8a3.txt",
+      "sha256": "056a9384f16e36002eb9a9548c50e17d40f767644789f1eea7c813e31ad03724",
+      "title": "杀死那个石家庄",
+      "work_id": "work-8de79891e039",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-57f8c807c5b4e688",
+      "file": "calibrated-57f8c807c5b4e688.txt",
+      "sha256": "fb6c926b9da0ed6caf0cce3dfea23126f4e1794f35ae6fcafa084c7b376d5574",
+      "title": "夜、萤火虫和你",
+      "work_id": "work-c79a140093f0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5924e4796ad24b70",
+      "file": "calibrated-5924e4796ad24b70.txt",
+      "sha256": "2df8c5c487e3bb69849864e805f06ca6d4a75f2bd42d7ae9923fab41e8b2909c",
+      "title": "海屿你",
+      "work_id": "work-31d9743659b0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-59a6bf4240ab34fd",
+      "file": "calibrated-59a6bf4240ab34fd.txt",
+      "sha256": "699c3e7b12b360f8191f4e3fdc4be0049bbb4c852610b4031fdffc6063565ff5",
+      "title": "父亲",
+      "work_id": "work-father",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-59ae863dbef81f96",
+      "file": "calibrated-59ae863dbef81f96.txt",
+      "sha256": "6dd321534b973a871c392a79df3117b4f2580a7204e26d61690f3d55244d63e0",
+      "title": "印度神曲",
+      "work_id": "work-c9cc53ec2c9f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5a5999daad77f260",
+      "file": "calibrated-5a5999daad77f260.txt",
+      "sha256": "6c990d436e0f4edaa036b3860b42900ab76df76b0d16b5564151add95eda1e4a",
+      "title": "樱花草",
+      "work_id": "work-deck-f53e36bc38f0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5a5a6464bc633a36",
+      "file": "calibrated-5a5a6464bc633a36.txt",
+      "sha256": "8441986305e24e36f70165ff4ea7dd2bc9f5e499f7d1e99d3a4cee615f199269",
+      "title": "大鱼",
+      "work_id": "work-c13d1fd7d68b",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5bb648546fb7f578",
+      "file": "calibrated-5bb648546fb7f578.txt",
+      "sha256": "3f31be3233da8766899b2758cdddb52d9c7a8951f4b742ca63c4e5a3977b771f",
+      "title": "其实雨也没多大",
+      "work_id": "work-f5fbd17c606d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5bec75a90800c52e",
+      "file": "calibrated-5bec75a90800c52e.txt",
+      "sha256": "5c4c53348fe1a1cf34ebd04c37e37f74f792a0df5ff4ecfe778f3adb0b748353",
+      "title": "老男孩",
+      "work_id": "work-deck-c31d3026ae98",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5c696fe132aa11ac",
+      "file": "calibrated-5c696fe132aa11ac.txt",
+      "sha256": "c09bb59cbd47546db57183d3b33f1c262e23b7ab0b89c7969e512b76fed98712",
+      "title": "上课铃声",
+      "work_id": "work-333c7144abb7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5d07004b9e1b8b37",
+      "file": "calibrated-5d07004b9e1b8b37.txt",
+      "sha256": "fbd4fcc7b997ae057431b6a76bc329670a305b7462800978840347333ce0356a",
+      "title": "忘情牛肉面",
+      "work_id": "work-0c6ee1db2f3f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-5ed720173ba23f8a",
+      "file": "calibrated-5ed720173ba23f8a.txt",
+      "sha256": "435714736096e8276de97810d9a83579ef69155441c37fd4a9bb5ac74eeda0e3",
+      "title": "牵丝戏",
+      "work_id": "work-76aaed08ab8d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-60591a057bae6457",
+      "file": "calibrated-60591a057bae6457.txt",
+      "sha256": "fbb8a20323e9391b23b10dd3d4d3da7917b75c769147283acd3a9c826a3cc44a",
+      "title": "群青",
+      "work_id": "work-dd89ce3e6004",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=DJ3cKT5q9sMQ",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-606fd308822e673b",
+      "file": "calibrated-606fd308822e673b.txt",
+      "sha256": "508fac6700276677e777ce03b9214f06506bb9e8c47f26908bc7ebb8485fd642",
+      "title": "一生所爱",
+      "work_id": "work-deck-3d586d57a68c",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%80%E7%94%9F%E6%89%80%E7%88%B1-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-06623ea111.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-606ffea42a071e7d",
+      "file": "calibrated-606ffea42a071e7d.txt",
+      "sha256": "75a747ef6a9e6a22dd218e2f9299b6351089907339344f09752ab77d1ea57fbb",
+      "title": "蜜雪冰城",
+      "work_id": "work-deck-d5d838c55ac3",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6121c9ce27204370",
+      "file": "calibrated-6121c9ce27204370.txt",
+      "sha256": "6c19121af2365837523b02aedcd567fca142d1e438dad582e07c57d260072359",
+      "title": "夜航星",
+      "work_id": "work-2ae2808181a9",
+      "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E5%8A%A8%E6%BC%AB/%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED/%E4%B8%8D%E6%89%8D%20-%20%E5%A4%9C%E8%88%AA%E6%98%9F-%E6%88%91%E7%9A%84%E4%B8%89%E4%BD%93%E4%B9%8B%E7%AB%A0%E5%8C%97%E6%B5%B7%E4%BC%A0ED.eop",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-616be694aa364156",
+      "file": "calibrated-616be694aa364156.txt",
+      "sha256": "559dfa0c84de353576d755f5ad36d813f63d6b213d7fb92b242928caa9b3e939",
+      "title": "诀别书-片段",
+      "work_id": "work-deck-aeec77d24e62",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%AF%80%E5%88%AB%E4%B9%A6-1-%E9%82%93%E5%9E%9A-%E5%81%B7%E5%BE%97%E6%B5%AE%E7%94%9F%E5%8D%8A%E6%97%A5%E9%97%B2-3c0bb14ea8a8c87fe5bd6.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-61f0210f691fe423",
+      "file": "calibrated-61f0210f691fe423.txt",
+      "sha256": "3e1ba37c13bd0b416ae39829d44f8926ff7378de5e4f4a4295dab70dd0e4999a",
+      "title": "泡沫",
+      "work_id": "work-80ed49d9841e",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-64a56a02d77623a0",
+      "file": "calibrated-64a56a02d77623a0.txt",
+      "sha256": "660ef1510209240a6612cf2fa5d41bfaf9e5412707fa115358cd842ee6536473",
+      "title": "春娇与志明",
+      "work_id": "work-78deab227ff1",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-64e7c19b47eddaed",
+      "file": "calibrated-64e7c19b47eddaed.txt",
+      "sha256": "c72f319339c162df5e55aa298f63b988eddc0c3a54621a3ac5b7690528acda9d",
+      "title": "Misty Memory",
+      "work_id": "work-eda57a887242",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=F79Rsr2rGe-3",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-650dc9c2b1ea11dc",
+      "file": "calibrated-650dc9c2b1ea11dc.txt",
+      "sha256": "d5a5cd13e7401a188641292c6312ac740464c9ab2524c683ea096a95856cc6a6",
+      "title": "上课铃声",
+      "work_id": "work-333c7144abb7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6573bfa88ee5467d",
+      "file": "calibrated-6573bfa88ee5467d.txt",
+      "sha256": "d1c8a6f4e000bf9c7115f9ea133a94e669b8a3bae1808280e074ba371ec4d3de",
+      "title": "和所有的烦恼说拜拜",
+      "work_id": "work-dcf76f1cfcdf",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-66792238d0b9fbf0",
+      "file": "calibrated-66792238d0b9fbf0.txt",
+      "sha256": "6f93736edea74015b2a5345422a2c49ae747b08c547c278c69c10b0803031a47",
+      "title": "逍遥叹",
+      "work_id": "work-deck-a332a5b7f529",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%80%8D%E9%81%A5%E5%8F%B9-%E8%83%A1%E6%AD%8C-wobushigesheng-a42abb1cf8.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-66f85362d4632d2f",
+      "file": "calibrated-66f85362d4632d2f.txt",
+      "sha256": "a353b3b089a41bef4df41076e01ac010d54461cf0a7c1b7d8ed4aaa36abb8496",
+      "title": "天亮以前说再见",
+      "work_id": "work-f1689afcfdf1",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6701eb6939cef474",
+      "file": "calibrated-6701eb6939cef474.txt",
+      "sha256": "ac40f3aa0dbc43d68674865fdd175e0705b5a9ac5060eeec67440f59e3b3f68e",
+      "title": "枫",
+      "work_id": "work-deck-e8459b100fd6",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9E%AB-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8c78a83592.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-683bcc9b9959b195",
+      "file": "calibrated-683bcc9b9959b195.txt",
+      "sha256": "b355b50629fd525166e0bfdc8969008d3c25120ceb8fbafdfed1afef38cfe39f",
+      "title": "童年",
+      "work_id": "work-a7fc2f2304b5",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-689da808d1081e89",
+      "file": "calibrated-689da808d1081e89.txt",
+      "sha256": "d16860c80b2c1f6db86d9b6533ca7ee34dce113307a7868ed75b33462770471a",
+      "title": "国际歌",
+      "work_id": "work-deck-0708f4607bc2",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%9B%BD%E9%99%85%E6%AD%8C-%E4%BD%9A%E5%90%8D-Jiko-f0814657db.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-68d439f1c997e6d5",
+      "file": "calibrated-68d439f1c997e6d5.txt",
+      "sha256": "eec0a4851b14c2fc2cfcfdc045ff295466ecb6a4202ae9cff8bcdf224c14b47a",
+      "title": "我不难过",
+      "work_id": "work-2379e44d8381",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-68ea2dfa91e21816",
+      "file": "calibrated-68ea2dfa91e21816.txt",
+      "sha256": "335b044bed9827d3d3a8116f30a1b462b85cad8c324c3c90c0ba4691b1d1e31d",
+      "title": "最佳损友",
+      "work_id": "work-deck-6a40e3118ed6",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%80%E4%BD%B3%E6%8D%9F%E5%8F%8B-%E7%AE%80%E7%9F%AD%E7%89%88-%E9%99%88%E5%A5%95%E8%BF%85-QvQemmm-aa0562e1b5.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6a5cbb1bc70a8809",
+      "file": "calibrated-6a5cbb1bc70a8809.txt",
+      "sha256": "e12620792e085dd0ccb1f894e414a087e9528dee055601acc673bc4125cdeb4b",
+      "title": "进击的巨人",
+      "work_id": "work-4ac03a541c5c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6bcf3d8e68745eed",
+      "file": "calibrated-6bcf3d8e68745eed.txt",
+      "sha256": "4959b3e1afd193b63f84ce47756ff7588d1b954538f55040b787a59744bd4426",
+      "title": "爱错",
+      "work_id": "work-dbf3584d0b43",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6bf77e7efc626a72",
+      "file": "calibrated-6bf77e7efc626a72.txt",
+      "sha256": "42a552a9383ac21b3051f276584761e5ef5fb2e634215605b2e45a7aa7b80cc2",
+      "title": "说好的幸福呢",
+      "work_id": "work-20bc937b7768",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6cd7db5139a77e67",
+      "file": "calibrated-6cd7db5139a77e67.txt",
+      "sha256": "53d9e11a4bc21b3c17f44719dc12ddea2c3a0f554d5011a913e2bcb4efd5358b",
+      "title": "未闻花名",
+      "work_id": "work-deck-1dfd3ba9333c",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D-1-19thill-c1539735cd.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6d1fd6801c786cc0",
+      "file": "calibrated-6d1fd6801c786cc0.txt",
+      "sha256": "f5e3354629ef61c8def33cf3b23073478596e2d83d166fc65a804b95dc02be5a",
+      "title": "蒲公英的约定",
+      "work_id": "work-b0ac9f598a21",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6d9be0048192a490",
+      "file": "calibrated-6d9be0048192a490.txt",
+      "sha256": "abaf670ef9af3f0564a0c342703ed3e96c3b396c391f13b5cb0938f9f705eedb",
+      "title": "一个人挺好",
+      "work_id": "work-194316ec94f3",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6db0eb0f40f9ecec",
+      "file": "calibrated-6db0eb0f40f9ecec.txt",
+      "sha256": "e6c769cdc4a7c6d392101c78b16fbe83b992458e5314ab7e5b1fde33c3256244",
+      "title": "东南苦行山",
+      "work_id": "work-29145bc9acba",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6e0790d644c54020",
+      "file": "calibrated-6e0790d644c54020.txt",
+      "sha256": "ff44fc94520aa6c4c63f8aae923200e1260101bf26d1cb0ca0773eb6226f5e8e",
+      "title": "父亲",
+      "work_id": "work-father",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E7%88%B6%E4%BA%B2.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-6f7a995b5f92fb0c",
+      "file": "calibrated-6f7a995b5f92fb0c.txt",
+      "sha256": "6045e58d750ce2409df4cd69d5d027269a920fd8f3805d0b247367cfbe19e6b0",
+      "title": "春日影",
+      "work_id": "work-spring-shadow",
+      "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E6%98%A5%E6%97%A5%E5%BD%B1%EF%BC%88CRYCHIC%20ver.%EF%BC%89%E5%B9%B2%E5%87%80%E6%97%A0%E6%9D%82%E9%9F%B3%2C%E9%80%82%E5%90%88%E4%B8%89%E8%A7%92%E6%B4%B2.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-723f1a01dcf7a311",
+      "file": "calibrated-723f1a01dcf7a311.txt",
+      "sha256": "60453ceec7617c2fb356923b54dca6add1856763579a877cf7d912ea1d0c761e",
+      "title": "哀与悲",
+      "work_id": "work-deck-e4fc5ca77a30",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%93%80%E4%B8%8E%E6%82%B2-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-c87fbf7889.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7244cdb82d900be2",
+      "file": "calibrated-7244cdb82d900be2.txt",
+      "sha256": "ee4ada70e32b62c44cc9072d462d8847048939480000416502f8d284906b75ae",
+      "title": "Take Me Hand(简谱)",
+      "work_id": "work-aff6c3cc78b6",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7346327a59cd2ba8",
+      "file": "calibrated-7346327a59cd2ba8.txt",
+      "sha256": "720a6e0576b9fbdbba2f69619d3bcbe2863365dcc0582d4d41cbd6e34794dc46",
+      "title": "Travelers",
+      "work_id": "work-25c40310c9dc",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7379c6eeb28abb78",
+      "file": "calibrated-7379c6eeb28abb78.txt",
+      "sha256": "a0bf7a44f5d40500327f7da83490b9a672b8a052977110f8125ad27a1bd26284",
+      "title": "I Really Want to Stay at Your House",
+      "work_id": "work-e90d862b7dd7",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=zK9OXkupBQ_U",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-751c5f6d6d907903",
+      "file": "calibrated-751c5f6d6d907903.txt",
+      "sha256": "0db145e1694273e7fb22f930d108da412730c749c87498fd403fb7ac794aa820",
+      "title": "you are my sunshine",
+      "work_id": "work-fbc15267a9be",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7535c72dfba8a2ca",
+      "file": "calibrated-7535c72dfba8a2ca.txt",
+      "sha256": "e1ceacd0405cd131b04ff2b95c69d236b185ddd616b5afbc6f2fd55e9764c37e",
+      "title": "起风了",
+      "work_id": "work-b22ed4e45f9c",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%B5%B7%E9%A3%8E%E4%BA%86-%E4%B9%B0%E8%BE%A3%E6%A4%92%E4%B9%9F%E7%94%A8%E5%88%B8-%E6%A7%91%E6%A7%91%E6%A7%91-5a742bcca665ae60f93f7.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-75bb4ce2209ca952",
+      "file": "calibrated-75bb4ce2209ca952.txt",
+      "sha256": "1036ba3f607d043f2a2449964791cc28f6f730a90870d1a5ab7e95844abe181c",
+      "title": "爱的故事上集前奏",
+      "work_id": "work-734d8eab2066",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-76dd4337b9574ee5",
+      "file": "calibrated-76dd4337b9574ee5.txt",
+      "sha256": "438f88b6ca92b5fa77e6dce2d947feae1a50ab73bbb70b69657edee66c79387e",
+      "title": "天外来物",
+      "work_id": "work-deck-e8a2cb61a006",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9-%E8%96%9B%E4%B9%8B%E8%B0%A6-ZhGr-d4e8d4c70f.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7777d9f833fa62c0",
+      "file": "calibrated-7777d9f833fa62c0.txt",
+      "sha256": "f1b4509fce62faebc8ec4e931ff5ae7cbe8378d675e4f08f9325624907b0de85",
+      "title": "强军战歌",
+      "work_id": "work-75481b482f96",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7a4998550dfdd3da",
+      "file": "calibrated-7a4998550dfdd3da.txt",
+      "sha256": "1ce7dc088919390551856f4369d044626179b16ad661e4ece1c00211b3477561",
+      "title": "第57次取消发送",
+      "work_id": "work-1eeff7bfe4e0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7bc0695a09ffba2d",
+      "file": "calibrated-7bc0695a09ffba2d.txt",
+      "sha256": "c2ee82cc3eb8dfe9b7632dd8e2d62fc5e052a3519f2b8ebb925e917b55ae0774",
+      "title": "唯一",
+      "work_id": "work-a415b2eb6a0d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7c43d8a28c1dafd6",
+      "file": "calibrated-7c43d8a28c1dafd6.txt",
+      "sha256": "2b8d2a30280b88e7fd9eee97bb192157da8263a07c03a24febfcc348b09d9323",
+      "title": "エイミー",
+      "work_id": "work-3eed2cf902d5",
+      "source_url": "https://www.bilibili.com/read/cv53069097",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7eeb3c31c86da4dd",
+      "file": "calibrated-7eeb3c31c86da4dd.txt",
+      "sha256": "5608229fbf5c595ae7cdfc762a1ca151e2b2a99635c0f92a7b8f09d7bb399ddc",
+      "title": "浴室",
+      "work_id": "work-ba32a4c54d20",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-7f80fc8d0a27579e",
+      "file": "calibrated-7f80fc8d0a27579e.txt",
+      "sha256": "87cbd10279b6ff1044bcbd032c5684b1aa0bff0773d37c952f426a431237d006",
+      "title": "我好像在哪见过你",
+      "work_id": "work-deck-4bd8fe67be88",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-a164108cd0.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8090a9c834876786",
+      "file": "calibrated-8090a9c834876786.txt",
+      "sha256": "32c63a0af1c71f354da9cf967cbdd06379601bf72e447a2ca54dd1b64aa6d84f",
+      "title": "反乌托邦",
+      "work_id": "work-318b5815a876",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-81c8b8da9128a2b2",
+      "file": "calibrated-81c8b8da9128a2b2.txt",
+      "sha256": "b82101a5b9a1bc390021cd8d905cc080bceecf3330a940d78cbd0848fe234262",
+      "title": "红凯之歌",
+      "work_id": "work-deck-a52fdaa99ded",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E7%BA%A2%E5%87%AF%E4%B9%8B%E6%AD%8C-%E6%AC%A7%E5%B8%83%E5%A5%A5%E7%89%B9%E6%9B%BC-%E5%B0%8F%E8%A5%BF%E8%B4%B5%E9%9B%84-worldLink-e74ffb220b.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-826e26b406365300",
+      "file": "calibrated-826e26b406365300.txt",
+      "sha256": "57eeb02cd7c30c279e9a1d478f1f1256d0c25c48fe50426099a3083e444411d0",
+      "title": "不谓侠",
+      "work_id": "work-dd60959aaf0a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-829dab11bb1ab6b0",
+      "file": "calibrated-829dab11bb1ab6b0.txt",
+      "sha256": "4dd518e3dd9d27ae1837d85baf57713d2238e6ff81f32f72416b0618be74ea4e",
+      "title": "养鼠鼠的小曲",
+      "work_id": "work-deck-298bb92d5131",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%BC%A0%E9%BC%A0%E7%9A%84%E5%B0%8F%E6%9B%B2GHUB-11116-leifeng-ffb7708050.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-83379569807fe869",
+      "file": "calibrated-83379569807fe869.txt",
+      "sha256": "000e40601365e28a9f9aebda5e7a0c3ab8726ee3afdf7a15b0e017c5abe8c3b4",
+      "title": "克罗地亚狂想曲",
+      "work_id": "work-e8a9601f69ab",
+      "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/croatian/croatian-rhapsody.mid",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-85ea6e125618e2d2",
+      "file": "calibrated-85ea6e125618e2d2.txt",
+      "sha256": "056a9384f16e36002eb9a9548c50e17d40f767644789f1eea7c813e31ad03724",
+      "title": "杀死那个石家庄",
+      "work_id": "work-8de79891e039",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-86185e27b1ff15a0",
+      "file": "calibrated-86185e27b1ff15a0.txt",
+      "sha256": "13e324089c0f2b6c29bcbd351b1a6bdb1892d551456cc74dcfee6c5d3ee142e1",
+      "title": "欢乐斗地主",
+      "work_id": "work-d495f371b50d",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E6%9B%B2%E8%B0%B1?modal_id=7685318024852753705",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-863008609185f194",
+      "file": "calibrated-863008609185f194.txt",
+      "sha256": "e27af9565808f1ac2331cc03c339204c25a6428bea520aa58a91b0a85cc68aa2",
+      "title": "喀秋莎",
+      "work_id": "work-10e764db8602",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=a0Syq1Uvp2DA",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-866640033742f87a",
+      "file": "calibrated-866640033742f87a.txt",
+      "sha256": "5f267278df0d67a8f37240f5137680f366df4954905d74fcc82b335b9941c008",
+      "title": "当那一天来临",
+      "work_id": "work-02c0dec353ab",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-86e96ebb60dee537",
+      "file": "calibrated-86e96ebb60dee537.txt",
+      "sha256": "8659e3a5e1c46894622789d9fbc6174df8571805761bfbaff4450d95625f8ccf",
+      "title": "花海",
+      "work_id": "work-deck-030917928649",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E8%8A%B1%E6%B5%B7.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-886620e00edfd351",
+      "file": "calibrated-886620e00edfd351.txt",
+      "sha256": "b0ee5b22317a4097dfe88e64261474a0a49992aedc6d232cfd13d553903ccd6c",
+      "title": "寂寞的人伤心的歌",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-888cd68e1afd2288",
+      "file": "calibrated-888cd68e1afd2288.txt",
+      "sha256": "2bcd42ba4941b9a78bfc89e552ae89a0a44cb18afd13f0f931be6272f834aa12",
+      "title": "你看到的我(大哥小曲)",
+      "work_id": "work-633dba425b38",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=1r0Eso9G7U7D",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-89e067ac73c12c02",
+      "file": "calibrated-89e067ac73c12c02.txt",
+      "sha256": "ec5420ff27b25de5689ad0e52b1fb39ea66baa96275377948e446b7eea89947c",
+      "title": "大鱼",
+      "work_id": "work-c13d1fd7d68b",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-89e542d3737a1d66",
+      "file": "calibrated-89e542d3737a1d66.txt",
+      "sha256": "502dc7d37fc6691b6260f94f7b5f4c362037bcba8b916d399fd86a368cb50787",
+      "title": "琵琶曲",
+      "work_id": "work-c26930029810",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8a43a47371f5603e",
+      "file": "calibrated-8a43a47371f5603e.txt",
+      "sha256": "b9a7a6f13a219e2753abd11fccd96a0991ae840df63b19d23cbc03771e53a1e6",
+      "title": "红尘客栈",
+      "work_id": "work-8f94ff8e4060",
+      "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88-%E5%AE%8C%E6%95%B4%E5%A5%BD%E5%90%AC%E7%89%88-%E5%91%A8%E6%9D%B0%E4%BC%A6.eop",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8ad6c8fd0ac99cc1",
+      "file": "calibrated-8ad6c8fd0ac99cc1.txt",
+      "sha256": "deac87c8e83e733f745a5a7d305695d2dc82e25e4cc5f2081f8ff8f99b1622f7",
+      "title": "雪之华",
+      "work_id": "work-deck-fc9521587689",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E9%9B%AA%E4%B9%8B%E5%8D%8E-%E4%B8%AD%E5%B2%9B%E7%BE%8E%E5%98%89-Jiko-803ba1ac7b.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8c3ca297164992d3",
+      "file": "calibrated-8c3ca297164992d3.txt",
+      "sha256": "1a2ead5f78fa1f74a9d45d491fda9963ab95be86176a6caac866a1437e3ed867",
+      "title": "亲爱的旅人",
+      "work_id": "work-2a79ce8cb8d7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8ca25963bcab05d8",
+      "file": "calibrated-8ca25963bcab05d8.txt",
+      "sha256": "32989d2d8c15d98c90e9553e4d24502e08bcc11b513dcfe725f6d3a99b7c5fad",
+      "title": "猪猪侠",
+      "work_id": "work-c4c7faf127e7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8ca51165cf58aa42",
+      "file": "calibrated-8ca51165cf58aa42.txt",
+      "sha256": "9dff23ded71fdf31eb9f5f418a2bf5a585ecc2cb9dff4884ef873d8f645023a0",
+      "title": "友谊地久天长",
+      "work_id": "work-b336e93f61b2",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%8F%8B%E8%B0%8A%E5%9C%B0%E4%B9%85%E5%A4%A9%E9%95%BF.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8d125dc968f6716f",
+      "file": "calibrated-8d125dc968f6716f.txt",
+      "sha256": "ec307bd885119c774fa49d6ff5e52a4e168cd7cff619d578bae71b524102ecf7",
+      "title": "得吃舞",
+      "work_id": "work-dd3001f6ef33",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8d6ec76a484020af",
+      "file": "calibrated-8d6ec76a484020af.txt",
+      "sha256": "da1a05a719e01345c6de2b66e9b297b4dab055f0f6b504152a4169289ad110b9",
+      "title": "加勒比海盗（当渔政的来）",
+      "work_id": "work-ebae18240f14",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-%E5%BD%93%E6%B8%94%E6%94%BF%E7%9A%84%E6%9D%A5-%E6%B5%B7%E7%9B%97-11111-744ed99eab5584add12c7.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-8db4bc9dc426df2e",
+      "file": "calibrated-8db4bc9dc426df2e.txt",
+      "sha256": "b23153f4a1c53f89e9c885d30f50b91f12433e053220f79b6b0e533934ec0cee",
+      "title": "One Last Kiss",
+      "work_id": "work-634ba8da08e9",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=YG3qHumO5SW6",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-922ebe050f197ad3",
+      "file": "calibrated-922ebe050f197ad3.txt",
+      "sha256": "0beb5751f36c7837460b2d7acd95e5d1ab9d2088ef8acc23c9c52643ad2901b3",
+      "title": "蝶吹笛子",
+      "work_id": "work-a044af0e61e9",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9318b26350e65288",
+      "file": "calibrated-9318b26350e65288.txt",
+      "sha256": "c29b5ebc42ed93b66b30fb3eeedf3f4b30e58748609187735e2f1fd0b1d3a66b",
+      "title": "cry for me",
+      "work_id": "work-33c2a135090f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9363967916d217d4",
+      "file": "calibrated-9363967916d217d4.txt",
+      "sha256": "e4e7c3d6ca3dae3be78be44d872679a8b3acfd15ce109844b49db46313169ff0",
+      "title": "大海航行靠舵手",
+      "work_id": "work-9e5bfce23138",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-93e6668555b25272",
+      "file": "calibrated-93e6668555b25272.txt",
+      "sha256": "254021336f598e7903c17d3d71f845e738c413fbfd1771c80f0043c3f89fc521",
+      "title": "放晴(晴る)",
+      "work_id": "work-f479cbfd52be",
+      "source_url": "https://www.bilibili.com/read/cv53069007",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9445c0e871033596",
+      "file": "calibrated-9445c0e871033596.txt",
+      "sha256": "832973ed24628018a9c568e033fc64331f01dbf8fe4c3f0a65184b59b74a4d98",
+      "title": "喀秋莎",
+      "work_id": "work-10e764db8602",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E5%96%80%E7%A7%8B%E8%8E%8E.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-94f64ba2edd916da",
+      "file": "calibrated-94f64ba2edd916da.txt",
+      "sha256": "3f7335be978c1b893aba23d71eafdd7a8aaa26a1d115328a1ffacbe6572fd87d",
+      "title": "老男孩",
+      "work_id": "work-deck-c31d3026ae98",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9943ca6a7e8cc863",
+      "file": "calibrated-9943ca6a7e8cc863.txt",
+      "sha256": "45a0b171400d8de643d72031fae87dd94f19081f37049bb066ad94c42003232e",
+      "title": "欢乐斗地主",
+      "work_id": "work-d495f371b50d",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%AC%A2%E4%B9%90%E6%96%97%E5%9C%B0%E4%B8%BB-33-33-47-2f2ad966299ca4a1a70c4.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-998bd9e86b357243",
+      "file": "calibrated-998bd9e86b357243.txt",
+      "sha256": "0d725d3853a360c9a33254b456703f98388dda2105abb2c9eafd55c512e15ce6",
+      "title": "远航星的告别",
+      "work_id": "work-voyaging-star",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9a3709c06a8b993f",
+      "file": "calibrated-9a3709c06a8b993f.txt",
+      "sha256": "67613b5b5729999ca46f18d9c80032d29f5986b8e54190240d48deb61d568893",
+      "title": "成都",
+      "work_id": "work-d22258711825",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9b2d56a7bcaa4958",
+      "file": "calibrated-9b2d56a7bcaa4958.txt",
+      "sha256": "b3d05227e87578f68f153e15919bb1199a9c640f82424baa9e314b21b81da3df",
+      "title": "黄昏之时",
+      "work_id": "work-7d78f6e3f41f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9b700dd3ef76ab43",
+      "file": "calibrated-9b700dd3ef76ab43.txt",
+      "sha256": "600aec312dd4167798868959ee97b7fc6af44fe23cd090e8195da89b9c1dc8c0",
+      "title": "死别",
+      "work_id": "work-farewell",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9b70ae9e0413271a",
+      "file": "calibrated-9b70ae9e0413271a.txt",
+      "sha256": "25275cbbd981a049315d0c5f4fe711e17d01ed557a6ce8d88a2ea85094f8341a",
+      "title": "光年之外",
+      "work_id": "work-76f3039ebe89",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9debeb925318cf01",
+      "file": "calibrated-9debeb925318cf01.txt",
+      "sha256": "bf24de0b01afacd82856153ae1ef8d0579b40ac8e61d0e054b439b55b6ff9703",
+      "title": "你把爱情给了谁-前奏",
+      "work_id": "work-cf54c85aa4cb",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9e3baaff7da32535",
+      "file": "calibrated-9e3baaff7da32535.txt",
+      "sha256": "698b211ab13b5c98ba8c135d1d0c451bb3aed82320b0be45fe5d40078c9ca57b",
+      "title": "心之火",
+      "work_id": "work-dc8e6f1daacc",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9e93473219ca893a",
+      "file": "calibrated-9e93473219ca893a.txt",
+      "sha256": "763cf968de5349fe4f217ac0e6bcf4ee274201d0c5d5d8ea3fb44b18eabbf374",
+      "title": "富士山下",
+      "work_id": "work-e33b237a7e1f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9ee0768c8de60985",
+      "file": "calibrated-9ee0768c8de60985.txt",
+      "sha256": "1147abe217e54f5134ba1cbddf0cd8b2d2a5b0671f67770f9d02d2ea90509725",
+      "title": "夜航星",
+      "work_id": "work-2ae2808181a9",
+      "source_url": "https://www.bilibili.com/video/BV1DjhH6fEQj/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9f06dead8d76de62",
+      "file": "calibrated-9f06dead8d76de62.txt",
+      "sha256": "3244b5a5c3e3a1ab37dab92c5e2bf1f347fd0816cec021737b101b388b9c8a76",
+      "title": "星降る海",
+      "work_id": "work-starfall-sea",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E6%98%9F%E9%99%8D%E3%82%8B%E6%B5%B7%20bpm101.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9f24a326c60ba318",
+      "file": "calibrated-9f24a326c60ba318.txt",
+      "sha256": "bf0c6572a90a50bc145a43e6cc74f47a0d02c37d4e29b91076bd86219007fbb9",
+      "title": "春日影",
+      "work_id": "work-spring-shadow",
+      "source_url": "https://raw.githubusercontent.com/AlexBybye/Delta_Music_Force/175cd31d66ed6245ca217023414b1d4cfab43e03/%E6%9B%B2%E5%BA%93/%E6%98%A5%E6%97%A5%E5%BD%B1.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9f528288261c2f44",
+      "file": "calibrated-9f528288261c2f44.txt",
+      "sha256": "95562be93127757e1602f7acbdfac7779d49313f6e5309976a3cfc1f3e343bdf",
+      "title": "荒",
+      "work_id": "work-deck-3a55e6aec3a6",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-9fb420fd88a0d0c2",
+      "file": "calibrated-9fb420fd88a0d0c2.txt",
+      "sha256": "c1ce33cc7ddd864c142e4c06e21c15b3d8d99624ccca7c1612afb701d60cf26f",
+      "title": "英雄-奈克赛斯主题曲",
+      "work_id": "work-0cd37fab97bc",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a1f8e78e15036f34",
+      "file": "calibrated-a1f8e78e15036f34.txt",
+      "sha256": "c2d33765ded823fc77e2a96526fcd17137d5cf1d2e2bcbb1643719a77ccd2737",
+      "title": "世上只有妈妈好",
+      "work_id": "work-6e28c160aca4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a295710fe92fea16",
+      "file": "calibrated-a295710fe92fea16.txt",
+      "sha256": "2ee860fbbd0c146113a164f43a46df63c28d97b7b1808e3f78480c33062865fe",
+      "title": "エイミー",
+      "work_id": "work-3eed2cf902d5",
+      "source_url": "https://www.youtube.com/watch?v=KEEdGm0DYNo",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a2a5fb6b8ff56193",
+      "file": "calibrated-a2a5fb6b8ff56193.txt",
+      "sha256": "707f05190bf7576411deae708096d1c2f3323b2b1e9d60ede41fa577762504a9",
+      "title": "天空之城",
+      "work_id": "work-deck-5ab2af376d26",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E-%E4%B9%85%E7%9F%B3%E8%AE%A9-Jiko-3d39404450.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a3292a8d2e445f1d",
+      "file": "calibrated-a3292a8d2e445f1d.txt",
+      "sha256": "89bd55b5b516f3d34dbcb3697d114eba2589c6b41685a391c946f734e3ae698c",
+      "title": "萱草花",
+      "work_id": "work-9ee4c2b19799",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a34be3975021e99f",
+      "file": "calibrated-a34be3975021e99f.txt",
+      "sha256": "21adf6300477fa2b45f155ef29be5ab5db9a43e9cbc380187468f28b77a0c071",
+      "title": "土耳其进行曲",
+      "work_id": "work-deck-829520737614",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%9C%9F%E8%80%B3%E5%85%B6%E8%BF%9B%E8%A1%8C%E6%9B%B2-%E8%8E%AB%E6%89%8E%E7%89%B9-Jiko-0fc06d75c0.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a352b9ae16ce4acb",
+      "file": "calibrated-a352b9ae16ce4acb.txt",
+      "sha256": "31ccc15d114b6d5b343158164e6aac62922fecf2aa5ae83e3d776d49df124129",
+      "title": "海屿你",
+      "work_id": "work-31d9743659b0",
+      "source_url": "https://www.bilibili.com/read/cv53035053",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a3f21476cf5cb664",
+      "file": "calibrated-a3f21476cf5cb664.txt",
+      "sha256": "36cce303518d218e218545e9fc21edcb147ff086ce7021cc56e7c63e9b27759f",
+      "title": "友谊地久天长",
+      "work_id": "work-b336e93f61b2",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a4b04294c7a1e12e",
+      "file": "calibrated-a4b04294c7a1e12e.txt",
+      "sha256": "08e9f90d83b5dc37a3a7915130c99a0988d778f00be2fa5d7683fd63c15c474c",
+      "title": "歌唱祖国",
+      "work_id": "work-deck-7061e1e2fcec",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%AD%8C%E5%94%B1%E7%A5%96%E5%9B%BD-%E4%B8%AD%E5%9B%BD%E5%B9%BF%E6%92%AD%E8%89%BA%E6%9C%AF%E5%9B%A2%E5%90%88%E5%94%B1%E5%9B%A2%E6%BC%94%E5%94%B1-Meimei-20b83f42b7.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a5ad236bd2a2764a",
+      "file": "calibrated-a5ad236bd2a2764a.txt",
+      "sha256": "1c5689c104d1592d1594558a6f79030de5adaca2f22367f4555afc4396f1edf6",
+      "title": "unhappy",
+      "work_id": "work-2e95d0e38d8d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a6d4ac50fc3ce5d4",
+      "file": "calibrated-a6d4ac50fc3ce5d4.txt",
+      "sha256": "a53eb8ca73d1c4c335265e27f14256e1e0a745e2ca0fb75176722e8b019dc37a",
+      "title": "薪火永燃",
+      "work_id": "work-45614eec3954",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a750e0dd64576ac0",
+      "file": "calibrated-a750e0dd64576ac0.txt",
+      "sha256": "1b133ff9c25e0e37f0c261ea1dc4e89ee694ec93c0ade638d8046d6e2f4c23b9",
+      "title": "梦的翅膀受了伤",
+      "work_id": "work-997374e41790",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-a8452af29bf7bd6a",
+      "file": "calibrated-a8452af29bf7bd6a.txt",
+      "sha256": "374fbf2fa86448f505b12f86f3fccb4bc174cc2112caabe5433b0391da0ca8db",
+      "title": "我还有点小糊涂",
+      "work_id": "work-49265939f315",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7686525482061549989",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-abe4436aed978539",
+      "file": "calibrated-abe4436aed978539.txt",
+      "sha256": "841322b593808ae0e98317342c930c41fc56022a9c3a57b0cfd122e948a0513f",
+      "title": "新宿决战(雨爱dj)",
+      "work_id": "work-9a91eae0dbbe",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ae50376e157b2f02",
+      "file": "calibrated-ae50376e157b2f02.txt",
+      "sha256": "42d72d945d9dced77ef6a17717b0e757ad76ee12c3f27bf6ec7c5ad5b357ca38",
+      "title": "父亲",
+      "work_id": "work-father",
+      "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/%E7%88%B6%E4%BA%B2.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ae60412c95ff15c4",
+      "file": "calibrated-ae60412c95ff15c4.txt",
+      "sha256": "cf4364f200cd833ed9d2daf8e5f232a0e6d79c9ff2b6374a9dd94d65351ee1b0",
+      "title": "Butterfly",
+      "work_id": "work-fcfd075cbe36",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-aea840bf32d89048",
+      "file": "calibrated-aea840bf32d89048.txt",
+      "sha256": "745ca681df6d92cfb952b34fb18f7b6c4041b6c215b858881bd5774d8d1b9e17",
+      "title": "Time to love",
+      "work_id": "work-d6aec2e359dc",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-af26f61674debc9f",
+      "file": "calibrated-af26f61674debc9f.txt",
+      "sha256": "884c2cca8840bd8f42364dba7bbaa2a20674c7290bffd647d64864466c0c2c5b",
+      "title": "戒烟",
+      "work_id": "work-1b5a288e9c96",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%88%92%E7%83%9F-%E6%9D%8E%E8%8D%A3%E6%B5%A9-11111-209a1b0854eb5e02d40f0.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-af5fc1192b45553c",
+      "file": "calibrated-af5fc1192b45553c.txt",
+      "sha256": "3ce1acadcae919e5afd8e3dcbda980671a7ed50b8e34434f9a29bf1747b580ca",
+      "title": "飞鼠进行曲",
+      "work_id": "work-d0900a7cf8b6",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-af7b7ca6fe6a8d0c",
+      "file": "calibrated-af7b7ca6fe6a8d0c.txt",
+      "sha256": "187b6f6e6a43073becc6faa295ef9cc2ade6ad84ec35f3d5172d0e1f6dc81120",
+      "title": "雨爱",
+      "work_id": "work-rain-love",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-afa9745d08e5c60e",
+      "file": "calibrated-afa9745d08e5c60e.txt",
+      "sha256": "51bfaf04b995f49aa5d46f8df7b6e71b305f9a1122a667ed2842213547a5f6b0",
+      "title": "寂寞的人伤心的歌 加快版",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C-%E5%8A%A0%E5%BF%AB%E7%89%88-%E9%BE%99%E6%A2%85%E5%AD%90-%E6%9D%A8%E6%B5%B7%E5%BD%AA-%E6%A7%91%E6%A7%91%E6%A7%91-ea169bbaa7c41e85ea952.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b086c8afc0c935dc",
+      "file": "calibrated-b086c8afc0c935dc.txt",
+      "sha256": "77b2787df13a43fba5670dc80e40b25851c53d9e294f1d301e5744e26bbe6f2c",
+      "title": "爱错",
+      "work_id": "work-dbf3584d0b43",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7686525482061549989&type=general",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b0dad000af08c430",
+      "file": "calibrated-b0dad000af08c430.txt",
+      "sha256": "ee4c3c38ad5c025949f19b7baf92155e8f802d993d301a4155a956d44b53a68c",
+      "title": "失眠",
+      "work_id": "work-6ba177ab19c4",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b144d233aed250a1",
+      "file": "calibrated-b144d233aed250a1.txt",
+      "sha256": "5cfcd7cacc1537aa0b1fe26d3f347d7a8e6602f85cbc4fed3feba0eed0706d01",
+      "title": "青花瓷",
+      "work_id": "work-aca7aa91d565",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E9%9D%92%E8%8A%B1%E7%93%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E6%A7%91%E6%A7%91%E6%A7%91-0eff17735794f18b01970.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b17bad2d823f9d07",
+      "file": "calibrated-b17bad2d823f9d07.txt",
+      "sha256": "033f91591c0c8b6bad80bb76edc0f8a1f1ef208787b19bdc289854e305164700",
+      "title": "City of Stars 爱乐之城主题曲",
+      "work_id": "work-deck-ed35667a3774",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/City-of-Stars-%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E%E4%B8%BB%E9%A2%98%E6%9B%B2-%E9%9B%B7%E7%B1%B3%E5%85%8B%E6%96%AF-Meilichios-73624cf131.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b1b45d3b848be702",
+      "file": "calibrated-b1b45d3b848be702.txt",
+      "sha256": "b972167b358d166f0d02b9005941ccd8f7f6856cb2b9aa79e5a5d92a46286459",
+      "title": "加勒比海盗",
+      "work_id": "work-ebae18240f14",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=pHE4TTltcveP",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b1b7f64a3a906c52",
+      "file": "calibrated-b1b7f64a3a906c52.txt",
+      "sha256": "ff76749c86a15abfb69ce514849827f9dd3d2b926949c819e080d28cf9687ebf",
+      "title": "七里香",
+      "work_id": "work-deck-f9bed8df32ff",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%B8%83%E9%87%8C%E9%A6%99-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-8c538e936a.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b2b180ef4eb13e32",
+      "file": "calibrated-b2b180ef4eb13e32.txt",
+      "sha256": "e6b39c22f6f00ec4838e646facbbcae3371c44a8360e21a7974a902733998e53",
+      "title": "See You Again",
+      "work_id": "work-885a604c2096",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687430539896294694",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b2d42446616f171b",
+      "file": "calibrated-b2d42446616f171b.txt",
+      "sha256": "2dee081297e1925ba6ced5c150c593e596f8dcf3ea8c5012c2f56d36ae043d03",
+      "title": "欢乐斗地主",
+      "work_id": "work-d495f371b50d",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=WLvmb-w4cyiF",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b2f46d201a1ca0e2",
+      "file": "calibrated-b2f46d201a1ca0e2.txt",
+      "sha256": "fe8205059dc516006adadd594d0feb07fe1f3b804d7c1e7058e79d3cff75d990",
+      "title": "晴天",
+      "work_id": "work-sunny-day",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b469a4f71d9c90c8",
+      "file": "calibrated-b469a4f71d9c90c8.txt",
+      "sha256": "13594b220a6077d71ad4b0f97c5a648e577f42928e44642bf3a50a290b2d36bb",
+      "title": "稻香",
+      "work_id": "work-27a4aca7d608",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=qRkdlFf0qtvT",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b485407227535f43",
+      "file": "calibrated-b485407227535f43.txt",
+      "sha256": "37fb939cf2dfd478634695547e6bdfcebdb9752867ddcec31c99796d2c1fe966",
+      "title": "打上花火",
+      "work_id": "work-684fea9d16cf",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b4e1c41e91f21701",
+      "file": "calibrated-b4e1c41e91f21701.txt",
+      "sha256": "b04efc0fb68e799404709a327ef454a136af05718d7bee1a4cd60e6f12c8b268",
+      "title": "想见你想见你想见你",
+      "work_id": "work-3acf763ad898",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-b8883bea86b09937",
+      "file": "calibrated-b8883bea86b09937.txt",
+      "sha256": "eba17b891e3c587b613847d59058a196bbcde2fcf06663ad94e3f75682d27921",
+      "title": "亮剑主题曲",
+      "work_id": "work-3cf8072a4435",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bc2095b5dc055096",
+      "file": "calibrated-bc2095b5dc055096.txt",
+      "sha256": "323a4bf026efd9fbd00424c0d1ca6e1fe5451d72f385e78140c0bbc8e7710bb2",
+      "title": "兰亭序",
+      "work_id": "work-5baf8dca3f77",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bcc53c122478f7bd",
+      "file": "calibrated-bcc53c122478f7bd.txt",
+      "sha256": "2873166e1df59b8c0fe14634ca2fce9d47659a379453323ac098c75534cc1232",
+      "title": "这么可爱的鼠鼠可以养嘛",
+      "work_id": "work-1213f51e7e6d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bcd10d1bd9e31f02",
+      "file": "calibrated-bcd10d1bd9e31f02.txt",
+      "sha256": "b926545965752c3128755d39bf8f413d681ba1451d3a8e854f32e32a473797e4",
+      "title": "His_Theme",
+      "work_id": "work-b9be4b91bd3d",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/His-Theme-UT-loigsa-cfb013bbdda3c327a7009.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bcf6a5444d1e1938",
+      "file": "calibrated-bcf6a5444d1e1938.txt",
+      "sha256": "62b9c7332c1e37ddf147ec6a0880d902ce4ddad022700b3219581617d718fe53",
+      "title": "千本樱",
+      "work_id": "work-deck-c03da52ba0d7",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8D%83%E6%9C%AC%E6%A8%B1-%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5-Jiko-7b66886f2d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bdba2c9c500a0658",
+      "file": "calibrated-bdba2c9c500a0658.txt",
+      "sha256": "48c76bd47a2ff9488065d936da34ed06b8057dd60eba22d986b2dffd4b9af6a6",
+      "title": "辞九门回忆",
+      "work_id": "work-c20f24975fc7",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E5%86%B0%E5%B9%BD-%E8%A7%A3%E5%BF%A7%E8%8D%89-%E6%A7%91%E6%A7%91%E6%A7%91-15d88e8a58003473094a4.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bede282d77e29b6d",
+      "file": "calibrated-bede282d77e29b6d.txt",
+      "sha256": "5ea76a2ec507fbae7f0e133f9cb15d02cae9ec6fd9d79b55ff59022403d8c9cf",
+      "title": "YMCA",
+      "work_id": "work-deck-f46e4ca78e61",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/YMCA-Village-People-Jiko-ac8f24d385.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-bee3d1db44b3482e",
+      "file": "calibrated-bee3d1db44b3482e.txt",
+      "sha256": "3c5d4bef9fea721c574f6c5114738b010343862a55a91bb4bb496ad344dd785b",
+      "title": "Mariage d’Amour",
+      "work_id": "work-522440d04642",
+      "source_url": "https://raw.githubusercontent.com/lys2-14/DeltaMusic/65538c19b13d7dea6a947e15e35d7d993e5ce941/mariage/mariage_damour_melody_only.mid",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c1504ec51f62bdb8",
+      "file": "calibrated-c1504ec51f62bdb8.txt",
+      "sha256": "f7d8250962a71eac8bf936beb33c70454ef92091844d7926f5bf0ff094c9208e",
+      "title": "安河桥",
+      "work_id": "work-deck-470128a836ed",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%AE%89%E6%B2%B3%E6%A1%A5-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-c112e7b4b3.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c15bd26a7c952d80",
+      "file": "calibrated-c15bd26a7c952d80.txt",
+      "sha256": "082a265320969d48ecbed5ac0c92e3f49d56596ec19629a4527d654677baf91e",
+      "title": "愿戴荣光坠入天渊",
+      "work_id": "work-8fa7c555fdf8",
+      "source_url": "https://www.bilibili.com/video/BV1ppe36dEwL/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c1dd9b977d2dadeb",
+      "file": "calibrated-c1dd9b977d2dadeb.txt",
+      "sha256": "d8f527f26b5d792549a6f233addcd0e7b7996c0d53800802b8242b38fa89c5bb",
+      "title": "大东北我的家乡",
+      "work_id": "work-d9e292cf78e6",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=q1PO3rDLdFx6",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c204e41925e637a8",
+      "file": "calibrated-c204e41925e637a8.txt",
+      "sha256": "d9fe33c48782c9d4fc3f3326012020f8ef836345d7923a438a9c6354194f6350",
+      "title": "红尘客栈",
+      "work_id": "work-8f94ff8e4060",
+      "source_url": "https://github.com/artisdom/midi-piano/blob/7b576afa98ffe11b9cc25b920412adc56f9d0d2a/assets/midi/JustPiano2-20160326/%E6%B5%81%E8%A1%8C%E7%A9%BA%E9%97%B4%EF%BC%881134%EF%BC%89/%E5%B0%8F%E9%A1%B9A%EF%BC%9A%E5%8D%8E%E8%AF%AD%E6%B5%81%E8%A1%8C%EF%BC%88897%EF%BC%89/z%EF%BC%88198%EF%BC%89/%E5%91%A8%E6%9D%B0%E4%BC%A6%EF%BC%8884%EF%BC%89/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.mid",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c27bc080edc7f6cc",
+      "file": "calibrated-c27bc080edc7f6cc.txt",
+      "sha256": "a633e9ff0681c2db016ee481ae6f7564647b5980b2eb440a15eebb3537882a27",
+      "title": "穿越时空的思念",
+      "work_id": "work-cf191e62a9ee",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c28d59e2a2b006da",
+      "file": "calibrated-c28d59e2a2b006da.txt",
+      "sha256": "9a46221966ae94cb078bf95b02d77cc7d18a97a6f1afa32e4a2af8ec35b92c9e",
+      "title": "鼠鼠之歌",
+      "work_id": "work-5cc688f63066",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c2f9bb8cf52b8f2c",
+      "file": "calibrated-c2f9bb8cf52b8f2c.txt",
+      "sha256": "439f308383a1ac5853f3901bd1ae0d04b00429bfda21c8b36f4f69134256d88e",
+      "title": "戒烟",
+      "work_id": "work-1b5a288e9c96",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=oEuqaxJytL1l",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c43967d459519180",
+      "file": "calibrated-c43967d459519180.txt",
+      "sha256": "e35346c7efdd9a0c6f3f9dfbafdbc1cad29ff09fca3a78e841c9f63f001dc5e2",
+      "title": "洛克王国人鱼湾",
+      "work_id": "work-fe1be539d5d8",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c581e1234959efbc",
+      "file": "calibrated-c581e1234959efbc.txt",
+      "sha256": "acfff2f6b358e00a56405e6625ad8b49d6277a627a3382502d5db593345f12a1",
+      "title": "红凯之歌",
+      "work_id": "work-deck-a52fdaa99ded",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c643f70fe2c764c4",
+      "file": "calibrated-c643f70fe2c764c4.txt",
+      "sha256": "81b26b5e163c696b8725a2fc892f268d7bee86ceaa2f7b7e88077d45aaf0b2d2",
+      "title": "年轮",
+      "work_id": "work-39244605afae",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c64da9b655ea4a92",
+      "file": "calibrated-c64da9b655ea4a92.txt",
+      "sha256": "a68c0d6d71e641efd4da2d54153f263eb67eefc411aeed94cbff3908a73b563c",
+      "title": "今宵多珍重",
+      "work_id": "work-deck-864ec94781bc",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D-%E9%99%88%E7%99%BE%E5%BC%BA-Jiko-47538fbf90.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c6778f00f6c66363",
+      "file": "calibrated-c6778f00f6c66363.txt",
+      "sha256": "4742978d43cc8a56901e67336c08260c8c91ef69ad3c89baeb42637b70c8683a",
+      "title": "嘘月",
+      "work_id": "work-b9ba3d457459",
+      "source_url": "https://www.bilibili.com/read/cv53068915",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c6b5e66b7139445c",
+      "file": "calibrated-c6b5e66b7139445c.txt",
+      "sha256": "4d0b24968f9620c4b0ec602a1b180fb1115178138c8811e91e82c3c1b9c87911",
+      "title": "圣诞快乐劳伦斯先生(高潮部分）",
+      "work_id": "work-merry-christmas-mr-lawrence",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90%E5%8A%B3%E4%BC%A6%E6%96%AF%E5%85%88%E7%94%9F-%E9%AB%98%E6%BD%AE%E9%83%A8%E5%88%86-%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80-%E5%A4%9C%E6%B3%8A%E7%A7%A6%E6%B7%AE%E8%BF%91%E9%85%92%E5%AE%B6-e5ff3190293974da74aeb.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c77bbee5abe51665",
+      "file": "calibrated-c77bbee5abe51665.txt",
+      "sha256": "75cdc1383b580786370a652dd5d86039b5c6e0cf0908d3b63361375902b3dd58",
+      "title": "死别",
+      "work_id": "work-farewell",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c7a8b60ccde70048",
+      "file": "calibrated-c7a8b60ccde70048.txt",
+      "sha256": "9d7aa3a4a40546706583e4237e25bd09f8a136238f6997e04be9f761601328ad",
+      "title": "欢乐颂",
+      "work_id": "work-0a617fac3992",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c7beb130f4a24672",
+      "file": "calibrated-c7beb130f4a24672.txt",
+      "sha256": "89dc0f18963d56078e788b29d790b37654092e5f24e748fddda9824a3a52ae74",
+      "title": "鲜花",
+      "work_id": "work-b929b9443e6d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c8034861d512cc98",
+      "file": "calibrated-c8034861d512cc98.txt",
+      "sha256": "038602be2a976eb141c8a94d40df496ac071c07eee453b322e552a205a3ec2b6",
+      "title": "安和桥",
+      "work_id": "work-deck-470128a836ed",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c81f55227cede66a",
+      "file": "calibrated-c81f55227cede66a.txt",
+      "sha256": "f33c0d6f06cb7b8e10ce69c243d575bb251217916d610f639bd0dd4832901a14",
+      "title": "十年人间",
+      "work_id": "work-7f5bece0edcf",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c9026b763176b29c",
+      "file": "calibrated-c9026b763176b29c.txt",
+      "sha256": "2c008b8600459cb9acf35261325741e8fd2b509f6e115ab43c0ce33e5e6024b9",
+      "title": "花海",
+      "work_id": "work-deck-030917928649",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-c956f972f6418b13",
+      "file": "calibrated-c956f972f6418b13.txt",
+      "sha256": "da83c65d8cca0ffd16441228b272d31285c690ed348f23b64b27c3aba9294b53",
+      "title": "忘川彼岸",
+      "work_id": "work-6469846ed00b",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-cabcc459123c9f86",
+      "file": "calibrated-cabcc459123c9f86.txt",
+      "sha256": "ecab1b97d79d772c6a60b222d20ed4956595efbb7e8a7b6377916fa7b77b1d06",
+      "title": "花之舞",
+      "work_id": "work-639b92ede19e",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7687795146175302921",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-cb60b5e4abf6e9e1",
+      "file": "calibrated-cb60b5e4abf6e9e1.txt",
+      "sha256": "66c827837739e4eb3503d2d7c56a75674a04d52b37268bd95aa0c0282dcc215a",
+      "title": "粉刷匠",
+      "work_id": "work-2c22fab3ee99",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-cda7cba049dffaa0",
+      "file": "calibrated-cda7cba049dffaa0.txt",
+      "sha256": "e9f57ffeb51e6ba8ac501c46ffb93686ccd58064750c450a8f010234383c15ab",
+      "title": "Call of Silence",
+      "work_id": "work-a41d6d36e41b",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-cddc4ccd95982125",
+      "file": "calibrated-cddc4ccd95982125.txt",
+      "sha256": "e364a584c7e500605638eb720ec892096ff72ce82a74418267e676eaaa162dfc",
+      "title": "一程山路",
+      "work_id": "work-ce4fb1b5513c",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ce108e4b57e23318",
+      "file": "calibrated-ce108e4b57e23318.txt",
+      "sha256": "06778f49fba1348090c13f5e707798cdf29684e41db46cfc9b95cb499dc7acfe",
+      "title": "Bad Apple!!",
+      "work_id": "work-2cb4484e6c06",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=vwaDMTXpcysj",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ce4f5df6e2bbb213",
+      "file": "calibrated-ce4f5df6e2bbb213.txt",
+      "sha256": "6151cd89b09d8ed08b5f7ba463c61aa5653a2d8a0495c056acb78e6288dddb83",
+      "title": "喀秋莎",
+      "work_id": "work-10e764db8602",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d119650de36a29db",
+      "file": "calibrated-d119650de36a29db.txt",
+      "sha256": "5ef7668c4ad41e6ada51d5beb9881880b851ad8598bc7935379c736aaba004cf",
+      "title": "Luvsic",
+      "work_id": "work-312ef322e7a7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d1c129294a304642",
+      "file": "calibrated-d1c129294a304642.txt",
+      "sha256": "7949c863b80e3548bcc7b0b1c7e9c64a9b119ae10ee28d99644980377afa63c7",
+      "title": "春日影",
+      "work_id": "work-spring-shadow",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E6%98%A5%E6%97%A5%E5%BD%B1%20bpm98.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d1e7719f2381c144",
+      "file": "calibrated-d1e7719f2381c144.txt",
+      "sha256": "ef65d6ca6caebf9cf4d21eb0ca922a36207a90da78d015cb0cf3bc6ed6d8d1ae",
+      "title": "See You Again",
+      "work_id": "work-885a604c2096",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d222979ad3eec884",
+      "file": "calibrated-d222979ad3eec884.txt",
+      "sha256": "6e064b4e4ea2fa0f131cff201e7f4179e44ceb77f3ce58437a879c3d920f6d27",
+      "title": "Are you lost(梦核小曲)",
+      "work_id": "work-3e7e59baf342",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d24255368a9ec3dc",
+      "file": "calibrated-d24255368a9ec3dc.txt",
+      "sha256": "e0d2fe7bd56d4d3a4c5b2bb0d869df9fb8341135057715446f907a39c88d6b5e",
+      "title": "暖暖",
+      "work_id": "work-c2329ddf1a2d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d3d947b3fe164999",
+      "file": "calibrated-d3d947b3fe164999.txt",
+      "sha256": "e6bf457a88bf81a12ede2a4e97e9e20284ff5d4f2ea5dc5be326ace26c6714c2",
+      "title": "传奇",
+      "work_id": "work-9be03a92c934",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d51f6b3a50c983dd",
+      "file": "calibrated-d51f6b3a50c983dd.txt",
+      "sha256": "9995ce0b2b49daa04d8ee5d7249eb64da7a24adcb7860f8ad6a5c58e10c91f97",
+      "title": "惊蛰正中央",
+      "work_id": "work-6658a0393456",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=yOk2uQFlUWB5",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d656473701653fb4",
+      "file": "calibrated-d656473701653fb4.txt",
+      "sha256": "3a309b860a188ce05a63743fc3be345ec4f8b39bc25afc68435f7d4279c7c207",
+      "title": "诀别书",
+      "work_id": "work-deck-aeec77d24e62",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d6795e5f60cb72d2",
+      "file": "calibrated-d6795e5f60cb72d2.txt",
+      "sha256": "4828948f6a9aa0897b0cae6fb78ab5eb2cb6df4d941168f8475d0547f0cd80f2",
+      "title": "童话",
+      "work_id": "work-fb2dd2c9afa1",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d68bb26dec381aaf",
+      "file": "calibrated-d68bb26dec381aaf.txt",
+      "sha256": "22b4ef2ff9cc16bac68b2acce347562fee7ab65e636e0c40b07ed5f7b37ea686",
+      "title": "当年情",
+      "work_id": "work-deck-e027c923ea04",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d69db9399eefb22d",
+      "file": "calibrated-d69db9399eefb22d.txt",
+      "sha256": "62f0609d157865180dd1fa3c7d78662d568ea8ecf32602923da83ac1d3968837",
+      "title": "给你一瓶魔法药水",
+      "work_id": "work-f95aeec359a2",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d7a55059df8fefdc",
+      "file": "calibrated-d7a55059df8fefdc.txt",
+      "sha256": "35ad18b8066ae8b3146ec8cda143a01076e9824edbd20d34a2b5fc2a418db4dd",
+      "title": "远航星的告别",
+      "work_id": "work-voyaging-star",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E8%BF%9C%E8%88%AA%E6%98%9F%E7%9A%84%E5%91%8A%E5%88%AB%20bpm84.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-d7d430e0cab7c354",
+      "file": "calibrated-d7d430e0cab7c354.txt",
+      "sha256": "c0872c67ee56b0c5352d4b4484a1608da156e1a68c49ca48de4fa2103c57519b",
+      "title": "不眠之夜",
+      "work_id": "work-086cff9fdd7a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-db20ae74a7630388",
+      "file": "calibrated-db20ae74a7630388.txt",
+      "sha256": "19761fb37b276e14bd2b4bb1da35992443f9de611927a7036f72fd72740ad97e",
+      "title": "琵琶曲",
+      "work_id": "work-c26930029810",
+      "source_url": "https://www.bilibili.com/video/BV15Eec6UEDx/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-db40b63afaa74563",
+      "file": "calibrated-db40b63afaa74563.txt",
+      "sha256": "f8e5f74795080daa7e2a4e2751300585a679c0c3413d9cf39c6716e42397fe9d",
+      "title": "当年情",
+      "work_id": "work-deck-e027c923ea04",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-dbead014ccf36ab9",
+      "file": "calibrated-dbead014ccf36ab9.txt",
+      "sha256": "6dbfec9df7facc8b1106cb7b15b950deac965690c1718176db18439e51fed297",
+      "title": "红尘客栈",
+      "work_id": "work-8f94ff8e4060",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ddcab8ae33cfc625",
+      "file": "calibrated-ddcab8ae33cfc625.txt",
+      "sha256": "afc5d9a4852303c656e498d28a71314a52c0ef5037669a75965a5cdb033560f2",
+      "title": "千本樱",
+      "work_id": "work-deck-c03da52ba0d7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-dddbab1cdf757fb6",
+      "file": "calibrated-dddbab1cdf757fb6.txt",
+      "sha256": "b10cbbfd72e6dd771f4e03bd62cf98afca56a12d6825511f54fd49288ef32405",
+      "title": "父亲",
+      "work_id": "work-father",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E7%88%B6%E4%BA%B2%20bpm72.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-dec7ea970597fe92",
+      "file": "calibrated-dec7ea970597fe92.txt",
+      "sha256": "ef4df5299bb1285320a9bcabe490e085d7c093d18f835b10211001c8c5827b78",
+      "title": "加勒比海盗高潮",
+      "work_id": "work-ebae18240f14",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97%E9%AB%98%E6%BD%AE-%E6%B5%B7%E7%9B%97-%E5%92%95%E5%92%95%E5%98%8E%E5%98%8E-891eb812de536868603e5.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-deef8e21913914be",
+      "file": "calibrated-deef8e21913914be.txt",
+      "sha256": "7a7d2ca484870a264b868e0917daf99e2bf540cf52f80392234b770409b08534",
+      "title": "†TAKEDISKRUSH!†",
+      "work_id": "work-683067bf5491",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=3TAUojyj58ZU",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-dff9086cd45a3f80",
+      "file": "calibrated-dff9086cd45a3f80.txt",
+      "sha256": "f4bae691a58f512489fd5560a1bacbf2187410e511db7332d281d811f914c809",
+      "title": "勉为其难",
+      "work_id": "work-deck-e0b61dc3bb3c",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%8B%89%E4%B8%BA%E5%85%B6%E9%9A%BE-%E7%8E%8B%E5%86%95-zmccc-7bcd80bdc2.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e0571b9c392a6146",
+      "file": "calibrated-e0571b9c392a6146.txt",
+      "sha256": "1f50c9d452de42db74b26b93f16cb7fa9639b97f5a1e127af22567e5ee9bae49",
+      "title": "再见",
+      "work_id": "work-deck-e1542f9a86cc",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E5%86%8D%E8%A7%81-%E5%BC%A0%E9%9C%87%E5%B2%B3-YANG-7e54e92291.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e0686f98a053e8f5",
+      "file": "calibrated-e0686f98a053e8f5.txt",
+      "sha256": "8f3f5e891e3848b60fd4b34900ded50df32e299064c0f8ec7e47878f8efb838f",
+      "title": "琵琶曲",
+      "work_id": "work-c26930029810",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=2zQC7kCllY13",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e0bb9ae4b34331da",
+      "file": "calibrated-e0bb9ae4b34331da.txt",
+      "sha256": "fde5b13fb902b76a9dc6aaceb2afae518cb9f44aa7337effdc91c60f17b90c91",
+      "title": "海阔天空",
+      "work_id": "work-deck-43d728d4fa7a",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA-Beyond-hewu-f95ac5ea2b.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e0cbecf4cb41fe4b",
+      "file": "calibrated-e0cbecf4cb41fe4b.txt",
+      "sha256": "b18424d4213c4b92262441049396ecaffeff83fadc6ea867add11827228a4318",
+      "title": "偏爱",
+      "work_id": "work-6f4c7390fc6a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e19563b5acc3171a",
+      "file": "calibrated-e19563b5acc3171a.txt",
+      "sha256": "ece3e4d6bd885a241aac9f06ac2bd7610364a5e53b1036e437b7d93af738a010",
+      "title": "See You Again",
+      "work_id": "work-885a604c2096",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/See-You-Again-%E8%80%81%E5%A4%A7-11111-8e45566e0368197f6cd2e.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e27dab8f95dd689b",
+      "file": "calibrated-e27dab8f95dd689b.txt",
+      "sha256": "9d2d349c5d53cd95fcfdaf8cee29386808944cc89e3a7b6cb65ed7235e1d2c32",
+      "title": "送别",
+      "work_id": "work-deck-14a637705cb0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e3e3eaa99a32dc28",
+      "file": "calibrated-e3e3eaa99a32dc28.txt",
+      "sha256": "e9586ba079b13fc09ba8f88be675b9d384a782d93803a744fa81a10d301b63e6",
+      "title": "魔裁坦白的小曲",
+      "work_id": "work-757791a7e1b4",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=NVKqSrBA36Pj",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e3e6bdeefa106fb6",
+      "file": "calibrated-e3e6bdeefa106fb6.txt",
+      "sha256": "f31e16dcc7ce1a19977a8aa4a93e1288690cc22183d80ee666926535c1da36e7",
+      "title": "把回忆拼好给你",
+      "work_id": "work-7aedb2c049d5",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e41127f083f2451b",
+      "file": "calibrated-e41127f083f2451b.txt",
+      "sha256": "9ffddefb36ff84d9d5f92bf302eb550a0a63e1deb22c25ca83a75c4f23102446",
+      "title": "诀别书",
+      "work_id": "work-deck-aeec77d24e62",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e48075569970b08b",
+      "file": "calibrated-e48075569970b08b.txt",
+      "sha256": "75a747ef6a9e6a22dd218e2f9299b6351089907339344f09752ab77d1ea57fbb",
+      "title": "蜜雪冰城",
+      "work_id": "work-deck-d5d838c55ac3",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e4bb0b7eff2b11a4",
+      "file": "calibrated-e4bb0b7eff2b11a4.txt",
+      "sha256": "599868dc133b47caf3f36d10d38750c14356fb962e01764a148a2e0e36cefb82",
+      "title": "以恋结缘",
+      "work_id": "work-dcc4d48d7e6d",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jhyTbzn1sNLY",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e4d9282e25a59b70",
+      "file": "calibrated-e4d9282e25a59b70.txt",
+      "sha256": "cbdd67a448721634dca949cfa47ac697903d29283fb2beb99fea0c763792c88c",
+      "title": "欢乐颂",
+      "work_id": "work-0a617fac3992",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e674b6b8966d2741",
+      "file": "calibrated-e674b6b8966d2741.txt",
+      "sha256": "3d35731c88adbeafee56635a34c7007dd1c1563bcc004341d9a7516db502704e",
+      "title": "the other side of paradise",
+      "work_id": "work-99141cfa4b6f",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e7969004999551e4",
+      "file": "calibrated-e7969004999551e4.txt",
+      "sha256": "d884f1afc5538c3a9fff8ac27f53c5335d0edc6c35031dde33a521da7d6bdddb",
+      "title": "盛夏的果实",
+      "work_id": "work-418185d58d4a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e856cf5eb816b494",
+      "file": "calibrated-e856cf5eb816b494.txt",
+      "sha256": "f8f259057186cda002a4dc76740c229a091b2c28d725ce2eeb94577e7f263f1c",
+      "title": "樱花草",
+      "work_id": "work-deck-f53e36bc38f0",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%A8%B1%E8%8A%B1%E8%8D%89-%E8%8A%B1%E8%A8%80%E4%B9%94%E8%AF%AD-Holen-3b69e979cf.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-e8e91c6bb06450ec",
+      "file": "calibrated-e8e91c6bb06450ec.txt",
+      "sha256": "2b591b0701d55a80085425e8a2017acd7b3559c7865df843f9cc89e778a98f55",
+      "title": "樱花草",
+      "work_id": "work-deck-f53e36bc38f0",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ea91e7614fa810ae",
+      "file": "calibrated-ea91e7614fa810ae.txt",
+      "sha256": "a5a5f2853275506f8ac986ae4bce5b37a7173a20cd2a720665432459ac9cdaea",
+      "title": "童话",
+      "work_id": "work-fb2dd2c9afa1",
+      "source_url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2%20%E5%8F%A3%E7%90%B4%20%E5%9B%BE%E6%96%87?modal_id=7685235403183602164",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-eb9236b45d9bddf2",
+      "file": "calibrated-eb9236b45d9bddf2.txt",
+      "sha256": "e5643ed9f658027c5543c9083ea0095dc42e460e301b4900d338e3230abdef6d",
+      "title": "死别",
+      "work_id": "work-farewell",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ed1a3c406bc565e3",
+      "file": "calibrated-ed1a3c406bc565e3.txt",
+      "sha256": "f3345734c15b341f793c2a9fa509ef39ac65c02a4745628c87a95cf4c7f3d0d7",
+      "title": "泡沫",
+      "work_id": "work-80ed49d9841e",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ef19a8380d5e7d2b",
+      "file": "calibrated-ef19a8380d5e7d2b.txt",
+      "sha256": "71904f771794d610be21caaf19e61d5a9b48671464c3dbb49eedf9be3e8b355b",
+      "title": "加勒比海盗",
+      "work_id": "work-ebae18240f14",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7%E7%9B%97-Klaus-Badelt-mouse1-a372b76f25059c60ee512.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-ef9091d2af59c6a3",
+      "file": "calibrated-ef9091d2af59c6a3.txt",
+      "sha256": "5f269e093a9a9c93326c7ea9e51aeb513545ca2a74c3fffc4812ffebb8281dfc",
+      "title": "遇见",
+      "work_id": "work-0d31579fe5f7",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-efa197ca761e1fd8",
+      "file": "calibrated-efa197ca761e1fd8.txt",
+      "sha256": "d523fe1483c4476d00637ccefd2f3639f3e5df14951502e15989210dc40e1119",
+      "title": "Time Machine",
+      "work_id": "work-0a4bb7387e06",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-eff83b5eedc107e6",
+      "file": "calibrated-eff83b5eedc107e6.txt",
+      "sha256": "5f2d6cfa41335783a8fbd89e5274a772f97bce73e054568bd5c1c820935899be",
+      "title": "多想听你说月色真美",
+      "work_id": "work-a13258ce0b29",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f08f4601e532938c",
+      "file": "calibrated-f08f4601e532938c.txt",
+      "sha256": "88ea9c3ce5df5e00489b33ef19369c51548fadcf0eb48f0c1ee148540a7d6835",
+      "title": "忘情牛肉面",
+      "work_id": "work-0c6ee1db2f3f",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BF%98%E6%83%85%E7%89%9B%E8%82%89%E9%9D%A2-%E9%A9%AC%E5%BB%BA%E6%B6%9B-%E6%A7%91%E6%A7%91%E6%A7%91-5be744edd167fb49d06e6.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f0dd31e7b5ccc4c8",
+      "file": "calibrated-f0dd31e7b5ccc4c8.txt",
+      "sha256": "60bce4a30e06356c3bea2b5f0fa27f6bf7243c143eea0ee6eeacd56cc4cf2237",
+      "title": "辞九门回忆",
+      "work_id": "work-c20f24975fc7",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E5%86%B0%E5%B9%BD-%E8%A7%A3%E5%BF%A7%E8%8D%89-%E6%A7%91%E6%A7%91%E6%A7%91-15d88e8a58003473094a4.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f178a294454f5332",
+      "file": "calibrated-f178a294454f5332.txt",
+      "sha256": "75a747ef6a9e6a22dd218e2f9299b6351089907339344f09752ab77d1ea57fbb",
+      "title": "蜜雪冰城",
+      "work_id": "work-deck-d5d838c55ac3",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E-%E7%99%AB%E5%85%AC%E7%81%AC-372193988-c7f2e573c3.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f1c54c41b5c519ff",
+      "file": "calibrated-f1c54c41b5c519ff.txt",
+      "sha256": "64f4b92335ac5ff23e52002cf9439796ce4f61105383b2b879262655f144cc6a",
+      "title": "不怕(神兵小将片尾曲)",
+      "work_id": "work-fc06da5f7c31",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=WVkY5co145IL",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f1ea9136725a479c",
+      "file": "calibrated-f1ea9136725a479c.txt",
+      "sha256": "aceb1052cd61627c1816ba4a47842baefea361ea92b1d912c22f83653f81cb44",
+      "title": "寂寞的人伤心的歌",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f2253316b1f8c6b5",
+      "file": "calibrated-f2253316b1f8c6b5.txt",
+      "sha256": "1d523d5562def713a36a0274b726bb4a47fa84fa0a3ed40ec705c1fb7e64a72f",
+      "title": "路小雨",
+      "work_id": "work-deck-cab097d18315",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f2d4e83e4d44c158",
+      "file": "calibrated-f2d4e83e4d44c158.txt",
+      "sha256": "76643a5fe35b88897c8dfdf1249cc6306b210ffbbe8bc44c42f8b71bd561de4c",
+      "title": "泪海",
+      "work_id": "work-2da3b80f3882",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f2d62820ea1f99d1",
+      "file": "calibrated-f2d62820ea1f99d1.txt",
+      "sha256": "8358d70f7ec84f22095108071d27b137f548634d2a8e8c85c1d55288fd09bccb",
+      "title": "当年情",
+      "work_id": "work-deck-e027c923ea04",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E5%BD%93%E5%B9%B4%E6%83%85-%E5%BC%A0%E5%9B%BD%E8%8D%A3-czw12138-01bc8cffb48e6993b7124.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f505737efc52495b",
+      "file": "calibrated-f505737efc52495b.txt",
+      "sha256": "d86b6498c9e4b5d6953c697f60b62adeca69186c77cb0c276f79a714c8d4d3c3",
+      "title": "生日快乐",
+      "work_id": "work-dd6fbf763c74",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f54e831fc73a6184",
+      "file": "calibrated-f54e831fc73a6184.txt",
+      "sha256": "3e9c9805ca1248937d66d09d4cd850f683296c70d566e46753729ebb7d8acc98",
+      "title": "月半小夜曲",
+      "work_id": "work-deck-69b2bf3f3634",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E6%9C%88%E5%8D%8A%E5%B0%8F%E5%A4%9C%E6%9B%B2-%E6%9D%8E%E5%85%8B%E5%8B%A4-hewu-f64bfd64a6.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f5f7213739f30997",
+      "file": "calibrated-f5f7213739f30997.txt",
+      "sha256": "44f728fe8cdba7575e9b4444459a7fec4909bb950b8b8c44210c35e68b564bd3",
+      "title": "愿戴荣光坠入天渊",
+      "work_id": "work-8fa7c555fdf8",
+      "source_url": "https://piastudy.com/Intermediate/wzZVQQAn",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f78ad2ab00e730c9",
+      "file": "calibrated-f78ad2ab00e730c9.txt",
+      "sha256": "5034773b965e642258ca2d0b24f833239092a9397b8dca1077552bc11183d558",
+      "title": "路小雨",
+      "work_id": "work-deck-cab097d18315",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/9072cc92e3bd88d5a51c694335d6243734530a09/data/community-scores/%E8%B7%AF%E5%B0%8F%E9%9B%A8-%E5%91%A8%E6%9D%B0%E4%BC%A6-dhmt-6a9540c156.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f819f0e655ab4a53",
+      "file": "calibrated-f819f0e655ab4a53.txt",
+      "sha256": "516bdcfa86ff86546c9bf5cb383c0df4c1af6a2f90ec35f4345978684d49d28b",
+      "title": "不谓侠",
+      "work_id": "work-dd60959aaf0a",
+      "source_url": "https://github.com/hsdllcw/everyonepiano-music-database/blob/688a6e3b4f274e74dec471a3956d20eaf20e46e2/%E6%B5%81%E8%A1%8C/%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2/%E8%90%A7%E5%BF%86%E6%83%85Alex%20-%20%E4%B8%8D%E8%B0%93%E4%BE%A0-%E6%8A%96%E9%9F%B3%E5%BE%88%E7%81%AB%E7%9A%84%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2.eop",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f837d91358954d32",
+      "file": "calibrated-f837d91358954d32.txt",
+      "sha256": "c6934a7cda4a78dd77e66ff763360cf3a0c6659e564601e2b59a0608dc3a3dd9",
+      "title": "兰花草",
+      "work_id": "work-f7cee22a870d",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f8a68da63e86da1a",
+      "file": "calibrated-f8a68da63e86da1a.txt",
+      "sha256": "21da986cbd8c5a61d3d000b513fbbf49a16e5c0bfd130eefb40bf2e30e1af78c",
+      "title": "See You Again",
+      "work_id": "work-885a604c2096",
+      "source_url": "https://raw.githubusercontent.com/ChiZhou6/harmonica-visualizer/27b7fc4eca457efcd85040294f027e14ff2633d4/songs/See%20You%20Again.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f8e7f1aa485ff9d9",
+      "file": "calibrated-f8e7f1aa485ff9d9.txt",
+      "sha256": "ace7f3e0ab316b27fc8f6fc888e145b5b30f151da515a162530f57334d02a587",
+      "title": "反乌托邦 x 拼凑",
+      "work_id": "work-dystopia-mashup",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6%20x%20%E6%8B%BC%E5%87%91%20bpm120.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f90a1d4636afebbe",
+      "file": "calibrated-f90a1d4636afebbe.txt",
+      "sha256": "09cc548fe36feae137c1a3387cdfcc99f943eef38191c0589cf1546fd813df12",
+      "title": "老男孩",
+      "work_id": "work-deck-c31d3026ae98",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f93316c8b8197262",
+      "file": "calibrated-f93316c8b8197262.txt",
+      "sha256": "47b6781131619c4fd49770827591b58a729e97e222135e0e344443e93aff9f48",
+      "title": "龙卷风",
+      "work_id": "work-deck-4f8ae99fc7e5",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f9e55869da01008d",
+      "file": "calibrated-f9e55869da01008d.txt",
+      "sha256": "d53a90ad33e6969fd467f60618268881655eef8cfbf95399d673dec993430736",
+      "title": "圣诞快乐劳伦斯先生",
+      "work_id": "work-merry-christmas-mr-lawrence",
+      "source_url": "https://github.com/lanselanlanxi-wq/HarmonicaPlayer/blob/0c3735ed7c261349105ff7fc564f92eddcd922cf/%E7%AE%80%E8%B0%B1/%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90%E5%8A%B3%E4%BC%A6%E6%96%AF%E5%85%88%E7%94%9F%20bpm86.txt",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-f9f5b54dd537c88d",
+      "file": "calibrated-f9f5b54dd537c88d.txt",
+      "sha256": "6e3cba61bd67bfe3870178e9fce9729ac5855fc952cdeb65e8bb17d65c2761bd",
+      "title": "上课铃",
+      "work_id": "work-a277439dd482",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fa29cc5c6b6e6386",
+      "file": "calibrated-fa29cc5c6b6e6386.txt",
+      "sha256": "959ab5aecb5890756417db1543dfb1d7cb75f38d983f2e7cf72822e0a254957d",
+      "title": "红尘客栈",
+      "work_id": "work-8f94ff8e4060",
+      "source_url": "https://www.douyin.com/search/%E7%BA%A2%E5%B0%98%E5%AE%A2%E6%A0%88%20%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%A3%E7%90%B4?modal_id=7684089365730982811&type=general",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fab96fb9c85fa4f6",
+      "file": "calibrated-fab96fb9c85fa4f6.txt",
+      "sha256": "32c2021d77e756e5a57613936cca17e6ed4586ac254d6db35854e4f55f3a32eb",
+      "title": "（三角洲适配）寂寞的人伤心的歌—得吃小曲",
+      "work_id": "work-f12c14c63b4a",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%89%E8%A7%92%E6%B4%B2%E9%80%82%E9%85%8D-%E5%AF%82%E5%AF%9E%E7%9A%84%E4%BA%BA%E4%BC%A4%E5%BF%83%E7%9A%84%E6%AD%8C-%E5%BE%97%E5%90%83%E5%B0%8F%E6%9B%B2-%E9%BE%99%E6%A2%85%E5%AD%90-%E6%9D%A8%E6%B5%B7%E5%BD%AA-%E6%A7%91%E6%A7%91%E6%A7%91-c94b3e92de38c76270e19.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-face3fb2ba591642",
+      "file": "calibrated-face3fb2ba591642.txt",
+      "sha256": "1d679381f216a069fa3c503d563dd5b5a49cd73c531acea0490c3b38013cfa7b",
+      "title": "世末舞厅",
+      "work_id": "work-8d295e045a97",
+      "source_url": "https://www.bilibili.com/read/cv53069152",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fb08c7022cf2693e",
+      "file": "calibrated-fb08c7022cf2693e.txt",
+      "sha256": "70400c4754835960f9addbb7da7db00a54aee999f8f9436e2c8da4538c6b2ce3",
+      "title": "世上只有妈妈好（找妈妈的来）",
+      "work_id": "work-6e28c160aca4",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%B8%96%E4%B8%8A%E5%8F%AA%E6%9C%89%E5%A6%88%E5%A6%88%E5%A5%BD-%E6%89%BE%E5%A6%88%E5%A6%88%E7%9A%84%E6%9D%A5-111-11111-dde2efce776d3e5fbed8d.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fb4793e0b7a608a6",
+      "file": "calibrated-fb4793e0b7a608a6.txt",
+      "sha256": "ca1116813054208e4f3689cb1f3edecb2ff24e4ea4681232178b2d864ed4660b",
+      "title": "我好像在哪见过你",
+      "work_id": "work-deck-4bd8fe67be88",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fbf2664f3b46bb01",
+      "file": "calibrated-fbf2664f3b46bb01.txt",
+      "sha256": "fdf4dabb4ff52bf5540b5763c7e1491e520c7ce866622e686dc8f16e837f39d7",
+      "title": "海屿你",
+      "work_id": "work-31d9743659b0",
+      "source_url": "https://piastudy.com/Intermediate/1RwZo1RAr",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fbfc79133c1aa485",
+      "file": "calibrated-fbfc79133c1aa485.txt",
+      "sha256": "75c868080d895718e6b94ff414f8be0146c16987d3d7b23968bc87454541854d",
+      "title": "义勇军进行曲",
+      "work_id": "work-9544a5fa4d8a",
+      "source_url": "https://www.bilibili.com/toy/deltaforce/index.html?view=library&s=jLHYo8HxLNhy",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fc8edf4c96db34d9",
+      "file": "calibrated-fc8edf4c96db34d9.txt",
+      "sha256": "328590a395e9e8147b17fad7f973d65288c5814daab3f1b58f058a8d5bf863d8",
+      "title": "你看到的我（大哥小曲）",
+      "work_id": "work-633dba425b38",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%9A%84%E6%88%91-%E5%A4%A7%E5%93%A5%E5%B0%8F%E6%9B%B2-%E9%BB%84%E5%8B%87-%E4%BB%BB%E4%B9%A6%E6%80%80-%E6%A7%91%E6%A7%91%E6%A7%91-cf7222fc2f4779be23603.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fd57a396d3f620a8",
+      "file": "calibrated-fd57a396d3f620a8.txt",
+      "sha256": "0a1c9bbd77b4b5c32620a8fa9008199ef10652d7dbd83e02adcf1bfeadc3fe43",
+      "title": "未闻花名",
+      "work_id": "work-deck-1dfd3ba9333c",
+      "source_url": "https://github.com/JikoSchnee/delta-harmonica-macro/blob/babff159afaa5b556948e838bec4397dbcd3539c/data/community-scores/%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D-%E9%82%A3%E5%B9%B4%E5%A4%8F%E5%A4%A9-11111-9396e7aa8bf00f4c6f56b.deltamusic",
+      "redistribution": "permission-unconfirmed"
+    },
+    {
+      "catalog_id": "calibrated-fd773a952b96899f",
+      "file": "calibrated-fd773a952b96899f.txt",
+      "sha256": "743382b90b5bd964c291c7db765f0ddb47cfc1a6cfb6213947913422cbc8f24e",
+      "title": "病变",
+      "work_id": "work-e2d1b42e7079",
+      "source_url": "https://www.bilibili.com/video/BV16Uhv6LE5W/",
+      "redistribution": "permission-unconfirmed"
+    }
+  ]
+}

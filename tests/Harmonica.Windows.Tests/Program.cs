@@ -8,6 +8,10 @@ var tests = new (string Name, Func<Task> Run)[]
     ("Game key mapping and range rejection", Mapping),
     ("Absolute timeline does not accumulate output overhead", AbsoluteTimeline),
     ("Rest and gap follow the shared timeline", RestAndGap),
+    ("Temporary speed scales notes, rests and progress without editing the score", TemporarySpeedTimeline),
+    ("Game speed preserves countdown and real-time input preparation and gaps", GameSpeedTimeline),
+    ("Game speed preflight matches playback before creating any output", GameSpeedInspection),
+    ("Unsupported playback speed is rejected before creating output", SpeedValidation),
     ("Game articulation separates notes without changing BPM or rests", GameArticulation),
     ("Delayed releases retain gaps and full rests instead of catch-up", LateGameRelease),
     ("Unplayable short game notes fail before emitting input", ShortGameNotes),
@@ -88,6 +92,100 @@ static async Task RestAndGap()
     SequenceNear([0, 1, 1.25], output.Notes.Select(e => e.Time).ToArray());
     SequenceNear([.48, 1.23, 1.48], output.Silences.ToArray());
     Near(1.5, clock.Seconds, .00001);
+}
+
+static async Task TemporarySpeedTimeline()
+{
+    var score = Parse("1 0 2_ 3_", 120, 20);
+    var originalDocument = score.Document;
+    var originalEvents = score.Events.ToArray();
+    foreach (var mode in new[] { PlaybackMode.Preview, PlaybackMode.Log })
+    foreach (var speed in new[] { .5, .75, 1, 1.25, 1.5 })
+    {
+        var clock = new FakeClock();
+        var output = new FakeOutput(clock) { Overhead = .007 };
+        await using var engine = new PlaybackEngine(() => output, clock);
+        var progress = new List<PlaybackProgress>();
+        engine.Progress += progress.Add;
+        await engine.PlayAsync(score, mode, speed: speed);
+        SequenceNear([0, 1 / speed, 1.25 / speed], output.Notes.Select(e => e.Time).ToArray());
+        // Gap is an explicit duration in milliseconds, not a beat value.
+        SequenceNear([.5 / speed - .02, 1.25 / speed - .02, 1.5 / speed - .02], output.Silences.ToArray());
+        Near(1.5 / speed, clock.Seconds, .00001);
+        True(progress.All(p => Math.Abs(p.TotalSeconds - 1.5 / speed) < .00001));
+        SequenceNear([0, .5 / speed, 1 / speed, 1.25 / speed], progress.Where(p => p.State == "Playing").Select(p => p.ElapsedSeconds).ToArray());
+        Equal("Completed", progress[^1].State);
+        Near(1.5 / speed, progress[^1].ElapsedSeconds, .00001);
+        Equal(1, output.ReleaseCount);
+        True(output.Disposed);
+    }
+    True(ReferenceEquals(originalDocument, score.Document));
+    True(originalEvents.SequenceEqual(score.Events));
+    Equal(120, score.Document.Bpm);
+    Equal(20, score.Document.GapMs);
+    Equal("1 0 2_ 3_", score.Document.Body);
+    Near(1.5, score.DurationSeconds, .00001);
+}
+
+static async Task GameSpeedTimeline()
+{
+    var clock = new FakeClock();
+    var output = new FakeOutput(clock) { SimulateModifierSetup = true };
+    await using var engine = new PlaybackEngine(() => output, clock);
+    var progress = new List<PlaybackProgress>();
+    engine.Progress += progress.Add;
+    await engine.PlayAsync(Parse("（1） 1 0:0.5 2_", 120, 20), PlaybackMode.Game, speed: 1.5);
+    Equal(3, progress.Count(p => p.State == "Countdown"));
+    SequenceNear([3.024, 3 + 1d / 3, 3 + 5d / 6], output.Notes.Select(n => n.Time).ToArray());
+    SequenceNear([3 + 1d / 3 - .06, 3 + 2d / 3 - .06, 4 - 1d / 24], output.Silences.ToArray());
+    Near(4, clock.Seconds, .00001);
+    True(progress.All(p => Math.Abs(p.TotalSeconds - 1) < .00001));
+    Near(1, progress[^1].ElapsedSeconds, .00001);
+    Equal(1, output.ReleaseCount);
+    True(output.Disposed);
+}
+
+static async Task GameSpeedInspection()
+{
+    var score = Parse("（1）:0.06", 60, 10);
+    Equal(0, PlaybackEngine.InspectGameNotes(score).Count);
+    var issues = PlaybackEngine.InspectGameNotes(score, speed: 1.5);
+    Equal(1, issues.Count);
+    Near(40, issues[0].DurationMs, .00001);
+    Near(10, issues[0].GapMs, .00001);
+    Near(24, issues[0].PreparationMs, .00001);
+    Near(6, issues[0].HoldMs, .00001);
+    var clock = new FakeClock();
+    var created = 0;
+    await using var engine = new PlaybackEngine(() => { created++; return new FakeOutput(clock); }, clock);
+    try { await engine.PlayAsync(score, PlaybackMode.Game, speed: 1.5); throw new Exception("Expected speed timing rejection"); }
+    catch (InvalidOperationException ex) { Equal(issues[0].Message, ex.Message); }
+    Equal(0, created);
+    Near(0, clock.Seconds, .00001);
+
+    var shortScore = Parse("（1）:0.04", 60, 10);
+    Equal(1, PlaybackEngine.InspectGameNotes(shortScore).Count);
+    Equal(0, PlaybackEngine.InspectGameNotes(shortScore, speed: .5).Count);
+    await engine.PlayAsync(shortScore, PlaybackMode.Game, speed: .5);
+    Equal(1, created);
+    Near(3.08, clock.Seconds, .00001);
+    Equal(60, shortScore.Document.Bpm);
+    Near(.04, shortScore.DurationSeconds, .00001);
+}
+
+static Task SpeedValidation()
+{
+    var clock = new FakeClock();
+    var created = 0;
+    using var engine = new PlaybackEngine(() => { created++; return new FakeOutput(clock); }, clock);
+    var score = Parse("1");
+    foreach (var speed in new[] { -.5, 0, .6, 2, double.NaN, double.NegativeInfinity, double.PositiveInfinity })
+    {
+        Throws<ArgumentOutOfRangeException>(() => engine.PlayAsync(score, PlaybackMode.Preview, speed: speed));
+        Throws<ArgumentOutOfRangeException>(() => PlaybackEngine.InspectGameNotes(score, speed: speed));
+    }
+    Equal(0, created);
+    return Task.CompletedTask;
 }
 
 static async Task CountdownCancel()

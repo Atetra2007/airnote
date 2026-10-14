@@ -87,6 +87,7 @@ public sealed class LibraryWork
     public string MatchHint { get; }
     public bool HasMatchHint => MatchHint.Length > 0;
     public string VersionBadge => IsFiltered ? $"{Variants.Count}/{AllVariants.Count} 版" : $"{Variants.Count} 版";
+    public string ListAuthor => string.IsNullOrWhiteSpace(SelectedVariant.SourceAuthor) ? "个人曲谱" : SelectedVariant.SourceAuthor;
     public string ListDetail => $"{(SelectedVariant.Available ? "本地" : SelectedVariant.Acquisition == "direct-download" ? "可下载" : "待导入")} · {(SelectedVariant.BpmKnown ? SelectedVariant.Bpm + " BPM" : "速度待确认")} · {SelectedVariant.RhythmLabel}";
     public string ListTooltip => string.Join("\n", new[] { Title, ListDetail, SelectedVariant.VariantDisplay, MatchHint }.Where(value => value.Length > 0));
 
@@ -215,7 +216,7 @@ public sealed class ReferenceMetadata
 
 public sealed class UserSettings
 {
-    public string Theme { get; set; } = "System";
+    public string Theme { get; set; } = "Dark";
     public string StartHotkey { get; set; } = "F6";
     public string StopHotkey { get; set; } = "F8";
     public string OverlayHotkey { get; set; } = "F7";

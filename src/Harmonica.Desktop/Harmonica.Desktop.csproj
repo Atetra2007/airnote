@@ -8,8 +8,10 @@
     <AssemblyName>HarmonicaDesk</AssemblyName>
     <Product>口琴小曲库</Product>
     <RootNamespace>Harmonica.Desktop</RootNamespace>
-    <Version>0.4.2</Version>
-    <FileVersion>0.4.2.0</FileVersion>
+    <Version>0.4.3</Version>
+    <FileVersion>0.4.3.0</FileVersion>
+    <RuntimeFrameworkVersion>10.0.11</RuntimeFrameworkVersion>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\App.ico</ApplicationIcon>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
@@ -19,6 +21,7 @@
     <ProjectReference Include="..\Harmonica.Windows\Harmonica.Windows.csproj" />
     <Content Include="..\..\catalog\songs.json" Link="Resources\catalog.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="..\..\scores\original\*.txt" Link="Resources\Examples\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\scores\bundled\*.txt;..\..\scores\bundled\manifest.json" Link="Resources\BundledScores\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <Resource Include="Assets\App.ico" />
   </ItemGroup>
 </Project>

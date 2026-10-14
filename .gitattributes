@@ -5,3 +5,5 @@
 *.md text eol=lf
 *.html text eol=lf
 *.txt text eol=lf
+# Reviewed score hashes refer to the original bytes, including CRLF endings.
+scores/bundled/*.txt -text whitespace=-blank-at-eol,cr-at-eol

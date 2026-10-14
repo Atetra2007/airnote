@@ -11,7 +11,7 @@ public sealed record PlaybackProgress(string State, int EventIndex, int EventCou
 public sealed record GameNoteIssue(int EventNumber, string Label, double DurationMs,
     double GapMs, double PreparationMs, double HoldMs)
 {
-    public string Message => $"第 {EventNumber} 个音（{Label}，{DurationMs:0.#} ms）过短，无法留出换音与按键时间。请降低 BPM 或校对该短音；本次未发送按键。";
+    public string Message => $"第 {EventNumber} 个音（{Label}，{DurationMs:0.#} ms）过短，无法留出换音与按键时间。请降低播放速度或校对该短音；本次未发送按键。";
 }
 
 /// <summary>A monotonic clock; absolute deadlines prevent per-note work accumulating drift.</summary>
@@ -85,16 +85,17 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
     public event Action<PlaybackProgress>? Progress;
     public event Action<string>? Diagnostic;
 
-    public Task PlayAsync(ParsedScore score, PlaybackMode mode, CancellationToken token = default, int gameGapMs = 60)
+    public Task PlayAsync(ParsedScore score, PlaybackMode mode, CancellationToken token = default, int gameGapMs = 60, double speed = 1)
     {
         ArgumentNullException.ThrowIfNull(score);
         if (!Enum.IsDefined(mode)) throw new ArgumentOutOfRangeException(nameof(mode));
         if (gameGapMs is < 0 or > 250) throw new ArgumentOutOfRangeException(nameof(gameGapMs));
+        ValidateSpeed(speed);
         if (score.Events.Count == 0) throw new InvalidOperationException("曲谱没有可播放的音符。");
         if (score.Document.Bpm <= 0 || score.Document.GapMs < 0 ||
             score.Events.Any(e => !double.IsFinite(e.Beats) || e.Beats <= 0))
             throw new InvalidOperationException("曲谱速度、间隔或时值无效。");
-        if (mode == PlaybackMode.Game && InspectGameNotes(score, gameGapMs).FirstOrDefault() is { } issue)
+        if (mode == PlaybackMode.Game && InspectGameNotes(score, gameGapMs, speed).FirstOrDefault() is { } issue)
             throw new InvalidOperationException(issue.Message);
         lock (gate)
         {
@@ -107,7 +108,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
             cancellation = CancellationTokenSource.CreateLinkedTokenSource(token);
             var sessionCancellation = cancellation;
             // IsPlaying becomes true before work or callbacks can start.
-            running = Task.Run(() => RunAsync(score, mode, gameGapMs, sessionCancellation.Token), CancellationToken.None);
+            running = Task.Run(() => RunAsync(score, mode, gameGapMs, speed, sessionCancellation.Token), CancellationToken.None);
             return running;
         }
     }
@@ -146,10 +147,11 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
         Math.Max(scoreGapMs / 1000d, Math.Min(gameGapMs / 1000d, duration * .25));
 
     /// <summary>Checks timing only. Never creates an output or sends keyboard, mouse or audio.</summary>
-    public static IReadOnlyList<GameNoteIssue> InspectGameNotes(ParsedScore score, int gameGapMs = 60)
+    public static IReadOnlyList<GameNoteIssue> InspectGameNotes(ParsedScore score, int gameGapMs = 60, double speed = 1)
     {
         ArgumentNullException.ThrowIfNull(score);
         if (gameGapMs is < 0 or > 250) throw new ArgumentOutOfRangeException(nameof(gameGapMs));
+        ValidateSpeed(speed);
         if (score.Events.Count == 0) throw new InvalidOperationException("曲谱没有可播放的音符。");
         if (score.Document.Bpm <= 0 || score.Document.GapMs < 0 ||
             score.Events.Any(e => !double.IsFinite(e.Beats) || e.Beats <= 0))
@@ -159,7 +161,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
         {
             var note = score.Events[i];
             if (note.Degree == 0) continue;
-            var duration = note.Beats * 60d / score.Document.Bpm;
+            var duration = note.Beats * 60d / score.Document.Bpm / speed;
             var preparation = GameKeyMapping.ForNote(note).Any(k => k.Mouse) ? GameInputSession.ModifierSettleSeconds : 0;
             var gap = NoteGap(duration, score.Document.GapMs, gameGapMs);
             var hold = duration - gap - preparation;
@@ -169,13 +171,21 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
         return issues.AsReadOnly();
     }
 
-    private async Task RunAsync(ParsedScore score, PlaybackMode mode, int gameGapMs, CancellationToken token)
+    private static void ValidateSpeed(double speed)
+    {
+        if (speed is not (.5 or .75 or 1 or 1.25 or 1.5))
+            throw new ArgumentOutOfRangeException(nameof(speed), "播放速度必须为 0.5、0.75、1、1.25 或 1.5 倍。");
+    }
+
+    private async Task RunAsync(ParsedScore score, PlaybackMode mode, int gameGapMs, double speed, CancellationToken token)
     {
         IPlaybackOutput? output = null;
         Exception? failure = null;
         bool completed = false;
         double started = clock.Seconds;
         double elapsed = 0;
+        var secondsPerBeat = 60d / score.Document.Bpm / speed;
+        var totalSeconds = score.DurationSeconds / speed;
         int index = -1;
         try
         {
@@ -188,7 +198,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
                 for (var seconds = 3; seconds > 0; seconds--)
                 {
                     token.ThrowIfCancellationRequested();
-                    Report(new("Countdown", -1, score.Events.Count, 0, score.DurationSeconds));
+                    Report(new("Countdown", -1, score.Events.Count, 0, totalSeconds));
                     Log($"{seconds} 秒后开始；请切回游戏并松开启动热键。F8 或设置的停止热键可取消。");
                     await WaitUntilAsync(countdownStart + 4 - seconds, null, token).ConfigureAwait(false);
                 }
@@ -201,19 +211,19 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
             for (index = 0; index < score.Events.Count; index++)
             {
                 var note = score.Events[index];
-                double startDeadline = started + beatsElapsed * 60d / score.Document.Bpm + timelineShift;
+                double startDeadline = started + beatsElapsed * secondsPerBeat + timelineShift;
                 if (notBefore > startDeadline)
                 {
                     timelineShift += notBefore - startDeadline;
                     startDeadline = notBefore;
                 }
-                double duration = note.Beats * 60d / score.Document.Bpm;
+                double duration = note.Beats * secondsPerBeat;
                 double endDeadline = startDeadline + duration;
                 await WaitUntilAsync(startDeadline, output, token).ConfigureAwait(false);
                 token.ThrowIfCancellationRequested();
                 output.CheckSafety();
                 elapsed = Math.Max(0, clock.Seconds - started);
-                Report(new("Playing", index, score.Events.Count, elapsed, score.DurationSeconds));
+                Report(new("Playing", index, score.Events.Count, elapsed, totalSeconds));
                 if (mode == PlaybackMode.Log)
                     Log($"{index + 1}/{score.Events.Count} {note.Label} · {note.Beats:0.###} 拍 · {elapsed * 1000:0} ms");
                 if (note.Degree != 0)
@@ -247,7 +257,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
                 beatsElapsed += note.Beats;
             }
             completed = true;
-            elapsed = score.DurationSeconds;
+            elapsed = totalSeconds;
         }
         catch (OperationCanceledException) when (token.IsCancellationRequested)
         {
@@ -279,7 +289,7 @@ public sealed class PlaybackEngine : IDisposable, IAsyncDisposable
             lock (gate) activeOutput = null;
             var state = failure is not null ? "Error" : completed ? "Completed" : "Stopped";
             Report(new(state, completed ? score.Events.Count : index, score.Events.Count,
-                Math.Clamp(elapsed, 0, score.DurationSeconds), score.DurationSeconds));
+                Math.Clamp(elapsed, 0, totalSeconds), totalSeconds));
         }
         if (failure is not null) System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(failure).Throw();
     }

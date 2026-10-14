@@ -1,0 +1,13 @@
+@format=HarmonicaPlayer/1
+@title=印度神曲 · Aankhein Khuli · 31音完整简化选版
+@bpm=122
+@gap=10
+@meter=4/4
+@arrangement-key=A minor
+@source-id=zhouzhou-192
+@review-scope=complete31-source-heads-declared-tutorial35-head-simplification
+
+6:1 【1】:0.5 7:1 【1】:1 【3】:0.5 【3】:1.5 6:0.5 6:2
+6:1 7:1 6:0.5 【2】:1 7:0.5 5:1 6:1 7:2
+7:1 【2】:1 【2】:0.5 【3】:1 【2】:0.5 【1】:1 【1】:1 【1】:2
+【1】:1.5 7:0.5 6:0.5 5:0.5 7:0.5 6:2.5 6:2

@@ -57,6 +57,7 @@ if (-not (Test-Path -LiteralPath $project -PathType Leaf)) { throw "Desktop proj
 Push-Location $repoRoot
 try {
     Invoke-Checked $python @('scripts/catalog_status.py', '--check')
+    Invoke-Checked $python @('scripts/prepare_bundled_scores.py', '--check')
     if (-not $SkipTests) {
         foreach ($test in $testProjects) {
             $testProject = Join-Path $repoRoot $test.Path

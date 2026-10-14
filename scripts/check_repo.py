@@ -10,6 +10,7 @@ from urllib.parse import quote, unquote, urlsplit
 
 from build_catalog import render_catalog
 from package import PACKAGE_FILES, package_files
+from prepare_bundled_scores import bundle_repository_files
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_SCHEMAS = {2, 3}
@@ -349,6 +350,7 @@ REPO_ONLY_FILES = {
     '.github/ISSUE_TEMPLATE/problem.yml', '.github/ISSUE_TEMPLATE/score.yml',
     'global.json', 'scripts/create_icon.py', 'scripts/Build-Desktop.ps1',
     'scripts/check_desktop.py', 'installer/HarmonicaDesk.iss',
+    'scripts/prepare_bundled_scores.py', 'tests/test_bundled_scores.py',
     '.github/workflows/desktop.yml', 'docs/DESKTOP-BUILD.md',
     'docs/QUICKSTART.md', 'docs/DESKTOP-VALIDATION.md', 'catalog/desktop-validation.json',
     'src/Harmonica.Core/Harmonica.Core.csproj',
@@ -365,6 +367,7 @@ REPO_ONLY_FILES = {
     'src/Harmonica.Desktop/App.xaml', 'src/Harmonica.Desktop/App.xaml.cs',
     'src/Harmonica.Desktop/app.manifest', 'src/Harmonica.Desktop/Assets/App.ico',
     'src/Harmonica.Desktop/MainWindow.xaml', 'src/Harmonica.Desktop/MainWindow.xaml.cs',
+    'src/Harmonica.Desktop/MainWindow.Workspace.cs',
     'src/Harmonica.Desktop/PasteDialog.xaml', 'src/Harmonica.Desktop/PasteDialog.xaml.cs',
     'src/Harmonica.Desktop/SettingsDialog.xaml', 'src/Harmonica.Desktop/SettingsDialog.xaml.cs',
     'src/Harmonica.Desktop/Models/LibraryItem.cs',
@@ -379,10 +382,13 @@ REPO_ONLY_FILES = {
     'tests/Harmonica.Desktop.Tests/Harmonica.Desktop.Tests.csproj',
     'tests/Harmonica.Desktop.Tests/Program.cs', 'tests/Harmonica.Desktop.Tests/packages.lock.json',
     'tests/Harmonica.Desktop.Tests/LibrarySearchChecks.cs',
+    'tests/Harmonica.Desktop.Tests/BundledLibraryChecks.cs',
+    'tests/Harmonica.Desktop.Tests/RealBundledLibraryAudit.cs',
     'catalog/catalog-status.json', 'docs/CATALOG-STATUS.md', 'docs/CALIBRATION-QUEUE.md',
     'docs/RELEASE-0.4.1-NOTES.md', 'docs/RELEASE-0.4.1-STATUS.md',
     'catalog/calibration-stage-20261014.json',
     'docs/RELEASE-0.4.2-NOTES.md', 'docs/RELEASE-0.4.2-STATUS.md',
+    'docs/RELEASE-0.4.3-NOTES.md', 'docs/RELEASE-0.4.3-STATUS.md',
     'tests/test_repo_publication.py',
     'scripts/catalog_status.py', 'tests/test_catalog_status.py',
     'scripts/Audit-SelectedScores.cs', 'scripts/prepare_listening_review.py',
@@ -440,13 +446,14 @@ class LocalReferences(HTMLParser):
             assert relative in PACKAGE_FILES, f'Local page reference missing from friends package: {value}'
 
 
-def validate_repository_index(names, calibration_evidence_files):
-    """Allow exact reviewed repository paths and validated metadata proofs only."""
+def validate_repository_index(names, calibration_evidence_files, bundled_score_files=()):
+    """Allow exact repository paths, validated proofs and catalog-pinned scores."""
     names = set(names)
-    unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES - OPTIONAL_REPO_FILES - set(calibration_evidence_files)
+    reviewed_files = set(calibration_evidence_files) | set(bundled_score_files)
+    unexpected = names - set(PACKAGE_FILES) - REPO_ONLY_FILES - OPTIONAL_REPO_FILES - reviewed_files
     assert not unexpected, f'Unreviewed files in Git index: {sorted(unexpected)}'
     if names:
-        missing = (set(PACKAGE_FILES) | REPO_ONLY_FILES | set(calibration_evidence_files)) - names
+        missing = (set(PACKAGE_FILES) | REPO_ONLY_FILES | reviewed_files) - names
         assert not missing, f'Required files not staged in Git: {sorted(missing)}'
 
 
@@ -506,6 +513,7 @@ def check_repo():
             assert verification['game'] == 'not-tested'
     assert set(runs) <= direct_download_ids, 'External imports cannot inherit original-player log runs.'
     calibration_evidence_files = validate_catalog_calibration_evidence(songs, ROOT)
+    bundled_score_files = bundle_repository_files(ROOT, catalog)
     assert (ROOT / 'assets/catalog.js').read_text(encoding='utf-8') == render_catalog(), 'Run scripts/build_catalog.py'
     audit = json.loads((ROOT / 'catalog/catalog-audit.json').read_text(encoding='utf-8'))
     results = {row['id']: row for row in audit['songs']}
@@ -522,7 +530,7 @@ def check_repo():
     tracked = subprocess.run(['git', 'ls-files', '-z'], cwd=ROOT, capture_output=True)
     if tracked.returncode == 0:
         names = set(tracked.stdout.decode('utf-8').rstrip('\0').split('\0')) - {''}
-        validate_repository_index(names, calibration_evidence_files)
+        validate_repository_index(names, calibration_evidence_files, bundled_score_files)
     # The distributable must only contain original TXT fixtures, never songs.
     assert all(not name.endswith('.txt') or name.startswith('scores/original/') for name in PACKAGE_FILES)
     assert not any(name.startswith(('src/', 'installer/', 'tests/', '.github/')) for name in PACKAGE_FILES), 'Desktop/development files must stay out of the legacy friends ZIP.'

@@ -14,9 +14,9 @@ public static class ThemeService
         catch { systemDark = false; }
         Dark = choice == "Dark" || choice != "Light" && systemDark;
         var colors = Dark
-            ? new[] { "#1F2225", "#272B2E", "#191C1E", "#E3E8EC", "#A0AAB3", "#343B40", "#A4BED2", "#293B49", "#303D48", "#E6BC80", "#F0A4A4", "#17212A" }
-            : new[] { "#FAFBFC", "#FFFFFF", "#F1F3F5", "#293139", "#68737D", "#DCE1E6", "#47647B", "#E8EFF5", "#E2E8EE", "#906019", "#B7443D", "#FFFFFF" };
-        var names = new[] { "Canvas", "Surface", "Subtle", "Ink", "Muted", "Line", "Accent", "AccentSoft", "Selection", "Amber", "Error", "AccentInk" };
+            ? new[] { "#222326", "#28292D", "#2C2D32", "#EEEEEF", "#A4A5AE", "#38393F", "#C9CAD2", "#35363D", "#35363D", "#D6B78B", "#E5A4A0", "#222326", "#1C1D20", "#202124" }
+            : new[] { "#F5F5F6", "#FFFFFF", "#EEEEF0", "#292A2E", "#686A73", "#DADBE0", "#555863", "#E8E8EC", "#E3E4E9", "#876022", "#AD423D", "#FFFFFF", "#EEEEF0", "#F8F8F9" };
+        var names = new[] { "Canvas", "Surface", "Subtle", "Ink", "Muted", "Line", "Accent", "AccentSoft", "Selection", "Amber", "Error", "AccentInk", "Sidebar", "Chrome" };
         for (int i = 0; i < names.Length; i++)
         {
             var brush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(colors[i]));
@@ -27,6 +27,8 @@ public static class ThemeService
         {
             Application.Current.Resources["CanvasBrush"] = SystemColors.WindowBrush;
             Application.Current.Resources["SurfaceBrush"] = SystemColors.WindowBrush;
+            Application.Current.Resources["SidebarBrush"] = SystemColors.WindowBrush;
+            Application.Current.Resources["ChromeBrush"] = SystemColors.WindowBrush;
             Application.Current.Resources["SubtleBrush"] = SystemColors.WindowBrush;
             Application.Current.Resources["LineBrush"] = SystemColors.WindowTextBrush;
             Application.Current.Resources["InkBrush"] = SystemColors.WindowTextBrush;

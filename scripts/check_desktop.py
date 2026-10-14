@@ -2,7 +2,8 @@
 
 The .deps.json file describes runtime assets, but its library identities also
 have to match this reviewed allowlist. Merely adding a DLL to publish/ is never
-enough to get it into the installer. User songs and upstream binaries are absent.
+enough to get it into the installer. Bundled songs must match the exact reviewed
+catalog and manifest; personal songs and upstream binaries remain absent.
 """
 from __future__ import annotations
 
@@ -20,6 +21,7 @@ from check_repo import (
     validate_catalog_calibration_evidence,
     validate_catalog_variants,
 )
+from prepare_bundled_scores import BUNDLE, MANIFEST, validate_bundle
 
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCT = 'HarmonicaDesk'
@@ -37,6 +39,14 @@ SOURCE_FILES = {
     'Licenses/THIRD_PARTY.md': 'THIRD_PARTY.md',
 }
 CORE_FILES = {PRODUCT + extension for extension in ('.exe', '.dll', '.deps.json', '.runtimeconfig.json')}
+
+
+def bundled_score_sources(root: Path) -> dict[str, Path]:
+    manifest = validate_bundle(root)
+    sources = {'Resources/BundledScores/manifest.json': root / MANIFEST}
+    sources.update({f'Resources/BundledScores/{row["file"]}': root / BUNDLE / row['file']
+                    for row in manifest['songs']})
+    return sources
 
 
 def require(condition: bool, message: str) -> None:
@@ -188,6 +198,7 @@ def validate_payload(publish: Path, root: Path = ROOT) -> list[dict]:
     deps = json.loads((publish / f'{PRODUCT}.deps.json').read_text(encoding='utf-8'))
     allowed, packs = dependency_files(deps)
     sources = {name: root / source for name, source in SOURCE_FILES.items()}
+    sources.update(bundled_score_sources(root))
     sources.update(runtime_license_sources(packs, root))
     sources.update(runtime_resource_sources(packs, root, allowed))
     allowed.update(sources)
@@ -295,6 +306,10 @@ def self_test() -> None:
         (publish / f'{PRODUCT}.deps.json').write_text(json.dumps(fixture), encoding='utf-8')
         (publish / f'{PRODUCT}.runtimeconfig.json').write_text(
             json.dumps({'runtimeOptions': {'tfm': 'net10.0', 'includedFrameworks': [{'name': 'test'}]}}), encoding='utf-8')
+        empty_bundle = {'schema_version': 1, 'songs': [], 'total_scores': 0, 'total_works': 0, 'total_bytes': 0}
+        for bundle_path in (root / MANIFEST, publish / 'Resources/BundledScores/manifest.json'):
+            bundle_path.parent.mkdir(parents=True, exist_ok=True)
+            bundle_path.write_text(json.dumps(empty_bundle), encoding='utf-8')
         copy_licenses(publish, root)
         records = validate_payload(publish, root)
         require(bool(records), 'Complete valid payload was rejected.')

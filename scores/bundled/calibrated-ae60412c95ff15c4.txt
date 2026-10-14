@@ -1,0 +1,13 @@
+@format=HarmonicaPlayer/1
+@title=Butterfly（完整22音来源·吉他谱开头四小节候选）
+@bpm=145
+@gap=10
+@meter=4/4
+@source-id=zhouzhou-210
+@review-scope=complete-existing-source-content
+@arrangement=tab-fretted-fundamentals-standard-tuning-assumed-PH-audible-pitches-unverified
+
+3:1 3:0.5 5:0.5 6:1 3:0.5 5:0.5
+6:0.5 【1】:0.5 6:0.5 5:0.5 3:2
+2:1 2:0.5 3:0.5 5:1 3:0.5 1:0.5
+2:0.5 3:0.5 2:0.5 1:0.5 （6）:2

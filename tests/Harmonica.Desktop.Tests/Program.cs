@@ -6,11 +6,17 @@ using Harmonica.Core;
 using Harmonica.Desktop.Models;
 using Harmonica.Desktop.Services;
 
-if (args.Length > 0) return await CatalogAudit.Run(args);
+if (args.Length > 0) return args[0] == "--audit-bundle"
+    ? await RealBundledLibraryAudit.Run(args) : await CatalogAudit.Run(args);
 
 var scenarios = new (string Name, Func<Task> Run)[]
 {
     ("首次初始化与升级保留示例", Initialization),
+    ("内置曲库首次离线可用且保留原始字节", BundledLibraryChecks.FirstOffline),
+    ("内置曲库重启幂等与个人偏好保留", BundledLibraryChecks.RestartAndPreferences),
+    ("内置曲库保留编辑版本并补回原版", BundledLibraryChecks.EditedVersion),
+    ("内置曲库升级与孤儿文件保全", BundledLibraryChecks.UpgradeAndOrphans),
+    ("内置曲库坏哈希、路径与清单拒绝且不联网", BundledLibraryChecks.InvalidBundles),
     ("中文路径复制导入、保留原文件与内容去重", ImportCopy),
     ("同名不同内容和保存副本均不覆盖", SameNameAndCopies),
     ("曲谱、收藏和设置重启持久化", Persistence),

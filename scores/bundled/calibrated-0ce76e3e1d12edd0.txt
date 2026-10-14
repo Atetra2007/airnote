@@ -1,0 +1,8 @@
+@format=HarmonicaPlayer/1
+@title=不死鸟 · 副歌两句主音练习版
+@bpm=120
+@gap=10
+@source-id=zhouzhou-220
+@review-scope=complete-two-lyric-lines-explicit-principal-tone-practice
+
+（#4）:1 #1:0.54 （7）:1.6 3:0.52 #1:1.08 #1:0.92 #4:0.6 3:1.38 （7）:0.36 （6）:0.84 0:0.64 #1:0.76 （#4）:1 （7）:0.72 （#5）:0.88 （4）:1.06 0:0.94 （#4）:0.46 （#5）:0.34 （#4）:1.76

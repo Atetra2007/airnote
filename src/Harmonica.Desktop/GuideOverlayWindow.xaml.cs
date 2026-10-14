@@ -38,7 +38,7 @@ public partial class GuideOverlayWindow : Window
     }
     public void SetBackgroundOpacity(double opacity)
     {
-        var brush = new SolidColorBrush(Color.FromArgb((byte)Math.Round(Math.Clamp(opacity, .35, .95) * 255), 24, 30, 34));
+        var brush = new SolidColorBrush(Color.FromArgb((byte)Math.Round(Math.Clamp(opacity, .35, .95) * 255), 34, 35, 38));
         brush.Freeze(); Frame.Background = brush;
     }
     public void SetEditable(bool value)
@@ -47,7 +47,7 @@ public partial class GuideOverlayWindow : Window
         // Adjustment is a normal switchable window; performance stays out of Alt+Tab/the taskbar.
         ShowInTaskbar = value;
         ResizeGrip.Visibility = value ? Visibility.Visible : Visibility.Collapsed;
-        Frame.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(value ? "#8AD8BC" : "#52675E"));
+        Frame.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(value ? "#C9CAD2" : "#38393F"));
         ApplyInputStyle();
     }
     private void ApplyInputStyle()
@@ -90,7 +90,7 @@ public partial class GuideOverlayWindow : Window
         });
         StatePlate.Visibility = StateLabel.Text.Length == 0 ? Visibility.Collapsed : Visibility.Visible;
     }
-    private static readonly Brush WaitingInk = FrozenBrush("#8AD8BC"), NormalInk = FrozenBrush("#F0F5F3");
+    private static readonly Brush WaitingInk = FrozenBrush("#C9CAD2"), NormalInk = FrozenBrush("#EEEEEF");
     private static Brush FrozenBrush(string color)
     { var brush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(color)); brush.Freeze(); return brush; }
     private void Header_DragDelta(object sender, DragDeltaEventArgs e)
