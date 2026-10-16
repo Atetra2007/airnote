@@ -1,14 +1,37 @@
-# 口琴小曲库
+<p align="center">
+  <img src="docs/images/airnote.png" alt="Airnote 图标" width="88" height="88">
+</p>
 
-一个打开就能选曲、看谱、试听和跟谱手弹的 Windows 桌面软件。采用夜间石墨界面，默认打开曲库，完整谱面放在独立“曲谱”页签；右侧选择模式与速度，底部控制播放。面向 Windows 10 22H2 / Windows 11 x64，安装包自带 .NET 运行环境，无需安装 Python、.NET SDK 或注册软件账号。
+# Airnote
 
-**v0.4.3 安装后自带全部已复核曲库：374 份 TXT，覆盖 244 首作品。** 首次启动即可离线选曲，无需另找 TXT 或导入曲库压缩包。请从[发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.3)的 Assets 获取安装 EXE；仓库为私有，下载需要仓库访问权限。请核对同批 manifest 与 SHA-256。内容与验证范围见[发布说明](docs/RELEASE-0.4.3-NOTES.md)及[验证记录](docs/RELEASE-0.4.3-STATUS.md)。
+**面向《三角洲行动》口琴的 Windows 曲谱与练习助手。**
 
-曲库包含此前 34 份与本轮新增 340 份已复核版本，TXT 原始总量为 737,201 字节，约 0.74 MB；另附 3 份原创测试谱。一个作品可以有不同版本，其中部分只覆盖指定片段。“已复核”不代表整曲、真人试听或真实游戏验收全部完成。当前统计见[曲库状态](docs/CATALOG-STATUS.md)，范围处置见[阶段队列](docs/CALIBRATION-QUEUE.md)。
+搜一首曲、听一遍旋律，再跟着节奏练起来。Airnote 把曲谱搜索、收藏、离线试听和悬浮窗跟谱放在一起，方便整理曲库，也方便练习喜欢的片段。
+
+*A Windows score library and practice companion for harmonica in Delta Force.*
+
+[下载安装](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3) · [快速上手](docs/QUICKSTART.md) · [跟谱说明](docs/GUIDE.md) · [问题反馈](https://github.com/Atetra2007/airnote/issues/new/choose)
+
+Windows 10 22H2 / Windows 11 x64 · 自带运行环境 · 无需注册软件账号 · 非官方独立项目
+
+## 从选曲到练习
+
+- **找曲更方便**：按歌名、别名、拼音、来源作者或 BPM 搜索，收藏常练曲目，继续最近的练习。
+- **先听再练**：用本地合成音试听旋律，支持 0.5×—1.5× 临时变速，无需打开游戏。
+- **边看边弹**：用悬浮窗跟着节奏走谱，或选择弹对才继续；支持片段定位与 A/B 循环。
+- **自己的曲谱自己管理**：导入或拖入兼容 TXT，编辑后保存或另存副本，个人曲谱保存在本机。
+
+## 当前可下载版本
+
+项目现名 **Airnote**，原名“口琴小曲库”（HarmonicaDesk）。**目前 GitHub 最新安装包为 v0.4.3，仍显示旧名称和旧图标**；本次仓库更名不改变已发布安装包。后续 Airnote 安装包以 Release 的实际附件为准。
+
+v0.4.3 安装后自带 **374 份已复核 TXT，覆盖 244 个作品**，另附 3 份原创测试谱，首次启动即可离线选曲。部分谱面只覆盖指定片段，“已复核”不代表整曲听辨或真实游戏验收全部完成。详情见[曲库状态](docs/CATALOG-STATUS.md)、[发布说明](docs/RELEASE-0.4.3-NOTES.md)和[验证记录](docs/RELEASE-0.4.3-STATUS.md)。
+
+仓库目前为**私有**，源码、Issues 和 Release 下载需要仓库访问权限；已下载的安装包与内置曲库可离线使用。
 
 ## 第一次使用
 
-1. 从 [v0.4.3 发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.3)的 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe`，核对同名 `.sha256` 后安装。使用 Assets 中的安装包，GitHub 的 Source code ZIP 不是可运行软件。
+1. 从 [v0.4.3 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)的 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe`，核对同名 `.sha256` 后安装。使用 Assets 中的安装包，GitHub 的 Source code ZIP 不是可运行软件。
 2. 打开“口琴小曲库”，在“本地”中搜索并选择歌曲，保持“本地试听”，点击底部“试听”；点击“停止”或按 F8 结束。
 3. 需要看完整谱面时点击顶部“曲谱”或右侧“查看曲谱”。自己的曲谱仍可通过“导入 TXT”添加。
 
@@ -56,12 +79,22 @@ v0.3 跟谱的[使用说明](docs/GUIDE.md)与[验证记录](docs/GUIDE-VALIDATI
 
 应用与安装包尚未配置代码签名。Release 的 SHA-256 用来核对下载完整性，不是安全认证；出现 Windows 或安全软件提示时先核对来源与具体提示，不修改系统防护设置。
 
+## 反馈与参与
+
+- [报告使用问题](https://github.com/Atetra2007/airnote/issues/new?template=problem.yml)：附软件版本、操作步骤、预期与实际结果。
+- [提出功能建议](https://github.com/Atetra2007/airnote/issues/new?template=feature.yml)：说明练习或整理曲谱时遇到的具体困难。
+- [提交曲谱纠错或来源](https://github.com/Atetra2007/airnote/issues/new?template=score.yml)：写明曲名、版本、问题段落和可核查的来源；许可未确认时只提交链接。
+
+截图和日志请先遮挡账号与个人路径，不提交登录信息或未获许可的谱面全文。贡献代码可先说明问题和复现方式；构建方法见[桌面版构建说明](docs/DESKTOP-BUILD.md)。
+
 ## 旧使用包与开发
 
-[v0.1.1-logtest](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.1.1-logtest)仍保留：它是下载并管理原版 HarmonicaPlayer v0.2.1 的朋友使用包，与本次新桌面程序不同。原版曾完成三首样本的整段日志测试，详见[历史原版验证记录](docs/VALIDATION.md)；这些结果不计入新程序验收。旧包中的 `Prepare.cmd`、`index.html` 继续服务原流程，新版安装后不需要运行它们。
+[v0.1.1-logtest](https://github.com/Atetra2007/airnote/releases/tag/v0.1.1-logtest)仍保留：它是下载并管理原版 HarmonicaPlayer v0.2.1 的朋友使用包，与本次新桌面程序不同。原版曾完成三首样本的整段日志测试，详见[历史原版验证记录](docs/VALIDATION.md)；这些结果不计入新程序验收。旧包中的 `Prepare.cmd`、`index.html` 继续服务原流程，新版安装后不需要运行它们。
 
 已有旧包时，在新程序左侧“⋯ → 导入文件夹 / 旧使用包”选择旧包目录。程序复制其中的个人与候选 TXT 到新曲库，保留旧包文件。
 
 [桌面版构建说明](docs/DESKTOP-BUILD.md) · [旧使用包维护说明](docs/MAINTAINING.md) · [更新记录](CHANGELOG.md) · [历史朋友试用表](docs/FRIEND_TRIAL.md)
+
+[项目介绍与分享文案](docs/PROJECT-PRESENTATION.md) · [仓库整理记录](docs/REPOSITORY-STATUS.md)
 
 发布内容使用明确清单：本项目程序、自带运行时、许可、来源索引、374 份已复核 TXT 和 3 份原创测试谱。上游 EXE、上游参考源码、个人谱面、录音、来源图片和原始验证记录均不加入安装包。

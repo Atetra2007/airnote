@@ -31,4 +31,4 @@
 
 干净 Windows 安装、朋友首次使用、真人全曲听辨、全部游戏组合键和跨屏体验仍需分别记录实际结果。已有历史验证范围见[桌面版验证记录](DESKTOP-VALIDATION.md)、[跟谱验证记录](GUIDE-VALIDATION.md)及[游戏验证记录](GAME-VALIDATION.md)。
 
-仓库为私有，Release 下载需要访问权限；实际发布链接为 [v0.4.3](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.3)。外部谱面分发许可状态继续如实保留，不因纳入安装包变为已获授权。安装包不含录音、来源图片或私人文件。
+仓库为私有，Release 下载需要访问权限；实际发布链接为 [v0.4.3](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)。外部谱面分发许可状态继续如实保留，不因纳入安装包变为已获授权。安装包不含录音、来源图片或私人文件。

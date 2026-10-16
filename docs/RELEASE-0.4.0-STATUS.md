@@ -1,6 +1,6 @@
 # 0.4.0 分级曲库发布范围与验证状态
 
-本文记录 v0.4.0 的曲库范围与源数据验证。当前目录 `catalog/songs.json` 的 SHA-256 为 `476c6f3c54ce095bbc10c025b5651bbef692a7a2dec70623ca7d1e2f2f35edc3`；该哈希与 `local/catalog-0.4.0/fast-scope-finalization-016.json` 及 `final-local-audit-016.json` 中记录的目录哈希一致。CI 构建、安装升级和发行资产的最终验收见 [GitHub Release](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.0)。当前目录统计见[曲库状态](CATALOG-STATUS.md)，v0.4.1 本轮构建与运行验证见[0.4.1 状态记录](RELEASE-0.4.1-STATUS.md)。
+本文记录 v0.4.0 的曲库范围与源数据验证。当前目录 `catalog/songs.json` 的 SHA-256 为 `476c6f3c54ce095bbc10c025b5651bbef692a7a2dec70623ca7d1e2f2f35edc3`；该哈希与 `local/catalog-0.4.0/fast-scope-finalization-016.json` 及 `final-local-audit-016.json` 中记录的目录哈希一致。CI 构建、安装升级和发行资产的最终验收见 [GitHub Release](https://github.com/Atetra2007/airnote/releases/tag/v0.4.0)。当前目录统计见[曲库状态](CATALOG-STATUS.md)，v0.4.1 本轮构建与运行验证见[0.4.1 状态记录](RELEASE-0.4.1-STATUS.md)。
 
 ## 发布范围
 

@@ -1,11 +1,16 @@
 name: 使用问题
-description: 下载、准备、导入或界面出现问题
+description: Airnote 安装、导入、试听、跟谱或界面出现问题
+title: "[问题] "
 body:
+  - type: markdown
+    attributes:
+      value: "请描述能重现问题的步骤。当前 v0.4.3 安装包仍显示旧名称“口琴小曲库”（HarmonicaDesk）。提交前请遮挡账号、个人路径和登录信息。"
   - type: textarea
     id: environment
     attributes:
       label: 环境与版本
-      description: 使用包版本、Windows 版本、原版播放器版本。不要填写游戏账号。
+      description: 软件版本、Windows 版本、安装版或便携版，以及当前使用的模式。不需要填写原版播放器版本或游戏账号。
+      placeholder: "例如：v0.4.3 / Windows 11 x64 / 安装版 / 本地试听"
     validations:
       required: true
   - type: textarea
@@ -19,4 +24,4 @@ body:
     id: evidence
     attributes:
       label: 原始错误与证据
-      description: 可附经过遮挡私人信息的截图；不要上传原版 EXE。
+      description: 可附脱敏截图或相关错误日志；曲谱问题请注明曲名与版本，不要附安装程序或未获许可的谱面全文。

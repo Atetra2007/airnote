@@ -1,0 +1,24 @@
+name: 功能建议
+description: 改善 Airnote 的选曲、看谱、试听和练习体验
+title: "[建议] "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景与遇到的困难
+      description: 说明你在做什么、哪一步不方便，以及软件版本。
+      placeholder: "例如：练习某个片段时，需要反复进行哪些操作？"
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你希望怎样改进
+      description: 描述理想的操作或结果，不必提供技术实现方案。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 目前的解决办法或参考
+      description: 可选。截图请先遮挡私人信息；引用其他工具时可提供公开链接。

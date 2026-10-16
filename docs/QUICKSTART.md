@@ -1,10 +1,12 @@
-# 口琴小曲库：给朋友的快速说明
+# Airnote：快速上手
+
+Airnote 是“口琴小曲库”（HarmonicaDesk）的新项目名称。本说明对应目前已发布的 v0.4.3；该版本安装包和桌面入口仍使用旧名称。
 
 适用 v0.4.3，Windows 10 22H2 / Windows 11 x64。安装包自带运行时和全部 374 份已复核 TXT，覆盖 244 首作品，另有 3 份原创测试谱。使用本软件不需要 Python、.NET SDK 或软件账号。
 
 ## 安装并试听第一首
 
-1. 打开 [v0.4.3 发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。仓库为私有，下载需要访问权限；GitHub 的 Source code ZIP 不是安装包。
+1. 打开 [v0.4.3 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。仓库为私有，下载需要访问权限；GitHub 的 Source code ZIP 不是安装包。
 2. 核对摘要后运行安装包，从桌面“口琴小曲库”打开应用。安装后曲库直接可用，无需逐首下载或另找 TXT，断网也能选曲。
 3. 在“本地”中搜索并选择一首歌曲，保持右侧“本地试听”，点击底部“试听”。正常音频输出设备下会听到合成音；点击“停止”结束。需要完整谱面时点击顶部“曲谱”。
 

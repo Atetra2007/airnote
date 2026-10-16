@@ -19,7 +19,7 @@
 
 ## 下载与使用
 
-仓库为私有，下载需要仓库访问权限。打开 [v0.4.2 发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.2)，在 Assets 中选择：
+仓库为私有，下载需要仓库访问权限。打开 [v0.4.2 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.2)，在 Assets 中选择：
 
 - `HarmonicaDesk-Setup-0.4.2-win-x64.exe`：当前用户安装包。
 - `HarmonicaDesk-0.4.2-win-x64.zip`：完整解压后运行 `App/HarmonicaDesk.exe`，无需另装 .NET。

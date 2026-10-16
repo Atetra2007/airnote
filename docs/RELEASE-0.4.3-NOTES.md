@@ -4,7 +4,7 @@
 
 ## 下载与使用
 
-打开 [v0.4.3 发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。核对摘要后安装，从桌面“口琴小曲库”打开，在“本地”中选曲试听即可。不需要单独曲库 ZIP；GitHub 自动生成的 Source code ZIP 不是安装包。
+打开 [v0.4.3 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。核对摘要后安装，从桌面“口琴小曲库”打开，在“本地”中选曲试听即可。不需要单独曲库 ZIP；GitHub 自动生成的 Source code ZIP 不是安装包。
 
 仓库目前为私有，下载需要仓库访问权限。已经下载的安装包和内置曲库可离线使用，不需要软件账号。已有用户升级前正常退出应用；升级保留个人曲谱、收藏、最近使用和版本偏好。详细操作见[快速说明](QUICKSTART.md)。
 

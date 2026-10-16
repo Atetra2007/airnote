@@ -1,6 +1,6 @@
 # 0.4.1-preview.1 更新与曲目复验记录
 
-本轮于 2026-09-28 执行。本页记录的是早前本地预览快照的检查结果，不是 GitHub Release 的 CI 附件或已安装 Release 版本验收。v0.4.1-preview.1 的预发布入口见 [GitHub Release](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.1-preview.1)。候选版用于曲库筛选、复核范围说明和演奏时序检查；没有把软件检查升级为人工听辨或真实游戏通过。
+本轮于 2026-09-28 执行。本页记录的是早前本地预览快照的检查结果，不是 GitHub Release 的 CI 附件或已安装 Release 版本验收。v0.4.1-preview.1 的预发布入口见 [GitHub Release](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1)。候选版用于曲库筛选、复核范围说明和演奏时序检查；没有把软件检查升级为人工听辨或真实游戏通过。
 
 ## 曲库统计
 
@@ -74,7 +74,7 @@ His Theme 与《飞鼠进行曲》的旧“0 音匹配”来自没有可用目�
 - 本机可运行程序：`artifacts/desktop/publish/HarmonicaDesk.exe`；该本地程序的启动结果不等于 Release 附件或安装升级验收。
 - 文件版本为 `0.4.1.0`，产品版本为 `0.4.1-preview.1`（程序集另带基线提交信息）。发行包不含第三方完整曲谱、录音、个人资料或听辨页。
 
-正式上传和安装的文件以 [GitHub Release Assets](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.1-preview.1) 为准。必须使用该 Release 同批 manifest 与 SHA-256 核对 ZIP、安装程序和实际安装文件；不得沿用上面的本机 ZIP 哈希。CI 附件核验、Release 安装与覆盖升级检查只有在这些实际文件及其结果记录完成后才能标为通过。
+正式上传和安装的文件以 [GitHub Release Assets](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1) 为准。必须使用该 Release 同批 manifest 与 SHA-256 核对 ZIP、安装程序和实际安装文件；不得沿用上面的本机 ZIP 哈希。CI 附件核验、Release 安装与覆盖升级检查只有在这些实际文件及其结果记录完成后才能标为通过。
 
 本轮由三个 GPT-6 Luna（max）子任务分别完成文档统计、曲库界面和 B 批证据盘点，主任务统一审查、构建及验证。
 

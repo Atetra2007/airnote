@@ -1,12 +1,12 @@
 # 来源、许可与分发边界
 
-“口琴小曲库”是本项目独立编写的 Windows 应用，不是 HarmonicaPlayer 官方发行版，也不包含其源码或 EXE。`LICENSE` 仅授予本项目原创代码、说明、图标和测试谱的 MIT 许可，不为外部歌曲、编配、谱面或软件授予许可。
+Airnote（原名“口琴小曲库”）是本项目独立编写的 Windows 应用，不是 HarmonicaPlayer 官方发行版，也不包含其源码或 EXE。`LICENSE` 仅授予本项目原创代码、说明、图标和测试谱的 MIT 许可，不为外部歌曲、编配、谱面或软件授予许可。
 
 ## 随安装包分发的内容
 
 | 内容 | 来源与许可 | 处理方式 |
 | --- | --- | --- |
-| 口琴小曲库源码、界面、图标、辅助脚本与原创说明 | 本项目，[MIT](LICENSE) | 源码在本仓库，桌面程序集与原创资源随安装包发布 |
+| Airnote 源码、界面、图标、辅助脚本与原创说明 | 本项目，[MIT](LICENSE) | 源码在本仓库，桌面程序集与原创资源随安装包发布 |
 | 3 份原创测试谱 | `scores/original/`；本项目 MIT | 为音高、时值和导入验证编写的短序列，随包发布 |
 | 374 份已复核 TXT，覆盖 244 个作品 | `scores/bundled/`；逐版本来源与复核记录见 `catalog/songs.json` | v0.4.3 根据用户选择随包提供，安装目录为 `Resources/BundledScores/`；外部谱面的 `redistribution=permission-unconfirmed` 状态原样保留，不适用本项目 MIT |
 | .NET 与 Windows Desktop 运行时 | Microsoft 的 [.NET](https://github.com/dotnet/runtime) 与 [WPF](https://github.com/dotnet/wpf)；各自许可及第三方声明 | 自包含 Windows x64 发布带入所需运行时；实际运行时包的 `LICENSE.TXT` 与 `THIRD-PARTY-NOTICES.TXT` 复制到安装目录 `Licenses/` |

@@ -1,6 +1,6 @@
 # v0.4.0 发布说明：分级曲库
 
-本页说明 v0.4.0 的分级曲库范围。安装包、CI 构建与安装升级验收结果见 [GitHub Release](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.0)。
+本页说明 v0.4.0 的分级曲库范围。安装包、CI 构建与安装升级验收结果见 [GitHub Release](https://github.com/Atetra2007/airnote/releases/tag/v0.4.0)。
 
 ## 解决的问题
 

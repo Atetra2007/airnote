@@ -84,7 +84,7 @@ def package(publish: Path, manifest: Path, output: Path) -> None:
                                                ("CATALOG-STATUS.md", "曲库与校准状态.md"),
                                                ("CALIBRATION-QUEUE.md", "现行队列.md"),
                                                ("../catalog/calibration-stage-20261014.json", "校对阶段处置.json"),
-                                               ("RELEASE-0.4.1-STATUS.md", "https://github.com/Atetra2007/delta-force-harmonica-kit/blob/v0.4.1-preview.1/docs/RELEASE-0.4.1-STATUS.md")):
+                                               ("RELEASE-0.4.1-STATUS.md", "https://github.com/Atetra2007/airnote/blob/v0.4.1-preview.1/docs/RELEASE-0.4.1-STATUS.md")):
                         text = text.replace(f"({original})", f"({packaged})")
                 archive.writestr(name, text)
             archive.writestr("开始使用.txt", readme)

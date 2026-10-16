@@ -29,7 +29,7 @@
 
 当前 340 编配的软件审计为本机 `audit-20261014-run-126`，绑定目录 SHA-256 `f19e0210d90814781f6f5bf8cff83c332bd5e5e91aa81e64d16066b0277b8b9a`；使用本轮生产代码，隔离资料，外发 HTTP 请求为 0。布局程序额外计入 3 份原创测试谱，因而看到 247 个作品、783 个版本，与总表 244/780 的口径不同。
 
-安装包由 GitHub Actions 的 `Check preparation kit` 与 `Build Windows desktop` 检查和构建。实际发行附件从成功构建下载后，需核对 ZIP 内全部应用文件的 manifest 大小和 SHA-256，再上传同批安装 EXE、ZIP、两个 SHA-256 文件与 manifest；最终构建链接及附件摘要列在 [v0.4.2 发布页](https://github.com/Atetra2007/delta-force-harmonica-kit/releases/tag/v0.4.2)。旧 run125 审计绑定的是移除前的 793 条目录，不能单独用来证明本次 780 条目录。
+安装包由 GitHub Actions 的 `Check preparation kit` 与 `Build Windows desktop` 检查和构建。实际发行附件从成功构建下载后，需核对 ZIP 内全部应用文件的 manifest 大小和 SHA-256，再上传同批安装 EXE、ZIP、两个 SHA-256 文件与 manifest；最终构建链接及附件摘要列在 [v0.4.2 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.2)。旧 run125 审计绑定的是移除前的 793 条目录，不能单独用来证明本次 780 条目录。
 
 ## 验证边界
 
