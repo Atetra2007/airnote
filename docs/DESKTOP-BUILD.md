@@ -14,7 +14,7 @@
 
 首次开发时，为三个测试项目运行 `dotnet restore <测试工程路径>`，为桌面项目运行 `dotnet restore src/Harmonica.Desktop/Harmonica.Desktop.csproj --runtime win-x64 -p:SelfContained=true`；它们的工程文件已启用锁文件，审查并提交生成的 `packages.lock.json`。不要以全局命令行属性把锁文件生成传播到没有外部依赖的共享库，否则测试和桌面发布的 RID 不同会冲突。发行脚本遇到缺失锁文件会中止。构建时先正常退出开发输出目录中的应用；GUI 验收可使用发布目录的单独副本，避免锁住待编译文件。
 
-当前发行目标为 `0.4.3`，[GitHub Release 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)的实际状态见[验证记录](RELEASE-0.4.3-STATUS.md)；仓库为私有，下载需要仓库访问权限。主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.4.3`，Windows 文件版本 `0.4.3.0`。资源必须按明确清单复制：`Resources/catalog.json`、`Resources/Examples/` 下三份原创谱，以及 `Resources/BundledScores/` 下全部 374 份已复核 TXT。后者来自 `scores/bundled/`，覆盖 244 个作品，原始总量 737,201 字节；不能用递归整个仓库的方式准备发行内容。
+当前发行目标为 `0.4.3`，[GitHub Release 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)的实际状态见[验证记录](RELEASE-0.4.3-STATUS.md)；仓库与 Release 下载已公开可访问，无需 GitHub 登录。主程序文件名为 `HarmonicaDesk.exe`，产品版本 `0.4.3`，Windows 文件版本 `0.4.3.0`。资源必须按明确清单复制：`Resources/catalog.json`、`Resources/Examples/` 下三份原创谱，以及 `Resources/BundledScores/` 下全部 374 份已复核 TXT。后者来自 `scores/bundled/`，覆盖 244 个作品，原始总量 737,201 字节；不能用递归整个仓库的方式准备发行内容。
 
 额外的跟谱组件检查：`dotnet run --project tests/Harmonica.LayoutChecks -c Release`。它不创建实际桌面窗口，输出最小／默认尺寸、三种 DPI 的布局图及长谱绘制记录到 `artifacts/guide-validation/components`。使用独立数据做实际 UI 验证：`HarmonicaDesk.exe --data-dir "本机测试目录"`，不要覆盖个人数据。
 

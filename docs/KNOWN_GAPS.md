@@ -1,6 +1,6 @@
 # 当前桌面版与曲库的已知限制
 
-当前主线是独立编写的 HarmonicaDesk 桌面程序；v0.4.1-preview.1 通过 [GitHub Release 预发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1)提供。仓库为私有，下载需要仓库访问权限。Release 附件及安装升级状态见[本轮状态记录](RELEASE-0.4.1-STATUS.md)，旧版原始播放器的测试记录保留在[历史原版验证记录](VALIDATION.md)，不能用来证明新桌面程序通过。
+当前主线是独立编写的 HarmonicaDesk 桌面程序；v0.4.1-preview.1 通过 [GitHub Release 预发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1)提供。仓库与 Release 下载已公开可访问，无需 GitHub 登录。Release 附件及安装升级状态见[本轮状态记录](RELEASE-0.4.1-STATUS.md)，旧版原始播放器的测试记录保留在[历史原版验证记录](VALIDATION.md)，不能用来证明新桌面程序通过。
 
 | 项目 | 目前边界 | 后续处理 |
 | --- | --- | --- |

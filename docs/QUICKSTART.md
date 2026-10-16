@@ -6,7 +6,7 @@ Airnote 是“口琴小曲库”（HarmonicaDesk）的新项目名称。本说�
 
 ## 安装并试听第一首
 
-1. 打开 [v0.4.3 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。仓库为私有，下载需要访问权限；GitHub 的 Source code ZIP 不是安装包。
+1. 打开 [v0.4.3 发布页](https://github.com/Atetra2007/airnote/releases/tag/v0.4.3)，在 Assets 下载 `HarmonicaDesk-Setup-0.4.3-win-x64.exe` 和同名 `.sha256`。Release 下载无需 GitHub 登录；GitHub 的 Source code ZIP 不是安装包。
 2. 核对摘要后运行安装包，从桌面“口琴小曲库”打开应用。安装后曲库直接可用，无需逐首下载或另找 TXT，断网也能选曲。
 3. 在“本地”中搜索并选择一首歌曲，保持右侧“本地试听”，点击底部“试听”。正常音频输出设备下会听到合成音；点击“停止”结束。需要完整谱面时点击顶部“曲谱”。
 

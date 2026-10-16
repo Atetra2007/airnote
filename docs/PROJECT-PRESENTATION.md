@@ -27,17 +27,17 @@
 
 > 想在《三角洲行动》里练口琴时，找谱、确认旋律和练习片段常常要来回切换。Airnote 把这些步骤放进一个 Windows 工具：搜索曲目、导入 TXT、本地试听，再打开悬浮窗跟谱练习；不熟的段落可以慢速或循环练。
 >
-> 项目现名 Airnote；当前 GitHub 安装包为 v0.4.3，仍显示旧名称“口琴小曲库”。仓库目前为私有，需要访问权限才能查看和下载。本地试听与使用已下载曲谱不需要联网。
+> 项目现名 Airnote；当前 GitHub 安装包为 v0.4.3，仍显示旧名称“口琴小曲库”。源码和安装包公开可访问，下载无需 GitHub 登录。本地试听与使用已下载曲谱不需要联网。
 >
 > 项目地址：https://github.com/Atetra2007/airnote
 
-这份文案可在受邀试用时使用；目前不把私有仓库链接宣传为公众可下载入口。未向任何社群、社交平台或其他用户发布。
+这份文案可用于介绍项目；安装入口统一指向 Airnote 的 Release。旧独立曲谱仓库已整合并转为私有历史归档。本次未向任何社群、社交平台或其他用户发布。
 
 ## English description
 
 > Airnote is a Windows score library and practice companion for harmonica in Delta Force. Find and organize scores, import compatible TXT files, preview melodies offline with synthesized audio, and practice with an on-screen guide, tempo controls, and A/B loops. No application account is required. Airnote is an independent, unofficial project, formerly known as HarmonicaDesk.
 
-> The repository is currently private. The latest downloadable release is v0.4.3 and still uses the HarmonicaDesk name and icon. Repository access is required to view the source and download releases.
+> The source and releases are publicly accessible; downloading does not require a GitHub account. The latest downloadable release is v0.4.3 and still uses the HarmonicaDesk name and icon. The former standalone score-index repository has been consolidated into Airnote and retained as a private archive.
 
 ## 演示内容安排
 
@@ -50,11 +50,11 @@
 
 使用本项目原创测试谱或有明确展示授权的内容，遮挡私人路径与账号。演示注明软件版本；界面设计图不能作为已发布功能的演示。本次仅完成脚本，尚未录制演示视频。
 
-## 后续公开推广顺序
+## 后续推广顺序
 
 1. 发布与 Airnote 名称一致、经过实际验证的安装包，保留旧版本下载记录。
 2. 核对公开分发范围，处理外部曲谱的许可状态；代码的 MIT 许可不自动覆盖曲谱。
 3. 准备真实截图或短演示，完成一次从下载到首次试听的新用户试用。
-4. 将准备好的仓库与 Release 公开后，再分享公开下载链接；从问题反馈中完善安装与首次使用说明。
+4. 分享 Airnote 的统一下载入口，并从问题反馈中完善安装与首次使用说明；旧曲谱仓库不再作为推广入口。
 
 当前没有把仓库更名视为新版安装包发布，也没有把“已复核”写成所有曲目完整、全部听校通过或游戏账号安全。现有自动演奏功能与使用边界在 [README](../README.md) 中单独说明。

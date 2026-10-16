@@ -1,6 +1,6 @@
 # 口琴小曲库 v0.4.1-preview.1
 
-这是 0.4.1-preview.1 预发布版，下载入口在 [GitHub Release](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1)。仓库为私有，下载需要仓库访问权限。请从该 Release 的 Assets 下载，并用同批 manifest 与 SHA-256 文件核对；不要用本机早前预览包的哈希校验 Release 附件。
+这是 0.4.1-preview.1 预发布版，下载入口在 [GitHub Release](https://github.com/Atetra2007/airnote/releases/tag/v0.4.1-preview.1)。仓库与 Release 下载已公开可访问，无需 GitHub 登录。请从该 Release 的 Assets 下载，并用同批 manifest 与 SHA-256 文件核对；不要用本机早前预览包的哈希校验 Release 附件。
 
 本版增加“本地可用／已复核片段／速度待确认”筛选，并保留全部、收藏、最近视图；曲目页显示复核范围和参考录音位置，新增只读短音演奏检查。未知 BPM 共 273 个版本：266 个没有 `bpm` 字段，7 个明确为 `null`，不会以默认速度补值。
 

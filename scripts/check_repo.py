@@ -350,6 +350,7 @@ REPO_ONLY_FILES = {
     '.github/ISSUE_TEMPLATE/problem.yml', '.github/ISSUE_TEMPLATE/score.yml',
     '.github/ISSUE_TEMPLATE/feature.yml',
     'docs/PROJECT-PRESENTATION.md', 'docs/REPOSITORY-STATUS.md', 'docs/images/airnote.png',
+    'docs/REPOSITORY-MIGRATION.md', 'catalog/history/legacy-sources.json', 'catalog/history/migration.json',
     'global.json', 'scripts/create_icon.py', 'scripts/Build-Desktop.ps1',
     'scripts/check_desktop.py', 'installer/HarmonicaDesk.iss',
     'scripts/prepare_bundled_scores.py', 'tests/test_bundled_scores.py',
